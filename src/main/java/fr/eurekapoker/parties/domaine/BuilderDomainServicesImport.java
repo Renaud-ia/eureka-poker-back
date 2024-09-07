@@ -1,10 +1,16 @@
 package fr.eurekapoker.parties.domaine;
 
-/**
-    utilisé dans le cas où on a juste une String et qu'on connait pas le type
- */
+import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
+import java.io.File;
+
 public class BuilderDomainServicesImport {
-    DomaineServiceImport obtService() {
+    DomaineServiceImport obtService(String lignesFichier) throws ErreurImport {
+        if (lignesFichier.startsWith("<")) return new DomaineServiceImportXml(lignesFichier);
+
+        return new DomaineServiceImportTxt(lignesFichier);
+    }
+
+    DomaineServiceImport obtService(File fichier) {
         //todo
         return null;
     }

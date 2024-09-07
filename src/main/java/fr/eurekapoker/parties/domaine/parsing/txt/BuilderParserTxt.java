@@ -12,7 +12,7 @@ public class BuilderParserTxt {
                     .getDeclaredConstructor(String[].class)
                     .newInstance((Object) lignesFichier);
 
-            if (parserTxt.peutLireFichier(lignesFichier)) {
+            if (parserTxt.peutLireFichier()) {
                 return parserTxt;
             }
         }

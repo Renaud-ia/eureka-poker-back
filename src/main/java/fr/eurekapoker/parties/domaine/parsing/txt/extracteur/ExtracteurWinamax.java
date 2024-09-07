@@ -27,4 +27,14 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     public ActionPoker extraireAction(String s) {
         return null;
     }
+
+    @Override
+    public ResultatJoueur extraireResultat(String ligne) {
+        return null;
+    }
+
+    @Override
+    public BlindeOuAnte extraireBlindeOuAnte(String s) {
+        return null;
+    }
 }

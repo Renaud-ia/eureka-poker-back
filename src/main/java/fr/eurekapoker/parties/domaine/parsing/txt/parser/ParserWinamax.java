@@ -15,9 +15,8 @@ public class ParserWinamax extends ParserTxt {
     }
 
     @Override
-    public boolean peutLireFichier(String[] lignesFichier) {
-        // todo
-        return false;
+    public boolean peutLireFichier() {
+        return lignesFichier[0].startsWith("Winamax Poker");
     }
 
     @Override

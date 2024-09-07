@@ -11,5 +11,9 @@ public interface ExtracteurLigne {
 
     TourPoker extraireTour(String ligne);
 
-    ActionPoker extraireAction(String s);
+    ActionPoker extraireAction(String ligne);
+
+    ResultatJoueur extraireResultat(String ligne);
+
+    BlindeOuAnte extraireBlindeOuAnte(String s);
 }

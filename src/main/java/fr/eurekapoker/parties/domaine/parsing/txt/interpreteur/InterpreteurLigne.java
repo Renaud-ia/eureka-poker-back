@@ -4,17 +4,20 @@ package fr.eurekapoker.parties.domaine.parsing.txt.interpreteur;
     Indique quels informations est présente dans la ligne
  */
 public interface InterpreteurLigne {
-    boolean estFormat(String ligne);
+    void lireLigne(String ligne);
+    boolean estFormat();
 
-    boolean estNouvelleMain(String ligne);
+    boolean estNouvelleMain();
 
-    boolean estJoueur(String ligne);
+    boolean estJoueur();
 
-    boolean estNouveauTour(String ligne);
+    boolean estNouveauTour();
 
-    boolean estGain(String ligne);
+    boolean estResultat();
 
-    boolean estAction(String ligne);
+    boolean estAction();
 
-    boolean estBlindeAnte(String ligne);
+    boolean estBlindeAnte();
+
+    boolean ligneSansInfo();
 }

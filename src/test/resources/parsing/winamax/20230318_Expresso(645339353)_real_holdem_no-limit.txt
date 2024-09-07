@@ -1,0 +1,572 @@
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2771711415956799489-1-1679168629 - Holdem no limit (10/20) - 2023/03/18 19:43:49 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (500)
+Seat 2: NadSach79 (500)
+Seat 3: BaD2Bifle (500)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 10
+BaD2Bifle posts big blind 20
+Dealt to jveudlamone [Ts Kd]
+*** PRE-FLOP *** 
+jveudlamone raises 20 to 40
+NadSach79 calls 30
+BaD2Bifle folds
+*** FLOP *** [8d Kh Jd]
+NadSach79 bets 100
+jveudlamone calls 100
+*** TURN *** [8d Kh Jd][7c]
+NadSach79 checks
+jveudlamone checks
+*** RIVER *** [8d Kh Jd 7c][Tc]
+NadSach79 checks
+jveudlamone bets 75
+NadSach79 calls 75
+*** SHOW DOWN ***
+NadSach79 shows [Kc 2h] (One pair : Kings)
+jveudlamone shows [Ts Kd] (Two pairs : Kings and Tens)
+jveudlamone collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Board: [8d Kh Jd 7c Tc]
+Seat 1: jveudlamone (button) showed [Ts Kd] and won 450 with Two pairs : Kings and Tens
+Seat 2: NadSach79 (small blind) showed [Kc 2h] and lost with One pair : Kings
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2771711415956799489-2-1679168659 - Holdem no limit (10/20) - 2023/03/18 19:44:19 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (735)
+Seat 2: NadSach79 (285)
+Seat 3: BaD2Bifle (480)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 10
+jveudlamone posts big blind 20
+Dealt to jveudlamone [Js Jd]
+*** PRE-FLOP *** 
+NadSach79 calls 20
+BaD2Bifle folds
+jveudlamone raises 50 to 70
+NadSach79 calls 50
+*** FLOP *** [Qc 4d 5s]
+jveudlamone checks
+NadSach79 checks
+*** TURN *** [Qc 4d 5s][2h]
+jveudlamone bets 53
+NadSach79 folds
+jveudlamone collected 203 from pot
+*** SUMMARY ***
+Total pot 203 | No rake
+Board: [Qc 4d 5s 2h]
+Seat 1: jveudlamone (big blind) won 203
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2771711415956799489-3-1679168675 - Holdem no limit (10/20) - 2023/03/18 19:44:35 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (815)
+Seat 2: NadSach79 (215)
+Seat 3: BaD2Bifle (470)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 10
+NadSach79 posts big blind 20
+Dealt to jveudlamone [Js 2s]
+*** PRE-FLOP *** 
+BaD2Bifle raises 30 to 50
+jveudlamone folds
+NadSach79 calls 30
+*** FLOP *** [3h Qh 4s]
+NadSach79 checks
+BaD2Bifle bets 72
+NadSach79 folds
+BaD2Bifle collected 182 from pot
+*** SUMMARY ***
+Total pot 182 | No rake
+Board: [3h Qh 4s]
+Seat 3: BaD2Bifle (button) won 182
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2771711415956799489-4-1679168699 - Holdem no limit (10/20) - 2023/03/18 19:44:59 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (805)
+Seat 2: NadSach79 (165)
+Seat 3: BaD2Bifle (530)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 10
+BaD2Bifle posts big blind 20
+Dealt to jveudlamone [6c 7c]
+*** PRE-FLOP *** 
+jveudlamone raises 20 to 40
+NadSach79 calls 30
+BaD2Bifle folds
+*** FLOP *** [Kh Qs Jc]
+NadSach79 checks
+jveudlamone bets 35
+NadSach79 calls 35
+*** TURN *** [Kh Qs Jc][8h]
+NadSach79 checks
+jveudlamone checks
+*** RIVER *** [Kh Qs Jc 8h][Kc]
+NadSach79 checks
+jveudlamone bets 111
+NadSach79 folds
+jveudlamone collected 281 from pot
+*** SUMMARY ***
+Total pot 281 | No rake
+Board: [Kh Qs Jc 8h Kc]
+Seat 1: jveudlamone (button) won 281
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 2 - HandId: #2771711415956799489-5-1679168731 - Holdem no limit (15/30) - 2023/03/18 19:45:31 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (900)
+Seat 2: NadSach79 (90)
+Seat 3: BaD2Bifle (510)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 15
+jveudlamone posts big blind 30
+Dealt to jveudlamone [6c As]
+*** PRE-FLOP *** 
+NadSach79 raises 60 to 90 and is all-in
+BaD2Bifle raises 180 to 270
+jveudlamone folds
+*** FLOP *** [Th 3c 2c]
+*** TURN *** [Th 3c 2c][Qc]
+*** RIVER *** [Th 3c 2c Qc][8d]
+*** SHOW DOWN ***
+NadSach79 shows [Ad 3s] (One pair : 3)
+BaD2Bifle shows [Ah Kh] (High card : Ace)
+BaD2Bifle collected 180 from side pot 1
+NadSach79 collected 210 from main pot
+*** SUMMARY ***
+Total pot 390 | No rake
+Board: [Th 3c 2c Qc 8d]
+Seat 2: NadSach79 (button) showed [Ad 3s] and won 210 with One pair : 3
+Seat 3: BaD2Bifle (small blind) showed [Ah Kh] and won 180 with High card : Ace
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 2 - HandId: #2771711415956799489-6-1679168749 - Holdem no limit (15/30) - 2023/03/18 19:45:49 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (870)
+Seat 2: NadSach79 (210)
+Seat 3: BaD2Bifle (420)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 15
+NadSach79 posts big blind 30
+Dealt to jveudlamone [Qc 2d]
+*** PRE-FLOP *** 
+BaD2Bifle folds
+jveudlamone raises 840 to 870 and is all-in
+NadSach79 folds
+jveudlamone collected 900 from pot
+*** SUMMARY ***
+Total pot 900 | No rake
+Seat 1: jveudlamone (small blind) won 900
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 2 - HandId: #2771711415956799489-7-1679168756 - Holdem no limit (15/30) - 2023/03/18 19:45:56 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (900)
+Seat 2: NadSach79 (180)
+Seat 3: BaD2Bifle (420)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 15
+BaD2Bifle posts big blind 30
+Dealt to jveudlamone [Qc 9d]
+*** PRE-FLOP *** 
+jveudlamone folds
+NadSach79 raises 150 to 180 and is all-in
+BaD2Bifle folds
+NadSach79 collected 210 from pot
+*** SUMMARY ***
+Total pot 210 | No rake
+Seat 2: NadSach79 (small blind) won 210
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 2 - HandId: #2771711415956799489-8-1679168762 - Holdem no limit (15/30) - 2023/03/18 19:46:02 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (900)
+Seat 2: NadSach79 (210)
+Seat 3: BaD2Bifle (390)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 15
+jveudlamone posts big blind 30
+Dealt to jveudlamone [9d Tc]
+*** PRE-FLOP *** 
+NadSach79 raises 180 to 210 and is all-in
+BaD2Bifle folds
+jveudlamone folds
+NadSach79 collected 255 from pot
+*** SUMMARY ***
+Total pot 255 | No rake
+Seat 2: NadSach79 (button) won 255
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 2 - HandId: #2771711415956799489-9-1679168771 - Holdem no limit (15/30) - 2023/03/18 19:46:11 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (870)
+Seat 2: NadSach79 (255)
+Seat 3: BaD2Bifle (375)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 15
+NadSach79 posts big blind 30
+Dealt to jveudlamone [4s 8c]
+*** PRE-FLOP *** 
+BaD2Bifle folds
+jveudlamone folds
+NadSach79 collected 45 from pot
+*** SUMMARY ***
+Total pot 45 | No rake
+Seat 2: NadSach79 (big blind) won 45
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 2 - HandId: #2771711415956799489-10-1679168775 - Holdem no limit (15/30) - 2023/03/18 19:46:15 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (855)
+Seat 2: NadSach79 (270)
+Seat 3: BaD2Bifle (375)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 15
+BaD2Bifle posts big blind 30
+Dealt to jveudlamone [7c 9h]
+*** PRE-FLOP *** 
+jveudlamone folds
+NadSach79 calls 15
+BaD2Bifle checks
+*** FLOP *** [Jc Qd 9d]
+NadSach79 checks
+BaD2Bifle checks
+*** TURN *** [Jc Qd 9d][8c]
+NadSach79 checks
+BaD2Bifle bets 39
+NadSach79 folds
+BaD2Bifle collected 99 from pot
+*** SUMMARY ***
+Total pot 99 | No rake
+Board: [Jc Qd 9d 8c]
+Seat 3: BaD2Bifle (big blind) won 99
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-11-1679168811 - Holdem no limit (20/40) - 2023/03/18 19:46:51 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (855)
+Seat 2: NadSach79 (240)
+Seat 3: BaD2Bifle (405)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 20
+jveudlamone posts big blind 40
+Dealt to jveudlamone [7h 8d]
+*** PRE-FLOP *** 
+NadSach79 raises 100 to 140
+BaD2Bifle folds
+jveudlamone folds
+NadSach79 collected 200 from pot
+*** SUMMARY ***
+Total pot 200 | No rake
+Seat 2: NadSach79 (button) won 200
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-12-1679168817 - Holdem no limit (20/40) - 2023/03/18 19:46:57 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (815)
+Seat 2: NadSach79 (300)
+Seat 3: BaD2Bifle (385)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 20
+NadSach79 posts big blind 40
+Dealt to jveudlamone [6h 5d]
+*** PRE-FLOP *** 
+BaD2Bifle folds
+jveudlamone raises 40 to 80
+NadSach79 raises 220 to 300 and is all-in
+jveudlamone folds
+NadSach79 collected 380 from pot
+*** SUMMARY ***
+Total pot 380 | No rake
+Seat 2: NadSach79 (big blind) won 380
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-13-1679168824 - Holdem no limit (20/40) - 2023/03/18 19:47:04 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (735)
+Seat 2: NadSach79 (380)
+Seat 3: BaD2Bifle (385)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 20
+BaD2Bifle posts big blind 40
+Dealt to jveudlamone [9s 3s]
+*** PRE-FLOP *** 
+jveudlamone raises 40 to 80
+NadSach79 folds
+BaD2Bifle folds
+jveudlamone collected 140 from pot
+*** SUMMARY ***
+Total pot 140 | No rake
+Seat 1: jveudlamone (button) won 140
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-14-1679168831 - Holdem no limit (20/40) - 2023/03/18 19:47:11 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (795)
+Seat 2: NadSach79 (360)
+Seat 3: BaD2Bifle (345)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 20
+jveudlamone posts big blind 40
+Dealt to jveudlamone [Kh Qd]
+*** PRE-FLOP *** 
+NadSach79 calls 40
+BaD2Bifle folds
+jveudlamone checks
+*** FLOP *** [7s As 3d]
+jveudlamone checks
+NadSach79 checks
+*** TURN *** [7s As 3d][Ac]
+jveudlamone checks
+NadSach79 bets 65
+jveudlamone folds
+NadSach79 collected 165 from pot
+*** SUMMARY ***
+Total pot 165 | No rake
+Board: [7s As 3d Ac]
+Seat 2: NadSach79 (button) won 165
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-15-1679168852 - Holdem no limit (20/40) - 2023/03/18 19:47:32 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (755)
+Seat 2: NadSach79 (420)
+Seat 3: BaD2Bifle (325)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 20
+NadSach79 posts big blind 40
+Dealt to jveudlamone [3c Qc]
+*** PRE-FLOP *** 
+BaD2Bifle folds
+jveudlamone calls 20
+NadSach79 checks
+*** FLOP *** [8d Ks Ah]
+jveudlamone checks
+NadSach79 checks
+*** TURN *** [8d Ks Ah][Qs]
+jveudlamone checks
+NadSach79 checks
+*** RIVER *** [8d Ks Ah Qs][2s]
+jveudlamone checks
+NadSach79 checks
+*** SHOW DOWN ***
+NadSach79 shows [5s 2h] (One pair : 2)
+jveudlamone shows [3c Qc] (One pair : Queens)
+jveudlamone collected 80 from pot
+*** SUMMARY ***
+Total pot 80 | No rake
+Board: [8d Ks Ah Qs 2s]
+Seat 1: jveudlamone (small blind) showed [3c Qc] and won 80 with One pair : Queens
+Seat 2: NadSach79 (big blind) showed [5s 2h] and lost with One pair : 2
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-16-1679168880 - Holdem no limit (20/40) - 2023/03/18 19:48:00 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (795)
+Seat 2: NadSach79 (380)
+Seat 3: BaD2Bifle (325)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 20
+BaD2Bifle posts big blind 40
+Dealt to jveudlamone [4c Jc]
+*** PRE-FLOP *** 
+jveudlamone folds
+NadSach79 raises 340 to 380 and is all-in
+BaD2Bifle folds
+NadSach79 collected 420 from pot
+*** SUMMARY ***
+Total pot 420 | No rake
+Seat 2: NadSach79 (small blind) won 420
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-17-1679168886 - Holdem no limit (20/40) - 2023/03/18 19:48:06 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (795)
+Seat 2: NadSach79 (420)
+Seat 3: BaD2Bifle (285)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 20
+jveudlamone posts big blind 40
+Dealt to jveudlamone [4s 7h]
+*** PRE-FLOP *** 
+NadSach79 folds
+BaD2Bifle raises 245 to 285 and is all-in
+jveudlamone folds
+BaD2Bifle collected 325 from pot
+*** SUMMARY ***
+Total pot 325 | No rake
+Seat 3: BaD2Bifle (small blind) won 325
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 3 - HandId: #2771711415956799489-18-1679168893 - Holdem no limit (20/40) - 2023/03/18 19:48:13 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (755)
+Seat 2: NadSach79 (420)
+Seat 3: BaD2Bifle (325)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 20
+NadSach79 posts big blind 40
+Dealt to jveudlamone [7d 8c]
+*** PRE-FLOP *** 
+BaD2Bifle folds
+jveudlamone raises 40 to 80
+NadSach79 calls 40
+*** FLOP *** [7s Qd 6s]
+jveudlamone checks
+NadSach79 checks
+*** TURN *** [7s Qd 6s][4h]
+jveudlamone bets 56
+NadSach79 calls 56
+*** RIVER *** [7s Qd 6s 4h][9h]
+jveudlamone checks
+NadSach79 checks
+*** SHOW DOWN ***
+jveudlamone shows [7d 8c] (One pair : 7)
+NadSach79 shows [8d 9c] (One pair : 9)
+NadSach79 collected 272 from pot
+*** SUMMARY ***
+Total pot 272 | No rake
+Board: [7s Qd 6s 4h 9h]
+Seat 1: jveudlamone (small blind) showed [7d 8c] and lost with One pair : 7
+Seat 2: NadSach79 (big blind) showed [8d 9c] and won 272 with One pair : 9
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 4 - HandId: #2771711415956799489-19-1679168910 - Holdem no limit (30/60) - 2023/03/18 19:48:30 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (619)
+Seat 2: NadSach79 (556)
+Seat 3: BaD2Bifle (325)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 30
+BaD2Bifle posts big blind 60
+Dealt to jveudlamone [8c 7d]
+*** PRE-FLOP *** 
+jveudlamone folds
+NadSach79 calls 30
+BaD2Bifle raises 265 to 325 and is all-in
+NadSach79 calls 265
+*** FLOP *** [Qh Jc 6c]
+*** TURN *** [Qh Jc 6c][9h]
+*** RIVER *** [Qh Jc 6c 9h][8h]
+*** SHOW DOWN ***
+NadSach79 shows [Kh Qd] (One pair : Queens)
+BaD2Bifle shows [Kc Ts] (Straight King high)
+BaD2Bifle collected 650 from pot
+*** SUMMARY ***
+Total pot 650 | No rake
+Board: [Qh Jc 6c 9h 8h]
+Seat 2: NadSach79 (small blind) showed [Kh Qd] and lost with One pair : Queens
+Seat 3: BaD2Bifle (big blind) showed [Kc Ts] and won 650 with Straight King high
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 4 - HandId: #2771711415956799489-20-1679168928 - Holdem no limit (30/60) - 2023/03/18 19:48:48 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (619)
+Seat 2: NadSach79 (231)
+Seat 3: BaD2Bifle (650)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 30
+jveudlamone posts big blind 60
+Dealt to jveudlamone [Jd 9s]
+*** PRE-FLOP *** 
+NadSach79 raises 171 to 231 and is all-in
+BaD2Bifle raises 419 to 650 and is all-in
+jveudlamone folds
+*** FLOP *** [8s Ad 6d]
+*** TURN *** [8s Ad 6d][4h]
+*** RIVER *** [8s Ad 6d 4h][2c]
+*** SHOW DOWN ***
+NadSach79 shows [8d 8c] (Trips of 8)
+BaD2Bifle shows [Ac 7s] (One pair : Aces)
+BaD2Bifle collected 419 from side pot 1
+NadSach79 collected 522 from main pot
+*** SUMMARY ***
+Total pot 941 | No rake
+Board: [8s Ad 6d 4h 2c]
+Seat 2: NadSach79 (button) showed [8d 8c] and won 522 with Trips of 8
+Seat 3: BaD2Bifle (small blind) showed [Ac 7s] and won 419 with One pair : Aces
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 4 - HandId: #2771711415956799489-21-1679168942 - Holdem no limit (30/60) - 2023/03/18 19:49:02 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (559)
+Seat 2: NadSach79 (522)
+Seat 3: BaD2Bifle (419)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 30
+NadSach79 posts big blind 60
+Dealt to jveudlamone [4s Ac]
+*** PRE-FLOP *** 
+BaD2Bifle folds
+jveudlamone raises 499 to 559 and is all-in
+NadSach79 calls 462 and is all-in
+*** FLOP *** [4d 8h 5d]
+*** TURN *** [4d 8h 5d][5h]
+*** RIVER *** [4d 8h 5d 5h][Qd]
+*** SHOW DOWN ***
+jveudlamone shows [4s Ac] (Two pairs : 5 and 4)
+NadSach79 shows [Kh Kd] (Two pairs : Kings and 5)
+NadSach79 collected 1044 from main pot
+jveudlamone collected 37 from side pot 1
+*** SUMMARY ***
+Total pot 1081 | No rake
+Board: [4d 8h 5d 5h Qd]
+Seat 1: jveudlamone (small blind) showed [4s Ac] and won 37 with Two pairs : 5 and 4
+Seat 2: NadSach79 (big blind) showed [Kh Kd] and won 1044 with Two pairs : Kings and 5
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 4 - HandId: #2771711415956799489-22-1679168970 - Holdem no limit (30/60) - 2023/03/18 19:49:30 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (37)
+Seat 2: NadSach79 (1044)
+Seat 3: BaD2Bifle (419)
+*** ANTE/BLINDS ***
+NadSach79 posts small blind 30
+BaD2Bifle posts big blind 60
+Dealt to jveudlamone [7d 9s]
+*** PRE-FLOP *** 
+jveudlamone folds
+NadSach79 raises 984 to 1044 and is all-in
+BaD2Bifle folds
+NadSach79 collected 1104 from pot
+*** SUMMARY ***
+Total pot 1104 | No rake
+Seat 2: NadSach79 (small blind) won 1104
+
+
+Winamax Poker - Tournament "Expresso" buyIn: 1.86€ + 0.14€ level: 4 - HandId: #2771711415956799489-23-1679168978 - Holdem no limit (30/60) - 2023/03/18 19:49:38 UTC
+Table: 'Expresso(645339353)#0' 3-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (37)
+Seat 2: NadSach79 (1104)
+Seat 3: BaD2Bifle (359)
+*** ANTE/BLINDS ***
+BaD2Bifle posts small blind 30
+jveudlamone posts big blind 37 and is all-in
+Dealt to jveudlamone [7h 5c]
+*** PRE-FLOP *** 
+NadSach79 calls 60
+BaD2Bifle calls 30
+*** FLOP *** [9h Tc 4c]
+BaD2Bifle checks
+NadSach79 checks
+*** TURN *** [9h Tc 4c][Ts]
+BaD2Bifle bets 60
+NadSach79 calls 60
+*** RIVER *** [9h Tc 4c Ts][As]
+BaD2Bifle checks
+NadSach79 checks
+*** SHOW DOWN ***
+jveudlamone shows [7h 5c] (One pair : Tens)
+NadSach79 shows [Qh 7d] (One pair : Tens)
+BaD2Bifle shows [2d 2h] (Two pairs : Tens and 2)
+BaD2Bifle collected 277 from pot
+*** SUMMARY ***
+Total pot 277 | No rake
+Board: [9h Tc 4c Ts As]
+Seat 1: jveudlamone (big blind) showed [7h 5c] and lost with One pair : Tens
+Seat 2: NadSach79 (button) showed [Qh 7d] and lost with One pair : Tens
+Seat 3: BaD2Bifle (small blind) showed [2d 2h] and won 277 with Two pairs : Tens and 2
+
+
