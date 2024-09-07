@@ -10,6 +10,9 @@ import fr.eurekapoker.parties.domaine.poker.RoomPoker;
 import javax.swing.text.html.parser.Parser;
 
 public class ParserWinamax extends ParserTxt {
+    public ParserWinamax(String[] lignesFichier, InterpreteurWinamax interpreteurWinamax, ExtracteurWinamax extracteurWinamax) {
+        super(lignesFichier, interpreteurWinamax, extracteurWinamax);
+    }
     public ParserWinamax(String[] lignesFichier) {
         super(lignesFichier, new InterpreteurWinamax(), new ExtracteurWinamax());
     }

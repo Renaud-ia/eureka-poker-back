@@ -4,35 +4,29 @@ import fr.eurekapoker.parties.domaine.poker.*;
 
 public class ExtracteurWinamax implements ExtracteurLigne {
     @Override
-    public FormatPoker extraireFormat(String ligne) {
-        return null;
-    }
-
-    @Override
     public MainPoker extraireMain(String ligne) {
         return null;
     }
-
+    @Override
+    public FormatPoker extraireFormat(String ligne) {
+        return null;
+    }
     @Override
     public JoueurPoker extraireJoueur(String ligne) {
         return null;
     }
-
     @Override
     public TourPoker extraireTour(String ligne) {
         return null;
     }
-
     @Override
     public ActionPoker extraireAction(String s) {
         return null;
     }
-
     @Override
     public ResultatJoueur extraireResultat(String ligne) {
         return null;
     }
-
     @Override
     public BlindeOuAnte extraireBlindeOuAnte(String s) {
         return null;

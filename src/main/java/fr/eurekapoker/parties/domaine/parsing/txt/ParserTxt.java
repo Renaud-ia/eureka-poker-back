@@ -56,19 +56,19 @@ public abstract class ParserTxt {
 
     private void ajouterJoueur(int indexLigne) {
         JoueurPoker joueurPoker = extracteurLigne.extraireJoueur(lignesFichier[indexLigne]);
-        MainPoker mainActuelle = mainsExtraites.getLast();
+        MainPoker mainActuelle = obtMains().getLast();
         mainActuelle.ajouterJoueur(joueurPoker);
     }
 
     private void creerNouveauTour(int indexLigne) {
         TourPoker tourPoker = extracteurLigne.extraireTour(lignesFichier[indexLigne]);
-        MainPoker mainActuelle = mainsExtraites.getLast();
+        MainPoker mainActuelle = obtMains().getLast();
         mainActuelle.ajouterTour(tourPoker);
     }
 
     private void ajouterAction(int indexLigne) {
         ActionPoker actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
-        TourPoker tourActuel = mainsExtraites.getLast().obtTours().getLast();
+        TourPoker tourActuel = obtMains().getLast().obtTours().getLast();
         tourActuel.ajouterAction(actionPoker);
     }
 
@@ -76,7 +76,7 @@ public abstract class ParserTxt {
         ResultatJoueur resultatJoueur = extracteurLigne.extraireResultat(lignesFichier[indexLigne]);
         String nomJoueur = resultatJoueur.getNomJoueur();
 
-        MainPoker mainActuelle = mainsExtraites.getLast();
+        MainPoker mainActuelle = obtMains().getLast();
         JoueurPoker joueurPoker = retrouverJoueurParNom(mainActuelle, nomJoueur);
 
         joueurPoker.ajouterResultat(resultatJoueur);
@@ -92,7 +92,7 @@ public abstract class ParserTxt {
 
     private void ajouterBlindeOuAnte(int indexLigne) throws ErreurLectureFichier {
         BlindeOuAnte blindeOuAnte = extracteurLigne.extraireBlindeOuAnte(lignesFichier[indexLigne]);
-        MainPoker mainActuelle = mainsExtraites.getLast();
+        MainPoker mainActuelle = obtMains().getLast();
         JoueurPoker joueurPoker = retrouverJoueurParNom(mainActuelle, blindeOuAnte.getNomJoueur());
 
         if (blindeOuAnte.isBlinde()) {
