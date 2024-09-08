@@ -1,9 +1,7 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
-import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
-import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
 import fr.eurekapoker.parties.domaine.poker.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -78,7 +76,7 @@ public class ParserWinamaxTest {
     void nouvelleMainAppelleBonneMethodeExtracteur() throws ErreurImport {
         when(interpreteurWinamax.estNouvelleMain()).thenReturn(Boolean.TRUE);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireMain(lignesFichier[0]);
     }
 
@@ -86,7 +84,7 @@ public class ParserWinamaxTest {
     void infosTableAppelleBonneMethodeExtracteur() throws ErreurImport {
         when(interpreteurWinamax.estFormat()).thenReturn(Boolean.TRUE);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireFormat(lignesFichier[0]);
     }
 
@@ -94,7 +92,7 @@ public class ParserWinamaxTest {
     void ligneJoueurAppelleBonneMethodeExtracteur() throws ErreurImport {
         when(interpreteurWinamax.estJoueur()).thenReturn(Boolean.TRUE);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireJoueur(lignesFichier[0]);
     }
 
@@ -104,7 +102,7 @@ public class ParserWinamaxTest {
         when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
         when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireBlindeOuAnte(lignesFichier[0]);
     }
 
@@ -114,7 +112,7 @@ public class ParserWinamaxTest {
         when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
         when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireAction(lignesFichier[0]);
     }
 
@@ -124,7 +122,7 @@ public class ParserWinamaxTest {
         when(extracteurWinamax.extraireResultat(lignesFichier[0])).thenReturn(resultatJoueurMock);
         when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireResultat(lignesFichier[0]);
     }
 
@@ -132,7 +130,7 @@ public class ParserWinamaxTest {
     void ligneSansInfoNappellePasExtracteur() throws ErreurImport {
         when(interpreteurWinamax.ligneSansInfo()).thenReturn(Boolean.TRUE);
 
-        parserWinamax.extraireMains();
+        parserWinamax.lancerImport();
         verifyNoInteractions(extracteurWinamax);
     }
 

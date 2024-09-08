@@ -2,32 +2,35 @@ package fr.eurekapoker.parties.domaine.parsing.txt;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
+import fr.eurekapoker.parties.domaine.parsing.ParserModele;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.poker.*;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
-public abstract class ParserTxt {
+public abstract class ParserTxt extends ParserModele {
     protected final String[] lignesFichier;
-    private final List<MainPoker> mainsExtraites;
     private final InterpreteurLigne interpreteurLigne;
     private final ExtracteurLigne extracteurLigne;
-    private FormatPoker formatPoker;
+
     public ParserTxt(String[] lignesFichier,
                      InterpreteurLigne interpreteurLigne,
                      ExtracteurLigne extracteurLigne) {
+        super();
         this.lignesFichier = lignesFichier;
-        this.mainsExtraites = new ArrayList<>();
         this.interpreteurLigne = interpreteurLigne;
         this.extracteurLigne = extracteurLigne;
     }
-    public void extraireMains() throws ErreurImport {
+
+    @Override
+    protected void extraireMains() throws ErreurImport {
         for (int indexLigne = 0; indexLigne < lignesFichier.length; indexLigne++) {
             extraireLigne(indexLigne);
         }
+
+        calculerLaValueDesActions();
     }
 
     private void extraireLigne(int indexLigne) throws ErreurImport {
@@ -45,34 +48,33 @@ public abstract class ParserTxt {
         else if (interpreteurLigne.estResultat()) ajouterResultat(indexLigne);
     }
 
-    private void extraireFormat(int indexLigne) {
+    private void extraireFormat(int indexLigne) throws ErreurRegex {
         this.formatPoker =  extracteurLigne.extraireFormat(lignesFichier[indexLigne]);
     }
 
-    private void creerNouvelleMain(int indexLigne) {
+    private void creerNouvelleMain(int indexLigne) throws ErreurRegex {
         MainPoker mainPoker = extracteurLigne.extraireMain(lignesFichier[indexLigne]);
         this.mainsExtraites.add(mainPoker);
     }
 
-    private void ajouterJoueur(int indexLigne) {
+    private void ajouterJoueur(int indexLigne) throws ErreurRegex {
         JoueurPoker joueurPoker = extracteurLigne.extraireJoueur(lignesFichier[indexLigne]);
         MainPoker mainActuelle = obtMains().getLast();
         mainActuelle.ajouterJoueur(joueurPoker);
     }
 
-    private void creerNouveauTour(int indexLigne) {
+    private void creerNouveauTour(int indexLigne) throws ErreurRegex {
         TourPoker tourPoker = extracteurLigne.extraireTour(lignesFichier[indexLigne]);
         MainPoker mainActuelle = obtMains().getLast();
         mainActuelle.ajouterTour(tourPoker);
     }
 
-    private void ajouterAction(int indexLigne) {
+    private void ajouterAction(int indexLigne) throws ErreurRegex {
         ActionPoker actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
-        TourPoker tourActuel = obtMains().getLast().obtTours().getLast();
-        tourActuel.ajouterAction(actionPoker);
+        this.ajouterActionAvecMontantDejaInvesti(actionPoker);
     }
 
-    private void ajouterResultat(int indexLigne) throws ErreurLectureFichier {
+    private void ajouterResultat(int indexLigne) throws ErreurLectureFichier, ErreurRegex {
         ResultatJoueur resultatJoueur = extracteurLigne.extraireResultat(lignesFichier[indexLigne]);
         String nomJoueur = resultatJoueur.getNomJoueur();
 
@@ -90,7 +92,7 @@ public abstract class ParserTxt {
         throw new ErreurLectureFichier("Le joueur n'a pas été trouvée");
     }
 
-    private void ajouterBlindeOuAnte(int indexLigne) throws ErreurLectureFichier {
+    private void ajouterBlindeOuAnte(int indexLigne) throws ErreurLectureFichier, ErreurRegex {
         BlindeOuAnte blindeOuAnte = extracteurLigne.extraireBlindeOuAnte(lignesFichier[indexLigne]);
         MainPoker mainActuelle = obtMains().getLast();
         JoueurPoker joueurPoker = retrouverJoueurParNom(mainActuelle, blindeOuAnte.getNomJoueur());
@@ -104,15 +106,4 @@ public abstract class ParserTxt {
         }
     }
 
-    public List<MainPoker> obtMains() {
-        return mainsExtraites;
-    }
-
-    public FormatPoker obtFormatPoker() throws ErreurLectureFichier {
-        if (formatPoker == null) throw new ErreurLectureFichier("Le format n'a pas été récupéré");
-        return formatPoker;
-    }
-
-    public abstract boolean peutLireFichier();
-    public abstract RoomPoker obtRoomPoker();
 }
