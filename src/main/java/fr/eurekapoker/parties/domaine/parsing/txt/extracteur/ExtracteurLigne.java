@@ -12,7 +12,7 @@ public interface ExtracteurLigne {
 
     TourPoker extraireTour(String ligne) throws ErreurRegex;
 
-    ActionPoker extraireAction(String ligne) throws ErreurRegex;
+    ActionPokerJoueur extraireAction(String ligne) throws ErreurRegex;
 
     ResultatJoueur extraireResultat(String ligne) throws ErreurRegex;
 
