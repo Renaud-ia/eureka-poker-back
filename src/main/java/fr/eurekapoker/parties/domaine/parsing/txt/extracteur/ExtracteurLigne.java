@@ -1,16 +1,20 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
+import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosMain;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosTable;
 import fr.eurekapoker.parties.domaine.poker.*;
 
+import java.util.List;
+
 public interface ExtracteurLigne {
-    // todo
-    FormatPoker extraireFormat(String ligne) throws ErreurRegex;
-    MainPoker extraireMain(String ligne) throws ErreurRegex;
+    InfosTable extraireInfosTable(String ligne) throws ErreurRegex;
+    InfosMain extraireInfosMain(String ligne) throws ErreurImport;
 
-    JoueurPoker extraireJoueur(String ligne) throws ErreurRegex;
+    StackJoueur extraireStackJoueur(String ligne) throws ErreurRegex;
 
-    TourPoker extraireTour(String ligne) throws ErreurRegex;
+    List<CartePoker> extraireBoardTour(String ligne) throws ErreurRegex;
 
     ActionPokerJoueur extraireAction(String ligne) throws ErreurRegex;
 

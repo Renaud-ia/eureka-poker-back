@@ -11,7 +11,7 @@ public class BuilderDomainServicesImport {
     }
 
     DomaineServiceImport obtService(File fichier) {
-        //todo en vérifiant le type qui sera fourni
+        //todo en vérifiant le type d'entrée qui sera fourni
         return null;
     }
 }

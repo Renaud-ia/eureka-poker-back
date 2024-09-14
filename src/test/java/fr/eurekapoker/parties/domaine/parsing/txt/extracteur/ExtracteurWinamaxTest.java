@@ -1,13 +1,17 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
+import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
-import fr.eurekapoker.parties.domaine.poker.ActionPoker;
-import fr.eurekapoker.parties.domaine.poker.ActionPokerJoueur;
-import fr.eurekapoker.parties.domaine.poker.JoueurPoker;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosMainWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosTableWinamax;
+import fr.eurekapoker.parties.domaine.poker.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -119,9 +123,310 @@ public class ExtracteurWinamaxTest {
     @Test
     void doitExtraireStackJoueurCashGame() throws ErreurRegex {
         String ligne = "Seat 3: Nakata80 (2.12€)";
-        // todo changer en Stack Joueur
-        JoueurPoker joueurPoker = extracteurWinamax.extraireJoueur(ligne);
+        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("Nakata80", stackJoueur.obtJoueur().obtNom());
+        BigDecimal expectedValue = new BigDecimal("2.12");
+        assertEquals(0, expectedValue.compareTo(stackJoueur.obtStack()));
+        assertFalse(stackJoueur.aBounty());
+    }
+
+    @Test
+    void doitExtraireStackJoueurExpresso() throws ErreurRegex {
+        String ligne = "Seat 2: wmx-i5o0yy6 (500)";
+        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("wmx-i5o0yy6", stackJoueur.obtJoueur().obtNom());
+        BigDecimal expectedValue = new BigDecimal("500");
+        assertEquals(0, expectedValue.compareTo(stackJoueur.obtStack()));
+        assertFalse(stackJoueur.aBounty());
+    }
+
+    @Test
+    void doitExtraireStackJoueurAvecBountyMtt() throws ErreurRegex {
+        String ligne = "Seat 6: KABB.99 (20000, 1.80€ bounty)";
+        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("KABB.99", stackJoueur.obtJoueur().obtNom());
+        BigDecimal stackAttendu = new BigDecimal("20000");
+        assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
+        assertTrue(stackJoueur.aBounty());
+        BigDecimal bountyAttendu = new BigDecimal("1.8");
+        assertEquals(0, bountyAttendu.compareTo(stackJoueur.obtBounty()));
+    }
+
+    @Test
+    void doitExtraireStackJoueurAvecGrosBountyMtt() throws ErreurRegex {
+        String ligne = "Seat 5: menphiscom (18193515, 11.22€ bounty)";
+        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("menphiscom", stackJoueur.obtJoueur().obtNom());
+        BigDecimal stackAttendu = new BigDecimal("18193515");
+        assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
+        assertTrue(stackJoueur.aBounty());
+        BigDecimal bountyAttendu = new BigDecimal("11.22");
+        assertEquals(0, bountyAttendu.compareTo(stackJoueur.obtBounty()));
+    }
+
+    @Test
+    void doitExtraireBountyNomJoueurAvecEspace() throws ErreurRegex {
+        String ligne = "Seat 1: Bastos Papin (548787, 4.26€ bounty)";
+        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("Bastos Papin", stackJoueur.obtJoueur().obtNom());
+        BigDecimal stackAttendu = new BigDecimal("548787");
+        assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
+        assertTrue(stackJoueur.aBounty());
+        BigDecimal bountyAttendu = new BigDecimal("4.26");
+        assertEquals(0, bountyAttendu.compareTo(stackJoueur.obtBounty()));
+    }
+
+    // TEST EXTRAIRE INFOS MAIN
+
+    @Test
+    void doitExtraireInfosMainExpresso() throws ErreurImport {
+        String ligne = "Winamax Poker - Tournament \"Expresso\" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2563429635522035713-1-1667484424 - Holdem no limit (10/20) - 2022/11/03 14:07:04 UTC\n";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.SPIN, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2022, 11, 3, 14, 7, 4);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("2");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(2563429635522035713L, infosMainWinamax.obtNumeroTable());
+        assertEquals(1667484424L, infosMainWinamax.obtIdentifiantMain());
+        assertEquals(0f, infosMainWinamax.obtAnte());
+        BigDecimal rakeAttendu = new BigDecimal("0.07");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+    }
+
+    @Test
+    void doitExtraireInfosMainTableCashGame() throws ErreurImport {
+        String ligne = "Winamax Poker - Tournament \"Expresso\" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2563429635522035713-1-1667484424 - Holdem no limit (10/20) - 2022/11/03 14:07:04 UTC\n";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.SPIN, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2022, 11, 3, 14, 7, 4);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("2");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(2563429635522035713L, infosMainWinamax.obtNumeroTable());
+        assertEquals(1667484424L, infosMainWinamax.obtIdentifiantMain());
+        assertEquals(0f, infosMainWinamax.obtAnte());
+        BigDecimal rakeAttendu = new BigDecimal("0.07");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+    }
+
+    @Test
+    void doitExtraireInfosMainTableMtt() throws ErreurImport {
+        String ligne = "Winamax Poker - Tournament \"WESTERN\" buyIn: 0.90€ + 0.10€ level: 1 - HandId: #2536694125529399325-1-1668368706 - Holdem no limit (25/100/200) - 2022/11/13 19:45:06 UTC\n";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.MTT, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2022, 11, 13, 19, 45, 6);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("1");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(2536694125529399325L, infosMainWinamax.obtNumeroTable());
+        assertEquals(1668368706, infosMainWinamax.obtIdentifiantMain());
+        assertEquals(25f, infosMainWinamax.obtAnte());
+        BigDecimal rakeAttendu = new BigDecimal("0.10");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+    }
+
+    @Test
+    void doitExtraireInfosMainCashGame() throws ErreurImport {
+        String ligne = "Winamax Poker - CashGame - HandId: #15638288-29-1612884230 - Holdem no limit (0.01€/0.02€) - 2021/02/09 15:23:50 UTC";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.CASH_GAME, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2021, 2, 9, 15, 23, 50);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("0.02");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(15638288, infosMainWinamax.obtNumeroTable());
+        assertEquals(1612884230, infosMainWinamax.obtIdentifiantMain());
+        assertEquals(0f, infosMainWinamax.obtAnte());
+        BigDecimal rakeAttendu = new BigDecimal("0.0525");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+    }
+
+    @Test
+    void doitExtraireInfosMainShortTrack() throws ErreurImport {
+        String ligne = "Winamax Poker - CashGame - HandId: #15453614-1031-1609705548 - Holdem no limit (0.01€/0.02€) - 2021/01/03 20:25:48 UTC";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.CASH_GAME, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2021, 1, 3, 20, 25, 48);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("0.02");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(15453614, infosMainWinamax.obtNumeroTable());
+        assertEquals(1609705548, infosMainWinamax.obtIdentifiantMain());
+        assertEquals(0f, infosMainWinamax.obtAnte());
+        BigDecimal rakeAttendu = new BigDecimal("0.0525");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
 
 
+    // TESTS EXTRACTION INFOS TABLE
+
+    @Test
+    void extraitInfosTableExpresso() throws ErreurRegex {
+        String ligne = "Table: 'Expresso(434726065)#0' 3-max (real money) Seat #1 is the button";
+        InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
+        assertEquals("Expresso(434726065)#0", infosTable.obtNomTable());
+        assertEquals(3, infosTable.obtNombreJoueurs());
+    }
+
+    @Test
+    void extraitInfosTableMtt() throws ErreurRegex {
+        String ligne = "Table: 'Kill The Fish(429861217)#047' 6-max (real money) Seat #2 is the button";
+        InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
+        assertEquals("Kill The Fish(429861217)#047", infosTable.obtNomTable());
+        assertEquals(6, infosTable.obtNombreJoueurs());
+    }
+
+    @Test
+    void extraitInfosTableCashGame() throws ErreurRegex {
+        String ligne = "Table: 'Vienna 03' 5-max (real money) Seat #2 is the button";
+        InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
+        assertEquals("Vienna 03", infosTable.obtNomTable());
+        assertEquals(5, infosTable.obtNombreJoueurs());
+    }
+
+    // TESTS EXTRACTION TOUR
+
+    @Test
+    void extraitCartesFlop() throws ErreurRegex {
+        String ligne = "*** FLOP *** [Js 3h Ad]";
+        List<CartePoker> cartesExtraites = extracteurWinamax.extraireBoardTour(ligne);
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('J', 's'));
+        cartesAttendues.add(new CartePoker('3', 'h'));
+        cartesAttendues.add(new CartePoker('A', 'd'));
+
+        assertEquals(cartesAttendues, cartesExtraites);
+    }
+
+    @Test
+    void extraitCartesTurn() throws ErreurRegex {
+        String ligne = "*** TURN *** [8h 3d 7c][7d]";
+        List<CartePoker> cartesExtraites = extracteurWinamax.extraireBoardTour(ligne);
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('8', 'h'));
+        cartesAttendues.add(new CartePoker('3', 'd'));
+        cartesAttendues.add(new CartePoker('7', 'c'));
+        cartesAttendues.add(new CartePoker('7', 'd'));
+
+        assertEquals(cartesAttendues, cartesExtraites);
+    }
+
+    @Test
+    void extraitCartesRiver() throws ErreurRegex {
+        String ligne = "*** RIVER *** [9h Tc Ad 9s][6s]";
+        List<CartePoker> cartesExtraites = extracteurWinamax.extraireBoardTour(ligne);
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('9', 'h'));
+        cartesAttendues.add(new CartePoker('T', 'c'));
+        cartesAttendues.add(new CartePoker('A', 'd'));
+        cartesAttendues.add(new CartePoker('9', 's'));
+        cartesAttendues.add(new CartePoker('6', 's'));
+
+        assertEquals(cartesAttendues, cartesExtraites);
+    }
+
+    // TESTS EXTRAIRE BLINDES OU ANTE
+
+    @Test
+    void doitExtraireBlinde() throws ErreurRegex {
+        String ligne = "PastilleRosE posts small blind 10";
+        BlindeOuAnte blindeOuAnte = extracteurWinamax.extraireBlindeOuAnte(ligne);
+        assertTrue(blindeOuAnte.isBlinde());
+        assertFalse(blindeOuAnte.isAnte());
+        BigDecimal blindeAttendue = new BigDecimal("10");
+        assertEquals("PastilleRosE", blindeOuAnte.getNomJoueur());
+        assertEquals(0, blindeAttendue.compareTo(blindeOuAnte.obtMontant()));
+    }
+
+    @Test
+    void doitExtraireBlindeEuro() throws ErreurRegex {
+        String ligne = "RendsL4rgent posts big blind 0.02€";
+        BlindeOuAnte blindeOuAnte = extracteurWinamax.extraireBlindeOuAnte(ligne);
+        assertTrue(blindeOuAnte.isBlinde());
+        assertFalse(blindeOuAnte.isAnte());
+        BigDecimal blindeAttendue = new BigDecimal("0.02");
+        assertEquals("RendsL4rgent", blindeOuAnte.getNomJoueur());
+        assertEquals(0, blindeAttendue.compareTo(blindeOuAnte.obtMontant()));
+    }
+
+    @Test
+    void doitExtraireAnte() throws ErreurRegex {
+        String ligne = "K-riet zooo posts ante 25";
+        BlindeOuAnte blindeOuAnte = extracteurWinamax.extraireBlindeOuAnte(ligne);
+        assertFalse(blindeOuAnte.isBlinde());
+        assertTrue(blindeOuAnte.isAnte());
+        BigDecimal blindeAttendue = new BigDecimal("25");
+        assertEquals("K-riet zooo", blindeOuAnte.getNomJoueur());
+        assertEquals(0, blindeAttendue.compareTo(blindeOuAnte.obtMontant()));
+    }
+
+
+    // TESTS EXTRACTION RESULTATS
+    @Test
+    void doitExtraireResultatJoueur() throws ErreurRegex {
+        String ligne = "Seat 4: ALAVERDURE (big blind) won 425";
+        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        assertEquals("ALAVERDURE", resultatJoueur.getNomJoueur());
+        BigDecimal montantAttendu = new BigDecimal("425");
+        assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        assertEquals(cartesAttendues, resultatJoueur.obtCartesJoueur());
+    }
+
+    @Test
+    void doitExtraireResultatJoueurAvecSeat() throws ErreurRegex {
+        String ligne = "Seat 2: RendsL4rgent (small blind) showed [4h 4s] and lost with Quads of 8";
+        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        assertEquals("RendsL4rgent", resultatJoueur.getNomJoueur());
+        BigDecimal montantAttendu = new BigDecimal("0");
+        assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('4', 'h'));
+        cartesAttendues.add(new CartePoker('4', 's'));
+        assertEquals(cartesAttendues, resultatJoueur.obtCartesJoueur());
+    }
+
+    @Test
+    void doitExtraireResultatJoueurAvecCartes () throws ErreurRegex {
+        String ligne = "Seat 6: Cello33 showed [5h 5c] and won 11553 with Quads of 8";
+        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        assertEquals("Cello33", resultatJoueur.getNomJoueur());
+        BigDecimal montantAttendu = new BigDecimal("11553");
+        assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('5', 'h'));
+        cartesAttendues.add(new CartePoker('5', 'c'));
+        assertEquals(cartesAttendues, resultatJoueur.obtCartesJoueur());
+    }
+
+    @Test
+    void doitExtraireResultatJoueurEnEuros() throws ErreurRegex {
+        String ligne = "Seat 1: Ivenwicht (big blind) showed [Kd Ah] and won 1.90€ with High card : Ace";
+        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        assertEquals("Ivenwicht", resultatJoueur.getNomJoueur());
+        BigDecimal montantAttendu = new BigDecimal("1.9");
+        assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('K', 'd'));
+        cartesAttendues.add(new CartePoker('A', 'h'));
+        assertEquals(cartesAttendues, resultatJoueur.obtCartesJoueur());
+    }
+
+    // TESTS EXTRAIRE CARTES HERO
+
+    @Test
+    void doitExtraireCartesHero() throws ErreurRegex {
+        String ligne = "Dealt to RendsL4rgent [3h Td]";
+        List<CartePoker> cartes = extracteurWinamax.extraireCartes(ligne);
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('3', 'h'));
+        cartesAttendues.add(new CartePoker('T', 'd'));
+        assertEquals(cartesAttendues, cartes);
+    }
 }

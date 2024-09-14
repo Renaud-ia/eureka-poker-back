@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosMainWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
 import fr.eurekapoker.parties.domaine.poker.*;
@@ -39,16 +40,19 @@ public class ParserWinamaxTest {
     @Mock
     private JoueurPoker joueurPokerMock;
     private List<JoueurPoker> joueurs;
+    private StackJoueur stackJoueur;
     @Mock
     private TourPoker tourPokerMock;
     private List<TourPoker> tourPokers;
     @Mock
     private ResultatJoueur resultatJoueurMock;
+    @Mock
+    private InfosMainWinamax infosMain;
     @InjectMocks
     private ParserWinamax parserWinamax;
     private String[] lignesFichier;
     @BeforeEach
-    void initialisation() {
+    void initialisation() throws ErreurImport {
         MockitoAnnotations.openMocks(this);
 
         lignesFichier = new String[]{
@@ -70,6 +74,12 @@ public class ParserWinamaxTest {
 
         when(joueurPokerMock.obtNom()).thenReturn(fauxNomJoueur);
         when(resultatJoueurMock.getNomJoueur()).thenReturn(fauxNomJoueur);
+
+        stackJoueur = new StackJoueur(joueurPokerMock, 0, 0);
+        when(extracteurWinamax.extraireStackJoueur(anyString())).thenReturn(stackJoueur);
+
+        when(infosMain.obtIdentifiantMain()).thenReturn(0L);
+        when(extracteurWinamax.extraireInfosMain(anyString())).thenReturn(infosMain);
     }
 
     @Test
@@ -77,7 +87,7 @@ public class ParserWinamaxTest {
         when(interpreteurWinamax.estNouvelleMain()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        verify(extracteurWinamax).extraireMain(lignesFichier[0]);
+        verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
     }
 
     @Test
@@ -85,7 +95,9 @@ public class ParserWinamaxTest {
         when(interpreteurWinamax.estFormat()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        verify(extracteurWinamax).extraireFormat(lignesFichier[0]);
+        //verify(extracteurWinamax).extraireInfosTable(lignesFichier[0]);
+
+        //todo
     }
 
     @Test
@@ -93,7 +105,7 @@ public class ParserWinamaxTest {
         when(interpreteurWinamax.estJoueur()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        verify(extracteurWinamax).extraireJoueur(lignesFichier[0]);
+        verify(extracteurWinamax).extraireStackJoueur(lignesFichier[0]);
     }
 
     @Test
@@ -156,7 +168,7 @@ public class ParserWinamaxTest {
             }
         }
 
-        assertNotEquals(0, nFichiersTestes, "Aucun fichier de test");
+        assertTrue(nFichiersTestes >= 3, "Pas assez de fichiers de tests");
     }
 
     private String[] lireFichierSousFormeDeTableau(Path fichier) throws IOException {

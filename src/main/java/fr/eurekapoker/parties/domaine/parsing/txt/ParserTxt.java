@@ -4,10 +4,12 @@ import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.parsing.ParserModele;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosMain;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.poker.*;
 
+import java.util.List;
 import java.util.Objects;
 
 public abstract class ParserTxt extends ParserModele {
@@ -49,24 +51,29 @@ public abstract class ParserTxt extends ParserModele {
     }
 
     private void extraireFormat(int indexLigne) throws ErreurRegex {
-        this.formatPoker =  extracteurLigne.extraireFormat(lignesFichier[indexLigne]);
+        // todo
     }
 
-    private void creerNouvelleMain(int indexLigne) throws ErreurRegex {
-        MainPoker mainPoker = extracteurLigne.extraireMain(lignesFichier[indexLigne]);
+    private void creerNouvelleMain(int indexLigne) throws ErreurImport {
+        InfosMain infosMain = extracteurLigne.extraireInfosMain(lignesFichier[indexLigne]);
+        MainPoker mainPoker = new MainPoker(infosMain.obtIdentifiantMain());
         this.mainsExtraites.add(mainPoker);
     }
 
     private void ajouterJoueur(int indexLigne) throws ErreurRegex {
-        JoueurPoker joueurPoker = extracteurLigne.extraireJoueur(lignesFichier[indexLigne]);
+        StackJoueur stackJoueur = extracteurLigne.extraireStackJoueur(lignesFichier[indexLigne]);
+        JoueurPoker joueurPoker = stackJoueur.obtJoueur();
         MainPoker mainActuelle = obtMains().getLast();
         mainActuelle.ajouterJoueur(joueurPoker);
+
+        // todo ajotuer les stacks de départ
     }
 
     private void creerNouveauTour(int indexLigne) throws ErreurRegex {
-        TourPoker tourPoker = extracteurLigne.extraireTour(lignesFichier[indexLigne]);
+        List<CartePoker> board = extracteurLigne.extraireBoardTour(lignesFichier[indexLigne]);
+        TourPoker nouveauTour = new TourPoker(board);
         MainPoker mainActuelle = obtMains().getLast();
-        mainActuelle.ajouterTour(tourPoker);
+        mainActuelle.ajouterTour(nouveauTour);
     }
 
     private void ajouterAction(int indexLigne) throws ErreurRegex {

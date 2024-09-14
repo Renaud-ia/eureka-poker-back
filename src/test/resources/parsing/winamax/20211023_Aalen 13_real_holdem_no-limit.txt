@@ -1,0 +1,2423 @@
+Winamax Poker - CashGame - HandId: #16568386-67-1634990588 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:03:08 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.36€)
+Seat 2: Mr Panda (3.98€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.08€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+LaMissDu33 posts big blind 0.02€ out of position
+Dealt to LaMissDu33 [Th 3c]
+*** PRE-FLOP *** 
+Mr Panda folds
+LaMissDu33 checks
+Equityy raises 0.06€ to 0.08€
+Aster75 calls 0.07€
+T0m2019 folds
+LaMissDu33 folds
+*** FLOP *** [8d 9d Ks]
+Aster75 checks
+Equityy checks
+*** TURN *** [8d 9d Ks][6h]
+Aster75 bets 0.10€
+Equityy folds
+Aster75 collected 0.29€ from pot
+*** SUMMARY ***
+Total pot 0.29€ | Rake 0.01€
+Board: [8d 9d Ks 6h]
+Seat 5: Aster75 (small blind) won 0.29€
+
+
+Winamax Poker - CashGame - HandId: #16568386-68-1634990627 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:03:47 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.34€)
+Seat 2: Mr Panda (3.98€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.19€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [9c Ad]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 raises 0.03€ to 0.05€
+T0m2019 folds
+LaMissDu33 calls 0.03€
+*** FLOP *** [2h 3s 5d]
+LaMissDu33 checks
+Aster75 bets 0.07€
+LaMissDu33 calls 0.07€
+*** TURN *** [2h 3s 5d][7h]
+LaMissDu33 checks
+Aster75 bets 0.14€
+LaMissDu33 calls 0.14€
+*** RIVER *** [2h 3s 5d 7h][Kh]
+LaMissDu33 bets 0.20€
+Aster75 raises 0.84€ to 1.04€
+LaMissDu33 folds
+Aster75 collected 1.72€ from pot
+*** SUMMARY ***
+Total pot 1.72€ | Rake 0.05€
+Board: [2h 3s 5d 7h Kh]
+Seat 5: Aster75 (button) won 1.72€
+
+
+Winamax Poker - CashGame - HandId: #16568386-69-1634990701 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:05:01 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.33€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.61€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [2c Kd]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+LaMissDu33 folds
+Equityy checks
+*** FLOP *** [3d 4d 8c]
+Equityy checks
+Aster75 bets 0.03€
+Equityy folds
+Aster75 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Board: [3d 4d 8c]
+Seat 5: Aster75 won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #16568386-70-1634990721 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:05:21 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.33€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.64€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [9h 9s]
+*** PRE-FLOP *** 
+T0m2019 folds
+LaMissDu33 raises 0.04€ to 0.06€
+Equityy folds
+Aster75 calls 0.04€
+*** FLOP *** [2s 2h Qh]
+Aster75 checks
+LaMissDu33 bets 0.10€
+Aster75 raises 0.10€ to 0.20€
+LaMissDu33 calls 0.10€
+*** TURN *** [2s 2h Qh][Qc]
+Aster75 bets 0.30€
+LaMissDu33 folds
+Aster75 shows [6h Qd] (Full of Queens and 2)
+Aster75 collected 0.80€ from pot
+*** SUMMARY ***
+Total pot 0.80€ | Rake 0.03€
+Board: [2s 2h Qh Qc]
+Seat 5: Aster75 (big blind) showed [6h Qd] and won 0.80€ with Full of Queens and 2
+
+
+Winamax Poker - CashGame - HandId: #16568386-71-1634990779 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:06:19 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.33€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.88€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [Ts 5c]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 raises 0.03€ to 0.05€
+T0m2019 raises 0.13€ to 0.18€
+Aster75 calls 0.13€
+*** FLOP *** [3h Th 8s]
+Aster75 checks
+T0m2019 checks
+*** TURN *** [3h Th 8s][Qc]
+Aster75 checks
+T0m2019 checks
+*** RIVER *** [3h Th 8s Qc][5d]
+Aster75 checks
+T0m2019 bets 0.22€
+Aster75 folds
+T0m2019 collected 0.56€ from pot
+*** SUMMARY ***
+Total pot 0.56€ | Rake 0.02€
+Board: [3h Th 8s Qc 5d]
+Seat 1: T0m2019 (big blind) won 0.56€
+
+
+Winamax Poker - CashGame - HandId: #16568386-72-1634990839 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:07:19 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.49€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.70€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [7h 9c]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR raises 0.08€ to 0.10€
+Aster75 calls 0.08€
+*** FLOP *** [2c Kh 9d]
+M0RNlNGSTAR checks
+Aster75 bets 0.09€
+M0RNlNGSTAR folds
+Aster75 collected 0.29€ from pot
+*** SUMMARY ***
+Total pot 0.29€ | Rake 0.01€
+Board: [2c Kh 9d]
+Seat 5: Aster75 (button) won 0.29€
+
+
+Winamax Poker - CashGame - HandId: #16568386-73-1634990890 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:08:10 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.48€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.80€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [Td 5d]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR calls 0.01€
+LaMissDu33 raises 0.04€ to 0.06€
+Aster75 calls 0.04€
+M0RNlNGSTAR calls 0.04€
+*** FLOP *** [Ac 3c Js]
+M0RNlNGSTAR checks
+LaMissDu33 checks
+Aster75 checks
+*** TURN *** [Ac 3c Js][5c]
+M0RNlNGSTAR checks
+LaMissDu33 checks
+Aster75 bets 0.28€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Aster75 collected 0.45€ from pot
+*** SUMMARY ***
+Total pot 0.45€ | Rake 0.01€
+Board: [Ac 3c Js 5c]
+Seat 5: Aster75 won 0.45€
+
+
+Winamax Poker - CashGame - HandId: #16568386-74-1634990960 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:09:20 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.48€)
+Seat 2: M0RNlNGSTAR (1.94€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.91€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [5d 6s]
+*** PRE-FLOP *** 
+Aster75 folds
+T0m2019 raises 0.04€ to 0.06€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy folds
+T0m2019 collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 1: T0m2019 won 0.09€
+
+
+Winamax Poker - CashGame - HandId: #16568386-75-1634990980 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:09:40 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.51€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.91€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [8h 3h]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Equityy folds
+Aster75 raises 0.13€ to 0.19€
+LaMissDu33 folds
+Aster75 collected 0.26€ from pot
+*** SUMMARY ***
+Total pot 0.26€ | No rake
+Seat 5: Aster75 (big blind) won 0.26€
+
+
+Winamax Poker - CashGame - HandId: #16568386-76-1634991005 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:10:05 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.51€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (2.98€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [6h 4c]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.01€
+T0m2019 checks
+*** FLOP *** [4s 2s Ah]
+Aster75 bets 0.02€
+T0m2019 folds
+Aster75 collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Board: [4s 2s Ah]
+Seat 5: Aster75 (small blind) won 0.06€
+
+
+Winamax Poker - CashGame - HandId: #16568386-77-1634991061 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:11:01 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.49€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (3€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [2h 9h]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.05€
+T0m2019 folds
+M0RNlNGSTAR folds
+*** FLOP *** [Kh 5c 7d]
+Equityy bets 0.04€
+Aster75 calls 0.04€
+*** TURN *** [Kh 5c 7d][9c]
+Equityy checks
+Aster75 bets 0.14€
+Equityy folds
+Aster75 collected 0.34€ from pot
+*** SUMMARY ***
+Total pot 0.34€ | Rake 0.01€
+Board: [Kh 5c 7d 9c]
+Seat 5: Aster75 (button) won 0.34€
+
+
+Winamax Poker - CashGame - HandId: #16568386-78-1634991138 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:12:18 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.48€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (3.11€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [4s 8s]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Aster75 calls 0.04€
+*** FLOP *** [Qc 6h 6c]
+LaMissDu33 checks
+Aster75 bets 0.05€
+LaMissDu33 raises 0.16€ to 0.21€
+Aster75 folds
+LaMissDu33 collected 0.38€ from pot
+*** SUMMARY ***
+Total pot 0.38€ | Rake 0.01€
+Board: [Qc 6h 6c]
+Seat 3: LaMissDu33 (big blind) won 0.38€
+
+
+Winamax Poker - CashGame - HandId: #16568386-79-1634991194 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:13:14 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.48€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.11€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (3€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [8h Td]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 raises 0.08€ to 0.10€
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.09€
+Equityy folds
+Aster75 calls 0.08€
+*** FLOP *** [Jc 8s Ah]
+LaMissDu33 checks
+Aster75 bets 0.15€
+T0m2019 folds
+LaMissDu33 folds
+Aster75 collected 0.45€ from pot
+*** SUMMARY ***
+Total pot 0.45€ | Rake 0.02€
+Board: [Jc 8s Ah]
+Seat 5: Aster75 won 0.45€
+
+
+Winamax Poker - CashGame - HandId: #16568386-80-1634991255 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:14:15 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.38€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.01€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (3.20€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [Js 8h]
+*** PRE-FLOP *** 
+T0m2019 raises 0.04€ to 0.06€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.04€
+*** FLOP *** [4c 2h 2d]
+Aster75 checks
+T0m2019 checks
+*** TURN *** [4c 2h 2d][4d]
+Aster75 checks
+T0m2019 bets 0.06€
+Aster75 folds
+T0m2019 collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | Rake 0.01€
+Board: [4c 2h 2d 4d]
+Seat 1: T0m2019 won 0.18€
+
+
+Winamax Poker - CashGame - HandId: #16568386-81-1634991283 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:14:43 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.44€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.01€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (3.14€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [6s 4h]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.04€
+T0m2019 folds
+*** FLOP *** [5d Ad 7c]
+Aster75 checks
+Equityy bets 0.08€
+Aster75 calls 0.08€
+*** TURN *** [5d Ad 7c][As]
+Aster75 checks
+Equityy bets 0.22€
+Aster75 folds
+Equityy collected 0.48€ from pot
+*** SUMMARY ***
+Total pot 0.48€ | Rake 0.02€
+Board: [5d Ad 7c As]
+Seat 4: Equityy (button) won 0.48€
+
+
+Winamax Poker - CashGame - HandId: #16568386-82-1634991347 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:15:47 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.42€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.01€)
+Seat 4: Equityy (2.13€)
+Seat 5: Aster75 (3.01€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [9d Jc]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 raises 0.05€ to 0.07€
+T0m2019 folds
+LaMissDu33 folds
+Aster75 collected 0.10€ from pot
+*** SUMMARY ***
+Total pot 0.10€ | No rake
+Seat 5: Aster75 (button) won 0.10€
+
+
+Winamax Poker - CashGame - HandId: #16568386-83-1634991369 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:16:09 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.41€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.13€)
+Seat 5: Aster75 (3.04€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [3h 5s]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+LaMissDu33 folds
+Equityy checks
+*** FLOP *** [Jd 9c 9h]
+Equityy checks
+Aster75 checks
+*** TURN *** [Jd 9c 9h][Ts]
+Equityy checks
+Aster75 checks
+*** RIVER *** [Jd 9c 9h Ts][Tc]
+Equityy checks
+Aster75 bets 0.08€
+Equityy folds
+Aster75 collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | No rake
+Board: [Jd 9c 9h Ts Tc]
+Seat 5: Aster75 won 0.13€
+
+
+Winamax Poker - CashGame - HandId: #16568386-84-1634991422 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:17:02 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.41€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.11€)
+Seat 5: Aster75 (3.07€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [6c 8d]
+*** PRE-FLOP *** 
+T0m2019 folds
+LaMissDu33 folds
+Equityy raises 0.04€ to 0.06€
+Aster75 calls 0.04€
+*** FLOP *** [5c 9h Ks]
+Equityy checks
+Aster75 bets 0.09€
+Equityy calls 0.09€
+*** TURN *** [5c 9h Ks][Ac]
+Equityy checks
+Aster75 checks
+*** RIVER *** [5c 9h Ks Ac][As]
+Equityy bets 0.38€
+Aster75 folds
+Equityy collected 0.66€ from pot
+*** SUMMARY ***
+Total pot 0.66€ | Rake 0.02€
+Board: [5c 9h Ks Ac As]
+Seat 4: Equityy (small blind) won 0.66€
+
+
+Winamax Poker - CashGame - HandId: #16568386-85-1634991485 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:18:05 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.41€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.24€)
+Seat 5: Aster75 (2.92€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [7h 9s]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 raises 0.05€ to 0.07€
+T0m2019 calls 0.05€
+*** FLOP *** [2c 5c 6d]
+Aster75 bets 0.07€
+T0m2019 folds
+Aster75 collected 0.20€ from pot
+*** SUMMARY ***
+Total pot 0.20€ | Rake 0.01€
+Board: [2c 5c 6d]
+Seat 5: Aster75 (small blind) won 0.20€
+
+
+Winamax Poker - CashGame - HandId: #16568386-86-1634991523 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:18:43 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.34€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.24€)
+Seat 5: Aster75 (2.98€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [Qc 5d]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 calls 0.01€
+M0RNlNGSTAR checks
+*** FLOP *** [Ad 5h Kd]
+T0m2019 checks
+M0RNlNGSTAR checks
+Aster75 checks
+*** TURN *** [Ad 5h Kd][Ts]
+T0m2019 checks
+M0RNlNGSTAR checks
+Aster75 checks
+*** RIVER *** [Ad 5h Kd Ts][Tc]
+T0m2019 checks
+M0RNlNGSTAR checks
+Aster75 bets 0.02€
+T0m2019 folds
+M0RNlNGSTAR calls 0.02€
+*** SHOW DOWN ***
+Aster75 shows [6c 9h] (One pair : Tens)
+M0RNlNGSTAR shows [5c 3h] (Two pairs : Tens and 5)
+M0RNlNGSTAR collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | Rake 0.01€
+Board: [Ad 5h Kd Ts Tc]
+Seat 2: M0RNlNGSTAR (big blind) showed [5c 3h] and won 0.09€ with Two pairs : Tens and 5
+Seat 5: Aster75 (button) showed [6c 9h] and lost with One pair : Tens
+
+
+Winamax Poker - CashGame - HandId: #16568386-87-1634991575 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:19:35 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.32€)
+Seat 2: M0RNlNGSTAR (2.05€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.24€)
+Seat 5: Aster75 (2.94€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [4d Ad]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 raises 0.05€ to 0.07€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.05€
+*** FLOP *** [3s Qh Jd]
+LaMissDu33 checks
+Aster75 bets 0.08€
+LaMissDu33 calls 0.08€
+*** TURN *** [3s Qh Jd][3d]
+LaMissDu33 checks
+Aster75 checks
+*** RIVER *** [3s Qh Jd 3d][2s]
+LaMissDu33 checks
+Aster75 bets 0.09€
+LaMissDu33 folds
+Aster75 collected 0.38€ from pot
+*** SUMMARY ***
+Total pot 0.38€ | Rake 0.02€
+Board: [3s Qh Jd 3d 2s]
+Seat 5: Aster75 won 0.38€
+
+
+Winamax Poker - CashGame - HandId: #16568386-88-1634991629 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:20:29 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.32€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.24€)
+Seat 5: Aster75 (3.08€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [3s Kd]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy checks
+*** FLOP *** [2c Tc 5c]
+Equityy checks
+Aster75 bets 0.03€
+Equityy folds
+Aster75 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Board: [2c Tc 5c]
+Seat 5: Aster75 won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #16568386-89-1634991659 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:20:59 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.32€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.22€)
+Seat 5: Aster75 (3.11€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [9h 3c]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy raises 0.04€ to 0.06€
+Aster75 raises 0.04€ to 0.10€
+Equityy folds
+Aster75 collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | No rake
+Seat 5: Aster75 (big blind) won 0.16€
+
+
+Winamax Poker - CashGame - HandId: #16568386-90-1634991679 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:21:19 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.32€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.16€)
+Seat 5: Aster75 (3.17€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [3c 8h]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.04€
+T0m2019 folds
+*** FLOP *** [Jc 7c 3h]
+Aster75 checks
+Equityy checks
+*** TURN *** [Jc 7c 3h][5c]
+Aster75 bets 0.07€
+Equityy folds
+Aster75 collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | Rake 0.01€
+Board: [Jc 7c 3h 5c]
+Seat 5: Aster75 (small blind) won 0.18€
+
+
+Winamax Poker - CashGame - HandId: #16568386-91-1634991732 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:22:12 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.30€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.11€)
+Seat 5: Aster75 (3.23€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [7c 4c]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 raises 0.08€ to 0.10€
+M0RNlNGSTAR folds
+Aster75 calls 0.08€
+*** FLOP *** [Td Ad 5d]
+T0m2019 checks
+Aster75 bets 0.07€
+T0m2019 folds
+Aster75 collected 0.28€ from pot
+*** SUMMARY ***
+Total pot 0.28€ | Rake 0.01€
+Board: [Td Ad 5d]
+Seat 5: Aster75 (button) won 0.28€
+
+
+Winamax Poker - CashGame - HandId: #16568386-92-1634991784 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:23:04 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.20€)
+Seat 2: M0RNlNGSTAR (2.02€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2.11€)
+Seat 5: Aster75 (3.34€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [7c 7s]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR raises 0.08€ to 0.10€
+LaMissDu33 calls 0.08€
+Aster75 calls 0.08€
+*** FLOP *** [8s Td 5c]
+M0RNlNGSTAR checks
+LaMissDu33 checks
+Aster75 bets 0.18€
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.18€
+*** TURN *** [8s Td 5c][Kh]
+LaMissDu33 checks
+Aster75 bets 0.24€
+LaMissDu33 raises 0.24€ to 0.48€
+Aster75 folds
+LaMissDu33 collected 1.31€ from pot
+*** SUMMARY ***
+Total pot 1.31€ | Rake 0.07€
+Board: [8s Td 5c Kh]
+Seat 3: LaMissDu33 (big blind) won 1.31€
+
+
+Winamax Poker - CashGame - HandId: #16568386-93-1634991871 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:24:31 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.20€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.55€)
+Seat 4: Equityy (2.11€)
+Seat 5: Aster75 (2.82€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [Qh 5s]
+*** PRE-FLOP *** 
+Aster75 folds
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 4: Equityy (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #16568386-94-1634991883 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:24:43 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.20€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.54€)
+Seat 4: Equityy (2.12€)
+Seat 5: Aster75 (2.82€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [5d 9s]
+*** PRE-FLOP *** 
+T0m2019 raises 0.04€ to 0.06€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.04€
+*** FLOP *** [7d 6d Ac]
+Aster75 bets 0.08€
+T0m2019 folds
+Aster75 collected 0.20€ from pot
+*** SUMMARY ***
+Total pot 0.20€ | Rake 0.01€
+Board: [7d 6d Ac]
+Seat 5: Aster75 (big blind) won 0.20€
+
+
+Winamax Poker - CashGame - HandId: #16568386-95-1634991915 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:25:15 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.14€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.54€)
+Seat 4: Equityy (2.11€)
+Seat 5: Aster75 (2.88€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [Jd 8h]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy raises 0.03€ to 0.05€
+Aster75 folds
+T0m2019 folds
+Equityy collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 4: Equityy (button) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #16568386-96-1634991928 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:25:28 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.12€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.54€)
+Seat 4: Equityy (2.14€)
+Seat 5: Aster75 (2.87€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [7h Kc]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.05€
+T0m2019 folds
+M0RNlNGSTAR folds
+*** FLOP *** [Ah Jd 7d]
+Equityy checks
+Aster75 bets 0.08€
+Equityy calls 0.08€
+*** TURN *** [Ah Jd 7d][4c]
+Equityy checks
+Aster75 bets 0.19€
+Equityy folds
+Aster75 collected 0.46€ from pot
+*** SUMMARY ***
+Total pot 0.46€ | Rake 0.02€
+Board: [Ah Jd 7d 4c]
+Seat 5: Aster75 (button) won 0.46€
+
+
+Winamax Poker - CashGame - HandId: #16568386-97-1634991985 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:26:25 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.11€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.54€)
+Seat 4: Equityy (2.01€)
+Seat 5: Aster75 (3.01€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [Ts Qs]
+*** PRE-FLOP *** 
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.05€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.03€
+*** FLOP *** [Qh 3d 7c]
+LaMissDu33 checks
+Equityy checks
+Aster75 bets 0.16€
+LaMissDu33 calls 0.16€
+Equityy folds
+*** TURN *** [Qh 3d 7c][Js]
+LaMissDu33 checks
+Aster75 bets 0.48€
+LaMissDu33 calls 0.48€
+*** RIVER *** [Qh 3d 7c Js][6c]
+LaMissDu33 checks
+Aster75 bets 2.32€ and is all-in
+LaMissDu33 calls 1.85€ and is all-in
+*** SHOW DOWN ***
+LaMissDu33 shows [Ts Qs] (One pair : Queens)
+Aster75 shows [7d 6d] (Two pairs : 7 and 6)
+Aster75 collected 5.31€ from pot
+*** SUMMARY ***
+Total pot 5.31€ | Rake 0.30€
+Board: [Qh 3d 7c Js 6c]
+Seat 3: LaMissDu33 (big blind) showed [Ts Qs] and lost with One pair : Queens
+Seat 5: Aster75 showed [7d 6d] and won 5.31€ with Two pairs : 7 and 6
+
+
+Winamax Poker - CashGame - HandId: #16568386-98-1634992046 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:27:26 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.11€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (5.31€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [9s 7h]
+*** PRE-FLOP *** 
+Aster75 raises 0.03€ to 0.05€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.10€ to 0.15€
+Equityy folds
+Aster75 calls 0.10€
+*** FLOP *** [5d 8h 5c]
+LaMissDu33 bets 0.24€
+Aster75 folds
+LaMissDu33 collected 0.54€ from pot
+*** SUMMARY ***
+Total pot 0.54€ | Rake 0.02€
+Board: [5d 8h 5c]
+Seat 3: LaMissDu33 (small blind) won 0.54€
+
+
+Winamax Poker - CashGame - HandId: #16568386-99-1634992085 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:28:05 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.11€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.15€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (5.16€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [Jh Kc]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Equityy raises 0.18€ to 0.24€
+Aster75 folds
+LaMissDu33 calls 0.18€
+*** FLOP *** [Ah Qd 4d]
+Equityy bets 0.16€
+LaMissDu33 calls 0.16€
+*** TURN *** [Ah Qd 4d][2s]
+Equityy checks
+LaMissDu33 bets 0.27€
+Equityy calls 0.27€
+*** RIVER *** [Ah Qd 4d 2s][3c]
+Equityy checks
+LaMissDu33 bets 1.48€ and is all-in
+Equityy folds
+LaMissDu33 collected 2.76€ from pot
+*** SUMMARY ***
+Total pot 2.76€ | Rake 0.08€
+Board: [Ah Qd 4d 2s 3c]
+Seat 3: LaMissDu33 (button) won 2.76€
+
+
+Winamax Poker - CashGame - HandId: #16568386-100-1634992155 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:29:15 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.11€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (2.76€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (5.14€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [Qh 8c]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Equityy folds
+Aster75 calls 0.05€
+T0m2019 folds
+*** FLOP *** [Jh 3c Qc]
+Aster75 checks
+LaMissDu33 bets 0.11€
+Aster75 calls 0.11€
+*** TURN *** [Jh 3c Qc][6c]
+Aster75 checks
+LaMissDu33 bets 0.27€
+Aster75 calls 0.27€
+*** RIVER *** [Jh 3c Qc 6c][Qd]
+Aster75 bets 0.46€
+LaMissDu33 calls 0.46€
+*** SHOW DOWN ***
+Aster75 shows [Ad Ts] (One pair : Queens)
+LaMissDu33 shows [Qh 8c] (Trips of Queens)
+LaMissDu33 collected 1.72€ from pot
+*** SUMMARY ***
+Total pot 1.72€ | Rake 0.10€
+Board: [Jh 3c Qc 6c Qd]
+Seat 3: LaMissDu33 showed [Qh 8c] and won 1.72€ with Trips of Queens
+Seat 5: Aster75 (small blind) showed [Ad Ts] and lost with One pair : Queens
+
+
+Winamax Poker - CashGame - HandId: #16568386-101-1634992228 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:30:28 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.09€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.58€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (4.24€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [2s 3s]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 raises 0.08€ to 0.10€
+T0m2019 folds
+M0RNlNGSTAR folds
+Aster75 collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | No rake
+Seat 5: Aster75 (button) won 0.13€
+
+
+Winamax Poker - CashGame - HandId: #16568386-102-1634992245 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:30:45 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.08€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.58€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (4.27€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [2c Qc]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 raises 0.08€ to 0.10€
+T0m2019 calls 0.10€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+*** FLOP *** [6d Js Tc]
+Aster75 bets 0.17€
+T0m2019 calls 0.17€
+*** TURN *** [6d Js Tc][3h]
+Aster75 bets 0.28€
+T0m2019 calls 0.28€
+*** RIVER *** [6d Js Tc 3h][6c]
+Aster75 bets 0.52€
+T0m2019 folds
+Aster75 collected 1.59€ from pot
+*** SUMMARY ***
+Total pot 1.59€ | Rake 0.06€
+Board: [6d Js Tc 3h 6c]
+Seat 5: Aster75 won 1.59€
+
+
+Winamax Poker - CashGame - HandId: #16568386-103-1634992327 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:32:07 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.56€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (4.79€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [Qs 2c]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 raises 0.08€ to 0.10€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.08€
+*** FLOP *** [4c Kd Ah]
+Aster75 checks
+T0m2019 bets 0.16€
+Aster75 calls 0.16€
+*** TURN *** [4c Kd Ah][5d]
+Aster75 bets 0.15€
+T0m2019 calls 0.15€
+*** RIVER *** [4c Kd Ah 5d][Jh]
+Aster75 checks
+T0m2019 checks
+*** SHOW DOWN ***
+T0m2019 shows [Ts Js] (One pair : Jacks)
+Aster75 shows [Ks Td] (One pair : Kings)
+Aster75 collected 0.80€ from pot
+*** SUMMARY ***
+Total pot 0.80€ | Rake 0.05€
+Board: [4c Kd Ah 5d Jh]
+Seat 1: T0m2019 showed [Ts Js] and lost with One pair : Jacks
+Seat 5: Aster75 showed [Ks Td] and won 0.80€ with One pair : Kings
+
+
+Winamax Poker - CashGame - HandId: #16568386-104-1634992385 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:33:05 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.55€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (5.18€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [5h 4d]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy raises 0.04€ to 0.06€
+Aster75 calls 0.04€
+*** FLOP *** [7s Ks 7h]
+Equityy checks
+Aster75 bets 0.06€
+Equityy folds
+Aster75 collected 0.17€ from pot
+*** SUMMARY ***
+Total pot 0.17€ | Rake 0.01€
+Board: [7s Ks 7h]
+Seat 5: Aster75 (big blind) won 0.17€
+
+
+Winamax Poker - CashGame - HandId: #16568386-105-1634992411 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:33:31 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.55€)
+Seat 4: Equityy (2€)
+Seat 5: Aster75 (5.23€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [5h 2d]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.04€
+T0m2019 folds
+*** FLOP *** [Qd 2c 2h]
+Aster75 checks
+Equityy bets 0.04€
+Aster75 calls 0.04€
+*** TURN *** [Qd 2c 2h][As]
+Aster75 checks
+Equityy checks
+*** RIVER *** [Qd 2c 2h As][5s]
+Aster75 bets 0.14€
+Equityy calls 0.14€
+*** SHOW DOWN ***
+Aster75 shows [Qh 5d] (Two pairs : Queens and 5)
+Equityy shows [Kc Kd] (Two pairs : Kings and 2)
+Equityy collected 0.45€ from pot
+*** SUMMARY ***
+Total pot 0.45€ | Rake 0.03€
+Board: [Qd 2c 2h As 5s]
+Seat 4: Equityy (button) showed [Kc Kd] and won 0.45€ with Two pairs : Kings and 2
+Seat 5: Aster75 (small blind) showed [Qh 5d] and lost with Two pairs : Queens and 5
+
+
+Winamax Poker - CashGame - HandId: #16568386-106-1634992483 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:34:43 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.55€)
+Seat 4: Equityy (2.22€)
+Seat 5: Aster75 (5€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [9d 9c]
+*** PRE-FLOP *** 
+LaMissDu33 raises 0.04€ to 0.06€
+Equityy folds
+Aster75 calls 0.06€
+T0m2019 folds
+M0RNlNGSTAR folds
+*** FLOP *** [Kh Kd Qh]
+LaMissDu33 bets 0.11€
+Aster75 calls 0.11€
+*** TURN *** [Kh Kd Qh][7d]
+LaMissDu33 bets 0.28€
+Aster75 raises 0.28€ to 0.56€
+LaMissDu33 calls 0.28€
+*** RIVER *** [Kh Kd Qh 7d][5h]
+LaMissDu33 checks
+Aster75 bets 0.26€
+LaMissDu33 calls 0.26€
+*** SHOW DOWN ***
+Aster75 shows [Th 3s] (One pair : Kings)
+LaMissDu33 shows [9d 9c] (Two pairs : Kings and 9)
+LaMissDu33 collected 1.89€ from pot
+*** SUMMARY ***
+Total pot 1.89€ | Rake 0.12€
+Board: [Kh Kd Qh 7d 5h]
+Seat 3: LaMissDu33 showed [9d 9c] and won 1.89€ with Two pairs : Kings and 9
+Seat 5: Aster75 (button) showed [Th 3s] and lost with One pair : Kings
+
+
+Winamax Poker - CashGame - HandId: #16568386-107-1634992561 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:36:01 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (4.45€)
+Seat 4: Equityy (2.22€)
+Seat 5: Aster75 (4.01€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [5d Jc]
+*** PRE-FLOP *** 
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 raises 0.08€ to 0.10€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Aster75 folds
+T0m2019 collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | No rake
+Seat 1: T0m2019 (button) won 0.15€
+
+
+Winamax Poker - CashGame - HandId: #16568386-108-1634992579 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:36:19 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.05€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (4.43€)
+Seat 4: Equityy (2.22€)
+Seat 5: Aster75 (3.99€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [Ah 2c]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy checks
+*** FLOP *** [Qh 2d Ad]
+Equityy checks
+Aster75 bets 0.04€
+Equityy folds
+Aster75 collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Board: [Qh 2d Ad]
+Seat 5: Aster75 won 0.09€
+
+
+Winamax Poker - CashGame - HandId: #16568386-109-1634992612 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:36:52 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.05€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (4.42€)
+Seat 4: Equityy (2.20€)
+Seat 5: Aster75 (4.02€)
+*** ANTE/BLINDS ***
+Equityy posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [Jh Ah]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Equityy folds
+Aster75 raises 0.26€ to 0.32€
+LaMissDu33 calls 0.26€
+*** FLOP *** [8c 2s 8d]
+Aster75 bets 3.70€ and is all-in
+LaMissDu33 folds
+Aster75 collected 4.31€ from pot
+*** SUMMARY ***
+Total pot 4.31€ | Rake 0.04€
+Board: [8c 2s 8d]
+Seat 5: Aster75 (big blind) won 4.31€
+
+
+Winamax Poker - CashGame - HandId: #16568386-110-1634992669 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:37:49 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.05€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (4.10€)
+Seat 4: Equityy (2.19€)
+Seat 5: Aster75 (4.31€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [Jc Qc]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.03€ to 0.05€
+Equityy folds
+Aster75 calls 0.04€
+T0m2019 calls 0.03€
+*** FLOP *** [Ts 8d 7s]
+Aster75 bets 0.09€
+T0m2019 raises 0.19€ to 0.28€
+LaMissDu33 folds
+Aster75 calls 0.19€
+*** TURN *** [Ts 8d 7s][2d]
+Aster75 checks
+T0m2019 bets 0.50€
+Aster75 calls 0.50€
+*** RIVER *** [Ts 8d 7s 2d][Td]
+Aster75 bets 0.18€
+T0m2019 raises 1.04€ to 1.22€ and is all-in
+Aster75 folds
+T0m2019 collected 2.99€ from pot
+*** SUMMARY ***
+Total pot 2.99€ | Rake 0.12€
+Board: [Ts 8d 7s 2d Td]
+Seat 1: T0m2019 (big blind) won 2.99€
+
+
+Winamax Poker - CashGame - HandId: #16568386-111-1634992765 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:39:25 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.99€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (4.05€)
+Seat 4: Equityy (2.19€)
+Seat 5: Aster75 (3.30€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [6s Qc]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR checks
+*** FLOP *** [Qd Qh Kc]
+M0RNlNGSTAR checks
+Aster75 bets 0.03€
+M0RNlNGSTAR calls 0.03€
+*** TURN *** [Qd Qh Kc][7d]
+M0RNlNGSTAR checks
+Aster75 checks
+*** RIVER *** [Qd Qh Kc 7d][3d]
+M0RNlNGSTAR bets 0.06€
+Aster75 folds
+M0RNlNGSTAR collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | Rake 0.01€
+Board: [Qd Qh Kc 7d 3d]
+Seat 2: M0RNlNGSTAR (big blind) won 0.16€
+
+
+Winamax Poker - CashGame - HandId: #16568386-112-1634992833 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:40:33 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.98€)
+Seat 2: M0RNlNGSTAR (2.05€)
+Seat 3: LaMissDu33 (4.05€)
+Seat 4: Equityy (2.19€)
+Seat 5: Aster75 (3.25€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [Th 2h]
+*** PRE-FLOP *** 
+Equityy raises 0.03€ to 0.05€
+Aster75 calls 0.05€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.03€
+*** FLOP *** [Jc 4d 2s]
+LaMissDu33 checks
+Equityy checks
+Aster75 bets 0.09€
+LaMissDu33 folds
+Equityy folds
+Aster75 collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | Rake 0.01€
+Board: [Jc 4d 2s]
+Seat 5: Aster75 won 0.24€
+
+
+Winamax Poker - CashGame - HandId: #16568386-113-1634992897 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:41:37 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.98€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (4€)
+Seat 4: Equityy (2.14€)
+Seat 5: Aster75 (3.35€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Equityy posts big blind 0.02€
+Dealt to LaMissDu33 [2h 6h]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 raises 0.06€ to 0.08€
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Equityy folds
+Aster75 calls 0.06€
+*** FLOP *** [7s 2s Th]
+Aster75 bets 0.10€
+T0m2019 calls 0.10€
+*** TURN *** [7s 2s Th][Ah]
+Aster75 checks
+T0m2019 bets 0.44€
+Aster75 folds
+T0m2019 collected 0.81€ from pot
+*** SUMMARY ***
+Total pot 0.81€ | Rake 0.02€
+Board: [7s 2s Th Ah]
+Seat 1: T0m2019 won 0.81€
+
+
+Winamax Poker - CashGame - HandId: #16568386-114-1634992957 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:42:37 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (3.17€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (3.99€)
+Seat 4: Equityy (2.12€)
+Seat 5: Aster75 (3.17€)
+*** ANTE/BLINDS ***
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [6c 8c]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Aster75 calls 0.04€
+*** FLOP *** [Kc 4c 3c]
+Aster75 checks
+LaMissDu33 bets 0.17€
+Aster75 raises 0.17€ to 0.34€
+LaMissDu33 raises 3.59€ to 3.93€ and is all-in
+Aster75 calls 2.77€ and is all-in
+*** TURN *** [Kc 4c 3c][3d]
+*** RIVER *** [Kc 4c 3c 3d][4d]
+*** SHOW DOWN ***
+LaMissDu33 shows [6c 8c] (Flush King high)
+Aster75 shows [9c 5c] (Flush King high)
+Aster75 collected 5.99€ from main pot
+LaMissDu33 collected 0.82€ from side pot 1
+*** SUMMARY ***
+Total pot 6.81€ | Rake 0.35€
+Board: [Kc 4c 3c 3d 4d]
+Seat 3: LaMissDu33 (button) showed [6c 8c] and won 0.82€ with Flush King high
+Seat 5: Aster75 (big blind) showed [9c 5c] and won 5.99€ with Flush King high
+
+
+Winamax Poker - CashGame - HandId: #16568386-115-1634993016 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:43:36 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (3.17€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (5.99€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [Tc 8h]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Aster75 raises 0.04€ to 0.06€
+T0m2019 folds
+Aster75 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 5: Aster75 (small blind) won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #16568386-116-1634993037 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:43:57 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (3.15€)
+Seat 2: M0RNlNGSTAR (2.04€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (6.01€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [Tc Ah]
+*** PRE-FLOP *** 
+LaMissDu33 raises 0.04€ to 0.06€
+Aster75 calls 0.06€
+T0m2019 folds
+M0RNlNGSTAR raises 0.24€ to 0.30€
+LaMissDu33 folds
+Aster75 calls 0.24€
+*** FLOP *** [Qd 4c 4s]
+M0RNlNGSTAR bets 0.38€
+Aster75 folds
+M0RNlNGSTAR collected 1.01€ from pot
+*** SUMMARY ***
+Total pot 1.01€ | Rake 0.04€
+Board: [Qd 4c 4s]
+Seat 2: M0RNlNGSTAR (big blind) won 1.01€
+
+
+Winamax Poker - CashGame - HandId: #16568386-117-1634993095 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:44:55 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (3.14€)
+Seat 2: M0RNlNGSTAR (2.37€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (5.71€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [5h Th]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 checks
+*** FLOP *** [Jh 7h 2h]
+LaMissDu33 bets 0.05€
+Aster75 folds
+LaMissDu33 collected 0.10€ from pot
+*** SUMMARY ***
+Total pot 0.10€ | No rake
+Board: [Jh 7h 2h]
+Seat 3: LaMissDu33 (big blind) won 0.10€
+
+
+Winamax Poker - CashGame - HandId: #16568386-118-1634993127 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:45:27 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (3.14€)
+Seat 2: M0RNlNGSTAR (2.36€)
+Seat 3: LaMissDu33 (2.03€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (5.69€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+SpIIIderrr posts big blind 0.02€
+Dealt to LaMissDu33 [Ks 4h]
+*** PRE-FLOP *** 
+Aster75 raises 0.04€ to 0.06€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.12€ to 0.18€
+SpIIIderrr folds
+Aster75 raises 0.38€ to 0.56€
+LaMissDu33 folds
+Aster75 collected 0.76€ from pot
+*** SUMMARY ***
+Total pot 0.76€ | No rake
+Seat 5: Aster75 won 0.76€
+
+
+Winamax Poker - CashGame - HandId: #16568386-119-1634993167 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:46:07 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (3.14€)
+Seat 2: M0RNlNGSTAR (2.36€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (1.98€)
+Seat 5: Aster75 (5.89€)
+*** ANTE/BLINDS ***
+SpIIIderrr posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [Kc 2h]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR raises 0.03€ to 0.05€
+LaMissDu33 folds
+SpIIIderrr folds
+Aster75 calls 0.03€
+*** FLOP *** [Qh 4h Qc]
+Aster75 checks
+M0RNlNGSTAR checks
+*** TURN *** [Qh 4h Qc][8h]
+Aster75 bets 0.07€
+M0RNlNGSTAR calls 0.07€
+*** RIVER *** [Qh 4h Qc 8h][5s]
+Aster75 bets 0.16€
+M0RNlNGSTAR folds
+Aster75 collected 0.40€ from pot
+*** SUMMARY ***
+Total pot 0.40€ | Rake 0.01€
+Board: [Qh 4h Qc 8h 5s]
+Seat 5: Aster75 (big blind) won 0.40€
+
+
+Winamax Poker - CashGame - HandId: #16568386-120-1634993224 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:47:04 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (3.14€)
+Seat 2: M0RNlNGSTAR (2.24€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (1.97€)
+Seat 5: Aster75 (6.01€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [Js 2d]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+SpIIIderrr folds
+Aster75 calls 0.01€
+T0m2019 checks
+*** FLOP *** [5h 4s Ah]
+Aster75 bets 0.03€
+T0m2019 folds
+Aster75 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Board: [5h 4s Ah]
+Seat 5: Aster75 (small blind) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #16568386-121-1634993270 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:47:50 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (3.12€)
+Seat 2: M0RNlNGSTAR (2.24€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (1.97€)
+Seat 5: Aster75 (6.03€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [9h 7s]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+SpIIIderrr folds
+Aster75 calls 0.02€
+T0m2019 calls 0.01€
+M0RNlNGSTAR checks
+*** FLOP *** [4s 3s 6d]
+T0m2019 bets 0.04€
+M0RNlNGSTAR folds
+Aster75 folds
+T0m2019 collected 0.10€ from pot
+*** SUMMARY ***
+Total pot 0.10€ | No rake
+Board: [4s 3s 6d]
+Seat 1: T0m2019 (small blind) won 0.10€
+
+
+Winamax Poker - CashGame - HandId: #16568386-122-1634993305 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:48:25 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (3.16€)
+Seat 2: M0RNlNGSTAR (2.22€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (1.97€)
+Seat 5: Aster75 (6.01€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [4c 9c]
+*** PRE-FLOP *** 
+SpIIIderrr folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR raises 0.08€ to 0.10€
+LaMissDu33 calls 0.08€
+Aster75 calls 0.08€
+*** FLOP *** [8h Ks Tc]
+M0RNlNGSTAR checks
+LaMissDu33 checks
+Aster75 bets 0.18€
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.18€
+*** TURN *** [8h Ks Tc][2d]
+LaMissDu33 checks
+Aster75 bets 0.44€
+LaMissDu33 folds
+Aster75 collected 1.06€ from pot
+*** SUMMARY ***
+Total pot 1.06€ | Rake 0.04€
+Board: [8h Ks Tc 2d]
+Seat 5: Aster75 won 1.06€
+
+
+Winamax Poker - CashGame - HandId: #16568386-123-1634993420 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:50:20 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (3.16€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2€)
+Seat 4: SpIIIderrr (1.97€)
+Seat 5: Aster75 (6.35€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+SpIIIderrr posts big blind 0.02€
+Dealt to LaMissDu33 [As 4c]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+SpIIIderrr calls 0.04€
+Aster75 calls 0.04€
+*** FLOP *** [Ks 2d Qs]
+LaMissDu33 checks
+SpIIIderrr checks
+Aster75 bets 0.09€
+LaMissDu33 calls 0.09€
+SpIIIderrr folds
+*** TURN *** [Ks 2d Qs][3s]
+LaMissDu33 checks
+Aster75 bets 0.28€
+LaMissDu33 calls 0.28€
+*** RIVER *** [Ks 2d Qs 3s][4h]
+LaMissDu33 checks
+Aster75 bets 0.62€
+LaMissDu33 calls 0.62€
+*** SHOW DOWN ***
+Aster75 shows [8c 6c] (High card : King)
+LaMissDu33 shows [As 4c] (One pair : 4)
+LaMissDu33 collected 2.04€ from pot
+*** SUMMARY ***
+Total pot 2.04€ | Rake 0.12€
+Board: [Ks 2d Qs 3s 4h]
+Seat 3: LaMissDu33 (small blind) showed [As 4c] and won 2.04€ with One pair : 4
+Seat 5: Aster75 showed [8c 6c] and lost with High card : King
+
+
+Winamax Poker - CashGame - HandId: #16568386-124-1634993517 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:51:57 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (3.16€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.99€)
+Seat 4: SpIIIderrr (1.91€)
+Seat 5: Aster75 (5.30€)
+*** ANTE/BLINDS ***
+SpIIIderrr posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [Jc 2d]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+SpIIIderrr folds
+Aster75 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: Aster75 (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #16568386-125-1634993534 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:52:14 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (3.16€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.99€)
+Seat 4: SpIIIderrr (1.90€)
+Seat 5: Aster75 (5.31€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [2c Ah]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+SpIIIderrr folds
+Aster75 calls 0.05€
+T0m2019 folds
+*** FLOP *** [Js 4c 9c]
+Aster75 checks
+LaMissDu33 checks
+*** TURN *** [Js 4c 9c][4d]
+Aster75 bets 0.07€
+LaMissDu33 folds
+Aster75 collected 0.20€ from pot
+*** SUMMARY ***
+Total pot 0.20€ | Rake 0.01€
+Board: [Js 4c 9c 4d]
+Seat 5: Aster75 (small blind) won 0.20€
+
+
+Winamax Poker - CashGame - HandId: #16568386-126-1634993570 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:52:50 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (3.14€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.93€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (5.38€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [Qd 7s]
+*** PRE-FLOP *** 
+SpIIIderrr raises 0.04€ to 0.06€
+Aster75 calls 0.06€
+T0m2019 folds
+LaMissDu33 folds
+*** FLOP *** [4s Kc 6s]
+SpIIIderrr bets 0.06€
+Aster75 calls 0.06€
+*** TURN *** [4s Kc 6s][7d]
+SpIIIderrr checks
+Aster75 checks
+*** RIVER *** [4s Kc 6s 7d][8d]
+SpIIIderrr checks
+Aster75 bets 0.13€
+SpIIIderrr folds
+Aster75 shows [4d 4c] (Trips of 4)
+Aster75 collected 0.38€ from pot
+*** SUMMARY ***
+Total pot 0.38€ | Rake 0.02€
+Board: [4s Kc 6s 7d 8d]
+Seat 5: Aster75 (button) showed [4d 4c] and won 0.38€ with Trips of 4
+
+
+Winamax Poker - CashGame - HandId: #16568386-127-1634993639 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:53:59 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (3.13€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.91€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (5.51€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+SpIIIderrr posts big blind 0.02€
+Dealt to LaMissDu33 [3s 7d]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+LaMissDu33 folds
+SpIIIderrr raises 0.10€ to 0.12€
+Aster75 calls 0.10€
+*** FLOP *** [9d Jd 6d]
+SpIIIderrr bets 0.17€
+Aster75 raises 0.31€ to 0.48€
+SpIIIderrr raises 1.40€ to 1.88€ and is all-in
+Aster75 calls 1.40€
+*** TURN *** [9d Jd 6d][Th]
+*** RIVER *** [9d Jd 6d Th][9c]
+*** SHOW DOWN ***
+SpIIIderrr shows [Qd Qs] (Two pairs : Queens and 9)
+Aster75 shows [9h Js] (Full of 9 and Jacks)
+Aster75 collected 3.78€ from pot
+*** SUMMARY ***
+Total pot 3.78€ | Rake 0.23€
+Board: [9d Jd 6d Th 9c]
+Seat 4: SpIIIderrr (big blind) showed [Qd Qs] and lost with Two pairs : Queens and 9
+Seat 5: Aster75 showed [9h Js] and won 3.78€ with Full of 9 and Jacks
+
+
+Winamax Poker - CashGame - HandId: #16568386-128-1634993685 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:54:45 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (3.13€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.90€)
+Seat 4: SpIIIderrr (2€)
+Seat 5: Aster75 (7.29€)
+*** ANTE/BLINDS ***
+SpIIIderrr posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [Jh 3c]
+*** PRE-FLOP *** 
+T0m2019 folds
+LaMissDu33 folds
+SpIIIderrr folds
+Aster75 shows [Js Ad] (High card : Ace)
+Aster75 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: Aster75 (big blind) showed [Js Ad] and won 0.03€ with High card : Ace
+
+
+Winamax Poker - CashGame - HandId: #16568386-129-1634993701 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:55:01 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (3.13€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.90€)
+Seat 4: Zyzz1 (2€)
+Seat 5: Aster75 (7.30€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [8d 5h]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Aster75 calls 0.01€
+T0m2019 raises 0.06€ to 0.08€
+Aster75 calls 0.06€
+*** FLOP *** [2h 8c 6c]
+Aster75 checks
+T0m2019 checks
+*** TURN *** [2h 8c 6c][9d]
+Aster75 bets 0.13€
+T0m2019 folds
+Aster75 collected 0.28€ from pot
+*** SUMMARY ***
+Total pot 0.28€ | Rake 0.01€
+Board: [2h 8c 6c 9d]
+Seat 5: Aster75 (small blind) won 0.28€
+
+
+Winamax Poker - CashGame - HandId: #16568386-130-1634993762 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:56:02 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (3.05€)
+Seat 2: M0RNlNGSTAR (2.12€)
+Seat 3: LaMissDu33 (2.90€)
+Seat 4: Zyzz1 (2€)
+Seat 5: Aster75 (7.37€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [5c Qc]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Aster75 calls 0.02€
+T0m2019 calls 0.01€
+M0RNlNGSTAR checks
+*** FLOP *** [Tc 5s Ac]
+T0m2019 checks
+M0RNlNGSTAR checks
+Aster75 bets 0.04€
+T0m2019 folds
+M0RNlNGSTAR folds
+Aster75 collected 0.10€ from pot
+*** SUMMARY ***
+Total pot 0.10€ | No rake
+Board: [Tc 5s Ac]
+Seat 5: Aster75 (button) won 0.10€
+
+
+Winamax Poker - CashGame - HandId: #16568386-131-1634993826 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:57:06 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (3.03€)
+Seat 2: M0RNlNGSTAR (2.10€)
+Seat 3: LaMissDu33 (2.90€)
+Seat 4: Zyzz1 (2€)
+Seat 5: Aster75 (7.41€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [Jc Th]
+*** PRE-FLOP *** 
+Aster75 raises 0.04€ to 0.06€
+T0m2019 calls 0.06€
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.04€
+*** FLOP *** [Qs Jd 4s]
+LaMissDu33 checks
+Aster75 bets 0.09€
+T0m2019 folds
+LaMissDu33 calls 0.09€
+*** TURN *** [Qs Jd 4s][Qh]
+LaMissDu33 checks
+Aster75 bets 0.13€
+LaMissDu33 calls 0.13€
+*** RIVER *** [Qs Jd 4s Qh][7h]
+LaMissDu33 checks
+Aster75 bets 0.13€
+LaMissDu33 calls 0.13€
+*** SHOW DOWN ***
+Aster75 shows [Kh 6s] (One pair : Queens)
+LaMissDu33 shows [Jc Th] (Two pairs : Queens and Jacks)
+LaMissDu33 collected 0.84€ from pot
+*** SUMMARY ***
+Total pot 0.84€ | Rake 0.05€
+Board: [Qs Jd 4s Qh 7h]
+Seat 3: LaMissDu33 (big blind) showed [Jc Th] and won 0.84€ with Two pairs : Queens and Jacks
+Seat 5: Aster75 showed [Kh 6s] and lost with One pair : Queens
+
+
+Winamax Poker - CashGame - HandId: #16568386-132-1634993916 - Holdem no limit (0.01€/0.02€) - 2021/10/23 12:58:36 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.97€)
+Seat 2: M0RNlNGSTAR (2.09€)
+Seat 3: LaMissDu33 (3.33€)
+Seat 4: Zyzz1 (2€)
+Seat 5: Aster75 (7€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Zyzz1 posts big blind 0.02€
+Dealt to LaMissDu33 [3d Js]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR raises 0.06€ to 0.08€
+LaMissDu33 folds
+Zyzz1 folds
+Aster75 calls 0.06€
+*** FLOP *** [4s 8s 5h]
+Aster75 bets 0.09€
+M0RNlNGSTAR calls 0.09€
+*** TURN *** [4s 8s 5h][Td]
+Aster75 bets 0.22€
+M0RNlNGSTAR calls 0.22€
+*** RIVER *** [4s 8s 5h Td][Ah]
+Aster75 checks
+M0RNlNGSTAR checks
+*** SHOW DOWN ***
+Aster75 shows [8c 6d] (One pair : 8)
+M0RNlNGSTAR shows [Jc Jh] (One pair : Jacks)
+M0RNlNGSTAR collected 0.76€ from pot
+*** SUMMARY ***
+Total pot 0.76€ | Rake 0.05€
+Board: [4s 8s 5h Td Ah]
+Seat 2: M0RNlNGSTAR (button) showed [Jc Jh] and won 0.76€ with One pair : Jacks
+Seat 5: Aster75 showed [8c 6d] and lost with One pair : 8
+
+
+Winamax Poker - CashGame - HandId: #16568386-133-1634994008 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:00:08 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.97€)
+Seat 2: M0RNlNGSTAR (2.46€)
+Seat 3: LaMissDu33 (3.32€)
+Seat 4: Zyzz1 (2€)
+Seat 5: Aster75 (6.61€)
+*** ANTE/BLINDS ***
+Zyzz1 posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [3d Qh]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Zyzz1 raises 0.04€ to 0.06€
+Aster75 calls 0.04€
+*** FLOP *** [Ks Td Ah]
+Zyzz1 checks
+Aster75 bets 0.08€
+Zyzz1 calls 0.08€
+*** TURN *** [Ks Td Ah][9h]
+Zyzz1 checks
+Aster75 checks
+*** RIVER *** [Ks Td Ah 9h][2s]
+Zyzz1 bets 0.14€
+Aster75 folds
+Zyzz1 collected 0.40€ from pot
+*** SUMMARY ***
+Total pot 0.40€ | Rake 0.02€
+Board: [Ks Td Ah 9h 2s]
+Seat 4: Zyzz1 (small blind) won 0.40€
+
+
+Winamax Poker - CashGame - HandId: #16568386-134-1634994056 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:00:56 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.97€)
+Seat 2: M0RNlNGSTAR (2.46€)
+Seat 3: LaMissDu33 (3.32€)
+Seat 4: Zyzz1 (2.12€)
+Seat 5: Aster75 (6.47€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [5d 8d]
+*** PRE-FLOP *** 
+M0RNlNGSTAR raises 0.04€ to 0.06€
+LaMissDu33 folds
+Zyzz1 folds
+Aster75 calls 0.05€
+T0m2019 folds
+*** FLOP *** [4s 2d Qd]
+Aster75 checks
+M0RNlNGSTAR bets 0.11€
+Aster75 calls 0.11€
+*** TURN *** [4s 2d Qd][4d]
+Aster75 bets 0.12€
+M0RNlNGSTAR calls 0.12€
+*** RIVER *** [4s 2d Qd 4d][Ad]
+Aster75 checks
+M0RNlNGSTAR bets 0.34€
+Aster75 folds
+M0RNlNGSTAR collected 0.91€ from pot
+*** SUMMARY ***
+Total pot 0.91€ | Rake 0.03€
+Board: [4s 2d Qd 4d Ad]
+Seat 2: M0RNlNGSTAR won 0.91€
+
+
+Winamax Poker - CashGame - HandId: #16568386-135-1634994171 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:02:51 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (2.95€)
+Seat 2: M0RNlNGSTAR (2.74€)
+Seat 3: LaMissDu33 (3.32€)
+Seat 4: Zyzz1 (2.12€)
+Seat 5: Aster75 (6.18€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [6s 8c]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Zyzz1 raises 0.04€ to 0.06€
+Aster75 calls 0.06€
+T0m2019 folds
+M0RNlNGSTAR folds
+*** FLOP *** [6d Qc 9c]
+Zyzz1 checks
+Aster75 bets 0.11€
+Zyzz1 calls 0.11€
+*** TURN *** [6d Qc 9c][4c]
+Zyzz1 checks
+Aster75 bets 0.18€
+Zyzz1 calls 0.18€
+*** RIVER *** [6d Qc 9c 4c][3d]
+Zyzz1 bets 0.37€
+Aster75 calls 0.37€
+*** SHOW DOWN ***
+Aster75 shows [Qd 5d] (One pair : Queens)
+Zyzz1 shows [Ac Jc] (Flush Ace high)
+Zyzz1 collected 1.39€ from pot
+*** SUMMARY ***
+Total pot 1.39€ | Rake 0.08€
+Board: [6d Qc 9c 4c 3d]
+Seat 4: Zyzz1 showed [Ac Jc] and won 1.39€ with Flush Ace high
+Seat 5: Aster75 (button) showed [Qd 5d] and lost with One pair : Queens
+
+
+Winamax Poker - CashGame - HandId: #16568386-136-1634994262 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:04:22 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (2.94€)
+Seat 2: M0RNlNGSTAR (2.72€)
+Seat 3: LaMissDu33 (3.32€)
+Seat 4: Zyzz1 (2.79€)
+Seat 5: Aster75 (5.46€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [7d Kh]
+*** PRE-FLOP *** 
+Zyzz1 raises 0.04€ to 0.06€
+Aster75 raises 0.15€ to 0.21€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Zyzz1 folds
+Aster75 collected 0.30€ from pot
+*** SUMMARY ***
+Total pot 0.30€ | No rake
+Seat 5: Aster75 won 0.30€
+
+
+Winamax Poker - CashGame - HandId: #16568386-137-1634994300 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:05:00 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (2.94€)
+Seat 2: M0RNlNGSTAR (2.71€)
+Seat 3: LaMissDu33 (3.30€)
+Seat 4: Zyzz1 (2.73€)
+Seat 5: Aster75 (5.55€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Zyzz1 posts big blind 0.02€
+Dealt to LaMissDu33 [Qh 8h]
+*** PRE-FLOP *** 
+Aster75 raises 0.04€ to 0.06€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 calls 0.05€
+Zyzz1 folds
+*** FLOP *** [2c 5c Ac]
+LaMissDu33 checks
+Aster75 checks
+*** TURN *** [2c 5c Ac][Ts]
+LaMissDu33 checks
+Aster75 checks
+*** RIVER *** [2c 5c Ac Ts][2h]
+LaMissDu33 bets 0.07€
+Aster75 raises 0.23€ to 0.30€
+LaMissDu33 folds
+Aster75 shows [3c Ah] (Two pairs : Aces and 2)
+Aster75 collected 0.49€ from pot
+*** SUMMARY ***
+Total pot 0.49€ | Rake 0.02€
+Board: [2c 5c Ac Ts 2h]
+Seat 5: Aster75 showed [3c Ah] and won 0.49€ with Two pairs : Aces and 2
+
+
+Winamax Poker - CashGame - HandId: #16568386-138-1634994397 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:06:37 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (2.94€)
+Seat 2: M0RNlNGSTAR (2.71€)
+Seat 3: LaMissDu33 (3.17€)
+Seat 4: Zyzz1 (2.71€)
+Seat 5: Aster75 (5.68€)
+*** ANTE/BLINDS ***
+Zyzz1 posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [2d 8c]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR raises 0.03€ to 0.05€
+LaMissDu33 folds
+Zyzz1 folds
+Aster75 raises 0.11€ to 0.16€
+M0RNlNGSTAR raises 0.19€ to 0.35€
+Aster75 calls 0.19€
+*** FLOP *** [2h 6h Kd]
+Aster75 checks
+M0RNlNGSTAR bets 0.40€
+Aster75 calls 0.40€
+*** TURN *** [2h 6h Kd][4h]
+Aster75 bets 1.15€
+M0RNlNGSTAR folds
+Aster75 collected 2.57€ from pot
+*** SUMMARY ***
+Total pot 2.57€ | Rake 0.09€
+Board: [2h 6h Kd 4h]
+Seat 5: Aster75 (big blind) won 2.57€
+
+
+Winamax Poker - CashGame - HandId: #16568386-139-1634994476 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:07:56 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (2.94€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.17€)
+Seat 4: Zyzz1 (2.70€)
+Seat 5: Aster75 (6.35€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [4s 8d]
+*** PRE-FLOP *** 
+M0RNlNGSTAR folds
+LaMissDu33 folds
+Zyzz1 folds
+Aster75 raises 0.05€ to 0.07€
+T0m2019 raises 0.17€ to 0.24€
+Aster75 calls 0.17€
+*** FLOP *** [Kh 4d 6d]
+Aster75 bets 0.10€
+T0m2019 raises 0.42€ to 0.52€
+Aster75 calls 0.42€
+*** TURN *** [Kh 4d 6d][Qd]
+Aster75 checks
+T0m2019 bets 0.82€
+Aster75 folds
+T0m2019 collected 2.25€ from pot
+*** SUMMARY ***
+Total pot 2.25€ | Rake 0.09€
+Board: [Kh 4d 6d Qd]
+Seat 1: T0m2019 (big blind) won 2.25€
+
+
+Winamax Poker - CashGame - HandId: #16568386-140-1634994550 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:09:10 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #5 is the button
+Seat 1: T0m2019 (3.61€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.17€)
+Seat 4: Zyzz1 (2.70€)
+Seat 5: Aster75 (5.59€)
+*** ANTE/BLINDS ***
+T0m2019 posts small blind 0.01€
+M0RNlNGSTAR posts big blind 0.02€
+Dealt to LaMissDu33 [5c 4d]
+*** PRE-FLOP *** 
+LaMissDu33 folds
+Zyzz1 raises 0.04€ to 0.06€
+Aster75 calls 0.06€
+T0m2019 calls 0.05€
+M0RNlNGSTAR folds
+*** FLOP *** [4c 8h 6s]
+T0m2019 checks
+Zyzz1 checks
+Aster75 bets 0.11€
+T0m2019 folds
+Zyzz1 folds
+Aster75 collected 0.30€ from pot
+*** SUMMARY ***
+Total pot 0.30€ | Rake 0.01€
+Board: [4c 8h 6s]
+Seat 5: Aster75 (button) won 0.30€
+
+
+Winamax Poker - CashGame - HandId: #16568386-141-1634994600 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:10:00 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #1 is the button
+Seat 1: T0m2019 (3.55€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.17€)
+Seat 4: Zyzz1 (2.64€)
+Seat 5: Aster75 (5.72€)
+*** ANTE/BLINDS ***
+M0RNlNGSTAR posts small blind 0.01€
+LaMissDu33 posts big blind 0.02€
+Dealt to LaMissDu33 [3s 6c]
+*** PRE-FLOP *** 
+Zyzz1 folds
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 checks
+*** FLOP *** [Qh 4h 2h]
+LaMissDu33 checks
+Aster75 bets 0.03€
+LaMissDu33 folds
+Aster75 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Board: [Qh 4h 2h]
+Seat 5: Aster75 won 0.08€
+
+
+Winamax Poker - CashGame - HandId: #16568386-142-1634994628 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:10:28 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #2 is the button
+Seat 1: T0m2019 (3.55€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.15€)
+Seat 4: Zyzz1 (2.64€)
+Seat 5: Aster75 (5.75€)
+*** ANTE/BLINDS ***
+LaMissDu33 posts small blind 0.01€
+Zyzz1 posts big blind 0.02€
+Dealt to LaMissDu33 [As 3h]
+*** PRE-FLOP *** 
+Aster75 calls 0.02€
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Zyzz1 folds
+Aster75 calls 0.04€
+*** FLOP *** [Ac 2d Ah]
+LaMissDu33 bets 0.07€
+Aster75 calls 0.07€
+*** TURN *** [Ac 2d Ah][Qc]
+LaMissDu33 checks
+Aster75 checks
+*** RIVER *** [Ac 2d Ah Qc][7c]
+LaMissDu33 bets 0.21€
+Aster75 calls 0.21€
+*** SHOW DOWN ***
+Aster75 shows [8d Qd] (Two pairs : Aces and Queens)
+LaMissDu33 shows [As 3h] (Trips of Aces)
+LaMissDu33 collected 0.66€ from pot
+*** SUMMARY ***
+Total pot 0.66€ | Rake 0.04€
+Board: [Ac 2d Ah Qc 7c]
+Seat 3: LaMissDu33 (small blind) showed [As 3h] and won 0.66€ with Trips of Aces
+Seat 5: Aster75 showed [8d Qd] and lost with Two pairs : Aces and Queens
+
+
+Winamax Poker - CashGame - HandId: #16568386-143-1634994688 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:11:28 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #3 is the button
+Seat 1: T0m2019 (3.55€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.47€)
+Seat 4: Zyzz1 (2.62€)
+Seat 5: Aster75 (5.41€)
+*** ANTE/BLINDS ***
+Zyzz1 posts small blind 0.01€
+Aster75 posts big blind 0.02€
+Dealt to LaMissDu33 [2d 5d]
+*** PRE-FLOP *** 
+T0m2019 folds
+M0RNlNGSTAR folds
+LaMissDu33 raises 0.04€ to 0.06€
+Zyzz1 folds
+Aster75 calls 0.04€
+*** FLOP *** [2s 9h 5h]
+Aster75 bets 0.07€
+LaMissDu33 raises 0.27€ to 0.34€
+Aster75 folds
+LaMissDu33 collected 0.52€ from pot
+*** SUMMARY ***
+Total pot 0.52€ | Rake 0.02€
+Board: [2s 9h 5h]
+Seat 3: LaMissDu33 (button) won 0.52€
+
+
+Winamax Poker - CashGame - HandId: #16568386-144-1634994727 - Holdem no limit (0.01€/0.02€) - 2021/10/23 13:12:07 UTC
+Table: 'Aalen 13' 5-max (real money) Seat #4 is the button
+Seat 1: T0m2019 (3.55€)
+Seat 2: M0RNlNGSTAR (2€)
+Seat 3: LaMissDu33 (3.59€)
+Seat 4: Zyzz1 (2.61€)
+Seat 5: Aster75 (5.28€)
+*** ANTE/BLINDS ***
+Aster75 posts small blind 0.01€
+T0m2019 posts big blind 0.02€
+Dealt to LaMissDu33 [8d 3s]
+*** PRE-FLOP *** 
+M0RNlNGSTAR raises 0.04€ to 0.06€
+LaMissDu33 folds
+Zyzz1 calls 0.06€
+Aster75 calls 0.05€
+T0m2019 folds
+*** FLOP *** [4s 5d 5h]
+Aster75 checks
+M0RNlNGSTAR checks
+Zyzz1 checks
+*** TURN *** [4s 5d 5h][Ts]
+Aster75 bets 0.13€
+M0RNlNGSTAR folds
+Zyzz1 folds
+Aster75 collected 0.32€ from pot
+*** SUMMARY ***
+Total pot 0.32€ | Rake 0.01€
+Board: [4s 5d 5h Ts]
+Seat 5: Aster75 (small blind) won 0.32€
+
+
