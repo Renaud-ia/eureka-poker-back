@@ -2,9 +2,11 @@ package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosMainWinamax;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosTableWinamax;
-import fr.eurekapoker.parties.domaine.poker.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -124,7 +126,7 @@ public class ExtracteurWinamaxTest {
     void doitExtraireStackJoueurCashGame() throws ErreurRegex {
         String ligne = "Seat 3: Nakata80 (2.12€)";
         StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("Nakata80", stackJoueur.obtJoueur().obtNom());
+        assertEquals("Nakata80", stackJoueur.obtJoueur());
         BigDecimal expectedValue = new BigDecimal("2.12");
         assertEquals(0, expectedValue.compareTo(stackJoueur.obtStack()));
         assertFalse(stackJoueur.aBounty());
@@ -134,7 +136,7 @@ public class ExtracteurWinamaxTest {
     void doitExtraireStackJoueurExpresso() throws ErreurRegex {
         String ligne = "Seat 2: wmx-i5o0yy6 (500)";
         StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("wmx-i5o0yy6", stackJoueur.obtJoueur().obtNom());
+        assertEquals("wmx-i5o0yy6", stackJoueur.obtJoueur());
         BigDecimal expectedValue = new BigDecimal("500");
         assertEquals(0, expectedValue.compareTo(stackJoueur.obtStack()));
         assertFalse(stackJoueur.aBounty());
@@ -144,7 +146,7 @@ public class ExtracteurWinamaxTest {
     void doitExtraireStackJoueurAvecBountyMtt() throws ErreurRegex {
         String ligne = "Seat 6: KABB.99 (20000, 1.80€ bounty)";
         StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("KABB.99", stackJoueur.obtJoueur().obtNom());
+        assertEquals("KABB.99", stackJoueur.obtJoueur());
         BigDecimal stackAttendu = new BigDecimal("20000");
         assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
         assertTrue(stackJoueur.aBounty());
@@ -156,7 +158,7 @@ public class ExtracteurWinamaxTest {
     void doitExtraireStackJoueurAvecGrosBountyMtt() throws ErreurRegex {
         String ligne = "Seat 5: menphiscom (18193515, 11.22€ bounty)";
         StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("menphiscom", stackJoueur.obtJoueur().obtNom());
+        assertEquals("menphiscom", stackJoueur.obtJoueur());
         BigDecimal stackAttendu = new BigDecimal("18193515");
         assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
         assertTrue(stackJoueur.aBounty());
@@ -168,7 +170,7 @@ public class ExtracteurWinamaxTest {
     void doitExtraireBountyNomJoueurAvecEspace() throws ErreurRegex {
         String ligne = "Seat 1: Bastos Papin (548787, 4.26€ bounty)";
         StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("Bastos Papin", stackJoueur.obtJoueur().obtNom());
+        assertEquals("Bastos Papin", stackJoueur.obtJoueur());
         BigDecimal stackAttendu = new BigDecimal("548787");
         assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
         assertTrue(stackJoueur.aBounty());
@@ -190,7 +192,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
         assertEquals(2563429635522035713L, infosMainWinamax.obtNumeroTable());
         assertEquals(1667484424L, infosMainWinamax.obtIdentifiantMain());
-        assertEquals(0f, infosMainWinamax.obtAnte());
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0.07");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
@@ -207,7 +210,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
         assertEquals(2563429635522035713L, infosMainWinamax.obtNumeroTable());
         assertEquals(1667484424L, infosMainWinamax.obtIdentifiantMain());
-        assertEquals(0f, infosMainWinamax.obtAnte());
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0.07");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
@@ -224,7 +228,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
         assertEquals(2536694125529399325L, infosMainWinamax.obtNumeroTable());
         assertEquals(1668368706, infosMainWinamax.obtIdentifiantMain());
-        assertEquals(25f, infosMainWinamax.obtAnte());
+        BigDecimal anteAttendue = new BigDecimal("25");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0.10");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
@@ -241,8 +246,9 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
         assertEquals(15638288, infosMainWinamax.obtNumeroTable());
         assertEquals(1612884230, infosMainWinamax.obtIdentifiantMain());
-        assertEquals(0f, infosMainWinamax.obtAnte());
-        BigDecimal rakeAttendu = new BigDecimal("0.0525");
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
+        BigDecimal rakeAttendu = new BigDecimal("0");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
 
@@ -258,8 +264,9 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
         assertEquals(15453614, infosMainWinamax.obtNumeroTable());
         assertEquals(1609705548, infosMainWinamax.obtIdentifiantMain());
-        assertEquals(0f, infosMainWinamax.obtAnte());
-        BigDecimal rakeAttendu = new BigDecimal("0.0525");
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
+        BigDecimal rakeAttendu = new BigDecimal("0");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
 

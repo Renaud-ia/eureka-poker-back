@@ -3,9 +3,13 @@ package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosMainWinamax;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosTableWinamax;
-import fr.eurekapoker.parties.domaine.poker.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -176,7 +180,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     public StackJoueur extraireStackJoueur(String ligne) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternInfoJoueur, ligne);
 
-        JoueurPoker joueurPoker = new JoueurPoker(matcher.group("playName"));
+        String joueurPoker = matcher.group("playName");
 
         String bountyString = (matcher.group("bounty"));
         if (bountyString == null) {
@@ -293,6 +297,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     private static final Pattern patternCartes = Pattern.compile(
             "\\[(?<cards>\\w{2}[\\s\\w{2}]*)](\\[(?<newCard>\\w{2})])?");
 
+    @Override
     public List<CartePoker> extraireCartes(String ligne) throws ErreurRegex {
         Matcher matcher = patternCartes.matcher(ligne);
         if (!matcher.find()) {

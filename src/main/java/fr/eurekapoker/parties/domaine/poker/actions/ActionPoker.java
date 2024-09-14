@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine.poker;
+package fr.eurekapoker.parties.domaine.poker.actions;
 
 import java.math.BigDecimal;
 

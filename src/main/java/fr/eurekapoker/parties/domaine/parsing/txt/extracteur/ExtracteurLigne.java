@@ -2,9 +2,9 @@ package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosMain;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosTable;
-import fr.eurekapoker.parties.domaine.poker.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 
 import java.util.List;
 
@@ -21,4 +21,6 @@ public interface ExtracteurLigne {
     ResultatJoueur extraireResultat(String ligne) throws ErreurRegex;
 
     BlindeOuAnte extraireBlindeOuAnte(String s) throws ErreurRegex;
+
+    List<CartePoker> extraireCartes(String ligne) throws ErreurRegex;
 }

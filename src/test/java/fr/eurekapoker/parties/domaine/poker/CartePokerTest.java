@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.domaine.poker;
 
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

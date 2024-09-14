@@ -1,4 +1,7 @@
 package fr.eurekapoker.parties.domaine.parsing.dto;
 
-public class InfosTable {
+public abstract class InfosTable {
+    public abstract String obtNomTable();
+
+    public abstract int obtNombreJoueurs();
 }

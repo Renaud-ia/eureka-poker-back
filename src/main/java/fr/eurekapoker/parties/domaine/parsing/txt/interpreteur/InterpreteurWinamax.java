@@ -1,6 +1,6 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.interpreteur;
 
-import fr.eurekapoker.parties.domaine.poker.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 
 public class InterpreteurWinamax implements InterpreteurLigne {
     private TourPoker.RoundPoker tourActuel;
@@ -132,6 +132,7 @@ public class InterpreteurWinamax implements InterpreteurLigne {
                 || endroitActuel == EndroitFichier.FIN_MAIN;
     }
 
+    @Override
     public boolean estCartesHero() {
         return endroitActuel == EndroitFichier.CARTES_HERO;
     }

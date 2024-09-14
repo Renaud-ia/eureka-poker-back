@@ -2,16 +2,18 @@ package fr.eurekapoker.parties.domaine.parsing;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
-import fr.eurekapoker.parties.domaine.poker.*;
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 
-import javax.swing.text.html.parser.Parser;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 /**
  * centralise les procédures communes aux différents parsers
- * calculer la value des actions
  */
 public abstract class ParserModele {
     private final HashMap<JoueurPoker, Float> montantDejaInvesti;
@@ -21,18 +23,9 @@ public abstract class ParserModele {
         this.mainsExtraites = new ArrayList<>();
         this.montantDejaInvesti = new HashMap<>();
     }
-    protected void calculerLaValueDesActions() {
-        // todo
-    }
-
-    protected void ajouterActionAvecMontantDejaInvesti(ActionPoker actionPoker) {
-        TourPoker tourActuel = obtMains().getLast().obtTours().getLast();
-        tourActuel.ajouterAction(actionPoker);
-    }
 
     public void lancerImport() throws ErreurImport {
         extraireMains();
-        calculerLaValueDesActions();
     }
 
     protected abstract void extraireMains() throws ErreurImport;

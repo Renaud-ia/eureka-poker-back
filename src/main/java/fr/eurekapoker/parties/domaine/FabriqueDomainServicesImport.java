@@ -3,7 +3,7 @@ package fr.eurekapoker.parties.domaine;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import java.io.File;
 
-public class BuilderDomainServicesImport {
+public class FabriqueDomainServicesImport {
     DomaineServiceImport obtService(String lignesFichier) throws ErreurImport {
         if (lignesFichier.startsWith("<")) return new DomaineServiceImportXml(lignesFichier);
 

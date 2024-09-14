@@ -1,10 +1,16 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
+import fr.eurekapoker.parties.domaine.parsing.dto.BlindeOuAnte;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosMainWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.ResultatJoueur;
+import fr.eurekapoker.parties.domaine.parsing.dto.StackJoueur;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
-import fr.eurekapoker.parties.domaine.poker.*;
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartieWinamax;
+import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -50,6 +56,8 @@ public class ParserWinamaxTest {
     private InfosMainWinamax infosMain;
     @InjectMocks
     private ParserWinamax parserWinamax;
+    @Mock
+    private BuilderInfosPartieWinamax builderInfosPartieWinamax;
     private String[] lignesFichier;
     @BeforeEach
     void initialisation() throws ErreurImport {
@@ -59,7 +67,7 @@ public class ParserWinamaxTest {
                 "Ligne Test",
         };
 
-        parserWinamax = spy(new ParserWinamax(lignesFichier, interpreteurWinamax, extracteurWinamax));
+        parserWinamax = spy(new ParserWinamax(lignesFichier, interpreteurWinamax, extracteurWinamax, builderInfosPartieWinamax));
 
         mainsExtraitesSpy.add(mainPokerMock);
 
@@ -75,7 +83,7 @@ public class ParserWinamaxTest {
         when(joueurPokerMock.obtNom()).thenReturn(fauxNomJoueur);
         when(resultatJoueurMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
-        stackJoueur = new StackJoueur(joueurPokerMock, 0, 0);
+        stackJoueur = new StackJoueur(joueurPokerMock.obtNom(), 0, 0);
         when(extracteurWinamax.extraireStackJoueur(anyString())).thenReturn(stackJoueur);
 
         when(infosMain.obtIdentifiantMain()).thenReturn(0L);
@@ -177,5 +185,34 @@ public class ParserWinamaxTest {
 
         // Convertir la liste en un tableau de chaînes (String[])
         return lignes.toArray(new String[0]);
+    }
+
+
+    @Test
+    void nePeutPasLireLesFichiersNonWinamax() throws IOException, URISyntaxException {
+        List<Path> chemins = new ArrayList<>();
+        // todo ajout de nouvelles roooms => vérifier que c'est faux pour toutes les autres rooms
+        //Path cheminRepertoire = Paths.get(Objects.requireNonNull(getClass().getResource("/parsing/winamax")).toURI());
+
+        for (Path cheminRepertoire: chemins) {
+            assertTrue(Files.exists(cheminRepertoire),
+                    "Le répertoire parsing/winamax n'existe pas dans les ressources.");
+
+            int nFichiersTestes = 0;
+
+            try (DirectoryStream<Path> fichiers = Files.newDirectoryStream(cheminRepertoire)) {
+                for (Path fichier : fichiers) {
+                    if (Files.isRegularFile(fichier)) {
+                        String[] lignesFichier = lireFichierSousFormeDeTableau(fichier);
+
+                        ParserWinamax parserWinamax = new ParserWinamax(lignesFichier);
+                        assertTrue(parserWinamax.peutLireFichier(), "Fichier non reconnu :" + fichier);
+                    }
+                    nFichiersTestes++;
+                }
+            }
+
+            assertTrue(nFichiersTestes >= 3, "Pas assez de fichiers de tests");
+        }
     }
 }

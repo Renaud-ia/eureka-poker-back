@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine.poker;
+package fr.eurekapoker.parties.domaine.parsing.dto;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

@@ -1,9 +1,9 @@
 package fr.eurekapoker.parties.domaine;
 
 import fr.eurekapoker.parties.domaine.exceptions.RoomNonPriseEnCharge;
-import fr.eurekapoker.parties.domaine.poker.FormatPoker;
-import fr.eurekapoker.parties.domaine.poker.JoueurPoker;
-import fr.eurekapoker.parties.domaine.poker.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 
 import java.util.List;
 

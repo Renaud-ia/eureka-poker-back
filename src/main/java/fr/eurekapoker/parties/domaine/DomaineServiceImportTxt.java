@@ -4,11 +4,11 @@ import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurInconnue;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.RoomNonPriseEnCharge;
-import fr.eurekapoker.parties.domaine.parsing.txt.BuilderParserTxt;
+import fr.eurekapoker.parties.domaine.parsing.txt.FabriqueParserTxt;
 import fr.eurekapoker.parties.domaine.parsing.txt.ParserTxt;
-import fr.eurekapoker.parties.domaine.poker.FormatPoker;
-import fr.eurekapoker.parties.domaine.poker.JoueurPoker;
-import fr.eurekapoker.parties.domaine.poker.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 
 import java.util.List;
 
@@ -25,14 +25,10 @@ class DomaineServiceImportTxt implements DomaineServiceImport {
 
     public DomaineServiceImportTxt(String[] lignesFichier) throws ErreurImport {
         try {
-            this.parserTxt = BuilderParserTxt.trouverParser(lignesFichier);
+            this.parserTxt = FabriqueParserTxt.trouverParser(lignesFichier);
         }
         catch (Exception e) {
             throw new ErreurInconnue(e.getMessage());
-        }
-
-        if (parserTxt == null) {
-            throw new RoomNonPriseEnCharge("Impossible de trouver un parser");
         }
     }
 

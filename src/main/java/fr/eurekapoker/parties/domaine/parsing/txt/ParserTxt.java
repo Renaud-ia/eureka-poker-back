@@ -4,26 +4,35 @@ import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.parsing.ParserModele;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosMain;
+import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
-import fr.eurekapoker.parties.domaine.poker.*;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
+import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartie;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 
 import java.util.List;
-import java.util.Objects;
 
 public abstract class ParserTxt extends ParserModele {
     protected final String[] lignesFichier;
     private final InterpreteurLigne interpreteurLigne;
     private final ExtracteurLigne extracteurLigne;
-
+    private final BuilderInfosPartie builderInfosPartie;
+    private InfosPartiePoker infosPartiePoker;
     public ParserTxt(String[] lignesFichier,
                      InterpreteurLigne interpreteurLigne,
-                     ExtracteurLigne extracteurLigne) {
+                     ExtracteurLigne extracteurLigne,
+                     BuilderInfosPartie builderInfosPartie) {
         super();
         this.lignesFichier = lignesFichier;
         this.interpreteurLigne = interpreteurLigne;
         this.extracteurLigne = extracteurLigne;
+        this.builderInfosPartie = builderInfosPartie;
     }
 
     @Override
@@ -32,7 +41,8 @@ public abstract class ParserTxt extends ParserModele {
             extraireLigne(indexLigne);
         }
 
-        calculerLaValueDesActions();
+        calculerLaValueDesActionsDerniereMain();
+        this.infosPartiePoker = this.builderInfosPartie.build();
     }
 
     private void extraireLigne(int indexLigne) throws ErreurImport {
@@ -41,75 +51,111 @@ public abstract class ParserTxt extends ParserModele {
 
         if (interpreteurLigne.ligneSansInfo()) return;
 
-        if (interpreteurLigne.estFormat()) extraireFormat(indexLigne);
-        else if (interpreteurLigne.estNouvelleMain()) creerNouvelleMain(indexLigne);
+        if (interpreteurLigne.estNouvelleMain()) creerNouvelleMain(indexLigne);
+        else if (interpreteurLigne.estFormat()) extraireInfosPartie(indexLigne);
         else if (interpreteurLigne.estJoueur()) ajouterJoueur(indexLigne);
         else if (interpreteurLigne.estNouveauTour()) creerNouveauTour(indexLigne);
         else if (interpreteurLigne.estBlindeAnte()) ajouterBlindeOuAnte(indexLigne);
         else if (interpreteurLigne.estAction()) ajouterAction(indexLigne);
         else if (interpreteurLigne.estResultat()) ajouterResultat(indexLigne);
-    }
-
-    private void extraireFormat(int indexLigne) throws ErreurRegex {
-        // todo
+        else if (interpreteurLigne.estCartesHero()) ajouterCarteshero(indexLigne);
     }
 
     private void creerNouvelleMain(int indexLigne) throws ErreurImport {
+        calculerLaValueDesActionsDerniereMain();
         InfosMain infosMain = extracteurLigne.extraireInfosMain(lignesFichier[indexLigne]);
         MainPoker mainPoker = new MainPoker(infosMain.obtIdentifiantMain());
         this.mainsExtraites.add(mainPoker);
-    }
 
-    private void ajouterJoueur(int indexLigne) throws ErreurRegex {
-        StackJoueur stackJoueur = extracteurLigne.extraireStackJoueur(lignesFichier[indexLigne]);
-        JoueurPoker joueurPoker = stackJoueur.obtJoueur();
-        MainPoker mainActuelle = obtMains().getLast();
-        mainActuelle.ajouterJoueur(joueurPoker);
+        FormatPoker formatPoker = new FormatPoker(infosMain.obtVariante(), infosMain.obtTypeTable());
 
-        // todo ajotuer les stacks de départ
-    }
-
-    private void creerNouveauTour(int indexLigne) throws ErreurRegex {
-        List<CartePoker> board = extracteurLigne.extraireBoardTour(lignesFichier[indexLigne]);
-        TourPoker nouveauTour = new TourPoker(board);
-        MainPoker mainActuelle = obtMains().getLast();
-        mainActuelle.ajouterTour(nouveauTour);
-    }
-
-    private void ajouterAction(int indexLigne) throws ErreurRegex {
-        ActionPoker actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
-        this.ajouterActionAvecMontantDejaInvesti(actionPoker);
-    }
-
-    private void ajouterResultat(int indexLigne) throws ErreurLectureFichier, ErreurRegex {
-        ResultatJoueur resultatJoueur = extracteurLigne.extraireResultat(lignesFichier[indexLigne]);
-        String nomJoueur = resultatJoueur.getNomJoueur();
-
-        MainPoker mainActuelle = obtMains().getLast();
-        JoueurPoker joueurPoker = retrouverJoueurParNom(mainActuelle, nomJoueur);
-
-        joueurPoker.ajouterResultat(resultatJoueur);
-    }
-
-    private JoueurPoker retrouverJoueurParNom(MainPoker mainPoker, String nomJoueur) throws ErreurLectureFichier {
-        for (JoueurPoker joueur : mainPoker.obtJoueurs()) {
-            if (Objects.equals(joueur.obtNom(), nomJoueur)) return joueur;
+        // on ne l'initialise qu'une seule fois
+        if (builderInfosPartie.donneesIncompletes()) {
+            builderInfosPartie.fixFormatPoker(formatPoker);
+            builderInfosPartie.fixNumeroTable(infosMain.obtNumeroTable());
+            builderInfosPartie.fixDate(infosMain.obtDate());
+            builderInfosPartie.fixBuyIn(infosMain.obtBuyIn());
+            builderInfosPartie.fixAnte(infosMain.obtAnte());
+            builderInfosPartie.fixRake(infosMain.obtRake());
         }
+    }
 
-        throw new ErreurLectureFichier("Le joueur n'a pas été trouvée");
+    private void extraireInfosPartie(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
+        InfosTable infosTable = extracteurLigne.extraireInfosTable(lignesFichier[indexLigne]);
+        if (builderInfosPartie.donneesIncompletes()) {
+            builderInfosPartie.fixNombreJoueurs(infosTable.obtNombreJoueurs());
+            builderInfosPartie.fixNomPartie(infosTable.obtNomTable());
+        }
+    }
+
+    private void ajouterJoueur(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
+        StackJoueur stackJoueur = extracteurLigne.extraireStackJoueur(lignesFichier[indexLigne]);
+        String nomJoueur = stackJoueur.obtJoueur();
+        MainPoker mainActuelle = this.obtMains().getLast();
+        mainActuelle.ajouterJoueur(nomJoueur);
+        mainActuelle.ajouterStackDepart(nomJoueur, stackJoueur.obtStack());
+        if (stackJoueur.aBounty()) {
+            mainActuelle.ajouterBounty(nomJoueur, stackJoueur.obtBounty());
+        }
     }
 
     private void ajouterBlindeOuAnte(int indexLigne) throws ErreurLectureFichier, ErreurRegex {
         BlindeOuAnte blindeOuAnte = extracteurLigne.extraireBlindeOuAnte(lignesFichier[indexLigne]);
         MainPoker mainActuelle = obtMains().getLast();
-        JoueurPoker joueurPoker = retrouverJoueurParNom(mainActuelle, blindeOuAnte.getNomJoueur());
+        String nomJoueur = blindeOuAnte.getNomJoueur();
 
         if (blindeOuAnte.isBlinde()) {
-            mainActuelle.ajouterBlinde(joueurPoker, blindeOuAnte.obtMontant());
+            mainActuelle.ajouterBlinde(nomJoueur, blindeOuAnte.obtMontant());
         }
 
         else if (blindeOuAnte.isAnte()) {
-            mainActuelle.ajouterAnte(joueurPoker, blindeOuAnte.obtMontant());
+            mainActuelle.ajouterAnte(nomJoueur, blindeOuAnte.obtMontant());
+        }
+    }
+
+    private void ajouterCarteshero(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
+        List<CartePoker> cartesHero = extracteurLigne.extraireCartes(lignesFichier[indexLigne]);
+        MainPoker mainActuelle = obtMains().getLast();
+        mainActuelle.ajouterCartesHero(cartesHero);
+    }
+
+    private void creerNouveauTour(int indexLigne) throws ErreurRegex {
+        List<CartePoker> cartesBoard = extracteurLigne.extraireBoardTour(lignesFichier[indexLigne]);
+        BoardPoker board = new BoardPoker(cartesBoard);
+        TourPoker nouveauTour = new TourPoker(board);
+        MainPoker mainActuelle = obtMains().getLast();
+
+        // IMPORTANT : on notifie qu'il y a des joueurs en moins sur la table
+        int nombreJoueursFormat = this.infosPartiePoker.obtNombreJoueurs();
+        int nombreJoueursTable = mainActuelle.obtJoueurs().size();
+
+        while(nombreJoueursTable++ < nombreJoueursFormat) {
+            nouveauTour.ajouterJoueurNonPresent();
+        }
+
+        mainActuelle.ajouterTour(nouveauTour);
+    }
+
+    private void ajouterAction(int indexLigne) throws ErreurRegex {
+        ActionPoker actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
+        TourPoker tourActuel = obtMains().getLast().obtTours().getLast();
+        tourActuel.ajouterAction(actionPoker);
+    }
+
+    private void ajouterResultat(int indexLigne) throws ErreurRegex {
+        ResultatJoueur resultatJoueur = extracteurLigne.extraireResultat(lignesFichier[indexLigne]);
+        String nomJoueur = resultatJoueur.getNomJoueur();
+
+        MainPoker mainActuelle = obtMains().getLast();
+
+        mainActuelle.ajouterGains(nomJoueur, resultatJoueur.obtMontantGagne());
+        mainActuelle.ajouterCartes(nomJoueur, resultatJoueur.obtCartesJoueur());
+    }
+
+    private void calculerLaValueDesActionsDerniereMain() {
+        if (this.obtMains().size() > 1) {
+            MainPoker derniereMain = this.obtMains().getLast();
+            derniereMain.calculerLaValueDesActions();
         }
     }
 

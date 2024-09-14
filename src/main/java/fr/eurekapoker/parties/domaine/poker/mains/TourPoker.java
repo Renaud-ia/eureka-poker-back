@@ -1,16 +1,23 @@
-package fr.eurekapoker.parties.domaine.poker;
+package fr.eurekapoker.parties.domaine.poker.mains;
 
-import java.util.List;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
+import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 
 /**
  * attribue un code unique à chaque action ajoutée
  */
 public class TourPoker {
 
-    public TourPoker(List<CartePoker> board) {
+    public TourPoker(BoardPoker board) {
     }
 
     public void ajouterAction(ActionPoker actionPoker) {
+    }
+
+    /**
+     * utilisé pour garantir la validité de l'encodage des actions
+     */
+    public void ajouterJoueurNonPresent() {
     }
 
     public enum RoundPoker {

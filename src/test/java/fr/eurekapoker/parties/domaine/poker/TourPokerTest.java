@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.domaine.poker;
 
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import org.junit.jupiter.api.Test;
 
 public class TourPokerTest {
