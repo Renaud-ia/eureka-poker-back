@@ -8,26 +8,15 @@ import java.time.LocalDateTime;
 
 
 public class InfosPartieWinamax extends InfosPartiePoker {
-    // todo vérifier le rake cash game
-    // todo ajouter les différentes variantes
-    // todo ajouter des TU
-    private static final BigDecimal RAKE_CASH_GAME =
-            new BigDecimal("0.0525").setScale(4, RoundingMode.HALF_UP);
     public InfosPartieWinamax(
             FormatPoker formatPoker,
             long idPartie,
+            String nomPartie,
+            int nombreJoueurs,
             LocalDateTime localDateTime,
             BigDecimal buyIn,
             BigDecimal ante,
             BigDecimal rake) {
-        super(formatPoker, idPartie, localDateTime, buyIn, ante, rake);
-    }
-
-
-    @Override
-    protected void standardiserInfosPartie() {
-        if (formatPoker.obtTypeTable() == FormatPoker.TypeTable.CASH_GAME) {
-            this.rake = RAKE_CASH_GAME;
-        }
+        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake);
     }
 }

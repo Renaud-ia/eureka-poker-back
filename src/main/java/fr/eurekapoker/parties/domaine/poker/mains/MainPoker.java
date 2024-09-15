@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.domaine.poker.mains;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 
@@ -15,10 +16,12 @@ import java.util.List;
  */
 public class MainPoker {
     private final long identifiantMain;
-    private final HashMap<String, JoueurPoker> joueursPresents;
     private final List<TourPoker> toursJoues;
+    private final HashMap<String, JoueurPoker> joueursPresents;
     private final HashMap<JoueurPoker, BigDecimal> blindesPayees;
     private final HashMap<JoueurPoker, BigDecimal> antesPayees;
+    private final HashMap<JoueurPoker, BigDecimal> gains;
+    private final HashMap<JoueurPoker, ComboReel> cartesJoueurs;
     private List<CartePoker> cartesHero;
     public MainPoker(long identifiantMain) {
         this.identifiantMain = identifiantMain;
@@ -26,6 +29,8 @@ public class MainPoker {
         this.toursJoues = new ArrayList<>();
         this.blindesPayees = new HashMap<>();
         this.antesPayees = new HashMap<>();
+        this.gains = new HashMap<>();
+        this.cartesJoueurs = new HashMap<>();
     }
     public void ajouterJoueur(String nomJoueur) throws ErreurLectureFichier {
         if (joueursPresents.containsKey(nomJoueur))
@@ -65,10 +70,15 @@ public class MainPoker {
         this.cartesHero = cartesHero;
     }
 
-    public void ajouterGains(String joueurPoker, BigDecimal bigDecimal) {
+    public void ajouterGains(String nomJoueur, BigDecimal montantGain) throws ErreurLectureFichier {
+        JoueurPoker joueurPoker = obtJoueurParNom(nomJoueur);
+        gains.put(joueurPoker, montantGain);
     }
 
-    public void ajouterCartes(String joueurPoker, List<CartePoker> cartePokers) {
+    public void ajouterCartes(String nomJoueur, List<CartePoker> cartePokers) throws ErreurLectureFichier {
+        JoueurPoker joueurPoker = obtJoueurParNom(nomJoueur);
+        ComboReel comboReel = new ComboReel(cartePokers);
+
     }
 
     public void calculerLaValueDesActions() {

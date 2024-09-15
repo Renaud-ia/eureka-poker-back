@@ -1,5 +1,7 @@
 package fr.eurekapoker.parties.domaine.poker.parties;
 
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
@@ -7,37 +9,47 @@ import java.time.LocalDateTime;
  * classe qui a pour but de standardiser les infos de partie
  * détermine le rake en fonction du format détecté
  */
-public class BuilderInfosPartie {
-    // todo
-    public InfosPartiePoker build() {
-        return null;
-    }
+public abstract class BuilderInfosPartie {
+    protected FormatPoker formatPoker;
+    protected long numeroTable;
+    protected String nomPartie;
+    protected int nombreJoueurs;
+    protected LocalDateTime date;
+    protected BigDecimal buyIn;
+    protected BigDecimal ante;
+    protected BigDecimal rake;
+    public abstract InfosPartiePoker build() throws ErreurLectureFichier;
 
-    public boolean donneesIncompletes() {
-        return true;
-    }
-
+    public abstract boolean donneesIncompletes();
     public void fixFormatPoker(FormatPoker formatPoker) {
+        this.formatPoker = formatPoker;
     }
 
-    public void fixNumeroTable(long l) {
+    public void fixNumeroTable(long numeroTable) {
+        this.numeroTable = numeroTable;
     }
 
-    public void fixDate(LocalDateTime localDateTime) {
+    public void fixDate(LocalDateTime date) {
+        this.date = date;
     }
 
-    public void fixBuyIn(BigDecimal bigDecimal) {
+    public void fixBuyIn(BigDecimal buyIn) {
+        this.buyIn = buyIn;
     }
 
-    public void fixAnte(BigDecimal bigDecimal) {
+    public void fixAnte(BigDecimal ante) {
+        this.ante = ante;
     }
 
-    public void fixRake(BigDecimal bigDecimal) {
+    public void fixRake(BigDecimal rake) {
+        this.rake = rake;
     }
 
-    public void fixNombreJoueurs(int i) {
+    public void fixNombreJoueurs(int nombreJoueurs) {
+        this.nombreJoueurs = nombreJoueurs;
     }
 
-    public void fixNomPartie(String s) {
+    public void fixNomPartie(String nomPartie) {
+        this.nomPartie = nomPartie;
     }
 }

@@ -140,7 +140,7 @@ public abstract class ParserTxt extends ParserModele {
         tourActuel.ajouterAction(actionPoker);
     }
 
-    private void ajouterResultat(int indexLigne) throws ErreurRegex {
+    private void ajouterResultat(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
         ResultatJoueur resultatJoueur = extracteurLigne.extraireResultat(lignesFichier[indexLigne]);
         String nomJoueur = resultatJoueur.getNomJoueur();
 
