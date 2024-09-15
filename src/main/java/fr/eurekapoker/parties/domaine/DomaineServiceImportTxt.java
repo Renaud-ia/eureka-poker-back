@@ -7,6 +7,7 @@ import fr.eurekapoker.parties.domaine.exceptions.RoomNonPriseEnCharge;
 import fr.eurekapoker.parties.domaine.parsing.txt.FabriqueParserTxt;
 import fr.eurekapoker.parties.domaine.parsing.txt.ParserTxt;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 
@@ -39,8 +40,8 @@ class DomaineServiceImportTxt implements DomaineServiceImport {
     }
 
     @Override
-    public FormatPoker obtFormatPoker() throws ErreurLectureFichier {
-        return parserTxt.obtFormatPoker();
+    public InfosPartiePoker obtInfosPartie() {
+        return parserTxt.obtInfosPartie();
     }
 
     @Override

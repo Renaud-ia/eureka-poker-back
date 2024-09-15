@@ -14,7 +14,6 @@ import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartie;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 
 import java.util.List;
 
@@ -23,7 +22,6 @@ public abstract class ParserTxt extends ParserModele {
     private final InterpreteurLigne interpreteurLigne;
     private final ExtracteurLigne extracteurLigne;
     private final BuilderInfosPartie builderInfosPartie;
-    private InfosPartiePoker infosPartiePoker;
     public ParserTxt(String[] lignesFichier,
                      InterpreteurLigne interpreteurLigne,
                      ExtracteurLigne extracteurLigne,
@@ -65,7 +63,7 @@ public abstract class ParserTxt extends ParserModele {
         calculerLaValueDesActionsDerniereMain();
         InfosMain infosMain = extracteurLigne.extraireInfosMain(lignesFichier[indexLigne]);
         MainPoker mainPoker = new MainPoker(infosMain.obtIdentifiantMain());
-        this.mainsExtraites.add(mainPoker);
+        this.obtMains().add(mainPoker);
 
         FormatPoker formatPoker = new FormatPoker(infosMain.obtVariante(), infosMain.obtTypeTable());
 
@@ -126,7 +124,7 @@ public abstract class ParserTxt extends ParserModele {
         MainPoker mainActuelle = obtMains().getLast();
 
         // IMPORTANT : on notifie qu'il y a des joueurs en moins sur la table
-        int nombreJoueursFormat = this.infosPartiePoker.obtNombreJoueurs();
+        int nombreJoueursFormat = this.obtInfosPartie().obtNombreJoueurs();
         int nombreJoueursTable = mainActuelle.obtJoueurs().size();
 
         while(nombreJoueursTable++ < nombreJoueursFormat) {

@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine.poker;
+package fr.eurekapoker.parties.domaine.poker.cartes;
 
 
 import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;

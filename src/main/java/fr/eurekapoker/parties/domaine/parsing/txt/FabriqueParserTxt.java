@@ -10,6 +10,10 @@ import fr.eurekapoker.parties.domaine.poker.parties.*;
 
 import java.util.HashMap;
 
+/**
+ * fabrique des parsers txt
+ * crée le parser approprié et lui injecte les bonnes dépendances
+ */
 public class FabriqueParserTxt {
     private static final HashMap<RoomPoker, Class<? extends ParserTxt>> parsersDisponibles = new HashMap<>();
 

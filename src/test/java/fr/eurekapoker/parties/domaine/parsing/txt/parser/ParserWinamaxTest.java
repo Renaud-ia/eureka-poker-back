@@ -10,6 +10,7 @@ import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinam
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartieWinamax;
+import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,6 +37,8 @@ public class ParserWinamaxTest {
     private InterpreteurWinamax interpreteurWinamax;
     @Mock
     private ExtracteurWinamax extracteurWinamax;
+    @Mock
+    private BuilderInfosPartieWinamax builderInfosPartieWinamax;
     @Spy
     private ArrayList<MainPoker> mainsExtraitesSpy = new ArrayList<>();
     @Mock
@@ -56,9 +59,9 @@ public class ParserWinamaxTest {
     private InfosMainWinamax infosMain;
     @InjectMocks
     private ParserWinamax parserWinamax;
-    @Mock
-    private BuilderInfosPartieWinamax builderInfosPartieWinamax;
     private String[] lignesFichier;
+    @Mock
+    private InfosPartiePoker mockInfosPartiePoker;
     @BeforeEach
     void initialisation() throws ErreurImport {
         MockitoAnnotations.openMocks(this);
@@ -68,8 +71,6 @@ public class ParserWinamaxTest {
         };
 
         parserWinamax = spy(new ParserWinamax(lignesFichier, interpreteurWinamax, extracteurWinamax, builderInfosPartieWinamax));
-
-        mainsExtraitesSpy.add(mainPokerMock);
 
         doReturn(mainsExtraitesSpy).when(parserWinamax).obtMains();
         joueurs = new ArrayList<>();
@@ -96,54 +97,93 @@ public class ParserWinamaxTest {
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
+        verify(mainsExtraitesSpy).add(any(MainPoker.class));
+
+        verify(builderInfosPartieWinamax).donneesIncompletes();
     }
 
     @Test
-    void infosTableAppelleBonneMethodeExtracteur() throws ErreurImport {
+    void infosPartieAppelleBonneMethodeExtracteur() throws ErreurImport {
         when(interpreteurWinamax.estFormat()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        //verify(extracteurWinamax).extraireInfosTable(lignesFichier[0]);
+        verify(extracteurWinamax).extraireInfosTable(lignesFichier[0]);
 
-        //todo
+        verify(builderInfosPartieWinamax).donneesIncompletes();
     }
 
     @Test
     void ligneJoueurAppelleBonneMethodeExtracteur() throws ErreurImport {
+        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estJoueur()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireStackJoueur(lignesFichier[0]);
+        verify(mainPokerMock).ajouterJoueur(anyString());
     }
 
     @Test
-    void ligneBlindeAnteAppelleBonneMethodeExtracteur() throws ErreurImport {
+    void ligneBlindeAppelleBonneMethodeExtracteur() throws ErreurImport {
+        mainsExtraitesSpy.add(mainPokerMock);
+        when(blindeOuAnteMock.isBlinde()).thenReturn(true);
         when(interpreteurWinamax.estBlindeAnte()).thenReturn(Boolean.TRUE);
         when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
         when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireBlindeOuAnte(lignesFichier[0]);
+        verify(mainPokerMock).ajouterBlinde(eq(fauxNomJoueur), any());
+    }
+
+    @Test
+    void ligneAnteAppelleBonneMethodeExtracteur() throws ErreurImport {
+        mainsExtraitesSpy.add(mainPokerMock);
+        when(blindeOuAnteMock.isAnte()).thenReturn(true);
+        when(interpreteurWinamax.estBlindeAnte()).thenReturn(Boolean.TRUE);
+        when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
+        when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
+
+        parserWinamax.lancerImport();
+        verify(extracteurWinamax).extraireBlindeOuAnte(lignesFichier[0]);
+        verify(mainPokerMock).ajouterAnte(eq(fauxNomJoueur), any());
     }
 
     @Test
     void ligneActionAppelleBonneMethodeExtracteur() throws ErreurImport {
+        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estAction()).thenReturn(Boolean.TRUE);
         when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
         when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireAction(lignesFichier[0]);
+        verify(tourPokerMock).ajouterAction(any());
     }
 
     @Test
     void ligneResultatAppelleBonneMethodeExtracteur() throws ErreurImport {
+        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estResultat()).thenReturn(Boolean.TRUE);
         when(extracteurWinamax.extraireResultat(lignesFichier[0])).thenReturn(resultatJoueurMock);
         when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireResultat(lignesFichier[0]);
+        verify(mainPokerMock).ajouterGains(eq(fauxNomJoueur), any());
+        verify(mainPokerMock).ajouterCartes(eq(fauxNomJoueur), any());
+    }
+
+    @Test
+    void testLigneNouveauTourAppelleBonnesMethodes() throws ErreurImport {
+        mainsExtraitesSpy.add(mainPokerMock);
+        when(interpreteurWinamax.estNouveauTour()).thenReturn(Boolean.TRUE);
+        doReturn(mockInfosPartiePoker).when(parserWinamax).obtInfosPartie();
+
+        parserWinamax.lancerImport();
+        verify(extracteurWinamax).extraireBoardTour(lignesFichier[0]);
+        verify(mainPokerMock).ajouterTour(any(TourPoker.class));
+
+        // todo on pourrait vérifier que le tour a des actions vides
     }
 
     @Test

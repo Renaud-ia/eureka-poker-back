@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine.poker;
+package fr.eurekapoker.parties.domaine.poker.mains;
 
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import org.junit.jupiter.api.Test;

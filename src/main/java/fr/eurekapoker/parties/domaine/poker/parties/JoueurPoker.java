@@ -12,12 +12,6 @@ public class JoueurPoker {
         return nomJoueur;
     }
 
-    public void ajouterStackDepart(BigDecimal bigDecimal) {
-    }
-
-    public void ajouterBounty(BigDecimal bigDecimal) {
-    }
-
     @Override
     public int hashCode() {
         return Objects.hash(nomJoueur);

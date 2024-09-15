@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
  * détermine le rake en fonction du format détecté
  */
 public class BuilderInfosPartie {
+    // todo
     public InfosPartiePoker build() {
         return null;
     }

@@ -33,10 +33,6 @@ public abstract class InfosPartiePoker {
         this.formatPoker = formatPoker;
     }
 
-
-
-
-
     public void fixNombreJoueurs(int nombreJoueurs) throws ErreurLectureFichier {
         if (this.nombreJoueurs != null) {
             throw new ErreurLectureFichier("Le nombre de joueurs a déjà été fixé");
