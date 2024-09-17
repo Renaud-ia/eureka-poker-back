@@ -1,12 +1,12 @@
 package fr.eurekapoker.parties.application;
 
-import fr.eurekapoker.parties.application.api.ContenuPartieDto;
+import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
 import fr.eurekapoker.parties.application.api.InterfaceParties;
-import fr.eurekapoker.parties.application.api.ResumePartieDto;
+import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
-import fr.eurekapoker.parties.application.persistance.JoueurPersistenceDto;
+import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 
 public class InterfacePartiesImpl implements InterfaceParties {
@@ -26,18 +26,16 @@ public class InterfacePartiesImpl implements InterfaceParties {
     }
 
     @Override
-    public void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur, String room)
+    public void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur)
             throws ErreurModificationPartie {
-        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomJoueur, room);
-        long idJoueur = persistanceParties.ajouterOuRecupererJoueur(joueurPersistenceDto);
-        persistanceParties.rendreAnonymeJoueurDansPartie(idPartie, idJoueur);
+        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomJoueur);
+        persistanceParties.rendreAnonymeJoueurDansPartie(idPartie, joueurPersistenceDto);
     }
 
     @Override
-    public void definirHeroDansPartie(String idPartie, String nomJoueur, String room)
+    public void definirHeroDansPartie(String idPartie, String nomJoueur)
             throws ErreurModificationPartie {
-        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomJoueur, room);
-        long idJoueur = persistanceParties.ajouterOuRecupererJoueur(joueurPersistenceDto);
-        persistanceParties.definirHeroDansPartie(idPartie, idJoueur);
+        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomJoueur);
+        persistanceParties.definirHeroDansPartie(idPartie, joueurPersistenceDto);
     }
 }

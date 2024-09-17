@@ -1,6 +1,5 @@
-package fr.eurekapoker.parties.application.api;
+package fr.eurekapoker.parties.application.api.dto;
 
-import java.util.HashMap;
 import java.util.List;
 
 public class ContenuPartieDto {

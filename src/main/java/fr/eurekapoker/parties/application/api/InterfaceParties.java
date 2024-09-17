@@ -1,5 +1,7 @@
 package fr.eurekapoker.parties.application.api;
 
+import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
+import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
@@ -15,6 +17,6 @@ public interface InterfaceParties {
      */
     ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
             throws ErreurConsultationPartie;
-    void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur, String room) throws ErreurModificationPartie;
-    void definirHeroDansPartie(String idPartie, String nomJoueur, String room) throws ErreurModificationPartie;
+    void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
+    void definirHeroDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
 }

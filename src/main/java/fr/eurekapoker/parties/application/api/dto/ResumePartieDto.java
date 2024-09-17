@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.application.api;
+package fr.eurekapoker.parties.application.api.dto;
 
 import java.util.List;
 
