@@ -1,24 +1,25 @@
 package fr.eurekapoker.parties.domaine.parsing.dto;
 
-import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class StackJoueur {
+public class InfosJoueur {
     private final String nomJoueur;
     private final BigDecimal montantStack;
     private final BigDecimal bounty;
-    public StackJoueur(String joueur, double montantStack, float bounty) {
+    private final int siege;
+    public InfosJoueur(String joueur, double montantStack, float bounty, int siege) {
         this.nomJoueur = joueur;
         this.montantStack = new BigDecimal(montantStack).setScale(2, RoundingMode.HALF_UP);
         this.bounty = new BigDecimal(bounty).setScale(2, RoundingMode.HALF_UP);
+        this.siege = siege;
     }
 
-    public StackJoueur(String joueur, double montantStack) {
+    public InfosJoueur(String joueur, double montantStack, int siege) {
         this.nomJoueur = joueur;
         this.montantStack = new BigDecimal(montantStack).setScale(2, RoundingMode.HALF_UP);
         this.bounty = null;
+        this.siege = siege;
     }
 
     public String obtJoueur() {
@@ -35,5 +36,9 @@ public class StackJoueur {
 
     public BigDecimal obtBounty() {
         return bounty;
+    }
+
+    public int obtSiege() {
+        return siege;
     }
   }

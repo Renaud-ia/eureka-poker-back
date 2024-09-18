@@ -42,14 +42,14 @@ public class ParserWinamaxTest {
     @Spy
     private ArrayList<MainPoker> mainsExtraitesSpy = new ArrayList<>();
     @Mock
-    private MainPoker mainPokerMock;
+    private InfosTableWinamax infosTableMock;
     @Mock
     private BlindeOuAnte blindeOuAnteMock;
     private final String fauxNomJoueur = "Fake joueur";
     @Mock
     private JoueurPoker joueurPokerMock;
     private List<JoueurPoker> joueurs;
-    private StackJoueur stackJoueur;
+    private InfosJoueur infosJoueur;
     @Mock
     private TourPoker tourPokerMock;
     private List<TourPoker> tourPokers;
@@ -89,8 +89,8 @@ public class ParserWinamaxTest {
         when(joueurPokerMock.obtNom()).thenReturn(fauxNomJoueur);
         when(resultatJoueurMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
-        stackJoueur = new StackJoueur(joueurPokerMock.obtNom(), 0, 0);
-        when(extracteurWinamax.extraireStackJoueur(anyString())).thenReturn(stackJoueur);
+        infosJoueur = new InfosJoueur(joueurPokerMock.obtNom(), 0, 0);
+        when(extracteurWinamax.extraireStackJoueur(anyString())).thenReturn(infosJoueur);
 
         when(infosMain.obtIdentifiantMain()).thenReturn(0L);
         when(extracteurWinamax.extraireInfosMain(anyString())).thenReturn(infosMain);
@@ -111,6 +111,7 @@ public class ParserWinamaxTest {
     @Test
     void infosPartieAppelleBonneMethodeExtracteur() throws ErreurImport {
         when(interpreteurWinamax.estFormat()).thenReturn(Boolean.TRUE);
+        when(extracteurWinamax.extraireInfosTable(anyString())).thenReturn(infosTableMock);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireInfosTable(lignesFichier[0]);
@@ -124,7 +125,7 @@ public class ParserWinamaxTest {
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireStackJoueur(lignesFichier[0]);
-        verify(observateurParser).ajouterJoueur(any(StackJoueur.class));
+        verify(observateurParser).ajouterJoueur(any(InfosJoueur.class));
     }
 
     @Test

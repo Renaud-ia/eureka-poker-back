@@ -1,28 +1,21 @@
 package fr.eurekapoker.parties.application;
 
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
-import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
-import fr.eurekapoker.parties.domaine.parsing.dto.ResultatJoueur;
-import fr.eurekapoker.parties.domaine.parsing.dto.StackJoueur;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.EncodageSituation;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
-import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
@@ -71,14 +64,14 @@ public class ObservateurParserImpl implements ObservateurParser {
     }
 
     @Override
-    public void ajouterJoueur(StackJoueur stackJoueur) {
+    public void ajouterJoueur(InfosJoueur infosJoueur) {
         // todo il manque le siège
-        String nomJoueur = stackJoueur.obtJoueur();
+        String nomJoueur = infosJoueur.obtJoueur();
 
         JoueurPersistenceDto nouveauJoueur = new JoueurPersistenceDto(
                 nomJoueur
         );
-        this.derniereMain.ajouterJoueur(nouveauJoueur);
+        this.derniereMain.ajouterJoueur(nouveauJoueur, infosJoueur.obtSiege());
     }
 
     @Override
@@ -92,7 +85,8 @@ public class ObservateurParserImpl implements ObservateurParser {
     }
 
     @Override
-    public void ajouterCartesHero(List<CartePoker> cartesHero) {
+    public void ajouterHero(String nomHero, List<CartePoker> cartesHero) {
+        this.derniereMain.ajouterHero(nomHero);
         ComboReel comboReel = new ComboReel(cartesHero);
         this.derniereMain.ajouterComboHero(comboReel.toInt(), comboReel.toString());
     }
@@ -143,6 +137,11 @@ public class ObservateurParserImpl implements ObservateurParser {
     @Override
     public PartiePersistanceDto obtPartie() {
         return partiePersistanceDto;
+    }
+
+    @Override
+    public void ajouterPositionDealer(int positionDealer) {
+        this.derniereMain.ajouterPositionDealer(positionDealer);
     }
 
     @Override

@@ -9,13 +9,12 @@ public class MainPersistenceDto {
     private final String idUniqueGenere;
     private final long idParse;
     private final int indexMain;
-    private final HashSet<JoueurPersistenceDto> joueursPresents;
+    private final HashMap<JoueurPersistenceDto, Integer> joueursPresents;
     private final List<TourPersistanceDto> tours;
     private final HashMap<JoueurPersistenceDto, String> cartesJoueursString;
     private final HashMap<JoueurPersistenceDto, Integer> cartesJoueursInt;
     private final HashMap<JoueurPersistenceDto, Integer> sieges;
     private String nomHero;
-    private String joueurAffiche;
     private int positionDealer;
     public MainPersistenceDto(String idUniqueGenere,
                               long idParse,
@@ -23,15 +22,15 @@ public class MainPersistenceDto {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
         this.indexMain = indexMain;
-        this.joueursPresents = new HashSet<>();
+        this.joueursPresents = new HashMap<>();
         this.tours = new ArrayList<>();
         this.cartesJoueursString = new HashMap<>();
         this.cartesJoueursInt = new HashMap<>();
         this.sieges = new HashMap<>();
     }
 
-    public void ajouterJoueur(JoueurPersistenceDto nouveauJoueur) {
-        this.joueursPresents.add(nouveauJoueur);
+    public void ajouterJoueur(JoueurPersistenceDto nouveauJoueur, int numeroSiege) {
+        this.joueursPresents.put(nouveauJoueur, numeroSiege);
     }
 
     public void ajouterBlinde(String nomJoueur, BigDecimal montant) {
@@ -59,7 +58,7 @@ public class MainPersistenceDto {
 
     public List<String> obtNomsJoueursPresents() {
         List<String> nomJoueursPresents = new ArrayList<>();
-        for (JoueurPersistenceDto joueurPersistenceDto : this.joueursPresents) {
+        for (JoueurPersistenceDto joueurPersistenceDto : this.joueursPresents.keySet()) {
             nomJoueursPresents.add(joueurPersistenceDto.obtNomJoueur());
         }
 
@@ -68,5 +67,13 @@ public class MainPersistenceDto {
 
     public String obtNomHero() {
         return nomHero;
+    }
+
+    public void ajouterHero(String nomHero) {
+        this.nomHero = nomHero;
+    }
+
+    public void ajouterPositionDealer(int positionDealer) {
+        this.positionDealer = positionDealer;
     }
 }

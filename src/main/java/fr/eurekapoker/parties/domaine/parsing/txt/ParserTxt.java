@@ -8,12 +8,9 @@ import fr.eurekapoker.parties.domaine.parsing.ParserModele;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
-import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
-import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartie;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
@@ -59,7 +56,7 @@ public abstract class ParserTxt extends ParserModele {
         else if (interpreteurLigne.estBlindeAnte()) ajouterBlindeOuAnte(indexLigne);
         else if (interpreteurLigne.estAction()) ajouterAction(indexLigne);
         else if (interpreteurLigne.estResultat()) ajouterResultat(indexLigne);
-        else if (interpreteurLigne.estCartesHero()) ajouterCarteshero(indexLigne);
+        else if (interpreteurLigne.estCartesHero()) ajouterInfoshero(indexLigne);
     }
 
     private void creerNouvelleMain(int indexLigne) throws ErreurImport {
@@ -88,11 +85,14 @@ public abstract class ParserTxt extends ParserModele {
             builderInfosPartie.fixNomPartie(infosTable.obtNomTable());
             observateurParser.fixInfosPartie(this.obtInfosPartie());
         }
+
+        int positionDealer = infosTable.obtPositionDealer();
+        observateurParser.ajouterPositionDealer(positionDealer);
     }
 
     private void ajouterJoueur(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
-        StackJoueur stackJoueur = extracteurLigne.extraireStackJoueur(lignesFichier[indexLigne]);
-        observateurParser.ajouterJoueur(stackJoueur);
+        InfosJoueur infosJoueur = extracteurLigne.extraireStackJoueur(lignesFichier[indexLigne]);
+        observateurParser.ajouterJoueur(infosJoueur);
     }
 
     private void ajouterBlindeOuAnte(int indexLigne) throws ErreurLectureFichier, ErreurRegex {
@@ -108,9 +108,9 @@ public abstract class ParserTxt extends ParserModele {
         }
     }
 
-    private void ajouterCarteshero(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
-        List<CartePoker> cartesHero = extracteurLigne.extraireCartes(lignesFichier[indexLigne]);
-        observateurParser.ajouterCartesHero(cartesHero);
+    private void ajouterInfoshero(int indexLigne) throws ErreurRegex {
+        InfosHero infosHero = extracteurLigne.extraireInfosHero(lignesFichier[indexLigne]);
+        observateurParser.ajouterHero(infosHero.obtNomHero(), infosHero.obtCartesHero());
     }
 
     private void creerNouveauTour(int indexLigne) throws ErreurRegex {

@@ -1,7 +1,5 @@
 package fr.eurekapoker.parties.application.persistance.dto;
 
-import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
-
 import java.util.ArrayList;
 import java.util.List;
 

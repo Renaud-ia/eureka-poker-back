@@ -10,7 +10,6 @@ import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -34,7 +33,9 @@ public class ExtracteurWinamax implements ExtracteurLigne {
 
     private static final Pattern patternInfosTable = Pattern.compile(
             "Table:\\s'(?<nomTable>.+)'\\s" +
-                    "(?<nombreJoueurs>[0-9]+)-max"
+                    "(?<nombreJoueurs>[0-9]+)-max" +
+                    "\\s(.+)\\s" +
+                    "Seat\\s#(?<positionDealer>[0-9]+)\\s.+"
     );
 
     private static final Pattern patternAction = Pattern.compile(
@@ -166,7 +167,8 @@ public class ExtracteurWinamax implements ExtracteurLigne {
 
         return new InfosTableWinamax(
                 matcher.group("nomTable"),
-                Integer.parseInt(matcher.group("nombreJoueurs"))
+                Integer.parseInt(matcher.group("nombreJoueurs")),
+                Integer.parseInt(matcher.group("positionDealer"))
         );
     }
 
@@ -191,22 +193,26 @@ public class ExtracteurWinamax implements ExtracteurLigne {
 
 
     @Override
-    public StackJoueur extraireStackJoueur(String ligne) throws ErreurRegex {
+    public InfosJoueur extraireStackJoueur(String ligne) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternInfoJoueur, ligne);
 
         String joueurPoker = matcher.group("playName");
 
         String bountyString = (matcher.group("bounty"));
         if (bountyString == null) {
-            return new StackJoueur(
+            return new InfosJoueur(
                     joueurPoker,
-                    Double.parseDouble(matcher.group("stack")));
+                    Double.parseDouble(matcher.group("stack")),
+                    Integer.parseInt(matcher.group("seat")
+                    )
+            );
         }
 
-        return new StackJoueur(
+        return new InfosJoueur(
                 joueurPoker,
                 Double.parseDouble(matcher.group("stack")),
-                Float.parseFloat(bountyString)
+                Float.parseFloat(bountyString),
+                Integer.parseInt(matcher.group("seat"))
         );
     }
 
@@ -331,6 +337,17 @@ public class ExtracteurWinamax implements ExtracteurLigne {
         if (nouvelleCarte != null) cartesTrouvees.add(new CartePoker(nouvelleCarte.charAt(0), nouvelleCarte.charAt(1)));
 
         return cartesTrouvees;
+    }
+
+    private static final Pattern patternNomHero = Pattern.compile(
+            "Dealt\\sto\\s(?<nomHero>.+)\\s\\[.+");
+    @Override
+    public InfosHero extraireInfosHero(String ligne) throws ErreurRegex {
+        Matcher nomHeroMatcher = matcherRegex(patternNomHero, ligne);
+        String nomHero = nomHeroMatcher.group("nomHero");
+        List<CartePoker> cartePokers = extraireCartes(ligne);
+
+        return new InfosHero(nomHero, cartePokers);
     }
 
     private Matcher matcherRegex(Pattern pattern, String ligne) throws ErreurRegex {

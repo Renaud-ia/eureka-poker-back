@@ -124,59 +124,64 @@ public class ExtracteurWinamaxTest {
 
     // TESTS EXTRAIRE STACK ET JOUEUR
     @Test
-    void doitExtraireStackJoueurCashGame() throws ErreurRegex {
+    void doitExtraireInfosJoueurCashGame() throws ErreurRegex {
         String ligne = "Seat 3: Nakata80 (2.12€)";
-        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("Nakata80", stackJoueur.obtJoueur());
+        InfosJoueur infosJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("Nakata80", infosJoueur.obtJoueur());
+        assertEquals(3, infosJoueur.obtSiege());
         BigDecimal expectedValue = new BigDecimal("2.12");
-        assertEquals(0, expectedValue.compareTo(stackJoueur.obtStack()));
-        assertFalse(stackJoueur.aBounty());
+        assertEquals(0, expectedValue.compareTo(infosJoueur.obtStack()));
+        assertFalse(infosJoueur.aBounty());
     }
 
     @Test
-    void doitExtraireStackJoueurExpresso() throws ErreurRegex {
+    void doitExtraireInfosJoueurExpresso() throws ErreurRegex {
         String ligne = "Seat 2: wmx-i5o0yy6 (500)";
-        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("wmx-i5o0yy6", stackJoueur.obtJoueur());
+        InfosJoueur infosJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals(2, infosJoueur.obtSiege());
+        assertEquals("wmx-i5o0yy6", infosJoueur.obtJoueur());
         BigDecimal expectedValue = new BigDecimal("500");
-        assertEquals(0, expectedValue.compareTo(stackJoueur.obtStack()));
-        assertFalse(stackJoueur.aBounty());
+        assertEquals(0, expectedValue.compareTo(infosJoueur.obtStack()));
+        assertFalse(infosJoueur.aBounty());
     }
 
     @Test
-    void doitExtraireStackJoueurAvecBountyMtt() throws ErreurRegex {
+    void doitExtraireInfosJoueurAvecBountyMtt() throws ErreurRegex {
         String ligne = "Seat 6: KABB.99 (20000, 1.80€ bounty)";
-        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("KABB.99", stackJoueur.obtJoueur());
+        InfosJoueur infosJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("KABB.99", infosJoueur.obtJoueur());
+        assertEquals(6, infosJoueur.obtSiege());
         BigDecimal stackAttendu = new BigDecimal("20000");
-        assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
-        assertTrue(stackJoueur.aBounty());
+        assertEquals(0, stackAttendu.compareTo(infosJoueur.obtStack()));
+        assertTrue(infosJoueur.aBounty());
         BigDecimal bountyAttendu = new BigDecimal("1.8");
-        assertEquals(0, bountyAttendu.compareTo(stackJoueur.obtBounty()));
+        assertEquals(0, bountyAttendu.compareTo(infosJoueur.obtBounty()));
     }
 
     @Test
-    void doitExtraireStackJoueurAvecGrosBountyMtt() throws ErreurRegex {
+    void doitExtraireInfosJoueurAvecGrosBountyMtt() throws ErreurRegex {
         String ligne = "Seat 5: menphiscom (18193515, 11.22€ bounty)";
-        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("menphiscom", stackJoueur.obtJoueur());
+        InfosJoueur infosJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("menphiscom", infosJoueur.obtJoueur());
+        assertEquals(5, infosJoueur.obtSiege());
         BigDecimal stackAttendu = new BigDecimal("18193515");
-        assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
-        assertTrue(stackJoueur.aBounty());
+        assertEquals(0, stackAttendu.compareTo(infosJoueur.obtStack()));
+        assertTrue(infosJoueur.aBounty());
         BigDecimal bountyAttendu = new BigDecimal("11.22");
-        assertEquals(0, bountyAttendu.compareTo(stackJoueur.obtBounty()));
+        assertEquals(0, bountyAttendu.compareTo(infosJoueur.obtBounty()));
     }
 
     @Test
-    void doitExtraireBountyNomJoueurAvecEspace() throws ErreurRegex {
+    void doitExtraireBountyInfosJoueurAvecEspace() throws ErreurRegex {
         String ligne = "Seat 1: Bastos Papin (548787, 4.26€ bounty)";
-        StackJoueur stackJoueur = extracteurWinamax.extraireStackJoueur(ligne);
-        assertEquals("Bastos Papin", stackJoueur.obtJoueur());
+        InfosJoueur infosJoueur = extracteurWinamax.extraireStackJoueur(ligne);
+        assertEquals("Bastos Papin", infosJoueur.obtJoueur());
+        assertEquals(1, infosJoueur.obtSiege());
         BigDecimal stackAttendu = new BigDecimal("548787");
-        assertEquals(0, stackAttendu.compareTo(stackJoueur.obtStack()));
-        assertTrue(stackJoueur.aBounty());
+        assertEquals(0, stackAttendu.compareTo(infosJoueur.obtStack()));
+        assertTrue(infosJoueur.aBounty());
         BigDecimal bountyAttendu = new BigDecimal("4.26");
-        assertEquals(0, bountyAttendu.compareTo(stackJoueur.obtBounty()));
+        assertEquals(0, bountyAttendu.compareTo(infosJoueur.obtBounty()));
     }
 
     // TEST EXTRAIRE INFOS MAIN
@@ -280,6 +285,7 @@ public class ExtracteurWinamaxTest {
         InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
         assertEquals("Expresso(434726065)#0", infosTable.obtNomTable());
         assertEquals(3, infosTable.obtNombreJoueurs());
+        assertEquals(1, infosTable.obtPositionDealer());
     }
 
     @Test
@@ -288,6 +294,7 @@ public class ExtracteurWinamaxTest {
         InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
         assertEquals("Kill The Fish(429861217)#047", infosTable.obtNomTable());
         assertEquals(6, infosTable.obtNombreJoueurs());
+        assertEquals(2, infosTable.obtPositionDealer());
     }
 
     @Test
@@ -296,6 +303,7 @@ public class ExtracteurWinamaxTest {
         InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
         assertEquals("Vienna 03", infosTable.obtNomTable());
         assertEquals(5, infosTable.obtNombreJoueurs());
+        assertEquals(2, infosTable.obtPositionDealer());
     }
 
     // TESTS EXTRACTION TOUR
@@ -445,12 +453,26 @@ public class ExtracteurWinamaxTest {
     // TESTS EXTRAIRE CARTES HERO
 
     @Test
-    void doitExtraireCartesHero() throws ErreurRegex {
+    void doitExtraireInfosHero() throws ErreurRegex {
         String ligne = "Dealt to RendsL4rgent [3h Td]";
-        List<CartePoker> cartes = extracteurWinamax.extraireCartes(ligne);
+        InfosHero infosHero = extracteurWinamax.extraireInfosHero(ligne);
+        assertEquals("RendsL4rgent", infosHero.obtNomHero());
+        List<CartePoker> cartes = infosHero.obtCartesHero();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('3', 'h'));
         cartesAttendues.add(new CartePoker('T', 'd'));
+        assertEquals(cartesAttendues, cartes);
+    }
+
+    @Test
+    void doitExtraireInfosHeroAvecEspace() throws ErreurRegex {
+        String ligne = "Dealt to Rends Moi Largent [5s 6d]";
+        InfosHero infosHero = extracteurWinamax.extraireInfosHero(ligne);
+        assertEquals("Rends Moi Largent", infosHero.obtNomHero());
+        List<CartePoker> cartes = infosHero.obtCartesHero();
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('5', 's'));
+        cartesAttendues.add(new CartePoker('6', 'd'));
         assertEquals(cartesAttendues, cartes);
     }
 }

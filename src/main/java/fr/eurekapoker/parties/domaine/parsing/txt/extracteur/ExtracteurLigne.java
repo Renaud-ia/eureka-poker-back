@@ -12,7 +12,7 @@ public interface ExtracteurLigne {
     InfosTable extraireInfosTable(String ligne) throws ErreurRegex;
     InfosMain extraireInfosMain(String ligne) throws ErreurImport;
 
-    StackJoueur extraireStackJoueur(String ligne) throws ErreurRegex;
+    InfosJoueur extraireStackJoueur(String ligne) throws ErreurRegex;
 
     NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex;
 
@@ -23,4 +23,6 @@ public interface ExtracteurLigne {
     BlindeOuAnte extraireBlindeOuAnte(String s) throws ErreurRegex;
 
     List<CartePoker> extraireCartes(String ligne) throws ErreurRegex;
+
+    InfosHero extraireInfosHero(String ligne) throws ErreurRegex;
 }
