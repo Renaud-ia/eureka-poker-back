@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.application;
+package fr.eurekapoker.parties.application.imports;
 
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;

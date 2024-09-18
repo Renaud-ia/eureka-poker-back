@@ -9,7 +9,7 @@ import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 
 import java.util.List;
 
-class DomaineServiceImportXml implements DomaineServiceImport {
+public class DomaineServiceImportXml implements DomaineServiceImport {
     public DomaineServiceImportXml(String lignesFichier) throws RoomNonPriseEnCharge {
         throw new RoomNonPriseEnCharge("Les formats XML ne sont pas pris en charge");
     }

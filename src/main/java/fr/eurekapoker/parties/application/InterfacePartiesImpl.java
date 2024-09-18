@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.application;
 
+import fr.eurekapoker.parties.application.imports.ConstructeurPersistence;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,17 +16,17 @@ import fr.eurekapoker.parties.application.persistance.PersistanceFichiers;
 import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.domaine.DomaineServiceImport;
-import fr.eurekapoker.parties.domaine.FabriqueDomainServicesImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 
 public class InterfacePartiesImpl implements InterfaceParties {
     private static final Logger logger = LoggerFactory.getLogger(InterfacePartiesImpl.class);
+    private final FabriqueDependances fabriqueDependances;
     private final PersistanceParties persistanceParties;
     private final PersistanceFichiers persistanceFichiers;
-    public InterfacePartiesImpl(PersistanceParties persistanceParties,
-                                PersistanceFichiers persistanceFichiers) {
-        this.persistanceParties = persistanceParties;
-        this.persistanceFichiers = persistanceFichiers;
+    public InterfacePartiesImpl(FabriqueDependances fabriqueDependances) {
+        this.fabriqueDependances = fabriqueDependances;
+        this.persistanceParties = fabriqueDependances.obtPersistanceParties();
+        this.persistanceFichiers = fabriqueDependances.obtPersistanceFichiers();
     }
     @Override
     public ResumePartieDto ajouterPartie(String contenuPartie) throws ErreurAjoutPartie {
@@ -38,13 +39,11 @@ public class InterfacePartiesImpl implements InterfaceParties {
     }
 
     private ConstructeurPersistence parserPartie(String contenuPartie) throws ErreurAjoutPartie {
-        ConstructeurPersistence constructeurPersistence = FabriqueDependances.obtConstructeurPersistance();
-        FabriqueDomainServicesImport fabriqueDomainServicesImport = new FabriqueDomainServicesImport();
+        ConstructeurPersistence constructeurPersistence = fabriqueDependances.obtConstructeurPersistance();
         DomaineServiceImport domaineServiceImport;
 
-        // todo logger les erreurs et ajuster le niveau de détail
         try {
-            domaineServiceImport = fabriqueDomainServicesImport.obtService(constructeurPersistence, contenuPartie);
+            domaineServiceImport = fabriqueDependances.obtDomaineServiceImport(contenuPartie);
         }
         catch (ErreurImport erreurImport) {
             logger.error("Une erreur est survenue pendant la création du parser: " + erreurImport);

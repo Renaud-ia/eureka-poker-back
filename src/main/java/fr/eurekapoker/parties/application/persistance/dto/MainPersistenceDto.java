@@ -16,8 +16,6 @@ public class MainPersistenceDto {
     private final HashMap<String, Integer> cartesJoueursInt;
     private final HashMap<String, BigDecimal> blindes;
     private final HashMap<String, BigDecimal> antes;
-
-    private final HashMap<JoueurPersistenceDto, Integer> sieges;
     private final HashMap<String, BigDecimal> resultats;
     private final HashMap<String, BigDecimal> valueParAction;
     private String nomHero;
@@ -34,7 +32,6 @@ public class MainPersistenceDto {
         this.cartesJoueursInt = new HashMap<>();
         this.blindes = new HashMap<>();
         this.antes = new HashMap<>();
-        this.sieges = new HashMap<>();
         this.resultats = new HashMap<>();
         this.valueParAction = new HashMap<>();
     }
@@ -95,6 +92,10 @@ public class MainPersistenceDto {
     }
 
     public int obtNombreJoueurs() {
-        return sieges.size();
+        return this.siegesJoueursPresents.size();
+    }
+
+    public BigDecimal obtValueParActionJoueur(String nomJoueur) {
+        return valueParAction.get(nomJoueur);
     }
 }

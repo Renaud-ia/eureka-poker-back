@@ -26,9 +26,9 @@ public interface ObservateurParser {
 
     void ajouterHero(String nomHero, List<CartePoker> cartesHero);
 
-    void ajouterTour(NouveauTour nouveauTour);
+    void ajouterTour(NouveauTour nouveauTour) throws ErreurLectureFichier;
 
-    void ajouterAction(ActionPokerJoueur actionPoker);
+    void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier;
     void mainTerminee();
 
     void ajouterGains(String nomJoueur, BigDecimal bigDecimal);

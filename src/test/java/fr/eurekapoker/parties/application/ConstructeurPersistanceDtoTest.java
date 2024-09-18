@@ -1,0 +1,144 @@
+package fr.eurekapoker.parties.application;
+
+import fr.eurekapoker.parties.application.imports.ConstructeurPersistenceDto;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
+import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.moteur.EncodageSituation;
+import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
+class ConstructeurPersistenceDtoTest {
+    private ConstructeurPersistenceDto constructeur;
+
+    @Mock
+    private EncodageSituation encodageSituationMock;
+
+    @Mock
+    InfosPartiePoker infosPartiePokerMock;
+
+    int nombreJoueurs;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        constructeur = new ConstructeurPersistenceDto(encodageSituationMock);
+
+        nombreJoueurs = 6;
+    }
+
+    @Test
+    void testEnchainementAjoutPartieEtMain() throws ErreurLectureFichier, ErreurLectureFichier {
+        // 1. Simuler la création d'une partie
+        when(infosPartiePokerMock.getIdParse()).thenReturn(new Random().nextLong());
+        when(infosPartiePokerMock.getNomRoom()).thenReturn("Fake room");
+        when(infosPartiePokerMock.getFormatPoker()).thenReturn("Fake format poker");
+        when(infosPartiePokerMock.getTypeJeu()).thenReturn("Fake Type Jeu");
+        when(infosPartiePokerMock.getDate()).thenReturn(LocalDateTime.now());
+        when(infosPartiePokerMock.getNomPartie()).thenReturn("Fake nom partie");
+        when(infosPartiePokerMock.getNombreSieges()).thenReturn(nombreJoueurs);
+
+        InfosPartiePoker infosPartiePoker = infosPartiePokerMock;
+        constructeur.fixInfosPartie(infosPartiePoker);
+        assertEquals(nombreJoueurs, constructeur.obtPartie().obtNombreSieges());
+
+        // 2. Simuler l'ajout d'une main à la partie
+        MainPoker nouvelleMain = new MainPoker(
+                new Random().nextLong()
+        );
+        constructeur.ajouterMain(nouvelleMain);
+        assertEquals(1, constructeur.obtPartie().obtMains().size());
+
+
+        // 3. Simuler l'ajout d'un joueur
+        String nomJoueur = "Fake joueur";
+        InfosJoueur infosJoueur = new InfosJoueur(
+                nomJoueur,
+                20000,
+                3
+        );
+        constructeur.ajouterJoueur(infosJoueur);
+        assertEquals(1, constructeur.obtPartie().obtMains().getLast().obtNombreJoueurs());
+        assertTrue(constructeur.obtPartie().obtMains().getLast().obtNomsJoueursPresents().contains(nomJoueur));
+
+        // 4. Simuler l'ajout de blindes/ante
+        // todo
+
+        // 5. Simuler l'ajout d'un tour et vérifier que encodage est appelé
+        NouveauTour nouveauTour = new NouveauTour(
+                TourPoker.RoundPoker.PREFLOP,
+                new ArrayList<>()
+        );
+        constructeur.ajouterTour(nouveauTour);
+        verify(encodageSituationMock, times(nombreJoueurs - 1)).ajouterAction(ActionPoker.TypeAction.FOLD);
+
+        // 6. Simuler deux actions de poker
+        int nombreActions = 2;
+        ActionPokerJoueur actionPokerJoueur = new ActionPokerAvecBet(
+                nomJoueur,
+                ActionPoker.TypeAction.RAISE,
+                1000,
+                true
+        );
+        constructeur.ajouterAction(actionPokerJoueur);
+
+        verify(encodageSituationMock).ajouterAction(actionPokerJoueur.getTypeAction());
+        verify(encodageSituationMock).obtIdentifiantSituation();
+
+        constructeur.ajouterAction(actionPokerJoueur);
+
+        // 8. Ajouter un résultat
+        BigDecimal montantGains = new BigDecimal("665.98");
+        constructeur.ajouterGains(nomJoueur, montantGains);
+
+        // 9. Terminer la main et vérifier les calculs de value
+        constructeur.mainTerminee();
+        assertEquals(
+                montantGains.divide(new BigDecimal(nombreActions), RoundingMode.CEILING),
+                constructeur.obtPartie().obtMains().getLast().obtValueParActionJoueur(nomJoueur)
+        );
+    }
+
+    @Test
+    void throwErreurLectureFichierSiPartieNonInitialiseeQuandCreationMain() {
+        MainPoker nouvelleMain = new MainPoker(
+                new Random().nextLong()
+        );
+        assertThrows(ErreurLectureFichier.class, () -> constructeur.ajouterMain(nouvelleMain));
+    }
+
+    @Test
+    void throwErreurLectureFichierSiPartieNonInitialiseeQuandCreationTour() {
+        NouveauTour nouveauTour = new NouveauTour(
+                TourPoker.RoundPoker.PREFLOP,
+                new ArrayList<>()
+        );
+        assertThrows(ErreurLectureFichier.class, () -> constructeur.ajouterTour(nouveauTour));
+    }
+
+    @Test
+    void throwErreurLectureFichierSiPartieNonInitialiseeQuandCreationAction() {
+        ActionPokerJoueur action = new ActionPokerJoueur(
+                "Fake joueur",
+                ActionPoker.TypeAction.FOLD
+        );
+        assertThrows(ErreurLectureFichier.class, () -> constructeur.ajouterAction(action));
+    }
+}

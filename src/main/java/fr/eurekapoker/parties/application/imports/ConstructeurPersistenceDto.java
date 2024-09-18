@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.application;
+package fr.eurekapoker.parties.application.imports;
 
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.persistance.dto.*;
@@ -30,10 +30,11 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     private int indexMain;
     private MainPersistenceDto derniereMain;
     private TourPersistanceDto dernierTour;
-    private HashMap<String, Integer> nombreActionsParJoueur;
+    private final HashMap<String, Integer> nombreActionsParJoueur;
     public ConstructeurPersistenceDto(EncodageSituation encodageSituation) {
         this.indexMain = 0;
         this.encodageSituation = encodageSituation;
+        this.nombreActionsParJoueur = new HashMap<>();
     }
 
     @Override
@@ -93,13 +94,15 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     }
 
     @Override
-    public void ajouterTour(NouveauTour tourParse) {
+    public void ajouterTour(NouveauTour tourParse) throws ErreurLectureFichier {
         BoardPoker boardPoker = new BoardPoker(tourParse.obtCartesExtraites());
         TourPersistanceDto nouveauTour = new TourPersistanceDto(
                 tourParse.obtRound().toString(),
                 boardPoker.toString(),
                 boardPoker.asLong()
         );
+
+        if (this.partiePersistanceDto == null) throw new ErreurLectureFichier("La partie n'a pas été initialisée");
         // IMPORTANT : on notifie qu'il y a des joueurs en moins sur la table
         int nombreJoueursFormat = this.partiePersistanceDto.obtNombreSieges();
         int nombreJoueursTable = this.derniereMain.obtNombreJoueurs();
@@ -113,7 +116,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     }
 
     @Override
-    public void ajouterAction(ActionPokerJoueur actionPoker) {
+    public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
         this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
 
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(
@@ -121,6 +124,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 this.encodageSituation.obtIdentifiantSituation(),
                 actionPoker.obtMontantAction()
         );
+        if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
         this.dernierTour.ajouterAction(actionPoker.getNomJoueur(), nouvelleAction);
 
         // on incrémente le nombre d'actions du joueur

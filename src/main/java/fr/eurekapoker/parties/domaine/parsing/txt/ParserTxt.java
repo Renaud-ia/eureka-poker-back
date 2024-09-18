@@ -113,12 +113,12 @@ public abstract class ParserTxt extends ParserModele {
         observateurParser.ajouterHero(infosHero.obtNomHero(), infosHero.obtCartesHero());
     }
 
-    private void creerNouveauTour(int indexLigne) throws ErreurRegex {
+    private void creerNouveauTour(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
         NouveauTour nouveauTour = extracteurLigne.extraireNouveauTour(lignesFichier[indexLigne]);
         observateurParser.ajouterTour(nouveauTour);
     }
 
-    private void ajouterAction(int indexLigne) throws ErreurRegex {
+    private void ajouterAction(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
         ActionPokerJoueur actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
         observateurParser.ajouterAction(actionPoker);
     }

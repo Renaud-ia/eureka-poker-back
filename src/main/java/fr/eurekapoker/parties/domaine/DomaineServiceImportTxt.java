@@ -13,7 +13,7 @@ import java.util.List;
     Implémentation du service du domaine pour l'import de fichiers txt
     Trouve l'extracteur approprié
  */
-class DomaineServiceImportTxt implements DomaineServiceImport {
+public class DomaineServiceImportTxt implements DomaineServiceImport {
     private final ParserTxt parserTxt;
     private List<MainPoker> mainsExtraites;
     public DomaineServiceImportTxt(ObservateurParser observateurParser, String fichierBrut)
