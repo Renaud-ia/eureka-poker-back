@@ -35,4 +35,30 @@ public abstract class InfosPartiePoker {
     public int obtNombreJoueurs() {
         return nombreJoueurs;
     }
+
+    public long getIdParse() {
+        return identifiantPartie;
+    }
+
+    public abstract String getNomRoom();
+
+    public String getFormatPoker() {
+        return formatPoker.obtVariante();
+    }
+
+    public String getTypeJeu() {
+        return formatPoker.obtTypeTable().toString();
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public String getNomPartie() {
+        return nomPartie;
+    }
+
+    public int getNombreSieges() {
+        return nombreJoueurs;
+    }
 }

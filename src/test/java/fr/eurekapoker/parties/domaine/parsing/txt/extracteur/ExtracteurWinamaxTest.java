@@ -6,6 +6,7 @@ import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -300,21 +301,34 @@ public class ExtracteurWinamaxTest {
     // TESTS EXTRACTION TOUR
 
     @Test
+    void extraitCartesPreflop() throws ErreurRegex {
+        String ligne = "*** PRE-FLOP *** ";
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
+        assertTrue(cartesExtraites.isEmpty());
+
+        assertEquals(TourPoker.RoundPoker.PREFLOP, nouveauTour.obtRound());
+    }
+
+    @Test
     void extraitCartesFlop() throws ErreurRegex {
         String ligne = "*** FLOP *** [Js 3h Ad]";
-        List<CartePoker> cartesExtraites = extracteurWinamax.extraireBoardTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('J', 's'));
         cartesAttendues.add(new CartePoker('3', 'h'));
         cartesAttendues.add(new CartePoker('A', 'd'));
 
         assertEquals(cartesAttendues, cartesExtraites);
+        assertEquals(TourPoker.RoundPoker.FLOP, nouveauTour.obtRound());
     }
 
     @Test
     void extraitCartesTurn() throws ErreurRegex {
         String ligne = "*** TURN *** [8h 3d 7c][7d]";
-        List<CartePoker> cartesExtraites = extracteurWinamax.extraireBoardTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('8', 'h'));
         cartesAttendues.add(new CartePoker('3', 'd'));
@@ -322,12 +336,14 @@ public class ExtracteurWinamaxTest {
         cartesAttendues.add(new CartePoker('7', 'd'));
 
         assertEquals(cartesAttendues, cartesExtraites);
+        assertEquals(TourPoker.RoundPoker.TURN, nouveauTour.obtRound());
     }
 
     @Test
     void extraitCartesRiver() throws ErreurRegex {
         String ligne = "*** RIVER *** [9h Tc Ad 9s][6s]";
-        List<CartePoker> cartesExtraites = extracteurWinamax.extraireBoardTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('9', 'h'));
         cartesAttendues.add(new CartePoker('T', 'c'));
@@ -336,6 +352,7 @@ public class ExtracteurWinamaxTest {
         cartesAttendues.add(new CartePoker('6', 's'));
 
         assertEquals(cartesAttendues, cartesExtraites);
+        assertEquals(TourPoker.RoundPoker.RIVER, nouveauTour.obtRound());
     }
 
     // TESTS EXTRAIRE BLINDES OU ANTE

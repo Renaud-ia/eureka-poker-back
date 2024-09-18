@@ -2,16 +2,16 @@ package fr.eurekapoker.parties.domaine.poker.mains;
 
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
+
+import java.util.List;
 
 /**
  * attribue un code unique à chaque action ajoutée
  */
 public class TourPoker {
 
-    public TourPoker(BoardPoker board) {
-    }
-
-    public void ajouterAction(ActionPoker actionPoker) {
+    public TourPoker(RoundPoker roundPoker, BoardPoker board) {
     }
 
     /**

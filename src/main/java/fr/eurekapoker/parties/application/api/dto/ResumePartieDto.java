@@ -6,9 +6,9 @@ public class ResumePartieDto {
     private final List<String> joueursInitiaux;
     private final String nomHero;
 
-    public ResumePartieDto(List<String> joueursInitiaux, String nomHero, String nomHero1) {
+    public ResumePartieDto(List<String> joueursInitiaux, String nomHero) {
         this.joueursInitiaux = joueursInitiaux;
-        this.nomHero = nomHero1;
+        this.nomHero = nomHero;
     }
 
     public List<String> getJoueursInitiaux() {

@@ -12,6 +12,10 @@ public class FormatPoker {
         return typeTable;
     }
 
+    public String obtVariante() {
+        return variante.toString();
+    }
+
     public enum Variante {
         HOLDEM_NO_LIMIT,
         INCONNU

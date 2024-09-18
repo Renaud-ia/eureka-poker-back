@@ -1,10 +1,8 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
-import fr.eurekapoker.parties.domaine.parsing.dto.BlindeOuAnte;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosMainWinamax;
-import fr.eurekapoker.parties.domaine.parsing.dto.ResultatJoueur;
-import fr.eurekapoker.parties.domaine.parsing.dto.StackJoueur;
+import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
+import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
@@ -33,6 +31,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class ParserWinamaxTest {
+    @Mock
+    private ObservateurParser observateurParser;
     @Mock
     private InterpreteurWinamax interpreteurWinamax;
     @Mock
@@ -70,16 +70,21 @@ public class ParserWinamaxTest {
                 "Ligne Test",
         };
 
-        parserWinamax = spy(new ParserWinamax(lignesFichier, interpreteurWinamax, extracteurWinamax, builderInfosPartieWinamax));
+        parserWinamax = spy(
+                new ParserWinamax(
+                        observateurParser,
+                        lignesFichier,
+                        interpreteurWinamax,
+                        extracteurWinamax,
+                        builderInfosPartieWinamax
+                ));
 
         doReturn(mainsExtraitesSpy).when(parserWinamax).obtMains();
         joueurs = new ArrayList<>();
         joueurs.add(joueurPokerMock);
-        when(mainPokerMock.obtJoueurs()).thenReturn(joueurs);
 
         tourPokers = new ArrayList<>();
         tourPokers.add(tourPokerMock);
-        when(mainPokerMock.obtTours()).thenReturn(tourPokers);
 
         when(joueurPokerMock.obtNom()).thenReturn(fauxNomJoueur);
         when(resultatJoueurMock.getNomJoueur()).thenReturn(fauxNomJoueur);
@@ -96,8 +101,9 @@ public class ParserWinamaxTest {
         when(interpreteurWinamax.estNouvelleMain()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
+        verify(observateurParser, times(2)).mainTerminee();
         verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
-        verify(mainsExtraitesSpy).add(any(MainPoker.class));
+        verify(observateurParser).ajouterMain(any(MainPoker.class));
 
         verify(builderInfosPartieWinamax).donneesIncompletes();
     }
@@ -114,17 +120,15 @@ public class ParserWinamaxTest {
 
     @Test
     void ligneJoueurAppelleBonneMethodeExtracteur() throws ErreurImport {
-        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estJoueur()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireStackJoueur(lignesFichier[0]);
-        verify(mainPokerMock).ajouterJoueur(anyString());
+        verify(observateurParser).ajouterJoueur(any(StackJoueur.class));
     }
 
     @Test
     void ligneBlindeAppelleBonneMethodeExtracteur() throws ErreurImport {
-        mainsExtraitesSpy.add(mainPokerMock);
         when(blindeOuAnteMock.isBlinde()).thenReturn(true);
         when(interpreteurWinamax.estBlindeAnte()).thenReturn(Boolean.TRUE);
         when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
@@ -132,12 +136,11 @@ public class ParserWinamaxTest {
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireBlindeOuAnte(lignesFichier[0]);
-        verify(mainPokerMock).ajouterBlinde(eq(fauxNomJoueur), any());
+        verify(observateurParser).ajouterBlinde(eq(fauxNomJoueur), any());
     }
 
     @Test
     void ligneAnteAppelleBonneMethodeExtracteur() throws ErreurImport {
-        mainsExtraitesSpy.add(mainPokerMock);
         when(blindeOuAnteMock.isAnte()).thenReturn(true);
         when(interpreteurWinamax.estBlindeAnte()).thenReturn(Boolean.TRUE);
         when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
@@ -145,45 +148,36 @@ public class ParserWinamaxTest {
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireBlindeOuAnte(lignesFichier[0]);
-        verify(mainPokerMock).ajouterAnte(eq(fauxNomJoueur), any());
+        verify(observateurParser).ajouterAnte(eq(fauxNomJoueur), any());
     }
 
     @Test
     void ligneActionAppelleBonneMethodeExtracteur() throws ErreurImport {
-        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estAction()).thenReturn(Boolean.TRUE);
-        when(extracteurWinamax.extraireBlindeOuAnte(lignesFichier[0])).thenReturn(blindeOuAnteMock);
-        when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireAction(lignesFichier[0]);
-        verify(tourPokerMock).ajouterAction(any());
+        verify(observateurParser).ajouterAction(any());
     }
 
     @Test
     void ligneResultatAppelleBonneMethodeExtracteur() throws ErreurImport {
-        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estResultat()).thenReturn(Boolean.TRUE);
         when(extracteurWinamax.extraireResultat(lignesFichier[0])).thenReturn(resultatJoueurMock);
-        when(blindeOuAnteMock.getNomJoueur()).thenReturn(fauxNomJoueur);
 
         parserWinamax.lancerImport();
         verify(extracteurWinamax).extraireResultat(lignesFichier[0]);
-        verify(mainPokerMock).ajouterGains(eq(fauxNomJoueur), any());
-        verify(mainPokerMock).ajouterCartes(eq(fauxNomJoueur), any());
+        verify(observateurParser).ajouterGains(eq(fauxNomJoueur), any());
+        verify(observateurParser).ajouterCartes(eq(fauxNomJoueur), any());
     }
 
     @Test
     void testLigneNouveauTourAppelleBonnesMethodes() throws ErreurImport {
-        mainsExtraitesSpy.add(mainPokerMock);
         when(interpreteurWinamax.estNouveauTour()).thenReturn(Boolean.TRUE);
-        doReturn(mockInfosPartiePoker).when(parserWinamax).obtInfosPartie();
 
         parserWinamax.lancerImport();
-        verify(extracteurWinamax).extraireBoardTour(lignesFichier[0]);
-        verify(mainPokerMock).ajouterTour(any(TourPoker.class));
-
-        // todo on pourrait vérifier que le tour a des actions vides
+        verify(extracteurWinamax).extraireNouveauTour(lignesFichier[0]);
+        verify(observateurParser).ajouterTour(any());
     }
 
     @Test
@@ -192,6 +186,7 @@ public class ParserWinamaxTest {
 
         parserWinamax.lancerImport();
         verifyNoInteractions(extracteurWinamax);
+        verify(observateurParser).mainTerminee();
     }
 
     @Test
@@ -209,7 +204,7 @@ public class ParserWinamaxTest {
                 if (Files.isRegularFile(fichier)) {
                     String[] lignesFichier = lireFichierSousFormeDeTableau(fichier);
 
-                    ParserWinamax parserWinamax = new ParserWinamax(lignesFichier);
+                    ParserWinamax parserWinamax = new ParserWinamax(observateurParser, lignesFichier);
                     assertTrue(parserWinamax.peutLireFichier(), "Fichier non reconnu :" + fichier);
                 }
                 nFichiersTestes++;
@@ -245,7 +240,7 @@ public class ParserWinamaxTest {
                     if (Files.isRegularFile(fichier)) {
                         String[] lignesFichier = lireFichierSousFormeDeTableau(fichier);
 
-                        ParserWinamax parserWinamax = new ParserWinamax(lignesFichier);
+                        ParserWinamax parserWinamax = new ParserWinamax(observateurParser, lignesFichier);
                         assertTrue(parserWinamax.peutLireFichier(), "Fichier non reconnu :" + fichier);
                     }
                     nFichiersTestes++;

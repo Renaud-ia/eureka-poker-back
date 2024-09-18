@@ -5,4 +5,8 @@ public class JoueurPersistenceDto {
     public JoueurPersistenceDto(String nomJoueur) {
         this.nomJoueur = nomJoueur;
     }
+
+    public String obtNomJoueur() {
+        return nomJoueur;
+    }
 }

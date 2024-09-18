@@ -1,9 +1,16 @@
 package fr.eurekapoker.parties.application.persistance.dto;
 
+import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.SequencedCollection;
+import java.util.UUID;
 
 public class PartiePersistanceDto {
+    // todo coder les méthodes
+    // todo coder les vérifications
     private final String idUniqueGenere;
     private final long idParse;
     private final String nomRoom;
@@ -12,7 +19,7 @@ public class PartiePersistanceDto {
     private final LocalDateTime date;
     private final String nomPartie;
     private final int nombreSieges;
-    private final int nombreMains;
+    private int nombreMains;
     private final List<MainPersistenceDto> mainPersistence;
 
     public PartiePersistanceDto(String idUniqueGenere,
@@ -22,9 +29,7 @@ public class PartiePersistanceDto {
                                 String typeJeu,
                                 LocalDateTime date,
                                 String nomPartie,
-                                int nombreSieges,
-                                int nombreMains,
-                                List<MainPersistenceDto> mainPersistence) {
+                                int nombreSieges) {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
         this.nomRoom = nomRoom;
@@ -33,7 +38,24 @@ public class PartiePersistanceDto {
         this.date = date;
         this.nomPartie = nomPartie;
         this.nombreSieges = nombreSieges;
-        this.nombreMains = nombreMains;
-        this.mainPersistence = mainPersistence;
+        this.nombreMains = 0;
+        this.mainPersistence = new ArrayList<>();
+    }
+
+    public void ajouterMain(MainPersistenceDto mainPersistenceDto) {
+        this.mainPersistence.add(mainPersistenceDto);
+        this.nombreMains++;
+    }
+
+    public List<MainPersistenceDto> obtMains() {
+        return mainPersistence;
+    }
+
+    public int obtNombreSieges() {
+        return nombreSieges;
+    }
+
+    public String obtIdUnique() {
+        return idUniqueGenere;
     }
 }

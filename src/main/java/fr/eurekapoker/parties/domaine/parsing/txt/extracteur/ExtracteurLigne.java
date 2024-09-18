@@ -14,7 +14,7 @@ public interface ExtracteurLigne {
 
     StackJoueur extraireStackJoueur(String ligne) throws ErreurRegex;
 
-    List<CartePoker> extraireBoardTour(String ligne) throws ErreurRegex;
+    NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex;
 
     ActionPokerJoueur extraireAction(String ligne) throws ErreurRegex;
 

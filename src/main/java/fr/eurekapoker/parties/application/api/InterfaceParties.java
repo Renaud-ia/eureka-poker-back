@@ -18,5 +18,5 @@ public interface InterfaceParties {
     ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
             throws ErreurConsultationPartie;
     void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
-    void definirHeroDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
+    void definirJoueurCentreDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
 }

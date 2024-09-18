@@ -19,4 +19,9 @@ public class InfosPartieWinamax extends InfosPartiePoker {
             BigDecimal rake) {
         super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake);
     }
+
+    @Override
+    public String getNomRoom() {
+        return RoomPoker.WINAMAX.toString();
+    }
 }

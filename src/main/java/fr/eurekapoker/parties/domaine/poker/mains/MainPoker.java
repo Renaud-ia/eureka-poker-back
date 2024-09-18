@@ -16,86 +16,13 @@ import java.util.List;
  */
 public class MainPoker {
     private final long identifiantMain;
-    private final List<TourPoker> toursJoues;
-    private final HashMap<String, JoueurPoker> joueursPresents;
-    private final HashMap<JoueurPoker, BigDecimal> blindesPayees;
-    private final HashMap<JoueurPoker, BigDecimal> antesPayees;
-    private final HashMap<JoueurPoker, BigDecimal> gains;
-    private final HashMap<JoueurPoker, ComboReel> cartesJoueurs;
+
     private List<CartePoker> cartesHero;
     public MainPoker(long identifiantMain) {
         this.identifiantMain = identifiantMain;
-        this.joueursPresents = new HashMap<>();
-        this.toursJoues = new ArrayList<>();
-        this.blindesPayees = new HashMap<>();
-        this.antesPayees = new HashMap<>();
-        this.gains = new HashMap<>();
-        this.cartesJoueurs = new HashMap<>();
-    }
-    public void ajouterJoueur(String nomJoueur) throws ErreurLectureFichier {
-        if (joueursPresents.containsKey(nomJoueur))
-            throw new ErreurLectureFichier("Le joueur a déjà été ajouté: " + nomJoueur);
-        JoueurPoker nouveauJoueur = new JoueurPoker(nomJoueur);
-        this.joueursPresents.put(nomJoueur, nouveauJoueur);
     }
 
-    public List<JoueurPoker> obtJoueurs() {
-        return joueursPresents.values().stream().toList();
-    }
-
-    public void ajouterTour(TourPoker tourPoker) {
-        this.toursJoues.add(tourPoker);
-    }
-
-    public List<TourPoker> obtTours() {
-        return toursJoues;
-    }
-
-    public void ajouterBlinde(String nomJoueur, BigDecimal montant) throws ErreurLectureFichier {
-        JoueurPoker joueurPoker = obtJoueurParNom(nomJoueur);
-        if (blindesPayees.containsKey(joueurPoker))
-            throw new ErreurLectureFichier("Blindes ajoutées deux fois pour:" + joueurPoker);
-        blindesPayees.put(joueurPoker, montant);
-    }
-
-    public void ajouterAnte(String nomJoueur, BigDecimal montant) throws ErreurLectureFichier {
-        JoueurPoker joueurPoker = obtJoueurParNom(nomJoueur);
-        if (antesPayees.containsKey(joueurPoker))
-            throw new ErreurLectureFichier("Blindes ajoutées deux fois pour:" + joueurPoker);
-        antesPayees.put(joueurPoker, montant);
-    }
-
-    public void ajouterCartesHero(List<CartePoker> cartesHero) throws ErreurLectureFichier {
-        if (this.cartesHero != null) throw new ErreurLectureFichier("Cartes hero déjà ajoutées");
-        this.cartesHero = cartesHero;
-    }
-
-    public void ajouterGains(String nomJoueur, BigDecimal montantGain) throws ErreurLectureFichier {
-        JoueurPoker joueurPoker = obtJoueurParNom(nomJoueur);
-        gains.put(joueurPoker, montantGain);
-    }
-
-    public void ajouterCartes(String nomJoueur, List<CartePoker> cartePokers) throws ErreurLectureFichier {
-        JoueurPoker joueurPoker = obtJoueurParNom(nomJoueur);
-        ComboReel comboReel = new ComboReel(cartePokers);
-
-    }
-
-    public void calculerLaValueDesActions() {
-
-    }
-
-    public void ajouterStackDepart(String nomJoueur, BigDecimal bigDecimal) {
-    }
-
-    public void ajouterBounty(String nomJoueur, BigDecimal bigDecimal) {
-    }
-
-    private JoueurPoker obtJoueurParNom(String nomJoueur) throws ErreurLectureFichier {
-        if (!joueursPresents.containsKey(nomJoueur)) {
-            throw new ErreurLectureFichier("Le joueur n'est pas présent:" + nomJoueur);
-        }
-
-        return joueursPresents.get(nomJoueur);
+    public long obtIdParse() {
+        return identifiantMain;
     }
 }

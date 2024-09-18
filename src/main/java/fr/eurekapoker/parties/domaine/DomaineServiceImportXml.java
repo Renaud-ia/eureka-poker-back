@@ -17,19 +17,4 @@ class DomaineServiceImportXml implements DomaineServiceImport {
     public void lancerImport() {
 
     }
-
-    @Override
-    public InfosPartiePoker obtInfosPartie() throws ErreurLectureFichier {
-        return null;
-    }
-
-    @Override
-    public List<MainPoker> obtMainsExtraites() {
-        return null;
-    }
-
-    @Override
-    public List<JoueurPoker> obtJoueursInitiaux() {
-        return null;
-    }
 }

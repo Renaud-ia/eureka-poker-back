@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.domaine.parsing.txt;
 
 import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
+import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
@@ -20,7 +21,8 @@ public class FabriqueParserTxt {
     static {
         parsersDisponibles.put(RoomPoker.WINAMAX, ParserWinamax.class);
     }
-    public static ParserTxt trouverParser(String[] lignesFichier) throws Exception {
+    public static ParserTxt trouverParser(ObservateurParser observateurParser, String[] lignesFichier)
+            throws Exception {
         for (RoomPoker roomPoker : parsersDisponibles.keySet()) {
             Class<? extends ParserTxt> parserTxtClass = parsersDisponibles.get(roomPoker);
             InterpreteurLigne interpreteurLigne = obtInterpreteurLigne(roomPoker);
@@ -29,12 +31,14 @@ public class FabriqueParserTxt {
 
             ParserTxt parserTxt = parserTxtClass
                     .getDeclaredConstructor(
+                            ObservateurParser.class,
                             String[].class,
                             InterpreteurLigne.class,
                             ExtracteurLigne.class,
                             BuilderInfosPartie.class
                             )
                     .newInstance(
+                            observateurParser,
                             lignesFichier,
                             interpreteurLigne,
                             extracteurLigne,

@@ -8,6 +8,7 @@ import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 
@@ -169,9 +170,22 @@ public class ExtracteurWinamax implements ExtracteurLigne {
         );
     }
 
+    private static final Pattern patternNomTour = Pattern.compile(
+            "\\*\\*\\*\\s(?<nomTour>.+)\\s\\*\\*\\*");
+
     @Override
-    public List<CartePoker> extraireBoardTour(String ligne) throws ErreurRegex {
-        return extraireCartes(ligne);
+    public NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex {
+        Matcher matcher = matcherRegex(patternNomTour, ligne);
+        String nomRound = matcher.group("nomTour");
+        List<CartePoker> board = extraireCartes(ligne);
+        if (board == null) board = new ArrayList<>();
+
+        if (Objects.equals(nomRound, "PRE-FLOP")) return new NouveauTour(TourPoker.RoundPoker.PREFLOP, board);
+        if (Objects.equals(nomRound, "FLOP")) return new NouveauTour(TourPoker.RoundPoker.FLOP, board);
+        if (Objects.equals(nomRound, "TURN")) return new NouveauTour(TourPoker.RoundPoker.TURN, board);
+        if (Objects.equals(nomRound, "RIVER")) return new NouveauTour(TourPoker.RoundPoker.RIVER, board);
+
+        throw new ErreurRegex("Nom tour inconnu: " + nomRound);
     }
 
 

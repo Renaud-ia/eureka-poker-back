@@ -16,11 +16,13 @@ import java.util.List;
  * centralise les procédures communes aux différents parsers
  */
 public abstract class ParserModele {
+    protected final ObservateurParser observateurParser;
     private final HashMap<JoueurPoker, Float> montantDejaInvesti;
     protected final List<MainPoker> mainsExtraites;
     protected FormatPoker formatPoker;
     protected InfosPartiePoker infosPartiePoker;
-    protected ParserModele() {
+    protected ParserModele(ObservateurParser observateurParser) {
+        this.observateurParser = observateurParser;
         this.mainsExtraites = new ArrayList<>();
         this.montantDejaInvesti = new HashMap<>();
     }

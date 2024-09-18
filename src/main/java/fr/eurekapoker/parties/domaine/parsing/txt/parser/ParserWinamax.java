@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 
+import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.txt.ParserTxt;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
@@ -8,14 +9,20 @@ import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartieWinamax;
 import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 
 public class ParserWinamax extends ParserTxt {
-    public ParserWinamax(String[] lignesFichier,
+    public ParserWinamax(ObservateurParser observateurParser,
+                         String[] lignesFichier,
                          InterpreteurWinamax interpreteurWinamax,
                          ExtracteurWinamax extracteurWinamax,
                          BuilderInfosPartie builderInfosPartie) {
-        super(lignesFichier, interpreteurWinamax, extracteurWinamax, builderInfosPartie);
+        super(observateurParser, lignesFichier, interpreteurWinamax, extracteurWinamax, builderInfosPartie);
     }
-    public ParserWinamax(String[] lignesFichier) {
-        super(lignesFichier, new InterpreteurWinamax(), new ExtracteurWinamax(), new BuilderInfosPartieWinamax());
+    public ParserWinamax(ObservateurParser observateurParser, String[] lignesFichier) {
+        super(observateurParser,
+                lignesFichier,
+                new InterpreteurWinamax(),
+                new ExtracteurWinamax(),
+                new BuilderInfosPartieWinamax()
+        );
     }
 
     @Override

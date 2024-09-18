@@ -11,7 +11,4 @@ import java.util.List;
 
 public interface DomaineServiceImport {
     void lancerImport() throws ErreurImport;
-    InfosPartiePoker obtInfosPartie() throws ErreurLectureFichier;
-    List<MainPoker> obtMainsExtraites();
-    List<JoueurPoker> obtJoueursInitiaux();
 }
