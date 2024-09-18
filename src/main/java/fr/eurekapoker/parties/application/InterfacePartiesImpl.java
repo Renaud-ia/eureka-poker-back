@@ -1,7 +1,6 @@
 package fr.eurekapoker.parties.application;
 
-import java.util.UUID;
-
+import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,34 +17,34 @@ import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.domaine.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.FabriqueDomainServicesImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
-import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 
 public class InterfacePartiesImpl implements InterfaceParties {
     private static final Logger logger = LoggerFactory.getLogger(InterfacePartiesImpl.class);
     private final PersistanceParties persistanceParties;
     private final PersistanceFichiers persistanceFichiers;
-    public InterfacePartiesImpl(PersistanceParties persistanceParties, PersistanceFichiers persistanceFichiers) {
+    public InterfacePartiesImpl(PersistanceParties persistanceParties,
+                                PersistanceFichiers persistanceFichiers) {
         this.persistanceParties = persistanceParties;
         this.persistanceFichiers = persistanceFichiers;
     }
     @Override
     public ResumePartieDto ajouterPartie(String contenuPartie) throws ErreurAjoutPartie {
-        ObservateurParser observateurParser = parserPartie(contenuPartie);
-        logger.info("Partie persistée avec UUID:" + observateurParser.getIdUniquePartie());
-        enregistrerFichier(contenuPartie, observateurParser.getIdUniquePartie());
-        logger.info("Données fichiers sauvegardées avec UUID:" + observateurParser.getIdUniquePartie());
+        ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie);
+        logger.info("Partie persistée avec UUID:" + constructeurPersistenceDto.getIdUniquePartie());
+        enregistrerFichier(contenuPartie, constructeurPersistenceDto.getIdUniquePartie());
+        logger.info("Données fichiers sauvegardées avec UUID:" + constructeurPersistenceDto.getIdUniquePartie());
 
-        return observateurParser.obtResumePartie();
+        return constructeurPersistenceDto.obtResumePartie();
     }
 
-    private ObservateurParser parserPartie(String contenuPartie) throws ErreurAjoutPartie {
-        ObservateurParser observateurParser = new ObservateurParserImpl();
+    private ConstructeurPersistence parserPartie(String contenuPartie) throws ErreurAjoutPartie {
+        ConstructeurPersistence constructeurPersistence = FabriqueDependances.obtConstructeurPersistance();
         FabriqueDomainServicesImport fabriqueDomainServicesImport = new FabriqueDomainServicesImport();
         DomaineServiceImport domaineServiceImport;
 
         // todo logger les erreurs et ajuster le niveau de détail
         try {
-            domaineServiceImport = fabriqueDomainServicesImport.obtService(observateurParser, contenuPartie);
+            domaineServiceImport = fabriqueDomainServicesImport.obtService(constructeurPersistence, contenuPartie);
         }
         catch (ErreurImport erreurImport) {
             logger.error("Une erreur est survenue pendant la création du parser: " + erreurImport);
@@ -54,14 +53,14 @@ public class InterfacePartiesImpl implements InterfaceParties {
 
         try {
             domaineServiceImport.lancerImport();
-            persistanceParties.ajouterPartie(observateurParser.obtPartie());
+            persistanceParties.ajouterPartie(constructeurPersistence.obtPartie());
         }
         catch (ErreurImport erreurImport) {
             logger.error("Une erreur est survenue pendant le parsing: " + erreurImport);
             throw new ErreurParsing("Une erreur est survenue pendant le parsing");
         }
 
-        return observateurParser;
+        return constructeurPersistence;
     }
 
     private void enregistrerFichier(String contenuPartie, String idUniqueGenere) {
@@ -72,15 +71,21 @@ public class InterfacePartiesImpl implements InterfaceParties {
     public ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
             throws ErreurConsultationPartie {
         try {
-            ContenuPartieDto contenuPartieDto =
+            PartiePersistanceDto partiePersistanceDto =
                     persistanceParties.recupererPartie(idPartie, indexPremiereMain, nombreMains);
             logger.info("Contenu de la partie récupérée pour: " + idPartie);
-            return contenuPartieDto;
+
+            return this.convertirDtoPersistanceEnApi(partiePersistanceDto);
         }
         catch (Exception e) {
             logger.error("Une erreur est survenue pendant la récupération de: " + idPartie);
             throw new ErreurConsultationPartie("Impossible de récupérer la partie: " + idPartie);
         }
+    }
+
+    private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) {
+        // todo
+        return null;
     }
 
     // todo cette fonctions devraient être réservés au créateur

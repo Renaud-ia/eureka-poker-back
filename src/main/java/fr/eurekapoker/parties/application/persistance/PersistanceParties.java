@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface PersistanceParties {
     String ajouterPartie(PartiePersistanceDto partiePersistanceDto);
-    ContenuPartieDto recupererPartie(String idPartie, int indexMin, int indexMax);
+    PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int indexMax);
     void rendreAnonymeJoueurDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto);
     void definirJoueurCentreDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto);
 }

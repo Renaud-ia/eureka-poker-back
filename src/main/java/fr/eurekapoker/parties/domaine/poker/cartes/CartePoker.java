@@ -82,8 +82,7 @@ public class CartePoker {
             rank = INT_RANK_TO_CHAR_RANK.get(intRank);
             suit = INT_SUIT_TO_CHAR_SUIT.get(intSuit);
         }
-        //todo retourner une forme jolie ?
-        return "Carte (" + rank + suit + ") : " + intCode;
+        return rank + String.valueOf(suit);
     }
 
     public int toInt() {

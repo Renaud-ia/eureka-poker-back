@@ -36,4 +36,14 @@ public class CartePokerTest {
             }
         }
     }
+
+    @Test
+    void bonAffichageString() {
+        for (Character rank : CartePoker.STR_RANKS) {
+            for (Character suit : CartePoker.STR_SUITS) {
+                CartePoker cartePoker = new CartePoker(rank, suit);
+                assertEquals(String.valueOf(rank) + String.valueOf(suit), cartePoker.toString());
+            }
+        }
+    }
 }

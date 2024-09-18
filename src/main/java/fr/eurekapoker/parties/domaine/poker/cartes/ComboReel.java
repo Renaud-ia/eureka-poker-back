@@ -64,22 +64,6 @@ public class ComboReel {
 
     @Override
     public String toString() {
-        return "Combo [" + cartesReelles.get(0) + ", " + cartesReelles.get(1) + "] : " + comboBits;
-    }
-
-    int getPremierRang() {
-        return cartesReelles.getFirst().getIntRank();
-    }
-
-    int getSecondRang() {
-        return cartesReelles.get(1).getIntRank();
-    }
-
-    int getPremierSuit() {
-        return cartesReelles.getFirst().getIntSuit();
-    }
-
-    int getSecondSuit() {
-        return cartesReelles.get(1).getIntSuit();
+        return cartesReelles.get(0).toString() + cartesReelles.get(1).toString();
     }
 }

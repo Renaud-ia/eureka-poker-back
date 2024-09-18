@@ -30,13 +30,9 @@ public interface ObservateurParser {
 
     void ajouterAction(ActionPokerJoueur actionPoker);
     void mainTerminee();
-    ResumePartieDto obtResumePartie();
-    String getIdUniquePartie();
 
     void ajouterGains(String nomJoueur, BigDecimal bigDecimal);
 
     void ajouterCartes(String nomJoueur, List<CartePoker> cartePokers);
-
-    PartiePersistanceDto obtPartie();
     void ajouterPositionDealer(int positionDealer);
 }

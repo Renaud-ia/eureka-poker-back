@@ -9,8 +9,6 @@ import java.util.SequencedCollection;
 import java.util.UUID;
 
 public class PartiePersistanceDto {
-    // todo coder les méthodes
-    // todo coder les vérifications
     private final String idUniqueGenere;
     private final long idParse;
     private final String nomRoom;
@@ -58,4 +56,10 @@ public class PartiePersistanceDto {
     public String obtIdUnique() {
         return idUniqueGenere;
     }
+
+    public void rendreImmuablesValeurs() {
+        // todo empeche la modification des valeurs
+    }
+
+
 }

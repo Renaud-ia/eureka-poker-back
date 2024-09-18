@@ -50,5 +50,20 @@ public class ComboReelTest {
         }
     }
 
+    @Test
+    void bonAffichageString() {
+        for(Character rank1 : CartePoker.STR_RANKS) {
+            for(Character rank2 : CartePoker.STR_RANKS) {
+                for (Character suit1 : CartePoker.STR_SUITS) {
+                    for (Character suit2 : CartePoker.STR_SUITS) {
+                        ComboReel comboReel = new ComboReel(rank1, suit1, rank2, suit2);
+                        assertTrue((String.valueOf(rank2) + suit2 + rank1 + suit1).equals(comboReel.toString()) ||
+                                (String.valueOf(rank1) + suit1 + rank2 + suit2).equals(comboReel.toString()));
+                    }
+                }
+            }
+        }
+    }
+
 }
 
