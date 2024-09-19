@@ -10,21 +10,19 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class ServiceAjoutPartie {
     private PartieRepository partieRepository;
     private JoueurRepository joueurRepository;
     private String nomRoom;
-    private final ConcurrentHashMap<String, InfosJoueurJpa> joueursEnregistres;
 
     @Autowired
     public ServiceAjoutPartie(PartieRepository partieRepository, JoueurRepository joueurRepository) {
         this.partieRepository = partieRepository;
         this.joueurRepository = joueurRepository;
-        this.joueursEnregistres = new ConcurrentHashMap<>();
     }
 
     @Transactional
@@ -34,6 +32,7 @@ public class ServiceAjoutPartie {
                 .nomRoom(partiePersistanceDto.obtNomRoom())
                 .varianteJeu(partiePersistanceDto.obtVariante())
                 .typeTable(partiePersistanceDto.obtTypeTable())
+                .formatSpecialRoom(partiePersistanceDto.obtFormatSpecialRoom())
                 .identifiantParse(partiePersistanceDto.obtIdParse())
                 .nomPartie(partiePersistanceDto.obtNomPartie())
                 .nomHero(partiePersistanceDto.obtNomHero())
@@ -61,14 +60,18 @@ public class ServiceAjoutPartie {
                     .toursJpa(new ArrayList<>())
                     .build();
 
-            ajouterJoueursMain(nouvelleMain, mainDto);
-            ajouterTours(nouvelleMain, mainDto);
+            HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap = ajouterJoueursMain(nouvelleMain, mainDto);
+            ajouterTours(nouvelleMain, mainDto, infosJoueurJpaHashMap);
 
             nouvellePartie.ajouterMain(nouvelleMain);
         }
     }
 
-    private void ajouterJoueursMain(MainJpa nouvelleMain, MainPersistenceDto mainDto) {
+    private HashMap<String, InfosJoueurJpa> ajouterJoueursMain(
+            MainJpa nouvelleMain,
+            MainPersistenceDto mainDto
+    ) {
+        HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainDto.obtJoueursPresents()) {
             JoueurJpa nouveauJoueur = chargerOuSauvegarderJoueur(joueurPersistenceDto.obtNomJoueur(), this.nomRoom);
 
@@ -86,13 +89,19 @@ public class ServiceAjoutPartie {
                     .blindePayee(mainDto.obtBlinde(nomJoueur))
                     .build();
 
-            joueursEnregistres.put(nomJoueur, infosJoueurJpa);
+            infosJoueurJpaHashMap.put(nomJoueur, infosJoueurJpa);
 
             nouvelleMain.ajouterInfosJoueur(infosJoueurJpa);
         }
+
+        return infosJoueurJpaHashMap;
     }
 
-    private void ajouterTours(MainJpa nouvelleMain, MainPersistenceDto mainDto) {
+    private void ajouterTours(
+            MainJpa nouvelleMain,
+            MainPersistenceDto mainDto,
+            HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap
+    ) {
         for (TourPersistanceDto tourPersistanceDto : mainDto.obtTours()) {
             TourJpa tourJpa = TourJpa.builder()
                     .mainJpa(nouvelleMain)
@@ -101,22 +110,28 @@ public class ServiceAjoutPartie {
                     .boardLong(tourPersistanceDto.obtBoardAsLong())
                     .build();
 
-            ajouterActions(tourJpa, mainDto, tourPersistanceDto);
+            ajouterActions(tourJpa, mainDto, tourPersistanceDto, infosJoueurJpaHashMap);
 
             nouvelleMain.ajouterTour(tourJpa);
         }
     }
 
-    private void ajouterActions(TourJpa tourJpa, MainPersistenceDto mainDto, TourPersistanceDto tourDto) {
+    private void ajouterActions(
+            TourJpa tourJpa, MainPersistenceDto mainDto,
+            TourPersistanceDto tourDto,
+            HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap
+    ) {
         for (ActionPersistanceDto actionPersistanceDto: tourDto.obtActions()) {
-            InfosJoueurJpa infosJoueurJpa = joueursEnregistres.get(actionPersistanceDto.obtNomJoueur());
+            InfosJoueurJpa infosJoueurJpa = infosJoueurJpaHashMap.get(actionPersistanceDto.obtNomJoueur());
 
             ActionJpa actionJpa = ActionJpa.builder()
                     .infosJoueurJpa(infosJoueurJpa)
                     .nomAction(actionPersistanceDto.obtNomAction())
                     .montantAction(actionPersistanceDto.obtMontant())
                     .identifiantSituation(actionPersistanceDto.obtIdSituation())
-                    .value(mainDto.obtValueParActionJoueur(actionPersistanceDto.obtNomJoueur()))
+                    .valueAction(mainDto.obtValueParActionJoueur(actionPersistanceDto.obtNomJoueur()))
+                    .pot(actionPersistanceDto.obtPot())
+                    .potBounty(actionPersistanceDto.obtPotBounty())
                     .build();
 
             tourJpa.ajouterAction(actionJpa);

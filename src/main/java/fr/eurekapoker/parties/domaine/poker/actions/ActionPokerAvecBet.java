@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class ActionPokerAvecBet extends ActionPokerJoueur {
+    // todo gérer le paramètre TotalBet
     private final BigDecimal montantAction;
     private final boolean totalBet;
     public ActionPokerAvecBet(String nomJoueur, TypeAction typeAction, float montantAction, boolean totalBet) {

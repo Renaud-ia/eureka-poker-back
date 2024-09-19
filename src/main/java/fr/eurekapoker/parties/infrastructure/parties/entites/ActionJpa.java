@@ -21,8 +21,19 @@ public class ActionJpa {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "infos_joueur_jpa_id")
     private InfosJoueurJpa infosJoueurJpa;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "tour_joueur_jpa_id")
+    private TourJpa tourJpa;
+    @Column(nullable = false)
     private String nomAction;
+    @Column(nullable = false)
     private BigDecimal montantAction;
+    @Column(nullable = false)
     private long identifiantSituation;
-    private BigDecimal value;
+    @Column(nullable = false)
+    private BigDecimal valueAction;
+    @Column(nullable = false)
+    private BigDecimal pot;
+    @Column(nullable = false)
+    private BigDecimal potBounty;
 }

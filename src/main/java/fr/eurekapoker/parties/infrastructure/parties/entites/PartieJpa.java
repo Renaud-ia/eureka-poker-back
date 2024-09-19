@@ -21,13 +21,22 @@ public class PartieJpa {
     private Long id;
     @Column(nullable = false, unique = true)
     private String identifiantGenere;
+    @Column(nullable = false)
     private String nomRoom;
+    @Column(nullable = false)
     private String varianteJeu;
+    @Column(nullable = false)
     private String typeTable;
-    private long identifiantParse;
+    private String formatSpecialRoom;
+    @Column(nullable = false)
+    private Long identifiantParse;
+    @Column(nullable = false)
     private String nomPartie;
+    @Column(nullable = false)
     private String nomHero;
+    @Column(nullable = false)
     private LocalDateTime dateJeu;
+    @Column(nullable = false)
     private LocalDateTime dateSauvegarde;
     @OneToMany(mappedBy = "partieJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MainJpa> mainsJpa;

@@ -20,10 +20,13 @@ public class TourJpa {
     private Long id;
     @ManyToOne(fetch = FetchType.LAZY)
     private MainJpa mainJpa;
+    @Column(nullable = false)
     private String nomTour;
+    @Column(nullable = false)
     private String boardString;
-    private long boardLong;
-    @OneToMany(mappedBy = "tour_jpa_id", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    @Column(nullable = false)
+    private Long boardLong;
+    @OneToMany(mappedBy = "tourJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<ActionJpa> actionsJpas;
 
     public void ajouterAction(ActionJpa actionJpa) {

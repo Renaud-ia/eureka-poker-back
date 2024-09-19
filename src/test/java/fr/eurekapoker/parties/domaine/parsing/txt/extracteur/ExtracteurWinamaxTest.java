@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -33,7 +34,7 @@ public class ExtracteurWinamaxTest {
         ActionPokerJoueur actionPoker = extracteurWinamax.extraireAction(ligne);
         assertEquals(ActionPoker.TypeAction.RAISE, actionPoker.getTypeAction());
         assertEquals("GregossTR", actionPoker.getNomJoueur());
-        BigDecimal expectedValue = new BigDecimal("0.05");
+        BigDecimal expectedValue = new BigDecimal("0.05").setScale(2, RoundingMode.HALF_UP);
         assertEquals(0, expectedValue.compareTo(actionPoker.obtMontantAction()));
         assertTrue(actionPoker.estMontantTotal());
     }

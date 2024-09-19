@@ -14,6 +14,7 @@ public class PartiePersistanceDto {
     private final String nomRoom;
     private final String variante;
     private final String typeJeu;
+    private final String formatSpecialRoom;
     private final LocalDateTime date;
     private final String nomPartie;
     private final int nombreSieges;
@@ -26,6 +27,7 @@ public class PartiePersistanceDto {
                                 String nomRoom,
                                 String variante,
                                 String typeJeu,
+                                String formatSpecialRoom,
                                 LocalDateTime date,
                                 String nomPartie,
                                 int nombreSieges) {
@@ -34,6 +36,7 @@ public class PartiePersistanceDto {
         this.nomRoom = nomRoom;
         this.variante = variante;
         this.typeJeu = typeJeu;
+        this.formatSpecialRoom = formatSpecialRoom;
         this.date = date;
         this.nomPartie = nomPartie;
         this.nombreSieges = nombreSieges;
@@ -93,5 +96,9 @@ public class PartiePersistanceDto {
 
     public LocalDateTime obtDate() {
         return date;
+    }
+
+    public String obtFormatSpecialRoom() {
+        return formatSpecialRoom;
     }
 }

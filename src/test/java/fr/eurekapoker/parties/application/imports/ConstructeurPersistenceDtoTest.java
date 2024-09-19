@@ -1,6 +1,5 @@
-package fr.eurekapoker.parties.application;
+package fr.eurekapoker.parties.application.imports;
 
-import fr.eurekapoker.parties.application.imports.ConstructeurPersistenceDto;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
@@ -9,7 +8,7 @@ import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
-import fr.eurekapoker.parties.domaine.poker.moteur.EncodageSituation;
+import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -29,7 +28,7 @@ class ConstructeurPersistenceDtoTest {
     private ConstructeurPersistenceDto constructeur;
 
     @Mock
-    private EncodageSituation encodageSituationMock;
+    private MoteurJeu moteurJeuMock;
 
     @Mock
     InfosPartiePoker infosPartiePokerMock;
@@ -39,7 +38,7 @@ class ConstructeurPersistenceDtoTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        constructeur = new ConstructeurPersistenceDto(encodageSituationMock);
+        constructeur = new ConstructeurPersistenceDto(moteurJeuMock);
 
         nombreJoueurs = 6;
     }
@@ -77,9 +76,15 @@ class ConstructeurPersistenceDtoTest {
         constructeur.ajouterJoueur(infosJoueur);
         assertEquals(1, constructeur.obtPartie().obtMains().getLast().obtNombreJoueurs());
         assertTrue(constructeur.obtPartie().obtMains().getLast().obtNomsJoueursPresents().contains(nomJoueur));
+        verify(moteurJeuMock).ajouterJoueur(nomJoueur, infosJoueur.obtStack(), infosJoueur.obtBounty());
 
         // 4. Simuler l'ajout de blindes/ante
-        // todo
+        BigDecimal montantFloatAnte = new BigDecimal("2.23");
+        constructeur.ajouterBlinde(nomJoueur, montantFloatAnte);
+        verify(moteurJeuMock).ajouterBlinde(nomJoueur, montantFloatAnte);
+
+        constructeur.ajouterAnte(nomJoueur, montantFloatAnte);
+        verify(moteurJeuMock).ajouterAnte(nomJoueur, montantFloatAnte);
 
         // 5. Simuler l'ajout d'un tour et vérifier que encodage est appelé
         NouveauTour nouveauTour = new NouveauTour(
@@ -87,7 +92,7 @@ class ConstructeurPersistenceDtoTest {
                 new ArrayList<>()
         );
         constructeur.ajouterTour(nouveauTour);
-        verify(encodageSituationMock, times(nombreJoueurs - 1)).ajouterAction(ActionPoker.TypeAction.FOLD);
+        verify(moteurJeuMock, times(nombreJoueurs - 1)).ajouterJoueurManquant();
 
         // 6. Simuler deux actions de poker
         int nombreActions = 2;
@@ -99,8 +104,8 @@ class ConstructeurPersistenceDtoTest {
         );
         constructeur.ajouterAction(actionPokerJoueur);
 
-        verify(encodageSituationMock).ajouterAction(actionPokerJoueur.getTypeAction());
-        verify(encodageSituationMock).obtIdentifiantSituation();
+        verify(moteurJeuMock).ajouterAction(actionPokerJoueur);
+        verify(moteurJeuMock).obtIdentifiantSituation();
 
         constructeur.ajouterAction(actionPokerJoueur);
 
@@ -111,7 +116,7 @@ class ConstructeurPersistenceDtoTest {
         // 9. Terminer la main et vérifier les calculs de value
         constructeur.mainTerminee();
         assertEquals(
-                montantGains.divide(new BigDecimal(nombreActions), RoundingMode.CEILING),
+                montantGains.divide(new BigDecimal(nombreActions), RoundingMode.HALF_UP),
                 constructeur.obtPartie().obtMains().getLast().obtValueParActionJoueur(nomJoueur)
         );
     }

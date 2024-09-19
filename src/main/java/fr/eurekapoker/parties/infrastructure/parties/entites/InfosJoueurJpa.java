@@ -24,11 +24,18 @@ public class InfosJoueurJpa {
     @ManyToOne
     @JoinColumn(name = "main_jpa_id")
     private MainJpa mainJpa;
+    @Column(nullable = false)
     private int siege;
+    @Column(nullable = false)
     private BigDecimal stack;
+    @Column(nullable = false)
     private BigDecimal bounty;
+    @Column(nullable = false)
     private String comboJoueurString;
+    @Column(nullable = false)
     private int comboJoueurInt;
+    @Column(nullable = false)
     private BigDecimal antePayee;
+    @Column(nullable = false)
     private BigDecimal blindePayee;
 }

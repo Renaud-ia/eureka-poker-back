@@ -61,4 +61,7 @@ public abstract class InfosPartiePoker {
     public int getNombreSieges() {
         return nombreJoueurs;
     }
+
+    // todo => ici on peut définir des formats spéciaux
+    public abstract String getFormatSpecialRoom();
 }

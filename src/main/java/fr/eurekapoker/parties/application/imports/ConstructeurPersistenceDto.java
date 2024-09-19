@@ -12,6 +12,7 @@ import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.EncodageSituation;
+import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 
 import java.math.BigDecimal;
@@ -26,14 +27,14 @@ import java.util.UUID;
  */
 public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     private PartiePersistanceDto partiePersistanceDto;
-    private final EncodageSituation encodageSituation;
+    private final MoteurJeu moteurJeu;
     private int indexMain;
     private MainPersistenceDto derniereMain;
     private TourPersistanceDto dernierTour;
     private final HashMap<String, Integer> nombreActionsParJoueur;
-    public ConstructeurPersistenceDto(EncodageSituation encodageSituation) {
+    public ConstructeurPersistenceDto(MoteurJeu moteurJeu) {
         this.indexMain = 0;
-        this.encodageSituation = encodageSituation;
+        this.moteurJeu = moteurJeu;
         this.nombreActionsParJoueur = new HashMap<>();
     }
 
@@ -47,6 +48,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 infosPartiePoker.getNomRoom(),
                 infosPartiePoker.getFormatPoker(),
                 infosPartiePoker.getTypeJeu(),
+                infosPartiePoker.getFormatSpecialRoom(),
                 infosPartiePoker.getDate(),
                 infosPartiePoker.getNomPartie(),
                 infosPartiePoker.getNombreSieges()
@@ -77,16 +79,19 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         this.derniereMain.ajouterStackDepart(nomJoueur, infosJoueur.obtStack());
         this.derniereMain.ajouterBounty(nomJoueur, infosJoueur.obtBounty());
         this.nombreActionsParJoueur.put(nomJoueur, 0);
+        this.moteurJeu.ajouterJoueur(nomJoueur, infosJoueur.obtStack(), infosJoueur.obtBounty());
     }
 
     @Override
     public void ajouterBlinde(String nomJoueur, BigDecimal montant) {
         this.derniereMain.ajouterBlinde(nomJoueur, montant);
+        this.moteurJeu.ajouterBlinde(nomJoueur, montant);
     }
 
     @Override
     public void ajouterAnte(String nomJoueur, BigDecimal montant) {
         this.derniereMain.ajouterAnte(nomJoueur, montant);
+        this.moteurJeu.ajouterAnte(nomJoueur, montant);
     }
 
     @Override
@@ -111,7 +116,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         int nombreJoueursTable = this.derniereMain.obtNombreJoueurs();
 
         while(nombreJoueursTable++ < nombreJoueursFormat) {
-            encodageSituation.ajouterAction(ActionPoker.TypeAction.FOLD);
+            this.moteurJeu.ajouterJoueurManquant();
         }
 
         this.derniereMain.ajouterTour(nouveauTour);
@@ -120,13 +125,13 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
-        this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
-
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(
                 actionPoker.getNomJoueur(),
                 actionPoker.getTypeAction().toString(),
-                this.encodageSituation.obtIdentifiantSituation(),
-                actionPoker.obtMontantAction()
+                this.moteurJeu.obtIdentifiantSituation(),
+                actionPoker.obtMontantAction(),
+                moteurJeu.obtPot(),
+                moteurJeu.obtPotBounty()
         );
         if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
         this.dernierTour.ajouterAction(nouvelleAction);
@@ -134,6 +139,8 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         // on incrémente le nombre d'actions du joueur
         this.nombreActionsParJoueur.put(actionPoker.getNomJoueur(),
                 nombreActionsParJoueur.get(actionPoker.getNomJoueur()) + 1);
+        // doit rester à la fin car change le calcul
+        this.moteurJeu.ajouterAction(actionPoker);
     }
 
     @Override

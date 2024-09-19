@@ -6,7 +6,7 @@ import fr.eurekapoker.parties.application.persistance.PersistanceFichiers;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.domaine.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
-import fr.eurekapoker.parties.domaine.poker.moteur.EncodageSituation;
+import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.infrastructure.parties.PersistancePartiesBDD;
 
 public class FabriqueDependancesImpl implements FabriqueDependances {
@@ -25,7 +25,7 @@ public class FabriqueDependancesImpl implements FabriqueDependances {
     }
 
     public ConstructeurPersistence obtConstructeurPersistance() {
-        return new ConstructeurPersistenceDto(new EncodageSituation());
+        return new ConstructeurPersistenceDto(new MoteurJeu());
     }
 
     @Override

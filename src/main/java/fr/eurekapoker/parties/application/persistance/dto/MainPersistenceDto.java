@@ -73,7 +73,7 @@ public class MainPersistenceDto {
     public void fixNombreActionsDuJoueur(String nomJoueur, int nombreActions) {
         BigDecimal resultat = this.resultats.get(nomJoueur);
         if (nombreActions == 0) resultat = new BigDecimal("0");
-        else resultat = resultat.divide(BigDecimal.valueOf(nombreActions), RoundingMode.CEILING);
+        else resultat = resultat.divide(BigDecimal.valueOf(nombreActions), RoundingMode.HALF_UP);
         this.valueParAction.put(nomJoueur, resultat);
     }
 

@@ -25,9 +25,9 @@ public class MainJpa {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "partie_jpa_id")
     private PartieJpa partieJpa;
-    @OneToMany(mappedBy = "main_jpa_id", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "mainJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<InfosJoueurJpa> infosJoueurJpa;
-    @OneToMany(mappedBy = "main_jpa_id", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "mainJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TourJpa> toursJpa;
 
     public void ajouterInfosJoueur(InfosJoueurJpa infosJoueurJpa) {

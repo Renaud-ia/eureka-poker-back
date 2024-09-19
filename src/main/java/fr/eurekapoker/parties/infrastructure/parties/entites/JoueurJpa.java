@@ -16,7 +16,9 @@ public class JoueurJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false)
     private String nomRoom;
+    @Column(nullable = false)
     private String nomJoueur;
     private boolean joueurAnonyme;
 }

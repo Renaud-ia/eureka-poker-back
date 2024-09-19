@@ -24,4 +24,10 @@ public class InfosPartieWinamax extends InfosPartiePoker {
     public String getNomRoom() {
         return RoomPoker.WINAMAX.toString();
     }
+
+    // todo => on veut marquer les formats spéciaux + ajouter TU
+    @Override
+    public String getFormatSpecialRoom() {
+        return "";
+    }
 }
