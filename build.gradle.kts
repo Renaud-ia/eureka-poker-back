@@ -33,6 +33,10 @@ dependencies {
 	// persistance
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa") // Spring Data JPA
 	runtimeOnly("org.postgresql:postgresql")
+
+	// lombok
+	compileOnly("org.projectlombok:lombok")
+	annotationProcessor("org.projectlombok:lombok")
 }
 
 tasks.withType<Test> {

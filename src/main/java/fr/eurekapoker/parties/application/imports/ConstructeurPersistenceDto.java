@@ -74,6 +74,8 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 nomJoueur
         );
         this.derniereMain.ajouterJoueur(nouveauJoueur, infosJoueur.obtSiege());
+        this.derniereMain.ajouterStackDepart(nomJoueur, infosJoueur.obtStack());
+        this.derniereMain.ajouterBounty(nomJoueur, infosJoueur.obtBounty());
         this.nombreActionsParJoueur.put(nomJoueur, 0);
     }
 
@@ -90,6 +92,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     @Override
     public void ajouterHero(String nomHero, List<CartePoker> cartesHero) {
         ComboReel comboReel = new ComboReel(cartesHero);
+        this.partiePersistanceDto.fixNomHero(nomHero);
         this.derniereMain.ajouterInfosHero(nomHero, comboReel.toInt(), comboReel.toString());
     }
 
@@ -120,12 +123,13 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
 
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(
+                actionPoker.getNomJoueur(),
                 actionPoker.getTypeAction().toString(),
                 this.encodageSituation.obtIdentifiantSituation(),
                 actionPoker.obtMontantAction()
         );
         if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
-        this.dernierTour.ajouterAction(actionPoker.getNomJoueur(), nouvelleAction);
+        this.dernierTour.ajouterAction(nouvelleAction);
 
         // on incrémente le nombre d'actions du joueur
         this.nombreActionsParJoueur.put(actionPoker.getNomJoueur(),

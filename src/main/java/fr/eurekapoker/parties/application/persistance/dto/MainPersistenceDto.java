@@ -3,6 +3,7 @@ package fr.eurekapoker.parties.application.persistance.dto;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
+import java.util.stream.Stream;
 
 public class MainPersistenceDto {
     // todo coder les méthodes
@@ -18,6 +19,8 @@ public class MainPersistenceDto {
     private final HashMap<String, BigDecimal> antes;
     private final HashMap<String, BigDecimal> resultats;
     private final HashMap<String, BigDecimal> valueParAction;
+    private final HashMap<String, BigDecimal> stackDepart;
+    private final HashMap<String, BigDecimal> bounty;
     private String nomHero;
     private int positionDealer;
     public MainPersistenceDto(String idUniqueGenere,
@@ -34,6 +37,8 @@ public class MainPersistenceDto {
         this.antes = new HashMap<>();
         this.resultats = new HashMap<>();
         this.valueParAction = new HashMap<>();
+        this.stackDepart = new HashMap<>();
+        this.bounty = new HashMap<>();
     }
 
     public void ajouterJoueur(JoueurPersistenceDto nouveauJoueur, int numeroSiege) {
@@ -97,5 +102,57 @@ public class MainPersistenceDto {
 
     public BigDecimal obtValueParActionJoueur(String nomJoueur) {
         return valueParAction.get(nomJoueur);
+    }
+
+    public String obtIdentifiantGenere() {
+        return idUniqueGenere;
+    }
+
+    public long obtIdParse() {
+        return idParse;
+    }
+
+    public Set<JoueurPersistenceDto> obtJoueursPresents() {
+        return siegesJoueursPresents.keySet();
+    }
+
+    public int obtSiege(JoueurPersistenceDto joueurPersistenceDto) {
+        return siegesJoueursPresents.get(joueurPersistenceDto);
+    }
+
+    public void ajouterStackDepart(String nomJoueur, BigDecimal montant) {
+        this.stackDepart.put(nomJoueur, montant);
+    }
+
+    public void ajouterBounty(String nomJoueur, BigDecimal montant) {
+        this.bounty.put(nomJoueur, montant);
+    }
+
+    public BigDecimal obtStack(String nomJoueur) {
+        return stackDepart.get(nomJoueur);
+    }
+
+    public BigDecimal obtBounty(String nomJoueur) {
+        return bounty.get(nomJoueur);
+    }
+
+    public String obtComboAsString(String nomJoueur) {
+        return cartesJoueursString.get(nomJoueur);
+    }
+
+    public int obtComboAsInt(String nomJoueur) {
+        return cartesJoueursInt.get(nomJoueur);
+    }
+
+    public BigDecimal obtAnte(String nomJoueur) {
+        return antes.get(nomJoueur);
+    }
+
+    public BigDecimal obtBlinde(String nomJoueur) {
+        return blindes.get(nomJoueur);
+    }
+
+    public List<TourPersistanceDto> obtTours() {
+        return tours;
     }
 }

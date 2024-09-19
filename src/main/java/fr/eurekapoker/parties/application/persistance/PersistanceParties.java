@@ -8,7 +8,7 @@ import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
 import java.util.List;
 
 public interface PersistanceParties {
-    String ajouterPartie(PartiePersistanceDto partiePersistanceDto);
+    void ajouterPartie(PartiePersistanceDto partiePersistanceDto);
     PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int indexMax);
     void rendreAnonymeJoueurDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto);
     void definirJoueurCentreDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto);

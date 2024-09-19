@@ -31,9 +31,9 @@ public class InterfacePartiesImpl implements InterfaceParties {
     @Override
     public ResumePartieDto ajouterPartie(String contenuPartie) throws ErreurAjoutPartie {
         ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie);
-        logger.info("Partie persistée avec UUID:" + constructeurPersistenceDto.getIdUniquePartie());
+        logger.info("Partie persistée avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
         enregistrerFichier(contenuPartie, constructeurPersistenceDto.getIdUniquePartie());
-        logger.info("Données fichiers sauvegardées avec UUID:" + constructeurPersistenceDto.getIdUniquePartie());
+        logger.info("Données fichiers sauvegardées avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
 
         return constructeurPersistenceDto.obtResumePartie();
     }
@@ -46,7 +46,7 @@ public class InterfacePartiesImpl implements InterfaceParties {
             domaineServiceImport = fabriqueDependances.obtDomaineServiceImport(contenuPartie);
         }
         catch (ErreurImport erreurImport) {
-            logger.error("Une erreur est survenue pendant la création du parser: " + erreurImport);
+            logger.error("Une erreur est survenue pendant la création du parser: {}", String.valueOf(erreurImport));
             throw new ErreurAjoutPartie("Impossible de trouver un parser");
         }
 
@@ -55,7 +55,7 @@ public class InterfacePartiesImpl implements InterfaceParties {
             persistanceParties.ajouterPartie(constructeurPersistence.obtPartie());
         }
         catch (ErreurImport erreurImport) {
-            logger.error("Une erreur est survenue pendant le parsing: " + erreurImport);
+            logger.error("Une erreur est survenue pendant le parsing: {}", String.valueOf(erreurImport));
             throw new ErreurParsing("Une erreur est survenue pendant le parsing");
         }
 
@@ -77,7 +77,7 @@ public class InterfacePartiesImpl implements InterfaceParties {
             return this.convertirDtoPersistanceEnApi(partiePersistanceDto);
         }
         catch (Exception e) {
-            logger.error("Une erreur est survenue pendant la récupération de: " + idPartie);
+            logger.error("Une erreur est survenue pendant la récupération de: {}", idPartie);
             throw new ErreurConsultationPartie("Impossible de récupérer la partie: " + idPartie);
         }
     }

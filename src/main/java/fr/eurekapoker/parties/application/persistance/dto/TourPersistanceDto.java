@@ -1,21 +1,39 @@
 package fr.eurekapoker.parties.application.persistance.dto;
 
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class TourPersistanceDto {
     private final String nomTour;
     private final String stringBoard;
     private final long longBoard;
-    private final HashMap<ActionPersistanceDto, String> actions;
+    private final List<ActionPersistanceDto> actions;
 
     public TourPersistanceDto(String nomTour, String stringBoard, long longBoard) {
         this.nomTour = nomTour;
         this.stringBoard = stringBoard;
         this.longBoard = longBoard;
-        this.actions = new HashMap<>();
+        this.actions = new ArrayList<>();
     }
 
-    public void ajouterAction(String nomJoueur, ActionPersistanceDto actionPoker) {
-        this.actions.put(actionPoker, nomJoueur);
+    public void ajouterAction(ActionPersistanceDto actionPoker) {
+        this.actions.add(actionPoker);
+    }
+
+    public String obtNomTour() {
+        return nomTour;
+    }
+
+    public String obtBoardAsString() {
+        return stringBoard;
+    }
+
+    public long obtBoardAsLong() {
+        return longBoard;
+    }
+
+    public List<ActionPersistanceDto> obtActions() {
+        return actions;
     }
 }
