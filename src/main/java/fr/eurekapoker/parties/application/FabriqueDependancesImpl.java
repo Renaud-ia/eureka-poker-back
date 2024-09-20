@@ -7,7 +7,8 @@ import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.domaine.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
-import fr.eurekapoker.parties.infrastructure.parties.PersistancePartiesBDD;
+import fr.eurekapoker.parties.infrastructure.PersistancePartiesBDD;
+import fr.eurekapoker.parties.infrastructure.PersistanceFichierLinux;
 
 public class FabriqueDependancesImpl implements FabriqueDependances {
     private final FabriqueDomainServicesImport fabriqueDomainServicesImport;
@@ -21,7 +22,7 @@ public class FabriqueDependancesImpl implements FabriqueDependances {
 
     @Override
     public PersistanceFichiers obtPersistanceFichiers() {
-        return null;
+        return new PersistanceFichierLinux();
     }
 
     public ConstructeurPersistence obtConstructeurPersistance() {

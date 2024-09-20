@@ -1,7 +1,9 @@
 package fr.eurekapoker.parties.domaine.poker.moteur;
 
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -11,30 +13,44 @@ import java.util.HashMap;
  * calcule le pot et le pot bounty
  */
 public class MoteurJeu {
-    private final EncodageSituation encodageSituation;
+    private EncodageSituation encodageSituation;
     private final HashMap<String, BigDecimal> stackDepart;
     private final HashMap<String, BigDecimal> investi;
     private final HashMap<String, BigDecimal> bountyDepart;
     private BigDecimal pot;
     private BigDecimal potBounty;
     public MoteurJeu() {
-        this.encodageSituation = new EncodageSituation();
         this.stackDepart = new HashMap<>();
         this.investi = new HashMap<>();
         this.bountyDepart = new HashMap<>();
         this.pot = new BigDecimal(0).setScale(2, RoundingMode.HALF_UP);
     }
 
+    public void nouveauRound(TourPoker.RoundPoker round) {
+        this.encodageSituation = new EncodageSituation(stackDepart.size(), round);
+    }
+
     public void ajouterJoueur(String nomJoueur, BigDecimal stackDepart, BigDecimal bounty) {
         this.stackDepart.put(nomJoueur, stackDepart);
         this.bountyDepart.put(nomJoueur, bounty);
     }
-    public void ajouterJoueurManquant() {
-        this.encodageSituation.ajouterAction(ActionPoker.TypeAction.FOLD);
+
+    public void ajouterJoueurManquant() throws ErreurLectureFichier {
+        try {
+            this.encodageSituation.ajouterAction(ActionPoker.TypeAction.FOLD);
+        }
+        catch (Exception e) {
+            throw new ErreurLectureFichier("Trop d'actions pour être encodé");
+        }
     }
 
-    public void ajouterAction(ActionPokerJoueur actionPoker) {
-        this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
+    public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+        try {
+            this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
+        }
+        catch (Exception e) {
+            throw new ErreurLectureFichier("Trop d'actions pour être encodé");
+        }
         this.pot = this.pot.add(actionPoker.obtMontantAction());
         this.incrementerMontantInvesti(actionPoker.getNomJoueur(), actionPoker.obtMontantAction());
     }
@@ -71,7 +87,7 @@ public class MoteurJeu {
     }
 
     public long obtIdentifiantSituation() {
-        return this.encodageSituation.obtIdSituation();
+        return this.encodageSituation.toLong();
     }
 
     public BigDecimal obtPot() {

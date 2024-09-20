@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.infrastructure.parties;
+package fr.eurekapoker.parties.infrastructure;
 
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;

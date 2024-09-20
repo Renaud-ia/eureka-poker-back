@@ -1,7 +1,9 @@
 package fr.eurekapoker.parties.domaine.poker.moteur;
 
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,11 +21,12 @@ public class MoteurJeuTest {
     }
 
     @Test
-    void ajoutActionIncrementePot() {
+    void ajoutActionIncrementePot() throws ErreurLectureFichier {
         String fauxNomJoueur = "Fake";
         float montantAction = 56.34f;
 
         moteurJeu.ajouterJoueur(fauxNomJoueur, new BigDecimal(1000), new BigDecimal(0));
+        moteurJeu.nouveauRound(TourPoker.RoundPoker.PREFLOP);
         ActionPokerAvecBet actionPokerJoueur =
                 new ActionPokerAvecBet(fauxNomJoueur, ActionPoker.TypeAction.FOLD, montantAction, true);
         moteurJeu.ajouterAction(actionPokerJoueur);
@@ -55,10 +58,11 @@ public class MoteurJeuTest {
     }
 
     @Test
-    void calculeBienPotBounty() {
+    void calculeBienPotBounty() throws ErreurLectureFichier {
         String nomJoueur1 = "Joueur1";
         BigDecimal stackInitialJoueur1 = new BigDecimal("25.34").setScale(2, RoundingMode.HALF_UP);
         BigDecimal bountyJoueur1 = new BigDecimal("3.45").setScale(2, RoundingMode.HALF_UP);
+        moteurJeu.nouveauRound(TourPoker.RoundPoker.PREFLOP);
         moteurJeu.ajouterJoueur(nomJoueur1, stackInitialJoueur1, bountyJoueur1);
 
         String nomJoueur2 = "Joueur2";

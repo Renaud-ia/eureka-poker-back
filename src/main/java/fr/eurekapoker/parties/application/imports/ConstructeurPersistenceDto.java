@@ -5,13 +5,11 @@ import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
-import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.moteur.EncodageSituation;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 
@@ -115,6 +113,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         int nombreJoueursFormat = this.partiePersistanceDto.obtNombreSieges();
         int nombreJoueursTable = this.derniereMain.obtNombreJoueurs();
 
+        this.moteurJeu.nouveauRound(tourParse.obtRound());
         while(nombreJoueursTable++ < nombreJoueursFormat) {
             this.moteurJeu.ajouterJoueurManquant();
         }

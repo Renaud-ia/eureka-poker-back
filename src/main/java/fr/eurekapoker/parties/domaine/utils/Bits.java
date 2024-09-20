@@ -37,10 +37,6 @@ public class Bits {
         return mask;
     }
 
-    public static void main(String[] args) {
-        System.out.println(Bits.bitsNecessaires(1023));
-    }
-
     public static long bitsPleins(int nBits) {
         if (nBits > 64) {
             throw new IllegalArgumentException("Pas possible de coder plus de 64 bits");

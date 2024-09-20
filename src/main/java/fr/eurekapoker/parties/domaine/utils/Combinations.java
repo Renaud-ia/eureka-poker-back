@@ -39,14 +39,7 @@ public class Combinations<T> {
         for (int i = start; i <= inputList.size() - combinationLength; i++) {
             temp.add(inputList.get(i));
             combine(result, temp, i + 1, combinationLength - 1);
-            temp.remove(temp.size() - 1);
+            temp.removeLast();
         }
-    }
-
-    public static void main(String[] args) {
-        List<Integer> myList = List.of(1, 2, 3, 4);
-        Combinations<Integer> combinations = new Combinations<>(myList);
-        List<List<Integer>> allCombinations = combinations.getCombinations(3);
-        System.out.println(allCombinations);
     }
 }

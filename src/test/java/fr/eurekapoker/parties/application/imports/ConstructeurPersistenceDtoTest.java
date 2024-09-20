@@ -87,11 +87,13 @@ class ConstructeurPersistenceDtoTest {
         verify(moteurJeuMock).ajouterAnte(nomJoueur, montantFloatAnte);
 
         // 5. Simuler l'ajout d'un tour et vérifier que encodage est appelé
+        TourPoker.RoundPoker roundPoker = TourPoker.RoundPoker.PREFLOP;
         NouveauTour nouveauTour = new NouveauTour(
-                TourPoker.RoundPoker.PREFLOP,
+                roundPoker,
                 new ArrayList<>()
         );
         constructeur.ajouterTour(nouveauTour);
+        verify(moteurJeuMock).nouveauRound(roundPoker);
         verify(moteurJeuMock, times(nombreJoueurs - 1)).ajouterJoueurManquant();
 
         // 6. Simuler deux actions de poker
