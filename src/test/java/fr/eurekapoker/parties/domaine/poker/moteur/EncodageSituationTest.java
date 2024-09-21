@@ -88,6 +88,8 @@ public class EncodageSituationTest {
         for (TourPoker.RoundPoker roundPoker: roundsPossibles) {
             for (int nombreJoueurs = 2; nombreJoueurs < EncodageSituation.MAX_JOUEURS; nombreJoueurs++) {
                 for (int nombreActions = 0; nombreActions < EncodageSituation.MAX_ACTIONS; nombreActions++) {
+                    // todo le souci c'est que quand le nombre d'actions dépasse le nombre d'éléments uniques, on a des listes vides
+                    // todo test incomplet
                     Combinations<ActionPoker.TypeAction> combinationsActions = new Combinations<>(actionsPossibles);
                     List<List<ActionPoker.TypeAction>> combinaisons = combinationsActions.getCombinations(nombreActions);
 

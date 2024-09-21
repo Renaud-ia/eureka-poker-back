@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.infrastructure;
 
+import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
@@ -18,8 +19,8 @@ public class PersistancePartiesBDD implements PersistanceParties {
     }
 
     @Override
-    public PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int indexMax) {
-        return serviceConsultationPartie.recupererMains(idPartie, indexMin, indexMax);
+    public PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int fenetre) throws ErreurConsultationPartie {
+        return serviceConsultationPartie.recupererMains(idPartie, indexMin, indexMin + fenetre);
     }
 
     @Override

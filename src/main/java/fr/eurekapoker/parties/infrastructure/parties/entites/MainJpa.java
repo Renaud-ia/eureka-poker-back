@@ -20,8 +20,12 @@ public class MainJpa {
     private Long id;
     @Column(nullable = false, unique = true)
     private String identifiantGenere;
-    private long identifiantParse;
-    private int indexMain;
+    @Column(nullable = false)
+    private Long identifiantParse;
+    @Column(nullable = false)
+    private Integer indexMain;
+    @Column(nullable = false)
+    private Integer positionDealer;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "partie_jpa_id")
     private PartieJpa partieJpa;

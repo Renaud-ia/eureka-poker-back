@@ -12,6 +12,7 @@ import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -106,8 +107,9 @@ class ConstructeurPersistenceDtoTest {
         );
         constructeur.ajouterAction(actionPokerJoueur);
 
-        verify(moteurJeuMock).ajouterAction(actionPokerJoueur);
-        verify(moteurJeuMock).obtIdentifiantSituation();
+        InOrder inOrder = inOrder(moteurJeuMock);
+        inOrder.verify(moteurJeuMock).obtIdentifiantSituation();
+        inOrder.verify(moteurJeuMock).ajouterAction(actionPokerJoueur);
 
         constructeur.ajouterAction(actionPokerJoueur);
 

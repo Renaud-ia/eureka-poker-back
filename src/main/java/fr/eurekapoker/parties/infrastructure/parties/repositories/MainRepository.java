@@ -6,4 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface MainRepository extends JpaRepository<MainJpa, Long> {
+    MainJpa findByidentifiantGenere(String idUniqueGenere);
 }

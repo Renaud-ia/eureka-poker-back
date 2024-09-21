@@ -36,4 +36,8 @@ public class ActionJpa {
     private BigDecimal pot;
     @Column(nullable = false)
     private BigDecimal potBounty;
+    @Column(nullable = false)
+    private BigDecimal stackEffectif;
+    @Column(nullable = false)
+    private Boolean allIn;
 }

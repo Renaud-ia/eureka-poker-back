@@ -24,8 +24,6 @@ public class ActionPoker {
         CHECK,
         CALL,
         FOLD,
-        RAISE,
-        RAISE_ALL_IN
-
+        RAISE
     }
 }

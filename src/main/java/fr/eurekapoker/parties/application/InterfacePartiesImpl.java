@@ -69,21 +69,17 @@ public class InterfacePartiesImpl implements InterfaceParties {
     @Override
     public ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
             throws ErreurConsultationPartie {
-        try {
-            PartiePersistanceDto partiePersistanceDto =
-                    persistanceParties.recupererPartie(idPartie, indexPremiereMain, nombreMains);
-            logger.info("Contenu de la partie récupérée pour: " + idPartie);
 
-            return this.convertirDtoPersistanceEnApi(partiePersistanceDto);
-        }
-        catch (Exception e) {
-            logger.error("Une erreur est survenue pendant la récupération de: {}", idPartie);
-            throw new ErreurConsultationPartie("Impossible de récupérer la partie: " + idPartie);
-        }
+        PartiePersistanceDto partiePersistanceDto =
+                    persistanceParties.recupererPartie(idPartie, indexPremiereMain, nombreMains);
+        logger.info("Contenu de la partie récupérée pour: {}", idPartie);
+
+        return this.convertirDtoPersistanceEnApi(partiePersistanceDto);
     }
 
     private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) {
-        // todo
+        // todo OPTIMISATION => on fait deux tours sur la même structure de données => observateur de persistance ?
+        // todo à coder
         return null;
     }
 

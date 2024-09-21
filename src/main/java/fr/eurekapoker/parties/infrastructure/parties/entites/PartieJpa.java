@@ -35,10 +35,14 @@ public class PartieJpa {
     @Column(nullable = false)
     private String nomHero;
     @Column(nullable = false)
+    private Integer nombreSieges;
+    @Column(nullable = false)
+    private Integer nombreMains;
+    @Column(nullable = false)
     private LocalDateTime dateJeu;
     @Column(nullable = false)
     private LocalDateTime dateSauvegarde;
-    @OneToMany(mappedBy = "partieJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "partieJpa", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MainJpa> mainsJpa;
 
     public void ajouterMain(MainJpa nouvelleMain) {

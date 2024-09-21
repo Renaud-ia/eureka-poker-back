@@ -36,6 +36,8 @@ public class ServiceAjoutPartie {
                 .identifiantParse(partiePersistanceDto.obtIdParse())
                 .nomPartie(partiePersistanceDto.obtNomPartie())
                 .nomHero(partiePersistanceDto.obtNomHero())
+                .nombreSieges(partiePersistanceDto.obtNombreSieges())
+                .nombreMains(partiePersistanceDto.obtNombreMains())
                 .dateJeu(partiePersistanceDto.obtDate())
                 .dateSauvegarde(LocalDateTime.now())
                 .mainsJpa(new ArrayList<>())
@@ -58,6 +60,7 @@ public class ServiceAjoutPartie {
                     .partieJpa(nouvellePartie)
                     .infosJoueurJpa(new ArrayList<>())
                     .toursJpa(new ArrayList<>())
+                    .positionDealer(mainDto.obtPositionDealer())
                     .build();
 
             HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap = ajouterJoueursMain(nouvelleMain, mainDto);
@@ -87,6 +90,7 @@ public class ServiceAjoutPartie {
                     .comboJoueurInt(mainDto.obtComboAsInt(nomJoueur))
                     .antePayee(mainDto.obtAnte(nomJoueur))
                     .blindePayee(mainDto.obtBlinde(nomJoueur))
+                    .gains(mainDto.obtGains(nomJoueur))
                     .build();
 
             infosJoueurJpaHashMap.put(nomJoueur, infosJoueurJpa);
@@ -108,6 +112,7 @@ public class ServiceAjoutPartie {
                     .nomTour(tourPersistanceDto.obtNomTour())
                     .boardString(tourPersistanceDto.obtBoardAsString())
                     .boardLong(tourPersistanceDto.obtBoardAsLong())
+                    .actionsJpas(new ArrayList<>())
                     .build();
 
             ajouterActions(tourJpa, mainDto, tourPersistanceDto, infosJoueurJpaHashMap);
@@ -126,12 +131,15 @@ public class ServiceAjoutPartie {
 
             ActionJpa actionJpa = ActionJpa.builder()
                     .infosJoueurJpa(infosJoueurJpa)
+                    .tourJpa(tourJpa)
                     .nomAction(actionPersistanceDto.obtNomAction())
                     .montantAction(actionPersistanceDto.obtMontant())
                     .identifiantSituation(actionPersistanceDto.obtIdSituation())
                     .valueAction(mainDto.obtValueParActionJoueur(actionPersistanceDto.obtNomJoueur()))
                     .pot(actionPersistanceDto.obtPot())
                     .potBounty(actionPersistanceDto.obtPotBounty())
+                    .stackEffectif(actionPersistanceDto.obtStackEffectif())
+                    .allIn(actionPersistanceDto.estAllIn())
                     .build();
 
             tourJpa.ajouterAction(actionJpa);

@@ -264,9 +264,6 @@ public class ExtracteurWinamax implements ExtracteurLigne {
                 totalBet = false;
             }
             ActionPoker.TypeAction action = ActionPoker.TypeAction.RAISE;
-            if (matcher.group("allIn") != null) {
-                action = ActionPoker.TypeAction.RAISE_ALL_IN;
-            }
             return new ActionPokerAvecBet(
                     nomJoueur, action, montantAction, totalBet
             );

@@ -21,7 +21,34 @@ public class PartiePersistanceDto {
     private String nomHero;
     private int nombreMains;
     private final List<MainPersistenceDto> mainPersistence;
+    private final boolean nombreMainsFixe;
 
+    // constructeur utilisé par persistence
+    public PartiePersistanceDto(String idUniqueGenere,
+                                long idParse,
+                                String nomRoom,
+                                String variante,
+                                String typeJeu,
+                                String formatSpecialRoom,
+                                LocalDateTime date,
+                                String nomPartie,
+                                int nombreSieges,
+                                int nombreMains) {
+        this.idUniqueGenere = idUniqueGenere;
+        this.idParse = idParse;
+        this.nomRoom = nomRoom;
+        this.variante = variante;
+        this.typeJeu = typeJeu;
+        this.formatSpecialRoom = formatSpecialRoom;
+        this.date = date;
+        this.nomPartie = nomPartie;
+        this.nombreSieges = nombreSieges;
+        this.nombreMains = nombreMains;
+        this.nombreMainsFixe = true;
+        this.mainPersistence = new ArrayList<>();
+    }
+
+    // utilisé par Constructeur lors du parsing de partie
     public PartiePersistanceDto(String idUniqueGenere,
                                 long idParse,
                                 String nomRoom,
@@ -41,12 +68,15 @@ public class PartiePersistanceDto {
         this.nomPartie = nomPartie;
         this.nombreSieges = nombreSieges;
         this.nombreMains = 0;
+        this.nombreMainsFixe = false;
         this.mainPersistence = new ArrayList<>();
     }
 
     public void ajouterMain(MainPersistenceDto mainPersistenceDto) {
         this.mainPersistence.add(mainPersistenceDto);
-        this.nombreMains++;
+        // dans le cas où on récupère la partie de la BDD, on veut connaitre le nombre de mains
+        // indépendamment de combien on en a récupéré (=pagination)
+        if (!nombreMainsFixe) this.nombreMains++;
     }
 
     public List<MainPersistenceDto> obtMains() {
@@ -100,5 +130,9 @@ public class PartiePersistanceDto {
 
     public String obtFormatSpecialRoom() {
         return formatSpecialRoom;
+    }
+
+    public int obtNombreMains() {
+        return nombreMains;
     }
 }

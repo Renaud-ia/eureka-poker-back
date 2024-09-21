@@ -98,4 +98,6 @@ public class MoteurJeuTest {
         BigDecimal montantAttendu = partBountyJoueur1.add(partBountyJoueur2).setScale(2, RoundingMode.HALF_UP);
         assertEquals(0, montantAttendu.compareTo(moteurJeu.obtPotBounty()));
     }
+
+    // todo ajouter test stack effectif + all in
 }

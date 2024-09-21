@@ -8,6 +8,7 @@ import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * calcule le pot et le pot bounty
@@ -99,5 +100,25 @@ public class MoteurJeu {
         return potBounty;
     }
 
+    public BigDecimal obtStackEffectif(String nomJoueur) {
+        BigDecimal stackJoueur = stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
+        BigDecimal stackEffectif = new BigDecimal(0);
 
+        for (String nomAdversaire : stackDepart.keySet()) {
+            if (Objects.equals(nomAdversaire, nomJoueur)) continue;
+            BigDecimal stackAdversaire = stackDepart.get(nomAdversaire).subtract(investi.get(nomAdversaire));
+            if (stackAdversaire.compareTo(stackEffectif) > 0) stackEffectif = stackAdversaire;
+        }
+
+        if (stackEffectif.compareTo(stackJoueur) > 0) {
+            stackEffectif = stackJoueur;
+        }
+
+        return stackEffectif;
+    }
+
+    public boolean seraAllIn(String nomJoueur, BigDecimal montantAction) {
+        BigDecimal stackRestant = stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
+        return stackRestant.compareTo(montantAction) <= 0;
+    }
 }

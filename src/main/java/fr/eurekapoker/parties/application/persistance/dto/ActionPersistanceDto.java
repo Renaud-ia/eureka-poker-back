@@ -9,20 +9,43 @@ public class ActionPersistanceDto {
     private final BigDecimal montantAction;
     private final BigDecimal pot;
     private final BigDecimal potBounty;
+    private final BigDecimal stackEffectif;
+    private final Boolean allIn;
 
+    // utilisé pour récupération depuis persistance
+    public ActionPersistanceDto(
+            String nomJoueur,
+            String nomAction,
+            long identifiantSituation,
+            BigDecimal montantAction) {
+        this.nomJoueur = nomJoueur;
+        this.nomAction = nomAction;
+        this.identifiantSituation = identifiantSituation;
+        this.montantAction = montantAction;
+        this.pot = null;
+        this.potBounty = null;
+        this.stackEffectif = null;
+        this.allIn = null;
+    }
+
+    // utilise depuis parsing
     public ActionPersistanceDto(
             String nomJoueur,
             String nomAction,
             long identifiantSituation,
             BigDecimal montantAction,
             BigDecimal pot,
-            BigDecimal potBounty) {
+            BigDecimal potBounty,
+            BigDecimal stackEffectif,
+            boolean allIn) {
         this.nomJoueur = nomJoueur;
         this.nomAction = nomAction;
         this.identifiantSituation = identifiantSituation;
         this.montantAction = montantAction;
         this.pot = pot;
         this.potBounty = potBounty;
+        this.stackEffectif = stackEffectif;
+        this.allIn = allIn;
     }
 
     public String obtNomJoueur() {
@@ -47,5 +70,13 @@ public class ActionPersistanceDto {
 
     public BigDecimal obtPotBounty() {
         return potBounty;
+    }
+
+    public BigDecimal obtStackEffectif() {
+        return stackEffectif;
+    }
+
+    public Boolean estAllIn() {
+        return allIn;
     }
 }

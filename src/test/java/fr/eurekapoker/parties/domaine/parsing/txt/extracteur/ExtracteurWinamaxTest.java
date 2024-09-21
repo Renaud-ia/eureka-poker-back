@@ -97,7 +97,7 @@ public class ExtracteurWinamaxTest {
     void testDoitExtraireReraiseAllIn() throws ErreurRegex {
         String ligne = "LaMissDu33 raises 1266 to 1326 and is all-in";
         ActionPokerJoueur actionPoker = extracteurWinamax.extraireAction(ligne);
-        assertEquals(ActionPoker.TypeAction.RAISE_ALL_IN, actionPoker.getTypeAction());
+        assertEquals(ActionPoker.TypeAction.RAISE, actionPoker.getTypeAction());
         assertEquals("LaMissDu33", actionPoker.getNomJoueur());
         BigDecimal expectedValue = new BigDecimal("1326");
         assertEquals(0, expectedValue.compareTo(actionPoker.obtMontantAction()));

@@ -38,4 +38,6 @@ public class InfosJoueurJpa {
     private BigDecimal antePayee;
     @Column(nullable = false)
     private BigDecimal blindePayee;
+    @Column(nullable = false)
+    private BigDecimal gains;
 }

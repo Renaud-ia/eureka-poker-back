@@ -152,7 +152,15 @@ public class MainPersistenceDto {
         return blindes.get(nomJoueur);
     }
 
+    public BigDecimal obtGains(String nomJoueur) {
+        return resultats.get(nomJoueur);
+    }
+
     public List<TourPersistanceDto> obtTours() {
         return tours;
+    }
+
+    public int obtPositionDealer() {
+        return positionDealer;
     }
 }

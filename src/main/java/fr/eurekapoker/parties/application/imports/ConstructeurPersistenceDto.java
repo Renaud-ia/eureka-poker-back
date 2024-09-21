@@ -130,7 +130,9 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 this.moteurJeu.obtIdentifiantSituation(),
                 actionPoker.obtMontantAction(),
                 moteurJeu.obtPot(),
-                moteurJeu.obtPotBounty()
+                moteurJeu.obtPotBounty(),
+                moteurJeu.obtStackEffectif(actionPoker.getNomJoueur()),
+                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), actionPoker.obtMontantAction())
         );
         if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
         this.dernierTour.ajouterAction(nouvelleAction);
