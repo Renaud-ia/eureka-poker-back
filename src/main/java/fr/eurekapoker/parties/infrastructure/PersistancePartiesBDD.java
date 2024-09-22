@@ -7,7 +7,9 @@ import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
 import fr.eurekapoker.parties.infrastructure.parties.services.ServiceAjoutPartie;
 import fr.eurekapoker.parties.infrastructure.parties.services.ServiceConsultationPartie;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PersistancePartiesBDD implements PersistanceParties {
     @Autowired
     ServiceAjoutPartie serviceAjoutPartie;
@@ -17,7 +19,6 @@ public class PersistancePartiesBDD implements PersistanceParties {
     public void ajouterPartie(PartiePersistanceDto partiePersistanceDto) {
         serviceAjoutPartie.persisterPartie(partiePersistanceDto);
     }
-
     @Override
     public PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int fenetre) throws ErreurConsultationPartie {
         return serviceConsultationPartie.recupererMains(idPartie, indexMin, indexMin + fenetre);

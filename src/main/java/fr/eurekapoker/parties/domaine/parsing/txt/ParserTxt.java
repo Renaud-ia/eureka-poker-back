@@ -40,7 +40,6 @@ public abstract class ParserTxt extends ParserModele {
         }
 
         observateurParser.mainTerminee();
-        this.infosPartiePoker = this.builderInfosPartie.build();
     }
 
     private void extraireLigne(int indexLigne) throws ErreurImport {
@@ -60,7 +59,7 @@ public abstract class ParserTxt extends ParserModele {
     }
 
     private void creerNouvelleMain(int indexLigne) throws ErreurImport {
-        observateurParser.mainTerminee();
+        if (indexLigne > 0) observateurParser.mainTerminee();
         InfosMain infosMain = extracteurLigne.extraireInfosMain(lignesFichier[indexLigne]);
         MainPoker mainPoker = new MainPoker(infosMain.obtIdentifiantMain());
         observateurParser.ajouterMain(mainPoker);
@@ -83,7 +82,7 @@ public abstract class ParserTxt extends ParserModele {
         if (builderInfosPartie.donneesIncompletes()) {
             builderInfosPartie.fixNombreJoueurs(infosTable.obtNombreJoueurs());
             builderInfosPartie.fixNomPartie(infosTable.obtNomTable());
-            observateurParser.fixInfosPartie(this.obtInfosPartie());
+            observateurParser.fixInfosPartie(builderInfosPartie.build());
         }
 
         int positionDealer = infosTable.obtPositionDealer();

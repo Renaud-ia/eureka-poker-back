@@ -7,10 +7,10 @@ public class ActionDto {
     private final String nomJoueur;
     private final String action;
     private final BigDecimal montant;
-    public ActionDto(String nomJoueur, String action, float montant) {
+    public ActionDto(String nomJoueur, String action, BigDecimal montant) {
         this.nomJoueur = nomJoueur;
         this.action = action;
-        this.montant = new BigDecimal(montant).setScale(2, RoundingMode.HALF_UP);
+        this.montant = montant;
     }
 
     public String getNomJoueur() {

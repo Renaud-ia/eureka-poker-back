@@ -1,13 +1,14 @@
 package fr.eurekapoker.parties.application.api;
 
 import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
+import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
 
 public interface InterfaceParties {
-    ResumePartieDto ajouterPartie(String contenuPartie) throws ErreurAjoutPartie;
+    ResumePartieDto ajouterPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie;
     /**
      * permet d'accéder à une partie ou main
      * @param idPartie l'UUID unique de la partie/main
@@ -17,6 +18,4 @@ public interface InterfaceParties {
      */
     ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
             throws ErreurConsultationPartie;
-    void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
-    void definirJoueurCentreDansPartie(String idPartie, String nomJoueur) throws ErreurModificationPartie;
 }

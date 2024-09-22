@@ -20,7 +20,6 @@ public abstract class ParserModele {
     private final HashMap<JoueurPoker, Float> montantDejaInvesti;
     protected final List<MainPoker> mainsExtraites;
     protected FormatPoker formatPoker;
-    protected InfosPartiePoker infosPartiePoker;
     protected ParserModele(ObservateurParser observateurParser) {
         this.observateurParser = observateurParser;
         this.mainsExtraites = new ArrayList<>();
@@ -43,8 +42,4 @@ public abstract class ParserModele {
     }
     public abstract boolean peutLireFichier();
     public abstract RoomPoker obtRoomPoker();
-
-    public InfosPartiePoker obtInfosPartie() {
-        return infosPartiePoker;
-    }
 }

@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.application.imports;
 
+import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
@@ -24,15 +25,19 @@ import java.util.UUID;
  * calcule la value des actions
  */
 public class ConstructeurPersistenceDto implements ConstructeurPersistence {
-    private PartiePersistanceDto partiePersistanceDto;
+    private final ParametresImport parametresImport;
+    private final PartiePersistanceDto partiePersistanceDto;
     private final MoteurJeu moteurJeu;
     private int indexMain;
     private MainPersistenceDto derniereMain;
     private TourPersistanceDto dernierTour;
     private final HashMap<String, Integer> nombreActionsParJoueur;
-    public ConstructeurPersistenceDto(MoteurJeu moteurJeu) {
-        this.indexMain = 0;
+    public ConstructeurPersistenceDto(MoteurJeu moteurJeu, ParametresImport parametresImport) {
         this.moteurJeu = moteurJeu;
+        this.parametresImport = parametresImport;
+        this.partiePersistanceDto = new PartiePersistanceDto();
+
+        this.indexMain = 0;
         this.nombreActionsParJoueur = new HashMap<>();
     }
 
@@ -40,9 +45,10 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     public void fixInfosPartie(InfosPartiePoker infosPartiePoker) {
         UUID idUnique = UUID.randomUUID();
 
-        partiePersistanceDto = new PartiePersistanceDto(
+        partiePersistanceDto.fixerValeurs(
                 idUnique.toString(),
                 infosPartiePoker.getIdParse(),
+                parametresImport.getJoueursAnonymes(),
                 infosPartiePoker.getNomRoom(),
                 infosPartiePoker.getFormatPoker(),
                 infosPartiePoker.getTypeJeu(),
@@ -55,7 +61,6 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterMain(MainPoker mainPoker) throws ErreurLectureFichier {
-        if (partiePersistanceDto == null) throw new ErreurLectureFichier("La partie n'a pas été fixée");
         UUID idUniqueGenere = UUID.randomUUID();
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 idUniqueGenere.toString(),
@@ -108,7 +113,6 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 boardPoker.asLong()
         );
 
-        if (this.partiePersistanceDto == null) throw new ErreurLectureFichier("La partie n'a pas été initialisée");
         // IMPORTANT : on notifie qu'il y a des joueurs en moins sur la table
         int nombreJoueursFormat = this.partiePersistanceDto.obtNombreSieges();
         int nombreJoueursTable = this.derniereMain.obtNombreJoueurs();
@@ -179,6 +183,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     @Override
     public ResumePartieDto obtResumePartie() {
         return new ResumePartieDto(
+                this.partiePersistanceDto.obtIdUnique(),
                 this.partiePersistanceDto.obtMains().getFirst().obtNomsJoueursPresents(),
                 this.derniereMain.obtNomHero()
         );

@@ -101,7 +101,7 @@ public class ParserWinamaxTest {
         when(interpreteurWinamax.estNouvelleMain()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        verify(observateurParser, times(2)).mainTerminee();
+        verify(observateurParser, times(1)).mainTerminee();
         verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
         verify(observateurParser).ajouterMain(any(MainPoker.class));
 

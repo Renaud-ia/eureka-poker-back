@@ -14,8 +14,13 @@ public class ComboReel {
     private final int comboBits;
 
     public ComboReel(List<CartePoker> cartesJoueur) {
-        assert cartesJoueur.size() == 2;
+        if (cartesJoueur.isEmpty()) {
+            cartesReelles = cartesJoueur;
+            comboBits = 0;
+            return;
+        }
 
+        if (cartesJoueur.size() != 2) throw new RuntimeException("Il faut deus cartes pour un combo");
 
         // on trie les cartes dans le même sens => aucun impact sur les performances
         if (cartesJoueur.get(0).toInt() > cartesJoueur.get(1).toInt()) {
@@ -64,6 +69,7 @@ public class ComboReel {
 
     @Override
     public String toString() {
+        if (cartesReelles.isEmpty()) return "";
         return cartesReelles.get(0).toString() + cartesReelles.get(1).toString();
     }
 }

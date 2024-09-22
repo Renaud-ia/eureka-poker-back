@@ -1,5 +1,7 @@
 package fr.eurekapoker.parties.application;
 
+import fr.eurekapoker.parties.application.api.ConvertisseurPersistanceVersApi;
+import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.imports.ConstructeurPersistence;
@@ -27,14 +29,19 @@ public class InterfacePartiesImplTest {
     PersistanceFichiers persistanceFichiersMock;
     @Mock
     ConstructeurPersistence constructeurPersistenceMock;
+    @Mock
+    ConvertisseurPersistanceVersApi convertisseurPersistanceVersApi;
+    @Mock
+    ParametresImport parametresImportMock;
 
     @BeforeEach
     void constructionDependances() throws ErreurImport {
         MockitoAnnotations.openMocks(this);
-        when(fabriqueDependancesMock.obtDomaineServiceImport(anyString())).thenReturn(domaineServiceImportMock);
+        when(fabriqueDependancesMock.obtDomaineServiceImport(anyString(), any())).thenReturn(domaineServiceImportMock);
         when(fabriqueDependancesMock.obtPersistanceParties()).thenReturn(persistancePartiesMock);
         when(fabriqueDependancesMock.obtPersistanceFichiers()).thenReturn(persistanceFichiersMock);
-        when(fabriqueDependancesMock.obtConstructeurPersistance()).thenReturn(constructeurPersistenceMock);
+        when(fabriqueDependancesMock.obtConstructeurPersistance(parametresImportMock)).thenReturn(constructeurPersistenceMock);
+        when(fabriqueDependancesMock.obtConvertisseurPersistanceVersApi(any())).thenReturn(convertisseurPersistanceVersApi);
     }
 
     @Test
@@ -42,7 +49,7 @@ public class InterfacePartiesImplTest {
         String partie = "Partie test";
 
         InterfacePartiesImpl interfaceParties = new InterfacePartiesImpl(fabriqueDependancesMock);
-        interfaceParties.ajouterPartie(partie);
+        interfaceParties.ajouterPartie(partie, parametresImportMock);
 
         verify(domaineServiceImportMock).lancerImport();
         verify(persistancePartiesMock).ajouterPartie(constructeurPersistenceMock.obtPartie());

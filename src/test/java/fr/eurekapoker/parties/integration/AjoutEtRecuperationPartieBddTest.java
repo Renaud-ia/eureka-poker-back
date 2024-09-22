@@ -1,17 +1,18 @@
 package fr.eurekapoker.parties.integration;
 
-import com.sun.tools.javac.Main;
+import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.PartieNonTrouvee;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
-import fr.eurekapoker.parties.infrastructure.parties.repositories.JoueurRepository;
 import fr.eurekapoker.parties.infrastructure.parties.services.ServiceAjoutPartie;
 import fr.eurekapoker.parties.infrastructure.parties.services.ServiceConsultationPartie;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -21,9 +22,10 @@ import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.mockito.Mockito.when;
 
 @SpringBootTest
-public class AjoutEtRecuperationPartieTest {
+public class AjoutEtRecuperationPartieBddTest {
     private Random random;
     @Autowired
     private ServiceAjoutPartie serviceAjoutPartie;
@@ -31,12 +33,20 @@ public class AjoutEtRecuperationPartieTest {
     ServiceConsultationPartie serviceConsultationPartie;
     private PartiePersistanceDto partiePersistanceDto;
 
+    @Mock
+    private ParametresImport parametresImport;
+
     @BeforeEach
     void initialisation() {
+        MockitoAnnotations.openMocks(this);
+        when(parametresImport.getJoueursAnonymes()).thenReturn(false);
+
         random = new Random();
-        partiePersistanceDto = new PartiePersistanceDto(
+        partiePersistanceDto = new PartiePersistanceDto();
+        partiePersistanceDto.fixerValeurs(
                 UUID.randomUUID().toString(),
                 random.nextLong(),
+                parametresImport.getJoueursAnonymes(),
                 "Fake room",
                 "Fake variante",
                 "Fake typeJeu",

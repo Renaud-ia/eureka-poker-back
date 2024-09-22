@@ -24,6 +24,8 @@ public class PartieJpa {
     @Column(nullable = false)
     private String nomRoom;
     @Column(nullable = false)
+    private Boolean joueursAnonymes;
+    @Column(nullable = false)
     private String varianteJeu;
     @Column(nullable = false)
     private String typeTable;

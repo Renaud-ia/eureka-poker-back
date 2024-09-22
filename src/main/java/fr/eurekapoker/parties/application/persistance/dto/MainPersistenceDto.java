@@ -71,7 +71,7 @@ public class MainPersistenceDto {
     }
 
     public void fixNombreActionsDuJoueur(String nomJoueur, int nombreActions) {
-        BigDecimal resultat = this.resultats.get(nomJoueur);
+        BigDecimal resultat = this.resultats.getOrDefault(nomJoueur, new BigDecimal(0));
         if (nombreActions == 0) resultat = new BigDecimal("0");
         else resultat = resultat.divide(BigDecimal.valueOf(nombreActions), RoundingMode.HALF_UP);
         this.valueParAction.put(nomJoueur, resultat);
@@ -133,27 +133,27 @@ public class MainPersistenceDto {
     }
 
     public BigDecimal obtBounty(String nomJoueur) {
-        return bounty.get(nomJoueur);
+        return bounty.getOrDefault(nomJoueur, new BigDecimal(0));
     }
 
     public String obtComboAsString(String nomJoueur) {
-        return cartesJoueursString.get(nomJoueur);
+        return cartesJoueursString.getOrDefault(nomJoueur, "");
     }
 
     public int obtComboAsInt(String nomJoueur) {
-        return cartesJoueursInt.get(nomJoueur);
+        return cartesJoueursInt.getOrDefault(nomJoueur, 0);
     }
 
     public BigDecimal obtAnte(String nomJoueur) {
-        return antes.get(nomJoueur);
+        return antes.getOrDefault(nomJoueur, new BigDecimal(0));
     }
 
     public BigDecimal obtBlinde(String nomJoueur) {
-        return blindes.get(nomJoueur);
+        return blindes.getOrDefault(nomJoueur, new BigDecimal(0));
     }
 
     public BigDecimal obtGains(String nomJoueur) {
-        return resultats.get(nomJoueur);
+        return resultats.getOrDefault(nomJoueur, new BigDecimal(0));
     }
 
     public List<TourPersistanceDto> obtTours() {

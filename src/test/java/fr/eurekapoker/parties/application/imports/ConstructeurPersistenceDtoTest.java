@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.application.imports;
 
+import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
@@ -32,6 +33,9 @@ class ConstructeurPersistenceDtoTest {
     private MoteurJeu moteurJeuMock;
 
     @Mock
+    private ParametresImport parametresImportMock;
+
+    @Mock
     InfosPartiePoker infosPartiePokerMock;
 
     int nombreJoueurs;
@@ -39,7 +43,7 @@ class ConstructeurPersistenceDtoTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        constructeur = new ConstructeurPersistenceDto(moteurJeuMock);
+        constructeur = new ConstructeurPersistenceDto(moteurJeuMock, parametresImportMock);
 
         nombreJoueurs = 6;
     }

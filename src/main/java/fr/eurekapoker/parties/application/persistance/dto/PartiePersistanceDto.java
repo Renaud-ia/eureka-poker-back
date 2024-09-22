@@ -9,15 +9,16 @@ import java.util.SequencedCollection;
 import java.util.UUID;
 
 public class PartiePersistanceDto {
-    private final String idUniqueGenere;
-    private final long idParse;
-    private final String nomRoom;
-    private final String variante;
-    private final String typeJeu;
-    private final String formatSpecialRoom;
-    private final LocalDateTime date;
-    private final String nomPartie;
-    private final int nombreSieges;
+    private String idUniqueGenere;
+    private long idParse;
+    private boolean joueursAnonymes;
+    private String nomRoom;
+    private String variante;
+    private String typeJeu;
+    private String formatSpecialRoom;
+    private LocalDateTime date;
+    private String nomPartie;
+    private int nombreSieges;
     private String nomHero;
     private int nombreMains;
     private final List<MainPersistenceDto> mainPersistence;
@@ -26,6 +27,7 @@ public class PartiePersistanceDto {
     // constructeur utilisé par persistence
     public PartiePersistanceDto(String idUniqueGenere,
                                 long idParse,
+                                boolean joueursAnonymes,
                                 String nomRoom,
                                 String variante,
                                 String typeJeu,
@@ -36,6 +38,7 @@ public class PartiePersistanceDto {
                                 int nombreMains) {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
+        this.joueursAnonymes = joueursAnonymes;
         this.nomRoom = nomRoom;
         this.variante = variante;
         this.typeJeu = typeJeu;
@@ -49,8 +52,14 @@ public class PartiePersistanceDto {
     }
 
     // utilisé par Constructeur lors du parsing de partie
-    public PartiePersistanceDto(String idUniqueGenere,
+    public PartiePersistanceDto() {
+        this.mainPersistence = new ArrayList<>();
+        this.nombreMainsFixe = false;
+    }
+
+    public void fixerValeurs(String idUniqueGenere,
                                 long idParse,
+                                boolean joueursAnonymes,
                                 String nomRoom,
                                 String variante,
                                 String typeJeu,
@@ -60,6 +69,7 @@ public class PartiePersistanceDto {
                                 int nombreSieges) {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
+        this.joueursAnonymes = joueursAnonymes;
         this.nomRoom = nomRoom;
         this.variante = variante;
         this.typeJeu = typeJeu;
@@ -68,8 +78,6 @@ public class PartiePersistanceDto {
         this.nomPartie = nomPartie;
         this.nombreSieges = nombreSieges;
         this.nombreMains = 0;
-        this.nombreMainsFixe = false;
-        this.mainPersistence = new ArrayList<>();
     }
 
     public void ajouterMain(MainPersistenceDto mainPersistenceDto) {
@@ -134,5 +142,9 @@ public class PartiePersistanceDto {
 
     public int obtNombreMains() {
         return nombreMains;
+    }
+
+    public boolean obtJoueursAnonymes() {
+        return joueursAnonymes;
     }
 }

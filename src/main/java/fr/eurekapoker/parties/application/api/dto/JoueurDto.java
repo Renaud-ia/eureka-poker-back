@@ -13,13 +13,13 @@ public class JoueurDto {
     private final BigDecimal blinde;
 
     public JoueurDto(String nomJoueur,
-                     float stackDepart,
+                     BigDecimal stackDepart,
                      List<String> cartesJoueurs,
                      int siege,
                      BigDecimal ante,
                      BigDecimal blinde) {
         this.nomJoueur = nomJoueur;
-        this.stackDepart = new BigDecimal(stackDepart).setScale(2, RoundingMode.HALF_UP);
+        this.stackDepart = stackDepart;
         this.cartesJoueurs = cartesJoueurs;
         this.siege = siege;
         this.ante = ante;

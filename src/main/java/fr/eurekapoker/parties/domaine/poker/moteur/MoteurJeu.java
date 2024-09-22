@@ -33,7 +33,9 @@ public class MoteurJeu {
 
     public void ajouterJoueur(String nomJoueur, BigDecimal stackDepart, BigDecimal bounty) {
         this.stackDepart.put(nomJoueur, stackDepart);
+        if (bounty == null) bounty = new BigDecimal(0);
         this.bountyDepart.put(nomJoueur, bounty);
+        this.investi.put(nomJoueur, new BigDecimal(0));
     }
 
     public void ajouterJoueurManquant() throws ErreurLectureFichier {

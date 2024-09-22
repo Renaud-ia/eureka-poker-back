@@ -34,6 +34,7 @@ public class ServiceConsultationPartie {
         PartiePersistanceDto partiePersistanceDto = new PartiePersistanceDto(
                 partieJpa.getIdentifiantGenere(),
                 partieJpa.getIdentifiantParse(),
+                partieJpa.getJoueursAnonymes(),
                 partieJpa.getNomRoom(),
                 partieJpa.getVarianteJeu(),
                 partieJpa.getTypeTable(),

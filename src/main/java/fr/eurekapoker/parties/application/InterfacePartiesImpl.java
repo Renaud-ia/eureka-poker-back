@@ -1,5 +1,7 @@
 package fr.eurekapoker.parties.application;
 
+import fr.eurekapoker.parties.application.api.ConvertisseurPersistanceVersApi;
+import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.imports.ConstructeurPersistence;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
 import org.slf4j.Logger;
@@ -29,8 +31,8 @@ public class InterfacePartiesImpl implements InterfaceParties {
         this.persistanceFichiers = fabriqueDependances.obtPersistanceFichiers();
     }
     @Override
-    public ResumePartieDto ajouterPartie(String contenuPartie) throws ErreurAjoutPartie {
-        ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie);
+    public ResumePartieDto ajouterPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie {
+        ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie, parametresImport);
         logger.info("Partie persistée avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
         enregistrerFichier(contenuPartie, constructeurPersistenceDto.getIdUniquePartie());
         logger.info("Données fichiers sauvegardées avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
@@ -38,12 +40,12 @@ public class InterfacePartiesImpl implements InterfaceParties {
         return constructeurPersistenceDto.obtResumePartie();
     }
 
-    private ConstructeurPersistence parserPartie(String contenuPartie) throws ErreurAjoutPartie {
-        ConstructeurPersistence constructeurPersistence = fabriqueDependances.obtConstructeurPersistance();
+    private ConstructeurPersistence parserPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie {
+        ConstructeurPersistence constructeurPersistence = fabriqueDependances.obtConstructeurPersistance(parametresImport);
         DomaineServiceImport domaineServiceImport;
 
         try {
-            domaineServiceImport = fabriqueDependances.obtDomaineServiceImport(contenuPartie);
+            domaineServiceImport = fabriqueDependances.obtDomaineServiceImport(contenuPartie, constructeurPersistence);
         }
         catch (ErreurImport erreurImport) {
             logger.error("Une erreur est survenue pendant la création du parser: {}", String.valueOf(erreurImport));
@@ -78,24 +80,9 @@ public class InterfacePartiesImpl implements InterfaceParties {
     }
 
     private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) {
-        // todo OPTIMISATION => on fait deux tours sur la même structure de données => observateur de persistance ?
-        // todo à coder
-        return null;
-    }
-
-    // todo cette fonctions devraient être réservés au créateur
-    @Override
-    public void rendreAnonymeJoueurDansPartie(String idPartie, String nomJoueur)
-            throws ErreurModificationPartie {
-        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomJoueur);
-        persistanceParties.rendreAnonymeJoueurDansPartie(idPartie, joueurPersistenceDto);
-    }
-
-    // todo cette fonction devrait être activable une seule fois
-    @Override
-    public void definirJoueurCentreDansPartie(String idPartie, String nomJoueur)
-            throws ErreurModificationPartie {
-        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomJoueur);
-        persistanceParties.definirJoueurCentreDansPartie(idPartie, joueurPersistenceDto);
+        // todo OPTIMISATION => on fait deux tours sur la même structure de données => observateur de persistance ? (=15 ms)
+        ConvertisseurPersistanceVersApi covertisseur =
+                this.fabriqueDependances.obtConvertisseurPersistanceVersApi(partiePersistanceDto);
+        return covertisseur.obtContenuPartieDto();
     }
 }

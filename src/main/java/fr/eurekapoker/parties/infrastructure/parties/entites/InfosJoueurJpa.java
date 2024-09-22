@@ -28,7 +28,6 @@ public class InfosJoueurJpa {
     private int siege;
     @Column(nullable = false)
     private BigDecimal stack;
-    @Column(nullable = false)
     private BigDecimal bounty;
     @Column(nullable = false)
     private String comboJoueurString;

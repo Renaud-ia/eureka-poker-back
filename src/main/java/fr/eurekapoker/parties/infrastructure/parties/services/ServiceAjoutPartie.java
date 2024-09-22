@@ -29,6 +29,7 @@ public class ServiceAjoutPartie {
     public void persisterPartie(PartiePersistanceDto partiePersistanceDto) {
         PartieJpa nouvellePartie = PartieJpa.builder()
                 .identifiantGenere(partiePersistanceDto.obtIdUnique())
+                .joueursAnonymes(partiePersistanceDto.obtJoueursAnonymes())
                 .nomRoom(partiePersistanceDto.obtNomRoom())
                 .varianteJeu(partiePersistanceDto.obtVariante())
                 .typeTable(partiePersistanceDto.obtTypeTable())
