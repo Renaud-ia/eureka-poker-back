@@ -1,0 +1,804 @@
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 7 - HandId: #1651277829955911813-11-1598990463 - Holdem no limit (70/300/600) - 2020/09/01 20:01:03 UTC
+Table: 'WESTERN(384468080)#132' 6-max (real money) Seat #2 is the button
+Seat 1: ZeWeaKKhAAnd (43838)
+Seat 2: Mamattttt (189082)
+Seat 3: _ NEXT_ (38510)
+Seat 4: SorsOuJteS0r (46978)
+Seat 5: Guizmawww (17695)
+Seat 6: bolchevik33 (20000)
+*** ANTE/BLINDS ***
+_ NEXT_ posts ante 70
+SorsOuJteS0r posts ante 70
+ZeWeaKKhAAnd posts ante 70
+Mamattttt posts ante 70
+Guizmawww posts ante 70
+bolchevik33 posts ante 70
+_ NEXT_ posts small blind 300
+SorsOuJteS0r posts big blind 600
+Dealt to bolchevik33 [3h 5d]
+*** PRE-FLOP *** 
+Guizmawww folds
+bolchevik33 folds
+ZeWeaKKhAAnd folds
+Mamattttt raises 1500 to 2100
+_ NEXT_ calls 1800
+SorsOuJteS0r calls 1500
+*** FLOP *** [2s Ts Ah]
+_ NEXT_ checks
+SorsOuJteS0r checks
+Mamattttt bets 3360
+_ NEXT_ raises 3360 to 6720
+SorsOuJteS0r folds
+Mamattttt folds
+_ NEXT_ collected 16800 from pot
+*** SUMMARY ***
+Total pot 16800 | No rake
+Board: [2s Ts Ah]
+Seat 3: _ NEXT_ (small blind) won 16800
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 7 - HandId: #1651277829955911813-12-1598990535 - Holdem no limit (70/300/600) - 2020/09/01 20:02:15 UTC
+Table: 'WESTERN(384468080)#132' 6-max (real money) Seat #3 is the button
+Seat 1: ZeWeaKKhAAnd (43768)
+Seat 2: Mamattttt (183552)
+Seat 3: _ NEXT_ (46420)
+Seat 4: SorsOuJteS0r (44808)
+Seat 5: Guizmawww (17625)
+Seat 6: bolchevik33 (19930)
+*** ANTE/BLINDS ***
+SorsOuJteS0r posts ante 70
+Guizmawww posts ante 70
+ZeWeaKKhAAnd posts ante 70
+Mamattttt posts ante 70
+_ NEXT_ posts ante 70
+bolchevik33 posts ante 70
+SorsOuJteS0r posts small blind 300
+Guizmawww posts big blind 600
+Dealt to bolchevik33 [9d 5c]
+*** PRE-FLOP *** 
+bolchevik33 folds
+ZeWeaKKhAAnd folds
+Mamattttt folds
+_ NEXT_ folds
+SorsOuJteS0r folds
+Guizmawww collected 1320 from pot
+*** SUMMARY ***
+Total pot 1320 | No rake
+Seat 5: Guizmawww (big blind) won 1320
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 7 - HandId: #1651277829955911813-13-1598990549 - Holdem no limit (70/300/600) - 2020/09/01 20:02:29 UTC
+Table: 'WESTERN(384468080)#132' 6-max (real money) Seat #4 is the button
+Seat 1: ZeWeaKKhAAnd (43698)
+Seat 2: Mamattttt (183482)
+Seat 3: _ NEXT_ (46350)
+Seat 4: SorsOuJteS0r (44438)
+Seat 5: Guizmawww (18275)
+Seat 6: bolchevik33 (19860)
+*** ANTE/BLINDS ***
+Guizmawww posts ante 70
+bolchevik33 posts ante 70
+ZeWeaKKhAAnd posts ante 70
+Mamattttt posts ante 70
+_ NEXT_ posts ante 70
+SorsOuJteS0r posts ante 70
+Guizmawww posts small blind 300
+bolchevik33 posts big blind 600
+Dealt to bolchevik33 [4d 9s]
+*** PRE-FLOP *** 
+ZeWeaKKhAAnd folds
+Mamattttt folds
+_ NEXT_ raises 600 to 1200
+SorsOuJteS0r folds
+Guizmawww raises 17005 to 18205 and is all-in
+bolchevik33 folds
+_ NEXT_ calls 17005
+*** FLOP *** [Ah 5c Kd]
+*** TURN *** [Ah 5c Kd][3s]
+*** RIVER *** [Ah 5c Kd 3s][Td]
+*** SHOW DOWN ***
+Guizmawww shows [Jc Jd] (One pair : Jacks)
+_ NEXT_ shows [Jh Kh] (One pair : Kings)
+_ NEXT_ collected 37430 from pot
+*** SUMMARY ***
+Total pot 37430 | No rake
+Board: [Ah 5c Kd 3s Td]
+Seat 3: _ NEXT_ showed [Jh Kh] and won 37430 with One pair : Kings
+Seat 5: Guizmawww (small blind) showed [Jc Jd] and lost with One pair : Jacks
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 8 - HandId: #1651277829955911813-14-1598990613 - Holdem no limit (80/350/700) - 2020/09/01 20:03:33 UTC
+Table: 'WESTERN(384468080)#132' 6-max (real money) Seat #5 is the button
+Seat 1: ZeWeaKKhAAnd (43628)
+Seat 2: Mamattttt (183412)
+Seat 3: _ NEXT_ (65505)
+Seat 4: SorsOuJteS0r (44368)
+Seat 6: bolchevik33 (19190)
+*** ANTE/BLINDS ***
+bolchevik33 posts ante 80
+ZeWeaKKhAAnd posts ante 80
+Mamattttt posts ante 80
+_ NEXT_ posts ante 80
+SorsOuJteS0r posts ante 80
+bolchevik33 posts small blind 350
+ZeWeaKKhAAnd posts big blind 700
+Dealt to bolchevik33 [Ac Js]
+*** PRE-FLOP *** 
+Mamattttt folds
+_ NEXT_ folds
+SorsOuJteS0r folds
+bolchevik33 raises 2100 to 2800
+ZeWeaKKhAAnd folds
+bolchevik33 collected 3900 from pot
+*** SUMMARY ***
+Total pot 3900 | No rake
+Seat 6: bolchevik33 (small blind) won 3900
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 8 - HandId: #1651277829955911813-15-1598990633 - Holdem no limit (80/350/700) - 2020/09/01 20:03:53 UTC
+Table: 'WESTERN(384468080)#132' 6-max (real money) Seat #6 is the button
+Seat 1: ZeWeaKKhAAnd (42848)
+Seat 2: Mamattttt (183332)
+Seat 3: _ NEXT_ (65425)
+Seat 4: SorsOuJteS0r (44288)
+Seat 6: bolchevik33 (20210)
+*** ANTE/BLINDS ***
+ZeWeaKKhAAnd posts ante 80
+Mamattttt posts ante 80
+_ NEXT_ posts ante 80
+SorsOuJteS0r posts ante 80
+bolchevik33 posts ante 80
+ZeWeaKKhAAnd posts small blind 350
+Mamattttt posts big blind 700
+Dealt to bolchevik33 [7c 3s]
+*** PRE-FLOP *** 
+_ NEXT_ folds
+SorsOuJteS0r folds
+bolchevik33 folds
+ZeWeaKKhAAnd folds
+Mamattttt collected 1450 from pot
+*** SUMMARY ***
+Total pot 1450 | No rake
+Seat 2: Mamattttt (big blind) won 1450
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 8 - HandId: #1651277829955911813-16-1598990699 - Holdem no limit (80/350/700) - 2020/09/01 20:04:59 UTC
+Table: 'WESTERN(384468080)#132' 6-max (real money) Seat #1 is the button
+Seat 1: ZeWeaKKhAAnd (42418)
+Seat 2: Mamattttt (184002)
+Seat 3: _ NEXT_ (65345)
+Seat 4: SorsOuJteS0r (44208)
+Seat 6: bolchevik33 (20130)
+*** ANTE/BLINDS ***
+Mamattttt posts ante 80
+_ NEXT_ posts ante 80
+ZeWeaKKhAAnd posts ante 80
+SorsOuJteS0r posts ante 80
+bolchevik33 posts ante 80
+Mamattttt posts small blind 350
+_ NEXT_ posts big blind 700
+Dealt to bolchevik33 [Ts Jc]
+*** PRE-FLOP *** 
+SorsOuJteS0r folds
+bolchevik33 raises 700 to 1400
+ZeWeaKKhAAnd calls 1400
+Mamattttt folds
+_ NEXT_ folds
+*** FLOP *** [2c Jh 6c]
+bolchevik33 bets 2125
+ZeWeaKKhAAnd calls 2125
+*** TURN *** [2c Jh 6c][Qh]
+bolchevik33 bets 4250
+ZeWeaKKhAAnd raises 4250 to 8500
+bolchevik33 calls 4250
+*** RIVER *** [2c Jh 6c Qh][6d]
+bolchevik33 bets 8025 and is all-in
+ZeWeaKKhAAnd calls 8025
+*** SHOW DOWN ***
+ZeWeaKKhAAnd shows [Tc Jd] (Two pairs : Jacks and 6)
+bolchevik33 shows [Ts Jc] (Two pairs : Jacks and 6)
+bolchevik33 collected 20775 from pot
+ZeWeaKKhAAnd collected 20775 from pot
+*** SUMMARY ***
+Total pot 41550 | No rake
+Board: [2c Jh 6c Qh 6d]
+Seat 1: ZeWeaKKhAAnd (button) showed [Tc Jd] and won 20775 with Two pairs : Jacks and 6
+Seat 6: bolchevik33 showed [Ts Jc] and won 20775 with Two pairs : Jacks and 6
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 8 - HandId: #1651277829955911791-55-1598990838 - Holdem no limit (80/350/700) - 2020/09/01 20:07:18 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #4 is the button
+Seat 1: bolchevik33 (20775)
+Seat 2: Monkey babe (31844)
+Seat 3: Easygame62 (11245)
+Seat 4: Cbet&die (26165)
+Seat 5: damienlemon (49300)
+Seat 6: harpiie (54354)
+*** ANTE/BLINDS ***
+damienlemon posts ante 80
+harpiie posts ante 80
+bolchevik33 posts ante 80
+Monkey babe posts ante 80
+Easygame62 posts ante 80
+Cbet&die posts ante 80
+damienlemon posts small blind 350
+harpiie posts big blind 700
+Dealt to bolchevik33 [6h 8s]
+*** PRE-FLOP *** 
+bolchevik33 folds
+Monkey babe raises 980 to 1680
+Easygame62 folds
+Cbet&die folds
+damienlemon folds
+harpiie calls 980
+*** FLOP *** [Qd 5s Th]
+harpiie checks
+Monkey babe bets 1750
+harpiie calls 1750
+*** TURN *** [Qd 5s Th][Jd]
+harpiie checks
+Monkey babe bets 5768
+harpiie folds
+Monkey babe collected 13458 from pot
+*** SUMMARY ***
+Total pot 13458 | No rake
+Board: [Qd 5s Th Jd]
+Seat 2: Monkey babe won 13458
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 8 - HandId: #1651277829955911791-56-1598990910 - Holdem no limit (80/350/700) - 2020/09/01 20:08:30 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #5 is the button
+Seat 1: bolchevik33 (20695)
+Seat 2: Monkey babe (36024)
+Seat 3: Easygame62 (11165)
+Seat 4: Cbet&die (26085)
+Seat 5: damienlemon (48870)
+Seat 6: harpiie (50844)
+*** ANTE/BLINDS ***
+harpiie posts ante 80
+bolchevik33 posts ante 80
+Monkey babe posts ante 80
+Easygame62 posts ante 80
+Cbet&die posts ante 80
+damienlemon posts ante 80
+harpiie posts small blind 350
+bolchevik33 posts big blind 700
+Dealt to bolchevik33 [8h 4s]
+*** PRE-FLOP *** 
+Monkey babe folds
+Easygame62 raises 10385 to 11085 and is all-in
+Cbet&die folds
+damienlemon folds
+harpiie folds
+bolchevik33 folds
+Easygame62 collected 12615 from pot
+*** SUMMARY ***
+Total pot 12615 | No rake
+Seat 3: Easygame62 won 12615
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 8 - HandId: #1651277829955911791-57-1598990934 - Holdem no limit (80/350/700) - 2020/09/01 20:08:54 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #6 is the button
+Seat 1: bolchevik33 (19915)
+Seat 2: Monkey babe (35944)
+Seat 3: Easygame62 (12615)
+Seat 4: Cbet&die (26005)
+Seat 5: damienlemon (48790)
+Seat 6: harpiie (50414)
+*** ANTE/BLINDS ***
+bolchevik33 posts ante 80
+Monkey babe posts ante 80
+Easygame62 posts ante 80
+Cbet&die posts ante 80
+damienlemon posts ante 80
+harpiie posts ante 80
+bolchevik33 posts small blind 350
+Monkey babe posts big blind 700
+Dealt to bolchevik33 [7h Kh]
+*** PRE-FLOP *** 
+Easygame62 folds
+Cbet&die folds
+damienlemon calls 700
+harpiie calls 700
+bolchevik33 raises 1400 to 2100
+Monkey babe folds
+damienlemon calls 1400
+harpiie calls 1400
+*** FLOP *** [8h 7s Ac]
+bolchevik33 bets 4987
+damienlemon folds
+harpiie folds
+bolchevik33 collected 12467 from pot
+*** SUMMARY ***
+Total pot 12467 | No rake
+Board: [8h 7s Ac]
+Seat 1: bolchevik33 (small blind) won 12467
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 9 - HandId: #1651277829955911791-58-1598991015 - Holdem no limit (100/400/800) - 2020/09/01 20:10:15 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #1 is the button
+Seat 1: bolchevik33 (25215)
+Seat 2: Monkey babe (35164)
+Seat 3: Easygame62 (12535)
+Seat 4: Cbet&die (25925)
+Seat 5: damienlemon (46610)
+Seat 6: harpiie (48234)
+*** ANTE/BLINDS ***
+Monkey babe posts ante 100
+Easygame62 posts ante 100
+bolchevik33 posts ante 100
+Cbet&die posts ante 100
+damienlemon posts ante 100
+harpiie posts ante 100
+Monkey babe posts small blind 400
+Easygame62 posts big blind 800
+Dealt to bolchevik33 [3h As]
+*** PRE-FLOP *** 
+Cbet&die raises 880 to 1680
+damienlemon folds
+harpiie folds
+bolchevik33 raises 23435 to 25115 and is all-in
+Monkey babe folds
+Easygame62 folds
+Cbet&die calls 23435
+*** FLOP *** [Th 4h 2s]
+*** TURN *** [Th 4h 2s][5s]
+*** RIVER *** [Th 4h 2s 5s][3c]
+*** SHOW DOWN ***
+bolchevik33 shows [3h As] (Straight 5 high)
+Cbet&die shows [Ah Jh] (Straight 5 high)
+Cbet&die collected 26015 from pot
+bolchevik33 collected 26015 from pot
+*** SUMMARY ***
+Total pot 52030 | No rake
+Board: [Th 4h 2s 5s 3c]
+Seat 1: bolchevik33 (button) showed [3h As] and won 26015 with Straight 5 high
+Seat 4: Cbet&die showed [Ah Jh] and won 26015 with Straight 5 high
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 9 - HandId: #1651277829955911791-59-1598991044 - Holdem no limit (100/400/800) - 2020/09/01 20:10:44 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #2 is the button
+Seat 1: bolchevik33 (26015)
+Seat 2: Monkey babe (34664)
+Seat 3: Easygame62 (11635)
+Seat 4: Cbet&die (26725)
+Seat 5: damienlemon (46510)
+Seat 6: harpiie (48134)
+*** ANTE/BLINDS ***
+Easygame62 posts ante 100
+Cbet&die posts ante 100
+bolchevik33 posts ante 100
+Monkey babe posts ante 100
+damienlemon posts ante 100
+harpiie posts ante 100
+Easygame62 posts small blind 400
+Cbet&die posts big blind 800
+Dealt to bolchevik33 [As 2s]
+*** PRE-FLOP *** 
+damienlemon folds
+harpiie folds
+bolchevik33 raises 1600 to 2400
+Monkey babe calls 2400
+Easygame62 raises 9135 to 11535 and is all-in
+Cbet&die folds
+bolchevik33 raises 14380 to 25915 and is all-in
+Monkey babe folds
+*** FLOP *** [Qs 7d 6s]
+*** TURN *** [Qs 7d 6s][6c]
+*** RIVER *** [Qs 7d 6s 6c][Kc]
+*** SHOW DOWN ***
+Easygame62 shows [9d Jd] (One pair : 6)
+bolchevik33 shows [As 2s] (One pair : 6)
+bolchevik33 collected 41250 from pot
+*** SUMMARY ***
+Total pot 41250 | No rake
+Board: [Qs 7d 6s 6c Kc]
+Seat 1: bolchevik33 showed [As 2s] and won 41250 with One pair : 6
+Seat 3: Easygame62 (small blind) showed [9d Jd] and lost with One pair : 6
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 9 - HandId: #1651277829955911791-60-1598991080 - Holdem no limit (100/400/800) - 2020/09/01 20:11:20 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #3 is the button
+Seat 1: bolchevik33 (41250)
+Seat 2: Monkey babe (32164)
+Seat 4: Cbet&die (25825)
+Seat 5: damienlemon (46410)
+Seat 6: harpiie (48034)
+*** ANTE/BLINDS ***
+Cbet&die posts ante 100
+damienlemon posts ante 100
+bolchevik33 posts ante 100
+Monkey babe posts ante 100
+harpiie posts ante 100
+Cbet&die posts small blind 400
+damienlemon posts big blind 800
+Dealt to bolchevik33 [3s Kc]
+*** PRE-FLOP *** 
+harpiie raises 800 to 1600
+bolchevik33 calls 1600
+Monkey babe folds
+Cbet&die calls 1200
+damienlemon calls 800
+*** FLOP *** [7c 8d 2d]
+Cbet&die checks
+damienlemon checks
+harpiie checks
+bolchevik33 checks
+*** TURN *** [7c 8d 2d][Kh]
+Cbet&die checks
+damienlemon checks
+harpiie checks
+bolchevik33 bets 4600
+Cbet&die calls 4600
+damienlemon folds
+harpiie folds
+*** RIVER *** [7c 8d 2d Kh][6h]
+Cbet&die checks
+bolchevik33 checks
+*** SHOW DOWN ***
+Cbet&die shows [Ad 9d] (High card : Ace)
+bolchevik33 shows [3s Kc] (One pair : Kings)
+bolchevik33 collected 16100 from pot
+*** SUMMARY ***
+Total pot 16100 | No rake
+Board: [7c 8d 2d Kh 6h]
+Seat 1: bolchevik33 showed [3s Kc] and won 16100 with One pair : Kings
+Seat 4: Cbet&die (small blind) showed [Ad 9d] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 9 - HandId: #1651277829955911791-61-1598991150 - Holdem no limit (100/400/800) - 2020/09/01 20:12:30 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #4 is the button
+Seat 1: bolchevik33 (51050)
+Seat 2: Monkey babe (32064)
+Seat 3: Squall82 (20000)
+Seat 4: Cbet&die (19525)
+Seat 5: damienlemon (44710)
+Seat 6: harpiie (46334)
+*** ANTE/BLINDS ***
+damienlemon posts ante 100
+harpiie posts ante 100
+bolchevik33 posts ante 100
+Monkey babe posts ante 100
+Squall82 posts ante 100
+Cbet&die posts ante 100
+damienlemon posts small blind 400
+harpiie posts big blind 800
+Dealt to bolchevik33 [8h 6h]
+*** PRE-FLOP *** 
+bolchevik33 folds
+Monkey babe raises 1120 to 1920
+Squall82 folds
+Cbet&die raises 3280 to 5200
+damienlemon folds
+harpiie folds
+Monkey babe folds
+Cbet&die collected 8920 from pot
+*** SUMMARY ***
+Total pot 8920 | No rake
+Seat 4: Cbet&die (button) won 8920
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 9 - HandId: #1651277829955911791-62-1598991217 - Holdem no limit (100/400/800) - 2020/09/01 20:13:37 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #5 is the button
+Seat 1: bolchevik33 (50950)
+Seat 2: Monkey babe (30044)
+Seat 3: Squall82 (19900)
+Seat 4: Cbet&die (23145)
+Seat 5: damienlemon (44210)
+Seat 6: harpiie (45434)
+*** ANTE/BLINDS ***
+harpiie posts ante 100
+bolchevik33 posts ante 100
+Monkey babe posts ante 100
+Squall82 posts ante 100
+Cbet&die posts ante 100
+damienlemon posts ante 100
+harpiie posts small blind 400
+bolchevik33 posts big blind 800
+Dealt to bolchevik33 [Ks 9h]
+*** PRE-FLOP *** 
+Monkey babe folds
+Squall82 folds
+Cbet&die folds
+damienlemon raises 800 to 1600
+harpiie folds
+bolchevik33 calls 800
+*** FLOP *** [5d 8h Js]
+bolchevik33 checks
+damienlemon checks
+*** TURN *** [5d 8h Js][Kh]
+bolchevik33 bets 2800
+damienlemon calls 2800
+*** RIVER *** [5d 8h Js Kh][Ad]
+bolchevik33 checks
+damienlemon checks
+*** SHOW DOWN ***
+bolchevik33 shows [Ks 9h] (One pair : Kings)
+damienlemon shows [Tc Kd] (One pair : Kings)
+damienlemon collected 9800 from pot
+*** SUMMARY ***
+Total pot 9800 | No rake
+Board: [5d 8h Js Kh Ad]
+Seat 1: bolchevik33 (big blind) showed [Ks 9h] and lost with One pair : Kings
+Seat 5: damienlemon (button) showed [Tc Kd] and won 9800 with One pair : Kings
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 9 - HandId: #1651277829955911791-63-1598991275 - Holdem no limit (100/400/800) - 2020/09/01 20:14:35 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #6 is the button
+Seat 1: bolchevik33 (46450)
+Seat 2: Monkey babe (29944)
+Seat 3: Squall82 (19800)
+Seat 4: Cbet&die (23045)
+Seat 5: damienlemon (49510)
+Seat 6: harpiie (44934)
+*** ANTE/BLINDS ***
+bolchevik33 posts ante 100
+Monkey babe posts ante 100
+Squall82 posts ante 100
+Cbet&die posts ante 100
+damienlemon posts ante 100
+harpiie posts ante 100
+bolchevik33 posts small blind 400
+Monkey babe posts big blind 800
+Dealt to bolchevik33 [6s 4d]
+*** PRE-FLOP *** 
+Squall82 calls 800
+Cbet&die folds
+damienlemon calls 800
+harpiie folds
+bolchevik33 folds
+Monkey babe checks
+*** FLOP *** [3d Ah Jd]
+Monkey babe checks
+Squall82 checks
+damienlemon checks
+*** TURN *** [3d Ah Jd][Td]
+Monkey babe bets 4800
+Squall82 calls 4800
+damienlemon folds
+*** RIVER *** [3d Ah Jd Td][Qh]
+Monkey babe bets 24244 and is all-in
+Squall82 calls 14100 and is all-in
+*** SHOW DOWN ***
+Monkey babe shows [7c As] (One pair : Aces)
+Squall82 shows [Ac 9c] (One pair : Aces)
+Squall82 collected 20600 from main pot
+Monkey babe collected 30744 from side pot 1
+*** SUMMARY ***
+Total pot 51344 | No rake
+Board: [3d Ah Jd Td Qh]
+Seat 2: Monkey babe (big blind) showed [7c As] and won 30744 with One pair : Aces
+Seat 3: Squall82 showed [Ac 9c] and won 20600 with One pair : Aces
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 10 - HandId: #1651277829955911791-64-1598991354 - Holdem no limit (120/500/1000) - 2020/09/01 20:15:54 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #1 is the button
+Seat 1: bolchevik33 (45950)
+Seat 2: Monkey babe (30744)
+Seat 3: Squall82 (20600)
+Seat 4: Cbet&die (22945)
+Seat 5: damienlemon (48610)
+Seat 6: harpiie (44834)
+*** ANTE/BLINDS ***
+Monkey babe posts ante 120
+Squall82 posts ante 120
+bolchevik33 posts ante 120
+Cbet&die posts ante 120
+damienlemon posts ante 120
+harpiie posts ante 120
+Monkey babe posts small blind 500
+Squall82 posts big blind 1000
+Dealt to bolchevik33 [7d 6h]
+*** PRE-FLOP *** 
+Cbet&die raises 21825 to 22825 and is all-in
+damienlemon folds
+harpiie folds
+bolchevik33 folds
+Monkey babe folds
+Squall82 folds
+Cbet&die collected 25045 from pot
+*** SUMMARY ***
+Total pot 25045 | No rake
+Seat 4: Cbet&die won 25045
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 10 - HandId: #1651277829955911791-65-1598991391 - Holdem no limit (120/500/1000) - 2020/09/01 20:16:31 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #2 is the button
+Seat 1: bolchevik33 (45830)
+Seat 2: Monkey babe (30124)
+Seat 3: Squall82 (19480)
+Seat 4: Cbet&die (25045)
+Seat 5: damienlemon (48490)
+Seat 6: harpiie (44714)
+*** ANTE/BLINDS ***
+Squall82 posts ante 120
+Cbet&die posts ante 120
+bolchevik33 posts ante 120
+Monkey babe posts ante 120
+damienlemon posts ante 120
+harpiie posts ante 120
+Squall82 posts small blind 500
+Cbet&die posts big blind 1000
+Dealt to bolchevik33 [5c 8c]
+*** PRE-FLOP *** 
+damienlemon folds
+harpiie raises 2000 to 3000
+bolchevik33 folds
+Monkey babe folds
+Squall82 folds
+Cbet&die folds
+harpiie collected 5220 from pot
+*** SUMMARY ***
+Total pot 5220 | No rake
+Seat 6: harpiie won 5220
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 10 - HandId: #1651277829955911791-66-1598991433 - Holdem no limit (120/500/1000) - 2020/09/01 20:17:13 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #3 is the button
+Seat 1: bolchevik33 (45710)
+Seat 2: Monkey babe (30004)
+Seat 3: Squall82 (18860)
+Seat 4: Cbet&die (23925)
+Seat 5: damienlemon (48370)
+Seat 6: harpiie (46814)
+*** ANTE/BLINDS ***
+Cbet&die posts ante 120
+damienlemon posts ante 120
+bolchevik33 posts ante 120
+Monkey babe posts ante 120
+Squall82 posts ante 120
+harpiie posts ante 120
+Cbet&die posts small blind 500
+damienlemon posts big blind 1000
+Dealt to bolchevik33 [Jd Qd]
+*** PRE-FLOP *** 
+harpiie raises 1000 to 2000
+bolchevik33 calls 2000
+Monkey babe folds
+Squall82 folds
+Cbet&die folds
+damienlemon calls 1000
+*** FLOP *** [4d 2s 6s]
+damienlemon checks
+harpiie checks
+bolchevik33 checks
+*** TURN *** [4d 2s 6s][7c]
+damienlemon checks
+harpiie checks
+bolchevik33 checks
+*** RIVER *** [4d 2s 6s 7c][7s]
+damienlemon bets 3610
+harpiie folds
+bolchevik33 folds
+damienlemon collected 10830 from pot
+*** SUMMARY ***
+Total pot 10830 | No rake
+Board: [4d 2s 6s 7c 7s]
+Seat 5: damienlemon (big blind) won 10830
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 10 - HandId: #1651277829955911791-67-1598991549 - Holdem no limit (120/500/1000) - 2020/09/01 20:19:09 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #4 is the button
+Seat 1: bolchevik33 (43590)
+Seat 2: Monkey babe (29884)
+Seat 3: Squall82 (18740)
+Seat 4: Cbet&die (23305)
+Seat 5: damienlemon (53470)
+Seat 6: harpiie (44694)
+*** ANTE/BLINDS ***
+damienlemon posts ante 120
+harpiie posts ante 120
+bolchevik33 posts ante 120
+Monkey babe posts ante 120
+Squall82 posts ante 120
+Cbet&die posts ante 120
+damienlemon posts small blind 500
+harpiie posts big blind 1000
+Dealt to bolchevik33 [2h 8s]
+*** PRE-FLOP *** 
+bolchevik33 folds
+Monkey babe raises 1200 to 2200
+Squall82 folds
+Cbet&die folds
+damienlemon folds
+harpiie calls 1200
+*** FLOP *** [Qc 6d Jh]
+harpiie bets 2810
+Monkey babe calls 2810
+*** TURN *** [Qc 6d Jh][9s]
+harpiie bets 11240
+Monkey babe folds
+harpiie collected 22480 from pot
+*** SUMMARY ***
+Total pot 22480 | No rake
+Board: [Qc 6d Jh 9s]
+Seat 6: harpiie (big blind) won 22480
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 10 - HandId: #1651277829955911791-68-1598991629 - Holdem no limit (120/500/1000) - 2020/09/01 20:20:29 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #5 is the button
+Seat 1: bolchevik33 (43470)
+Seat 2: Monkey babe (24754)
+Seat 3: Squall82 (18620)
+Seat 4: Cbet&die (23185)
+Seat 5: damienlemon (52850)
+Seat 6: harpiie (50804)
+*** ANTE/BLINDS ***
+harpiie posts ante 120
+bolchevik33 posts ante 120
+Monkey babe posts ante 120
+Squall82 posts ante 120
+Cbet&die posts ante 120
+damienlemon posts ante 120
+harpiie posts small blind 500
+bolchevik33 posts big blind 1000
+Dealt to bolchevik33 [Th Kc]
+*** PRE-FLOP *** 
+Monkey babe folds
+Squall82 calls 1000
+Cbet&die folds
+damienlemon calls 1000
+harpiie calls 500
+bolchevik33 raises 1000 to 2000
+Squall82 folds
+damienlemon calls 1000
+harpiie calls 1000
+*** FLOP *** [Kd Ks 7c]
+harpiie checks
+bolchevik33 bets 3860
+damienlemon folds
+harpiie folds
+bolchevik33 collected 11580 from pot
+*** SUMMARY ***
+Total pot 11580 | No rake
+Board: [Kd Ks 7c]
+Seat 1: bolchevik33 (big blind) won 11580
+
+
+Winamax Poker - Tournament "WESTERN" buyIn: 0.90€ + 0.10€ level: 11 - HandId: #1651277829955911791-69-1598991695 - Holdem no limit (140/600/1200) - 2020/09/01 20:21:35 UTC
+Table: 'WESTERN(384468080)#110' 6-max (real money) Seat #6 is the button
+Seat 1: bolchevik33 (49070)
+Seat 2: Monkey babe (24634)
+Seat 3: Squall82 (17500)
+Seat 4: Cbet&die (23065)
+Seat 5: damienlemon (50730)
+Seat 6: harpiie (48684)
+*** ANTE/BLINDS ***
+bolchevik33 posts ante 140
+Monkey babe posts ante 140
+Squall82 posts ante 140
+Cbet&die posts ante 140
+damienlemon posts ante 140
+harpiie posts ante 140
+bolchevik33 posts small blind 600
+Monkey babe posts big blind 1200
+Dealt to bolchevik33 [5h Th]
+*** PRE-FLOP *** 
+Squall82 folds
+Cbet&die folds
+damienlemon calls 1200
+harpiie folds
+bolchevik33 calls 600
+Monkey babe checks
+*** FLOP *** [Ac Tc As]
+bolchevik33 bets 1200
+Monkey babe calls 1200
+damienlemon calls 1200
+*** TURN *** [Ac Tc As][Ad]
+bolchevik33 bets 5360
+Monkey babe folds
+damienlemon calls 5360
+*** RIVER *** [Ac Tc As Ad][2h]
+bolchevik33 bets 41170 and is all-in
+damienlemon raises 1660 to 42830 and is all-in
+*** SHOW DOWN ***
+bolchevik33 shows [5h Th] (Full of Aces and Tens)
+damienlemon shows [4h Ah] (Quads of Aces)
+damienlemon collected 102760 from pot
+*** SUMMARY ***
+Total pot 102760 | No rake
+Board: [Ac Tc As Ad 2h]
+Seat 1: bolchevik33 (small blind) showed [5h Th] and lost with Full of Aces and Tens
+Seat 5: damienlemon showed [4h Ah] and won 102760 with Quads of Aces
+
+

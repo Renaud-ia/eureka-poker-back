@@ -75,6 +75,8 @@ public class MoteurJeu {
             BigDecimal bountyDepart = this.bountyDepart.getOrDefault(joueurAvecInvestissement, new BigDecimal(0));
             BigDecimal stackDepart = this.stackDepart.get(joueurAvecInvestissement).setScale(2, RoundingMode.HALF_UP);
             BigDecimal montantInvesti = this.investi.get(joueurAvecInvestissement).setScale(2, RoundingMode.HALF_UP);
+
+            if (stackDepart.compareTo(new BigDecimal(0)) == 0) continue;
             this.potBounty = this.potBounty.add(
                     bountyDepart
                     .multiply(montantInvesti.divide(stackDepart, RoundingMode.HALF_UP)))

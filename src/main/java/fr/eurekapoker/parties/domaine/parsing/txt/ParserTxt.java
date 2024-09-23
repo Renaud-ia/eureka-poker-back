@@ -40,6 +40,7 @@ public abstract class ParserTxt extends ParserModele {
         }
 
         observateurParser.mainTerminee();
+        observateurParser.partieTerminee();
     }
 
     private void extraireLigne(int indexLigne) throws ErreurImport {

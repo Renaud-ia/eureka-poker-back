@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "fr.eurekapoker"
-version = "0.1-SNAPSHOT"
+version = "0.1-beta"
 
 java {
 	toolchain {
@@ -31,7 +31,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 	// persistance
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa") // Spring Data JPA
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	runtimeOnly("org.postgresql:postgresql")
 
 	// lombok
@@ -42,3 +42,4 @@ dependencies {
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
+

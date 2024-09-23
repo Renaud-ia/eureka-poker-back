@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -42,6 +43,8 @@ public class PartieJpa {
     private Integer nombreMains;
     @Column(nullable = false)
     private LocalDateTime dateJeu;
+    @Column(nullable = true)
+    private BigDecimal buyIn;
     @Column(nullable = false)
     private LocalDateTime dateSauvegarde;
     @OneToMany(mappedBy = "partieJpa", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)

@@ -36,6 +36,7 @@ public class ServiceAjoutPartie {
                 .formatSpecialRoom(partiePersistanceDto.obtFormatSpecialRoom())
                 .identifiantParse(partiePersistanceDto.obtIdParse())
                 .nomPartie(partiePersistanceDto.obtNomPartie())
+                .buyIn(partiePersistanceDto.obtBuyIn())
                 .nomHero(partiePersistanceDto.obtNomHero())
                 .nombreSieges(partiePersistanceDto.obtNombreSieges())
                 .nombreMains(partiePersistanceDto.obtNombreMains())

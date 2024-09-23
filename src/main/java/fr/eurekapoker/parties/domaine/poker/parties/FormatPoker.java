@@ -24,7 +24,23 @@ public class FormatPoker {
         CASH_GAME,
         SPIN,
         MTT,
-        INCONNU
+        INCONNU;
+
+        @Override
+        public String toString() {
+            switch (this) {
+                case CASH_GAME:
+                    return "Cash-Game";
+                case SPIN:
+                    return "Spin&Go";
+                case MTT:
+                    return "MTT";
+                case INCONNU:
+                    return "Inconnu";
+                default:
+                    return super.toString(); // En cas d'erreur, mais normalement jamais atteint
+            }
+        }
     }
 
 

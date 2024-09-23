@@ -121,8 +121,11 @@ public class ConvertisseurPersistanceVersApi {
 
     private List<String> extraireCartes(String comboString) {
         List<String> cartesAsString = new ArrayList<>();
-        for (int i = 0; i < comboString.length() + 1; i += 2) {
-            String carte = String.valueOf(comboString.charAt(i) + comboString.charAt(i+1));
+        if (comboString.isEmpty()) {
+            return cartesAsString; // Retourne une liste vide
+        }
+        for (int i = 0; i < comboString.length(); i += 2) {
+            String carte = String.valueOf(comboString.charAt(i)) + comboString.charAt(i+1);
             cartesAsString.add(carte);
         }
 

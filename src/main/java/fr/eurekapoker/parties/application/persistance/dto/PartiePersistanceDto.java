@@ -2,6 +2,7 @@ package fr.eurekapoker.parties.application.persistance.dto;
 
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +19,7 @@ public class PartiePersistanceDto {
     private String formatSpecialRoom;
     private LocalDateTime date;
     private String nomPartie;
+    private BigDecimal buyIn;
     private int nombreSieges;
     private String nomHero;
     private int nombreMains;
@@ -34,6 +36,7 @@ public class PartiePersistanceDto {
                                 String formatSpecialRoom,
                                 LocalDateTime date,
                                 String nomPartie,
+                                BigDecimal buyIn,
                                 int nombreSieges,
                                 int nombreMains) {
         this.idUniqueGenere = idUniqueGenere;
@@ -47,6 +50,7 @@ public class PartiePersistanceDto {
         this.nomPartie = nomPartie;
         this.nombreSieges = nombreSieges;
         this.nombreMains = nombreMains;
+        this.buyIn = buyIn;
         this.nombreMainsFixe = true;
         this.mainPersistence = new ArrayList<>();
     }
@@ -66,6 +70,7 @@ public class PartiePersistanceDto {
                                 String formatSpecialRoom,
                                 LocalDateTime date,
                                 String nomPartie,
+                                BigDecimal buyIn,
                                 int nombreSieges) {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
@@ -76,6 +81,7 @@ public class PartiePersistanceDto {
         this.formatSpecialRoom = formatSpecialRoom;
         this.date = date;
         this.nomPartie = nomPartie;
+        this.buyIn = buyIn;
         this.nombreSieges = nombreSieges;
         this.nombreMains = 0;
     }
@@ -146,5 +152,14 @@ public class PartiePersistanceDto {
 
     public boolean obtJoueursAnonymes() {
         return joueursAnonymes;
+    }
+
+    public BigDecimal obtBuyIn() {
+        return buyIn;
+    }
+
+    public void partieTerminee() {
+        this.nombreMains++;
+        rendreImmuablesValeurs();
     }
 }

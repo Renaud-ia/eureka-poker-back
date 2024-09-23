@@ -277,7 +277,6 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
 
-
     // TESTS EXTRACTION INFOS TABLE
 
     @Test
@@ -287,6 +286,15 @@ public class ExtracteurWinamaxTest {
         assertEquals("Expresso(434726065)#0", infosTable.obtNomTable());
         assertEquals(3, infosTable.obtNombreJoueurs());
         assertEquals(1, infosTable.obtPositionDealer());
+    }
+
+    @Test
+    void extraitInfosTableShortTrack() throws ErreurRegex {
+        String ligne = "Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #2 is the button";
+        InfosTableWinamax infosTable = extracteurWinamax.extraireInfosTable(ligne);
+        assertEquals("SHORT TRACK 0,25 € 05", infosTable.obtNomTable());
+        assertEquals(5, infosTable.obtNombreJoueurs());
+        assertEquals(2, infosTable.obtPositionDealer());
     }
 
     @Test

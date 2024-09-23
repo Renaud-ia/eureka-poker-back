@@ -1,0 +1,68 @@
+Winamax Poker - Tournament "Expresso Nitro" buyIn: 0.93€ + 0.07€ level: 1 - HandId: #1902147088758603777-1-1614700421 - Holdem no limit (10/20) - 2021/03/02 15:53:41 UTC
+Table: 'Expresso Nitro(442878131)#0' 3-max (real money) Seat #1 is the button
+Seat 1: Mouguy29 (300)
+Seat 2: Olichebo2308 (300)
+Seat 3: RendsL4rgent (300)
+*** ANTE/BLINDS ***
+Olichebo2308 posts small blind 10
+RendsL4rgent posts big blind 20
+Dealt to RendsL4rgent [7h Qh]
+*** PRE-FLOP *** 
+Mouguy29 calls 20
+Olichebo2308 calls 10
+RendsL4rgent checks
+*** FLOP *** [3s 2s Qs]
+Olichebo2308 checks
+RendsL4rgent bets 45
+Mouguy29 folds
+Olichebo2308 calls 45
+*** TURN *** [3s 2s Qs][4s]
+Olichebo2308 checks
+RendsL4rgent checks
+*** RIVER *** [3s 2s Qs 4s][8c]
+Olichebo2308 checks
+RendsL4rgent checks
+*** SHOW DOWN ***
+RendsL4rgent shows [7h Qh] (One pair : Queens)
+Olichebo2308 shows [Kd Qd] (One pair : Queens)
+Olichebo2308 collected 150 from pot
+*** SUMMARY ***
+Total pot 150 | No rake
+Board: [3s 2s Qs 4s 8c]
+Seat 2: Olichebo2308 (small blind) showed [Kd Qd] and won 150 with One pair : Queens
+Seat 3: RendsL4rgent (big blind) showed [7h Qh] and lost with One pair : Queens
+
+
+Winamax Poker - Tournament "Expresso Nitro" buyIn: 0.93€ + 0.07€ level: 1 - HandId: #1902147088758603777-2-1614700448 - Holdem no limit (10/20) - 2021/03/02 15:54:08 UTC
+Table: 'Expresso Nitro(442878131)#0' 3-max (real money) Seat #2 is the button
+Seat 1: Mouguy29 (280)
+Seat 2: Olichebo2308 (385)
+Seat 3: RendsL4rgent (235)
+*** ANTE/BLINDS ***
+RendsL4rgent posts small blind 10
+Mouguy29 posts big blind 20
+Dealt to RendsL4rgent [6c Qh]
+*** PRE-FLOP *** 
+Olichebo2308 folds
+RendsL4rgent raises 20 to 40
+Mouguy29 calls 20
+*** FLOP *** [As Tc 9h]
+RendsL4rgent checks
+Mouguy29 bets 20
+RendsL4rgent raises 50 to 70
+Mouguy29 calls 50
+*** TURN *** [As Tc 9h][Kd]
+RendsL4rgent bets 125 and is all-in
+Mouguy29 calls 125
+*** RIVER *** [As Tc 9h Kd][3s]
+*** SHOW DOWN ***
+RendsL4rgent shows [6c Qh] (High card : Ace)
+Mouguy29 shows [Td 8s] (One pair : Tens)
+Mouguy29 collected 470 from pot
+*** SUMMARY ***
+Total pot 470 | No rake
+Board: [As Tc 9h Kd 3s]
+Seat 1: Mouguy29 (big blind) showed [Td 8s] and won 470 with One pair : Tens
+Seat 3: RendsL4rgent (small blind) showed [6c Qh] and lost with High card : Ace
+
+

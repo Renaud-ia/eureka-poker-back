@@ -6,12 +6,12 @@ import java.util.List;
 
 @Setter
 public class ResumePartieDto {
-    private final String idUnique;
+    private final String idUniquePartie;
     private final List<String> joueursInitiaux;
     private final String nomHero;
 
     public ResumePartieDto(String idUnique, List<String> joueursInitiaux, String nomHero) {
-        this.idUnique = idUnique;
+        this.idUniquePartie = idUnique;
         this.joueursInitiaux = joueursInitiaux;
         this.nomHero = nomHero;
     }
@@ -24,7 +24,7 @@ public class ResumePartieDto {
         return nomHero;
     }
 
-    public String getIdUnique() {
-        return idUnique;
+    public String getIdUniquePartie() {
+        return idUniquePartie;
     }
 }

@@ -41,6 +41,7 @@ public class ServiceConsultationPartie {
                 partieJpa.getFormatSpecialRoom(),
                 partieJpa.getDateJeu(),
                 partieJpa.getNomPartie(),
+                partieJpa.getBuyIn(),
                 partieJpa.getNombreSieges(),
                 partieJpa.getNombreMains()
         );

@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
+import fr.eurekapoker.parties.application.InterfacePartiesImpl;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
@@ -350,7 +351,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     private Matcher matcherRegex(Pattern pattern, String ligne) throws ErreurRegex {
         Matcher matcher = pattern.matcher(ligne);
         if (!matcher.find()) {
-            throw new ErreurRegex("Regex non trouvé dans : " + ligne);
+            throw new ErreurRegex("Regex non trouvé dans :" + ligne);
         }
         return matcher;
     }

@@ -55,6 +55,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 infosPartiePoker.getFormatSpecialRoom(),
                 infosPartiePoker.getDate(),
                 infosPartiePoker.getNomPartie(),
+                infosPartiePoker.getBuyIn(),
                 infosPartiePoker.getNombreSieges()
         );
     }
@@ -170,6 +171,11 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     }
 
     @Override
+    public void partieTerminee() {
+        this.partiePersistanceDto.partieTerminee();
+    }
+
+    @Override
     public String getIdUniquePartie() {
         return partiePersistanceDto.obtIdUnique();
     }
@@ -177,7 +183,6 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     @Override
     public void mainTerminee() {
         calculerLaValueDesActions();
-        this.partiePersistanceDto.rendreImmuablesValeurs();
     }
 
     @Override

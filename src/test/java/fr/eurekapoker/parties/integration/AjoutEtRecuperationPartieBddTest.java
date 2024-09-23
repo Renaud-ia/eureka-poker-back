@@ -53,6 +53,7 @@ public class AjoutEtRecuperationPartieBddTest {
                 "Fake format special",
                 LocalDateTime.of(2022, 12, 9, random.nextInt(24), random.nextInt(60), random.nextInt(60)),
                 "Fake nom partie",
+                new BigDecimal("2"),
                 6
         );
         partiePersistanceDto.fixNomHero("Fake hero");

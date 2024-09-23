@@ -8,12 +8,13 @@ import java.time.LocalDateTime;
 public abstract class InfosPartiePoker {
     protected final FormatPoker formatPoker;
     private final long identifiantPartie;
-    protected final String nomPartie;
+    protected String nomPartie;
     private final Integer nombreJoueurs;
     private final LocalDateTime date;
-    private final BigDecimal buyIn;
+    protected  BigDecimal buyIn;
     private final BigDecimal ante;
     protected final BigDecimal rake;
+    protected String formatSpecialRoom;
     public InfosPartiePoker(
             FormatPoker formatPoker,
             long idPartie,
@@ -31,6 +32,7 @@ public abstract class InfosPartiePoker {
         this.buyIn = buyIn;
         this.ante = ante;
         this.rake = rake;
+        this.formatSpecialRoom = "";
     }
     public int obtNombreJoueurs() {
         return nombreJoueurs;
@@ -62,6 +64,11 @@ public abstract class InfosPartiePoker {
         return nombreJoueurs;
     }
 
-    // todo => ici on peut définir des formats spéciaux
-    public abstract String getFormatSpecialRoom();
+    public String getFormatSpecialRoom() {
+        return formatSpecialRoom;
+    }
+
+    public BigDecimal getBuyIn() {
+        return buyIn;
+    }
 }

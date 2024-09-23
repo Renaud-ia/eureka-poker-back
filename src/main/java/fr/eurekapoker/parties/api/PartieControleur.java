@@ -1,7 +1,6 @@
 package fr.eurekapoker.parties.api;
 
 import fr.eurekapoker.parties.application.FabriqueDependances;
-import fr.eurekapoker.parties.application.FabriqueDependancesImpl;
 import fr.eurekapoker.parties.application.InterfacePartiesImpl;
 import fr.eurekapoker.parties.application.api.InterfaceParties;
 import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
@@ -10,8 +9,11 @@ import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+
 
 @RestController
 @RequestMapping("parties")
@@ -23,7 +25,12 @@ public class PartieControleur {
         this.interfaceParties = new InterfacePartiesImpl(fabriqueDependances);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/")
+    public ResponseEntity<String> home() {
+        return ResponseEntity.ok("Bienvenue");
+    }
+
+    @GetMapping(value = "/{id}")
     public ResponseEntity<ContenuPartieDto> consulterPartie(
             @PathVariable String id,
             @RequestParam int indexPremiereMain,
@@ -35,7 +42,7 @@ public class PartieControleur {
 
     }
 
-    @PostMapping("/creer")
+    @PostMapping(value = "/creer")
     public ResponseEntity<ResumePartieDto> ajouterPartie(
             @RequestBody RequeteImport requeteImport
             ) throws ErreurAjoutPartie {

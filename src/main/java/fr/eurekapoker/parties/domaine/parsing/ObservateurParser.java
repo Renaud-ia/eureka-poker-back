@@ -35,4 +35,6 @@ public interface ObservateurParser {
 
     void ajouterCartes(String nomJoueur, List<CartePoker> cartePokers);
     void ajouterPositionDealer(int positionDealer);
+
+    void partieTerminee();
 }

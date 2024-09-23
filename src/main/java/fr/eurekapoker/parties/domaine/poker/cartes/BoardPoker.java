@@ -83,14 +83,9 @@ public class BoardPoker {
     @Override
     public String toString() {
         StringBuilder repr = new StringBuilder();
-        repr.append("Board [");
-        for (int i = 0; i < cartes.size(); i++) {
-            repr.append(cartes.get(i));
-            if (i < cartes.size() - 1) {
-                repr.append(", ");
-            }
+        for (CartePoker carte : cartes) {
+            repr.append(carte);
         }
-        repr.append("]");
         return repr.toString();
     }
 

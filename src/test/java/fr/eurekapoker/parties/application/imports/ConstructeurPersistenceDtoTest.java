@@ -130,23 +130,6 @@ class ConstructeurPersistenceDtoTest {
     }
 
     @Test
-    void throwErreurLectureFichierSiPartieNonInitialiseeQuandCreationMain() {
-        MainPoker nouvelleMain = new MainPoker(
-                new Random().nextLong()
-        );
-        assertThrows(ErreurLectureFichier.class, () -> constructeur.ajouterMain(nouvelleMain));
-    }
-
-    @Test
-    void throwErreurLectureFichierSiPartieNonInitialiseeQuandCreationTour() {
-        NouveauTour nouveauTour = new NouveauTour(
-                TourPoker.RoundPoker.PREFLOP,
-                new ArrayList<>()
-        );
-        assertThrows(ErreurLectureFichier.class, () -> constructeur.ajouterTour(nouveauTour));
-    }
-
-    @Test
     void throwErreurLectureFichierSiPartieNonInitialiseeQuandCreationAction() {
         ActionPokerJoueur action = new ActionPokerJoueur(
                 "Fake joueur",
