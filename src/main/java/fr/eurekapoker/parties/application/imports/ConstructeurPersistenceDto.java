@@ -190,7 +190,8 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         return new ResumePartieDto(
                 this.partiePersistanceDto.obtIdUnique(),
                 this.partiePersistanceDto.obtMains().getFirst().obtNomsJoueursPresents(),
-                this.derniereMain.obtNomHero()
+                this.derniereMain.obtNomHero(),
+                this.partiePersistanceDto.obtNomRoom()
         );
     }
 

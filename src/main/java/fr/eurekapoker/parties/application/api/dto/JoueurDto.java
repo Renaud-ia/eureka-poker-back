@@ -44,7 +44,7 @@ public class JoueurDto {
     public BigDecimal getAnte() {
         return ante;
     }
-    public BigDecimal blinde() {
+    public BigDecimal getBlinde() {
         return blinde;
     }
 }

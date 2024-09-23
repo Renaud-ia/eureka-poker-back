@@ -14,7 +14,10 @@ public class GenerateurNomPartie {
         BigDecimal buyIn = partiePersistanceDto.obtBuyIn();
 
         String buyInString;
-        if (Objects.equals(partiePersistanceDto.obtTypeTable(), FormatPoker.TypeTable.CASH_GAME.toString())
+
+        if (buyIn == null) buyInString = "";
+
+        else if (Objects.equals(partiePersistanceDto.obtTypeTable(), FormatPoker.TypeTable.CASH_GAME.toString())
         && !Objects.equals(partiePersistanceDto.obtNomPartie(), "Short Track")) {
             buyInString = "NL" + buyIn.multiply(new BigDecimal(100)).stripTrailingZeros();
         }

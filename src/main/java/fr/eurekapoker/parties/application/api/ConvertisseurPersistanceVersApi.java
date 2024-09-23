@@ -19,6 +19,7 @@ public class ConvertisseurPersistanceVersApi {
         ContenuPartieDto contenuPartieDto = new ContenuPartieDto(
                 partiePersistanceDto.obtIdUnique(),
                 GenerateurNomPartie.genererNomPartie(partiePersistanceDto),
+                partiePersistanceDto.obtNomRoom(),
                 partiePersistanceDto.obtNombreSieges(),
                 partiePersistanceDto.obtNombreMains()
         );

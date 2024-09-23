@@ -6,15 +6,18 @@ import java.util.List;
 public class ContenuPartieDto {
     private final String idUniquePartie;
     private final String nomPartie;
+    private final String nomRoom;
     private final int nombreSieges;
     private final int nombreMains;
     private final List<ContenuMainDto> mainsExtraites;
     public ContenuPartieDto(String idUniquePartie,
                             String nomPartie,
+                            String nomRoom,
                             int nombreSieges,
                             int nombreMains) {
         this.idUniquePartie = idUniquePartie;
         this.nomPartie = nomPartie;
+        this.nomRoom = nomRoom;
         this.nombreSieges = nombreSieges;
         this.nombreMains = nombreMains;
         this.mainsExtraites = new ArrayList<>();
@@ -22,6 +25,10 @@ public class ContenuPartieDto {
 
     public String getIdUniquePartie() {
         return idUniquePartie;
+    }
+
+    public String getNomRoom() {
+        return nomRoom;
     }
 
     public String getNomPartie() {
