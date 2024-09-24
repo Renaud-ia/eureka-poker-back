@@ -7,12 +7,15 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 
 // todo ajouter des tests
 public class ConvertisseurPersistanceVersApi {
     private final PartiePersistanceDto partiePersistanceDto;
+    private int numeroVillain;
     public ConvertisseurPersistanceVersApi(PartiePersistanceDto partiePersistanceDto) {
         this.partiePersistanceDto = partiePersistanceDto;
+        this.numeroVillain = 1;
     }
 
     public ContenuPartieDto obtContenuPartieDto() {
@@ -25,14 +28,18 @@ public class ConvertisseurPersistanceVersApi {
         );
 
         for (MainPersistenceDto mainPersistenceDto : partiePersistanceDto.obtMains()) {
-            contenuPartieDto.ajouterMain(convertirMainDtoVersApi(mainPersistenceDto));
+            contenuPartieDto.ajouterMain(convertirMainDtoVersApi(
+                    mainPersistenceDto,
+                    partiePersistanceDto.obtNomHero(),
+                    partiePersistanceDto.obtJoueursAnonymes())
+            );
         }
 
         return contenuPartieDto;
     }
 
-    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto) {
-        List<JoueurDto> joueurs = extraireJoueursDepuisMain(mainPersistenceDto);
+    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto, String nomHero, boolean joueursAnonymes) {
+        List<JoueurDto> joueurs = extraireJoueursDepuisMain(mainPersistenceDto, nomHero, joueursAnonymes);
         List<ContenuTourDto> tours = extraireToursDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> antes = extraireAnteDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> blindes = extraireBlindesDepuisMain(mainPersistenceDto);
@@ -49,11 +56,18 @@ public class ConvertisseurPersistanceVersApi {
         return contenuMainDto;
     }
 
-    private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto) {
+    private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto,
+                                                      String nomHero,
+                                                      boolean joueursAnonymes) {
         List<JoueurDto> joueursExtraits = new ArrayList<>();
 
         for (JoueurPersistenceDto joueurPersistenceDto: mainPersistenceDto.obtJoueursPresents()) {
             String nomJoueur = joueurPersistenceDto.obtNomJoueur();
+
+            if (joueursAnonymes) {
+                if (Objects.equals(nomHero, nomJoueur)) nomJoueur = "Hero";
+                else nomJoueur = "Villain" + numeroVillain++;
+            }
 
             JoueurDto joueurDto = new JoueurDto(
                     nomJoueur,

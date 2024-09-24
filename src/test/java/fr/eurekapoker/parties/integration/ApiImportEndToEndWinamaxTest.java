@@ -23,8 +23,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Objects;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -39,14 +38,14 @@ public class ApiImportEndToEndWinamaxTest {
     @Test
     public void testSimpleAjouterPartie() throws Exception {
         String nomFichier = "20201207_Aalen 47_real_holdem_no-limit.txt";
-        JSONObject result = creerPartie(nomFichier);
+        JSONObject result = creerPartie(nomFichier, false);
         assertNotNull(result.get("idUniquePartie"), "idUniquePartie ne doit pas être nul après création");
     }
 
     @Test
     public void consultationPartieCreeCashGame() throws Exception {
         String nomFichier = "20201207_Aalen 47_real_holdem_no-limit.txt";
-        JSONObject jsonCreation = creerPartie(nomFichier);
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
@@ -59,7 +58,7 @@ public class ApiImportEndToEndWinamaxTest {
     @Test
     public void consultationPartieCreeMtt() throws Exception {
         String nomFichier = "20200901_WESTERN(384468080)_real_holdem_no-limit.txt";
-        JSONObject jsonCreation = creerPartie(nomFichier);
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
@@ -72,7 +71,7 @@ public class ApiImportEndToEndWinamaxTest {
     @Test
     public void consultationPartieCreeShortTrack() throws Exception {
         String nomFichier = "20200513_SHORT TRACK 0,25 € 05_real_holdem_no-limit.txt";
-        JSONObject jsonCreation = creerPartie(nomFichier);
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
@@ -85,7 +84,7 @@ public class ApiImportEndToEndWinamaxTest {
     @Test
     public void consultationPartieCreeExpresso() throws Exception {
         String nomFichier = "20230318_Expresso(645339353)_real_holdem_no-limit.txt";
-        JSONObject jsonCreation = creerPartie(nomFichier);
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
@@ -98,7 +97,7 @@ public class ApiImportEndToEndWinamaxTest {
     @Test
     public void consultationPartieCreeExpressoNitro() throws Exception {
         String nomFichier = "20210302_Expresso Nitro(442878131)_real_holdem_no-limit.txt";
-        JSONObject jsonCreation = creerPartie(nomFichier);
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
@@ -108,21 +107,43 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals(2, jsonConsultation.get("nombreMains"));
     }
 
-    /*
     @Test
     public void consultationPartieCreeStartingBlock() throws Exception {
         String nomFichier = "20230909_Starting Block WiPT - Déglingos(696549662)_real_holdem_no-limit.txt";
-        JSONObject jsonCreation = creerPartie(nomFichier);
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
 
-        assertEquals("MTT Starting block WiPT - Déglingos", jsonConsultation.get("nomPartie"));
+        assertEquals("MTT 6-max 0€ (Starting Block WiPT - Déglingos)", jsonConsultation.get("nomPartie"));
         assertEquals(6, jsonConsultation.get("nombreSieges"));
         assertEquals(11, jsonConsultation.get("nombreMains"));
     }
 
-     */
+    @Test
+    public void consultationPartieJoueursAnonymes() throws Exception {
+        String nomFichier = "20210302_Expresso Nitro(442878131)_real_holdem_no-limit.txt";
+        JSONObject jsonCreation = creerPartie(nomFichier, true);
+        String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
+
+        JSONObject jsonConsultation = consulterPartie(idUniquePartie);
+
+        assertEquals("Spin&Go 3-max 1€ (Expresso Nitro)", jsonConsultation.get("nomPartie"));
+        assertEquals(3, jsonConsultation.get("nombreSieges"));
+        assertEquals(2, jsonConsultation.get("nombreMains"));
+
+        JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
+        JSONArray joueurs = premiereMain.getJSONArray("joueurs");
+
+        for (int i = 0; i < (int) jsonConsultation.get("nombreSieges"); i++) {
+            JSONObject joueur = joueurs.getJSONObject(i);
+            String nomJoueur = joueur.getString("nomJoueur");
+            assertTrue(nomJoueur.startsWith("Hero") || nomJoueur.startsWith("Villain"), nomJoueur);
+        }
+    }
+
+
+
 
     private JSONObject consulterPartie(String idUniquePartie) throws Exception {
         int indexPremiereMain = 0;
@@ -139,10 +160,10 @@ public class ApiImportEndToEndWinamaxTest {
         return new JSONObject(content);
     }
 
-    private JSONObject creerPartie(String nomFichier) throws Exception {
+    private JSONObject creerPartie(String nomFichier, boolean joueursAnonymes) throws Exception {
         String contenuPartie = lireContenuFichier(nomFichier);
 
-        ParametresImport parametresImport = new ParametresImport(false);
+        ParametresImport parametresImport = new ParametresImport(joueursAnonymes);
         RequeteImport requeteImport = new RequeteImport(contenuPartie, parametresImport);
 
         ObjectMapper objectMapper = new ObjectMapper();

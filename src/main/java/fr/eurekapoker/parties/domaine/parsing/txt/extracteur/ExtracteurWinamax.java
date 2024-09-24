@@ -24,7 +24,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     private static final Pattern patternPremiereLigne = Pattern.compile(
             "Winamax\\sPoker\\s-\\s" +
                     "(?<nomTournoi>(.(?!buyIn|- HandId))+)\\s" +
-                    "(buyIn:\\s(?<buyInMTT>[\\d+\\s\\u20AC€.]+))?" +
+                    "(buyIn:\\s(?<buyInMTT>[\\d+\\s\\u20AC€.?]+))?" +
                     "((.(?!HandId))+\\s)" +
                     "(HandId:\\s#(?<numeroTournoi>[\\d-]+))" +
                     "(\\s-\\s(?<nomVariante>[\\sa-zA-Z]+))" +
@@ -111,9 +111,12 @@ public class ExtracteurWinamax implements ExtracteurLigne {
                 if (matcher.group("valeursBlindes") != null) {
                     String[] partiesBlindes = matcher.group("valeursBlindes").split("/");
                     // attention il y a des tournois sans Ante(starting block par ex)
-                    if (partiesBlindes.length != 3) throw new FormatNonPrisEnCharge("Tournoi gratuit probablement");
+                    if (partiesBlindes.length != 3) {
+                        ante = 0;
+                        rake = 0;
+                    }
 
-                    ante = Float.parseFloat(partiesBlindes[0]);
+                    else ante = Float.parseFloat(partiesBlindes[0]);
                 }
 
                 else throw new ErreurRegex("Pas de blindes trouvées");

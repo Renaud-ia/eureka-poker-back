@@ -277,6 +277,25 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
     }
 
+    @Test
+    void extraitInfosMainPartieGratuite() throws ErreurImport {
+        String ligne = "Winamax Poker - Tournament \"Starting Block WiPT - Déglingos\" buyIn: 0€ + 0€ level: 1 - HandId: #2991658018329853953-1-1694274624 - Holdem no limit (10/20) - 2023/09/09 15:50:24 UTC";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.MTT, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2023, 9, 9, 15, 50, 24);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("0");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(2991658018329853953L, infosMainWinamax.obtNumeroTable());
+        assertEquals(1694274624, infosMainWinamax.obtIdentifiantMain());
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
+        BigDecimal rakeAttendu = new BigDecimal("0");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+
+    }
+
     // TESTS EXTRACTION INFOS TABLE
 
     @Test
