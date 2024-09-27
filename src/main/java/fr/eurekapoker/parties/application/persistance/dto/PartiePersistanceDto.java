@@ -31,6 +31,7 @@ public class PartiePersistanceDto {
                                 long idParse,
                                 boolean joueursAnonymes,
                                 String nomRoom,
+                                String nomHero,
                                 String variante,
                                 String typeJeu,
                                 String formatSpecialRoom,
@@ -43,6 +44,7 @@ public class PartiePersistanceDto {
         this.idParse = idParse;
         this.joueursAnonymes = joueursAnonymes;
         this.nomRoom = nomRoom;
+        this.nomHero = nomHero;
         this.variante = variante;
         this.typeJeu = typeJeu;
         this.formatSpecialRoom = formatSpecialRoom;

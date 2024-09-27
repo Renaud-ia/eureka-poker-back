@@ -9,14 +9,14 @@ import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
-
+// TODO : VARIABILISER LE CORS
 @RestController
 @RequestMapping("parties")
+@CrossOrigin(origins = "http://localhost:3000")
 public class PartieControleur {
     private final static int MAX_FENETRE_CONSULTATION = 10;
     private final InterfaceParties interfaceParties;

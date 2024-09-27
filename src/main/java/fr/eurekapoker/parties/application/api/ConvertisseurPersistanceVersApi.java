@@ -23,6 +23,7 @@ public class ConvertisseurPersistanceVersApi {
                 partiePersistanceDto.obtIdUnique(),
                 GenerateurNomPartie.genererNomPartie(partiePersistanceDto),
                 partiePersistanceDto.obtNomRoom(),
+                partiePersistanceDto.obtNomHero(),
                 partiePersistanceDto.obtNombreSieges(),
                 partiePersistanceDto.obtNombreMains()
         );

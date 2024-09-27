@@ -36,6 +36,7 @@ public class ServiceConsultationPartie {
                 partieJpa.getIdentifiantParse(),
                 partieJpa.getJoueursAnonymes(),
                 partieJpa.getNomRoom(),
+                partieJpa.getNomHero(),
                 partieJpa.getVarianteJeu(),
                 partieJpa.getTypeTable(),
                 partieJpa.getFormatSpecialRoom(),
