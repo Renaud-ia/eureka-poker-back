@@ -1,0 +1,342 @@
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 1 - HandId: #2991658018329853953-1-1694274624 - Holdem no limit (10/20) - 2023/09/09 15:50:24 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #3 is the button
+Seat 1: Ricou.66 (500)
+Seat 2: -Rapido (500)
+Seat 3: Jaune-995283 (500)
+Seat 4: kerazenor (500)
+Seat 5: Cavasendire (500)
+Seat 6: jveudlamone (500)
+*** ANTE/BLINDS ***
+kerazenor posts small blind 10
+Cavasendire posts big blind 20
+Dealt to jveudlamone [7d 9h]
+*** PRE-FLOP *** 
+jveudlamone folds
+Ricou.66 folds
+-Rapido folds
+Jaune-995283 calls 20
+kerazenor raises 480 to 500 and is all-in
+Cavasendire folds
+Jaune-995283 calls 480 and is all-in
+*** FLOP *** [Jh Tc Ah]
+*** TURN *** [Jh Tc Ah][As]
+*** RIVER *** [Jh Tc Ah As][6s]
+*** SHOW DOWN ***
+Jaune-995283 shows [7h 4h] (One pair : Aces)
+kerazenor shows [Kc Jd] (Two pairs : Aces and Jacks)
+kerazenor collected 1020 from pot
+*** SUMMARY ***
+Total pot 1020 | No rake
+Board: [Jh Tc Ah As 6s]
+Seat 3: Jaune-995283 (button) showed [7h 4h] and lost with One pair : Aces
+Seat 4: kerazenor (small blind) showed [Kc Jd] and won 1020 with Two pairs : Aces and Jacks
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 1 - HandId: #2991658018329853953-2-1694274655 - Holdem no limit (10/20) - 2023/09/09 15:50:55 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #4 is the button
+Seat 1: Ricou.66 (500)
+Seat 2: -Rapido (500)
+Seat 4: kerazenor (1020)
+Seat 5: Cavasendire (480)
+Seat 6: jveudlamone (500)
+*** ANTE/BLINDS ***
+Cavasendire posts small blind 10
+jveudlamone posts big blind 20
+Dealt to jveudlamone [4h 8d]
+*** PRE-FLOP *** 
+Ricou.66 calls 20
+-Rapido folds
+kerazenor folds
+Cavasendire calls 10
+jveudlamone checks
+*** FLOP *** [8c Ts Jh]
+Cavasendire checks
+jveudlamone checks
+Ricou.66 checks
+*** TURN *** [8c Ts Jh][Th]
+Cavasendire checks
+jveudlamone checks
+Ricou.66 checks
+*** RIVER *** [8c Ts Jh Th][6h]
+Cavasendire checks
+jveudlamone checks
+Ricou.66 checks
+*** SHOW DOWN ***
+Ricou.66 shows [4d Ks] (One pair : Tens)
+Cavasendire shows [Ac 9h] (One pair : Tens)
+jveudlamone shows [4h 8d] (Two pairs : Tens and 8)
+jveudlamone collected 60 from pot
+*** SUMMARY ***
+Total pot 60 | No rake
+Board: [8c Ts Jh Th 6h]
+Seat 1: Ricou.66 showed [4d Ks] and lost with One pair : Tens
+Seat 5: Cavasendire (small blind) showed [Ac 9h] and lost with One pair : Tens
+Seat 6: jveudlamone (big blind) showed [4h 8d] and won 60 with Two pairs : Tens and 8
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 1 - HandId: #2991658018329853953-3-1694274695 - Holdem no limit (10/20) - 2023/09/09 15:51:35 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #5 is the button
+Seat 1: Ricou.66 (480)
+Seat 2: -Rapido (500)
+Seat 4: kerazenor (1020)
+Seat 5: Cavasendire (460)
+Seat 6: jveudlamone (540)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 10
+Ricou.66 posts big blind 20
+Dealt to jveudlamone [5c Th]
+*** PRE-FLOP *** 
+-Rapido folds
+kerazenor raises 20 to 40
+Cavasendire folds
+jveudlamone folds
+Ricou.66 raises 440 to 480 and is all-in
+kerazenor calls 440
+*** FLOP *** [9h Jh 3h]
+*** TURN *** [9h Jh 3h][Qh]
+*** RIVER *** [9h Jh 3h Qh][Ad]
+*** SHOW DOWN ***
+kerazenor shows [Qc Qd] (Trips of Queens)
+Ricou.66 shows [Kh Ah] (Flush Ace high)
+Ricou.66 collected 970 from pot
+*** SUMMARY ***
+Total pot 970 | No rake
+Board: [9h Jh 3h Qh Ad]
+Seat 1: Ricou.66 (big blind) showed [Kh Ah] and won 970 with Flush Ace high
+Seat 4: kerazenor showed [Qc Qd] and lost with Trips of Queens
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 2 - HandId: #2991658018329853953-4-1694274720 - Holdem no limit (15/30) - 2023/09/09 15:52:00 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #6 is the button
+Seat 1: Ricou.66 (970)
+Seat 2: -Rapido (500)
+Seat 4: kerazenor (540)
+Seat 5: Cavasendire (460)
+Seat 6: jveudlamone (530)
+*** ANTE/BLINDS ***
+Ricou.66 posts small blind 15
+-Rapido posts big blind 30
+Dealt to jveudlamone [4c Ts]
+*** PRE-FLOP *** 
+kerazenor folds
+Cavasendire calls 30
+jveudlamone folds
+Ricou.66 calls 15
+-Rapido checks
+*** FLOP *** [2d 2h 7h]
+Ricou.66 bets 30
+-Rapido folds
+Cavasendire calls 30
+*** TURN *** [2d 2h 7h][Qs]
+Ricou.66 checks
+Cavasendire checks
+*** RIVER *** [2d 2h 7h Qs][Kc]
+Ricou.66 bets 150
+Cavasendire calls 150
+*** SHOW DOWN ***
+Cavasendire shows [Jc Kh] (Two pairs : Kings and 2)
+Ricou.66 shows [2c Qh] (Full of 2 and Queens)
+Ricou.66 collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Board: [2d 2h 7h Qs Kc]
+Seat 1: Ricou.66 (small blind) showed [2c Qh] and won 450 with Full of 2 and Queens
+Seat 5: Cavasendire showed [Jc Kh] and lost with Two pairs : Kings and 2
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 2 - HandId: #2991658018329853953-5-1694274757 - Holdem no limit (15/30) - 2023/09/09 15:52:37 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #1 is the button
+Seat 1: Ricou.66 (1210)
+Seat 2: -Rapido (470)
+Seat 4: kerazenor (540)
+Seat 5: Cavasendire (250)
+Seat 6: jveudlamone (530)
+*** ANTE/BLINDS ***
+-Rapido posts small blind 15
+kerazenor posts big blind 30
+Dealt to jveudlamone [Th 7d]
+*** PRE-FLOP *** 
+Cavasendire folds
+jveudlamone folds
+Ricou.66 folds
+-Rapido raises 440 to 470 and is all-in
+kerazenor folds
+-Rapido collected 500 from pot
+*** SUMMARY ***
+Total pot 500 | No rake
+Seat 2: -Rapido (small blind) won 500
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 2 - HandId: #2991658018329853953-6-1694274778 - Holdem no limit (15/30) - 2023/09/09 15:52:58 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #2 is the button
+Seat 1: Ricou.66 (1210)
+Seat 2: -Rapido (500)
+Seat 4: kerazenor (510)
+Seat 5: Cavasendire (250)
+Seat 6: jveudlamone (530)
+*** ANTE/BLINDS ***
+kerazenor posts small blind 15
+Cavasendire posts big blind 30
+Dealt to jveudlamone [4s 7h]
+*** PRE-FLOP *** 
+jveudlamone folds
+Ricou.66 raises 75 to 105
+-Rapido folds
+kerazenor folds
+Cavasendire calls 75
+*** FLOP *** [3c Kc 2c]
+Cavasendire bets 145 and is all-in
+Ricou.66 calls 145
+*** TURN *** [3c Kc 2c][Ah]
+*** RIVER *** [3c Kc 2c Ah][4d]
+*** SHOW DOWN ***
+Cavasendire shows [7d 7s] (One pair : 7)
+Ricou.66 shows [5d Ad] (Straight 5 high)
+Ricou.66 collected 515 from pot
+*** SUMMARY ***
+Total pot 515 | No rake
+Board: [3c Kc 2c Ah 4d]
+Seat 1: Ricou.66 showed [5d Ad] and won 515 with Straight 5 high
+Seat 5: Cavasendire (big blind) showed [7d 7s] and lost with One pair : 7
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 3 - HandId: #2991658018329853953-7-1694274861 - Holdem no limit (20/40) - 2023/09/09 15:54:21 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #4 is the button
+Seat 1: Ricou.66 (1475)
+Seat 2: -Rapido (500)
+Seat 4: kerazenor (495)
+Seat 6: jveudlamone (530)
+*** ANTE/BLINDS ***
+jveudlamone posts big blind 40
+Dealt to jveudlamone [7d 2h]
+*** PRE-FLOP *** 
+Ricou.66 calls 40
+-Rapido raises 80 to 120
+kerazenor folds
+jveudlamone folds
+Ricou.66 calls 80
+*** FLOP *** [2d 9d 7c]
+Ricou.66 checks
+-Rapido bets 224
+Ricou.66 raises 395 to 619
+-Rapido calls 156 and is all-in
+*** TURN *** [2d 9d 7c][8c]
+*** RIVER *** [2d 9d 7c 8c][5s]
+*** SHOW DOWN ***
+-Rapido shows [As 9h] (One pair : 9)
+Ricou.66 shows [6s 9s] (Straight 9 high)
+Ricou.66 collected 1279 from pot
+*** SUMMARY ***
+Total pot 1279 | No rake
+Board: [2d 9d 7c 8c 5s]
+Seat 1: Ricou.66 showed [6s 9s] and won 1279 with Straight 9 high
+Seat 2: -Rapido showed [As 9h] and lost with One pair : 9
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 3 - HandId: #2991658018329853953-8-1694274888 - Holdem no limit (20/40) - 2023/09/09 15:54:48 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #5 is the button
+Seat 1: Ricou.66 (2015)
+Seat 4: kerazenor (495)
+Seat 6: jveudlamone (490)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 20
+Ricou.66 posts big blind 40
+Dealt to jveudlamone [As Qs]
+*** PRE-FLOP *** 
+kerazenor folds
+jveudlamone calls 20
+Ricou.66 checks
+*** FLOP *** [7h Jc Kh]
+jveudlamone checks
+Ricou.66 checks
+*** TURN *** [7h Jc Kh][4s]
+jveudlamone checks
+Ricou.66 checks
+*** RIVER *** [7h Jc Kh 4s][3h]
+jveudlamone checks
+Ricou.66 bets 40
+jveudlamone calls 40
+*** SHOW DOWN ***
+Ricou.66 shows [2h Ts] (High card : King)
+jveudlamone shows [As Qs] (High card : Ace)
+jveudlamone collected 160 from pot
+*** SUMMARY ***
+Total pot 160 | No rake
+Board: [7h Jc Kh 4s 3h]
+Seat 1: Ricou.66 (big blind) showed [2h Ts] and lost with High card : King
+Seat 6: jveudlamone (small blind) showed [As Qs] and won 160 with High card : Ace
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 4 - HandId: #2991658018329853953-9-1694274931 - Holdem no limit (30/60) - 2023/09/09 15:55:31 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #6 is the button
+Seat 1: Ricou.66 (1935)
+Seat 4: kerazenor (495)
+Seat 6: jveudlamone (570)
+*** ANTE/BLINDS ***
+Ricou.66 posts small blind 30
+kerazenor posts big blind 60
+Dealt to jveudlamone [Qh 4h]
+*** PRE-FLOP *** 
+jveudlamone raises 510 to 570 and is all-in
+Ricou.66 folds
+kerazenor folds
+jveudlamone collected 660 from pot
+*** SUMMARY ***
+Total pot 660 | No rake
+Seat 6: jveudlamone (button) won 660
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 4 - HandId: #2991658018329853953-10-1694274944 - Holdem no limit (30/60) - 2023/09/09 15:55:44 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #1 is the button
+Seat 1: Ricou.66 (1905)
+Seat 4: kerazenor (435)
+Seat 6: jveudlamone (660)
+*** ANTE/BLINDS ***
+kerazenor posts small blind 30
+jveudlamone posts big blind 60
+Dealt to jveudlamone [Qd 2s]
+*** PRE-FLOP *** 
+Ricou.66 folds
+kerazenor raises 375 to 435 and is all-in
+jveudlamone calls 375
+*** FLOP *** [6s As 5d]
+*** TURN *** [6s As 5d][7c]
+*** RIVER *** [6s As 5d 7c][9d]
+*** SHOW DOWN ***
+jveudlamone shows [Qd 2s] (High card : Ace)
+kerazenor shows [Qh Th] (High card : Ace)
+kerazenor collected 870 from pot
+*** SUMMARY ***
+Total pot 870 | No rake
+Board: [6s As 5d 7c 9d]
+Seat 4: kerazenor (small blind) showed [Qh Th] and won 870 with High card : Ace
+Seat 6: jveudlamone (big blind) showed [Qd 2s] and lost with High card : Ace
+
+
+Winamax Poker - Tournament "Starting Block WiPT - Déglingos" buyIn: 0€ + 0€ level: 4 - HandId: #2991658018329853953-11-1694274959 - Holdem no limit (30/60) - 2023/09/09 15:55:59 UTC
+Table: 'Starting Block WiPT - Déglingos(696549662)#0' 6-max (real money) Seat #4 is the button
+Seat 1: Ricou.66 (1905)
+Seat 4: kerazenor (870)
+Seat 6: jveudlamone (225)
+*** ANTE/BLINDS ***
+jveudlamone posts small blind 30
+Ricou.66 posts big blind 60
+Dealt to jveudlamone [Ac 9h]
+*** PRE-FLOP *** 
+kerazenor folds
+jveudlamone raises 165 to 225 and is all-in
+Ricou.66 calls 165
+*** FLOP *** [Jh 6h 5d]
+*** TURN *** [Jh 6h 5d][Qd]
+*** RIVER *** [Jh 6h 5d Qd][8d]
+*** SHOW DOWN ***
+jveudlamone shows [Ac 9h] (High card : Ace)
+Ricou.66 shows [5s 7c] (One pair : 5)
+Ricou.66 collected 450 from pot
+*** SUMMARY ***
+Total pot 450 | No rake
+Board: [Jh 6h 5d Qd 8d]
+Seat 1: Ricou.66 (big blind) showed [5s 7c] and won 450 with One pair : 5
+Seat 6: jveudlamone (small blind) showed [Ac 9h] and lost with High card : Ace
+
+

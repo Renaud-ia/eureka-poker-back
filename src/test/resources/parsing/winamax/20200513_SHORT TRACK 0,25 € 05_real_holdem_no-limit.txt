@@ -1,0 +1,244 @@
+Winamax Poker - CashGame - HandId: #14385813-3291-1589397895 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:24:55 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #2 is the button
+Seat 1: El Catchoumb (0.25€)
+Seat 2: wxxx (0.48€)
+Seat 3: CRDBXN (0€)
+Seat 4: bolchevik33 (0.25€)
+*** ANTE/BLINDS ***
+bolchevik33 posts big blind 0.05€
+El Catchoumb posts big blind 0.05€ out of position
+Dealt to bolchevik33 [Qc Kc]
+*** PRE-FLOP *** 
+El Catchoumb raises 0.05€ to 0.10€
+wxxx folds
+bolchevik33 raises 0.15€ to 0.25€ and is all-in
+El Catchoumb calls 0.15€ and is all-in
+*** FLOP *** [4d 5c 5d]
+*** TURN *** [4d 5c 5d][Th]
+*** RIVER *** [4d 5c 5d Th][6s]
+*** SHOW DOWN ***
+bolchevik33 shows [Qc Kc] (One pair : 5)
+El Catchoumb shows [Ad Jc] (One pair : 5)
+El Catchoumb collected 0.47€ from pot
+*** SUMMARY ***
+Total pot 0.47€ | Rake 0.03€
+Board: [4d 5c 5d Th 6s]
+Seat 1: El Catchoumb showed [Ad Jc] and won 0.47€ with One pair : 5
+Seat 4: bolchevik33 (big blind) showed [Qc Kc] and lost with One pair : 5
+
+
+Winamax Poker - CashGame - HandId: #14385813-3292-1589397925 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:25:25 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #3 is the button
+Seat 1: El Catchoumb (0.47€)
+Seat 2: wxxx (0.48€)
+Seat 3: CRDBXN (0€)
+Seat 4: bolchevik33 (0.25€)
+Seat 5: Babasatks (0.25€)
+*** ANTE/BLINDS ***
+bolchevik33 posts small blind 0.02€
+Babasatks posts big blind 0.05€
+Dealt to bolchevik33 [5c 5s]
+*** PRE-FLOP *** 
+El Catchoumb folds
+wxxx folds
+bolchevik33 raises 0.05€ to 0.10€
+Babasatks folds
+bolchevik33 collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | No rake
+Seat 4: bolchevik33 (small blind) won 0.15€
+
+
+Winamax Poker - CashGame - HandId: #14385813-3293-1589397952 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:25:52 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #4 is the button
+Seat 2: wxxx (0.48€)
+Seat 3: CRDBXN (0€)
+Seat 4: bolchevik33 (0.30€)
+Seat 5: Babasatks (0.20€)
+*** ANTE/BLINDS ***
+Babasatks posts small blind 0.02€
+wxxx posts big blind 0.05€
+Dealt to bolchevik33 [5c 2c]
+*** PRE-FLOP *** 
+bolchevik33 folds
+Babasatks raises 0.15€ to 0.20€ and is all-in
+wxxx calls 0.15€
+*** FLOP *** [Kc Td Ks]
+*** TURN *** [Kc Td Ks][2s]
+*** RIVER *** [Kc Td Ks 2s][Qs]
+*** SHOW DOWN ***
+Babasatks shows [7d Ac] (One pair : Kings)
+wxxx shows [4c 4s] (Two pairs : Kings and 4)
+wxxx collected 0.38€ from pot
+*** SUMMARY ***
+Total pot 0.38€ | Rake 0.02€
+Board: [Kc Td Ks 2s Qs]
+Seat 2: wxxx (big blind) showed [4c 4s] and won 0.38€ with Two pairs : Kings and 4
+Seat 5: Babasatks (small blind) showed [7d Ac] and lost with One pair : Kings
+
+
+Winamax Poker - CashGame - HandId: #14385813-3294-1589397969 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:26:09 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #2 is the button
+Seat 2: wxxx (0.66€)
+Seat 3: CRDBXN (0€)
+Seat 4: bolchevik33 (0.30€)
+Seat 5: Babasatks (0€)
+*** ANTE/BLINDS ***
+wxxx posts small blind 0.02€
+bolchevik33 posts big blind 0.05€
+Dealt to bolchevik33 [Td 2c]
+*** PRE-FLOP *** 
+wxxx calls 0.03€
+bolchevik33 checks
+*** FLOP *** [5s Qh 6c]
+bolchevik33 bets 0.05€
+wxxx calls 0.05€
+*** TURN *** [5s Qh 6c][9d]
+bolchevik33 bets 0.05€
+wxxx calls 0.05€
+*** RIVER *** [5s Qh 6c 9d][2d]
+bolchevik33 bets 0.05€
+wxxx raises 0.40€ to 0.45€
+bolchevik33 folds
+wxxx collected 0.78€ from pot
+*** SUMMARY ***
+Total pot 0.78€ | Rake 0.02€
+Board: [5s Qh 6c 9d 2d]
+Seat 2: wxxx (small blind) (button) won 0.78€
+
+
+Winamax Poker - CashGame - HandId: #14385813-3295-1589397989 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:26:29 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #2 is the button
+Seat 1: Moso1991 (0.25€)
+Seat 2: wxxx (0.84€)
+Seat 3: CRDBXN (0€)
+Seat 4: bolchevik33 (0.10€)
+Seat 5: potto2 (0€)
+*** ANTE/BLINDS ***
+bolchevik33 posts small blind 0.02€
+Moso1991 posts big blind 0.05€
+Dealt to bolchevik33 [Jc 4c]
+*** PRE-FLOP *** 
+wxxx folds
+bolchevik33 raises 0.05€ to 0.10€ and is all-in
+Moso1991 raises 0.15€ to 0.25€ and is all-in
+*** FLOP *** [6d As 3c]
+*** TURN *** [6d As 3c][Ad]
+*** RIVER *** [6d As 3c Ad][4h]
+*** SHOW DOWN ***
+Moso1991 shows [8d Kh] (One pair : Aces)
+bolchevik33 shows [Jc 4c] (Two pairs : Aces and 4)
+bolchevik33 collected 0.19€ from main pot
+Moso1991 collected 0.15€ from side pot 1
+*** SUMMARY ***
+Total pot 0.34€ | Rake 0.01€
+Board: [6d As 3c Ad 4h]
+Seat 1: Moso1991 (big blind) showed [8d Kh] and won 0.15€ with One pair : Aces
+Seat 4: bolchevik33 (small blind) showed [Jc 4c] and won 0.19€ with Two pairs : Aces and 4
+
+
+Winamax Poker - CashGame - HandId: #14385813-3296-1589398007 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:26:47 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #4 is the button
+Seat 1: Moso1991 (0.15€)
+Seat 2: wxxx (0.84€)
+Seat 3: CRDBXN (0€)
+Seat 4: bolchevik33 (0.19€)
+*** ANTE/BLINDS ***
+Moso1991 posts small blind 0.02€
+wxxx posts big blind 0.05€
+Dealt to bolchevik33 [6s 7c]
+*** PRE-FLOP *** 
+bolchevik33 raises 0.05€ to 0.10€
+Moso1991 folds
+wxxx calls 0.05€
+*** FLOP *** [Qd 3d 3h]
+wxxx checks
+bolchevik33 bets 0.09€ and is all-in
+wxxx folds
+bolchevik33 collected 0.30€ from pot
+*** SUMMARY ***
+Total pot 0.30€ | Rake 0.01€
+Board: [Qd 3d 3h]
+Seat 4: bolchevik33 (button) won 0.30€
+
+
+Winamax Poker - CashGame - HandId: #14385813-3297-1589398026 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:27:06 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #2 is the button
+Seat 2: wxxx (0.74€)
+Seat 4: bolchevik33 (0.30€)
+Seat 5: Jokoda (0€)
+*** ANTE/BLINDS ***
+wxxx posts small blind 0.02€
+bolchevik33 posts big blind 0.05€
+Dealt to bolchevik33 [2s Jc]
+*** PRE-FLOP *** 
+wxxx raises 0.10€ to 0.15€
+bolchevik33 folds
+wxxx collected 0.20€ from pot
+*** SUMMARY ***
+Total pot 0.20€ | No rake
+Seat 2: wxxx (small blind) (button) won 0.20€
+
+
+Winamax Poker - CashGame - HandId: #14385813-3298-1589398035 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:27:15 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #2 is the button
+Seat 2: wxxx (0.79€)
+Seat 4: bolchevik33 (0.25€)
+Seat 5: Jokoda (0.25€)
+*** ANTE/BLINDS ***
+bolchevik33 posts small blind 0.02€
+Jokoda posts big blind 0.05€
+Dealt to bolchevik33 [6d 9c]
+*** PRE-FLOP *** 
+wxxx calls 0.05€
+bolchevik33 folds
+Jokoda checks
+*** FLOP *** [Jc Qc 5h]
+Jokoda bets 0.20€ and is all-in
+wxxx folds
+Jokoda collected 0.31€ from pot
+*** SUMMARY ***
+Total pot 0.31€ | Rake 0.01€
+Board: [Jc Qc 5h]
+Seat 5: Jokoda (big blind) won 0.31€
+
+
+Winamax Poker - CashGame - HandId: #14385813-3299-1589398054 - Holdem no limit (0.02€/0.05€) - 2020/05/13 19:27:34 UTC
+Table: 'SHORT TRACK 0,25 € 05' 5-max (real money) Seat #4 is the button
+Seat 1: Lola1408 (0.25€)
+Seat 2: wxxx (0.74€)
+Seat 3: victor1212 (0.25€)
+Seat 4: bolchevik33 (0.23€)
+Seat 5: Jokoda (0.31€)
+*** ANTE/BLINDS ***
+Jokoda posts small blind 0.02€
+Lola1408 posts big blind 0.05€
+victor1212 posts big blind 0.05€ out of position
+Dealt to bolchevik33 [8s As]
+*** PRE-FLOP *** 
+wxxx raises 0.05€ to 0.10€
+victor1212 calls 0.05€
+bolchevik33 raises 0.13€ to 0.23€ and is all-in
+Jokoda raises 0.08€ to 0.31€ and is all-in
+Lola1408 folds
+wxxx calls 0.21€
+victor1212 calls 0.15€ and is all-in
+*** FLOP *** [4s 6c Ah]
+*** TURN *** [4s 6c Ah][7d]
+*** RIVER *** [4s 6c Ah 7d][Ts]
+*** SHOW DOWN ***
+wxxx shows [Kh Qc] (High card : Ace)
+bolchevik33 shows [8s As] (One pair : Aces)
+victor1212 shows [8d 5d] (Straight 8 high)
+Jokoda shows [Ac 9s] (One pair : Aces)
+Jokoda collected 0.11€ from side pot 1
+victor1212 collected 0.97€ from main pot
+*** SUMMARY ***
+Total pot 1.08€ | Rake 0.07€
+Board: [4s 6c Ah 7d Ts]
+Seat 2: wxxx showed [Kh Qc] and lost with High card : Ace
+Seat 3: victor1212 showed [8d 5d] and won 0.97€ with Straight 8 high
+Seat 4: bolchevik33 (button) showed [8s As] and lost with One pair : Aces
+Seat 5: Jokoda (small blind) showed [Ac 9s] and won 0.11€ with One pair : Aces
+
+

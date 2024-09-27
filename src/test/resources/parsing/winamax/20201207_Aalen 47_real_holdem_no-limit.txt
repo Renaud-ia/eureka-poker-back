@@ -1,0 +1,211 @@
+Winamax Poker - CashGame - HandId: #15328331-656-1607360250 - Holdem no limit (0.01€/0.02€) - 2020/12/07 16:57:30 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #3 is the button
+Seat 1: Sh0uteey (2€)
+Seat 2: Saiken 2.0 (2.31€)
+Seat 3: Joker0006 (3.76€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.61€)
+*** ANTE/BLINDS ***
+MINUIT1313 posts small blind 0.01€
+Sh0uteey posts big blind 0.02€
+*** PRE-FLOP *** 
+Saiken 2.0 folds
+Joker0006 calls 0.02€
+MINUIT1313 calls 0.01€
+Sh0uteey checks
+*** FLOP *** [4s Jc 3c]
+MINUIT1313 checks
+Sh0uteey checks
+Joker0006 checks
+*** TURN *** [4s Jc 3c][5d]
+MINUIT1313 bets 0.06€
+Sh0uteey folds
+Joker0006 calls 0.06€
+*** RIVER *** [4s Jc 3c 5d][Qh]
+MINUIT1313 checks
+Joker0006 bets 0.24€
+MINUIT1313 folds
+Joker0006 collected 0.41€ from pot
+*** SUMMARY ***
+Total pot 0.41€ | Rake 0.01€
+Board: [4s Jc 3c 5d Qh]
+Seat 3: Joker0006 (button) won 0.41€
+
+
+Winamax Poker - CashGame - HandId: #15328331-657-1607360302 - Holdem no limit (0.01€/0.02€) - 2020/12/07 16:58:22 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #5 is the button
+Seat 1: Sh0uteey (2€)
+Seat 2: Saiken 2.0 (2.31€)
+Seat 3: Joker0006 (3.85€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.53€)
+*** ANTE/BLINDS ***
+Sh0uteey posts small blind 0.01€
+Saiken 2.0 posts big blind 0.02€
+RendsL4rgent posts big blind 0.02€ out of position
+Dealt to RendsL4rgent [8h 2s]
+*** PRE-FLOP *** 
+Joker0006 calls 0.02€
+RendsL4rgent checks
+MINUIT1313 raises 0.09€ to 0.11€
+Sh0uteey folds
+Saiken 2.0 calls 0.09€
+Joker0006 folds
+RendsL4rgent folds
+*** FLOP *** [7d 4c 6s]
+Saiken 2.0 bets 0.14€
+MINUIT1313 raises 0.55€ to 0.69€
+Saiken 2.0 folds
+MINUIT1313 collected 1.07€ from pot
+*** SUMMARY ***
+Total pot 1.07€ | Rake 0.03€
+Board: [7d 4c 6s]
+Seat 5: MINUIT1313 (button) won 1.07€
+
+
+Winamax Poker - CashGame - HandId: #15328331-658-1607360351 - Holdem no limit (0.01€/0.02€) - 2020/12/07 16:59:11 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #1 is the button
+Seat 1: Sh0uteey (2€)
+Seat 2: Saiken 2.0 (2.06€)
+Seat 3: Joker0006 (3.83€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.80€)
+*** ANTE/BLINDS ***
+Saiken 2.0 posts small blind 0.01€
+Joker0006 posts big blind 0.02€
+Dealt to RendsL4rgent [7d 6h]
+*** PRE-FLOP *** 
+RendsL4rgent folds
+MINUIT1313 calls 0.02€
+Sh0uteey folds
+Saiken 2.0 calls 0.01€
+Joker0006 checks
+*** FLOP *** [Qh 2h 9h]
+Saiken 2.0 bets 0.05€
+Joker0006 folds
+MINUIT1313 folds
+Saiken 2.0 collected 0.11€ from pot
+*** SUMMARY ***
+Total pot 0.11€ | No rake
+Board: [Qh 2h 9h]
+Seat 2: Saiken 2.0 (small blind) won 0.11€
+
+
+Winamax Poker - CashGame - HandId: #15328331-659-1607360373 - Holdem no limit (0.01€/0.02€) - 2020/12/07 16:59:33 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #2 is the button
+Seat 1: Sh0uteey (2€)
+Seat 2: Saiken 2.0 (2.10€)
+Seat 3: Joker0006 (3.81€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.78€)
+*** ANTE/BLINDS ***
+Joker0006 posts small blind 0.01€
+RendsL4rgent posts big blind 0.02€
+Dealt to RendsL4rgent [6h 2d]
+*** PRE-FLOP *** 
+MINUIT1313 calls 0.02€
+Sh0uteey folds
+Saiken 2.0 folds
+Joker0006 folds
+RendsL4rgent checks
+*** FLOP *** [Kh 5c 5h]
+RendsL4rgent checks
+MINUIT1313 checks
+*** TURN *** [Kh 5c 5h][Tc]
+RendsL4rgent bets 0.04€
+MINUIT1313 calls 0.04€
+*** RIVER *** [Kh 5c 5h Tc][8s]
+RendsL4rgent checks
+MINUIT1313 bets 0.13€
+RendsL4rgent folds
+MINUIT1313 collected 0.25€ from pot
+*** SUMMARY ***
+Total pot 0.25€ | Rake 0.01€
+Board: [Kh 5c 5h Tc 8s]
+Seat 5: MINUIT1313 won 0.25€
+
+
+Winamax Poker - CashGame - HandId: #15328331-660-1607360401 - Holdem no limit (0.01€/0.02€) - 2020/12/07 17:00:01 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #3 is the button
+Seat 1: Sh0uteey (2€)
+Seat 2: Saiken 2.0 (2.10€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.84€)
+*** ANTE/BLINDS ***
+RendsL4rgent posts small blind 0.01€
+MINUIT1313 posts big blind 0.02€
+Dealt to RendsL4rgent [2c Jh]
+*** PRE-FLOP *** 
+Sh0uteey folds
+Saiken 2.0 folds
+RendsL4rgent folds
+MINUIT1313 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 5: MINUIT1313 (big blind) won 0.03€
+
+
+Winamax Poker - CashGame - HandId: #15328331-661-1607360413 - Holdem no limit (0.01€/0.02€) - 2020/12/07 17:00:13 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #4 is the button
+Seat 1: Sh0uteey (2€)
+Seat 2: Saiken 2.0 (2.10€)
+Seat 3: madrugada38 (0€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.85€)
+*** ANTE/BLINDS ***
+MINUIT1313 posts small blind 0.01€
+Sh0uteey posts big blind 0.02€
+Dealt to RendsL4rgent [4d Ks]
+*** PRE-FLOP *** 
+Saiken 2.0 folds
+RendsL4rgent folds
+MINUIT1313 calls 0.01€
+Sh0uteey checks
+*** FLOP *** [8s 5d Jc]
+MINUIT1313 checks
+Sh0uteey bets 0.03€
+MINUIT1313 folds
+Sh0uteey collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Board: [8s 5d Jc]
+Seat 1: Sh0uteey (big blind) won 0.07€
+
+
+Winamax Poker - CashGame - HandId: #15328331-662-1607360448 - Holdem no limit (0.01€/0.02€) - 2020/12/07 17:00:48 UTC
+Table: 'Aalen 47' 5-max (real money) Seat #5 is the button
+Seat 1: Sh0uteey (2.02€)
+Seat 2: Saiken 2.0 (2.10€)
+Seat 3: madrugada38 (2€)
+Seat 4: RendsL4rgent (2€)
+Seat 5: MINUIT1313 (1.83€)
+*** ANTE/BLINDS ***
+Sh0uteey posts small blind 0.01€
+Saiken 2.0 posts big blind 0.02€
+Dealt to RendsL4rgent [Qh Qc]
+*** PRE-FLOP *** 
+RendsL4rgent raises 0.04€ to 0.06€
+MINUIT1313 calls 0.06€
+Sh0uteey folds
+Saiken 2.0 folds
+*** FLOP *** [3s Ah 6h]
+RendsL4rgent checks
+MINUIT1313 checks
+*** TURN *** [3s Ah 6h][Kh]
+RendsL4rgent checks
+MINUIT1313 bets 0.15€
+RendsL4rgent calls 0.15€
+*** RIVER *** [3s Ah 6h Kh][9s]
+RendsL4rgent checks
+MINUIT1313 checks
+*** SHOW DOWN ***
+RendsL4rgent shows [Qh Qc] (One pair : Queens)
+MINUIT1313 shows [As 5d] (One pair : Aces)
+MINUIT1313 collected 0.42€ from pot
+*** SUMMARY ***
+Total pot 0.42€ | Rake 0.03€
+Board: [3s Ah 6h Kh 9s]
+Seat 4: RendsL4rgent showed [Qh Qc] and lost with One pair : Queens
+Seat 5: MINUIT1313 (button) showed [As 5d] and won 0.42€ with One pair : Aces
+
+
