@@ -5,7 +5,7 @@ stages:
 
 variables:
   DOCKER_DRIVER: overlay2
-  IMAGE_NAME: parties
+  IMAGE_NAME: registry.gitlab.com/eureka-poker-web/service-parties
   IMAGE_TAG: $CI_COMMIT_SHA
 
 sast:
@@ -20,6 +20,7 @@ build:
   services:
     - docker:dind
   before_script:
+    - echo
     - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
     - docker info
   script:
