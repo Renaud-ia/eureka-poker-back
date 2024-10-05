@@ -16,23 +16,20 @@ include:
 
 build:
   stage: build
-  image: $CI_REGISTRY/group/project/docker:20.10.16
+  image: docker
   services:
-    - name: $CI_REGISTRY/group/project/docker:20.10.16-dind
-      alias: docker
-  before_script:
-    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+    - docker:dind
   script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
     - docker build -t $IMAGE_NAME:$IMAGE_TAG ./
   only:
     - main
 
 push:
   stage: push
-  image: $CI_REGISTRY/group/project/docker:20.10.16
+  image: docker
   services:
-    - name: $CI_REGISTRY/group/project/docker:20.10.16-dind
-      alias: docker
+    - docker:dind
   before_script:
     - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
   script:
