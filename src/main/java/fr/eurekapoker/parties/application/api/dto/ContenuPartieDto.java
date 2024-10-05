@@ -9,15 +9,18 @@ public class ContenuPartieDto {
     private final String nomRoom;
     private final int nombreSieges;
     private final int nombreMains;
+    private final String nomHero;
     private final List<ContenuMainDto> mainsExtraites;
     public ContenuPartieDto(String idUniquePartie,
                             String nomPartie,
                             String nomRoom,
+                            String nomHero,
                             int nombreSieges,
                             int nombreMains) {
         this.idUniquePartie = idUniquePartie;
         this.nomPartie = nomPartie;
         this.nomRoom = nomRoom;
+        this.nomHero = nomHero;
         this.nombreSieges = nombreSieges;
         this.nombreMains = nombreMains;
         this.mainsExtraites = new ArrayList<>();
@@ -41,6 +44,10 @@ public class ContenuPartieDto {
 
     public int getNombreMains() {
         return nombreMains;
+    }
+
+    public String getNomHero() {
+        return nomHero;
     }
 
     public void ajouterMain(ContenuMainDto contenuMainDto) {

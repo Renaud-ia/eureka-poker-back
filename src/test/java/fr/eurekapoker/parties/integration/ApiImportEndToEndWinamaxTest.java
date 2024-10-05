@@ -76,6 +76,8 @@ public class ApiImportEndToEndWinamaxTest {
 
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
 
+        System.out.println(jsonConsultation);
+
         assertEquals("Cash-Game 5-max 0.25€ (Short Track)", jsonConsultation.get("nomPartie"));
         assertEquals(5, jsonConsultation.get("nombreSieges"));
         assertEquals(9, jsonConsultation.get("nombreMains"));
