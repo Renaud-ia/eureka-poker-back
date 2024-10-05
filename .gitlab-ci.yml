@@ -1,3 +1,12 @@
+default:
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - echo
+    - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
+    - docker info
+
 stages:
   - test
   - build
@@ -13,16 +22,8 @@ sast:
 include:
   - template: Security/SAST.gitlab-ci.yml
 
-
 build:
   stage: build
-  image: docker:latest
-  services:
-    - docker:dind
-  before_script:
-    - echo
-    - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
-    - docker info
   script:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
 
@@ -31,12 +32,6 @@ build:
 
 push:
   stage: push
-  image: docker:latest
-  services:
-    - docker:dind
-  before_script:
-    - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
-    - docker info
   script:
     - docker push $IMAGE_NAME:$IMAGE_TAG
   only:
