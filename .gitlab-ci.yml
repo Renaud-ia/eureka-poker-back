@@ -5,34 +5,37 @@ stages:
 
 variables:
   DOCKER_DRIVER: overlay2
-  IMAGE_NAME: registry.gitlab.com/username/frontend-repo  # Remplacez par votre nom de projet
-  IMAGE_TAG: $CI_COMMIT_SHA  # Utiliser le SHA du commit comme tag d'image
-
-before_script:
-  - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+  IMAGE_NAME: parties
+  IMAGE_TAG: $CI_COMMIT_TAG || $CI_COMMIT_SHA
 
 sast:
   stage: test
-  image: registry.gitlab.com/security-products/semgrep:5  # Gardez l'image pour SAST
+  image: registry.gitlab.com/security-products/semgrep:5
   script:
     - semgrep --config .semgrep.yml ./
 
 build:
   stage: build
-  image: docker:latest  # Image Docker qui inclut Docker
+  image: $CI_REGISTRY/group/project/docker:20.10.16
   services:
-    - docker:dind  # Utiliser Docker in Docker
+    - name: $CI_REGISTRY/group/project/docker:20.10.16-dind
+      alias: docker
+  before_script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
   script:
-    - docker build -t $IMAGE_NAME:$IMAGE_TAG ./  # Construire l'image Docker
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG ./
   only:
     - main
 
 push:
   stage: push
-  image: docker:latest  # Image Docker qui inclut Docker
+  image: $CI_REGISTRY/group/project/docker:20.10.16
   services:
-    - docker:dind  # Utiliser Docker in Docker
+    - name: $CI_REGISTRY/group/project/docker:20.10.16-dind
+      alias: docker
+  before_script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
   script:
-    - docker push $IMAGE_NAME:$IMAGE_TAG  # Pousser l'image vers le registre
+    - docker push $IMAGE_NAME:$IMAGE_TAG
   only:
     - main
