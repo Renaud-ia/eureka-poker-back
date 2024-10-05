@@ -23,7 +23,7 @@ build:
     - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
     - docker info
   script:
-    - docker build -t $IMAGE_NAME:$IMAGE_TAG
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
 
   only:
     - main
