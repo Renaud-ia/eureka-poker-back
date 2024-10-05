@@ -1,40 +1,38 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/pipeline/#customization
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
 stages:
-- test
-- build
-- push
+  - test
+  - build
+  - push
 
 variables:
   DOCKER_DRIVER: overlay2
-  IMAGE_NAME: registry.gitlab.com/username/frontend-repo
-  IMAGE_TAG: $CI_COMMIT_TAG || $CI_COMMIT_SHA
+  IMAGE_NAME: registry.gitlab.com/username/frontend-repo  # Remplacez par votre nom de projet
+  IMAGE_TAG: $CI_COMMIT_SHA  # Utiliser le SHA du commit comme tag d'image
 
 before_script:
   - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
 
 sast:
   stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml
+  image: registry.gitlab.com/security-products/semgrep:5  # Gardez l'image pour SAST
+  script:
+    - # Ajoutez votre commande SAST ici
 
 build:
   stage: build
+  image: docker:latest  # Image Docker qui inclut Docker
   services:
-    - docker:dind
+    - docker:dind  # Utiliser Docker in Docker
   script:
-    - docker build -t $IMAGE_NAME:$IMAGE_TAG ./
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG ./  # Construire l'image Docker
   only:
     - main
 
 push:
   stage: push
+  image: docker:latest  # Image Docker qui inclut Docker
+  services:
+    - docker:dind  # Utiliser Docker in Docker
   script:
-    - docker push $IMAGE_NAME:$IMAGE_TAG
+    - docker push $IMAGE_NAME:$IMAGE_TAG  # Pousser l'image vers le registre
   only:
     - main
