@@ -15,7 +15,7 @@ sast:
   stage: test
   image: registry.gitlab.com/security-products/semgrep:5  # Gardez l'image pour SAST
   script:
-    - # Ajoutez votre commande SAST ici
+    - semgrep --config .semgrep.yml ./
 
 build:
   stage: build
