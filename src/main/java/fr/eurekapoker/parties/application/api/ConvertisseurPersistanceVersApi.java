@@ -13,34 +13,37 @@ import java.util.Objects;
 public class ConvertisseurPersistanceVersApi {
     private final PartiePersistanceDto partiePersistanceDto;
     private int numeroVillain;
+    private final String nomHero;
+    private final boolean joueursAnonymes;
     public ConvertisseurPersistanceVersApi(PartiePersistanceDto partiePersistanceDto) {
         this.partiePersistanceDto = partiePersistanceDto;
         this.numeroVillain = 1;
+        this.nomHero = partiePersistanceDto.obtNomHero();
+        this.joueursAnonymes = partiePersistanceDto.obtJoueursAnonymes();
     }
 
     public ContenuPartieDto obtContenuPartieDto() {
+        String nomHero = this.joueursAnonymes ? "Hero" : partiePersistanceDto.obtNomHero();
         ContenuPartieDto contenuPartieDto = new ContenuPartieDto(
                 partiePersistanceDto.obtIdUnique(),
                 GenerateurNomPartie.genererNomPartie(partiePersistanceDto),
                 partiePersistanceDto.obtNomRoom(),
-                partiePersistanceDto.obtNomHero(),
+                nomHero,
                 partiePersistanceDto.obtNombreSieges(),
                 partiePersistanceDto.obtNombreMains()
         );
 
         for (MainPersistenceDto mainPersistenceDto : partiePersistanceDto.obtMains()) {
             contenuPartieDto.ajouterMain(convertirMainDtoVersApi(
-                    mainPersistenceDto,
-                    partiePersistanceDto.obtNomHero(),
-                    partiePersistanceDto.obtJoueursAnonymes())
-            );
+                    mainPersistenceDto
+            ));
         }
 
         return contenuPartieDto;
     }
 
-    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto, String nomHero, boolean joueursAnonymes) {
-        List<JoueurDto> joueurs = extraireJoueursDepuisMain(mainPersistenceDto, nomHero, joueursAnonymes);
+    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto) {
+        List<JoueurDto> joueurs = extraireJoueursDepuisMain(mainPersistenceDto);
         List<ContenuTourDto> tours = extraireToursDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> antes = extraireAnteDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> blindes = extraireBlindesDepuisMain(mainPersistenceDto);
@@ -57,9 +60,7 @@ public class ConvertisseurPersistanceVersApi {
         return contenuMainDto;
     }
 
-    private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto,
-                                                      String nomHero,
-                                                      boolean joueursAnonymes) {
+    private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto) {
         List<JoueurDto> joueursExtraits = new ArrayList<>();
 
         for (JoueurPersistenceDto joueurPersistenceDto: mainPersistenceDto.obtJoueursPresents()) {
