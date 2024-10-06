@@ -7,11 +7,6 @@ default:
     - echo "$CI_REGISTRY_PASSWORD" | docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password-stdin
     - docker info
 
-    - echo "Settings config for kubectlk"
-    - kubectl config get-contexts
-    - kubectl config use-context eureka-poker-web/postgre-dabatase:prod-agent
-    - kubectl get pods
-
 stages:
   - build
   - deploy
@@ -35,6 +30,13 @@ deploy:
   image:
     name: bitnami/kubectl:latest
     entrypoint: ['']
+
+  before_script:
+    - echo "Settings config for kubectl"
+    - kubectl config get-contexts
+    - kubectl config use-context eureka-poker-web/postgre-dabatase:prod-agent
+    - kubectl get pods
+
   script:
     - echo "Settings config for kubectl"
     - kubectl config get-contexts
