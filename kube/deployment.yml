@@ -15,30 +15,27 @@ spec:
         app: parties
     spec:
       containers:
-        - name: {{IMAGE_NAME}}
-          image: {{IMAGE_NAME}}:{{IMAGE_TAG}}
+        - name: {{IMAGE_NAME}}  # Vérifiez que cette valeur est bien définie lors du déploiement
+          image: {{IMAGE_NAME}}:{{IMAGE_TAG}}  # Vérifiez que cette valeur est bien définie lors du déploiement
           ports:
             - containerPort: 8080
-
-      env:
-        - name: POSTGRES_DB
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_DB
-        - name: DB_USERNAME
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_USER
-        - name: POSTGRES_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: postgres-secret
-              key: POSTGRES_PASSWORD
-
-        - name: DB_URL
-          value: "jdbc:postgresql://postgres-service:5432/${POSTGRES_DB}"
-
-        - name: DB_DIALECT
-          value: "org.hibernate.dialect.PostgreSQLDialect"
+          env:  # La section env doit être ici, à l'intérieur du conteneur
+            - name: POSTGRES_DB
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_DB
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+            - name: DB_URL
+              value: "jdbc:postgresql://postgres-service:5432/${POSTGRES_DB}"
+            - name: DB_DIALECT
+              value: "org.hibernate.dialect.PostgreSQLDialect"
