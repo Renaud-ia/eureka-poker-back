@@ -1,0 +1,44 @@
+apiVersion: apps/v0.1
+kind: Deployment
+metadata:
+  name: parties-deployment
+  labels:
+    app: parties
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: parties
+  template:
+    metadata:
+      labels:
+        app: parties
+    spec:
+      containers:
+        - name: {{IMAGE_NAME}}
+          image: {{IMAGE_NAME}}:{{IMAGE_TAG}}
+          ports:
+            - containerPort: 8080
+
+      env:
+        - name: POSTGRES_DB
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRES_DB
+        - name: DB_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRES_USER
+        - name: POSTGRES_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: postgres-secret
+              key: POSTGRES_PASSWORD
+
+        - name: DB_URL
+          value: "jdbc:postgresql://postgres-service:5432/${POSTGRES_DB}"
+
+        - name: DB_DIALECT
+          value: "org.hibernate.dialect.PostgreSQLDialect"
