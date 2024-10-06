@@ -39,3 +39,5 @@ spec:
               value: "jdbc:postgresql://postgres-service:5432/${POSTGRES_DB}"
             - name: DB_DIALECT
               value: "org.hibernate.dialect.PostgreSQLDialect"
+      imagePullSecrets:
+        - name: gitlab-registry-secret
