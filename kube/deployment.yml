@@ -15,11 +15,11 @@ spec:
         app: parties
     spec:
       containers:
-        - name: {{IMAGE_NAME}}  # Vérifiez que cette valeur est bien définie lors du déploiement
-          image: {{IMAGE_NAME}}:{{IMAGE_TAG}}  # Vérifiez que cette valeur est bien définie lors du déploiement
+        - name: service-parties
+          image: {{IMAGE_NAME}}:{{IMAGE_TAG}}
           ports:
             - containerPort: 8080
-          env:  # La section env doit être ici, à l'intérieur du conteneur
+          env:
             - name: POSTGRES_DB
               valueFrom:
                 secretKeyRef:
