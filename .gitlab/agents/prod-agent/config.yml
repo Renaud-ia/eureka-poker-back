@@ -1,6 +1,0 @@
-ci_access:
-  groups:
-    - id: eureka-poker-web
-  projects:
-    - id: eureka-poker-web/service-parties
-
