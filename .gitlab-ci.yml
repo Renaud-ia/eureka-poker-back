@@ -1,7 +1,3 @@
-workflow:
-  rules:
-    - if: $CI_COMMIT_TAG
-
 default:
   image: docker:latest
   services:
@@ -23,7 +19,7 @@ stages:
 variables:
   DOCKER_DRIVER: overlay2
   IMAGE_NAME: $CI_REGISTRY/eureka-poker-web/service-parties
-  IMAGE_TAG: $CI_COMMIT_TAG
+  IMAGE_TAG: $CI_COMMIT_SHA
 
 build:
   stage: build
@@ -31,7 +27,6 @@ build:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
     - docker push $IMAGE_NAME:$IMAGE_TAG
 
-  when: manual
   only:
     - main
 
@@ -53,6 +48,5 @@ deploy:
     - kubectl apply -f kube/service.yml
     - kubectl rollout status deployment/parties
 
-  when: manual
   only:
     - main
