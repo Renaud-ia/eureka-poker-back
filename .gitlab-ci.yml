@@ -31,13 +31,13 @@ deploy:
     name: bitnami/kubectl:latest
     entrypoint: ['']
 
-  before_script:
+  script:
     - echo "Settings config for kubectl"
+    - echo $KUBECONFIG
+    - cat $KUBECONFIG
     - kubectl config get-contexts
     - kubectl config use-context eureka-poker-web/postgre-dabatase:prod-agent
     - kubectl get pods
-
-  script:
     - echo "Settings config for kubectl"
     - kubectl config get-contexts
     - kubectl config use-context eureka-poker-web/service-parties:prod-agent
@@ -45,7 +45,7 @@ deploy:
 
     - echo "Applying Kubernetes manifests"
     - sed -i "s/{{IMAGE_NAME}}/$IMAGE_NAME/g" kube/deployment.yml
-    - sed -i "s/{{IMAGE_TAG}}/IMAGE_TAG/g" kube/deployment.yml
+    - sed -i "s/{{IMAGE_TAG}}/$IMAGE_TAG/g" kube/deployment.yml
     - kubectl apply -f kube/deployment.yml
     - kubectl apply -f kube/service.yml
     - kubectl rollout status deployment/parties
