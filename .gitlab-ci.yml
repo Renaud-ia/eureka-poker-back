@@ -41,7 +41,7 @@ deploy:
     - sed -i "s@{{IMAGE_TAG}}@$IMAGE_TAG@g" kube/deployment.yml
     - kubectl apply -f kube/deployment.yml
     - kubectl apply -f kube/service.yml
-    - kubectl rollout status deployment/parties
+    - kubectl rollout status deployment/service-parties
 
   only:
     - main
