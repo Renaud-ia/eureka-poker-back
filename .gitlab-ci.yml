@@ -34,9 +34,8 @@ deploy:
     - echo "Settings config for kubectl"
     - echo $KUBECONFIG
     - cat $KUBECONFIG
-    - echo "Settings config for kubectl"
     - kubectl config get-contexts
-    - kubectl config use-context eureka-poker-web/postgres-database:prod-agent
+    - kubectl config use-context eureka-poker-web/postgre-dabatase:prod-agent
     - kubectl get pods
 
     - echo "Applying Kubernetes manifests"
