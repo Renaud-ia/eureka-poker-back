@@ -31,15 +31,12 @@ deploy:
     entrypoint: ['']
 
   variables:
-    KUBE_CONTEXT: eureka-poker-web/service-parties:prod-agent
+    KUBE_CONTEXT: eureka-poker-web/postgre-dabatase:prod-agent
 
   script:
     - echo "Settings config for kubectl"
     - echo $KUBECONFIG
     - cat $KUBECONFIG
-    - kubectl config get-contexts
-    - kubectl config use-context eureka-poker-web/postgre-dabatase:prod-agent
-    - kubectl get pods
     - echo "Settings config for kubectl"
     - kubectl config get-contexts
     - kubectl config use-context eureka-poker-web/service-parties:prod-agent
