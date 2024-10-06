@@ -31,7 +31,7 @@ deploy:
     entrypoint: ['']
 
   variables:
-    KUBE_CONTEXT: eureka-poker-web/postgre-dabatase:prod-agent
+    KUBE_CONFIG: /builds/eureka-poker-web/postgre-dabatase.tmp/KUBECONFIG
 
   script:
     - echo "Settings config for kubectl"
