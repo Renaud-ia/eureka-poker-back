@@ -51,6 +51,8 @@ public class AjoutEtRecuperationPartieBddTest {
                 "Fake variante",
                 "Fake typeJeu",
                 "Fake format special",
+                false,
+                new BigDecimal(20),
                 LocalDateTime.of(2022, 12, 9, random.nextInt(24), random.nextInt(60), random.nextInt(60)),
                 "Fake nom partie",
                 new BigDecimal("2"),

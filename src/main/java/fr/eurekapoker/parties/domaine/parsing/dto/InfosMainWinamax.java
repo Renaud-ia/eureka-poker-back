@@ -14,6 +14,7 @@ public class InfosMainWinamax extends  InfosMain {
     private final long numeroTable;
     private final BigDecimal ante;
     private final BigDecimal rake;
+    private final BigDecimal montantBB;
 
     public InfosMainWinamax(
             FormatPoker.Variante variantePoker,
@@ -23,7 +24,8 @@ public class InfosMainWinamax extends  InfosMain {
             long numeroTable,
             long numeroMain,
             float ante,
-            double rake) {
+            double rake,
+            double montantBB) {
         super(numeroMain);
         this.variante = variantePoker;
         this.typeTable = typeTable;
@@ -32,6 +34,7 @@ public class InfosMainWinamax extends  InfosMain {
         this.numeroTable = numeroTable;
         this.ante = new BigDecimal(ante).setScale(2, RoundingMode.HALF_UP);
         this.rake = new BigDecimal(rake).setScale(4, RoundingMode.HALF_UP);
+        this.montantBB = new BigDecimal(montantBB).setScale(2, RoundingMode.HALF_UP);
     }
 
     public final FormatPoker.Variante obtVariante() {
@@ -60,5 +63,10 @@ public class InfosMainWinamax extends  InfosMain {
 
     public final BigDecimal obtRake() {
         return rake;
+    }
+
+    @Override
+    public BigDecimal obtMontantBb() {
+        return montantBB;
     }
 }

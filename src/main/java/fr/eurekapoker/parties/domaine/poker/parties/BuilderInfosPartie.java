@@ -18,6 +18,7 @@ public abstract class BuilderInfosPartie {
     protected BigDecimal buyIn;
     protected BigDecimal ante;
     protected BigDecimal rake;
+    protected BigDecimal montantBB;
     public abstract InfosPartiePoker build() throws ErreurLectureFichier;
 
     public abstract boolean donneesIncompletes();
@@ -51,5 +52,9 @@ public abstract class BuilderInfosPartie {
 
     public void fixNomPartie(String nomPartie) {
         this.nomPartie = nomPartie;
+    }
+
+    public void fixMontantBB(BigDecimal montantBB) {
+        this.montantBB = montantBB;
     }
 }

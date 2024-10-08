@@ -53,6 +53,8 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 infosPartiePoker.getFormatPoker(),
                 infosPartiePoker.getTypeJeu(),
                 infosPartiePoker.getFormatSpecialRoom(),
+                infosPartiePoker.getStackEnEuros(),
+                infosPartiePoker.getMontantBB(),
                 infosPartiePoker.getDate(),
                 infosPartiePoker.getNomPartie(),
                 infosPartiePoker.getBuyIn(),

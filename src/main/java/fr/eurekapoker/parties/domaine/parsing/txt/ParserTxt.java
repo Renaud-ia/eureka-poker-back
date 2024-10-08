@@ -75,6 +75,7 @@ public abstract class ParserTxt extends ParserModele {
             builderInfosPartie.fixBuyIn(infosMain.obtBuyIn());
             builderInfosPartie.fixAnte(infosMain.obtAnte());
             builderInfosPartie.fixRake(infosMain.obtRake());
+            builderInfosPartie.fixMontantBB(infosMain.obtMontantBb());
         }
     }
 

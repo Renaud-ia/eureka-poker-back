@@ -17,6 +17,8 @@ public class PartiePersistanceDto {
     private String variante;
     private String typeJeu;
     private String formatSpecialRoom;
+    private boolean stackEnEuros;
+    private BigDecimal montantBB;
     private LocalDateTime date;
     private String nomPartie;
     private BigDecimal buyIn;
@@ -35,6 +37,8 @@ public class PartiePersistanceDto {
                                 String variante,
                                 String typeJeu,
                                 String formatSpecialRoom,
+                                boolean stackEnEuros,
+                                BigDecimal montantBB,
                                 LocalDateTime date,
                                 String nomPartie,
                                 BigDecimal buyIn,
@@ -48,6 +52,8 @@ public class PartiePersistanceDto {
         this.variante = variante;
         this.typeJeu = typeJeu;
         this.formatSpecialRoom = formatSpecialRoom;
+        this.stackEnEuros = stackEnEuros;
+        this.montantBB = montantBB;
         this.date = date;
         this.nomPartie = nomPartie;
         this.nombreSieges = nombreSieges;
@@ -55,6 +61,7 @@ public class PartiePersistanceDto {
         this.buyIn = buyIn;
         this.nombreMainsFixe = true;
         this.mainPersistence = new ArrayList<>();
+        this.stackEnEuros = false;
     }
 
     // utilisé par Constructeur lors du parsing de partie
@@ -70,6 +77,8 @@ public class PartiePersistanceDto {
                                 String variante,
                                 String typeJeu,
                                 String formatSpecialRoom,
+                                boolean stackEnEuros,
+                                BigDecimal montantBB,
                                 LocalDateTime date,
                                 String nomPartie,
                                 BigDecimal buyIn,
@@ -81,6 +90,8 @@ public class PartiePersistanceDto {
         this.variante = variante;
         this.typeJeu = typeJeu;
         this.formatSpecialRoom = formatSpecialRoom;
+        this.stackEnEuros = stackEnEuros;
+        this.montantBB = montantBB;
         this.date = date;
         this.nomPartie = nomPartie;
         this.buyIn = buyIn;
@@ -163,5 +174,13 @@ public class PartiePersistanceDto {
     public void partieTerminee() {
         this.nombreMains++;
         rendreImmuablesValeurs();
+    }
+
+    public boolean obtStackEnEuros() {
+        return stackEnEuros;
+    }
+
+    public BigDecimal obtMontantBB() {
+        return montantBB;
     }
 }

@@ -40,6 +40,8 @@ public class ServiceConsultationPartie {
                 partieJpa.getVarianteJeu(),
                 partieJpa.getTypeTable(),
                 partieJpa.getFormatSpecialRoom(),
+                partieJpa.isStackEnEuros(),
+                partieJpa.getMontantBB(),
                 partieJpa.getDateJeu(),
                 partieJpa.getNomPartie(),
                 partieJpa.getBuyIn(),
@@ -84,8 +86,7 @@ public class ServiceConsultationPartie {
         mainPersistenceDto.ajouterStackDepart(nomJoueur, infosJoueurJpa.getStack());
         mainPersistenceDto.ajouterAnte(nomJoueur, infosJoueurJpa.getAntePayee());
         mainPersistenceDto.ajouterCartes(nomJoueur, infosJoueurJpa.getComboJoueurInt(), infosJoueurJpa.getComboJoueurString());
-        mainPersistenceDto.ajouterGains(nomJoueur, infosJoueurJpa.getGains()
-        );
+        mainPersistenceDto.ajouterGains(nomJoueur, infosJoueurJpa.getGains());
     }
 
     private TourPersistanceDto convertirTourJpaVersDto(TourJpa tourJpa) {

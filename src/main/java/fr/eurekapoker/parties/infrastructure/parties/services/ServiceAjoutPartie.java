@@ -39,6 +39,8 @@ public class ServiceAjoutPartie {
                 .buyIn(partiePersistanceDto.obtBuyIn())
                 .nomHero(partiePersistanceDto.obtNomHero())
                 .nombreSieges(partiePersistanceDto.obtNombreSieges())
+                .stackEnEuros(partiePersistanceDto.obtStackEnEuros())
+                .montantBB(partiePersistanceDto.obtMontantBB())
                 .nombreMains(partiePersistanceDto.obtNombreMains())
                 .dateJeu(partiePersistanceDto.obtDate())
                 .dateSauvegarde(LocalDateTime.now())
