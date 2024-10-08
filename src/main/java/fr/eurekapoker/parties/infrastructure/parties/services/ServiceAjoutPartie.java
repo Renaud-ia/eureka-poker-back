@@ -144,6 +144,7 @@ public class ServiceAjoutPartie {
                     .potBounty(actionPersistanceDto.obtPotBounty())
                     .stackEffectif(actionPersistanceDto.obtStackEffectif())
                     .allIn(actionPersistanceDto.estAllIn())
+                    .numeroAction(actionPersistanceDto.getNumeroAction())
                     .build();
 
             tourJpa.ajouterAction(actionJpa);

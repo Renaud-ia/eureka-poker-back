@@ -108,6 +108,8 @@ public class ConvertisseurPersistanceVersApi {
                 contenuTourDto.ajouterAction(convertirActionVersApi(actionPersistanceDto));
             }
 
+            contenuTourDto.getActions().sort(Comparator.comparingInt(ActionDto::getNumeroAction));
+
             toursExtraits.add(contenuTourDto);
         }
 
@@ -140,7 +142,8 @@ public class ConvertisseurPersistanceVersApi {
         ActionDto actionDto = new ActionDto(
                 getNomJoueurAnonyme(actionPersistanceDto.obtNomJoueur()),
                 actionPersistanceDto.obtNomAction(),
-                actionPersistanceDto.obtMontant()
+                actionPersistanceDto.obtMontant(),
+                actionPersistanceDto.getNumeroAction()
         );
 
         return actionDto;

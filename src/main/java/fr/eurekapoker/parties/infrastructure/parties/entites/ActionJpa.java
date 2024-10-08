@@ -25,6 +25,8 @@ public class ActionJpa {
     @JoinColumn(name = "tour_joueur_jpa_id")
     private TourJpa tourJpa;
     @Column(nullable = false)
+    private int numeroAction;
+    @Column(nullable = false)
     private String nomAction;
     @Column(nullable = false)
     private BigDecimal montantAction;

@@ -32,12 +32,14 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     private MainPersistenceDto derniereMain;
     private TourPersistanceDto dernierTour;
     private final HashMap<String, Integer> nombreActionsParJoueur;
+    private int numeroAction;
     public ConstructeurPersistenceDto(MoteurJeu moteurJeu, ParametresImport parametresImport) {
         this.moteurJeu = moteurJeu;
         this.parametresImport = parametresImport;
         this.partiePersistanceDto = new PartiePersistanceDto();
 
         this.indexMain = 0;
+        this.numeroAction = 0;
         this.nombreActionsParJoueur = new HashMap<>();
     }
 
@@ -72,6 +74,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         );
         partiePersistanceDto.ajouterMain(mainPersistenceDto);
         derniereMain = mainPersistenceDto;
+        this.numeroAction = 0;
     }
 
     @Override
@@ -139,7 +142,8 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 moteurJeu.obtPot(),
                 moteurJeu.obtPotBounty(),
                 moteurJeu.obtStackEffectif(actionPoker.getNomJoueur()),
-                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), actionPoker.obtMontantAction())
+                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), actionPoker.obtMontantAction()),
+                this.numeroAction++
         );
         if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
         this.dernierTour.ajouterAction(nouvelleAction);

@@ -110,7 +110,8 @@ public class AjoutEtRecuperationPartieBddTest {
                 new BigDecimal("3.45"),
                 new BigDecimal("10.4"),
                 new BigDecimal("888.32"),
-                false
+                false,
+                1
         );
         tourPersistanceDto.ajouterAction(actionPersistanceDto);
         mainPersistenceDto.fixNombreActionsDuJoueur(nomFauxJoueur, 1);

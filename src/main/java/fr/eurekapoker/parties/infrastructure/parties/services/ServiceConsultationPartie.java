@@ -107,7 +107,8 @@ public class ServiceConsultationPartie {
                 actionJpa.getInfosJoueurJpa().getJoueurJpa().getNomJoueur(),
                 actionJpa.getNomAction(),
                 actionJpa.getIdentifiantSituation(),
-                actionJpa.getMontantAction()
+                actionJpa.getMontantAction(),
+                actionJpa.getNumeroAction()
         );
 
         return actionPersistanceDto;
