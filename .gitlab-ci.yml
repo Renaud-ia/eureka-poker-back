@@ -1,6 +1,3 @@
-rules:
-  if: $CI_COMMIT_TAG
-
 stages:
   - build
   - deploy
@@ -11,6 +8,8 @@ variables:
   IMAGE_TAG: $CI_COMMIT_TAG
 
 build:
+  rules:
+    if: $CI_COMMIT_TAG
   image: docker:latest
   services:
     - docker:dind
@@ -28,6 +27,8 @@ build:
     - main
 
 deploy:
+  rules:
+    if: $CI_COMMIT_TAG
   stage: deploy
   image:
     name: bitnami/kubectl:latest
