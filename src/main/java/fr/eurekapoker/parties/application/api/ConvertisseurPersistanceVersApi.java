@@ -72,23 +72,37 @@ public class ConvertisseurPersistanceVersApi {
         for (JoueurPersistenceDto joueurPersistenceDto: joueursList) {
             String nomJoueur = joueurPersistenceDto.obtNomJoueur();
 
+            JoueurDto joueurDto;
+
             if (joueursAnonymes) {
-                if (Objects.equals(nomHero, nomJoueur)) nomJoueur = "Hero";
+                String nomAnonyme;
+                if (Objects.equals(nomHero, nomJoueur)) nomAnonyme = "Hero";
                 else {
                     nomsAnonymes.computeIfAbsent(nomJoueur, key -> "Villain" + numeroVillain++);
-                    nomJoueur = nomsAnonymes.get(nomJoueur);
+                    nomAnonyme = nomsAnonymes.get(nomJoueur);
                 }
-            }
 
-            JoueurDto joueurDto = new JoueurDto(
-                    nomJoueur,
-                    mainPersistenceDto.obtStack(nomJoueur),
-                    extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
-                    mainPersistenceDto.obtSiege(joueurPersistenceDto),
-                    mainPersistenceDto.obtAnte(nomJoueur),
-                    mainPersistenceDto.obtBlinde(nomJoueur),
-                    mainPersistenceDto.obtGains(nomJoueur)
-            );
+                joueurDto = new JoueurDto(
+                        nomAnonyme,
+                        mainPersistenceDto.obtStack(nomJoueur),
+                        extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
+                        mainPersistenceDto.obtSiege(joueurPersistenceDto),
+                        mainPersistenceDto.obtAnte(nomJoueur),
+                        mainPersistenceDto.obtBlinde(nomJoueur),
+                        mainPersistenceDto.obtGains(nomJoueur)
+                );
+            }
+            else {
+                joueurDto = new JoueurDto(
+                        nomJoueur,
+                        mainPersistenceDto.obtStack(nomJoueur),
+                        extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
+                        mainPersistenceDto.obtSiege(joueurPersistenceDto),
+                        mainPersistenceDto.obtAnte(nomJoueur),
+                        mainPersistenceDto.obtBlinde(nomJoueur),
+                        mainPersistenceDto.obtGains(nomJoueur)
+                );
+            }
 
             joueursExtraits.add(joueurDto);
         }
