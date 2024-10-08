@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.application.api.dto;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,19 +11,22 @@ public class ContenuPartieDto {
     private final int nombreSieges;
     private final int nombreMains;
     private final String nomHero;
+    private final boolean stackEnEuros;
     private final List<ContenuMainDto> mainsExtraites;
     public ContenuPartieDto(String idUniquePartie,
                             String nomPartie,
                             String nomRoom,
                             String nomHero,
                             int nombreSieges,
-                            int nombreMains) {
+                            int nombreMains,
+                            boolean stackEnEuros) {
         this.idUniquePartie = idUniquePartie;
         this.nomPartie = nomPartie;
         this.nomRoom = nomRoom;
         this.nomHero = nomHero;
         this.nombreSieges = nombreSieges;
         this.nombreMains = nombreMains;
+        this.stackEnEuros = stackEnEuros;
         this.mainsExtraites = new ArrayList<>();
     }
 
@@ -48,6 +52,10 @@ public class ContenuPartieDto {
 
     public String getNomHero() {
         return nomHero;
+    }
+
+    public boolean getStackEnEuros() {
+        return stackEnEuros;
     }
 
     public void ajouterMain(ContenuMainDto contenuMainDto) {

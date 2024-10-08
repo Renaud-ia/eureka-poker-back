@@ -4,10 +4,7 @@ import fr.eurekapoker.parties.application.api.dto.*;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 // todo ajouter des tests
 public class ConvertisseurPersistanceVersApi {
@@ -15,11 +12,13 @@ public class ConvertisseurPersistanceVersApi {
     private int numeroVillain;
     private final String nomHero;
     private final boolean joueursAnonymes;
+    private HashMap<String, String> nomsAnonymes;
     public ConvertisseurPersistanceVersApi(PartiePersistanceDto partiePersistanceDto) {
         this.partiePersistanceDto = partiePersistanceDto;
         this.numeroVillain = 1;
         this.nomHero = partiePersistanceDto.obtNomHero();
         this.joueursAnonymes = partiePersistanceDto.obtJoueursAnonymes();
+        this.nomsAnonymes = new HashMap<>();
     }
 
     public ContenuPartieDto obtContenuPartieDto() {
@@ -30,7 +29,8 @@ public class ConvertisseurPersistanceVersApi {
                 partiePersistanceDto.obtNomRoom(),
                 nomHero,
                 partiePersistanceDto.obtNombreSieges(),
-                partiePersistanceDto.obtNombreMains()
+                partiePersistanceDto.obtNombreMains(),
+                partiePersistanceDto.obtStackEnEuros()
         );
 
         for (MainPersistenceDto mainPersistenceDto : partiePersistanceDto.obtMains()) {
@@ -51,6 +51,7 @@ public class ConvertisseurPersistanceVersApi {
         ContenuMainDto contenuMainDto = new ContenuMainDto(
                 mainPersistenceDto.obtIdentifiantGenere(),
                 mainPersistenceDto.obtPositionDealer(),
+                mainPersistenceDto.obtMontantBB(),
                 joueurs,
                 tours,
                 blindes,
@@ -63,23 +64,32 @@ public class ConvertisseurPersistanceVersApi {
     private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto) {
         List<JoueurDto> joueursExtraits = new ArrayList<>();
 
-        for (JoueurPersistenceDto joueurPersistenceDto: mainPersistenceDto.obtJoueursPresents()) {
+        // MEME SI C'EST UN SET IL SEMBLE Y AVOIR UN ORDRE INVERSE
+        Set<JoueurPersistenceDto> joueursSet = mainPersistenceDto.obtJoueursPresents();
+        List<JoueurPersistenceDto> joueursList = new ArrayList<>(joueursSet);
+        Collections.reverse(joueursList);
+
+        for (JoueurPersistenceDto joueurPersistenceDto : joueursList) {
             String nomJoueur = joueurPersistenceDto.obtNomJoueur();
 
             if (joueursAnonymes) {
-                if (Objects.equals(nomHero, nomJoueur)) nomJoueur = "Hero";
-                else nomJoueur = "Villain" + numeroVillain++;
+                if (Objects.equals(nomHero, nomJoueur)) nomsAnonymes.putIfAbsent(nomJoueur, "Hero");
+                else {
+                    nomsAnonymes.computeIfAbsent(nomJoueur, key -> "Villain" + numeroVillain++);
+                }
             }
 
+            String nomAnonyme = getNomJoueurAnonyme(nomJoueur);
+
             JoueurDto joueurDto = new JoueurDto(
-                    nomJoueur,
+                    nomAnonyme,
                     mainPersistenceDto.obtStack(nomJoueur),
                     extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
                     mainPersistenceDto.obtSiege(joueurPersistenceDto),
                     mainPersistenceDto.obtAnte(nomJoueur),
-                    mainPersistenceDto.obtBlinde(nomJoueur)
+                    mainPersistenceDto.obtBlinde(nomJoueur),
+                    mainPersistenceDto.obtGains(nomJoueur)
             );
-
             joueursExtraits.add(joueurDto);
         }
 
@@ -98,6 +108,8 @@ public class ConvertisseurPersistanceVersApi {
                 contenuTourDto.ajouterAction(convertirActionVersApi(actionPersistanceDto));
             }
 
+            contenuTourDto.getActions().sort(Comparator.comparingInt(ActionDto::getNumeroAction));
+
             toursExtraits.add(contenuTourDto);
         }
 
@@ -109,7 +121,7 @@ public class ConvertisseurPersistanceVersApi {
     private HashMap<String, BigDecimal> extraireAnteDepuisMain(MainPersistenceDto mainPersistenceDto) {
         HashMap<String, BigDecimal> antesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
-            String nomJoueur = joueurPersistenceDto.obtNomJoueur();
+            String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
             antesExtraites.put(nomJoueur, mainPersistenceDto.obtAnte(nomJoueur));
         }
 
@@ -119,7 +131,7 @@ public class ConvertisseurPersistanceVersApi {
     private HashMap<String, BigDecimal> extraireBlindesDepuisMain(MainPersistenceDto mainPersistenceDto) {
         HashMap<String, BigDecimal> blindesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
-            String nomJoueur = joueurPersistenceDto.obtNomJoueur();
+            String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
             blindesExtraites.put(nomJoueur, mainPersistenceDto.obtBlinde(nomJoueur));
         }
 
@@ -128,9 +140,10 @@ public class ConvertisseurPersistanceVersApi {
 
     private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto) {
         ActionDto actionDto = new ActionDto(
-                actionPersistanceDto.obtNomJoueur(),
+                getNomJoueurAnonyme(actionPersistanceDto.obtNomJoueur()),
                 actionPersistanceDto.obtNomAction(),
-                actionPersistanceDto.obtMontant()
+                actionPersistanceDto.obtMontant(),
+                actionPersistanceDto.getNumeroAction()
         );
 
         return actionDto;
@@ -147,6 +160,10 @@ public class ConvertisseurPersistanceVersApi {
         }
 
         return cartesAsString;
+    }
+
+    private String getNomJoueurAnonyme(String nomJoueur) {
+        return nomsAnonymes.getOrDefault(nomJoueur, nomJoueur);
     }
 
 }

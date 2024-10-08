@@ -3,7 +3,6 @@ package fr.eurekapoker.parties.application.persistance.dto;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
-import java.util.stream.Stream;
 
 public class MainPersistenceDto {
     // todo coder les méthodes
@@ -11,6 +10,7 @@ public class MainPersistenceDto {
     private final String idUniqueGenere;
     private final long idParse;
     private final int indexMain;
+    private final BigDecimal montantBB;
     private final HashMap<JoueurPersistenceDto, Integer> siegesJoueursPresents;
     private final List<TourPersistanceDto> tours;
     private final HashMap<String, String> cartesJoueursString;
@@ -25,10 +25,12 @@ public class MainPersistenceDto {
     private int positionDealer;
     public MainPersistenceDto(String idUniqueGenere,
                               long idParse,
+                              BigDecimal montantBB,
                               int indexMain) {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
         this.indexMain = indexMain;
+        this.montantBB = montantBB;
         this.siegesJoueursPresents = new HashMap<>();
         this.tours = new ArrayList<>();
         this.cartesJoueursString = new HashMap<>();
@@ -162,5 +164,9 @@ public class MainPersistenceDto {
 
     public int obtPositionDealer() {
         return positionDealer;
+    }
+
+    public BigDecimal obtMontantBB() {
+        return montantBB;
     }
 }

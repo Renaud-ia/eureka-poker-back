@@ -11,19 +11,21 @@ public class JoueurDto {
     private final int siege;
     private final BigDecimal ante;
     private final BigDecimal blinde;
-
+    private final BigDecimal resultat;
     public JoueurDto(String nomJoueur,
                      BigDecimal stackDepart,
                      List<String> cartesJoueurs,
                      int siege,
                      BigDecimal ante,
-                     BigDecimal blinde) {
+                     BigDecimal blinde,
+                     BigDecimal resultat) {
         this.nomJoueur = nomJoueur;
         this.stackDepart = stackDepart;
         this.cartesJoueurs = cartesJoueurs;
         this.siege = siege;
         this.ante = ante;
         this.blinde = blinde;
+        this.resultat = resultat;
     }
 
     public String getNomJoueur() {
@@ -46,5 +48,8 @@ public class JoueurDto {
     }
     public BigDecimal getBlinde() {
         return blinde;
+    }
+    public BigDecimal getResultat() {
+        return resultat;
     }
 }

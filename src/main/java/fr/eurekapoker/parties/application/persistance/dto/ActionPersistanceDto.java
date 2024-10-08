@@ -10,6 +10,7 @@ public class ActionPersistanceDto {
     private final BigDecimal pot;
     private final BigDecimal potBounty;
     private final BigDecimal stackEffectif;
+    private final int numeroAction;
     private final Boolean allIn;
 
     // utilisé pour récupération depuis persistance
@@ -17,7 +18,8 @@ public class ActionPersistanceDto {
             String nomJoueur,
             String nomAction,
             long identifiantSituation,
-            BigDecimal montantAction) {
+            BigDecimal montantAction,
+            int numeroAction) {
         this.nomJoueur = nomJoueur;
         this.nomAction = nomAction;
         this.identifiantSituation = identifiantSituation;
@@ -25,6 +27,7 @@ public class ActionPersistanceDto {
         this.pot = null;
         this.potBounty = null;
         this.stackEffectif = null;
+        this.numeroAction = numeroAction;
         this.allIn = null;
     }
 
@@ -37,7 +40,8 @@ public class ActionPersistanceDto {
             BigDecimal pot,
             BigDecimal potBounty,
             BigDecimal stackEffectif,
-            boolean allIn) {
+            boolean allIn,
+            int numeroAction) {
         this.nomJoueur = nomJoueur;
         this.nomAction = nomAction;
         this.identifiantSituation = identifiantSituation;
@@ -46,6 +50,7 @@ public class ActionPersistanceDto {
         this.potBounty = potBounty;
         this.stackEffectif = stackEffectif;
         this.allIn = allIn;
+        this.numeroAction = numeroAction;
     }
 
     public String obtNomJoueur() {
@@ -78,5 +83,9 @@ public class ActionPersistanceDto {
 
     public Boolean estAllIn() {
         return allIn;
+    }
+
+    public int getNumeroAction() {
+        return numeroAction;
     }
 }

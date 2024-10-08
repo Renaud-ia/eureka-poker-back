@@ -1,7 +1,5 @@
 package fr.eurekapoker.parties.domaine.parsing;
 
-import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
-import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
@@ -16,7 +14,7 @@ import java.util.List;
 public interface ObservateurParser {
     void fixInfosPartie(InfosPartiePoker infosPartiePoker);
 
-    void ajouterMain(MainPoker mainPoker) throws ErreurLectureFichier;
+    void ajouterMain(MainPoker mainPoker, BigDecimal bigDecimal) throws ErreurLectureFichier;
 
     void ajouterJoueur(InfosJoueur infosJoueur) throws ErreurLectureFichier;
 

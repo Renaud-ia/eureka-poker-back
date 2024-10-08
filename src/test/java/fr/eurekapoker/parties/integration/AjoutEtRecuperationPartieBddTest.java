@@ -51,6 +51,7 @@ public class AjoutEtRecuperationPartieBddTest {
                 "Fake variante",
                 "Fake typeJeu",
                 "Fake format special",
+                false,
                 LocalDateTime.of(2022, 12, 9, random.nextInt(24), random.nextInt(60), random.nextInt(60)),
                 "Fake nom partie",
                 new BigDecimal("2"),
@@ -62,7 +63,7 @@ public class AjoutEtRecuperationPartieBddTest {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 UUID.randomUUID().toString(),
                 random.nextLong(),
-                1
+                new BigDecimal(20), 1
         );
         partiePersistanceDto.ajouterMain(mainPersistenceDto);
 
@@ -109,7 +110,8 @@ public class AjoutEtRecuperationPartieBddTest {
                 new BigDecimal("3.45"),
                 new BigDecimal("10.4"),
                 new BigDecimal("888.32"),
-                false
+                false,
+                1
         );
         tourPersistanceDto.ajouterAction(actionPersistanceDto);
         mainPersistenceDto.fixNombreActionsDuJoueur(nomFauxJoueur, 1);

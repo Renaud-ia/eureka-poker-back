@@ -18,6 +18,7 @@ import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.URISyntaxException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
@@ -93,6 +94,7 @@ public class ParserWinamaxTest {
         when(extracteurWinamax.extraireStackJoueur(anyString())).thenReturn(infosJoueur);
 
         when(infosMain.obtIdentifiantMain()).thenReturn(0L);
+        when(infosMain.obtMontantBb()).thenReturn(new BigDecimal(20));
         when(extracteurWinamax.extraireInfosMain(anyString())).thenReturn(infosMain);
     }
 
@@ -103,7 +105,7 @@ public class ParserWinamaxTest {
         parserWinamax.lancerImport();
         verify(observateurParser, times(1)).mainTerminee();
         verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
-        verify(observateurParser).ajouterMain(any(MainPoker.class));
+        verify(observateurParser).ajouterMain(any(MainPoker.class), any());
 
         verify(builderInfosPartieWinamax).donneesIncompletes();
     }

@@ -203,10 +203,13 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0.07");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal(20);
+        System.out.println(infosMainWinamax.obtMontantBb());
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
     @Test
-    void doitExtraireInfosMainTableCashGame() throws ErreurImport {
+    void doitExtraireInfosMainTableExpresso2() throws ErreurImport {
         String ligne = "Winamax Poker - Tournament \"Expresso\" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2563429635522035713-1-1667484424 - Holdem no limit (10/20) - 2022/11/03 14:07:04 UTC\n";
         InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
         assertEquals(FormatPoker.TypeTable.SPIN, infosMainWinamax.obtTypeTable());
@@ -221,6 +224,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0.07");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal(20);
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
     @Test
@@ -239,6 +244,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0.10");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal(200);
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
     @Test
@@ -257,6 +264,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal("0.02");
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
     @Test
@@ -275,6 +284,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal("0.02");
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
     @Test
@@ -293,7 +304,8 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
         BigDecimal rakeAttendu = new BigDecimal("0");
         assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
-
+        BigDecimal bbAttendue = new BigDecimal(20);
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
     // TESTS EXTRACTION INFOS TABLE

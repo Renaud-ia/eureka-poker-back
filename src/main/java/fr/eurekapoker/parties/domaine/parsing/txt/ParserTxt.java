@@ -14,6 +14,7 @@ import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartie;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public abstract class ParserTxt extends ParserModele {
@@ -21,6 +22,7 @@ public abstract class ParserTxt extends ParserModele {
     private final InterpreteurLigne interpreteurLigne;
     private final ExtracteurLigne extracteurLigne;
     private final BuilderInfosPartie builderInfosPartie;
+    private BigDecimal montantBbActuel;
     public ParserTxt(ObservateurParser observateurParser,
                      String[] lignesFichier,
                      InterpreteurLigne interpreteurLigne,
@@ -63,7 +65,7 @@ public abstract class ParserTxt extends ParserModele {
         if (indexLigne > 0) observateurParser.mainTerminee();
         InfosMain infosMain = extracteurLigne.extraireInfosMain(lignesFichier[indexLigne]);
         MainPoker mainPoker = new MainPoker(infosMain.obtIdentifiantMain());
-        observateurParser.ajouterMain(mainPoker);
+        observateurParser.ajouterMain(mainPoker, infosMain.obtMontantBb());
 
         FormatPoker formatPoker = new FormatPoker(infosMain.obtVariante(), infosMain.obtTypeTable());
 
@@ -75,6 +77,7 @@ public abstract class ParserTxt extends ParserModele {
             builderInfosPartie.fixBuyIn(infosMain.obtBuyIn());
             builderInfosPartie.fixAnte(infosMain.obtAnte());
             builderInfosPartie.fixRake(infosMain.obtRake());
+            builderInfosPartie.fixMontantBB(infosMain.obtMontantBb());
         }
     }
 

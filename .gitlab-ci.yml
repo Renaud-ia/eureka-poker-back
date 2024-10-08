@@ -5,9 +5,13 @@ stages:
 variables:
   DOCKER_DRIVER: overlay2
   IMAGE_NAME: $CI_REGISTRY/eureka-poker-web/service-parties
-  IMAGE_TAG: $CI_COMMIT_SHA
+  IMAGE_TAG: $CI_COMMIT_TAG
 
 build:
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_COMMIT_TAG
+
   image: docker:latest
   services:
     - docker:dind
@@ -21,10 +25,11 @@ build:
     - docker build -t $IMAGE_NAME:$IMAGE_TAG .
     - docker push $IMAGE_NAME:$IMAGE_TAG
 
-  only:
-    - main
-
 deploy:
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_COMMIT_TAG
+
   stage: deploy
   image:
     name: bitnami/kubectl:latest
@@ -41,7 +46,4 @@ deploy:
     - sed -i "s@{{IMAGE_TAG}}@$IMAGE_TAG@g" kube/deployment.yml
     - kubectl apply -f kube/deployment.yml
     - kubectl apply -f kube/service.yml
-    - kubectl rollout status deployment/service-parties
-
-  only:
-    - main
+    - kubectl rollout status deployment/parties-deployment

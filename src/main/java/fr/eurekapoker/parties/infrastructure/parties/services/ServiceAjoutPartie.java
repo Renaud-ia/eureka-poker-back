@@ -39,6 +39,7 @@ public class ServiceAjoutPartie {
                 .buyIn(partiePersistanceDto.obtBuyIn())
                 .nomHero(partiePersistanceDto.obtNomHero())
                 .nombreSieges(partiePersistanceDto.obtNombreSieges())
+                .stackEnEuros(partiePersistanceDto.obtStackEnEuros())
                 .nombreMains(partiePersistanceDto.obtNombreMains())
                 .dateJeu(partiePersistanceDto.obtDate())
                 .dateSauvegarde(LocalDateTime.now())
@@ -58,6 +59,7 @@ public class ServiceAjoutPartie {
             MainJpa nouvelleMain = MainJpa.builder()
                     .identifiantGenere(mainDto.obtIdentifiantGenere())
                     .identifiantParse(mainDto.obtIdParse())
+                    .montantBB(mainDto.obtMontantBB())
                     .indexMain(indexMain++)
                     .partieJpa(nouvellePartie)
                     .infosJoueurJpa(new ArrayList<>())
@@ -142,6 +144,7 @@ public class ServiceAjoutPartie {
                     .potBounty(actionPersistanceDto.obtPotBounty())
                     .stackEffectif(actionPersistanceDto.obtStackEffectif())
                     .allIn(actionPersistanceDto.estAllIn())
+                    .numeroAction(actionPersistanceDto.getNumeroAction())
                     .build();
 
             tourJpa.ajouterAction(actionJpa);

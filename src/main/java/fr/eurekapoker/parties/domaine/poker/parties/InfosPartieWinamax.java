@@ -3,7 +3,6 @@ package fr.eurekapoker.parties.domaine.poker.parties;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -18,8 +17,10 @@ public class InfosPartieWinamax extends InfosPartiePoker {
             LocalDateTime localDateTime,
             BigDecimal buyIn,
             BigDecimal ante,
-            BigDecimal rake) throws ErreurLectureFichier {
-        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake);
+            BigDecimal rake,
+            BigDecimal montantBB
+    ) throws ErreurLectureFichier {
+        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake, montantBB);
         corrigerNomPartie();
     }
 

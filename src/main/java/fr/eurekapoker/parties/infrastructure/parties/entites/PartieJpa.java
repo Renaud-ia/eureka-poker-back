@@ -43,6 +43,8 @@ public class PartieJpa {
     private Integer nombreMains;
     @Column(nullable = false)
     private LocalDateTime dateJeu;
+    @Column(nullable = false)
+    private boolean stackEnEuros;
     @Column(nullable = true)
     private BigDecimal buyIn;
     @Column(nullable = false)

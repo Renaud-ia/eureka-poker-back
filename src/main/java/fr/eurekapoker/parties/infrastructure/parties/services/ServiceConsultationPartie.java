@@ -40,6 +40,7 @@ public class ServiceConsultationPartie {
                 partieJpa.getVarianteJeu(),
                 partieJpa.getTypeTable(),
                 partieJpa.getFormatSpecialRoom(),
+                partieJpa.isStackEnEuros(),
                 partieJpa.getDateJeu(),
                 partieJpa.getNomPartie(),
                 partieJpa.getBuyIn(),
@@ -57,6 +58,7 @@ public class ServiceConsultationPartie {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 mainJpa.getIdentifiantGenere(),
                 mainJpa.getIdentifiantParse(),
+                mainJpa.getMontantBB(),
                 mainJpa.getIndexMain()
         );
 
@@ -84,8 +86,7 @@ public class ServiceConsultationPartie {
         mainPersistenceDto.ajouterStackDepart(nomJoueur, infosJoueurJpa.getStack());
         mainPersistenceDto.ajouterAnte(nomJoueur, infosJoueurJpa.getAntePayee());
         mainPersistenceDto.ajouterCartes(nomJoueur, infosJoueurJpa.getComboJoueurInt(), infosJoueurJpa.getComboJoueurString());
-        mainPersistenceDto.ajouterGains(nomJoueur, infosJoueurJpa.getGains()
-        );
+        mainPersistenceDto.ajouterGains(nomJoueur, infosJoueurJpa.getGains());
     }
 
     private TourPersistanceDto convertirTourJpaVersDto(TourJpa tourJpa) {
@@ -106,7 +107,8 @@ public class ServiceConsultationPartie {
                 actionJpa.getInfosJoueurJpa().getJoueurJpa().getNomJoueur(),
                 actionJpa.getNomAction(),
                 actionJpa.getIdentifiantSituation(),
-                actionJpa.getMontantAction()
+                actionJpa.getMontantAction(),
+                actionJpa.getNumeroAction()
         );
 
         return actionPersistanceDto;

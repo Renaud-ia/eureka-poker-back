@@ -1,0 +1,545 @@
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #3255534997905342520-27-1710705867 - Holdem no limit (30/125/250) - 2024/03/17 20:04:27 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (20000, 1.80€ bounty)
+Seat 2: AlexisSR7 (19452, 1.80€ bounty)
+Seat 3: Fonkytilta (16087, 1.80€ bounty)
+Seat 4: juste1doigt (15913, 1.80€ bounty)
+Seat 5: VienMonGolio (73710, 3.60€ bounty)
+Seat 6: KOKKOT (23248, 1.80€ bounty)
+*** ANTE/BLINDS ***
+Fonkytilta posts ante 30
+juste1doigt posts ante 30
+jveudlamone posts ante 30
+AlexisSR7 posts ante 30
+VienMonGolio posts ante 30
+KOKKOT posts ante 30
+Fonkytilta posts small blind 125
+juste1doigt posts big blind 250
+Dealt to jveudlamone [8s 3d]
+*** PRE-FLOP *** 
+VienMonGolio folds
+KOKKOT folds
+jveudlamone folds
+AlexisSR7 raises 300 to 550
+Fonkytilta folds
+juste1doigt folds
+AlexisSR7 collected 1105 from pot
+*** SUMMARY ***
+Total pot 1105 | No rake
+Seat 2: AlexisSR7 (button) won 1105
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #3255534997905342520-28-1710705905 - Holdem no limit (30/125/250) - 2024/03/17 20:05:05 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (19970, 1.80€ bounty)
+Seat 2: AlexisSR7 (19977, 1.80€ bounty)
+Seat 3: Fonkytilta (15932, 1.80€ bounty)
+Seat 4: juste1doigt (15633, 1.80€ bounty)
+Seat 5: VienMonGolio (73680, 3.60€ bounty)
+Seat 6: KOKKOT (23218, 1.80€ bounty)
+*** ANTE/BLINDS ***
+juste1doigt posts ante 30
+VienMonGolio posts ante 30
+jveudlamone posts ante 30
+AlexisSR7 posts ante 30
+Fonkytilta posts ante 30
+KOKKOT posts ante 30
+juste1doigt posts small blind 125
+VienMonGolio posts big blind 250
+Dealt to jveudlamone [8c 9c]
+*** PRE-FLOP *** 
+KOKKOT raises 375 to 625
+jveudlamone folds
+AlexisSR7 folds
+Fonkytilta raises 1805 to 2430
+juste1doigt folds
+VienMonGolio folds
+KOKKOT folds
+Fonkytilta collected 3610 from pot
+*** SUMMARY ***
+Total pot 3610 | No rake
+Seat 3: Fonkytilta (button) won 3610
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 2 - HandId: #3255534997905342520-29-1710705954 - Holdem no limit (30/125/250) - 2024/03/17 20:05:54 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #4 is the button
+Seat 1: jveudlamone (19940, 1.80€ bounty)
+Seat 2: AlexisSR7 (19947, 1.80€ bounty)
+Seat 3: Fonkytilta (17082, 1.80€ bounty)
+Seat 4: juste1doigt (15478, 1.80€ bounty)
+Seat 5: VienMonGolio (73400, 3.60€ bounty)
+Seat 6: KOKKOT (22563, 1.80€ bounty)
+*** ANTE/BLINDS ***
+VienMonGolio posts ante 30
+KOKKOT posts ante 30
+jveudlamone posts ante 30
+AlexisSR7 posts ante 30
+Fonkytilta posts ante 30
+juste1doigt posts ante 30
+VienMonGolio posts small blind 125
+KOKKOT posts big blind 250
+Dealt to jveudlamone [3d 9c]
+*** PRE-FLOP *** 
+jveudlamone folds
+AlexisSR7 folds
+Fonkytilta folds
+juste1doigt raises 375 to 625
+VienMonGolio calls 500
+KOKKOT calls 375
+*** FLOP *** [8c 3s Qs]
+VienMonGolio checks
+KOKKOT bets 719
+juste1doigt calls 719
+VienMonGolio folds
+*** TURN *** [8c 3s Qs][9h]
+KOKKOT bets 1223
+juste1doigt calls 1223
+*** RIVER *** [8c 3s Qs 9h][Kc]
+KOKKOT bets 2079
+juste1doigt calls 2079
+*** SHOW DOWN ***
+KOKKOT shows [6s Ks] (One pair : Kings)
+juste1doigt shows [Qc Qh] (Trips of Queens)
+juste1doigt collected 10097 from pot
+*** SUMMARY ***
+Total pot 10097 | No rake
+Board: [8c 3s Qs 9h Kc]
+Seat 4: juste1doigt (button) showed [Qc Qh] and won 10097 with Trips of Queens
+Seat 6: KOKKOT (big blind) showed [6s Ks] and lost with One pair : Kings
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #3255534997905342520-30-1710706063 - Holdem no limit (35/150/300) - 2024/03/17 20:07:43 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #5 is the button
+Seat 1: jveudlamone (19910, 1.80€ bounty)
+Seat 2: AlexisSR7 (19917, 1.80€ bounty)
+Seat 3: Fonkytilta (17052, 1.80€ bounty)
+Seat 4: juste1doigt (20899, 1.80€ bounty)
+Seat 5: VienMonGolio (72745, 3.60€ bounty)
+Seat 6: KOKKOT (17887, 1.80€ bounty)
+*** ANTE/BLINDS ***
+KOKKOT posts ante 35
+jveudlamone posts ante 35
+AlexisSR7 posts ante 35
+Fonkytilta posts ante 35
+juste1doigt posts ante 35
+VienMonGolio posts ante 35
+KOKKOT posts small blind 150
+jveudlamone posts big blind 300
+Dealt to jveudlamone [Ks 5s]
+*** PRE-FLOP *** 
+AlexisSR7 folds
+Fonkytilta folds
+juste1doigt folds
+VienMonGolio folds
+KOKKOT raises 450 to 750
+jveudlamone calls 450
+*** FLOP *** [3c 8s Jd]
+KOKKOT bets 599
+jveudlamone calls 599
+*** TURN *** [3c 8s Jd][As]
+KOKKOT bets 1018
+jveudlamone calls 1018
+*** RIVER *** [3c 8s Jd As][Kd]
+KOKKOT bets 1730
+jveudlamone calls 1730
+*** SHOW DOWN ***
+KOKKOT shows [6s Jh] (One pair : Jacks)
+jveudlamone shows [Ks 5s] (One pair : Kings)
+jveudlamone collected 8404 from pot
+*** SUMMARY ***
+Total pot 8404 | No rake
+Board: [3c 8s Jd As Kd]
+Seat 1: jveudlamone (big blind) showed [Ks 5s] and won 8404 with One pair : Kings
+Seat 6: KOKKOT (small blind) showed [6s Jh] and lost with One pair : Jacks
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #3255534997905342520-31-1710706104 - Holdem no limit (35/150/300) - 2024/03/17 20:08:24 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #6 is the button
+Seat 1: jveudlamone (24182, 1.80€ bounty)
+Seat 2: AlexisSR7 (19882, 1.80€ bounty)
+Seat 3: Fonkytilta (17017, 1.80€ bounty)
+Seat 4: juste1doigt (20864, 1.80€ bounty)
+Seat 5: VienMonGolio (72710, 3.60€ bounty)
+Seat 6: KOKKOT (13755, 1.80€ bounty)
+*** ANTE/BLINDS ***
+jveudlamone posts ante 35
+AlexisSR7 posts ante 35
+Fonkytilta posts ante 35
+juste1doigt posts ante 35
+VienMonGolio posts ante 35
+KOKKOT posts ante 35
+jveudlamone posts small blind 150
+AlexisSR7 posts big blind 300
+Dealt to jveudlamone [Ts 4d]
+*** PRE-FLOP *** 
+Fonkytilta folds
+juste1doigt folds
+VienMonGolio raises 450 to 750
+KOKKOT calls 750
+jveudlamone folds
+AlexisSR7 calls 450
+*** FLOP *** [Th 8h 2d]
+AlexisSR7 checks
+VienMonGolio checks
+KOKKOT bets 913
+AlexisSR7 calls 913
+VienMonGolio folds
+*** TURN *** [Th 8h 2d][Qh]
+AlexisSR7 checks
+KOKKOT checks
+*** RIVER *** [Th 8h 2d Qh][Ah]
+AlexisSR7 bets 1553
+KOKKOT folds
+AlexisSR7 collected 5989 from pot
+*** SUMMARY ***
+Total pot 5989 | No rake
+Board: [Th 8h 2d Qh Ah]
+Seat 2: AlexisSR7 (big blind) won 5989
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #3255534997905342520-32-1710706215 - Holdem no limit (35/150/300) - 2024/03/17 20:10:15 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (23997, 1.80€ bounty)
+Seat 2: AlexisSR7 (22620, 1.80€ bounty)
+Seat 3: Fonkytilta (16982, 1.80€ bounty)
+Seat 4: juste1doigt (20829, 1.80€ bounty)
+Seat 5: VienMonGolio (71925, 3.60€ bounty)
+Seat 6: KOKKOT (12057, 1.80€ bounty)
+*** ANTE/BLINDS ***
+AlexisSR7 posts ante 35
+Fonkytilta posts ante 35
+jveudlamone posts ante 35
+juste1doigt posts ante 35
+VienMonGolio posts ante 35
+KOKKOT posts ante 35
+AlexisSR7 posts small blind 150
+Fonkytilta posts big blind 300
+Dealt to jveudlamone [2h Qd]
+*** PRE-FLOP *** 
+juste1doigt folds
+VienMonGolio folds
+KOKKOT folds
+jveudlamone folds
+AlexisSR7 raises 750 to 1050
+Fonkytilta calls 750
+*** FLOP *** [3d Qc 7c]
+AlexisSR7 checks
+Fonkytilta bets 1848
+AlexisSR7 folds
+Fonkytilta collected 4158 from pot
+*** SUMMARY ***
+Total pot 4158 | No rake
+Board: [3d Qc 7c]
+Seat 3: Fonkytilta (big blind) won 4158
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 3 - HandId: #3255534997905342520-33-1710706274 - Holdem no limit (35/150/300) - 2024/03/17 20:11:14 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (23962, 1.80€ bounty)
+Seat 2: AlexisSR7 (21535, 1.80€ bounty)
+Seat 3: Fonkytilta (18207, 1.80€ bounty)
+Seat 4: juste1doigt (20794, 1.80€ bounty)
+Seat 5: VienMonGolio (71890, 3.60€ bounty)
+Seat 6: KOKKOT (12022, 1.80€ bounty)
+*** ANTE/BLINDS ***
+Fonkytilta posts ante 35
+juste1doigt posts ante 35
+jveudlamone posts ante 35
+AlexisSR7 posts ante 35
+VienMonGolio posts ante 35
+KOKKOT posts ante 35
+Fonkytilta posts small blind 150
+juste1doigt posts big blind 300
+Dealt to jveudlamone [Tc Jc]
+*** PRE-FLOP *** 
+VienMonGolio folds
+KOKKOT raises 450 to 750
+jveudlamone calls 750
+AlexisSR7 raises 1800 to 2550
+Fonkytilta folds
+juste1doigt folds
+KOKKOT folds
+jveudlamone calls 1800
+*** FLOP *** [5c 9d Ks]
+jveudlamone checks
+AlexisSR7 bets 1628
+jveudlamone calls 1628
+*** TURN *** [5c 9d Ks][Qd]
+jveudlamone checks
+AlexisSR7 checks
+*** RIVER *** [5c 9d Ks Qd][Js]
+jveudlamone bets 19749 and is all-in
+AlexisSR7 folds
+jveudlamone collected 29515 from pot
+*** SUMMARY ***
+Total pot 29515 | No rake
+Board: [5c 9d Ks Qd Js]
+Seat 1: jveudlamone won 29515
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-34-1710706368 - Holdem no limit (40/175/350) - 2024/03/17 20:12:48 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (29515, 1.80€ bounty)
+Seat 2: AlexisSR7 (17322, 1.80€ bounty)
+Seat 3: Fonkytilta (18022, 1.80€ bounty)
+Seat 4: juste1doigt (20459, 1.80€ bounty)
+Seat 5: VienMonGolio (71855, 3.60€ bounty)
+Seat 6: KOKKOT (11237, 1.80€ bounty)
+*** ANTE/BLINDS ***
+juste1doigt posts ante 40
+VienMonGolio posts ante 40
+jveudlamone posts ante 40
+AlexisSR7 posts ante 40
+Fonkytilta posts ante 40
+KOKKOT posts ante 40
+juste1doigt posts small blind 175
+VienMonGolio posts big blind 350
+Dealt to jveudlamone [9s 6d]
+*** PRE-FLOP *** 
+KOKKOT folds
+jveudlamone folds
+AlexisSR7 folds
+Fonkytilta folds
+juste1doigt raises 875 to 1225
+VienMonGolio calls 875
+*** FLOP *** [3s Qd 9d]
+juste1doigt checks
+VienMonGolio bets 1924
+juste1doigt folds
+VienMonGolio collected 4614 from pot
+*** SUMMARY ***
+Total pot 4614 | No rake
+Board: [3s Qd 9d]
+Seat 5: VienMonGolio (big blind) won 4614
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-35-1710706418 - Holdem no limit (40/175/350) - 2024/03/17 20:13:38 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #4 is the button
+Seat 1: jveudlamone (29475, 1.80€ bounty)
+Seat 2: AlexisSR7 (17282, 1.80€ bounty)
+Seat 3: Fonkytilta (17982, 1.80€ bounty)
+Seat 4: juste1doigt (19194, 1.80€ bounty)
+Seat 5: VienMonGolio (73280, 3.60€ bounty)
+Seat 6: KOKKOT (11197, 1.80€ bounty)
+*** ANTE/BLINDS ***
+VienMonGolio posts ante 40
+KOKKOT posts ante 40
+jveudlamone posts ante 40
+AlexisSR7 posts ante 40
+Fonkytilta posts ante 40
+juste1doigt posts ante 40
+VienMonGolio posts small blind 175
+KOKKOT posts big blind 350
+Dealt to jveudlamone [2d Td]
+*** PRE-FLOP *** 
+jveudlamone folds
+AlexisSR7 folds
+Fonkytilta folds
+juste1doigt folds
+VienMonGolio folds
+KOKKOT collected 765 from pot
+*** SUMMARY ***
+Total pot 765 | No rake
+Seat 6: KOKKOT (big blind) won 765
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-36-1710706435 - Holdem no limit (40/175/350) - 2024/03/17 20:13:55 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #5 is the button
+Seat 1: jveudlamone (29435, 1.80€ bounty)
+Seat 2: AlexisSR7 (17242, 1.80€ bounty)
+Seat 3: Fonkytilta (17942, 1.80€ bounty)
+Seat 4: juste1doigt (19154, 1.80€ bounty)
+Seat 5: VienMonGolio (73065, 3.60€ bounty)
+Seat 6: KOKKOT (11572, 1.80€ bounty)
+*** ANTE/BLINDS ***
+KOKKOT posts ante 40
+jveudlamone posts ante 40
+AlexisSR7 posts ante 40
+Fonkytilta posts ante 40
+juste1doigt posts ante 40
+VienMonGolio posts ante 40
+KOKKOT posts small blind 175
+jveudlamone posts big blind 350
+Dealt to jveudlamone [9d 3s]
+*** PRE-FLOP *** 
+AlexisSR7 raises 525 to 875
+Fonkytilta calls 875
+juste1doigt folds
+VienMonGolio folds
+KOKKOT folds
+jveudlamone folds
+*** FLOP *** [7s Qs 3c]
+AlexisSR7 checks
+Fonkytilta bets 1258
+AlexisSR7 raises 1383 to 2641
+Fonkytilta raises 14386 to 17027 and is all-in
+AlexisSR7 calls 13686 and is all-in
+*** TURN *** [7s Qs 3c][5d]
+*** RIVER *** [7s Qs 3c 5d][9h]
+*** SHOW DOWN ***
+AlexisSR7 shows [Qh Ac] (One pair : Queens)
+Fonkytilta shows [As Js] (High card : Ace)
+Fonkytilta collected 700 from side pot 1
+AlexisSR7 collected 35169 from main pot
+*** SUMMARY ***
+Total pot 35869 | No rake
+Board: [7s Qs 3c 5d 9h]
+Seat 2: AlexisSR7 showed [Qh Ac] and won 35169 with One pair : Queens
+Seat 3: Fonkytilta showed [As Js] and won 700 with High card : Ace
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-37-1710706489 - Holdem no limit (40/175/350) - 2024/03/17 20:14:49 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #6 is the button
+Seat 1: jveudlamone (29045, 1.80€ bounty)
+Seat 2: AlexisSR7 (35169, 1.80€ bounty)
+Seat 3: Fonkytilta (700, 1.80€ bounty)
+Seat 4: juste1doigt (19114, 1.80€ bounty)
+Seat 5: VienMonGolio (73025, 3.60€ bounty)
+Seat 6: KOKKOT (11357, 1.80€ bounty)
+*** ANTE/BLINDS ***
+jveudlamone posts ante 40
+AlexisSR7 posts ante 40
+Fonkytilta posts ante 40
+juste1doigt posts ante 40
+VienMonGolio posts ante 40
+KOKKOT posts ante 40
+jveudlamone posts small blind 175
+AlexisSR7 posts big blind 350
+Dealt to jveudlamone [3c Ah]
+*** PRE-FLOP *** 
+Fonkytilta folds
+juste1doigt folds
+VienMonGolio folds
+KOKKOT folds
+jveudlamone calls 175
+AlexisSR7 checks
+*** FLOP *** [9h 8s Jh]
+jveudlamone checks
+AlexisSR7 bets 1640
+jveudlamone folds
+AlexisSR7 collected 2580 from pot
+*** SUMMARY ***
+Total pot 2580 | No rake
+Board: [9h 8s Jh]
+Seat 2: AlexisSR7 (big blind) won 2580
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-38-1710706533 - Holdem no limit (40/175/350) - 2024/03/17 20:15:33 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #1 is the button
+Seat 1: jveudlamone (28655, 1.80€ bounty)
+Seat 2: AlexisSR7 (35719, 1.80€ bounty)
+Seat 3: Fonkytilta (660, 1.80€ bounty)
+Seat 4: juste1doigt (19074, 1.80€ bounty)
+Seat 5: VienMonGolio (72985, 3.60€ bounty)
+Seat 6: KOKKOT (11317, 1.80€ bounty)
+*** ANTE/BLINDS ***
+AlexisSR7 posts ante 40
+Fonkytilta posts ante 40
+jveudlamone posts ante 40
+juste1doigt posts ante 40
+VienMonGolio posts ante 40
+KOKKOT posts ante 40
+AlexisSR7 posts small blind 175
+Fonkytilta posts big blind 350
+Dealt to jveudlamone [7h 2d]
+*** PRE-FLOP *** 
+juste1doigt raises 385 to 735
+VienMonGolio folds
+KOKKOT folds
+jveudlamone folds
+AlexisSR7 calls 560
+Fonkytilta calls 270 and is all-in
+*** FLOP *** [3s Kd Th]
+AlexisSR7 checks
+juste1doigt bets 769
+AlexisSR7 calls 769
+*** TURN *** [3s Kd Th][9h]
+AlexisSR7 checks
+juste1doigt bets 3868
+AlexisSR7 folds
+*** RIVER *** [3s Kd Th 9h][8c]
+*** SHOW DOWN ***
+Fonkytilta shows [Kc 7s] (One pair : Kings)
+juste1doigt shows [3h 3d] (Trips of 3)
+juste1doigt collected 7736 from pot
+*** SUMMARY ***
+Total pot 7736 | No rake
+Board: [3s Kd Th 9h 8c]
+Seat 3: Fonkytilta (big blind) showed [Kc 7s] and lost with One pair : Kings
+Seat 4: juste1doigt showed [3h 3d] and won 7736 with Trips of 3
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-39-1710706580 - Holdem no limit (40/175/350) - 2024/03/17 20:16:20 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #2 is the button
+Seat 1: jveudlamone (28615, 1.80€ bounty)
+Seat 2: AlexisSR7 (34175, 1.80€ bounty)
+Seat 4: juste1doigt (21398, 2.70€ bounty)
+Seat 5: VienMonGolio (72945, 3.60€ bounty)
+Seat 6: KOKKOT (11277, 1.80€ bounty)
+*** ANTE/BLINDS ***
+juste1doigt posts ante 40
+jveudlamone posts ante 40
+AlexisSR7 posts ante 40
+VienMonGolio posts ante 40
+KOKKOT posts ante 40
+juste1doigt posts big blind 350
+Dealt to jveudlamone [9h 3c]
+*** PRE-FLOP *** 
+VienMonGolio folds
+KOKKOT folds
+jveudlamone folds
+AlexisSR7 folds
+juste1doigt collected 550 from pot
+*** SUMMARY ***
+Total pot 550 | No rake
+Seat 4: juste1doigt (big blind) won 550
+
+
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 5 - HandId: #3255534997905342520-40-1710706599 - Holdem no limit (50/200/400) - 2024/03/17 20:16:39 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #3 is the button
+Seat 1: jveudlamone (28575, 1.80€ bounty)
+Seat 2: AlexisSR7 (34135, 1.80€ bounty)
+Seat 3: sbeluet45 (20000, 1.80€ bounty)
+Seat 4: juste1doigt (21558, 2.70€ bounty)
+Seat 5: VienMonGolio (72905, 3.60€ bounty)
+Seat 6: KOKKOT (11237, 1.80€ bounty)
+*** ANTE/BLINDS ***
+juste1doigt posts ante 50
+VienMonGolio posts ante 50
+jveudlamone posts ante 50
+AlexisSR7 posts ante 50
+KOKKOT posts ante 50
+juste1doigt posts small blind 200
+VienMonGolio posts big blind 400
+Dealt to jveudlamone [Kd Td]
+*** PRE-FLOP *** 
+KOKKOT folds
+jveudlamone raises 600 to 1000
+AlexisSR7 calls 1000
+juste1doigt folds
+VienMonGolio raises 4000 to 5000
+jveudlamone calls 4000
+AlexisSR7 calls 4000
+*** FLOP *** [Ac 2s 7d]
+VienMonGolio checks
+jveudlamone checks
+AlexisSR7 checks
+*** TURN *** [Ac 2s 7d][8d]
+VienMonGolio bets 5408
+jveudlamone calls 5408
+AlexisSR7 folds
+*** RIVER *** [Ac 2s 7d 8d][3h]
+VienMonGolio checks
+jveudlamone bets 18117 and is all-in
+VienMonGolio calls 18117
+*** SHOW DOWN ***
+jveudlamone shows [Kd Td] (High card : Ace)
+VienMonGolio shows [Jh Jd] (One pair : Jacks)
+VienMonGolio collected 62500 from pot
+*** SUMMARY ***
+Total pot 62500 | No rake
+Board: [Ac 2s 7d 8d 3h]
+Seat 1: jveudlamone showed [Kd Td] and lost with High card : Ace
+Seat 5: VienMonGolio (big blind) showed [Jh Jd] and won 62500 with One pair : Jacks
+
+

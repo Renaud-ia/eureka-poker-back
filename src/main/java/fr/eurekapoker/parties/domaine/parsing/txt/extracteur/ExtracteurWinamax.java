@@ -12,6 +12,7 @@ import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
+import java.awt.datatransfer.FlavorEvent;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -98,6 +99,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
         float ante = 0;
         float rake = 0;
         float buyIn = 0;
+        float montantBB = 0;
 
         if (matcher.group("buyInMTT") != null) {
             String[] buyInParties = matcher.group("buyInMTT").split("\\+");
@@ -106,17 +108,22 @@ public class ExtracteurWinamax implements ExtracteurLigne {
             }
 
             rake = Float.parseFloat(buyInParties[1].replace("€", "")) / buyIn;
+            String[] partiesBlindes = matcher.group("valeursBlindes").split("/");
 
             if (pokerFormat == FormatPoker.TypeTable.MTT) {
+
                 if (matcher.group("valeursBlindes") != null) {
-                    String[] partiesBlindes = matcher.group("valeursBlindes").split("/");
                     // attention il y a des tournois sans Ante(starting block par ex)
                     if (partiesBlindes.length != 3) {
                         ante = 0;
                         rake = 0;
+                        montantBB = Float.parseFloat(partiesBlindes[1]);
                     }
 
-                    else ante = Float.parseFloat(partiesBlindes[0]);
+                    else {
+                        ante = Float.parseFloat(partiesBlindes[0]);
+                        montantBB = Float.parseFloat(partiesBlindes[2]);
+                    }
                 }
 
                 else throw new ErreurRegex("Pas de blindes trouvées");
@@ -125,14 +132,15 @@ public class ExtracteurWinamax implements ExtracteurLigne {
             // en Spin, on n'a pas d'ANTE avec WINAMAX
             else {
                 ante = 0f;
+                montantBB = Float.parseFloat(partiesBlindes[1]);
             }
         }
 
         // si cash-game
         else if (matcher.group("valeursBlindes") != null)  {
             String[] partiesBlindes = matcher.group("valeursBlindes").split("/");
-            String montantBB = partiesBlindes[partiesBlindes.length - 1].replaceAll("[^\\d.]", "");
-            buyIn = Float.parseFloat(montantBB);
+            montantBB = Float.parseFloat(partiesBlindes[partiesBlindes.length - 1].replaceAll("[^\\d.]", ""));
+            buyIn = montantBB;
         }
 
         else throw new ErreurRegex("Le buy in n'a pas été trouvée");
@@ -162,7 +170,8 @@ public class ExtracteurWinamax implements ExtracteurLigne {
                 numeroTable,
                 numeroMain,
                 ante,
-                rake
+                rake,
+                montantBB
         );
     }
     @Override

@@ -28,4 +28,6 @@ public abstract class InfosMain {
     public abstract BigDecimal obtAnte();
 
     public abstract BigDecimal obtRake();
+
+    public abstract BigDecimal obtMontantBb();
 }

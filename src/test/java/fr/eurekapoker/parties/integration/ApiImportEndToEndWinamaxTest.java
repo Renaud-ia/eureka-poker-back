@@ -17,6 +17,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -53,6 +54,12 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("Cash-Game 5-max NL2 (Aalen 47)", jsonConsultation.get("nomPartie"));
         assertEquals(5, jsonConsultation.get("nombreSieges"));
         assertEquals(7, jsonConsultation.get("nombreMains"));
+        assertEquals(true, jsonConsultation.get("stackEnEuros"));
+
+        JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
+        BigDecimal montantBBPremiereMain = new BigDecimal("0.02");
+        JSONObject premiereMain = mains.getJSONObject(0);
+        assertEquals(0, montantBBPremiereMain.compareTo(new BigDecimal(premiereMain.get("montantBB").toString())));
     }
 
     @Test
@@ -66,6 +73,12 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("MTT 6-max 1€ (WESTERN)", jsonConsultation.get("nomPartie"));
         assertEquals(6, jsonConsultation.get("nombreSieges"));
         assertEquals(21, jsonConsultation.get("nombreMains"));
+        assertEquals(false, jsonConsultation.get("stackEnEuros"));
+
+        JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
+        BigDecimal montantBBPremiereMain = new BigDecimal("600");
+        JSONObject premiereMain = mains.getJSONObject(0);
+        assertEquals(0, montantBBPremiereMain.compareTo(new BigDecimal(premiereMain.get("montantBB").toString())));
     }
 
     @Test
@@ -81,6 +94,12 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("Cash-Game 5-max 0.25€ (Short Track)", jsonConsultation.get("nomPartie"));
         assertEquals(5, jsonConsultation.get("nombreSieges"));
         assertEquals(9, jsonConsultation.get("nombreMains"));
+        assertEquals(true, jsonConsultation.get("stackEnEuros"));
+
+        JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
+        BigDecimal montantBBPremiereMain = new BigDecimal("0.05");
+        JSONObject premiereMain = mains.getJSONObject(0);
+        assertEquals(0, montantBBPremiereMain.compareTo(new BigDecimal(premiereMain.get("montantBB").toString())));
     }
 
     @Test
@@ -94,6 +113,12 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("Spin&Go 3-max 2€ (Expresso)", jsonConsultation.get("nomPartie"));
         assertEquals(3, jsonConsultation.get("nombreSieges"));
         assertEquals(23, jsonConsultation.get("nombreMains"));
+        assertEquals(false, jsonConsultation.get("stackEnEuros"));
+
+        JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
+        BigDecimal montantBBPremiereMain = new BigDecimal("20");
+        JSONObject premiereMain = mains.getJSONObject(0);
+        assertEquals(0, montantBBPremiereMain.compareTo(new BigDecimal(premiereMain.get("montantBB").toString())));
     }
 
     @Test
@@ -107,6 +132,12 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("Spin&Go 3-max 1€ (Expresso Nitro)", jsonConsultation.get("nomPartie"));
         assertEquals(3, jsonConsultation.get("nombreSieges"));
         assertEquals(2, jsonConsultation.get("nombreMains"));
+        assertEquals(false, jsonConsultation.get("stackEnEuros"));
+
+        JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
+        BigDecimal montantBBPremiereMain = new BigDecimal("20");
+        JSONObject premiereMain = mains.getJSONObject(0);
+        assertEquals(0, montantBBPremiereMain.compareTo(new BigDecimal(premiereMain.get("montantBB").toString())));
     }
 
     @Test
@@ -120,6 +151,12 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("MTT 6-max 0€ (Starting Block WiPT - Déglingos)", jsonConsultation.get("nomPartie"));
         assertEquals(6, jsonConsultation.get("nombreSieges"));
         assertEquals(11, jsonConsultation.get("nombreMains"));
+        assertEquals(false, jsonConsultation.get("stackEnEuros"));
+
+        JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
+        BigDecimal montantBBPremiereMain = new BigDecimal("20");
+        JSONObject premiereMain = mains.getJSONObject(0);
+        assertEquals(0, montantBBPremiereMain.compareTo(new BigDecimal(premiereMain.get("montantBB").toString())));
     }
 
     @Test
@@ -133,6 +170,7 @@ public class ApiImportEndToEndWinamaxTest {
         assertEquals("Spin&Go 3-max 1€ (Expresso Nitro)", jsonConsultation.get("nomPartie"));
         assertEquals(3, jsonConsultation.get("nombreSieges"));
         assertEquals(2, jsonConsultation.get("nombreMains"));
+        assertEquals(false, jsonConsultation.get("stackEnEuros"));
 
         JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
         JSONArray joueurs = premiereMain.getJSONArray("joueurs");
@@ -143,8 +181,6 @@ public class ApiImportEndToEndWinamaxTest {
             assertTrue(nomJoueur.startsWith("Hero") || nomJoueur.startsWith("Villain"), nomJoueur);
         }
     }
-
-
 
 
     private JSONObject consulterPartie(String idUniquePartie) throws Exception {

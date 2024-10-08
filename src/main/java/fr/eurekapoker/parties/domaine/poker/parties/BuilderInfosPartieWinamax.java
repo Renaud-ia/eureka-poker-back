@@ -24,7 +24,8 @@ public class BuilderInfosPartieWinamax extends BuilderInfosPartie {
             this.date,
             this.buyIn,
             this.ante,
-            this.rake
+            this.rake,
+            this.montantBB
         );
     }
 
@@ -38,6 +39,7 @@ public class BuilderInfosPartieWinamax extends BuilderInfosPartie {
         if (buyIn == null) return true;
         if (ante == null) return true;
         if (rake == null) return true;
+        if (montantBB == null) return true;
 
         return false;
     }
