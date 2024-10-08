@@ -69,41 +69,27 @@ public class ConvertisseurPersistanceVersApi {
         List<JoueurPersistenceDto> joueursList = new ArrayList<>(joueursSet);
         Collections.reverse(joueursList);
 
-        for (JoueurPersistenceDto joueurPersistenceDto: joueursList) {
+        for (JoueurPersistenceDto joueurPersistenceDto : joueursList) {
             String nomJoueur = joueurPersistenceDto.obtNomJoueur();
 
-            JoueurDto joueurDto;
-
             if (joueursAnonymes) {
-                String nomAnonyme;
-                if (Objects.equals(nomHero, nomJoueur)) nomAnonyme = "Hero";
+                if (Objects.equals(nomHero, nomJoueur)) nomsAnonymes.putIfAbsent(nomJoueur, "Hero");
                 else {
                     nomsAnonymes.computeIfAbsent(nomJoueur, key -> "Villain" + numeroVillain++);
-                    nomAnonyme = nomsAnonymes.get(nomJoueur);
                 }
-
-                joueurDto = new JoueurDto(
-                        nomAnonyme,
-                        mainPersistenceDto.obtStack(nomJoueur),
-                        extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
-                        mainPersistenceDto.obtSiege(joueurPersistenceDto),
-                        mainPersistenceDto.obtAnte(nomJoueur),
-                        mainPersistenceDto.obtBlinde(nomJoueur),
-                        mainPersistenceDto.obtGains(nomJoueur)
-                );
-            }
-            else {
-                joueurDto = new JoueurDto(
-                        nomJoueur,
-                        mainPersistenceDto.obtStack(nomJoueur),
-                        extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
-                        mainPersistenceDto.obtSiege(joueurPersistenceDto),
-                        mainPersistenceDto.obtAnte(nomJoueur),
-                        mainPersistenceDto.obtBlinde(nomJoueur),
-                        mainPersistenceDto.obtGains(nomJoueur)
-                );
             }
 
+            String nomAnonyme = getNomJoueurAnonyme(nomJoueur);
+
+            JoueurDto joueurDto = new JoueurDto(
+                    nomAnonyme,
+                    mainPersistenceDto.obtStack(nomJoueur),
+                    extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
+                    mainPersistenceDto.obtSiege(joueurPersistenceDto),
+                    mainPersistenceDto.obtAnte(nomJoueur),
+                    mainPersistenceDto.obtBlinde(nomJoueur),
+                    mainPersistenceDto.obtGains(nomJoueur)
+            );
             joueursExtraits.add(joueurDto);
         }
 
@@ -133,7 +119,7 @@ public class ConvertisseurPersistanceVersApi {
     private HashMap<String, BigDecimal> extraireAnteDepuisMain(MainPersistenceDto mainPersistenceDto) {
         HashMap<String, BigDecimal> antesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
-            String nomJoueur = joueurPersistenceDto.obtNomJoueur();
+            String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
             antesExtraites.put(nomJoueur, mainPersistenceDto.obtAnte(nomJoueur));
         }
 
@@ -143,7 +129,7 @@ public class ConvertisseurPersistanceVersApi {
     private HashMap<String, BigDecimal> extraireBlindesDepuisMain(MainPersistenceDto mainPersistenceDto) {
         HashMap<String, BigDecimal> blindesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
-            String nomJoueur = joueurPersistenceDto.obtNomJoueur();
+            String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
             blindesExtraites.put(nomJoueur, mainPersistenceDto.obtBlinde(nomJoueur));
         }
 
@@ -152,7 +138,7 @@ public class ConvertisseurPersistanceVersApi {
 
     private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto) {
         ActionDto actionDto = new ActionDto(
-                actionPersistanceDto.obtNomJoueur(),
+                getNomJoueurAnonyme(actionPersistanceDto.obtNomJoueur()),
                 actionPersistanceDto.obtNomAction(),
                 actionPersistanceDto.obtMontant()
         );
@@ -171,6 +157,10 @@ public class ConvertisseurPersistanceVersApi {
         }
 
         return cartesAsString;
+    }
+
+    private String getNomJoueurAnonyme(String nomJoueur) {
+        return nomsAnonymes.getOrDefault(nomJoueur, nomJoueur);
     }
 
 }

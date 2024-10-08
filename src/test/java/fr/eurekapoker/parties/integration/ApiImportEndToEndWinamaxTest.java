@@ -183,8 +183,6 @@ public class ApiImportEndToEndWinamaxTest {
     }
 
 
-
-
     private JSONObject consulterPartie(String idUniquePartie) throws Exception {
         int indexPremiereMain = 0;
         int fenetreConsultation = 10;
