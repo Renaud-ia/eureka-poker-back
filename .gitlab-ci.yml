@@ -8,6 +8,9 @@ variables:
   IMAGE_TAG: $CI_COMMIT_TAG
 
 build:
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "main"
+
   image: docker:latest
   services:
     - docker:dind
@@ -26,6 +29,9 @@ build:
     - main
 
 deploy:
+  rules:
+    - if: $CI_COMMIT_REF_NAME == "main"
+
   stage: deploy
   image:
     name: bitnami/kubectl:latest
