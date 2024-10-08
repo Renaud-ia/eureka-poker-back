@@ -52,7 +52,6 @@ public class AjoutEtRecuperationPartieBddTest {
                 "Fake typeJeu",
                 "Fake format special",
                 false,
-                new BigDecimal(20),
                 LocalDateTime.of(2022, 12, 9, random.nextInt(24), random.nextInt(60), random.nextInt(60)),
                 "Fake nom partie",
                 new BigDecimal("2"),
@@ -64,7 +63,7 @@ public class AjoutEtRecuperationPartieBddTest {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 UUID.randomUUID().toString(),
                 random.nextLong(),
-                1
+                new BigDecimal(20), 1
         );
         partiePersistanceDto.ajouterMain(mainPersistenceDto);
 

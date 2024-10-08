@@ -32,11 +32,8 @@ public abstract class InfosPartiePoker {
         this.buyIn = buyIn;
         this.ante = ante;
         this.rake = rake;
-        this.formatSpecialRoom = "";
         this.montantBB = montantBB;
-    }
-    public int obtNombreJoueurs() {
-        return nombreJoueurs;
+        this.formatSpecialRoom = "";
     }
 
     public long getIdParse() {
@@ -79,6 +76,10 @@ public abstract class InfosPartiePoker {
     }
 
     public BigDecimal getMontantBB() {
+        return montantBB;
+    }
+
+    public BigDecimal obtMontantBb() {
         return montantBB;
     }
 }

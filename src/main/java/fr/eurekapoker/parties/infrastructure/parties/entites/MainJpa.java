@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
@@ -24,6 +25,8 @@ public class MainJpa {
     private Long identifiantParse;
     @Column(nullable = false)
     private Integer indexMain;
+    @Column(nullable = false)
+    private BigDecimal montantBB;
     @Column(nullable = false)
     private Integer positionDealer;
     @ManyToOne(fetch = FetchType.EAGER)

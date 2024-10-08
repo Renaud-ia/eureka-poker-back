@@ -18,7 +18,8 @@ public class InfosPartieWinamax extends InfosPartiePoker {
             BigDecimal buyIn,
             BigDecimal ante,
             BigDecimal rake,
-            BigDecimal montantBB) throws ErreurLectureFichier {
+            BigDecimal montantBB
+    ) throws ErreurLectureFichier {
         super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake, montantBB);
         corrigerNomPartie();
     }

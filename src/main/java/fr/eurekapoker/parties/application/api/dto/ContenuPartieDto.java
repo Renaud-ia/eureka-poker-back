@@ -12,7 +12,6 @@ public class ContenuPartieDto {
     private final int nombreMains;
     private final String nomHero;
     private final boolean stackEnEuros;
-    private final BigDecimal montantBB;
     private final List<ContenuMainDto> mainsExtraites;
     public ContenuPartieDto(String idUniquePartie,
                             String nomPartie,
@@ -20,8 +19,7 @@ public class ContenuPartieDto {
                             String nomHero,
                             int nombreSieges,
                             int nombreMains,
-                            boolean stackEnEuros,
-                            BigDecimal montantBB) {
+                            boolean stackEnEuros) {
         this.idUniquePartie = idUniquePartie;
         this.nomPartie = nomPartie;
         this.nomRoom = nomRoom;
@@ -29,7 +27,6 @@ public class ContenuPartieDto {
         this.nombreSieges = nombreSieges;
         this.nombreMains = nombreMains;
         this.stackEnEuros = stackEnEuros;
-        this.montantBB = montantBB;
         this.mainsExtraites = new ArrayList<>();
     }
 
@@ -59,10 +56,6 @@ public class ContenuPartieDto {
 
     public boolean getStackEnEuros() {
         return stackEnEuros;
-    }
-
-    public BigDecimal getMontantBB() {
-        return montantBB;
     }
 
     public void ajouterMain(ContenuMainDto contenuMainDto) {

@@ -30,8 +30,7 @@ public class ConvertisseurPersistanceVersApi {
                 nomHero,
                 partiePersistanceDto.obtNombreSieges(),
                 partiePersistanceDto.obtNombreMains(),
-                partiePersistanceDto.obtStackEnEuros(),
-                partiePersistanceDto.obtMontantBB()
+                partiePersistanceDto.obtStackEnEuros()
         );
 
         for (MainPersistenceDto mainPersistenceDto : partiePersistanceDto.obtMains()) {
@@ -52,6 +51,7 @@ public class ConvertisseurPersistanceVersApi {
         ContenuMainDto contenuMainDto = new ContenuMainDto(
                 mainPersistenceDto.obtIdentifiantGenere(),
                 mainPersistenceDto.obtPositionDealer(),
+                mainPersistenceDto.obtMontantBB(),
                 joueurs,
                 tours,
                 blindes,

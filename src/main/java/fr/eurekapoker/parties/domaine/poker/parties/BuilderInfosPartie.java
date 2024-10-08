@@ -57,4 +57,5 @@ public abstract class BuilderInfosPartie {
     public void fixMontantBB(BigDecimal montantBB) {
         this.montantBB = montantBB;
     }
+
 }

@@ -41,7 +41,6 @@ public class ServiceConsultationPartie {
                 partieJpa.getTypeTable(),
                 partieJpa.getFormatSpecialRoom(),
                 partieJpa.isStackEnEuros(),
-                partieJpa.getMontantBB(),
                 partieJpa.getDateJeu(),
                 partieJpa.getNomPartie(),
                 partieJpa.getBuyIn(),
@@ -59,6 +58,7 @@ public class ServiceConsultationPartie {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 mainJpa.getIdentifiantGenere(),
                 mainJpa.getIdentifiantParse(),
+                mainJpa.getMontantBB(),
                 mainJpa.getIndexMain()
         );
 

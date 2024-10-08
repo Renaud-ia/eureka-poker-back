@@ -45,8 +45,6 @@ public class PartieJpa {
     private LocalDateTime dateJeu;
     @Column(nullable = false)
     private boolean stackEnEuros;
-    @Column(nullable = false)
-    private BigDecimal montantBB;
     @Column(nullable = true)
     private BigDecimal buyIn;
     @Column(nullable = false)
