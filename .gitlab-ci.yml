@@ -9,7 +9,7 @@ variables:
 
 build:
   rules:
-    - if: $CI_COMMIT_REF_NAME == "main" && $CI_COMMIT_TAG != ''
+    - if: $CI_COMMIT_REF_NAME == "main" && $CI_COMMIT_TAG
 
   image: docker:latest
   services:
@@ -27,7 +27,7 @@ build:
 
 deploy:
   rules:
-    - if: $CI_COMMIT_REF_NAME == "main" && $CI_COMMIT_TAG != ''
+    - if: $CI_COMMIT_REF_NAME == "main" && $CI_COMMIT_TAG
 
   stage: deploy
   image:
