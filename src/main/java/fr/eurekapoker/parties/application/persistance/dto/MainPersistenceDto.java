@@ -64,6 +64,7 @@ public class MainPersistenceDto {
     }
 
     public void ajouterCartes(String nomJoueur, int comboAsInt, String comboAsString) {
+        if (Objects.equals(nomJoueur, nomHero) && cartesJoueursInt.containsKey(nomJoueur)) return;
         this.cartesJoueursInt.put(nomJoueur, comboAsInt);
         this.cartesJoueursString.put(nomJoueur, comboAsString);
     }
