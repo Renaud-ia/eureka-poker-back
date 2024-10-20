@@ -67,6 +67,14 @@ public class InterpreteurWinamaxTest {
         ligne = "Seat 1: 2O2L (button) won 140";
         interpreteurWinamax.lireLigne(ligne);
         assertTrue(interpreteurWinamax.estResultat(), "Ligne résultat non trouvé");
+
+        ligne = "Seat 3: bolchevik33 (small blind) showed [Kc Qc] and won 6200 with One pair : Queens";
+        interpreteurWinamax.lireLigne(ligne);
+        assertTrue(interpreteurWinamax.estResultat(), "Ligne résultat non trouvé");
+
+        ligne = "Seat 6: wina6710 showed [4c As] and lost with One pair : 4";
+        interpreteurWinamax.lireLigne(ligne);
+        assertTrue(interpreteurWinamax.estResultat(), "Ligne résultat non trouvé");
     }
 
     @Test

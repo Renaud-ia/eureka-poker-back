@@ -27,7 +27,7 @@ public class InterpreteurWinamax implements InterpreteurLigne {
                 endroitActuel = EndroitFichier.GAINS;
             }
             else if (ligne.contains(" lost ")) {
-                endroitActuel = EndroitFichier.NON_CHERCHE;
+                endroitActuel = EndroitFichier.GAINS;
             }
             else {
                 endroitActuel = EndroitFichier.POSITION_JOUEURS;
