@@ -19,8 +19,8 @@ build:
 
   stage: build
   script:
-    - docker build -t $IMAGE_NAME:IMAGE_TAG .
-    - docker push $IMAGE_NAME:IMAGE_TAG
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker push $IMAGE_NAME:$IMAGE_TAG
 
   only:
     - main
@@ -39,7 +39,7 @@ deploy:
 
     - echo "Applying Kubernetes manifests"
     - sed -i "s@{{IMAGE_NAME}}@$IMAGE_NAME@g" kube/deployment.yml
-    - sed -i "s@{{IMAGE_TAG}}@IMAGE_TAG@g" kube/deployment.yml
+    - sed -i "s@{{IMAGE_TAG}}@$IMAGE_TAG@g" kube/deployment.yml
     - kubectl apply -f kube/deployment.yml
     - kubectl apply -f kube/service.yml
     - kubectl rollout status deployment/parties-deployment
