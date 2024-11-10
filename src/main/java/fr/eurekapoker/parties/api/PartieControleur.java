@@ -7,6 +7,7 @@ import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,24 +26,19 @@ public class PartieControleur {
         this.interfaceParties = new InterfacePartiesImpl(fabriqueDependances);
     }
 
-    @GetMapping("/")
-    public ResponseEntity<String> home() {
-        return ResponseEntity.ok("Bienvenue");
-    }
-
     @GetMapping(value = "/{id}")
     public ResponseEntity<ContenuPartieDto> consulterPartie(
             @PathVariable String id,
-            @RequestParam int indexPremiereMain,
-            @RequestParam int fenetreConsultation) throws ErreurConsultationPartie {
+            @RequestParam int indexMain,
+            @RequestParam int fenetreConsultation) throws ErreurConsultationPartie, ErreurLectureFichier {
         fenetreConsultation = Math.max(fenetreConsultation, MAX_FENETRE_CONSULTATION);
         ContenuPartieDto contenuPartie =
-                this.interfaceParties.consulterMainsParties(id, indexPremiereMain, fenetreConsultation);
+                this.interfaceParties.consulterMainsParties(id, indexMain, fenetreConsultation);
         return ResponseEntity.ok(contenuPartie);
 
     }
 
-    @PostMapping(value = "/creer")
+    @PostMapping(value = "/")
     public ResponseEntity<ResumePartieDto> ajouterPartie(
             @RequestBody RequeteImport requeteImport
             ) throws ErreurAjoutPartie {

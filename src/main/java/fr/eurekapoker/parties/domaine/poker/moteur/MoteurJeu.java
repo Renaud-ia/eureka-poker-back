@@ -47,15 +47,16 @@ public class MoteurJeu {
         }
     }
 
-    public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+    public void ajouterAction(ActionPokerJoueur actionPokerJoueur)
+            throws ErreurLectureFichier {
         try {
-            this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
+            this.encodageSituation.ajouterAction(actionPokerJoueur.getTypeAction());
         }
         catch (Exception e) {
             throw new ErreurLectureFichier("Trop d'actions pour être encodé");
         }
-        this.pot = this.pot.add(actionPoker.obtMontantAction());
-        this.incrementerMontantInvesti(actionPoker.getNomJoueur(), actionPoker.obtMontantAction());
+        this.pot = this.pot.add(actionPokerJoueur.obtMontantAction());
+        this.incrementerMontantInvesti(actionPokerJoueur.getNomJoueur(), actionPokerJoueur.obtMontantAction());
     }
 
     public void ajouterBlinde(String nomJoueur, BigDecimal montant) {
@@ -124,5 +125,20 @@ public class MoteurJeu {
     public boolean seraAllIn(String nomJoueur, BigDecimal montantAction) {
         BigDecimal stackRestant = stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
         return stackRestant.compareTo(montantAction) <= 0;
+    }
+
+    public void reinitialiser() {
+        this.stackDepart.clear();
+        this.investi.clear();
+        this.bountyDepart.clear();
+        this.pot = new BigDecimal(0).setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal obtMontantInvesti(String nomJoueur) {
+        return investi.get(nomJoueur);
+    }
+
+    public BigDecimal obtStackActuel(String nomJoueur) {
+        return stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
     }
 }

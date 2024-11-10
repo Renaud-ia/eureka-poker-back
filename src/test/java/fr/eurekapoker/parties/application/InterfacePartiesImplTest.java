@@ -9,6 +9,7 @@ import fr.eurekapoker.parties.application.persistance.PersistanceFichiers;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.domaine.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -57,7 +58,7 @@ public class InterfacePartiesImplTest {
     }
 
     @Test
-    void consultationPartieAppelleLesBonnesMethodes() throws ErreurConsultationPartie {
+    void consultationPartieAppelleLesBonnesMethodes() throws ErreurConsultationPartie, ErreurLectureFichier {
         // given
         String idPartie = "Fake-id-Partie";
         int indexPremiereMain = 0;

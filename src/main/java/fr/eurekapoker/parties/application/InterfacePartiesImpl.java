@@ -4,6 +4,7 @@ import fr.eurekapoker.parties.application.api.ConvertisseurPersistanceVersApi;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.imports.ConstructeurPersistence;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -70,7 +71,7 @@ public class InterfacePartiesImpl implements InterfaceParties {
 
     @Override
     public ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
-            throws ErreurConsultationPartie {
+            throws ErreurConsultationPartie, ErreurLectureFichier {
 
         PartiePersistanceDto partiePersistanceDto =
                     persistanceParties.recupererPartie(idPartie, indexPremiereMain, nombreMains);
@@ -79,7 +80,7 @@ public class InterfacePartiesImpl implements InterfaceParties {
         return this.convertirDtoPersistanceEnApi(partiePersistanceDto);
     }
 
-    private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) {
+    private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) throws ErreurLectureFichier {
         // todo OPTIMISATION => on fait deux tours sur la même structure de données => observateur de persistance ? (=15 ms)
         ConvertisseurPersistanceVersApi covertisseur =
                 this.fabriqueDependances.obtConvertisseurPersistanceVersApi(partiePersistanceDto);

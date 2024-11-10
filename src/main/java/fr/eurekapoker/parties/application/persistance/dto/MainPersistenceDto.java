@@ -1,5 +1,7 @@
 package fr.eurekapoker.parties.application.persistance.dto;
 
+import fr.eurekapoker.parties.application.api.dto.JoueurDto;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -169,5 +171,9 @@ public class MainPersistenceDto {
 
     public BigDecimal obtMontantBB() {
         return montantBB;
+    }
+
+    public boolean estDealer(JoueurPersistenceDto joueur) {
+        return positionDealer == obtSiege(joueur);
     }
 }

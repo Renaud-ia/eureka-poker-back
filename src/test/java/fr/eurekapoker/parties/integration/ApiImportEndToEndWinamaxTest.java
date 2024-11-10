@@ -2,9 +2,6 @@ package fr.eurekapoker.parties.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.eurekapoker.parties.api.RequeteImport;
-import fr.eurekapoker.parties.application.api.dto.ContenuMainDto;
-import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
-import fr.eurekapoker.parties.application.api.dto.JoueurDto;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -187,7 +184,7 @@ public class ApiImportEndToEndWinamaxTest {
         int indexPremiereMain = 0;
         int fenetreConsultation = 10;
         MvcResult result = mockMvc.perform(get("/parties/" + idUniquePartie)
-                        .param("indexPremiereMain", String.valueOf(indexPremiereMain))
+                        .param("indexMain", String.valueOf(indexPremiereMain))
                         .param("fenetreConsultation", String.valueOf(fenetreConsultation)))
                 .andExpect(status().isOk()) // Vérifier que la réponse est 200 OK
                 .andReturn(); // Retourner le résultat
@@ -207,7 +204,7 @@ public class ApiImportEndToEndWinamaxTest {
         ObjectMapper objectMapper = new ObjectMapper();
         String requeteImportJson = objectMapper.writeValueAsString(requeteImport);
 
-        MvcResult result = mockMvc.perform(post("/parties/creer")
+        MvcResult result = mockMvc.perform(post("/parties/")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(requeteImportJson))
                 .andExpect(status().isCreated())
