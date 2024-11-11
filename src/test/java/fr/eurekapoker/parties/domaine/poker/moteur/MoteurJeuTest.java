@@ -99,5 +99,29 @@ public class MoteurJeuTest {
         assertEquals(0, montantAttendu.compareTo(moteurJeu.obtPotBounty()));
     }
 
+    @Test
+    void ajouterTourPreflopNeResetPasBlinde() {
+        String fauxNomJoueur = "Fake";
+        BigDecimal montantBlinde = new BigDecimal("56.34");
+
+        moteurJeu.ajouterJoueur(fauxNomJoueur, new BigDecimal(1000), new BigDecimal(0));
+        moteurJeu.ajouterBlinde(fauxNomJoueur, montantBlinde);
+        moteurJeu.nouveauRound(TourPoker.RoundPoker.PREFLOP);
+
+        assertEquals(0, montantBlinde.compareTo(moteurJeu.obtMontantInvestiCeTour(fauxNomJoueur)));
+    }
+
+    @Test
+    void ajouterTourFlopResetBlinde() {
+        String fauxNomJoueur = "Fake";
+        BigDecimal montantBlinde = new BigDecimal("56.34");
+
+        moteurJeu.ajouterJoueur(fauxNomJoueur, new BigDecimal(1000), new BigDecimal(0));
+        moteurJeu.ajouterBlinde(fauxNomJoueur, montantBlinde);
+        moteurJeu.nouveauRound(TourPoker.RoundPoker.FLOP);
+
+        assertEquals(1, montantBlinde.compareTo(moteurJeu.obtMontantInvestiCeTour(fauxNomJoueur)));
+    }
+
     // todo ajouter test stack effectif + all in
 }

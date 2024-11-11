@@ -168,7 +168,7 @@ public class ConvertisseurPersistanceVersApi {
                 actionPersistanceDto.obtMontant(),
                 actionPersistanceDto.getNumeroAction(),
                 moteurJeu.obtStackActuel(nomJoueur),
-                moteurJeu.obtMontantInvesti(nomJoueur),
+                moteurJeu.obtMontantInvestiCeTour(nomJoueur),
                 moteurJeu.seraAllIn(nomJoueur, actionPersistanceDto.obtMontant()),
                 moteurJeu.obtPot()
         );
