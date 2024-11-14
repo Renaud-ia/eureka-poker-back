@@ -103,9 +103,10 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterHero(String nomHero, List<CartePoker> cartesHero) {
+        String comboAsString = convertirCartesString(cartesHero);
         ComboReel comboReel = new ComboReel(cartesHero);
         this.partiePersistanceDto.fixNomHero(nomHero);
-        this.derniereMain.ajouterInfosHero(nomHero, comboReel.toInt(), comboReel.toString());
+        this.derniereMain.ajouterInfosHero(nomHero, comboReel.toInt(), comboAsString);
     }
 
     @Override
@@ -168,8 +169,19 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterCartes(String nomJoueur, List<CartePoker> cartePokers) {
+        String cartesAsString = convertirCartesString(cartePokers);
         ComboReel comboReel = new ComboReel(cartePokers);
-        this.derniereMain.ajouterCartes(nomJoueur, comboReel.toInt(), comboReel.toString());
+        this.derniereMain.ajouterCartes(nomJoueur, comboReel.toInt(), cartesAsString);
+    }
+
+    private String convertirCartesString(List<CartePoker> cartePokers) {
+        StringBuilder cartesAsString = new StringBuilder();
+
+        for (CartePoker cartePoker: cartePokers) {
+            cartesAsString.append(cartePoker.toString());
+        }
+
+        return cartesAsString.toString();
     }
 
     @Override
