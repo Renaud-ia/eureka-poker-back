@@ -132,15 +132,23 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+        BigDecimal montantTotalAction = actionPoker.obtMontantAction();
+
+        if (actionPoker.montantPositif() && !actionPoker.estMontantTotal()) {
+            montantTotalAction = montantTotalAction
+                    .add(this.moteurJeu.obtMontantInvestiCeTour(actionPoker.getNomJoueur()))
+                    .subtract(this.moteurJeu.obtAnteJoueur(actionPoker.getNomJoueur()));
+        }
+
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(
                 actionPoker.getNomJoueur(),
                 actionPoker.getTypeAction().toString(),
                 this.moteurJeu.obtIdentifiantSituation(),
-                actionPoker.obtMontantAction(),
+                montantTotalAction,
                 moteurJeu.obtPot(),
                 moteurJeu.obtPotBounty(),
                 moteurJeu.obtStackEffectif(actionPoker.getNomJoueur()),
-                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), actionPoker.obtMontantAction()),
+                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), montantTotalAction),
                 this.numeroAction++
         );
         if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");

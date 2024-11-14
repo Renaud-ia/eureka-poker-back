@@ -165,11 +165,20 @@ public class ConvertisseurPersistanceVersApi {
 
     private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto) throws ErreurLectureFichier {
         String nomJoueur = actionPersistanceDto.obtNomJoueur();
+
+        float montantAction;
+        if (actionPersistanceDto.obtMontant().compareTo(new BigDecimal(0)) > 0) {
+            montantAction = actionPersistanceDto.obtMontant().floatValue()
+                    - this.moteurJeu.obtMontantInvestiCeTour(nomJoueur).floatValue()
+                    + this.moteurJeu.obtAnteJoueur(nomJoueur).floatValue();
+        }
+        else montantAction = 0;
+
         ActionPokerAvecBet actionPokerJoueur = new ActionPokerAvecBet(
                 nomJoueur,
                 ActionPoker.TypeAction.valueOf(actionPersistanceDto.obtNomAction()),
-                actionPersistanceDto.obtMontant().floatValue(),
-                true
+                montantAction,
+                false
         );
         moteurJeu.ajouterAction(actionPokerJoueur);
         ActionDto actionDto = new ActionDto(

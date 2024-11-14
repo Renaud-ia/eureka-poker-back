@@ -10,4 +10,8 @@ public class ActionPokerJoueur extends ActionPoker {
     public String getNomJoueur() {
         return nomJoueur;
     }
+
+    public boolean montantPositif() {
+        return false;
+    }
 }

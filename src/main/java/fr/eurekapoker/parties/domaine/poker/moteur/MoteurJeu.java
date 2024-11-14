@@ -19,12 +19,14 @@ public class MoteurJeu {
     private final HashMap<String, BigDecimal> investi;
     private final HashMap<String, BigDecimal> bountyDepart;
     private final HashMap<String, BigDecimal> investiCeTour;
+    private final HashMap<String, BigDecimal> ante;
     private BigDecimal pot;
     private BigDecimal potBounty;
     public MoteurJeu() {
         this.stackDepart = new HashMap<>();
         this.investi = new HashMap<>();
         this.investiCeTour = new HashMap<>();
+        this.ante = new HashMap<>();
         this.bountyDepart = new HashMap<>();
         this.pot = new BigDecimal(0).setScale(2, RoundingMode.HALF_UP);
     }
@@ -74,6 +76,7 @@ public class MoteurJeu {
     public void ajouterAnte(String nomJoueur, BigDecimal montant) {
         this.incrementerMontantInvesti(nomJoueur, montant);
         this.pot = this.pot.add(montant);
+        this.ante.put(nomJoueur, montant);
     }
 
     private void actualiserPotBounty() {
@@ -152,5 +155,9 @@ public class MoteurJeu {
 
     public BigDecimal obtStackActuel(String nomJoueur) {
         return stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
+    }
+
+    public BigDecimal obtAnteJoueur(String nomJoueur) {
+        return this.ante.getOrDefault(nomJoueur, new BigDecimal(0));
     }
 }

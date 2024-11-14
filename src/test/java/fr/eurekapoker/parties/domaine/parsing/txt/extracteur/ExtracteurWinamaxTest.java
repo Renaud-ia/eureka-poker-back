@@ -43,6 +43,7 @@ public class ExtracteurWinamaxTest {
         String ligne = "cypress will bets 30";
         ActionPokerJoueur actionPokerJoueur = extracteurWinamax.extraireAction(ligne);
         assertEquals("cypress will", actionPokerJoueur.getNomJoueur());
+        assertTrue(actionPokerJoueur.estMontantTotal());
     }
     @Test
     void doitExtraireActionFold() throws ErreurRegex {
@@ -65,6 +66,19 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, expectedValue.compareTo(actionPoker.obtMontantAction()));
         assertTrue(actionPoker.estMontantTotal());
     }
+
+    @Test
+    void doitExtraireActionCall() throws ErreurRegex {
+        String ligne = "_ NEXT_ calls 1800";
+        ActionPokerJoueur actionPoker = extracteurWinamax.extraireAction(ligne);
+        assertEquals(ActionPoker.TypeAction.CALL, actionPoker.getTypeAction());
+        assertEquals("_ NEXT_", actionPoker.getNomJoueur());
+        BigDecimal expectedValue = new BigDecimal("1800");
+        assertEquals(0, expectedValue.compareTo(actionPoker.obtMontantAction()));
+        assertFalse(actionPoker.estMontantTotal());
+    }
+
+
 
     @Test
     void doitExtraireActionPremierBet() throws ErreurRegex {
