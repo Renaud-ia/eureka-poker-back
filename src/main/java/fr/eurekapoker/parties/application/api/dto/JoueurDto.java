@@ -17,6 +17,7 @@ public class JoueurDto {
     private final BigDecimal resultat;
     private final boolean dealer;
     private final BigDecimal bounty;
+    private boolean desactive;
     public JoueurDto(String nomJoueur,
                      BigDecimal stackDepart,
                      List<String> cartesJoueurs,
@@ -35,5 +36,9 @@ public class JoueurDto {
         this.resultat = resultat;
         this.dealer = dealer;
         this.bounty = bounty;
+    }
+
+    public void estDesactive(boolean desactive) {
+        this.desactive = desactive;
     }
 }

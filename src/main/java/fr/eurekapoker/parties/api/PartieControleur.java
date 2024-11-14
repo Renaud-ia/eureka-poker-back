@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("parties")
 @CrossOrigin(origins = "http://localhost:3000")
 public class PartieControleur {
-    private final static int MAX_FENETRE_CONSULTATION = 10;
+    private final static int MAX_FENETRE_CONSULTATION = 10000;
     private final InterfaceParties interfaceParties;
     @Autowired
     public PartieControleur(FabriqueDependances fabriqueDependances) {

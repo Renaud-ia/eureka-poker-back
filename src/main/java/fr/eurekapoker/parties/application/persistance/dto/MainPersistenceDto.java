@@ -9,7 +9,6 @@ import java.util.*;
 public class MainPersistenceDto {
     // todo coder les méthodes
     // todo coder les vérifications
-    private final String idUniqueGenere;
     private final long idParse;
     private final int indexMain;
     private final BigDecimal montantBB;
@@ -25,11 +24,9 @@ public class MainPersistenceDto {
     private final HashMap<String, BigDecimal> bounty;
     private String nomHero;
     private int positionDealer;
-    public MainPersistenceDto(String idUniqueGenere,
-                              long idParse,
+    public MainPersistenceDto(long idParse,
                               BigDecimal montantBB,
                               int indexMain) {
-        this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
         this.indexMain = indexMain;
         this.montantBB = montantBB;
@@ -107,10 +104,6 @@ public class MainPersistenceDto {
 
     public BigDecimal obtValueParActionJoueur(String nomJoueur) {
         return valueParAction.get(nomJoueur);
-    }
-
-    public String obtIdentifiantGenere() {
-        return idUniqueGenere;
     }
 
     public long obtIdParse() {

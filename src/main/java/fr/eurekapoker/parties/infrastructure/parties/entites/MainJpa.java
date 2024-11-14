@@ -19,8 +19,6 @@ public class MainJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false, unique = true)
-    private String identifiantGenere;
     @Column(nullable = false)
     private Long identifiantParse;
     @Column(nullable = false)

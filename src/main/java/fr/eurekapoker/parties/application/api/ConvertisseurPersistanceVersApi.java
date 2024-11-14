@@ -18,6 +18,7 @@ public class ConvertisseurPersistanceVersApi {
     private final String nomHero;
     private final boolean joueursAnonymes;
     private HashMap<String, String> nomsAnonymes;
+    private final HashMap<String, Integer> actionsParJoueur;
     private final MoteurJeu moteurJeu;
     public ConvertisseurPersistanceVersApi(PartiePersistanceDto partiePersistanceDto) {
         this.partiePersistanceDto = partiePersistanceDto;
@@ -26,6 +27,7 @@ public class ConvertisseurPersistanceVersApi {
         this.joueursAnonymes = partiePersistanceDto.obtJoueursAnonymes();
         this.nomsAnonymes = new HashMap<>();
         this.moteurJeu = new MoteurJeu();
+        this.actionsParJoueur = new HashMap<>();
     }
 
     public ContenuPartieDto obtContenuPartieDto() throws ErreurLectureFichier {
@@ -57,7 +59,6 @@ public class ConvertisseurPersistanceVersApi {
         HashMap<String, BigDecimal> blindes = extraireBlindesDepuisMain(mainPersistenceDto);
 
         ContenuMainDto contenuMainDto = new ContenuMainDto(
-                mainPersistenceDto.obtIdentifiantGenere(),
                 mainPersistenceDto.obtPositionDealer(),
                 mainPersistenceDto.obtMontantBB(),
                 joueurs,
@@ -66,7 +67,16 @@ public class ConvertisseurPersistanceVersApi {
                 antes
         );
 
+        this.fixActivationJoueurs(joueurs);
+
         return contenuMainDto;
+    }
+
+    private void fixActivationJoueurs(List<JoueurDto> joueurs) {
+        for (JoueurDto joueurDto : joueurs) {
+            String nomJoueur = joueurDto.getNomJoueur();
+            joueurDto.estDesactive(this.actionsParJoueur.getOrDefault(nomJoueur, 0) == 0);
+        }
     }
 
     private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto) {
@@ -172,6 +182,8 @@ public class ConvertisseurPersistanceVersApi {
                 moteurJeu.seraAllIn(nomJoueur, actionPersistanceDto.obtMontant()),
                 moteurJeu.obtPot()
         );
+
+        this.actionsParJoueur.put(nomJoueur, this.actionsParJoueur.getOrDefault(nomJoueur, 0) + 1);
 
         return actionDto;
     }

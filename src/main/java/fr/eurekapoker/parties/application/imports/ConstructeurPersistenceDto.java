@@ -65,9 +65,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterMain(MainPoker mainPoker, BigDecimal montantBB) throws ErreurLectureFichier {
-        UUID idUniqueGenere = UUID.randomUUID();
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
-                idUniqueGenere.toString(),
                 mainPoker.obtIdParse(),
                 montantBB,
                 indexMain++

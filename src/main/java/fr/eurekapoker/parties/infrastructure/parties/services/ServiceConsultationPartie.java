@@ -24,9 +24,6 @@ public class ServiceConsultationPartie {
 
         if (partieJpa != null) return convertirPartieJpaVersDto(partieJpa);
 
-        MainJpa mainJpa = mainRepository.findByidentifiantGenere(idUniqueGenere);
-        if (mainJpa != null) return convertirPartieJpaVersDto(mainJpa.getPartieJpa());
-
         throw new PartieNonTrouvee("La partie n'a pas été trouvée avec id:" + idUniqueGenere);
     }
 
@@ -56,7 +53,6 @@ public class ServiceConsultationPartie {
 
     private MainPersistenceDto convertirMainJpaVersDto(MainJpa mainJpa) {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
-                mainJpa.getIdentifiantGenere(),
                 mainJpa.getIdentifiantParse(),
                 mainJpa.getMontantBB(),
                 mainJpa.getIndexMain()
