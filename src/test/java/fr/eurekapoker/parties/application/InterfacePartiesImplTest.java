@@ -54,7 +54,7 @@ public class InterfacePartiesImplTest {
 
         verify(domaineServiceImportMock).lancerImport();
         verify(persistancePartiesMock).ajouterPartie(constructeurPersistenceMock.obtPartie());
-        verify(persistanceFichiersMock).enregistrerFichier(eq(partie), any());
+        verify(persistanceFichiersMock).enregistrerFichier(eq(partie));
     }
 
     @Test

@@ -11,7 +11,7 @@ import fr.eurekapoker.parties.domaine.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.infrastructure.PersistancePartiesBDD;
-import fr.eurekapoker.parties.infrastructure.PersistanceFichierLinux;
+import fr.eurekapoker.parties.infrastructure.PersistanceS3;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -33,7 +33,7 @@ public class FabriqueDependancesImpl implements FabriqueDependances {
 
     @Override
     public PersistanceFichiers obtPersistanceFichiers() {
-        return new PersistanceFichierLinux();
+        return new PersistanceS3();
     }
 
     public ConstructeurPersistence obtConstructeurPersistance(ParametresImport parametresImport) {

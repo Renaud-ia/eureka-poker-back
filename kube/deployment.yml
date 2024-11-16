@@ -25,19 +25,36 @@ spec:
                 secretKeyRef:
                   name: postgres-secret
                   key: POSTGRES_DB
+
             - name: DB_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: postgres-secret
                   key: POSTGRES_USER
+
             - name: DB_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: postgres-secret
                   key: POSTGRES_PASSWORD
+
             - name: DB_URL
               value: "jdbc:postgresql://postgres-service:5432/${POSTGRES_DB}"
+
             - name: DB_DIALECT
               value: "org.hibernate.dialect.PostgreSQLDialect"
+
+            - name: S3_BUCKET_NAME
+              value: "eureka-uploads"
+
+            - name: AWS_ACCESS_KEY_ID
+              value: "AKIAW3MEDULIMPDIXFEX"
+
+            - name: AWS_SECRET_ACCESS_KEY
+              value: "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"
+
+            - name: AWS_REGION
+              value: "eu-north-1"
+
       imagePullSecrets:
         - name: gitlab-registry-secret
