@@ -205,7 +205,9 @@ public class ConvertisseurPersistanceVersApi {
                 moteurJeu.obtPot()
         );
 
-        this.actionsParJoueur.put(nomJoueur, this.actionsParJoueur.getOrDefault(nomJoueur, 0) + 1);
+        String nomAnonyme = this.getNomJoueurAnonyme(nomJoueur);
+
+        this.actionsParJoueur.put(nomAnonyme, this.actionsParJoueur.getOrDefault(nomAnonyme, 0) + 1);
 
         return actionDto;
     }
