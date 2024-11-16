@@ -6,6 +6,7 @@ import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 
 public interface InterfaceParties {
     ResumePartieDto ajouterPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie;
@@ -17,5 +18,5 @@ public interface InterfaceParties {
      * @return un DTO permettant de rejouer la partie
      */
     ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
-            throws ErreurConsultationPartie;
+            throws ErreurConsultationPartie, ErreurLectureFichier;
 }

@@ -1,9 +1,12 @@
 package fr.eurekapoker.parties.application.api.dto;
 
+import lombok.Getter;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.List;
 
+@Getter
 public class JoueurDto {
     private final String nomJoueur;
     private final BigDecimal stackDepart;
@@ -12,13 +15,18 @@ public class JoueurDto {
     private final BigDecimal ante;
     private final BigDecimal blinde;
     private final BigDecimal resultat;
+    private final boolean dealer;
+    private final BigDecimal bounty;
+    private boolean desactive;
     public JoueurDto(String nomJoueur,
                      BigDecimal stackDepart,
                      List<String> cartesJoueurs,
                      int siege,
                      BigDecimal ante,
                      BigDecimal blinde,
-                     BigDecimal resultat) {
+                     BigDecimal resultat,
+                     boolean dealer,
+                     BigDecimal bounty) {
         this.nomJoueur = nomJoueur;
         this.stackDepart = stackDepart;
         this.cartesJoueurs = cartesJoueurs;
@@ -26,30 +34,11 @@ public class JoueurDto {
         this.ante = ante;
         this.blinde = blinde;
         this.resultat = resultat;
+        this.dealer = dealer;
+        this.bounty = bounty;
     }
 
-    public String getNomJoueur() {
-        return nomJoueur;
-    }
-
-    public final BigDecimal getStackDepart() {
-        return stackDepart;
-    }
-
-    public List<String> getCartesJoueurs() {
-        return cartesJoueurs;
-    }
-
-    public int getSiege() {
-        return siege;
-    }
-    public BigDecimal getAnte() {
-        return ante;
-    }
-    public BigDecimal getBlinde() {
-        return blinde;
-    }
-    public BigDecimal getResultat() {
-        return resultat;
+    public void estDesactive(boolean desactive) {
+        this.desactive = desactive;
     }
 }

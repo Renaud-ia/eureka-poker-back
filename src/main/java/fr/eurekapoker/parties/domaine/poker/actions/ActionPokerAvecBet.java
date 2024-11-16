@@ -22,4 +22,8 @@ public class ActionPokerAvecBet extends ActionPokerJoueur {
     public boolean estMontantTotal() {
         return totalBet;
     }
+
+    public boolean montantPositif() {
+        return montantAction.compareTo(new BigDecimal(0)) > 0;
+    }
 }

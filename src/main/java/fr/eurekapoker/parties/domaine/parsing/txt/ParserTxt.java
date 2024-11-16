@@ -126,7 +126,7 @@ public abstract class ParserTxt extends ParserModele {
         observateurParser.ajouterAction(actionPoker);
     }
 
-    private void ajouterResultat(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
+    private void ajouterResultat(int indexLigne) throws ErreurRegex {
         ResultatJoueur resultatJoueur = extracteurLigne.extraireResultat(lignesFichier[indexLigne]);
         String nomJoueur = resultatJoueur.getNomJoueur();
         observateurParser.ajouterGains(nomJoueur, resultatJoueur.obtMontantGagne());

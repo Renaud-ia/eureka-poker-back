@@ -61,7 +61,6 @@ public class AjoutEtRecuperationPartieBddTest {
 
         // ajouter une main
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
-                UUID.randomUUID().toString(),
                 random.nextLong(),
                 new BigDecimal(20), 1
         );
@@ -165,7 +164,6 @@ public class AjoutEtRecuperationPartieBddTest {
     }
 
     private boolean infosMainsSontDifferentes(MainPersistenceDto mainOriginale, MainPersistenceDto mainRecuperee) {
-        if (!Objects.equals(mainOriginale.obtIdentifiantGenere(), mainRecuperee.obtIdentifiantGenere())) return true;
         if (mainOriginale.obtIdParse() != mainRecuperee.obtIdParse()) return true;
         if (mainOriginale.obtPositionDealer() != mainRecuperee.obtPositionDealer()) return true;
 

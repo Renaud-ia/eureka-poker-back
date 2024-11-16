@@ -1,0 +1,43 @@
+Winamax Poker - Tournament "POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO" buyIn: 4.50€ + 0.50€ level: 4 - HandId: #3255534997905342520-36-1710706435 - Holdem no limit (40/175/350) - 2024/03/17 20:13:55 UTC
+Table: 'POUR LA DARONNE - ROAD TO 3 MILLION EVENT KO(757988309)#0055' 6-max (real money) Seat #5 is the button
+Seat 1: jveudlamone (29435, 1.80€ bounty)
+Seat 2: AlexisSR7 (17242, 1.80€ bounty)
+Seat 3: Fonkytilta (17942, 1.80€ bounty)
+Seat 4: juste1doigt (19154, 1.80€ bounty)
+Seat 5: VienMonGolio (73065, 3.60€ bounty)
+Seat 6: KOKKOT (11572, 1.80€ bounty)
+*** ANTE/BLINDS ***
+KOKKOT posts ante 40
+jveudlamone posts ante 40
+AlexisSR7 posts ante 40
+Fonkytilta posts ante 40
+juste1doigt posts ante 40
+VienMonGolio posts ante 40
+KOKKOT posts small blind 175
+jveudlamone posts big blind 350
+Dealt to jveudlamone [9d 3s]
+*** PRE-FLOP ***
+AlexisSR7 raises 525 to 875
+Fonkytilta calls 875
+juste1doigt folds
+VienMonGolio folds
+KOKKOT folds
+jveudlamone folds
+*** FLOP *** [7s Qs 3c]
+AlexisSR7 checks
+Fonkytilta bets 1258
+AlexisSR7 raises 1383 to 2641
+Fonkytilta raises 14386 to 17027 and is all-in
+AlexisSR7 calls 13686 and is all-in
+*** TURN *** [7s Qs 3c][5d]
+*** RIVER *** [7s Qs 3c 5d][9h]
+*** SHOW DOWN ***
+AlexisSR7 shows [Qh Ac] (One pair : Queens)
+Fonkytilta shows [As Js] (High card : Ace)
+Fonkytilta collected 700 from side pot 1
+AlexisSR7 collected 35169 from main pot
+*** SUMMARY ***
+Total pot 35869 | No rake
+Board: [7s Qs 3c 5d 9h]
+Seat 2: AlexisSR7 showed [Qh Ac] and won 35169 with One pair : Queens
+Seat 3: Fonkytilta showed [As Js] and won 700 with High card : Ace

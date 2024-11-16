@@ -18,17 +18,25 @@ public class MoteurJeu {
     private final HashMap<String, BigDecimal> stackDepart;
     private final HashMap<String, BigDecimal> investi;
     private final HashMap<String, BigDecimal> bountyDepart;
+    private final HashMap<String, BigDecimal> investiCeTour;
+    private final HashMap<String, BigDecimal> ante;
     private BigDecimal pot;
     private BigDecimal potBounty;
     public MoteurJeu() {
         this.stackDepart = new HashMap<>();
         this.investi = new HashMap<>();
+        this.investiCeTour = new HashMap<>();
+        this.ante = new HashMap<>();
         this.bountyDepart = new HashMap<>();
         this.pot = new BigDecimal(0).setScale(2, RoundingMode.HALF_UP);
     }
 
     public void nouveauRound(TourPoker.RoundPoker round) {
         this.encodageSituation = new EncodageSituation(stackDepart.size(), round);
+        if (round == TourPoker.RoundPoker.PREFLOP) return;
+        for (String joueur: investiCeTour.keySet()) {
+            this.investiCeTour.put(joueur, new BigDecimal(0));
+        }
     }
 
     public void ajouterJoueur(String nomJoueur, BigDecimal stackDepart, BigDecimal bounty) {
@@ -36,6 +44,7 @@ public class MoteurJeu {
         if (bounty == null) bounty = new BigDecimal(0);
         this.bountyDepart.put(nomJoueur, bounty);
         this.investi.put(nomJoueur, new BigDecimal(0));
+        this.investiCeTour.put(nomJoueur, new BigDecimal(0));
     }
 
     public void ajouterJoueurManquant() throws ErreurLectureFichier {
@@ -47,15 +56,16 @@ public class MoteurJeu {
         }
     }
 
-    public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+    public void ajouterAction(ActionPokerJoueur actionPokerJoueur)
+            throws ErreurLectureFichier {
         try {
-            this.encodageSituation.ajouterAction(actionPoker.getTypeAction());
+            this.encodageSituation.ajouterAction(actionPokerJoueur.getTypeAction());
         }
         catch (Exception e) {
             throw new ErreurLectureFichier("Trop d'actions pour être encodé");
         }
-        this.pot = this.pot.add(actionPoker.obtMontantAction());
-        this.incrementerMontantInvesti(actionPoker.getNomJoueur(), actionPoker.obtMontantAction());
+        this.pot = this.pot.add(actionPokerJoueur.obtMontantAction());
+        this.incrementerMontantInvesti(actionPokerJoueur.getNomJoueur(), actionPokerJoueur.obtMontantAction());
     }
 
     public void ajouterBlinde(String nomJoueur, BigDecimal montant) {
@@ -66,6 +76,7 @@ public class MoteurJeu {
     public void ajouterAnte(String nomJoueur, BigDecimal montant) {
         this.incrementerMontantInvesti(nomJoueur, montant);
         this.pot = this.pot.add(montant);
+        this.ante.put(nomJoueur, montant);
     }
 
     private void actualiserPotBounty() {
@@ -87,6 +98,11 @@ public class MoteurJeu {
     private void incrementerMontantInvesti(String nomJoueur, BigDecimal montantInvesti) {
         this.investi.put(nomJoueur,
                 this.investi.getOrDefault(
+                        nomJoueur,
+                        new BigDecimal(0)).add(montantInvesti).setScale(2, RoundingMode.HALF_UP));
+
+        this.investiCeTour.put(nomJoueur,
+                this.investiCeTour.getOrDefault(
                         nomJoueur,
                         new BigDecimal(0)).add(montantInvesti).setScale(2, RoundingMode.HALF_UP));
     }
@@ -124,5 +140,28 @@ public class MoteurJeu {
     public boolean seraAllIn(String nomJoueur, BigDecimal montantAction) {
         BigDecimal stackRestant = stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
         return stackRestant.compareTo(montantAction) <= 0;
+    }
+
+    public void reinitialiser() {
+        this.stackDepart.clear();
+        this.investi.clear();
+        this.bountyDepart.clear();
+        this.pot = new BigDecimal(0).setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal obtMontantInvestiCeTour(String nomJoueur) {
+        return investiCeTour.get(nomJoueur);
+    }
+
+    public BigDecimal obtStackActuel(String nomJoueur) {
+        return stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
+    }
+
+    public BigDecimal obtAnteJoueur(String nomJoueur) {
+        return this.ante.getOrDefault(nomJoueur, new BigDecimal(0));
+    }
+
+    public BigDecimal obtMontantInvesti(String nomJoueur) {
+        return this.investi.get(nomJoueur);
     }
 }

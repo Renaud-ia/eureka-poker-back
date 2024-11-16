@@ -2,11 +2,9 @@ package fr.eurekapoker.parties.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.eurekapoker.parties.api.RequeteImport;
-import fr.eurekapoker.parties.application.api.dto.ContenuMainDto;
-import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
-import fr.eurekapoker.parties.application.api.dto.JoueurDto;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -182,12 +180,71 @@ public class ApiImportEndToEndWinamaxTest {
         }
     }
 
+    @Test
+    public void donneesSortiesApiActionSontBonnes() throws Exception {
+        String nomFichier = "tournoi_3_bet.txt";
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
+        String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
+
+        JSONObject jsonConsultation = consulterPartie(idUniquePartie);
+
+        JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
+        JSONArray actionsPreflop = premiereMain.getJSONArray("tours").getJSONObject(0).getJSONArray("actions");
+
+        JSONObject premiereActionPf = actionsPreflop.getJSONObject(0);
+        verifierAction(premiereActionPf, "AlexisSR7", "RAISE", 875, 875, 16327, 1640, false);
+
+        JSONObject secondeActionPf = actionsPreflop.getJSONObject(1);
+        verifierAction(secondeActionPf, "Fonkytilta", "CALL", 875, 875, 17027, 2515, false);
+
+        JSONObject troisiemeActionPf = actionsPreflop.getJSONObject(2);
+        verifierAction(troisiemeActionPf, "juste1doigt", "FOLD", 0, 0, 19114, 2515, false);
+
+        JSONObject sixiemeActionPf = actionsPreflop.getJSONObject(5);
+        verifierAction(sixiemeActionPf, "jveudlamone", "FOLD", 0, 350, 29045, 2515, false);
+
+
+        JSONArray actionsFlop = premiereMain.getJSONArray("tours").getJSONObject(1).getJSONArray("actions");
+
+        JSONObject premiereActionFlop = actionsFlop.getJSONObject(0);
+        verifierAction(premiereActionFlop, "AlexisSR7", "CHECK", 0, 0, 16327, 2515, false);
+
+        JSONObject secondeActionFlop = actionsFlop.getJSONObject(1);
+        verifierAction(secondeActionFlop, "Fonkytilta", "RAISE", 1258, 1258, 15769, 3773, false);
+
+        JSONObject troisiemeActionFlop = actionsFlop.getJSONObject(2);
+        verifierAction(troisiemeActionFlop, "AlexisSR7", "RAISE", 2641, 2641, 13686, 6414, false);
+
+        JSONObject quatriemeActionFlop = actionsFlop.getJSONObject(3);
+        verifierAction(quatriemeActionFlop, "Fonkytilta", "RAISE", 17027, 17027, 0, 22183, true);
+
+        JSONObject cinquiemeActionFlop = actionsFlop.getJSONObject(4);
+        verifierAction(cinquiemeActionFlop, "AlexisSR7", "CALL", 16327, 16327, 0, 35869, true);
+    }
+
+    private void verifierAction(JSONObject action,
+                                String nomJoueur,
+                                String nomAction,
+                                float montant,
+                                float montantInvesti,
+                                float stackActuel,
+                                float montantPot,
+                                boolean estAllIn) throws JSONException {
+        assertEquals(nomJoueur, action.getString("nomJoueur"));
+        assertEquals(nomAction, action.getString("action"));
+        assertEquals(montant, action.getDouble("montant"));
+        assertEquals(montantInvesti, action.getDouble("montantInvesti"));
+        assertEquals(stackActuel, action.getDouble("stackActuel"));
+        assertEquals(montantPot, action.getDouble("montantPot"));
+        assertEquals(estAllIn, action.getBoolean("estAllIn"));
+    }
+
 
     private JSONObject consulterPartie(String idUniquePartie) throws Exception {
         int indexPremiereMain = 0;
         int fenetreConsultation = 10;
         MvcResult result = mockMvc.perform(get("/parties/" + idUniquePartie)
-                        .param("indexPremiereMain", String.valueOf(indexPremiereMain))
+                        .param("indexMain", String.valueOf(indexPremiereMain))
                         .param("fenetreConsultation", String.valueOf(fenetreConsultation)))
                 .andExpect(status().isOk()) // Vérifier que la réponse est 200 OK
                 .andReturn(); // Retourner le résultat
@@ -207,7 +264,7 @@ public class ApiImportEndToEndWinamaxTest {
         ObjectMapper objectMapper = new ObjectMapper();
         String requeteImportJson = objectMapper.writeValueAsString(requeteImport);
 
-        MvcResult result = mockMvc.perform(post("/parties/creer")
+        MvcResult result = mockMvc.perform(post("/parties/")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(requeteImportJson))
                 .andExpect(status().isCreated())

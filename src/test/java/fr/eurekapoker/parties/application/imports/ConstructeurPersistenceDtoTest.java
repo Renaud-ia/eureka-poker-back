@@ -59,6 +59,8 @@ class ConstructeurPersistenceDtoTest {
         when(infosPartiePokerMock.getNomPartie()).thenReturn("Fake nom partie");
         when(infosPartiePokerMock.getNombreSieges()).thenReturn(nombreJoueurs);
 
+        when(moteurJeuMock.obtAnteJoueur(anyString())).thenReturn(new BigDecimal(0));
+
         InfosPartiePoker infosPartiePoker = infosPartiePokerMock;
         constructeur.fixInfosPartie(infosPartiePoker);
         assertEquals(nombreJoueurs, constructeur.obtPartie().obtNombreSieges());

@@ -57,7 +57,6 @@ public class ServiceAjoutPartie {
         int indexMain = 1;
         for (MainPersistenceDto mainDto: mainPersistenceDtos) {
             MainJpa nouvelleMain = MainJpa.builder()
-                    .identifiantGenere(mainDto.obtIdentifiantGenere())
                     .identifiantParse(mainDto.obtIdParse())
                     .montantBB(mainDto.obtMontantBB())
                     .indexMain(indexMain++)

@@ -4,6 +4,7 @@ import fr.eurekapoker.parties.application.api.ConvertisseurPersistanceVersApi;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.imports.ConstructeurPersistence;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,10 +13,8 @@ import fr.eurekapoker.parties.application.api.InterfaceParties;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
-import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurParsing;
 import fr.eurekapoker.parties.application.persistance.PersistanceFichiers;
-import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.domaine.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
@@ -32,10 +31,10 @@ public class InterfacePartiesImpl implements InterfaceParties {
     }
     @Override
     public ResumePartieDto ajouterPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie {
+        enregistrerFichier(contenuPartie);
+        logger.info("Données fichiers sauvegardées");
         ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie, parametresImport);
         logger.info("Partie persistée avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
-        enregistrerFichier(contenuPartie, constructeurPersistenceDto.getIdUniquePartie());
-        logger.info("Données fichiers sauvegardées avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
 
         return constructeurPersistenceDto.obtResumePartie();
     }
@@ -64,13 +63,13 @@ public class InterfacePartiesImpl implements InterfaceParties {
         return constructeurPersistence;
     }
 
-    private void enregistrerFichier(String contenuPartie, String idUniqueGenere) {
-        this.persistanceFichiers.enregistrerFichier(contenuPartie, idUniqueGenere);
+    private void enregistrerFichier(String contenuPartie) {
+        this.persistanceFichiers.enregistrerFichier(contenuPartie);
     }
 
     @Override
     public ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
-            throws ErreurConsultationPartie {
+            throws ErreurConsultationPartie, ErreurLectureFichier {
 
         PartiePersistanceDto partiePersistanceDto =
                     persistanceParties.recupererPartie(idPartie, indexPremiereMain, nombreMains);
@@ -79,7 +78,7 @@ public class InterfacePartiesImpl implements InterfaceParties {
         return this.convertirDtoPersistanceEnApi(partiePersistanceDto);
     }
 
-    private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) {
+    private ContenuPartieDto convertirDtoPersistanceEnApi(PartiePersistanceDto partiePersistanceDto) throws ErreurLectureFichier {
         // todo OPTIMISATION => on fait deux tours sur la même structure de données => observateur de persistance ? (=15 ms)
         ConvertisseurPersistanceVersApi covertisseur =
                 this.fabriqueDependances.obtConvertisseurPersistanceVersApi(partiePersistanceDto);

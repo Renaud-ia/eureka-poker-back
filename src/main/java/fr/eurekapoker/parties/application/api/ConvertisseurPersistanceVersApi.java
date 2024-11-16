@@ -2,6 +2,12 @@ package fr.eurekapoker.parties.application.api;
 
 import fr.eurekapoker.parties.application.api.dto.*;
 import fr.eurekapoker.parties.application.persistance.dto.*;
+import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker.RoundPoker;
+import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 
 import java.math.BigDecimal;
 import java.util.*;
@@ -13,15 +19,19 @@ public class ConvertisseurPersistanceVersApi {
     private final String nomHero;
     private final boolean joueursAnonymes;
     private HashMap<String, String> nomsAnonymes;
+    private final HashMap<String, Integer> actionsParJoueur;
+    private final MoteurJeu moteurJeu;
     public ConvertisseurPersistanceVersApi(PartiePersistanceDto partiePersistanceDto) {
         this.partiePersistanceDto = partiePersistanceDto;
         this.numeroVillain = 1;
         this.nomHero = partiePersistanceDto.obtNomHero();
         this.joueursAnonymes = partiePersistanceDto.obtJoueursAnonymes();
         this.nomsAnonymes = new HashMap<>();
+        this.moteurJeu = new MoteurJeu();
+        this.actionsParJoueur = new HashMap<>();
     }
 
-    public ContenuPartieDto obtContenuPartieDto() {
+    public ContenuPartieDto obtContenuPartieDto() throws ErreurLectureFichier {
         String nomHero = this.joueursAnonymes ? "Hero" : partiePersistanceDto.obtNomHero();
         ContenuPartieDto contenuPartieDto = new ContenuPartieDto(
                 partiePersistanceDto.obtIdUnique(),
@@ -34,6 +44,7 @@ public class ConvertisseurPersistanceVersApi {
         );
 
         for (MainPersistenceDto mainPersistenceDto : partiePersistanceDto.obtMains()) {
+            this.moteurJeu.reinitialiser();
             contenuPartieDto.ajouterMain(convertirMainDtoVersApi(
                     mainPersistenceDto
             ));
@@ -42,14 +53,13 @@ public class ConvertisseurPersistanceVersApi {
         return contenuPartieDto;
     }
 
-    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto) {
+    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto) throws ErreurLectureFichier {
         List<JoueurDto> joueurs = extraireJoueursDepuisMain(mainPersistenceDto);
         List<ContenuTourDto> tours = extraireToursDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> antes = extraireAnteDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> blindes = extraireBlindesDepuisMain(mainPersistenceDto);
 
         ContenuMainDto contenuMainDto = new ContenuMainDto(
-                mainPersistenceDto.obtIdentifiantGenere(),
                 mainPersistenceDto.obtPositionDealer(),
                 mainPersistenceDto.obtMontantBB(),
                 joueurs,
@@ -58,7 +68,16 @@ public class ConvertisseurPersistanceVersApi {
                 antes
         );
 
+        this.fixActivationJoueurs(joueurs);
+
         return contenuMainDto;
+    }
+
+    private void fixActivationJoueurs(List<JoueurDto> joueurs) {
+        for (JoueurDto joueurDto : joueurs) {
+            String nomJoueur = joueurDto.getNomJoueur();
+            joueurDto.estDesactive(this.actionsParJoueur.getOrDefault(nomJoueur, 0) == 0);
+        }
     }
 
     private List<JoueurDto> extraireJoueursDepuisMain(MainPersistenceDto mainPersistenceDto) {
@@ -88,24 +107,31 @@ public class ConvertisseurPersistanceVersApi {
                     mainPersistenceDto.obtSiege(joueurPersistenceDto),
                     mainPersistenceDto.obtAnte(nomJoueur),
                     mainPersistenceDto.obtBlinde(nomJoueur),
-                    mainPersistenceDto.obtGains(nomJoueur)
+                    mainPersistenceDto.obtGains(nomJoueur),
+                    mainPersistenceDto.estDealer(joueurPersistenceDto),
+                    mainPersistenceDto.obtBounty(nomJoueur)
             );
             joueursExtraits.add(joueurDto);
+
+            moteurJeu.ajouterJoueur(nomJoueur, mainPersistenceDto.obtStack(nomJoueur), mainPersistenceDto.obtBounty(nomJoueur));
+            moteurJeu.ajouterBlinde(nomJoueur, mainPersistenceDto.obtBlinde(nomJoueur));
+            moteurJeu.ajouterAnte(nomJoueur, mainPersistenceDto.obtAnte(nomJoueur));
         }
 
         return joueursExtraits;
     }
 
-    private List<ContenuTourDto> extraireToursDepuisMain(MainPersistenceDto mainPersistenceDto) {
+    private List<ContenuTourDto> extraireToursDepuisMain(MainPersistenceDto mainPersistenceDto) throws ErreurLectureFichier {
         List<ContenuTourDto> toursExtraits = new ArrayList<>();
         for (TourPersistanceDto tourPersistanceDto : mainPersistenceDto.obtTours()) {
+            this.moteurJeu.nouveauRound(RoundPoker.valueOf(tourPersistanceDto.obtNomTour()));
             ContenuTourDto contenuTourDto = new ContenuTourDto(
                     tourPersistanceDto.obtNomTour(),
                     extraireCartes(tourPersistanceDto.obtBoardAsString())
             );
 
             for (ActionPersistanceDto actionPersistanceDto: tourPersistanceDto.obtActions()) {
-                contenuTourDto.ajouterAction(convertirActionVersApi(actionPersistanceDto));
+                contenuTourDto.ajouterAction(convertirActionVersApi(actionPersistanceDto, RoundPoker.valueOf(tourPersistanceDto.obtNomTour())));
             }
 
             contenuTourDto.getActions().sort(Comparator.comparingInt(ActionDto::getNumeroAction));
@@ -138,13 +164,50 @@ public class ConvertisseurPersistanceVersApi {
         return blindesExtraites;
     }
 
-    private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto) {
+    private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto, RoundPoker roundPoker) throws ErreurLectureFichier {
+        String nomJoueur = actionPersistanceDto.obtNomJoueur();
+
+        BigDecimal montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
+
+        if (Objects.equals(roundPoker, RoundPoker.PREFLOP)) {
+            montantInvestiCeTour = montantInvestiCeTour.subtract(this.moteurJeu.obtAnteJoueur(nomJoueur));
+        }
+
+        float montantAction;
+        if (actionPersistanceDto.obtMontant().compareTo(new BigDecimal(0)) > 0) {
+            montantAction = actionPersistanceDto.obtMontant().floatValue() - montantInvestiCeTour.floatValue();
+        }
+        else montantAction = 0;
+
+        ActionPokerAvecBet actionPokerJoueur = new ActionPokerAvecBet(
+                nomJoueur,
+                ActionPoker.TypeAction.valueOf(actionPersistanceDto.obtNomAction()),
+                montantAction,
+                false
+        );
+        moteurJeu.ajouterAction(actionPokerJoueur);
+
+        montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
+
+        if (Objects.equals(roundPoker, RoundPoker.PREFLOP)) {
+            montantInvestiCeTour = montantInvestiCeTour.subtract(this.moteurJeu.obtAnteJoueur(nomJoueur));
+        }
+
+
         ActionDto actionDto = new ActionDto(
-                getNomJoueurAnonyme(actionPersistanceDto.obtNomJoueur()),
+                getNomJoueurAnonyme(nomJoueur),
                 actionPersistanceDto.obtNomAction(),
                 actionPersistanceDto.obtMontant(),
-                actionPersistanceDto.getNumeroAction()
+                actionPersistanceDto.getNumeroAction(),
+                moteurJeu.obtStackActuel(nomJoueur),
+                montantInvestiCeTour,
+                moteurJeu.seraAllIn(nomJoueur, actionPersistanceDto.obtMontant()),
+                moteurJeu.obtPot()
         );
+
+        String nomAnonyme = this.getNomJoueurAnonyme(nomJoueur);
+
+        this.actionsParJoueur.put(nomAnonyme, this.actionsParJoueur.getOrDefault(nomAnonyme, 0) + 1);
 
         return actionDto;
     }
@@ -152,7 +215,7 @@ public class ConvertisseurPersistanceVersApi {
     private List<String> extraireCartes(String comboString) {
         List<String> cartesAsString = new ArrayList<>();
         if (comboString.isEmpty()) {
-            return cartesAsString; // Retourne une liste vide
+            return cartesAsString;
         }
         for (int i = 0; i < comboString.length(); i += 2) {
             String carte = String.valueOf(comboString.charAt(i)) + comboString.charAt(i+1);

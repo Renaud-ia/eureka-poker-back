@@ -11,12 +11,14 @@ import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -65,9 +67,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterMain(MainPoker mainPoker, BigDecimal montantBB) throws ErreurLectureFichier {
-        UUID idUniqueGenere = UUID.randomUUID();
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
-                idUniqueGenere.toString(),
                 mainPoker.obtIdParse(),
                 montantBB,
                 indexMain++
@@ -105,9 +105,10 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterHero(String nomHero, List<CartePoker> cartesHero) {
+        String comboAsString = convertirCartesString(cartesHero);
         ComboReel comboReel = new ComboReel(cartesHero);
         this.partiePersistanceDto.fixNomHero(nomHero);
-        this.derniereMain.ajouterInfosHero(nomHero, comboReel.toInt(), comboReel.toString());
+        this.derniereMain.ajouterInfosHero(nomHero, comboReel.toInt(), comboAsString);
     }
 
     @Override
@@ -134,18 +135,32 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+        if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
+
+        BigDecimal montantTotalAction = actionPoker.obtMontantAction();
+
+        if (actionPoker.montantPositif() && !actionPoker.estMontantTotal()) {
+            montantTotalAction = montantTotalAction
+                        .add(this.moteurJeu.obtMontantInvestiCeTour(actionPoker.getNomJoueur()));
+
+
+            if (Objects.equals(this.dernierTour.obtNomTour(), TourPoker.RoundPoker.PREFLOP.toString())) {
+                montantTotalAction = montantTotalAction
+                        .subtract(this.moteurJeu.obtAnteJoueur(actionPoker.getNomJoueur()));
+            }
+        }
+
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(
                 actionPoker.getNomJoueur(),
                 actionPoker.getTypeAction().toString(),
                 this.moteurJeu.obtIdentifiantSituation(),
-                actionPoker.obtMontantAction(),
+                montantTotalAction,
                 moteurJeu.obtPot(),
                 moteurJeu.obtPotBounty(),
                 moteurJeu.obtStackEffectif(actionPoker.getNomJoueur()),
-                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), actionPoker.obtMontantAction()),
+                moteurJeu.seraAllIn(actionPoker.getNomJoueur(), montantTotalAction),
                 this.numeroAction++
         );
-        if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
         this.dernierTour.ajouterAction(nouvelleAction);
 
         // on incrémente le nombre d'actions du joueur
@@ -162,8 +177,19 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterCartes(String nomJoueur, List<CartePoker> cartePokers) {
+        String cartesAsString = convertirCartesString(cartePokers);
         ComboReel comboReel = new ComboReel(cartePokers);
-        this.derniereMain.ajouterCartes(nomJoueur, comboReel.toInt(), comboReel.toString());
+        this.derniereMain.ajouterCartes(nomJoueur, comboReel.toInt(), cartesAsString);
+    }
+
+    private String convertirCartesString(List<CartePoker> cartePokers) {
+        StringBuilder cartesAsString = new StringBuilder();
+
+        for (CartePoker cartePoker: cartePokers) {
+            cartesAsString.append(cartePoker.toString());
+        }
+
+        return cartesAsString.toString();
     }
 
     @Override
