@@ -160,4 +160,8 @@ public class MoteurJeu {
     public BigDecimal obtAnteJoueur(String nomJoueur) {
         return this.ante.getOrDefault(nomJoueur, new BigDecimal(0));
     }
+
+    public BigDecimal obtMontantInvesti(String nomJoueur) {
+        return this.investi.get(nomJoueur);
+    }
 }

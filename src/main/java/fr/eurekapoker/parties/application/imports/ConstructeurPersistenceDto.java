@@ -11,12 +11,14 @@ import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -133,12 +135,19 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
 
     @Override
     public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+        if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
+
         BigDecimal montantTotalAction = actionPoker.obtMontantAction();
 
         if (actionPoker.montantPositif() && !actionPoker.estMontantTotal()) {
             montantTotalAction = montantTotalAction
-                    .add(this.moteurJeu.obtMontantInvestiCeTour(actionPoker.getNomJoueur()))
-                    .subtract(this.moteurJeu.obtAnteJoueur(actionPoker.getNomJoueur()));
+                        .add(this.moteurJeu.obtMontantInvestiCeTour(actionPoker.getNomJoueur()));
+
+
+            if (Objects.equals(this.dernierTour.obtNomTour(), TourPoker.RoundPoker.PREFLOP.toString())) {
+                montantTotalAction = montantTotalAction
+                        .subtract(this.moteurJeu.obtAnteJoueur(actionPoker.getNomJoueur()));
+            }
         }
 
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(
@@ -152,7 +161,6 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
                 moteurJeu.seraAllIn(actionPoker.getNomJoueur(), montantTotalAction),
                 this.numeroAction++
         );
-        if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
         this.dernierTour.ajouterAction(nouvelleAction);
 
         // on incrémente le nombre d'actions du joueur

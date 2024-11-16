@@ -5,6 +5,7 @@ import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker.RoundPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 
@@ -130,7 +131,7 @@ public class ConvertisseurPersistanceVersApi {
             );
 
             for (ActionPersistanceDto actionPersistanceDto: tourPersistanceDto.obtActions()) {
-                contenuTourDto.ajouterAction(convertirActionVersApi(actionPersistanceDto));
+                contenuTourDto.ajouterAction(convertirActionVersApi(actionPersistanceDto, RoundPoker.valueOf(tourPersistanceDto.obtNomTour())));
             }
 
             contenuTourDto.getActions().sort(Comparator.comparingInt(ActionDto::getNumeroAction));
@@ -163,14 +164,18 @@ public class ConvertisseurPersistanceVersApi {
         return blindesExtraites;
     }
 
-    private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto) throws ErreurLectureFichier {
+    private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto, RoundPoker roundPoker) throws ErreurLectureFichier {
         String nomJoueur = actionPersistanceDto.obtNomJoueur();
+
+        BigDecimal montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
+
+        if (Objects.equals(roundPoker, RoundPoker.PREFLOP)) {
+            montantInvestiCeTour = montantInvestiCeTour.subtract(this.moteurJeu.obtAnteJoueur(nomJoueur));
+        }
 
         float montantAction;
         if (actionPersistanceDto.obtMontant().compareTo(new BigDecimal(0)) > 0) {
-            montantAction = actionPersistanceDto.obtMontant().floatValue()
-                    - this.moteurJeu.obtMontantInvestiCeTour(nomJoueur).floatValue()
-                    + this.moteurJeu.obtAnteJoueur(nomJoueur).floatValue();
+            montantAction = actionPersistanceDto.obtMontant().floatValue() - montantInvestiCeTour.floatValue();
         }
         else montantAction = 0;
 
@@ -181,13 +186,21 @@ public class ConvertisseurPersistanceVersApi {
                 false
         );
         moteurJeu.ajouterAction(actionPokerJoueur);
+
+        montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
+
+        if (Objects.equals(roundPoker, RoundPoker.PREFLOP)) {
+            montantInvestiCeTour = montantInvestiCeTour.subtract(this.moteurJeu.obtAnteJoueur(nomJoueur));
+        }
+
+
         ActionDto actionDto = new ActionDto(
                 getNomJoueurAnonyme(nomJoueur),
                 actionPersistanceDto.obtNomAction(),
                 actionPersistanceDto.obtMontant(),
                 actionPersistanceDto.getNumeroAction(),
                 moteurJeu.obtStackActuel(nomJoueur),
-                moteurJeu.obtMontantInvestiCeTour(nomJoueur),
+                montantInvestiCeTour,
                 moteurJeu.seraAllIn(nomJoueur, actionPersistanceDto.obtMontant()),
                 moteurJeu.obtPot()
         );
