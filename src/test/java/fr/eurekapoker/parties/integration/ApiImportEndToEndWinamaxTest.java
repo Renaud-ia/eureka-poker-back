@@ -11,8 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -257,16 +259,14 @@ public class ApiImportEndToEndWinamaxTest {
 
     private JSONObject creerPartie(String nomFichier, boolean joueursAnonymes) throws Exception {
         String contenuPartie = lireContenuFichier(nomFichier);
+        String valeurJoueursAnonymes = joueursAnonymes ? "on" : "off";
 
-        ParametresImport parametresImport = new ParametresImport(joueursAnonymes);
-        RequeteImport requeteImport = new RequeteImport(contenuPartie, parametresImport);
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        String requeteImportJson = objectMapper.writeValueAsString(requeteImport);
-
-        MvcResult result = mockMvc.perform(post("/parties/")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(requeteImportJson))
+        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.multipart("/parties/")
+                        .file(new MockMultipartFile("fichierUpload", "fichier.txt",
+                                MediaType.TEXT_PLAIN_VALUE, contenuPartie.getBytes()))
+                        .param("contenuPartie", contenuPartie)
+                        .param("joueursAnonymes", valeurJoueursAnonymes)
+                        .contentType(MediaType.MULTIPART_FORM_DATA))
                 .andExpect(status().isCreated())
                 .andReturn();
 
