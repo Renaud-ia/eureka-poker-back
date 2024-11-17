@@ -5,6 +5,8 @@ COPY . /app
 WORKDIR /app
 
 RUN gradle test --no-daemon && gradle build --no-daemon
+#RUN gradle init
+#ENTRYPOINT ./gradlew bootRun
 
 FROM eclipse-temurin:21-jre-jammy AS final
 
