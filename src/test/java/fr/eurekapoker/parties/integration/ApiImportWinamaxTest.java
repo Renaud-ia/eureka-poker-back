@@ -1,8 +1,6 @@
 package fr.eurekapoker.parties.integration;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.eurekapoker.parties.api.RequeteImport;
-import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -31,7 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-public class ApiImportEndToEndWinamaxTest {
+public class ApiImportWinamaxTest {
     private final ObjectMapper objectMapper = new ObjectMapper();
     @Autowired
     private MockMvc mockMvc;
