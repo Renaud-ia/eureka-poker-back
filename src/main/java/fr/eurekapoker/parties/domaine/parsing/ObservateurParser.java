@@ -6,7 +6,7 @@ import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 
 import java.math.BigDecimal;
 import java.util.List;

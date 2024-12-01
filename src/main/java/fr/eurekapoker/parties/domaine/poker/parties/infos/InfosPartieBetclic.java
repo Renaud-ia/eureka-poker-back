@@ -1,4 +1,6 @@
-package fr.eurekapoker.parties.domaine.poker.parties;
+package fr.eurekapoker.parties.domaine.poker.parties.infos;
+
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -12,9 +14,8 @@ public class InfosPartieBetclic extends InfosPartiePoker {
             LocalDateTime localDateTime,
             BigDecimal buyIn,
             BigDecimal ante,
-            BigDecimal rake,
-            BigDecimal montantBB) {
-        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake, montantBB);
+            BigDecimal rake) {
+        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake);
     }
 
     @Override

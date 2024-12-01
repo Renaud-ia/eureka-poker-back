@@ -13,7 +13,7 @@ import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 
 import java.math.BigDecimal;
 import java.util.HashMap;

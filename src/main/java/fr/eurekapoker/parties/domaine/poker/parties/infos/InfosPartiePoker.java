@@ -1,4 +1,6 @@
-package fr.eurekapoker.parties.domaine.poker.parties;
+package fr.eurekapoker.parties.domaine.poker.parties.infos;
+
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -13,7 +15,6 @@ public abstract class InfosPartiePoker {
     private final BigDecimal ante;
     protected final BigDecimal rake;
     protected String formatSpecialRoom;
-    protected final BigDecimal montantBB;
     public InfosPartiePoker(
             FormatPoker formatPoker,
             long idPartie,
@@ -22,8 +23,7 @@ public abstract class InfosPartiePoker {
             LocalDateTime localDateTime,
             BigDecimal buyIn,
             BigDecimal ante,
-            BigDecimal rake,
-            BigDecimal montantBB) {
+            BigDecimal rake) {
         this.formatPoker = formatPoker;
         this.identifiantPartie = idPartie;
         this.nomPartie = nomPartie;
@@ -32,7 +32,6 @@ public abstract class InfosPartiePoker {
         this.buyIn = buyIn;
         this.ante = ante;
         this.rake = rake;
-        this.montantBB = montantBB;
         this.formatSpecialRoom = "";
     }
 
@@ -73,13 +72,5 @@ public abstract class InfosPartiePoker {
     public boolean getStackEnEuros() {
         // TODO => vérifier que c'est aussi simple
         return formatPoker.obtTypeTable() == FormatPoker.TypeTable.CASH_GAME;
-    }
-
-    public BigDecimal getMontantBB() {
-        return montantBB;
-    }
-
-    public BigDecimal obtMontantBb() {
-        return montantBB;
     }
 }

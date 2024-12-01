@@ -8,6 +8,8 @@ import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.parser.ParserWinamax;
 import fr.eurekapoker.parties.domaine.poker.parties.*;
+import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartie;
+import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartieWinamax;
 
 import java.util.HashMap;
 

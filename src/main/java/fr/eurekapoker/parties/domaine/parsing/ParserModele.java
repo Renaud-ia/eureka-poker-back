@@ -4,7 +4,6 @@ import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
 import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 

@@ -10,7 +10,7 @@ import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InOrder;
@@ -69,7 +69,7 @@ class ConstructeurPersistenceDtoTest {
         MainPoker nouvelleMain = new MainPoker(
                 new Random().nextLong()
         );
-        constructeur.ajouterMain(nouvelleMain, infosPartiePoker.obtMontantBb());
+        constructeur.ajouterMain(nouvelleMain, new BigDecimal("0.05"));
         assertEquals(1, constructeur.obtPartie().obtMains().size());
 
 

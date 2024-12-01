@@ -19,10 +19,11 @@ public abstract class ExtracteurXml {
         return (Element) listeNoeuds.item(0);
     }
 
-    protected String extraireTexteBalise(Element element, String nomBalise) throws ErreurLectureFichier {
+    protected String extraireTexteBalise(Element element, String nomBalise, boolean erreurSiNonExistant) throws ErreurLectureFichier {
         NodeList listeNoeuds = element.getElementsByTagName(nomBalise);
         if (listeNoeuds.getLength() == 0) {
-            throw new ErreurLectureFichier("La balise n'existe pas : " + nomBalise);
+            if (erreurSiNonExistant) throw new ErreurLectureFichier("La balise n'existe pas : " + nomBalise);
+            else return null;
         }
 
         if (listeNoeuds.getLength() > 1) {
