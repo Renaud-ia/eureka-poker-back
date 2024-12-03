@@ -11,6 +11,4 @@ public abstract class ParserXml extends ParserModele {
         super(observateurParser);
         this.document = document;
     }
-
-
 }

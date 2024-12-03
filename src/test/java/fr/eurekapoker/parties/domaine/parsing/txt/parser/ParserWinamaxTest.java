@@ -80,7 +80,6 @@ public class ParserWinamaxTest {
                         builderInfosPartieWinamax
                 ));
 
-        doReturn(mainsExtraitesSpy).when(parserWinamax).obtMains();
         joueurs = new ArrayList<>();
         joueurs.add(joueurPokerMock);
 

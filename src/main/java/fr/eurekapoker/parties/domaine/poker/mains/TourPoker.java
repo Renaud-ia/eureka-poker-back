@@ -21,6 +21,7 @@ public class TourPoker {
     }
 
     public enum RoundPoker {
+        BLINDES,
         PREFLOP,
         FLOP,
         TURN,

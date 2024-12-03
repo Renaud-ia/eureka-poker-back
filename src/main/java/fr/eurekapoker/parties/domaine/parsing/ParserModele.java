@@ -16,13 +16,9 @@ import java.util.List;
  */
 public abstract class ParserModele {
     protected final ObservateurParser observateurParser;
-    private final HashMap<JoueurPoker, Float> montantDejaInvesti;
-    protected final List<MainPoker> mainsExtraites;
     protected FormatPoker formatPoker;
     protected ParserModele(ObservateurParser observateurParser) {
         this.observateurParser = observateurParser;
-        this.mainsExtraites = new ArrayList<>();
-        this.montantDejaInvesti = new HashMap<>();
     }
 
     public void lancerImport() throws ErreurImport {
@@ -36,9 +32,6 @@ public abstract class ParserModele {
         return formatPoker;
     }
 
-    public List<MainPoker> obtMains() {
-        return mainsExtraites;
-    }
     public abstract boolean peutLireFichier();
     public abstract RoomPoker obtRoomPoker();
 }
