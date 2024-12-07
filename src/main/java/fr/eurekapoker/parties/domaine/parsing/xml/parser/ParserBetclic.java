@@ -41,7 +41,7 @@ public class ParserBetclic extends ParserXml {
             Element mainElement = (Element) mains.item(i);
             long idMain = extracteurBetclic.extraireIdMain(mainElement);
             MainPoker mainPoker = new MainPoker(idMain);
-            BigDecimal montantBB = extracteurBetclic.extraireMontantBB(mainElement);
+            BigDecimal montantBB = extracteurBetclic.extraireMontantBB(this.document, mainElement);
             this.observateurParser.ajouterMain(mainPoker, montantBB);
             this.extraireJoueurs(mainElement);
             this.extraireTours(mainElement);
@@ -61,13 +61,11 @@ public class ParserBetclic extends ParserXml {
     }
 
     private void extraireTours(Element mainElement) throws ErreurLectureFichier {
-        NodeList tourElements = mainElement.getElementsByTagName("round");
+        NodeList tourElements = extracteurBetclic.extraireTours(mainElement);
 
         for (int i = 0; i < tourElements.getLength(); i++) {
             Element tourElement = (Element) tourElements.item(i);
             NouveauTour nouveauTour = extracteurBetclic.extraireInfoTour(tourElement);
-            this.observateurParser.ajouterTour(nouveauTour);
-
             TourPoker.RoundPoker roundPoker = nouveauTour.obtRound();
 
             if (roundPoker == TourPoker.RoundPoker.BLINDES) {
@@ -75,6 +73,7 @@ public class ParserBetclic extends ParserXml {
                 continue;
             }
 
+            this.observateurParser.ajouterTour(nouveauTour);
             if (roundPoker == TourPoker.RoundPoker.PREFLOP) {
                 extraireCartesJoueurs(tourElement);
             }
@@ -84,7 +83,7 @@ public class ParserBetclic extends ParserXml {
     }
 
     private void extraireBlindesAnte(Element tourElement) throws ErreurLectureFichier {
-        NodeList actionsElements = tourElement.getElementsByTagName("action");
+        NodeList actionsElements = extracteurBetclic.extraireBlindesouAntes(tourElement);
 
         for (int i = 0; i < actionsElements.getLength(); i++) {
             Element actionElement = (Element) actionsElements.item(i);
@@ -99,7 +98,7 @@ public class ParserBetclic extends ParserXml {
     }
 
     private void extraireCartesJoueurs(Element tourElement) {
-        NodeList cartesElements = tourElement.getElementsByTagName("cards");
+        NodeList cartesElements = extracteurBetclic.extraireNoeudsCartes(tourElement);
 
         for (int i = 0; i < cartesElements.getLength(); i++) {
             Element carteElement = (Element) cartesElements.item(i);
@@ -114,7 +113,7 @@ public class ParserBetclic extends ParserXml {
     }
 
     private void extraireActions(Element tourElement) throws ErreurLectureFichier {
-        NodeList actionsElements = tourElement.getElementsByTagName("action");
+        NodeList actionsElements = extracteurBetclic.extraireListeActions(tourElement);
 
         for (int i = 0; i < actionsElements.getLength(); i++) {
             Element actionElement = (Element) actionsElements.item(i);

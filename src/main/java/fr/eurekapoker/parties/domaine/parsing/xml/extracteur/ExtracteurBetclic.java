@@ -122,7 +122,17 @@ public class ExtracteurBetclic extends ExtracteurXml {
         return Long.parseLong(gameElement.getAttribute("gamecode"));
     }
 
-    public BigDecimal extraireMontantBB(Element mainElement) throws ErreurLectureFichier {
+    public BigDecimal extraireMontantBB(Document document, Element mainElement)
+            throws ErreurLectureFichier, FormatNonPrisEnCharge {
+        FormatPoker.TypeTable typeTable = this.obtenirTypeTable(document);
+        if (typeTable == FormatPoker.TypeTable.CASH_GAME) {
+            return extraireMontantBBGeneral(document);
+        }
+
+        return extraireMontantBBMain(mainElement);
+    }
+
+    private BigDecimal extraireMontantBBMain(Element mainElement) throws ErreurLectureFichier {
         NodeList bigBlindNodes = mainElement.getElementsByTagName("bigblind");
         if (bigBlindNodes.getLength() == 1) {
             Node bigBlindNode = bigBlindNodes.item(0);
@@ -134,8 +144,12 @@ public class ExtracteurBetclic extends ExtracteurXml {
         throw new ErreurLectureFichier("Big blind non trouvée");
     }
 
+    private BigDecimal extraireMontantBBGeneral(Document document) throws ErreurLectureFichier {
+        return extraireBigBlind(document);
+    }
+
     public NodeList extraireJoueurs(Document document) throws ErreurLectureFichier {
-        NodeList joueurs = document.getElementsByTagName("players");
+        NodeList joueurs = document.getElementsByTagName("player");
 
         if (joueurs.getLength() < 1) {
             throw new ErreurLectureFichier("Aucun joueur trouvé");
@@ -154,11 +168,15 @@ public class ExtracteurBetclic extends ExtracteurXml {
          );
     }
 
+    public NodeList extraireTours(Element mainElement) {
+        return mainElement.getElementsByTagName("round");
+    }
 
     public NouveauTour extraireInfoTour(Element tour) {
         TourPoker.RoundPoker round = convertirTour(Integer.parseInt(tour.getAttribute("no")));
         Element cartesBoard = (Element) tour.getElementsByTagName("cards").item(0);
-        List<CartePoker> cartesExtraites = convertirNomCartes(cartesBoard.getTextContent());
+        List<CartePoker> cartesExtraites = new ArrayList<>();
+        if (cartesBoard != null) cartesExtraites = convertirNomCartes(cartesBoard.getTextContent());
 
         return new NouveauTour(round, cartesExtraites);
     }
@@ -191,6 +209,10 @@ public class ExtracteurBetclic extends ExtracteurXml {
         };
     }
 
+    public NodeList extraireBlindesouAntes(Element tourElement) {
+        return tourElement.getElementsByTagName("action");
+    }
+
     public BlindeOuAnte extraireBlindeOuAnte(Element actionElement) {
         String nomJoueur = actionElement.getAttribute("player");
         int actionType = Integer.parseInt(actionElement.getAttribute("type"));
@@ -207,11 +229,19 @@ public class ExtracteurBetclic extends ExtracteurXml {
         return stringOriginale.replace(",", ".").replaceAll("[^\\d.]", "");
     }
 
+    public NodeList extraireNoeudsCartes(Element tourElement) {
+        return tourElement.getElementsByTagName("cards");
+    }
+
     public CartesJoueur extraireCartes(Element carteElement) {
         String nomJoueurCarte = carteElement.getAttribute("player");
         List<CartePoker> cartesExtraites = convertirNomCartes(carteElement.getTextContent());
 
         return new CartesJoueur(nomJoueurCarte, cartesExtraites);
+    }
+
+    public NodeList extraireListeActions(Element tourElement) {
+        return tourElement.getElementsByTagName("action");
     }
 
     public ActionPokerJoueur extraireAction(Element actionElement) {
@@ -226,8 +256,10 @@ public class ExtracteurBetclic extends ExtracteurXml {
             case 0:
                 action = ActionPoker.TypeAction.FOLD;
                 break;
-            case 3:
             case 4:
+                action = ActionPoker.TypeAction.CHECK;
+                break;
+            case 3:
             case 7:
                 action = ActionPoker.TypeAction.CALL;
                 break;
