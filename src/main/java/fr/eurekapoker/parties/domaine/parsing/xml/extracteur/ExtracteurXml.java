@@ -6,15 +6,10 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 public abstract class ExtracteurXml {
-    protected final Document document;
-    public ExtracteurXml(Document document) {
-        this.document = document;
-    }
-
-    protected Element extraireElement(String nomElement) throws ErreurLectureFichier {
+    protected Element extraireElement(Document document, String nomElement) throws ErreurLectureFichier {
         NodeList listeNoeuds = document.getElementsByTagName(nomElement);
-        if (listeNoeuds.getLength() <= 0 || listeNoeuds.getLength() > 1) {
-            throw new ErreurLectureFichier("L'élément n'est pas unique':" + nomElement);
+        if (listeNoeuds.getLength() < 1) {
+            throw new ErreurLectureFichier("L'élément n'existe pas:" + nomElement);
         }
         return (Element) listeNoeuds.item(0);
     }

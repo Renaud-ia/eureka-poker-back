@@ -8,7 +8,6 @@ import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.xml.ParserXml;
 import fr.eurekapoker.parties.domaine.parsing.xml.extracteur.ExtracteurBetclic;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
-import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
@@ -17,16 +16,11 @@ import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.List;
 import java.util.Objects;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class ParserBetclic extends ParserXml {
     private String nomHero;
@@ -40,9 +34,9 @@ public class ParserBetclic extends ParserXml {
     protected void extraireMains() throws ErreurImport {
         InfosPartiePoker infosPartiePoker = extraireInfosPartie();
         observateurParser.fixInfosPartie(infosPartiePoker);
-        this.nomHero = extracteurBetclic.extraireNomHero();
+        this.nomHero = extracteurBetclic.extraireNomHero(this.document);
 
-        NodeList mains = extracteurBetclic.extraireMains();
+        NodeList mains = extracteurBetclic.extraireMains(this.document);
         for (int i = 0; i < mains.getLength(); i++) {
             Element mainElement = (Element) mains.item(i);
             long idMain = extracteurBetclic.extraireIdMain(mainElement);
@@ -55,7 +49,7 @@ public class ParserBetclic extends ParserXml {
     }
 
     private void extraireJoueurs(Element mainElement) throws ErreurLectureFichier {
-        NodeList noeudsJoueurs = extracteurBetclic.extraireJoueurs();
+        NodeList noeudsJoueurs = extracteurBetclic.extraireJoueurs(this.document);
         for (int i = 0; i < noeudsJoueurs.getLength(); i++) {
             Element joueurElement = (Element) noeudsJoueurs.item(i);
             InfosJoueurBetclic infosJoueur = extracteurBetclic.extraireInfoJoueurs(joueurElement);
@@ -148,10 +142,7 @@ public class ParserBetclic extends ParserXml {
 
     private void extraireDate(BuilderInfosPartieBetclic builderInfosPartie)
             throws ErreurLectureFichier {
-        String dateString = extracteurBetclic.extraireDate();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        LocalDateTime dateTournoi = LocalDateTime.parse(dateString, formatter);
-
+        LocalDateTime dateTournoi = extracteurBetclic.extraireDate(this.document);
         builderInfosPartie.fixDate(dateTournoi);
     }
 
@@ -169,80 +160,39 @@ public class ParserBetclic extends ParserXml {
             BuilderInfosPartieBetclic builderInfosPartie,
             FormatPoker.TypeTable typeTable
     ) throws ErreurLectureFichier {
-        String buyIn;
+        BigDecimal buyIn;
 
         if (typeTable == FormatPoker.TypeTable.CASH_GAME) {
-            buyIn = extracteurBetclic.extraireBigBlind();
+            buyIn = extracteurBetclic.extraireBigBlind(this.document);
         }
 
         else {
-            buyIn = extracteurBetclic.extraireTotalBuyIn();
+            buyIn = extracteurBetclic.extraireTotalBuyIn(this.document);
         }
 
-        builderInfosPartie.fixBuyIn(corrigerMontantEuros(buyIn));
-    }
-
-    private BigDecimal corrigerMontantEuros(String buyIn) {
-        String buyInCorrige = buyIn.replace(",", ".").replaceAll("[^\\d.]", "");
-        return new BigDecimal(buyInCorrige);
+        builderInfosPartie.fixBuyIn(buyIn);
     }
 
     private void extraireNombreSieges(BuilderInfosPartieBetclic builderInfosPartie)
             throws ErreurLectureFichier {
-        int nombreSieges = extracteurBetclic.extraireNombreSieges();
+        int nombreSieges = extracteurBetclic.extraireNombreSieges(this.document);
         builderInfosPartie.fixNombreJoueurs(nombreSieges);
     }
 
     private void extraireIdPartie(BuilderInfosPartieBetclic builderInfosPartie) throws ErreurLectureFichier {
-        String nomPartieAvecId = extracteurBetclic.extraireNomPartie();
-        Pattern regexIdNom = Pattern.compile("(?<nomPartie>.+),\\s(?<idTournoi>\\d+)");
-        Matcher matcher = regexIdNom.matcher(nomPartieAvecId);
-
-        if (!(matcher.find())) throw new ErreurLectureFichier("Nom et id de partie non trouvé");
-
-        long idTournoi = Long.parseLong(matcher.group("idTournoi"));
-        String nomPartie = matcher.group("nomPartie");
-
-        builderInfosPartie.fixNumeroTable(idTournoi);
-        builderInfosPartie.fixNomPartie(nomPartie);
+        NomIdPartieBetclic nomPartieAvecId = extracteurBetclic.extraireNomIdPartie(this.document);
+        builderInfosPartie.fixNomPartie(nomPartieAvecId.obtNomPartie());
+        builderInfosPartie.fixNumeroTable(nomPartieAvecId.obtIdPartie());
     }
 
     private FormatPoker.TypeTable extraireFormatPoker(BuilderInfosPartieBetclic builderInfosPartie)
             throws FormatNonPrisEnCharge, ErreurLectureFichier {
-        FormatPoker.Variante variantePoker;
-        String gameType = extracteurBetclic.obtenirTypeJeu();
-        if (gameType.contains("Holdem NL")) {
-            variantePoker = FormatPoker.Variante.HOLDEM_NO_LIMIT;
-        }
-        else throw new FormatNonPrisEnCharge("Holdem no limit non détecté");
+        FormatPoker.Variante variantePoker = extracteurBetclic.obtenirTypeJeu(this.document);
 
-        FormatPoker.TypeTable typeTable;
-        String nomTournoi = extracteurBetclic.obtenirNomTournoi();
-        if (nomTournoi == null) {
-            typeTable = FormatPoker.TypeTable.CASH_GAME;
-        }
-
-        else {
-            if (nomTournoi.contains("Twister")) {
-                typeTable = FormatPoker.TypeTable.SPIN;
-            }
-            // attention il y aussi les sit'n'go
-            // todo vérifier un jour que c'est bien ça qui apparaît
-            else if (nomTournoi.contains("Sit'n'Go")) {
-                throw new FormatNonPrisEnCharge("Sit'n'Go non twister");
-            }
-            else {
-                typeTable = FormatPoker.TypeTable.MTT;
-            }
-        }
-
+        FormatPoker.TypeTable typeTable = extracteurBetclic.obtenirTypeTable(this.document);
         builderInfosPartie.fixFormatPoker(new FormatPoker(variantePoker, typeTable));
 
         return typeTable;
-    }
-
-    private FormatPoker detecterFormat() {
-        return null;
     }
 
     @Override

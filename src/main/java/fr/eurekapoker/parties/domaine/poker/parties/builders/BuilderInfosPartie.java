@@ -53,22 +53,6 @@ public abstract class BuilderInfosPartie {
         this.nomPartie = nomPartie;
     }
 
-    public InfosPartiePoker build() throws ErreurLectureFichier {
-        if (donneesIncompletes()) throw new ErreurLectureFichier("Toutes les infos ne sont pas complètes");
-        standardiserInfosPartie();
-
-        return new InfosPartieWinamax(
-                this.formatPoker,
-                this.numeroTable,
-                this.nomPartie,
-                this.nombreJoueurs,
-                this.date,
-                this.buyIn,
-                this.ante,
-                this.rake
-        );
-    }
-
     public boolean donneesIncompletes() {
         if (formatPoker == null) return true;
         if (numeroTable == 0) return true;
@@ -81,6 +65,8 @@ public abstract class BuilderInfosPartie {
 
         return false;
     }
+
+    public abstract InfosPartiePoker build() throws ErreurLectureFichier ;
 
     protected abstract void standardiserInfosPartie();
 

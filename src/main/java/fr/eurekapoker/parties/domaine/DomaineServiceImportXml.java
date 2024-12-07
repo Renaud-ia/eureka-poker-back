@@ -30,7 +30,7 @@ public class DomaineServiceImportXml implements DomaineServiceImport {
             InputStream inputStream = new ByteArrayInputStream(lignesFichier.getBytes());
 
             Document document = builder.parse(inputStream);
-            ExtracteurBetclic extracteurBetclic = new ExtracteurBetclic(document);
+            ExtracteurBetclic extracteurBetclic = new ExtracteurBetclic();
             this.parserXml = new ParserBetclic(observateurParser, document, extracteurBetclic);
         }
 

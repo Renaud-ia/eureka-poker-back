@@ -1,23 +1,26 @@
 package fr.eurekapoker.parties.domaine.parsing.xml.extracteur;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
-import fr.eurekapoker.parties.domaine.parsing.dto.BlindeOuAnte;
-import fr.eurekapoker.parties.domaine.parsing.dto.CartesJoueur;
-import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueurBetclic;
-import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
+import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
+import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 /**
@@ -26,51 +29,86 @@ import java.util.List;
  * raise des erreurs si le format n'est pas comme attendu
  */
 public class ExtracteurBetclic extends ExtracteurXml {
-    public ExtracteurBetclic(Document document) {
-        super(document);
-    }
-
-    public int extraireNombreSieges() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
+    public int extraireNombreSieges(Document document) throws ErreurLectureFichier {
+        Element generalElement = extraireElement(document, "general");
         return extraireEntierBalise(generalElement, "tablesize");
     }
 
-    public String obtenirTypeJeu() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
-        return extraireTexteBalise(generalElement, "gametype", true);
+    public FormatPoker.Variante obtenirTypeJeu(Document document) throws ErreurLectureFichier, FormatNonPrisEnCharge {
+        Element generalElement = extraireElement(document,"general");
+        String texteTypeJeu = extraireTexteBalise(generalElement, "gametype", true);
+        if (texteTypeJeu.contains("Holdem NL")) {
+            return FormatPoker.Variante.HOLDEM_NO_LIMIT;
+        }
+        else throw new FormatNonPrisEnCharge("Holdem no limit non détecté");
     }
 
-    public String obtenirNomTournoi() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
-        return extraireTexteBalise(generalElement, "tournamentname", false);
+    public FormatPoker.TypeTable obtenirTypeTable(Document document) throws ErreurLectureFichier, FormatNonPrisEnCharge {
+        Element generalElement = extraireElement(document,"general");
+        String nomTournoi = extraireTexteBalise(generalElement, "tournamentname", false);
+
+        if (nomTournoi == null) {
+            return FormatPoker.TypeTable.CASH_GAME;
+        }
+
+        if (nomTournoi.contains("Twister")) {
+                return FormatPoker.TypeTable.SPIN;
+        }
+        // attention il y aussi les sit'n'go
+        // TODO vérifier un jour que c'est bien ça qui apparaît
+        // TODO être plus restritif sur MTT ??
+        if (!nomTournoi.contains("Sit'n'Go")) {
+            return FormatPoker.TypeTable.MTT;
+
+        }
+        else {
+            throw new FormatNonPrisEnCharge("Sit'n'Go non twister");
+        }
     }
 
-    public String extraireNomPartie() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
-        return extraireTexteBalise(generalElement, "tablename", true);
+    public NomIdPartieBetclic extraireNomIdPartie(Document document) throws ErreurLectureFichier {
+        Element generalElement = extraireElement(document,"general");
+        String nomPartieAvecId = extraireTexteBalise(generalElement, "tablename", true);
+
+        Pattern regexIdNom = Pattern.compile("(?<nomPartie>.+),\\s(?<idTournoi>\\d+)");
+        Matcher matcher = regexIdNom.matcher(nomPartieAvecId);
+
+        if (!(matcher.find())) throw new ErreurLectureFichier("Nom et id de partie non trouvé");
+
+        long idTournoi = Long.parseLong(matcher.group("idTournoi"));
+        String nomPartie = matcher.group("nomPartie");
+
+        return new NomIdPartieBetclic(nomPartie, idTournoi);
     }
 
-    public String extraireBigBlind() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
-        return extraireTexteBalise(generalElement, "bigblind", true);
+    public BigDecimal extraireBigBlind(Document document) throws ErreurLectureFichier {
+        Element generalElement = extraireElement(document,"general");
+        String textBigBlinde = extraireTexteBalise(generalElement, "bigblind", true);
+
+        return new BigDecimal(corrigerString(textBigBlinde));
     }
 
-    public String extraireTotalBuyIn() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
-        return extraireTexteBalise(generalElement, "totalbuyin", true);
+    public BigDecimal extraireTotalBuyIn(Document document) throws ErreurLectureFichier {
+        Element generalElement = extraireElement(document, "general");
+        String texteBuyIn = extraireTexteBalise(generalElement, "totalbuyin", true);
+
+        return new BigDecimal(corrigerString(texteBuyIn));
     }
 
-    public String extraireDate() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
-        return extraireTexteBalise(generalElement, "startdate", true);
+    public LocalDateTime extraireDate(Document document) throws ErreurLectureFichier {
+        Element generalElement = extraireElement(document, "general");
+        String dateString = extraireTexteBalise(generalElement, "startdate", true);
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return LocalDateTime.parse(dateString, formatter);
     }
 
-    public String extraireNomHero() throws ErreurLectureFichier {
-        Element generalElement = extraireElement("general");
+    public String extraireNomHero(Document document) throws ErreurLectureFichier {
+        Element generalElement = extraireElement(document, "general");
         return extraireTexteBalise(generalElement, "nickname", true);
     }
 
-    public NodeList extraireMains() throws ErreurLectureFichier {
+    public NodeList extraireMains(Document document) throws ErreurLectureFichier {
         NodeList mains = document.getElementsByTagName("game");
 
         if (mains.getLength() < 1) {
@@ -96,7 +134,7 @@ public class ExtracteurBetclic extends ExtracteurXml {
         throw new ErreurLectureFichier("Big blind non trouvée");
     }
 
-    public NodeList extraireJoueurs() throws ErreurLectureFichier {
+    public NodeList extraireJoueurs(Document document) throws ErreurLectureFichier {
         NodeList joueurs = document.getElementsByTagName("players");
 
         if (joueurs.getLength() < 1) {
