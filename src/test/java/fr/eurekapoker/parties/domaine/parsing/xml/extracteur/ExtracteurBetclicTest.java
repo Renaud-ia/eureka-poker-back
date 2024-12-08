@@ -10,7 +10,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -139,7 +138,8 @@ public class ExtracteurBetclicTest {
     @Test
     void extraireInfosJoueurs() throws Exception {
         Document documentTKO = obtDocumentTKO();
-        Element joueurTKO = (Element) extracteurBetclic.extraireJoueurs(documentTKO).item(0);
+        Element mainTKO = (Element) extracteurBetclic.extraireMains(documentTKO).item(0);
+        Element joueurTKO = (Element) extracteurBetclic.extraireJoueurs(mainTKO).item(0);
         InfosJoueurBetclic infosJoueurBetclic = extracteurBetclic.extraireInfoJoueurs(joueurTKO);
 
         assertEquals("Miclau21", infosJoueurBetclic.obtJoueur());
@@ -158,13 +158,13 @@ public class ExtracteurBetclicTest {
         NodeList tours = extracteurBetclic.extraireTours(premiereMain);
 
         Element blindeTour = (Element) tours.item(0);
-        NouveauTour infosBlinde = extracteurBetclic.extraireInfoTour(blindeTour);
-        assertEquals(TourPoker.RoundPoker.BLINDES, infosBlinde.obtRound());
+        InfosTourBetclic infosBlinde = extracteurBetclic.extraireInfoTour(blindeTour);
+        assertEquals(TourPoker.RoundPoker.BLINDES, infosBlinde.obtRoundPoker());
         assertTrue(infosBlinde.obtCartesExtraites().isEmpty());
 
         Element flopTour = (Element) tours.item(2);
-        NouveauTour infosFlop = extracteurBetclic.extraireInfoTour(flopTour);
-        assertEquals(TourPoker.RoundPoker.FLOP, infosFlop.obtRound());
+        InfosTourBetclic infosFlop = extracteurBetclic.extraireInfoTour(flopTour);
+        assertEquals(TourPoker.RoundPoker.FLOP, infosFlop.obtRoundPoker());
 
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('7', 'd'));

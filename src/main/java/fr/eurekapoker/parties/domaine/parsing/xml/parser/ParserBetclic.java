@@ -8,6 +8,7 @@ import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.xml.ParserXml;
 import fr.eurekapoker.parties.domaine.parsing.xml.extracteur.ExtracteurBetclic;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
+import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
@@ -20,14 +21,18 @@ import org.w3c.dom.NodeList;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ParserBetclic extends ParserXml {
     private String nomHero;
     private final ExtracteurBetclic extracteurBetclic;
+    private final List<CartePoker> cartesBoard;
     public ParserBetclic(ObservateurParser observateurParser, Document document, ExtracteurBetclic extracteurBetclic) {
         super(observateurParser, document);
         this.extracteurBetclic = extracteurBetclic;
+        this.cartesBoard = new ArrayList<>();
     }
 
     @Override
@@ -45,11 +50,18 @@ public class ParserBetclic extends ParserXml {
             this.observateurParser.ajouterMain(mainPoker, montantBB);
             this.extraireJoueurs(mainElement);
             this.extraireTours(mainElement);
+
+            this.observateurParser.mainTerminee();
+            this.reinitialiserMain();
         }
     }
 
+    private void reinitialiserMain() {
+        this.cartesBoard.clear();
+    }
+
     private void extraireJoueurs(Element mainElement) throws ErreurLectureFichier {
-        NodeList noeudsJoueurs = extracteurBetclic.extraireJoueurs(this.document);
+        NodeList noeudsJoueurs = extracteurBetclic.extraireJoueurs(mainElement);
         for (int i = 0; i < noeudsJoueurs.getLength(); i++) {
             Element joueurElement = (Element) noeudsJoueurs.item(i);
             InfosJoueurBetclic infosJoueur = extracteurBetclic.extraireInfoJoueurs(joueurElement);
@@ -65,7 +77,10 @@ public class ParserBetclic extends ParserXml {
 
         for (int i = 0; i < tourElements.getLength(); i++) {
             Element tourElement = (Element) tourElements.item(i);
-            NouveauTour nouveauTour = extracteurBetclic.extraireInfoTour(tourElement);
+            InfosTourBetclic infosTour = extracteurBetclic.extraireInfoTour(tourElement);
+            this.cartesBoard.addAll(infosTour.obtCartesExtraites());
+
+            NouveauTour nouveauTour = new NouveauTour(infosTour.obtRoundPoker(), this.cartesBoard);
             TourPoker.RoundPoker roundPoker = nouveauTour.obtRound();
 
             if (roundPoker == TourPoker.RoundPoker.BLINDES) {

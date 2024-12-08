@@ -148,8 +148,8 @@ public class ExtracteurBetclic extends ExtracteurXml {
         return extraireBigBlind(document);
     }
 
-    public NodeList extraireJoueurs(Document document) throws ErreurLectureFichier {
-        NodeList joueurs = document.getElementsByTagName("player");
+    public NodeList extraireJoueurs(Element mainElement) throws ErreurLectureFichier {
+        NodeList joueurs = mainElement.getElementsByTagName("player");
 
         if (joueurs.getLength() < 1) {
             throw new ErreurLectureFichier("Aucun joueur trouvé");
@@ -172,13 +172,13 @@ public class ExtracteurBetclic extends ExtracteurXml {
         return mainElement.getElementsByTagName("round");
     }
 
-    public NouveauTour extraireInfoTour(Element tour) {
+    public InfosTourBetclic extraireInfoTour(Element tour) {
         TourPoker.RoundPoker round = convertirTour(Integer.parseInt(tour.getAttribute("no")));
         Element cartesBoard = (Element) tour.getElementsByTagName("cards").item(0);
         List<CartePoker> cartesExtraites = new ArrayList<>();
         if (cartesBoard != null) cartesExtraites = convertirNomCartes(cartesBoard.getTextContent());
 
-        return new NouveauTour(round, cartesExtraites);
+        return new InfosTourBetclic(round, cartesExtraites);
     }
 
     private List<CartePoker> convertirNomCartes(String nomCartes) {
