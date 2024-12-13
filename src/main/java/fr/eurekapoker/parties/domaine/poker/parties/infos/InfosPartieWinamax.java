@@ -1,6 +1,8 @@
-package fr.eurekapoker.parties.domaine.poker.parties;
+package fr.eurekapoker.parties.domaine.poker.parties.infos;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -17,10 +19,9 @@ public class InfosPartieWinamax extends InfosPartiePoker {
             LocalDateTime localDateTime,
             BigDecimal buyIn,
             BigDecimal ante,
-            BigDecimal rake,
-            BigDecimal montantBB
+            BigDecimal rake
     ) throws ErreurLectureFichier {
-        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake, montantBB);
+        super(formatPoker, idPartie, nomPartie, nombreJoueurs, localDateTime, buyIn, ante, rake);
         corrigerNomPartie();
     }
 

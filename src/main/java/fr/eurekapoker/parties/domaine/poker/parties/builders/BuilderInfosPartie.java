@@ -1,6 +1,9 @@
-package fr.eurekapoker.parties.domaine.poker.parties;
+package fr.eurekapoker.parties.domaine.poker.parties.builders;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartieWinamax;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -18,10 +21,6 @@ public abstract class BuilderInfosPartie {
     protected BigDecimal buyIn;
     protected BigDecimal ante;
     protected BigDecimal rake;
-    protected BigDecimal montantBB;
-    public abstract InfosPartiePoker build() throws ErreurLectureFichier;
-
-    public abstract boolean donneesIncompletes();
     public void fixFormatPoker(FormatPoker formatPoker) {
         this.formatPoker = formatPoker;
     }
@@ -54,8 +53,21 @@ public abstract class BuilderInfosPartie {
         this.nomPartie = nomPartie;
     }
 
-    public void fixMontantBB(BigDecimal montantBB) {
-        this.montantBB = montantBB;
+    public boolean donneesIncompletes() {
+        if (formatPoker == null) return true;
+        if (numeroTable == 0) return true;
+        if (nomPartie == null) return true;
+        if (nombreJoueurs == 0) return true;
+        if (date == null) return true;
+        if (buyIn == null) return true;
+        if (ante == null) return true;
+        if (rake == null) return true;
+
+        return false;
     }
+
+    public abstract InfosPartiePoker build() throws ErreurLectureFichier ;
+
+    protected abstract void standardiserInfosPartie();
 
 }

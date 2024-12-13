@@ -6,7 +6,7 @@ import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 public interface ObservateurParser {
     void fixInfosPartie(InfosPartiePoker infosPartiePoker);
 
-    void ajouterMain(MainPoker mainPoker, BigDecimal bigDecimal) throws ErreurLectureFichier;
+    void ajouterMain(MainPoker mainPoker, BigDecimal montantBB) throws ErreurLectureFichier;
 
     void ajouterJoueur(InfosJoueur infosJoueur) throws ErreurLectureFichier;
 

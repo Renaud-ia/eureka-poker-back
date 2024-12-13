@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session sessioncode="5359263028">
+ <general>
+  <client_version>23.11.1.7</client_version>
+  <mode>real</mode>
+  <gametype>Holdem NL 0,01€/0,02€</gametype>
+  <tablename>Adelaide, 560800143</tablename>
+  <tablecurrency>EUR</tablecurrency>
+  <smallblind>0,01€</smallblind>
+  <bigblind>0,02€</bigblind>
+  <duration>00:17:38</duration>
+  <gamecount>54</gamecount>
+  <startdate>2024-01-25 20:47:13</startdate>
+  <currency>EUR</currency>
+  <nickname>paricilamone</nickname>
+  <bets>3,86€</bets>
+  <wins>3,12€</wins>
+  <chipsin>2,04€</chipsin>
+  <chipsout>2,70€</chipsout>
+  <statuspoints>0,00</statuspoints>
+  <awardpoints>0,00</awardpoints>
+  <ipoints>0,00</ipoints>
+  <tablesize>2</tablesize>
+ </general>
+ <game gamecode="7242276556">
+  <general>
+   <startdate>2024-01-25 20:47:13</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,24€" win="0€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2€" win="0,08€" bet="0,20€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">D6 C6</cards>
+   <action player="paricilamone" type="23" sum="0,20€" no="4"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="5"/>
+  </round>
+ </game>
+ <game gamecode="7242280704">
+  <general>
+   <startdate>2024-01-25 20:47:56</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,20€" win="0,12€" bet="0,20€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,04€" win="0€" bet="0,06€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">S3 C5</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,06€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D8 SA S5</cards>
+   <action player="thomaslensois80" type="5" sum="0,14€" no="6"/>
+   <action player="paricilamone" type="0" sum="0€" no="7"/>
+  </round>
+ </game>
+ <game gamecode="7242284144">
+  <general>
+   <startdate>2024-01-25 20:48:20</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,26€" win="0,08€" bet="0,14€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="1,98€" win="0€" bet="0,04€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">C2 C3</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H8 SJ C5</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="5" sum="0,10€" no="6"/>
+   <action player="paricilamone" type="0" sum="0€" no="7"/>
+  </round>
+ </game>
+ <game gamecode="7242284198">
+  <general>
+   <startdate>2024-01-25 20:48:42</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,30€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="1,94€" win="0,08€" bet="0,20€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CJ C10</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H9 SQ SA</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="5" sum="0,02€" no="6"/>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">HQ</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+   <action player="paricilamone" type="5" sum="0,16€" no="9"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242284329">
+  <general>
+   <startdate>2024-01-25 20:49:27</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,26€" win="0€" bet="0,02€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="1,98€" win="0,04€" bet="0,08€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,01€" no="3"/>
+   <cards player="paricilamone" type="Pocket">D5 C4</cards>
+   <action player="paricilamone" type="23" sum="0,08€" no="4"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="5"/>
+  </round>
+ </game>
+ <game gamecode="7242284393">
+  <general>
+   <startdate>2024-01-25 20:49:49</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,24€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2€" win="0,08€" bet="0,16€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CK D6</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S3 H8 D4</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SJ</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">SK</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="9"/>
+   <action player="paricilamone" type="5" sum="0,12€" no="10"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242290335">
+  <general>
+   <startdate>2024-01-25 20:50:32</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,20€" win="0€" bet="0,02€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,04€" win="0,04€" bet="0,06€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,01€" no="3"/>
+   <cards player="paricilamone" type="Pocket">H8 H10</cards>
+   <action player="paricilamone" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H3 HK C7</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C9</cards>
+   <action player="paricilamone" type="5" sum="0,04€" no="7"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="8"/>
+  </round>
+ </game>
+ <game gamecode="7242290385">
+  <general>
+   <startdate>2024-01-25 20:50:51</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,18€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,06€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H2 H7</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242290402">
+  <general>
+   <startdate>2024-01-25 20:50:58</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,16€" win="0,04€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,08€" win="0€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">H7 S3</cards>
+   <action player="paricilamone" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242290424">
+  <general>
+   <startdate>2024-01-25 20:51:06</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,18€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,06€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D9 S10</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242290442">
+  <general>
+   <startdate>2024-01-25 20:51:12</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,16€" win="0€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,08€" win="0,08€" bet="0,12€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">CJ D9</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H10 DA SA</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S8</cards>
+   <action player="paricilamone" type="5" sum="0,08€" no="7"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="8"/>
+  </round>
+ </game>
+ <game gamecode="7242290487">
+  <general>
+   <startdate>2024-01-25 20:51:28</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,12€" win="0€" bet="0,08€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,12€" win="0,15€" bet="0,14€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">DJ H10</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H8 D3 H3</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H2</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="8"/>
+   <action player="paricilamone" type="23" sum="0,08€" no="9"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242290535">
+  <general>
+   <startdate>2024-01-25 20:51:46</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,04€" win="0€" bet="0,02€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,19€" win="0,04€" bet="0,08€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,01€" no="3"/>
+   <cards player="paricilamone" type="Pocket">D5 D3</cards>
+   <action player="paricilamone" type="23" sum="0,08€" no="4"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="5"/>
+  </round>
+ </game>
+ <game gamecode="7242290570">
+  <general>
+   <startdate>2024-01-25 20:51:56</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="5,02€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,21€" win="0,08€" bet="0,08€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D2 HQ</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D8 S3 H5</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">CQ</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="5" sum="0,04€" no="8"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="9"/>
+  </round>
+ </game>
+ <game gamecode="7242290629">
+  <general>
+   <startdate>2024-01-25 20:52:14</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,98€" win="0€" bet="0,01€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,25€" win="0,02€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">DQ HK</cards>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="3"/>
+  </round>
+ </game>
+ <game gamecode="7242290642">
+  <general>
+   <startdate>2024-01-25 20:52:20</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,97€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,26€" win="0,08€" bet="0,06€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CJ C5</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CA S9 S5</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="5" sum="0,02€" no="6"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="7"/>
+  </round>
+ </game>
+ <game gamecode="7242290675">
+  <general>
+   <startdate>2024-01-25 20:52:31</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,93€" win="0€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,30€" win="0,08€" bet="0,04€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">D3 CA</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">S9 D7</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DJ HK H6</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S10</cards>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">D9</cards>
+   <action player="paricilamone" type="4" sum="0€" no="9"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242294318">
+  <general>
+   <startdate>2024-01-25 20:52:51</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,89€" win="0€" bet="0,08€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,34€" win="0,15€" bet="0,08€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D3 SQ</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">CJ DK</cards>
+   <action player="thomaslensois80" type="23" sum="0,06€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H3 SA C5</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H7</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+   <action player="paricilamone" type="4" sum="0€" no="9"/>
+  </round>
+  <round no="4">
+   <cards type="River">H2</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="10"/>
+   <action player="paricilamone" type="4" sum="0€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242294378">
+  <general>
+   <startdate>2024-01-25 20:53:13</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,81€" win="0€" bet="0,01€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,41€" win="0,02€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CK C7</cards>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="3"/>
+  </round>
+ </game>
+ <game gamecode="7242294404">
+  <general>
+   <startdate>2024-01-25 20:53:18</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,80€" win="0,15€" bet="0,24€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,42€" win="0€" bet="0,08€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D6 D9</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HK C8 H7</cards>
+   <action player="thomaslensois80" type="5" sum="0,04€" no="5"/>
+   <action player="paricilamone" type="3" sum="0,04€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DQ</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="7"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">DJ</cards>
+   <action player="thomaslensois80" type="5" sum="0,16€" no="9"/>
+   <action player="paricilamone" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242294478">
+  <general>
+   <startdate>2024-01-25 20:53:45</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,87€" win="0,08€" bet="0,06€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,34€" win="0€" bet="0,04€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,01€" no="3"/>
+   <cards player="paricilamone" type="Pocket">D10 C8</cards>
+   <action player="paricilamone" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H2 S7 D4</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H5</cards>
+   <action player="paricilamone" type="5" sum="0,02€" no="7"/>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="8"/>
+   <action player="paricilamone" type="0" sum="0€" no="9"/>
+  </round>
+ </game>
+ <game gamecode="7242298196">
+  <general>
+   <startdate>2024-01-25 20:54:15</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,91€" win="0,12€" bet="0,70€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,30€" win="0€" bet="0,06€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D9 S10</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CQ HA CA</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+   <action player="paricilamone" type="5" sum="0,02€" no="7"/>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="8"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DQ</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="9"/>
+   <action player="paricilamone" type="4" sum="0€" no="10"/>
+  </round>
+  <round no="4">
+   <cards type="River">S6</cards>
+   <action player="thomaslensois80" type="5" sum="0,64€" no="11"/>
+   <action player="paricilamone" type="0" sum="0€" no="12"/>
+  </round>
+ </game>
+ <game gamecode="7242301628">
+  <general>
+   <startdate>2024-01-25 20:54:48</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,97€" win="0,04€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,24€" win="0€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">C8 H4</cards>
+   <action player="paricilamone" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242301647">
+  <general>
+   <startdate>2024-01-25 20:54:55</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,99€" win="0€" bet="0,10€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,22€" win="0,19€" bet="0,10€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">SA SJ</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">CJ SK</cards>
+   <action player="thomaslensois80" type="23" sum="0,06€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H3 D7 H2</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D4</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+   <action player="paricilamone" type="4" sum="0€" no="9"/>
+  </round>
+  <round no="4">
+   <cards type="River">H10</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="10"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242301766">
+  <general>
+   <startdate>2024-01-25 20:55:35</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,89€" win="0,04€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,31€" win="0€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">C5 S10</cards>
+   <action player="paricilamone" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242301792">
+  <general>
+   <startdate>2024-01-25 20:55:43</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,91€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,29€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D4 D3</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242301808">
+  <general>
+   <startdate>2024-01-25 20:55:48</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,89€" win="0€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,31€" win="0,08€" bet="0,04€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">DJ C9</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">C8 D8</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D5 DQ S4</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D3</cards>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">S3</cards>
+   <action player="paricilamone" type="4" sum="0€" no="9"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242307669">
+  <general>
+   <startdate>2024-01-25 20:56:23</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,85€" win="0€" bet="0,06€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,35€" win="0,12€" bet="0,06€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H10 D5</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">D10 HK</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H5 C8 SJ</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="5"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C2</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">DA</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="9"/>
+   <action player="paricilamone" type="4" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242307759">
+  <general>
+   <startdate>2024-01-25 20:56:57</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,79€" win="0,30€" bet="2,16€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,41€" win="0€" bet="0,16€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">CQ HK</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C4 D10 H2</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SK</cards>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">S9</cards>
+   <action player="paricilamone" type="5" sum="0,12€" no="9"/>
+   <action player="thomaslensois80" type="23" sum="2,12€" no="10"/>
+   <action player="paricilamone" type="0" sum="0€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242308453">
+  <general>
+   <startdate>2024-01-25 20:57:30</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,93€" win="0,04€" bet="0,06€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,25€" win="0€" bet="0,02€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CJ D9</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S7 S10 S4</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D5</cards>
+   <action player="thomaslensois80" type="5" sum="0,04€" no="7"/>
+   <action player="paricilamone" type="0" sum="0€" no="8"/>
+  </round>
+ </game>
+ <game gamecode="7242308500">
+  <general>
+   <startdate>2024-01-25 20:57:45</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,95€" win="0€" bet="0,08€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,23€" win="0,15€" bet="0,12€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">S10 SK</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D2 C9 S9</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">HK</cards>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="9"/>
+   <action player="paricilamone" type="23" sum="0,06€" no="10"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242308575">
+  <general>
+   <startdate>2024-01-25 20:58:12</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,87€" win="0,23€" bet="0,36€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,30€" win="0€" bet="0,12€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H4 CK</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DQ DK S9</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="5"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H2</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="5" sum="0,06€" no="8"/>
+   <action player="thomaslensois80" type="3" sum="0,06€" no="9"/>
+  </round>
+  <round no="4">
+   <cards type="River">D9</cards>
+   <action player="thomaslensois80" type="5" sum="0,24€" no="10"/>
+   <action player="paricilamone" type="0" sum="0€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242308642">
+  <general>
+   <startdate>2024-01-25 20:58:37</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,98€" win="0€" bet="0,01€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,18€" win="0,02€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">HA H8</cards>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="3"/>
+  </round>
+ </game>
+ <game gamecode="7242308660">
+  <general>
+   <startdate>2024-01-25 20:58:43</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,97€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,19€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">C5 S5</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242308685">
+  <general>
+   <startdate>2024-01-25 20:58:50</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,95€" win="0€" bet="0,02€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,21€" win="0,04€" bet="0,06€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,01€" no="3"/>
+   <cards player="paricilamone" type="Pocket">H4 S4</cards>
+   <action player="paricilamone" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C8 C10 C7</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C9</cards>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">C5</cards>
+   <action player="paricilamone" type="5" sum="0,04€" no="9"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242309691">
+  <general>
+   <startdate>2024-01-25 20:59:17</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,93€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,23€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D8 D6</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C2 C10 H7</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="5" sum="0,02€" no="6"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="7"/>
+  </round>
+ </game>
+ <game gamecode="7242309756">
+  <general>
+   <startdate>2024-01-25 20:59:37</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,91€" win="0€" bet="0,02€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,25€" win="0,04€" bet="0,08€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,01€" no="3"/>
+   <cards player="paricilamone" type="Pocket">S4 C2</cards>
+   <action player="paricilamone" type="23" sum="0,08€" no="4"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="5"/>
+  </round>
+ </game>
+ <game gamecode="7242312939">
+  <general>
+   <startdate>2024-01-25 20:59:49</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,89€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,27€" win="0,08€" bet="0,10€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">S4 H7</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C8 C7 H9</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D4</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="5" sum="0,06€" no="8"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="9"/>
+  </round>
+ </game>
+ <game gamecode="7242317459">
+  <general>
+   <startdate>2024-01-25 21:00:05</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,85€" win="0,08€" bet="0,06€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,31€" win="0€" bet="0,04€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">C10 C8</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HJ S6 H5</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="0" sum="0€" no="7"/>
+  </round>
+ </game>
+ <game gamecode="7242317498">
+  <general>
+   <startdate>2024-01-25 21:00:18</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,89€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,27€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">DK CA</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="4"/>
+  </round>
+ </game>
+ <game gamecode="7242317529">
+  <general>
+   <startdate>2024-01-25 21:00:25</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,87€" win="0€" bet="0,12€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,29€" win="0,23€" bet="0,12€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">D9 H9</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">CA H10</cards>
+   <action player="paricilamone" type="23" sum="0,12€" no="4"/>
+   <action player="thomaslensois80" type="3" sum="0,08€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SK CJ S10</cards>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SJ</cards>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="9"/>
+  </round>
+  <round no="4">
+   <cards type="River">D5</cards>
+   <action player="paricilamone" type="4" sum="0€" no="10"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="11"/>
+  </round>
+ </game>
+ <game gamecode="7242318650">
+  <general>
+   <startdate>2024-01-25 21:01:03</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,75€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,40€" win="0,08€" bet="0,10€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">DJ C2</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C7 S9 D3</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">CK</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="5" sum="0,06€" no="8"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="9"/>
+  </round>
+ </game>
+ <game gamecode="7242321013">
+  <general>
+   <startdate>2024-01-25 21:01:25</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,71€" win="0,08€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,44€" win="0€" bet="0,04€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">CK DJ</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">D6 SK</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D2 C2 S9</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SA</cards>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">H3</cards>
+   <action player="paricilamone" type="4" sum="0€" no="9"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242321078">
+  <general>
+   <startdate>2024-01-25 21:01:50</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,75€" win="0€" bet="0,16€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,40€" win="0,30€" bet="0,16€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D8 S7</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">CK CJ</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H8 C9 SQ</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C7</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="8"/>
+   <action player="paricilamone" type="23" sum="0,10€" no="9"/>
+   <action player="thomaslensois80" type="3" sum="0,08€" no="10"/>
+  </round>
+  <round no="4">
+   <cards type="River">S9</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="11"/>
+   <action player="paricilamone" type="4" sum="0€" no="12"/>
+  </round>
+ </game>
+ <game gamecode="7242321168">
+  <general>
+   <startdate>2024-01-25 21:02:19</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,59€" win="0€" bet="0,01€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,54€" win="0,02€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">C10 C4</cards>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="3"/>
+  </round>
+ </game>
+ <game gamecode="7242321185">
+  <general>
+   <startdate>2024-01-25 21:02:25</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,58€" win="0€" bet="0,02€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,55€" win="0,04€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D9 CQ</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">HK C9 H4</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="5" sum="0,02€" no="6"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="7"/>
+  </round>
+ </game>
+ <game gamecode="7242326085">
+  <general>
+   <startdate>2024-01-25 21:02:38</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,56€" win="0,12€" bet="0,12€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,57€" win="0€" bet="0,06€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">DA H5</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H10 DQ C3</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="6"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">H7</cards>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+   <action player="thomaslensois80" type="5" sum="0,06€" no="9"/>
+   <action player="paricilamone" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242327300">
+  <general>
+   <startdate>2024-01-25 21:02:55</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,62€" win="0€" bet="0,08€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,51€" win="0,15€" bet="0,16€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D10 C3</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,06€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H8 S7 HA</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DJ</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="8"/>
+   <action player="paricilamone" type="23" sum="0,10€" no="9"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242327351">
+  <general>
+   <startdate>2024-01-25 21:03:15</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,54€" win="0€" bet="0,01€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,58€" win="0,02€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D8 C10</cards>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="3"/>
+  </round>
+ </game>
+ <game gamecode="7242327368">
+  <general>
+   <startdate>2024-01-25 21:03:20</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,53€" win="0€" bet="0,04€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,59€" win="0,08€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H4 S2</cards>
+   <action player="paricilamone" type="23" sum="0,04€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">S9 CJ</cards>
+   <action player="thomaslensois80" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C4 C3 DQ</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="5"/>
+   <action player="paricilamone" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S7</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">H6</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="9"/>
+   <action player="paricilamone" type="4" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242327440">
+  <general>
+   <startdate>2024-01-25 21:03:42</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,49€" win="0€" bet="0,01€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,63€" win="0,02€" bet="0,02€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D9 C7</cards>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="0" sum="0€" no="3"/>
+  </round>
+ </game>
+ <game gamecode="7242327460">
+  <general>
+   <startdate>2024-01-25 21:03:48</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,48€" win="0,08€" bet="0,06€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,64€" win="0€" bet="0,04€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CK C9</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H10 H8 H7</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="5"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">SQ</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="7"/>
+   <action player="paricilamone" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">S7</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="9"/>
+   <action player="paricilamone" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242327515">
+  <general>
+   <startdate>2024-01-25 21:04:08</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,52€" win="0€" bet="0,04€" dealer="1"/>
+    <player seat="8" name="paricilamone" chips="2,60€" win="0,08€" bet="0,08€" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="thomaslensois80" type="1" sum="0,01€" no="1"/>
+   <action player="paricilamone" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="3"/>
+   <cards player="paricilamone" type="Pocket">H4 HJ</cards>
+   <action player="paricilamone" type="3" sum="0,02€" no="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DA D10 D3</cards>
+   <action player="paricilamone" type="4" sum="0€" no="5"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">HA</cards>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+   <action player="thomaslensois80" type="4" sum="0€" no="8"/>
+  </round>
+  <round no="4">
+   <cards type="River">S10</cards>
+   <action player="paricilamone" type="5" sum="0,04€" no="9"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+ <game gamecode="7242327574">
+  <general>
+   <startdate>2024-01-25 21:04:28</startdate>
+   <players>
+    <player seat="3" name="thomaslensois80" chips="4,48€" win="0€" bet="0,06€" dealer="0"/>
+    <player seat="8" name="paricilamone" chips="2,64€" win="0,12€" bet="0,12€" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="1" sum="0,01€" no="1"/>
+   <action player="thomaslensois80" type="2" sum="0,02€" no="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">SQ C7</cards>
+   <action player="paricilamone" type="3" sum="0,01€" no="3"/>
+   <cards player="thomaslensois80" type="Pocket">X X</cards>
+   <action player="thomaslensois80" type="23" sum="0,04€" no="4"/>
+   <action player="paricilamone" type="3" sum="0,02€" no="5"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CA D4 D8</cards>
+   <action player="thomaslensois80" type="4" sum="0€" no="6"/>
+   <action player="paricilamone" type="4" sum="0€" no="7"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C6</cards>
+   <action player="thomaslensois80" type="5" sum="0,02€" no="8"/>
+   <action player="paricilamone" type="23" sum="0,08€" no="9"/>
+   <action player="thomaslensois80" type="0" sum="0€" no="10"/>
+  </round>
+ </game>
+</session>

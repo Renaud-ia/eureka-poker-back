@@ -9,13 +9,11 @@ import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
-import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartie;
+import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartie;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 public abstract class ParserTxt extends ParserModele {
     protected final String[] lignesFichier;
@@ -77,7 +75,6 @@ public abstract class ParserTxt extends ParserModele {
             builderInfosPartie.fixBuyIn(infosMain.obtBuyIn());
             builderInfosPartie.fixAnte(infosMain.obtAnte());
             builderInfosPartie.fixRake(infosMain.obtRake());
-            builderInfosPartie.fixMontantBB(infosMain.obtMontantBb());
         }
     }
 

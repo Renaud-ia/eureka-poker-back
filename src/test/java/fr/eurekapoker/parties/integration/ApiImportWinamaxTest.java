@@ -1,40 +1,22 @@
 package fr.eurekapoker.parties.integration;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.eurekapoker.parties.api.RequeteImport;
-import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.http.MediaType;
-import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-
-import java.io.IOException;
 import java.math.BigDecimal;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest
-@AutoConfigureMockMvc
-public class ApiImportEndToEndWinamaxTest {
-    private final ObjectMapper objectMapper = new ObjectMapper();
+public class ApiImportWinamaxTest extends ApiImportTestModele {
     @Autowired
     private MockMvc mockMvc;
+
+    public ApiImportWinamaxTest() {
+        super("winamax");
+    }
 
     @Test
     public void testSimpleAjouterPartie() throws Exception {
@@ -224,58 +206,5 @@ public class ApiImportEndToEndWinamaxTest {
         verifierAction(cinquiemeActionFlop, "AlexisSR7", "CALL", 16327, 16327, 0, 35869, true);
     }
 
-    private void verifierAction(JSONObject action,
-                                String nomJoueur,
-                                String nomAction,
-                                float montant,
-                                float montantInvesti,
-                                float stackActuel,
-                                float montantPot,
-                                boolean estAllIn) throws JSONException {
-        assertEquals(nomJoueur, action.getString("nomJoueur"));
-        assertEquals(nomAction, action.getString("action"));
-        assertEquals(montant, action.getDouble("montant"));
-        assertEquals(montantInvesti, action.getDouble("montantInvesti"));
-        assertEquals(stackActuel, action.getDouble("stackActuel"));
-        assertEquals(montantPot, action.getDouble("montantPot"));
-        assertEquals(estAllIn, action.getBoolean("estAllIn"));
-    }
 
-
-    private JSONObject consulterPartie(String idUniquePartie) throws Exception {
-        int indexPremiereMain = 0;
-        int fenetreConsultation = 10;
-        MvcResult result = mockMvc.perform(get("/parties/" + idUniquePartie)
-                        .param("indexMain", String.valueOf(indexPremiereMain))
-                        .param("fenetreConsultation", String.valueOf(fenetreConsultation)))
-                .andExpect(status().isOk()) // Vérifier que la réponse est 200 OK
-                .andReturn(); // Retourner le résultat
-
-        // Traitement du contenu de la réponse
-        String content = result.getResponse().getContentAsString();
-
-        return new JSONObject(content);
-    }
-
-    private JSONObject creerPartie(String nomFichier, boolean joueursAnonymes) throws Exception {
-        String contenuPartie = lireContenuFichier(nomFichier);
-        String valeurJoueursAnonymes = joueursAnonymes ? "on" : "off";
-
-        MvcResult result = mockMvc.perform(MockMvcRequestBuilders.multipart("/parties/")
-                        .file(new MockMultipartFile("fichierUpload", "fichier.txt",
-                                MediaType.TEXT_PLAIN_VALUE, contenuPartie.getBytes()))
-                        .param("contenuPartie", contenuPartie)
-                        .param("joueursAnonymes", valeurJoueursAnonymes)
-                        .contentType(MediaType.MULTIPART_FORM_DATA))
-                .andExpect(status().isCreated())
-                .andReturn();
-
-        String content = result.getResponse().getContentAsString();
-        return new JSONObject(content);
-    }
-
-    private String lireContenuFichier(String nomFichier) throws URISyntaxException, IOException {
-        Path cheminRepertoire = Paths.get(Objects.requireNonNull(getClass().getResource("/parsing/winamax/" + nomFichier)).toURI());
-        return Files.readString(cheminRepertoire);
-    }
 }

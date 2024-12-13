@@ -7,8 +7,8 @@ import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartieWinamax;
-import fr.eurekapoker.parties.domaine.poker.parties.InfosPartiePoker;
+import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartieWinamax;
+import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 import fr.eurekapoker.parties.domaine.poker.parties.JoueurPoker;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -80,7 +80,6 @@ public class ParserWinamaxTest {
                         builderInfosPartieWinamax
                 ));
 
-        doReturn(mainsExtraitesSpy).when(parserWinamax).obtMains();
         joueurs = new ArrayList<>();
         joueurs.add(joueurPokerMock);
 
