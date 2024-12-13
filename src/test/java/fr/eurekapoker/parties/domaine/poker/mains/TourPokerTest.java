@@ -18,6 +18,6 @@ public class TourPokerTest {
         assert roundPoker == TourPoker.RoundPoker.RIVER;
 
         roundPoker = roundPoker.suivant();
-        assert roundPoker == TourPoker.RoundPoker.PREFLOP;
+        assert roundPoker == TourPoker.RoundPoker.BLINDES;
     }
 }

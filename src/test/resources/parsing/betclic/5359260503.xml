@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session sessioncode="5359260503">
+ <general>
+  <client_version>23.11.1.7</client_version>
+  <mode>real</mode>
+  <gametype>Holdem NL</gametype>
+  <tablename>KO, 892334356</tablename>
+  <tournamentcurrency>EUR</tournamentcurrency>
+  <duration>00:04:11</duration>
+  <gamecount>4</gamecount>
+  <startdate>2024-01-25 20:44:45</startdate>
+  <currency>EUR</currency>
+  <nickname>paricilamone</nickname>
+  <bets>25 755</bets>
+  <wins>15 845</wins>
+  <chipsin>20 920</chipsin>
+  <chipsout>0</chipsout>
+  <statuspoints>2,40PB</statuspoints>
+  <awardpoints>0PB</awardpoints>
+  <ipoints>2,40PB</ipoints>
+  <tablesize>6</tablesize>
+  <tournamentcode>889329753</tournamentcode>
+  <tournamentname>KO</tournamentname>
+  <place>63</place>
+  <buyin>1,35€ + 1,35€ + 0,30€</buyin>
+  <totalbuyin>3€</totalbuyin>
+  <win>0</win>
+ </general>
+ <game gamecode="7242221545">
+  <general>
+   <startdate>2024-01-25 20:44:45</startdate>
+   <smallblind>400</smallblind>
+   <bigblind>800</bigblind>
+   <ante>90</ante>
+   <players>
+    <player seat="5" reg_code="" name="Miclau21" chips="8 215" win="0" rebuy="0" bet="3 290" addon="0" dealer="0"/>
+    <player seat="6" reg_code="" name="BAAines" chips="44 597" win="0" rebuy="0" bet="90" addon="0" dealer="1"/>
+    <player seat="8" reg_code="" name="Braklare2107" chips="21 240" win="7 560" rebuy="0" bet="7 070" addon="0" dealer="0"/>
+    <player seat="10" reg_code="" name="samsam14100" chips="41 290" win="0" rebuy="0" bet="890" addon="0" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Braklare2107" type="15" sum="90" no="1"/>
+   <action player="samsam14100" type="15" sum="90" no="2"/>
+   <action player="Miclau21" type="15" sum="90" no="3"/>
+   <action player="BAAines" type="15" sum="90" no="4"/>
+   <action player="Braklare2107" type="1" sum="400" no="5"/>
+   <action player="samsam14100" type="2" sum="800" no="6"/>
+  </round>
+  <round no="1">
+   <cards player="Miclau21" type="Pocket">X X</cards>
+   <action player="Miclau21" type="3" sum="800" no="7"/>
+   <cards player="BAAines" type="Pocket">X X</cards>
+   <action player="BAAines" type="0" sum="0" no="8"/>
+   <cards player="Braklare2107" type="Pocket">X X</cards>
+   <action player="Braklare2107" type="3" sum="400" no="9"/>
+   <cards player="samsam14100" type="Pocket">X X</cards>
+   <action player="samsam14100" type="4" sum="0" no="10"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">D7 C4 H3</cards>
+   <action player="Braklare2107" type="4" sum="0" no="11"/>
+   <action player="samsam14100" type="4" sum="0" no="12"/>
+   <action player="Miclau21" type="5" sum="2 400" no="13"/>
+   <action player="Braklare2107" type="3" sum="2 400" no="14"/>
+   <action player="samsam14100" type="0" sum="0" no="15"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">C2</cards>
+   <action player="Braklare2107" type="5" sum="3 780" no="16"/>
+   <action player="Miclau21" type="0" sum="0" no="17"/>
+  </round>
+ </game>
+ <game gamecode="7242246827">
+  <general>
+   <startdate>2024-01-25 20:45:40</startdate>
+   <smallblind>400</smallblind>
+   <bigblind>800</bigblind>
+   <ante>90</ante>
+   <players>
+    <player seat="1" reg_code="5359260503" name="paricilamone" chips="10 000" win="15 845" rebuy="0" bet="4 925" addon="0" dealer="0">
+     <knockout tobounty="0,67€" kicked="Miclau21" tobalance="0,68€"/>
+    </player>
+    <player seat="3" reg_code="" name="BABAT13" chips="17 962" win="0" rebuy="0" bet="90" addon="0" dealer="0"/>
+    <player seat="5" reg_code="" name="Miclau21" chips="4 925" win="0" rebuy="0" bet="4 925" addon="0" dealer="0"/>
+    <player seat="6" reg_code="" name="BAAines" chips="44 507" win="0" rebuy="0" bet="90" addon="0" dealer="0"/>
+    <player seat="8" reg_code="" name="Braklare2107" chips="25 510" win="0" rebuy="0" bet="4 925" addon="0" dealer="1"/>
+    <player seat="10" reg_code="" name="samsam14100" chips="40 400" win="0" rebuy="0" bet="890" addon="0" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="samsam14100" type="15" sum="90" no="1"/>
+   <action player="paricilamone" type="15" sum="90" no="2"/>
+   <action player="BABAT13" type="15" sum="90" no="3"/>
+   <action player="Miclau21" type="15" sum="90" no="4"/>
+   <action player="BAAines" type="15" sum="90" no="5"/>
+   <action player="Braklare2107" type="15" sum="90" no="6"/>
+   <action player="samsam14100" type="1" sum="400" no="7"/>
+   <action player="paricilamone" type="2" sum="800" no="8"/>
+  </round>
+  <round no="1">
+   <cards player="BABAT13" type="Pocket">X X</cards>
+   <action player="BABAT13" type="0" sum="0" no="9"/>
+   <cards player="Miclau21" type="Pocket">SK S3</cards>
+   <action player="Miclau21" type="3" sum="800" no="10"/>
+   <cards player="BAAines" type="Pocket">X X</cards>
+   <action player="BAAines" type="0" sum="0" no="11"/>
+   <cards player="Braklare2107" type="Pocket">HA SQ</cards>
+   <action player="Braklare2107" type="3" sum="800" no="12"/>
+   <cards player="samsam14100" type="Pocket">X X</cards>
+   <action player="samsam14100" type="3" sum="400" no="13"/>
+   <cards player="paricilamone" type="Pocket">S7 DJ</cards>
+   <action player="paricilamone" type="4" sum="0" no="14"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S8 S9 CQ</cards>
+   <action player="samsam14100" type="4" sum="0" no="15"/>
+   <action player="paricilamone" type="5" sum="1 870" no="16"/>
+   <action player="Miclau21" type="23" sum="4 035" no="17"/>
+   <action player="Braklare2107" type="3" sum="4 035" no="18"/>
+   <action player="samsam14100" type="0" sum="0" no="19"/>
+   <action player="paricilamone" type="3" sum="2 165" no="20"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">HJ</cards>
+   <action player="paricilamone" type="4" sum="0" no="21"/>
+   <action player="Braklare2107" type="4" sum="0" no="22"/>
+  </round>
+  <round no="4">
+   <cards type="River">D7</cards>
+   <action player="paricilamone" type="4" sum="0" no="23"/>
+   <action player="Braklare2107" type="4" sum="0" no="24"/>
+  </round>
+ </game>
+ <game gamecode="7242246911">
+  <general>
+   <startdate>2024-01-25 20:46:34</startdate>
+   <smallblind>400</smallblind>
+   <bigblind>800</bigblind>
+   <ante>90</ante>
+   <players>
+    <player seat="1" reg_code="5359260503" name="paricilamone" chips="20 920" win="0" rebuy="0" bet="1 690" addon="0" dealer="0"/>
+    <player seat="3" reg_code="" name="BABAT13" chips="17 872" win="0" rebuy="0" bet="890" addon="0" dealer="0"/>
+    <player seat="5" reg_code="" name="Tekas" chips="10 000" win="0" rebuy="0" bet="90" addon="0" dealer="0"/>
+    <player seat="6" reg_code="" name="BAAines" chips="44 417" win="0" rebuy="0" bet="1 690" addon="0" dealer="0"/>
+    <player seat="8" reg_code="" name="Braklare2107" chips="20 585" win="6 940" rebuy="0" bet="1 690" addon="0" dealer="0"/>
+    <player seat="10" reg_code="" name="samsam14100" chips="39 510" win="0" rebuy="0" bet="890" addon="0" dealer="1"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" type="15" sum="90" no="1"/>
+   <action player="BABAT13" type="15" sum="90" no="2"/>
+   <action player="Tekas" type="15" sum="90" no="3"/>
+   <action player="BAAines" type="15" sum="90" no="4"/>
+   <action player="Braklare2107" type="15" sum="90" no="5"/>
+   <action player="samsam14100" type="15" sum="90" no="6"/>
+   <action player="paricilamone" type="1" sum="400" no="7"/>
+   <action player="BABAT13" type="2" sum="800" no="8"/>
+  </round>
+  <round no="1">
+   <cards player="Tekas" type="Pocket">X X</cards>
+   <action player="Tekas" type="0" sum="0" no="9"/>
+   <cards player="BAAines" type="Pocket">H10 DK</cards>
+   <action player="BAAines" type="3" sum="800" no="10"/>
+   <cards player="Braklare2107" type="Pocket">D9 DJ</cards>
+   <action player="Braklare2107" type="3" sum="800" no="11"/>
+   <cards player="samsam14100" type="Pocket">X X</cards>
+   <action player="samsam14100" type="3" sum="800" no="12"/>
+   <cards player="paricilamone" type="Pocket">C8 C6</cards>
+   <action player="paricilamone" type="3" sum="400" no="13"/>
+   <cards player="BABAT13" type="Pocket">X X</cards>
+   <action player="BABAT13" type="4" sum="0" no="14"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H4 SQ H8</cards>
+   <action player="paricilamone" type="4" sum="0" no="15"/>
+   <action player="BABAT13" type="4" sum="0" no="16"/>
+   <action player="BAAines" type="4" sum="0" no="17"/>
+   <action player="Braklare2107" type="4" sum="0" no="18"/>
+   <action player="samsam14100" type="4" sum="0" no="19"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S9</cards>
+   <action player="paricilamone" type="4" sum="0" no="20"/>
+   <action player="BABAT13" type="4" sum="0" no="21"/>
+   <action player="BAAines" type="5" sum="800" no="22"/>
+   <action player="Braklare2107" type="3" sum="800" no="23"/>
+   <action player="samsam14100" type="0" sum="0" no="24"/>
+   <action player="paricilamone" type="3" sum="800" no="25"/>
+   <action player="BABAT13" type="0" sum="0" no="26"/>
+  </round>
+  <round no="4">
+   <cards type="River">CQ</cards>
+   <action player="paricilamone" type="4" sum="0" no="27"/>
+   <action player="BAAines" type="4" sum="0" no="28"/>
+   <action player="Braklare2107" type="4" sum="0" no="29"/>
+  </round>
+ </game>
+ <game gamecode="7242247049">
+  <general>
+   <startdate>2024-01-25 20:48:14</startdate>
+   <smallblind>400</smallblind>
+   <bigblind>800</bigblind>
+   <ante>90</ante>
+   <players>
+    <player seat="1" reg_code="5359260503" name="paricilamone" chips="19 230" win="0" rebuy="0" bet="19 140" addon="0" dealer="1"/>
+    <player seat="3" reg_code="" name="BABAT13" chips="16 982" win="0" rebuy="0" bet="490" addon="0" dealer="0"/>
+    <player seat="5" reg_code="" name="Tekas" chips="9 910" win="0" rebuy="0" bet="890" addon="0" dealer="0"/>
+    <player seat="6" reg_code="" name="BAAines" chips="42 727" win="0" rebuy="0" bet="90" addon="0" dealer="0"/>
+    <player seat="8" reg_code="" name="Braklare2107" chips="25 835" win="40 820" rebuy="0" bet="19 230" addon="0" dealer="0">
+     <knockout tobounty="1,01€" kicked="paricilamone" tobalance="1,01€"/>
+    </player>
+    <player seat="10" reg_code="" name="samsam14100" chips="38 620" win="0" rebuy="0" bet="890" addon="0" dealer="0"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="BABAT13" type="15" sum="90" no="1"/>
+   <action player="Tekas" type="15" sum="90" no="2"/>
+   <action player="BAAines" type="15" sum="90" no="3"/>
+   <action player="Braklare2107" type="15" sum="90" no="4"/>
+   <action player="samsam14100" type="15" sum="90" no="5"/>
+   <action player="paricilamone" type="15" sum="90" no="6"/>
+   <action player="BABAT13" type="1" sum="400" no="7"/>
+   <action player="Tekas" type="2" sum="800" no="8"/>
+  </round>
+  <round no="1">
+   <cards player="BAAines" type="Pocket">X X</cards>
+   <action player="BAAines" type="0" sum="0" no="9"/>
+   <cards player="Braklare2107" type="Pocket">SQ CQ</cards>
+   <action player="Braklare2107" type="3" sum="800" no="10"/>
+   <cards player="samsam14100" type="Pocket">X X</cards>
+   <action player="samsam14100" type="3" sum="800" no="11"/>
+   <cards player="paricilamone" type="Pocket">C3 DA</cards>
+   <action player="paricilamone" type="23" sum="19 140" no="12"/>
+   <cards player="BABAT13" type="Pocket">X X</cards>
+   <action player="BABAT13" type="0" sum="0" no="13"/>
+   <cards player="Tekas" type="Pocket">X X</cards>
+   <action player="Tekas" type="0" sum="0" no="14"/>
+   <action player="Braklare2107" type="3" sum="18 340" no="15"/>
+   <action player="samsam14100" type="0" sum="0" no="16"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SJ D7 S2</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">D4</cards>
+  </round>
+  <round no="4">
+   <cards type="River">S7</cards>
+  </round>
+ </game>
+</session>

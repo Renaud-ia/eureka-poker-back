@@ -34,6 +34,5 @@ public class DomaineServiceImportTxt implements DomaineServiceImport {
     @Override
     public void lancerImport() throws ErreurImport {
         this.parserTxt.lancerImport();
-        this.mainsExtraites = parserTxt.obtMains();
     }
 }

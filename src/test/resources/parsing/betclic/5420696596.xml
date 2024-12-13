@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<session sessioncode="5420696596">
+ <general>
+  <client_version>24.1.1.5</client_version>
+  <mode>real</mode>
+  <gametype>Holdem NL</gametype>
+  <tablename>Sit’n’Go Twister 5€, 918108967</tablename>
+  <tournamentcurrency>EUR</tournamentcurrency>
+  <duration>00:08:02</duration>
+  <gamecount>27</gamecount>
+  <startdate>2024-03-20 17:30:30</startdate>
+  <currency>EUR</currency>
+  <nickname>paricilamone</nickname>
+  <bets>5 765</bets>
+  <wins>3 695</wins>
+  <chipsin>480</chipsin>
+  <chipsout>1 500</chipsout>
+  <statuspoints>2,80PB</statuspoints>
+  <awardpoints>0PB</awardpoints>
+  <ipoints>2,80PB</ipoints>
+  <tablesize>3</tablesize>
+  <tournamentcode>918108966</tournamentcode>
+  <tournamentname>Sit’n’Go Twister 5€</tournamentname>
+  <rewarddrawn>15€</rewarddrawn>
+  <place>1</place>
+  <buyin>0€ + 0,35€ + 4,65€</buyin>
+  <totalbuyin>5€</totalbuyin>
+  <win>15€</win>
+ </general>
+ <game gamecode="7399534923">
+  <general>
+   <startdate>2024-03-20 17:30:30</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="20" chips="500" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="20" chips="500" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="60" addon="0" reg_code="" bet="80" chips="500" dealer="1" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="10" no="1" type="1"/>
+   <action player="Maleficent66" sum="20" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="20" no="3" type="3"/>
+   <cards player="paricilamone" type="Pocket">D10 D6</cards>
+   <action player="paricilamone" sum="10" no="4" type="3"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="5" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S8 S3 HJ</cards>
+   <action player="paricilamone" sum="0" no="6" type="4"/>
+   <action player="Maleficent66" sum="0" no="7" type="4"/>
+   <action player="issamm16" sum="60" no="8" type="5"/>
+   <action player="paricilamone" sum="0" no="9" type="0"/>
+   <action player="Maleficent66" sum="0" no="10" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399545311">
+  <general>
+   <startdate>2024-03-20 17:31:04</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="0" chips="480" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="50" chips="480" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="100" addon="0" reg_code="" bet="540" chips="540" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="10" no="1" type="1"/>
+   <action player="issamm16" sum="20" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H10 D6</cards>
+   <action player="paricilamone" sum="0" no="3" type="0"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="50" no="4" type="23"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="540" no="5" type="23"/>
+   <action player="Maleficent66" sum="0" no="6" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399545633">
+  <general>
+   <startdate>2024-03-20 17:31:24</startdate>
+   <smallblind>10</smallblind>
+   <bigblind>20</bigblind>
+   <players>
+    <player name="paricilamone" win="40" addon="0" reg_code="5420696596" bet="40" chips="480" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="0" chips="430" dealer="1" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="20" chips="590" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="issamm16" sum="10" no="1" type="1"/>
+   <action player="paricilamone" sum="20" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="3" type="0"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="10" no="4" type="3"/>
+   <cards player="paricilamone" type="Pocket">CQ HJ</cards>
+   <action player="paricilamone" sum="0" no="5" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CA DJ C10</cards>
+   <action player="issamm16" sum="0" no="6" type="4"/>
+   <action player="paricilamone" sum="0" no="7" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">DA</cards>
+   <action player="issamm16" sum="0" no="8" type="4"/>
+   <action player="paricilamone" sum="0" no="9" type="4"/>
+  </round>
+  <round no="4">
+   <cards type="River">C2</cards>
+   <action player="issamm16" sum="0" no="10" type="4"/>
+   <action player="paricilamone" sum="20" no="11" type="5"/>
+   <action player="issamm16" sum="0" no="12" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399546230">
+  <general>
+   <startdate>2024-03-20 17:32:00</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="30" chips="500" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="30" chips="430" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="90" addon="0" reg_code="" bet="120" chips="570" dealer="1" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="15" no="1" type="1"/>
+   <action player="Maleficent66" sum="30" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="30" no="3" type="3"/>
+   <cards player="paricilamone" type="Pocket">D9 D8</cards>
+   <action player="paricilamone" sum="15" no="4" type="3"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="5" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C10 D4 HQ</cards>
+   <action player="paricilamone" sum="0" no="6" type="4"/>
+   <action player="Maleficent66" sum="0" no="7" type="4"/>
+   <action player="issamm16" sum="90" no="8" type="5"/>
+   <action player="paricilamone" sum="0" no="9" type="0"/>
+   <action player="Maleficent66" sum="0" no="10" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399546640">
+  <general>
+   <startdate>2024-03-20 17:32:24</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="0" chips="470" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="60" addon="0" reg_code="" bet="400" chips="400" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="30" chips="630" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="15" no="1" type="1"/>
+   <action player="issamm16" sum="30" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D7 S5</cards>
+   <action player="paricilamone" sum="0" no="3" type="0"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="400" no="4" type="23"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="0" no="5" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399546819">
+  <general>
+   <startdate>2024-03-20 17:32:33</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="30" chips="470" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="0" chips="430" dealer="1" rebuy="0" seat="6"/>
+    <player name="issamm16" win="60" addon="0" reg_code="" bet="90" chips="600" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="issamm16" sum="15" no="1" type="1"/>
+   <action player="paricilamone" sum="30" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="3" type="0"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="15" no="4" type="3"/>
+   <cards player="paricilamone" type="Pocket">D6 S8</cards>
+   <action player="paricilamone" sum="0" no="5" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S6 S7 HA</cards>
+   <action player="issamm16" sum="60" no="6" type="5"/>
+   <action player="paricilamone" sum="0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399547071">
+  <general>
+   <startdate>2024-03-20 17:32:47</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <players>
+    <player name="paricilamone" win="90" addon="0" reg_code="5420696596" bet="120" chips="440" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="30" chips="430" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="30" chips="630" dealer="1" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="15" no="1" type="1"/>
+   <action player="Maleficent66" sum="30" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="30" no="3" type="3"/>
+   <cards player="paricilamone" type="Pocket">HJ H10</cards>
+   <action player="paricilamone" sum="15" no="4" type="3"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="5" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H5 SJ DQ</cards>
+   <action player="paricilamone" sum="0" no="6" type="4"/>
+   <action player="Maleficent66" sum="0" no="7" type="4"/>
+   <action player="issamm16" sum="0" no="8" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">D10</cards>
+   <action player="paricilamone" sum="90" no="9" type="5"/>
+   <action player="Maleficent66" sum="0" no="10" type="0"/>
+   <action player="issamm16" sum="0" no="11" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399547597">
+  <general>
+   <startdate>2024-03-20 17:33:18</startdate>
+   <smallblind>15</smallblind>
+   <bigblind>30</bigblind>
+   <players>
+    <player name="paricilamone" win="255" addon="0" reg_code="5420696596" bet="120" chips="500" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="15" chips="400" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="120" chips="600" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="15" no="1" type="1"/>
+   <action player="issamm16" sum="30" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D5 DA</cards>
+   <action player="paricilamone" sum="60" no="3" type="23"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="4" type="0"/>
+   <cards player="issamm16" type="Pocket">C4 C9</cards>
+   <action player="issamm16" sum="30" no="5" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H5 CK D10</cards>
+   <action player="issamm16" sum="0" no="6" type="4"/>
+   <action player="paricilamone" sum="0" no="7" type="4"/>
+  </round>
+  <round no="3">
+   <cards type="Turn">S7</cards>
+   <action player="issamm16" sum="60" no="8" type="5"/>
+   <action player="paricilamone" sum="60" no="9" type="3"/>
+  </round>
+  <round no="4">
+   <cards type="River">D2</cards>
+   <action player="issamm16" sum="0" no="10" type="4"/>
+   <action player="paricilamone" sum="0" no="11" type="4"/>
+  </round>
+ </game>
+ <game gamecode="7399548182">
+  <general>
+   <startdate>2024-03-20 17:33:54</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <players>
+    <player name="paricilamone" win="40" addon="0" reg_code="5420696596" bet="40" chips="635" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="0" chips="385" dealer="1" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="20" chips="480" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="issamm16" sum="20" no="1" type="1"/>
+   <action player="paricilamone" sum="40" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">C8 HJ</cards>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="3" type="0"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="0" no="4" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399548360">
+  <general>
+   <startdate>2024-03-20 17:34:04</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="20" chips="655" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="40" chips="385" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="100" addon="0" reg_code="" bet="460" chips="460" dealer="1" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="20" no="1" type="1"/>
+   <action player="Maleficent66" sum="40" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="460" no="3" type="23"/>
+   <cards player="paricilamone" type="Pocket">C7 H4</cards>
+   <action player="paricilamone" sum="0" no="4" type="0"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="5" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399548594">
+  <general>
+   <startdate>2024-03-20 17:34:17</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="0" chips="635" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="80" addon="0" reg_code="" bet="80" chips="345" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="40" chips="520" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="20" no="1" type="1"/>
+   <action player="issamm16" sum="40" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">HQ S6</cards>
+   <action player="paricilamone" sum="0" no="3" type="0"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="20" no="4" type="3"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="0" no="5" type="4"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C8 DJ DA</cards>
+   <action player="Maleficent66" sum="40" no="6" type="5"/>
+   <action player="issamm16" sum="0" no="7" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399548831">
+  <general>
+   <startdate>2024-03-20 17:34:32</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="40" chips="635" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="100" addon="0" reg_code="" bet="385" chips="385" dealer="1" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="20" chips="480" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="issamm16" sum="20" no="1" type="1"/>
+   <action player="paricilamone" sum="40" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="385" no="3" type="23"/>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="0" no="4" type="0"/>
+   <cards player="paricilamone" type="Pocket">H3 H4</cards>
+   <action player="paricilamone" sum="0" no="5" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399549148">
+  <general>
+   <startdate>2024-03-20 17:34:49</startdate>
+   <smallblind>20</smallblind>
+   <bigblind>40</bigblind>
+   <players>
+    <player name="paricilamone" win="80" addon="0" reg_code="5420696596" bet="100" chips="595" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="40" chips="445" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="0" chips="460" dealer="1" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="20" no="1" type="1"/>
+   <action player="Maleficent66" sum="40" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="0" no="3" type="0"/>
+   <cards player="paricilamone" type="Pocket">H4 S7</cards>
+   <action player="paricilamone" sum="100" no="4" type="23"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="5" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399549362">
+  <general>
+   <startdate>2024-03-20 17:35:03</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="0" chips="635" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="810" addon="0" reg_code="" bet="405" chips="405" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="405" chips="460" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="30" no="1" type="1"/>
+   <action player="issamm16" sum="60" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">S7 DJ</cards>
+   <action player="paricilamone" sum="0" no="3" type="0"/>
+   <cards player="Maleficent66" type="Pocket">SJ CK</cards>
+   <action player="Maleficent66" sum="405" no="4" type="23"/>
+   <cards player="issamm16" type="Pocket">S10 SQ</cards>
+   <action player="issamm16" sum="345" no="5" type="3"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">H9 S9 DA</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">DK</cards>
+  </round>
+  <round no="4">
+   <cards type="River">H2</cards>
+  </round>
+ </game>
+ <game gamecode="7399549518">
+  <general>
+   <startdate>2024-03-20 17:35:22</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="60" chips="635" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="10" addon="0" reg_code="" bet="810" chips="810" dealer="1" rebuy="0" seat="6"/>
+    <player name="issamm16" win="165" addon="0" reg_code="" bet="55" chips="55" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="issamm16" sum="30" no="1" type="1"/>
+   <action player="paricilamone" sum="60" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">H10 DQ</cards>
+   <action player="Maleficent66" sum="810" no="3" type="23"/>
+   <cards player="issamm16" type="Pocket">SK H4</cards>
+   <action player="issamm16" sum="25" no="4" type="7"/>
+   <cards player="paricilamone" type="Pocket">D8 CQ</cards>
+   <action player="paricilamone" sum="0" no="5" type="0"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CK D7 DK</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">SJ</cards>
+  </round>
+  <round no="4">
+   <cards type="River">HQ</cards>
+  </round>
+ </game>
+ <game gamecode="7399549722">
+  <general>
+   <startdate>2024-03-20 17:35:45</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="30" chips="575" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="60" addon="0" reg_code="" bet="60" chips="760" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="0" chips="165" dealer="1" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="30" no="1" type="1"/>
+   <action player="Maleficent66" sum="60" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <cards player="issamm16" type="Pocket">X X</cards>
+   <action player="issamm16" sum="0" no="3" type="0"/>
+   <cards player="paricilamone" type="Pocket">C9 C3</cards>
+   <action player="paricilamone" sum="0" no="4" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399549792">
+  <general>
+   <startdate>2024-03-20 17:35:53</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="0" chips="545" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="330" addon="0" reg_code="" bet="790" chips="790" dealer="0" rebuy="0" seat="6"/>
+    <player name="issamm16" win="0" addon="0" reg_code="" bet="165" chips="165" dealer="0" rebuy="0" seat="10"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="30" no="1" type="1"/>
+   <action player="issamm16" sum="60" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">D9 SQ</cards>
+   <action player="paricilamone" sum="0" no="3" type="0"/>
+   <cards player="Maleficent66" type="Pocket">C8 S9</cards>
+   <action player="Maleficent66" sum="790" no="4" type="23"/>
+   <cards player="issamm16" type="Pocket">H4 HK</cards>
+   <action player="issamm16" sum="105" no="5" type="7"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">S4 S2 S8</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">H6</cards>
+  </round>
+  <round no="4">
+   <cards type="River">SA</cards>
+  </round>
+ </game>
+ <game gamecode="7399550017">
+  <general>
+   <startdate>2024-03-20 17:36:18</startdate>
+   <smallblind>30</smallblind>
+   <bigblind>60</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="60" chips="545" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="120" addon="0" reg_code="" bet="955" chips="955" dealer="1" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="30" no="1" type="1"/>
+   <action player="paricilamone" sum="60" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="955" no="3" type="23"/>
+   <cards player="paricilamone" type="Pocket">D8 H4</cards>
+   <action player="paricilamone" sum="0" no="4" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399550123">
+  <general>
+   <startdate>2024-03-20 17:36:30</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <players>
+    <player name="paricilamone" win="970" addon="0" reg_code="5420696596" bet="485" chips="485" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="1 015" chips="1 015" dealer="0" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="40" no="1" type="1"/>
+   <action player="Maleficent66" sum="80" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">CQ C9</cards>
+   <action player="paricilamone" sum="40" no="3" type="3"/>
+   <cards player="Maleficent66" type="Pocket">HA DJ</cards>
+   <action player="Maleficent66" sum="1 015" no="4" type="23"/>
+   <action player="paricilamone" sum="405" no="5" type="7"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">CK D5 S6</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">C8</cards>
+  </round>
+  <round no="4">
+   <cards type="River">DQ</cards>
+  </round>
+ </game>
+ <game gamecode="7399559749">
+  <general>
+   <startdate>2024-03-20 17:36:49</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <players>
+    <player name="paricilamone" win="160" addon="0" reg_code="5420696596" bet="970" chips="970" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="80" chips="530" dealer="1" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="40" no="1" type="1"/>
+   <action player="paricilamone" sum="80" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="40" no="3" type="3"/>
+   <cards player="paricilamone" type="Pocket">DA H5</cards>
+   <action player="paricilamone" sum="970" no="4" type="23"/>
+   <action player="Maleficent66" sum="0" no="5" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399559882">
+  <general>
+   <startdate>2024-03-20 17:37:05</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="1 050" chips="1 050" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="900" addon="0" reg_code="" bet="450" chips="450" dealer="0" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="40" no="1" type="1"/>
+   <action player="Maleficent66" sum="80" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H10 D7</cards>
+   <action player="paricilamone" sum="1 050" no="3" type="23"/>
+   <cards player="Maleficent66" type="Pocket">DQ C6</cards>
+   <action player="Maleficent66" sum="370" no="4" type="7"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">SQ HK CA</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">D5</cards>
+  </round>
+  <round no="4">
+   <cards type="River">D8</cards>
+  </round>
+ </game>
+ <game gamecode="7399560038">
+  <general>
+   <startdate>2024-03-20 17:37:22</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="80" chips="600" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="160" addon="0" reg_code="" bet="900" chips="900" dealer="1" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="40" no="1" type="1"/>
+   <action player="paricilamone" sum="80" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="900" no="3" type="23"/>
+   <cards player="paricilamone" type="Pocket">H3 C8</cards>
+   <action player="paricilamone" sum="0" no="4" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399560151">
+  <general>
+   <startdate>2024-03-20 17:37:35</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <players>
+    <player name="paricilamone" win="160" addon="0" reg_code="5420696596" bet="520" chips="520" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="80" chips="980" dealer="0" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="40" no="1" type="1"/>
+   <action player="Maleficent66" sum="80" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">HK C3</cards>
+   <action player="paricilamone" sum="520" no="3" type="23"/>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="4" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399560237">
+  <general>
+   <startdate>2024-03-20 17:37:44</startdate>
+   <smallblind>40</smallblind>
+   <bigblind>80</bigblind>
+   <players>
+    <player name="paricilamone" win="1 200" addon="0" reg_code="5420696596" bet="600" chips="600" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="900" chips="900" dealer="1" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="40" no="1" type="1"/>
+   <action player="paricilamone" sum="80" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">DK D3</cards>
+   <action player="Maleficent66" sum="900" no="3" type="23"/>
+   <cards player="paricilamone" type="Pocket">SA H7</cards>
+   <action player="paricilamone" sum="520" no="4" type="7"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">C2 DJ S2</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">HQ</cards>
+  </round>
+  <round no="4">
+   <cards type="River">C10</cards>
+  </round>
+ </game>
+ <game gamecode="7399560385">
+  <general>
+   <startdate>2024-03-20 17:38:01</startdate>
+   <smallblind>50</smallblind>
+   <bigblind>100</bigblind>
+   <players>
+    <player name="paricilamone" win="0" addon="0" reg_code="5420696596" bet="50" chips="1 200" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="100" addon="0" reg_code="" bet="100" chips="300" dealer="0" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="50" no="1" type="1"/>
+   <action player="Maleficent66" sum="100" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <cards player="paricilamone" type="Pocket">H2 C3</cards>
+   <action player="paricilamone" sum="0" no="3" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399560444">
+  <general>
+   <startdate>2024-03-20 17:38:07</startdate>
+   <smallblind>50</smallblind>
+   <bigblind>100</bigblind>
+   <players>
+    <player name="paricilamone" win="100" addon="0" reg_code="5420696596" bet="100" chips="1 150" dealer="0" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="50" chips="350" dealer="1" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="Maleficent66" sum="50" no="1" type="1"/>
+   <action player="paricilamone" sum="100" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">H7 D8</cards>
+   <cards player="Maleficent66" type="Pocket">X X</cards>
+   <action player="Maleficent66" sum="0" no="3" type="0"/>
+  </round>
+ </game>
+ <game gamecode="7399560539">
+  <general>
+   <startdate>2024-03-20 17:38:17</startdate>
+   <smallblind>50</smallblind>
+   <bigblind>100</bigblind>
+   <players>
+    <player name="paricilamone" win="600" addon="0" reg_code="5420696596" bet="1 200" chips="1 200" dealer="1" rebuy="0" seat="3"/>
+    <player name="Maleficent66" win="0" addon="0" reg_code="" bet="300" chips="300" dealer="0" rebuy="0" seat="6"/>
+   </players>
+  </general>
+  <round no="0">
+   <action player="paricilamone" sum="50" no="1" type="1"/>
+   <action player="Maleficent66" sum="100" no="2" type="2"/>
+  </round>
+  <round no="1">
+   <cards player="paricilamone" type="Pocket">S10 DA</cards>
+   <action player="paricilamone" sum="1 200" no="3" type="23"/>
+   <cards player="Maleficent66" type="Pocket">HK S7</cards>
+   <action player="Maleficent66" sum="200" no="4" type="7"/>
+  </round>
+  <round no="2">
+   <cards type="Flop">DJ H7 SA</cards>
+  </round>
+  <round no="3">
+   <cards type="Turn">CJ</cards>
+  </round>
+  <round no="4">
+   <cards type="River">DK</cards>
+  </round>
+ </game>
+</session>

@@ -6,8 +6,8 @@ import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
-import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartie;
-import fr.eurekapoker.parties.domaine.poker.parties.BuilderInfosPartieWinamax;
+import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartie;
+import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartieWinamax;
 import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 
 public class ParserWinamax extends ParserTxt {
