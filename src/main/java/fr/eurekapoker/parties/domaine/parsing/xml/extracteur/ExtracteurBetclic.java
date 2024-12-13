@@ -174,7 +174,15 @@ public class ExtracteurBetclic extends ExtracteurXml {
 
     public InfosTourBetclic extraireInfoTour(Element tour) {
         TourPoker.RoundPoker round = convertirTour(Integer.parseInt(tour.getAttribute("no")));
-        Element cartesBoard = (Element) tour.getElementsByTagName("cards").item(0);
+        Element cartesBoard = null;
+        NodeList cartesElements = tour.getElementsByTagName("cards");
+        for (int i = 0; i < cartesElements.getLength(); i++) {
+            Element elementCarte = (Element) cartesElements.item(i);
+            if (!elementCarte.getAttribute("type").equals("Pocket")) {
+                cartesBoard = elementCarte;
+                break;
+            }
+        }
         List<CartePoker> cartesExtraites = new ArrayList<>();
         if (cartesBoard != null) cartesExtraites = convertirNomCartes(cartesBoard.getTextContent());
 

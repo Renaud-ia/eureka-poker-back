@@ -224,6 +224,35 @@ public class ExtracteurBetclicTest {
     }
 
     @Test
+    void extraireCartesFlop() throws Exception {
+        Document documentTwister = obtDocumentTwister2();
+        Element premiereMain = (Element) extracteurBetclic.extraireMains(documentTwister).item(0);
+        NodeList tours = extracteurBetclic.extraireTours(premiereMain);
+
+        Element blindeTour = (Element) tours.item(0);
+        InfosTourBetclic infosBlinde = extracteurBetclic.extraireInfoTour(blindeTour);
+        assertEquals(TourPoker.RoundPoker.BLINDES, infosBlinde.obtRoundPoker());
+        assertTrue(infosBlinde.obtCartesExtraites().isEmpty());
+
+        Element preflopTour = (Element) tours.item(1);
+        InfosTourBetclic infosPreflop = extracteurBetclic.extraireInfoTour(preflopTour);
+        assertEquals(TourPoker.RoundPoker.PREFLOP, infosPreflop.obtRoundPoker());
+        assertTrue(infosPreflop.obtCartesExtraites().isEmpty());
+
+        Element flopTour = (Element) tours.item(2);
+        InfosTourBetclic infosFlop = extracteurBetclic.extraireInfoTour(flopTour);
+        assertEquals(TourPoker.RoundPoker.FLOP, infosFlop.obtRoundPoker());
+
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('7', 'c'));
+        cartesAttendues.add(new CartePoker('4', 's'));
+        cartesAttendues.add(new CartePoker('9', 'd'));
+
+        assertEquals(cartesAttendues, infosFlop.obtCartesExtraites());
+
+    }
+
+    @Test
     void extraireActionFold() throws Exception {
         Document documentTKO = obtDocumentTKO();
         Element premiereMain = (Element) extracteurBetclic.extraireMains(documentTKO).item(0);
@@ -336,6 +365,11 @@ public class ExtracteurBetclicTest {
         return ouvrirDocumentXml(nomFichier);
     }
 
+    private Document obtDocumentTwister2() throws Exception {
+        String nomFichier = "5362734143.xml";
+        return ouvrirDocumentXml(nomFichier);
+    }
+
     private Document ouvrirDocumentXml(String nomFichier) throws Exception {
         Path cheminRepertoire = Paths.get(Objects.requireNonNull(getClass().getResource("/parsing/betclic/" + nomFichier)).toURI());
         File xmlFile = new File(String.valueOf(cheminRepertoire));
@@ -345,4 +379,6 @@ public class ExtracteurBetclicTest {
 
         return builder.parse(xmlFile);
     }
+
+
 }

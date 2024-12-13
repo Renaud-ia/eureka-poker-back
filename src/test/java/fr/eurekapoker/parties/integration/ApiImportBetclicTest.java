@@ -143,11 +143,36 @@ public class ApiImportBetclicTest extends ApiImportTestModele {
         JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
         JSONArray joueurs = premiereMain.getJSONArray("joueurs");
 
+        assertEquals(5, joueurs.length());
+
         verifierJoueurPresent(joueurs, "Player 1", 1.23, true);
         verifierJoueurPresent(joueurs, "Player 3", 1.33, false);
         verifierJoueurPresent(joueurs, "Player 5", 1.76, false);
         verifierJoueurPresent(joueurs, "Player 8", 1.05, false);
         verifierJoueurPresent(joueurs, "Player 10", 2.03, false);
+    }
+
+    @Test
+    void donneesCartesCommunesSontBonnes() throws Exception {
+        String nomFichier = "5362734143.xml";
+        JSONObject jsonCreation = creerPartie(nomFichier, false);
+        String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
+
+        JSONObject jsonConsultation = consulterPartie(idUniquePartie);
+
+        JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
+
+        JSONObject preflop = premiereMain.getJSONArray("tours").getJSONObject(0);
+        assertEquals("[]", preflop.getString("board"));
+
+        JSONObject flop = premiereMain.getJSONArray("tours").getJSONObject(1);
+        assertEquals("[\"7c\",\"4s\",\"9d\"]", flop.getString("board"));
+
+        JSONObject turn = premiereMain.getJSONArray("tours").getJSONObject(2);
+        assertEquals("[\"7c\",\"4s\",\"9d\",\"Jc\"]", turn.getString("board"));
+
+        JSONObject river = premiereMain.getJSONArray("tours").getJSONObject(3);
+        assertEquals("[\"7c\",\"4s\",\"9d\",\"Jc\",\"Qh\"]", river.getString("board"));
     }
 
 
