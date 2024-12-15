@@ -1,12 +1,14 @@
-package fr.eurekapoker.parties.domaine.parsing.dto;
+package fr.eurekapoker.parties.domaine.parsing.dto.winamax;
 
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosMain;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;
 
-public class InfosMainWinamax extends  InfosMain {
+public class InfosMainWinamax extends InfosMain {
+    private final long identifiantMain;
     private final FormatPoker.Variante variante;
     private final FormatPoker.TypeTable typeTable;
     private final BigDecimal buyIn;
@@ -26,7 +28,8 @@ public class InfosMainWinamax extends  InfosMain {
             float ante,
             double rake,
             double montantBB) {
-        super(numeroMain);
+        super();
+        this.identifiantMain = numeroMain;
         this.variante = variantePoker;
         this.typeTable = typeTable;
         this.buyIn = new BigDecimal(buyIn).setScale(2, RoundingMode.HALF_UP);
@@ -37,6 +40,11 @@ public class InfosMainWinamax extends  InfosMain {
         this.montantBB = new BigDecimal(montantBB).setScale(2, RoundingMode.HALF_UP);
     }
 
+    public long obtIdentifiantMain() {
+        return identifiantMain;
+    }
+
+    @Override
     public final FormatPoker.Variante obtVariante() {
         return variante;
     }
@@ -45,10 +53,12 @@ public class InfosMainWinamax extends  InfosMain {
         return typeTable;
     }
 
+    @Override
     public final BigDecimal obtBuyIn() {
         return buyIn;
     }
 
+    @Override
     public final LocalDateTime obtDate() {
         return date;
     }
@@ -65,7 +75,6 @@ public class InfosMainWinamax extends  InfosMain {
         return rake;
     }
 
-    @Override
     public BigDecimal obtMontantBb() {
         return montantBB;
     }

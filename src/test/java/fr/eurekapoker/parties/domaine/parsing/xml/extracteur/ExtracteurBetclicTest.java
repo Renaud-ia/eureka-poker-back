@@ -1,6 +1,9 @@
 package fr.eurekapoker.parties.domaine.parsing.xml.extracteur;
 
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.betclic.InfosJoueurBetclic;
+import fr.eurekapoker.parties.domaine.parsing.dto.betclic.InfosTourBetclic;
+import fr.eurekapoker.parties.domaine.parsing.dto.betclic.NomIdPartieBetclic;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;

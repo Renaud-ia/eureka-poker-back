@@ -1,0 +1,195 @@
+Game #24771873725 starts.
+
+#Game No : 24771873725 
+***** Hand History for Game 24771873725 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:34:23 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 500 )
+Seat 3: helios9-07 ( 500 )
+Seat 1: rendslargent33 ( 500 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+dekpok13bot posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qc Ad ]
+helios9-07 folds
+rendslargent33 raises [50]
+dekpok13bot calls [40]
+** Dealing Flop ** [ 4d, Ts, 3h ]
+rendslargent33 checks
+dekpok13bot checks
+** Dealing Turn ** [ Ac ]
+rendslargent33 bets [90]
+dekpok13bot folds
+rendslargent33 does not show cards.
+rendslargent33 wins 210 chips
+Game #24771874225 starts.
+
+#Game No : 24771874225 
+***** Hand History for Game 24771874225 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:34:55 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 440 )
+Seat 3: helios9-07 ( 500 )
+Seat 1: rendslargent33 ( 560 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+dekpok13bot posts small blind [10].
+helios9-07 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  6d Js ]
+rendslargent33 folds
+dekpok13bot raises [50]
+helios9-07 folds
+dekpok13bot does not show cards.
+dekpok13bot wins 80 chips
+Game #24771874474 starts.
+
+#Game No : 24771874474 
+***** Hand History for Game 24771874474 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:35:09 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 460 )
+Seat 3: helios9-07 ( 480 )
+Seat 1: rendslargent33 ( 560 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+helios9-07 posts small blind [10].
+rendslargent33 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  7h As ]
+dekpok13bot raises [60]
+helios9-07 folds
+rendslargent33 calls [40]
+** Dealing Flop ** [ 5h, Th, 3s ]
+rendslargent33 checks
+dekpok13bot bets [50]
+rendslargent33 calls [50]
+** Dealing Turn ** [ 9d ]
+rendslargent33 checks
+dekpok13bot checks
+** Dealing River ** [ 3h ]
+rendslargent33 checks
+dekpok13bot bets [153]
+rendslargent33 folds
+dekpok13bot does not show cards.
+dekpok13bot wins 383 chips
+Game #24771875590 starts.
+
+#Game No : 24771875590 
+***** Hand History for Game 24771875590 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:36:10 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 580 )
+Seat 3: helios9-07 ( 470 )
+Seat 1: rendslargent33 ( 450 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+dekpok13bot posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  7c 9h ]
+helios9-07 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [70]
+dekpok13bot folds
+rendslargent33 does not show cards.
+rendslargent33 wins 100 chips
+Game #24771875890 starts.
+
+#Game No : 24771875890 
+***** Hand History for Game 24771875890 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:36:26 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 560 )
+Seat 3: helios9-07 ( 470 )
+Seat 1: rendslargent33 ( 470 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+dekpok13bot posts small blind [10].
+helios9-07 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kc 5s ]
+rendslargent33 raises [40]
+dekpok13bot folds
+helios9-07 calls [20]
+** Dealing Flop ** [ Qd, 7d, 8d ]
+helios9-07 checks
+rendslargent33 bets [20]
+helios9-07 calls [20]
+** Dealing Turn ** [ Jc ]
+helios9-07 checks
+rendslargent33 checks
+** Dealing River ** [ 2h ]
+helios9-07 checks
+rendslargent33 checks
+helios9-07 shows [ Ks, 6d ]High card.
+rendslargent33 shows [ Kc, 5s ]High card.
+rendslargent33 wins 65 chips from the main pot with High card.
+helios9-07 wins 65 chips from the main pot with High card.
+Game #24771877147 starts.
+
+#Game No : 24771877147 
+***** Hand History for Game 24771877147 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:37:09 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 550 )
+Seat 3: helios9-07 ( 475 )
+Seat 1: rendslargent33 ( 475 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+helios9-07 posts small blind [10].
+rendslargent33 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  9d 8d ]
+dekpok13bot folds
+helios9-07 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 30 chips
+Game #24771877310 starts.
+
+#Game No : 24771877310 
+***** Hand History for Game 24771877310 *****
+NL Texas Hold'em €5 EUR Buy-in  - Saturday, December 14, 13:37:18 CET 2024
+Table 5€ SPINS (402534979) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 2: dekpok13bot ( 550 )
+Seat 3: helios9-07 ( 465 )
+Seat 1: rendslargent33 ( 485 )
+Trny: 402534979 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+dekpok13bot posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  4h 6h ]
+helios9-07 folds
+rendslargent33 raises [50]
+dekpok13bot calls [40]
+** Dealing Flop ** [ 3c, 3d, Ks ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 checks
+dekpok13bot checks
+** Dealing Turn ** [ Kh ]
+rendslargent33 bets [90]
+dekpok13bot calls [90]
+** Dealing River ** [ Ad ]
+rendslargent33 is all-In  [335]
+dekpok13bot calls [335]
+rendslargent33 shows [ 4h, 6h ]two pairs.
+dekpok13bot shows [ Kd, 8c ]a full house.
+dekpok13bot wins 970 chips from the main pot with a full house.
+Player rendslargent33 finished in 3.

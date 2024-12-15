@@ -1,10 +1,11 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
-import fr.eurekapoker.parties.application.InterfacePartiesImpl;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
-import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosMainWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosTableWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.ResultatJoueurWinamax;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
@@ -12,7 +13,6 @@ import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
-import java.awt.datatransfer.FlavorEvent;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -55,7 +55,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
                     // donc il est hors du groupe de capture
                     "(,\\s((?<bounty>[\\d.]+)\\u20AC\\s(bounty)|[\\d.]+\\s(bounty))?)?\\)"
     );
-    @Override
+
     public InfosMainWinamax extraireInfosMain(String ligne) throws ErreurImport {
         // todo : à refactoriser
         Matcher matcher = matcherRegex(patternPremiereLigne, ligne);
@@ -290,8 +290,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
 
     private static final Pattern patternGains = Pattern.compile("\\swon\\s(?<gains>[\\d.]+)");
 
-    @Override
-    public ResultatJoueur extraireResultat(String ligne) throws ErreurRegex {
+    public ResultatJoueurWinamax extraireResultat(String ligne) throws ErreurRegex {
         List<CartePoker> cartes = extraireCartes(ligne);
         if (cartes == null) cartes = new ArrayList<>();
 
@@ -307,7 +306,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
             gains = Float.parseFloat(matcherGains.group("gains"));
         }
 
-        return new ResultatJoueur(nomJoueur, gains, cartes);
+        return new ResultatJoueurWinamax(nomJoueur, gains, cartes);
     }
 
     private static final Pattern patternBlindesAntes = Pattern.compile(

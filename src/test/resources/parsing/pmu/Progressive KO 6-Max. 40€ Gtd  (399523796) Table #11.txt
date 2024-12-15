@@ -1,0 +1,41 @@
+Game #24771896357 starts.
+
+#Game No : 24771896357 
+***** Hand History for Game 24771896357 *****
+NL Texas Hold'em €0.50 EUR Buy-in Trny:399523796 Level:7  Blinds-Antes(1.2K/2.4K -300) - Saturday, December 14, 13:54:20 CET 2024
+Table Progressive KO 6-Max. 40€ Gtd  (399523796) Table #11 (Real Money)
+Seat 1 is the button
+Total number of players : 2/6 
+Seat 1: phil 1340 ( 100,000 )
+Seat 2: rendslargent33 ( 100,000 )
+Trny:399523796 Level:7 
+Blinds-Antes(1 200/2 400 -300)
+phil 1340 posts ante [300]
+rendslargent33 posts ante [300]
+phil 1340 posts small blind [1,200].
+rendslargent33 posts big blind [2,400].
+** Dealing down cards **
+Dealt to rendslargent33 [  4h Ts ]
+Elx_111 has joined the table.
+Player Elx_111 has been moved from table 7 to this table
+phil 1340 calls [1,200]
+ZAK2A has joined the table.
+Player ZAK2A has been moved from table 4 to this table
+rendslargent33 raises [7,200]
+Guichamen77 has joined the table.
+Player Guichamen77 has been moved from table 3 to this table
+phil 1340 calls [7,200]
+** Dealing Flop ** [ 8s, 7s, 4c ]
+rendslargent33 bets [14,850]
+phil 1340 calls [14,850]
+** Dealing Turn ** [ 7c ]
+rendslargent33 bets [24,750]
+phil 1340 calls [24,750]
+** Dealing River ** [ 6d ]
+rendslargent33 is all-In  [50,500]
+phil 1340 is all-In  [50,500]
+rendslargent33 shows [ 4h, Ts ]two pairs.
+phil 1340 shows [ 4d, Jc ]two pairs.
+phil 1340 wins 200,000 chips from the main pot with two pairs.
+Player rendslargent33 finished in 49.
+phil 1340 has knocked out rendslargent33 and won a €0.23 EUR bounty prize.

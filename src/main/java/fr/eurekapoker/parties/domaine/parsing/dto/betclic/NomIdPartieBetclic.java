@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine.parsing.dto;
+package fr.eurekapoker.parties.domaine.parsing.dto.betclic;
 
 public class NomIdPartieBetclic {
     private final String nomPartie;

@@ -1,4 +1,6 @@
-package fr.eurekapoker.parties.domaine.parsing.dto;
+package fr.eurekapoker.parties.domaine.parsing.dto.winamax;
+
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosTable;
 
 public class InfosTableWinamax extends InfosTable {
     private final String nomTable;
@@ -19,8 +21,9 @@ public class InfosTableWinamax extends InfosTable {
         return nombreJoueurs;
     }
 
-    @Override
     public int obtPositionDealer() {
         return positionDealer;
     }
+
+
 }
