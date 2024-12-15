@@ -153,6 +153,14 @@ public class ExtracteurPmuTest {
 
         assertEquals(0, montantAttenduBB.compareTo(montantBB));
     }
+    @Test
+    void extraitMontantBBMTT() throws Exception {
+        String ligne = "Blinds-Antes(400/800 -100)";
+        BigDecimal montantBB = extracteurPmu.extraireBigBlinde(ligne);
+        BigDecimal montantAttenduBB = new BigDecimal(20);
+
+        assertEquals(0, montantAttenduBB.compareTo(montantBB));
+    }
 
     @Test
     void extraireBlindeAnteSpin() throws Exception {
@@ -356,11 +364,4 @@ public class ExtracteurPmuTest {
         BigDecimal resultatAttendu = new BigDecimal(360);
         assertEquals(0, resultatAttendu.compareTo(resultatExtrait.obtMontantGagne()));
     }
-
-
-
-
-
-    // TODO ajouter extraction des résultats
-
 }

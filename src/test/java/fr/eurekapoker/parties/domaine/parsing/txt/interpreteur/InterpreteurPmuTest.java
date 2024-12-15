@@ -64,6 +64,10 @@ public class InterpreteurPmuTest {
         interpreteurPmu.lireLigne(ligne);
         assertTrue(interpreteurPmu.estMontantBlindes());
 
+        ligne = "Blinds-Antes(400/800 -100)";
+        interpreteurPmu.lireLigne(ligne);
+        assertTrue(interpreteurPmu.estMontantBlindes());
+
         ligne = "rendslargent33 posts small blind [10].\n";
         interpreteurPmu.lireLigne(ligne);
         assertTrue(interpreteurPmu.estBlindeAnte());
