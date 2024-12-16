@@ -53,7 +53,7 @@ public class ExtracteurPmuTest {
         InfosMainPmu infosMainPmu = extracteurPmu.extraireInfosMain(ligne);
 
         BigDecimal buyInAttendu = new BigDecimal(2);
-        assertEquals(0, buyInAttendu.compareTo(infosMainPmu.obtBuyIn()));
+        assertEquals(0, buyInAttendu.compareTo(infosMainPmu.obtBuyIn()), "Buy in extrait : " + infosMainPmu.obtBuyIn());
         assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainPmu.obtVariante());
 
         LocalDateTime dateAttendue = LocalDateTime.of(2024, 12, 14, 13, 17, 19);
@@ -99,7 +99,7 @@ public class ExtracteurPmuTest {
     @Test
     void extraitNombreJoueurs() throws Exception {
         String ligne = "Total number of players : 2/6 ";
-        int nombreJoueurs = extracteurPmu.extraireNombreJoueurs();
+        int nombreJoueurs = extracteurPmu.extraireNombreJoueurs(ligne);
         assertEquals(6, nombreJoueurs);
     }
 
@@ -157,7 +157,7 @@ public class ExtracteurPmuTest {
     void extraitMontantBBMTT() throws Exception {
         String ligne = "Blinds-Antes(400/800 -100)";
         BigDecimal montantBB = extracteurPmu.extraireBigBlinde(ligne);
-        BigDecimal montantAttenduBB = new BigDecimal(20);
+        BigDecimal montantAttenduBB = new BigDecimal(800);
 
         assertEquals(0, montantAttenduBB.compareTo(montantBB));
     }
@@ -231,7 +231,7 @@ public class ExtracteurPmuTest {
         String ligne = "ElLogo76 folds";
         ActionPokerJoueur actionPokerJoueur = extracteurPmu.extraireAction(ligne);
 
-        assertEquals("SACPALSA", actionPokerJoueur.getNomJoueur());
+        assertEquals("ElLogo76", actionPokerJoueur.getNomJoueur());
         assertEquals(ActionPoker.TypeAction.FOLD, actionPokerJoueur.getTypeAction());
 
         BigDecimal montantAttendu = new BigDecimal(0);
@@ -259,10 +259,10 @@ public class ExtracteurPmuTest {
         String ligne = "TIYO95 checks";
         ActionPokerJoueur actionPokerJoueur = extracteurPmu.extraireAction(ligne);
 
-        assertEquals("SACPALSA", actionPokerJoueur.getNomJoueur());
+        assertEquals("TIYO95", actionPokerJoueur.getNomJoueur());
         assertEquals(ActionPoker.TypeAction.CHECK, actionPokerJoueur.getTypeAction());
 
-        BigDecimal montantAttendu = new BigDecimal(20);
+        BigDecimal montantAttendu = new BigDecimal(0);
         assertEquals(0, montantAttendu.compareTo(actionPokerJoueur.obtMontantAction()));
 
         assertTrue(actionPokerJoueur.estMontantTotal());
@@ -345,13 +345,15 @@ public class ExtracteurPmuTest {
     @Test
     void extraitCartes() throws Exception {
         String ligne = "SACPALSA shows [ 2s, 8d ]three of a kind.";
-        List<CartePoker> cartesExtraites = extracteurPmu.extraireCartes(ligne);
+        CartesJoueur cartesJoueur = extracteurPmu.extraireCartes(ligne);
+
+        assertEquals("SACPALSA", cartesJoueur.obtNomJoueur());
 
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('2', 's'));
         cartesAttendues.add(new CartePoker('8', 'd'));
 
-        assertEquals(cartesAttendues, cartesExtraites);
+        assertEquals(cartesAttendues, cartesJoueur.obtCartes());
     }
 
     @Test
@@ -359,9 +361,22 @@ public class ExtracteurPmuTest {
         String ligne = "rendslargent33 wins 100 chips from the main pot with three of a kind.";
         ResultatJoueur resultatExtrait = extracteurPmu.extraireResultat(ligne);
 
-        assertEquals("SACPALSA", resultatExtrait.getNomJoueur());
+        assertEquals("rendslargent33", resultatExtrait.getNomJoueur());
 
-        BigDecimal resultatAttendu = new BigDecimal(360);
+        BigDecimal resultatAttendu = new BigDecimal(100);
         assertEquals(0, resultatAttendu.compareTo(resultatExtrait.obtMontantGagne()));
     }
+
+    @Test
+    void extraitResultatEnEuros() throws Exception {
+        String ligne = "ShalashaskaFOX wins €0.16 EUR";
+        ResultatJoueur resultatExtrait = extracteurPmu.extraireResultat(ligne);
+
+        assertEquals("ShalashaskaFOX", resultatExtrait.getNomJoueur());
+
+        BigDecimal resultatAttendu = new BigDecimal("0.16");
+        assertEquals(0, resultatAttendu.compareTo(resultatExtrait.obtMontantGagne()));
+    }
+
+
 }

@@ -9,10 +9,7 @@ import java.time.LocalDateTime;
 
 public class InfosMainWinamax extends InfosMain {
     private final long identifiantMain;
-    private final FormatPoker.Variante variante;
     private final FormatPoker.TypeTable typeTable;
-    private final BigDecimal buyIn;
-    private final LocalDateTime date;
     private final long numeroTable;
     private final BigDecimal ante;
     private final BigDecimal rake;
@@ -28,12 +25,9 @@ public class InfosMainWinamax extends InfosMain {
             float ante,
             double rake,
             double montantBB) {
-        super();
+        super(variantePoker, buyIn, date);
         this.identifiantMain = numeroMain;
-        this.variante = variantePoker;
         this.typeTable = typeTable;
-        this.buyIn = new BigDecimal(buyIn).setScale(2, RoundingMode.HALF_UP);
-        this.date = date;
         this.numeroTable = numeroTable;
         this.ante = new BigDecimal(ante).setScale(2, RoundingMode.HALF_UP);
         this.rake = new BigDecimal(rake).setScale(4, RoundingMode.HALF_UP);
@@ -44,23 +38,8 @@ public class InfosMainWinamax extends InfosMain {
         return identifiantMain;
     }
 
-    @Override
-    public final FormatPoker.Variante obtVariante() {
-        return variante;
-    }
-
     public final FormatPoker.TypeTable obtTypeTable() {
         return typeTable;
-    }
-
-    @Override
-    public final BigDecimal obtBuyIn() {
-        return buyIn;
-    }
-
-    @Override
-    public final LocalDateTime obtDate() {
-        return date;
     }
 
     public final long obtNumeroTable() {

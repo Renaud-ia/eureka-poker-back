@@ -21,7 +21,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ExtracteurWinamax implements ExtracteurLigne {
+public class ExtracteurWinamax extends ExtracteurLigne {
     private static final Pattern patternPremiereLigne = Pattern.compile(
             "Winamax\\sPoker\\s-\\s" +
                     "(?<nomTournoi>(.(?!buyIn|- HandId))+)\\s" +
@@ -57,7 +57,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     );
 
     public InfosMainWinamax extraireInfosMain(String ligne) throws ErreurImport {
-        // todo : à refactoriser
+        // todo : à refactoriser (après avoir vérifié/complété les tests)
         Matcher matcher = matcherRegex(patternPremiereLigne, ligne);
 
         // on trouve le format
@@ -326,7 +326,6 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     private static final Pattern patternCartes = Pattern.compile(
             "\\[(?<cards>\\w{2}[\\s\\w{2}]*)](\\[(?<newCard>\\w{2})])?");
 
-    @Override
     public List<CartePoker> extraireCartes(String ligne) throws ErreurRegex {
         Matcher matcher = patternCartes.matcher(ligne);
         if (!matcher.find()) {
@@ -359,12 +358,6 @@ public class ExtracteurWinamax implements ExtracteurLigne {
         return new InfosHero(nomHero, cartePokers);
     }
 
-    private Matcher matcherRegex(Pattern pattern, String ligne) throws ErreurRegex {
-        Matcher matcher = pattern.matcher(ligne);
-        if (!matcher.find()) {
-            throw new ErreurRegex("Regex non trouvé dans :" + ligne);
-        }
-        return matcher;
-    }
+
 
 }
