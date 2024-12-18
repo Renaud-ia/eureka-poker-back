@@ -14,7 +14,8 @@ import java.util.List;
 public interface ObservateurParser {
     void fixInfosPartie(InfosPartiePoker infosPartiePoker);
 
-    void ajouterMain(MainPoker mainPoker, BigDecimal montantBB) throws ErreurLectureFichier;
+    void ajouterMain(MainPoker mainPoker) throws ErreurLectureFichier;
+    void ajouterMontantBB(BigDecimal montantBB);
 
     void ajouterJoueur(InfosJoueur infosJoueur) throws ErreurLectureFichier;
 

@@ -61,7 +61,8 @@ public class ParserWinamax extends ParserTxt {
         if (indexLigne > 0) observateurParser.mainTerminee();
         InfosMainWinamax infosMain = extracteurWinamax.extraireInfosMain(lignesFichier[indexLigne]);
         MainPoker mainPoker = new MainPoker(infosMain.obtIdentifiantMain());
-        observateurParser.ajouterMain(mainPoker, infosMain.obtMontantBb());
+        observateurParser.ajouterMain(mainPoker);
+        observateurParser.ajouterMontantBB(infosMain.obtMontantBb());
 
         FormatPoker formatPoker = new FormatPoker(infosMain.obtVariante(), infosMain.obtTypeTable());
 
@@ -88,6 +89,13 @@ public class ParserWinamax extends ParserTxt {
         observateurParser.ajouterPositionDealer(positionDealer);
     }
 
+    protected void ajouterResultat(int indexLigne) throws ErreurRegex {
+        ResultatJoueurWinamax resultatJoueur = extracteurWinamax.extraireResultat(lignesFichier[indexLigne]);
+        String nomJoueur = resultatJoueur.getNomJoueur();
+        observateurParser.ajouterGains(nomJoueur, resultatJoueur.obtMontantGagne());
+        observateurParser.ajouterCartes(nomJoueur, resultatJoueur.obtCartesJoueur());
+    }
+
     @Override
     public boolean peutLireFichier() {
         return lignesFichier[0].startsWith("Winamax Poker");
@@ -98,10 +106,5 @@ public class ParserWinamax extends ParserTxt {
         return RoomPoker.WINAMAX;
     }
 
-    protected void ajouterResultat(int indexLigne) throws ErreurRegex {
-        ResultatJoueurWinamax resultatJoueur = extracteurWinamax.extraireResultat(lignesFichier[indexLigne]);
-        String nomJoueur = resultatJoueur.getNomJoueur();
-        observateurParser.ajouterGains(nomJoueur, resultatJoueur.obtMontantGagne());
-        observateurParser.ajouterCartes(nomJoueur, resultatJoueur.obtCartesJoueur());
-    }
+
 }

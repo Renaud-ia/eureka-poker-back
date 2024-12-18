@@ -62,8 +62,9 @@ public class AjoutEtRecuperationPartieBddTest {
         // ajouter une main
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 random.nextLong(),
-                new BigDecimal(20), 1
+                1
         );
+        mainPersistenceDto.ajouterMontantBB(new BigDecimal(20));
         partiePersistanceDto.ajouterMain(mainPersistenceDto);
 
         // ajouter un joueur

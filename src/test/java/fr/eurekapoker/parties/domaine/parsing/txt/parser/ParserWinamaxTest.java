@@ -100,7 +100,8 @@ public class ParserWinamaxTest extends ParserTxtModele {
         parserWinamax.lancerImport();
         verify(observateurParser, times(1)).mainTerminee();
         verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
-        verify(observateurParser).ajouterMain(any(MainPoker.class), any());
+        verify(observateurParser).ajouterMain(any(MainPoker.class));
+        verify(observateurParser).ajouterMontantBB(any());
 
         verify(builderInfosPartieWinamax).donneesIncompletes();
     }

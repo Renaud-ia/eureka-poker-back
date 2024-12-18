@@ -50,7 +50,8 @@ public class ParserBetclic extends ParserXml {
             long idMain = extracteurBetclic.extraireIdMain(mainElement);
             MainPoker mainPoker = new MainPoker(idMain);
             BigDecimal montantBB = extracteurBetclic.extraireMontantBB(this.document, mainElement);
-            this.observateurParser.ajouterMain(mainPoker, montantBB);
+            this.observateurParser.ajouterMain(mainPoker);
+            this.observateurParser.ajouterMontantBB(montantBB);
             this.extraireJoueurs(mainElement);
             this.extraireTours(mainElement);
 

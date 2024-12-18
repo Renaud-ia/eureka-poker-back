@@ -69,7 +69,8 @@ class ConstructeurPersistenceDtoTest {
         MainPoker nouvelleMain = new MainPoker(
                 new Random().nextLong()
         );
-        constructeur.ajouterMain(nouvelleMain, new BigDecimal("0.05"));
+        constructeur.ajouterMain(nouvelleMain);
+        constructeur.ajouterMontantBB(new BigDecimal("0.05"));
         assertEquals(1, constructeur.obtPartie().obtMains().size());
 
 

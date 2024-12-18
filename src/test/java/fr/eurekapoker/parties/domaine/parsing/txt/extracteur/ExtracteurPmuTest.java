@@ -28,6 +28,14 @@ public class ExtracteurPmuTest {
     }
 
     @Test
+    void extraitNumeroPartie() throws Exception {
+        String ligne = "#Game No : 24771896357 ";
+        long numeroPartie = extracteurPmu.extraireNumeroPartie(ligne);
+
+        assertEquals(24771896357L, numeroPartie);
+    }
+
+    @Test
     void extraitNumeroMain() throws Exception {
         String ligne = "***** Hand History for Game 24771887244 *****\n";
         long idMain = extracteurPmu.extraireIdMain(ligne);
@@ -42,6 +50,7 @@ public class ExtracteurPmuTest {
         BigDecimal buyInAttendu = new BigDecimal(2);
         assertEquals(0, buyInAttendu.compareTo(infosMainPmu.obtBuyIn()));
         assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainPmu.obtVariante());
+        assertEquals(FormatPoker.TypeTable.SPIN, infosMainPmu.obtTypeJeu());
 
         LocalDateTime dateAttendue = LocalDateTime.of(2024, 12, 14, 13, 45, 56);
         assertEquals(dateAttendue, infosMainPmu.obtDate());
@@ -55,6 +64,7 @@ public class ExtracteurPmuTest {
         BigDecimal buyInAttendu = new BigDecimal(2);
         assertEquals(0, buyInAttendu.compareTo(infosMainPmu.obtBuyIn()), "Buy in extrait : " + infosMainPmu.obtBuyIn());
         assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainPmu.obtVariante());
+        assertEquals(FormatPoker.TypeTable.CASH_GAME, infosMainPmu.obtTypeJeu());
 
         LocalDateTime dateAttendue = LocalDateTime.of(2024, 12, 14, 13, 17, 19);
         assertEquals(dateAttendue, infosMainPmu.obtDate());
@@ -68,6 +78,7 @@ public class ExtracteurPmuTest {
         BigDecimal buyInAttendu = new BigDecimal("0.5");
         assertEquals(0, buyInAttendu.compareTo(infosMainPmu.obtBuyIn()));
         assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainPmu.obtVariante());
+        assertEquals(FormatPoker.TypeTable.MTT, infosMainPmu.obtTypeJeu());
 
         LocalDateTime dateAttendue = LocalDateTime.of(2024, 12, 14, 13, 54, 20);
         assertEquals(dateAttendue, infosMainPmu.obtDate());
@@ -94,6 +105,13 @@ public class ExtracteurPmuTest {
         String ligne = "Table Progressive KO 6-Max. 40€ Gtd  (399523796) Table #11 (Real Money)";
         InfosTable infosTable = extracteurPmu.extraireInfosTable(ligne);
         assertEquals("Progressive KO 6-Max. 40€ Gtd", infosTable.obtNomTable());
+    }
+
+    @Test
+    void extraitInfosTableMTTHyper() throws Exception {
+        String ligne = "Table The Major Phased Sat. 25 x 50€ Gtd (Phase 1, Hyper) (399524782) Table #1 (Real Money)";
+        InfosTable infosTable = extracteurPmu.extraireInfosTable(ligne);
+        assertEquals("The Major Phased Sat. 25 x 50€ Gtd", infosTable.obtNomTable());
     }
 
     @Test
@@ -160,6 +178,14 @@ public class ExtracteurPmuTest {
         BigDecimal montantAttenduBB = new BigDecimal(800);
 
         assertEquals(0, montantAttenduBB.compareTo(montantBB));
+    }
+
+    @Test
+    void extraitNomDealer() throws Exception {
+        String ligne = "Seat 1 is the button";
+        int siegeDealer = extracteurPmu.extraireSiegeDealer(ligne);
+
+        assertEquals(1, siegeDealer);
     }
 
     @Test

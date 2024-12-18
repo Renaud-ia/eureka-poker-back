@@ -25,6 +25,15 @@ import java.util.regex.Pattern;
 
 public class ExtracteurPmu extends ExtracteurLigne {
 
+    private static final Pattern patternNumeroPartie =
+            Pattern.compile("#Game\\sNo\\s:\\s" +
+                    "(?<numeroPartie>\\d+)");
+
+    public long extraireNumeroPartie(String ligne) throws ErreurRegex {
+        Matcher matcher = matcherRegex(patternNumeroPartie, ligne);
+        return Long.parseLong(matcher.group("numeroPartie"));
+    }
+
     private static final Pattern patternIdMain =
             Pattern.compile("\\*\\*\\*\\*\\*\\sHand\\sHistory\\sfor\\sGame\\s(?<idMain>\\d+)\\s");
 
@@ -44,7 +53,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
             Pattern.compile("(?<blindesEuros>[\\d.\\u20AC/]+\\sEUR\\s)?" +
                     "NL\\sTexas\\sHold'em\\s" +
                     "(?<buyIn>[\\d.\\u20AC]+\\sEUR\\sBuy-in\\s+)?" +
-                    "(Trny:\\d+\\s)?" +
+                    "(?<idTournoi>Trny:\\d+\\s)?" +
                     "(Level:\\d+\\s)?" +
                     "(\\sBlinds-Antes\\([.\\d\\sK\\-/]+\\)\\s)?" +
                     "\\-\\s(?<date>.+)"
@@ -52,6 +61,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
     public InfosMainPmu extraireInfosMain(String ligne) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternInfosMain, ligne);
+        FormatPoker.TypeTable typeTable = FormatPoker.TypeTable.INCONNU;
 
         double buyIn = 0;
 
@@ -63,6 +73,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
             String secondValue = parts[1];
 
             buyIn = Float.parseFloat(secondValue) * 100;
+            typeTable = FormatPoker.TypeTable.CASH_GAME;
         }
 
         else {
@@ -73,12 +84,18 @@ public class ExtracteurPmu extends ExtracteurLigne {
                     .replace("Buy-in", "");
 
             buyIn = Float.parseFloat(buyInString);
+
+            if (matcher.group("idTournoi") != null) {
+                typeTable = FormatPoker.TypeTable.MTT;
+            }
+            else typeTable = FormatPoker.TypeTable.SPIN;
         }
 
         LocalDateTime dateExtraite = extraireDate(matcher.group("date"));
 
         return new InfosMainPmu(
             FormatPoker.Variante.HOLDEM_NO_LIMIT,
+                typeTable,
                 buyIn,
                 dateExtraite
         );
@@ -94,7 +111,9 @@ public class ExtracteurPmu extends ExtracteurLigne {
             Pattern.compile("Table\\s" +
                     "([\\u20AC.\\d]+\\s)?" +
                     "(?<nomTable>[.\\u20AC\\-\\s\\w]+)" +
-                    "\\s\\([\\w\\s]+\\)");
+                    "(\\([\\w\\s,]+\\))?" +
+                    "\\s\\([\\w\\s]+\\)"
+            );
 
     @Override
     public InfosTable extraireInfosTable(String ligne) throws ErreurRegex {
@@ -307,7 +326,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
     private static final Pattern patternResultat =
             Pattern.compile("(?<nomJoueur>[\\w\\s]+)\\swins\\s" +
-                            "(\\u20AC)?(?<montant>[\\d.]+)\\s" +
+                            "(\\u20AC)?(?<montant>[\\d.,]+)\\s" +
                             "(chips|EUR)");
 
 
@@ -315,12 +334,22 @@ public class ExtracteurPmu extends ExtracteurLigne {
     public ResultatJoueur extraireResultat(String ligne) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternResultat, ligne);
 
-        float montant = Float.parseFloat(matcher.group("montant"));
+        float montant = Float.parseFloat(matcher.group("montant").replace(",", "."));
 
         return new ResultatJoueur(
                 matcher.group("nomJoueur"),
                 montant
         );
+    }
+
+    private static final Pattern patternSiegeDealer =
+            Pattern.compile("Seat\\s(?<siege>\\d+)" +
+                    "\\sis");
+
+    public int extraireSiegeDealer(String ligne) throws ErreurRegex {
+        Matcher matcher = matcherRegex(patternSiegeDealer, ligne);
+
+        return Integer.parseInt(matcher.group("siege"));
     }
 
 
@@ -350,5 +379,6 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
         return cartesExtraites;
     }
+
 
 }

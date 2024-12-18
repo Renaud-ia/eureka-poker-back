@@ -20,7 +20,7 @@ public class InterpreteurPmu implements InterpreteurLigne{
         ligne = ligne.replaceAll("\n", "");
 
         if (ligne.startsWith("#Game")) {
-            return EndroitFichier.NON_CHERCHE;
+            return EndroitFichier.NUMERO_PARTIE;
         }
 
         if (ligne.startsWith("***** Hand History for Game")) {
@@ -35,7 +35,7 @@ public class InterpreteurPmu implements InterpreteurLigne{
             return EndroitFichier.INFOS_TABLE;
         }
 
-        if (ligne.endsWith("button")) {
+        if (ligne.replaceAll("\r", "").endsWith("button")) {
             return EndroitFichier.POSITION_DEALER;
         }
 
@@ -89,6 +89,10 @@ public class InterpreteurPmu implements InterpreteurLigne{
         }
 
         return EndroitFichier.NON_CHERCHE;
+    }
+
+    public boolean estNumeroPartie() {
+        return this.endroitActuel == EndroitFichier.NUMERO_PARTIE;
     }
 
     @Override
@@ -157,6 +161,7 @@ public class InterpreteurPmu implements InterpreteurLigne{
     }
 
     private enum EndroitFichier {
+        NUMERO_PARTIE,
         NOUVELLE_MAIN,
         FORMAT,
         INFOS_TABLE,

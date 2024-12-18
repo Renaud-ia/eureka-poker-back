@@ -66,15 +66,19 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     }
 
     @Override
-    public void ajouterMain(MainPoker mainPoker, BigDecimal montantBB) throws ErreurLectureFichier {
+    public void ajouterMain(MainPoker mainPoker) throws ErreurLectureFichier {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 mainPoker.obtIdParse(),
-                montantBB,
                 indexMain++
         );
         partiePersistanceDto.ajouterMain(mainPersistenceDto);
         derniereMain = mainPersistenceDto;
         this.numeroAction = 0;
+    }
+
+    @Override
+    public void ajouterMontantBB(BigDecimal montantBB) {
+        this.derniereMain.ajouterMontantBB(montantBB);
     }
 
     @Override
