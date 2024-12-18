@@ -2,6 +2,7 @@ package fr.eurekapoker.parties.application.imports;
 
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
@@ -49,7 +50,7 @@ class ConstructeurPersistenceDtoTest {
     }
 
     @Test
-    void testEnchainementAjoutPartieEtMain() throws ErreurLectureFichier, ErreurLectureFichier {
+    void testEnchainementAjoutPartieEtMain() throws ErreurLectureFichier, ErreurLectureFichier, JoueurNonExistant {
         // 1. Simuler la création d'une partie
         when(infosPartiePokerMock.getIdParse()).thenReturn(new Random().nextLong());
         when(infosPartiePokerMock.getNomRoom()).thenReturn("Fake room");

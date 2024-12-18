@@ -3,6 +3,7 @@ package fr.eurekapoker.parties.domaine.parsing.xml.parser;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.dto.betclic.InfosJoueurBetclic;
@@ -76,7 +77,7 @@ public class ParserBetclic extends ParserXml {
         }
     }
 
-    private void extraireTours(Element mainElement) throws ErreurLectureFichier {
+    private void extraireTours(Element mainElement) throws ErreurLectureFichier, JoueurNonExistant {
         NodeList tourElements = extracteurBetclic.extraireTours(mainElement);
 
         for (int i = 0; i < tourElements.getLength(); i++) {
@@ -131,7 +132,7 @@ public class ParserBetclic extends ParserXml {
         }
     }
 
-    private void extraireActions(Element tourElement) throws ErreurLectureFichier {
+    private void extraireActions(Element tourElement) throws ErreurLectureFichier, JoueurNonExistant {
         NodeList actionsElements = extracteurBetclic.extraireListeActions(tourElement);
 
         for (int i = 0; i < actionsElements.getLength(); i++) {

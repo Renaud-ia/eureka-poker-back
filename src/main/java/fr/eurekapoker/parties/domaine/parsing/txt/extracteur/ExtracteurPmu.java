@@ -4,7 +4,6 @@ import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.dto.pmu.InfosMainPmu;
-import fr.eurekapoker.parties.domaine.parsing.dto.winamax.ResultatJoueurWinamax;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
@@ -24,6 +23,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class ExtracteurPmu extends ExtracteurLigne {
+
+    private static final String patternNomJoueur = "[\\w\\s-]+";
 
     private static final Pattern patternNumeroPartie =
             Pattern.compile("#Game\\sNo\\s:\\s" +
@@ -145,7 +146,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
     private static final Pattern patternInfosJoueurs =
             Pattern.compile("Seat\\s(?<siege>\\d+):\\s" +
-                    "(?<nomJoueur>[\\w\\s]+)\\s" +
+                    "(?<nomJoueur>" + patternNomJoueur + ")\\s" +
                     "\\((?<stack>[\\s,.\\w\\u20AC]+)\\)"
             );
 
@@ -177,7 +178,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
     private static final Pattern patternBlindeOuAnte =
             Pattern.compile(
-                    "(?<nomJoueur>[\\w\\s]+)\\s" +
+                    "(?<nomJoueur>" + patternNomJoueur + ")\\s" +
                             "posts\\s" +
                             "(?<typeBlinde>\\w+)\\s" +
                             "(blind\\s)?" +
@@ -211,7 +212,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
     private static final Pattern patternInfosHero =
             Pattern.compile(
                     "Dealt\\sto\\s" +
-                            "(?<nomHero>[\\w\\s]+)\\s" +
+                            "(?<nomHero>" + patternNomJoueur + ")\\s" +
                             "\\[(?<cartesHero>[\\w\\s]+)]");
 
     @Override
@@ -227,7 +228,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
     }
 
     private static final Pattern patternAction = Pattern.compile(
-            "(?<nomJoueur>[\\w\\s]+)\\s"+
+            "(?<nomJoueur>" + patternNomJoueur + ")\\s"+
                     "(?<action>bets|raises|calls|folds|checks|is all-In)" +
                     "(\\s+\\[(?<montant>[,.\\w\\s\\u20AC]+)])?"
     );
@@ -308,7 +309,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
     private static final Pattern patternCartesJoueur =
             Pattern.compile(
-                    "(?<nomJoueur>[\\w\\s]+)\\s" +
+                    "(?<nomJoueur>" + patternNomJoueur + ")\\s" +
                             "shows\\s" +
                             "\\[(?<cartesTour>[\\w\\s,]+)]"
             );
@@ -325,7 +326,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
     }
 
     private static final Pattern patternResultat =
-            Pattern.compile("(?<nomJoueur>[\\w\\s]+)\\swins\\s" +
+            Pattern.compile("(?<nomJoueur>" + patternNomJoueur + ")\\swins\\s" +
                             "(\\u20AC)?(?<montant>[\\d.,]+)\\s" +
                             "(chips|EUR)");
 

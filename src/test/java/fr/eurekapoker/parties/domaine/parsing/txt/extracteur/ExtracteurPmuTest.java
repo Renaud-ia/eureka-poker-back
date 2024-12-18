@@ -9,7 +9,6 @@ import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
@@ -134,6 +133,21 @@ public class ExtracteurPmuTest {
 
         assertFalse(infosJoueur.aBounty());
     }
+
+    @Test
+    void extraitInfosJoueurCGAvecTiret() throws Exception {
+        String ligne = "Seat 6: H-Savoie74 ( €2.01 EUR )";
+        InfosJoueur infosJoueur = extracteurPmu.extraireStackJoueur(ligne);
+
+        assertEquals("H-Savoie74", infosJoueur.obtJoueur());
+        assertEquals(6, infosJoueur.obtSiege());
+
+        BigDecimal stackAttendu = new BigDecimal("2.01");
+        assertEquals(0, stackAttendu.compareTo(infosJoueur.obtStack()));
+
+        assertFalse(infosJoueur.aBounty());
+    }
+
 
     @Test
     void extraitInfosJoueurMtt() throws Exception {

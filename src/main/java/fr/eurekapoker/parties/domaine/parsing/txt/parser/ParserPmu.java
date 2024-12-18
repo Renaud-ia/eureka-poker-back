@@ -3,6 +3,7 @@ package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.dto.CartesJoueur;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosTable;
@@ -11,17 +12,19 @@ import fr.eurekapoker.parties.domaine.parsing.dto.pmu.InfosMainPmu;
 import fr.eurekapoker.parties.domaine.parsing.txt.ParserTxt;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurPmu;
-import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurPmu;
+import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.RoomPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartie;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class ParserPmu extends ParserTxt {
+    private boolean erreurLectureMain;
     private final InterpreteurPmu interpreteurPmu;
     private final ExtracteurPmu extracteurPmu;
     public ParserPmu(ObservateurParser observateurParser,
@@ -32,6 +35,7 @@ public class ParserPmu extends ParserTxt {
         super(observateurParser, lignesFichier, interpreteurPmu, extracteurPmu, builderInfosPartie);
         this.interpreteurPmu = (InterpreteurPmu) interpreteurPmu;
         this.extracteurPmu = (ExtracteurPmu) extracteurPmu;
+        this.erreurLectureMain = false;
     }
 
     @Override
@@ -41,8 +45,10 @@ public class ParserPmu extends ParserTxt {
 
         if (interpreteurLigne.ligneSansInfo()) return;
 
-        if (interpreteurPmu.estNumeroPartie()) extraireNumeroPartie(indexLigne);
-        else if (interpreteurLigne.estNouvelleMain()) creerNouvelleMain(indexLigne);
+        if (interpreteurLigne.estNouvelleMain()) creerNouvelleMain(indexLigne);
+        // on veut sauter la main si elle est erronée
+        else if (erreurLectureMain) return;
+        else if (interpreteurPmu.estNumeroPartie()) extraireNumeroPartie(indexLigne);
         else if (interpreteurLigne.estFormat()) extraireInfosPartie(indexLigne);
         else if (interpreteurPmu.estInfosTable()) extraireInfosTable(indexLigne);
         else if (interpreteurPmu.estNombreJoueurs()) extraireNombreJoueurs(indexLigne);
@@ -66,11 +72,12 @@ public class ParserPmu extends ParserTxt {
     }
 
     private void creerNouvelleMain(int indexLigne) throws ErreurImport {
-        if (indexLigne > 0) observateurParser.mainTerminee();
+        if (indexLigne > 0 && !erreurLectureMain) observateurParser.mainTerminee();
 
         long idMain = extracteurPmu.extraireIdMain(lignesFichier[indexLigne]);
         MainPoker mainPoker = new MainPoker(idMain);
         observateurParser.ajouterMain(mainPoker);
+        this.erreurLectureMain = false;
     }
 
     private void extraireInfosPartie(int indexLigne) throws ErreurRegex {
@@ -82,6 +89,10 @@ public class ParserPmu extends ParserTxt {
             builderInfosPartie.fixFormatPoker(formatPoker);
             builderInfosPartie.fixBuyIn(infosMainPmu.obtBuyIn());
             builderInfosPartie.fixDate(infosMainPmu.obtDate());
+        }
+
+        if (formatPoker.obtTypeTable() == FormatPoker.TypeTable.CASH_GAME) {
+            this.observateurParser.ajouterMontantBB(infosMainPmu.obtBuyIn().divide(new BigDecimal(100), 2, RoundingMode.HALF_UP));
         }
     }
 
@@ -138,5 +149,20 @@ public class ParserPmu extends ParserTxt {
     @Override
     public RoomPoker obtRoomPoker() {
         return RoomPoker.PMU;
+    }
+
+    @Override
+    protected void ajouterAction(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
+        try {
+            ActionPokerJoueur actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
+            observateurParser.ajouterAction(actionPoker);
+        }
+
+        // BUG DE PMU => obligé de supprimer la main
+        catch (JoueurNonExistant joueurNonExistant) {
+            this.observateurParser.supprimerDerniereMain();
+            this.erreurLectureMain = true;
+        }
+
     }
 }

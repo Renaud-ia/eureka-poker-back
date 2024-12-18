@@ -3,6 +3,7 @@ package fr.eurekapoker.parties.domaine.parsing.txt;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.ParserModele;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
@@ -73,7 +74,7 @@ public abstract class ParserTxt extends ParserModele {
         observateurParser.ajouterTour(nouveauTour);
     }
 
-    protected void ajouterAction(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
+    protected void ajouterAction(int indexLigne) throws ErreurRegex, ErreurLectureFichier, JoueurNonExistant {
         ActionPokerJoueur actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
         observateurParser.ajouterAction(actionPoker);
     }

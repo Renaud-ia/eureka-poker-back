@@ -27,11 +27,11 @@ public class InterpreteurPmu implements InterpreteurLigne{
             return EndroitFichier.NOUVELLE_MAIN;
         }
 
-        if (ligne.startsWith("NL Texas Hold'em")) {
+        if (ligne.startsWith("NL Texas Hold'em") || ligne.startsWith("€")) {
             return EndroitFichier.FORMAT;
         }
 
-        if (ligne.startsWith("Table")) {
+        if (ligne.startsWith("Table") && !ligne.contains("Closed")) {
             return EndroitFichier.INFOS_TABLE;
         }
 

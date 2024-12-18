@@ -174,4 +174,8 @@ public class PartiePersistanceDto {
     public boolean obtStackEnEuros() {
         return stackEnEuros;
     }
+
+    public void supprimerDerniereMain() {
+        this.mainPersistence.removeLast();
+    }
 }

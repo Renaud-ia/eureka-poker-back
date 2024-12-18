@@ -4,6 +4,7 @@ import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
@@ -77,6 +78,12 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     }
 
     @Override
+    public void supprimerDerniereMain() {
+        partiePersistanceDto.supprimerDerniereMain();
+        this.derniereMain = null;
+    }
+
+    @Override
     public void ajouterMontantBB(BigDecimal montantBB) {
         this.derniereMain.ajouterMontantBB(montantBB);
     }
@@ -138,7 +145,7 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     }
 
     @Override
-    public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier {
+    public void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier, JoueurNonExistant {
         if (this.dernierTour == null) throw new ErreurLectureFichier("Aucune main existante");
 
         BigDecimal montantTotalAction = actionPoker.obtMontantAction();
