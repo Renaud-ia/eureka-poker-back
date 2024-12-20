@@ -368,7 +368,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesPreflop() throws ErreurRegex {
         String ligne = "*** PRE-FLOP *** ";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         assertTrue(cartesExtraites.isEmpty());
 
@@ -378,7 +378,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesFlop() throws ErreurRegex {
         String ligne = "*** FLOP *** [Js 3h Ad]";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('J', 's'));
@@ -392,7 +392,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesTurn() throws ErreurRegex {
         String ligne = "*** TURN *** [8h 3d 7c][7d]";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('8', 'h'));
@@ -407,7 +407,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesRiver() throws ErreurRegex {
         String ligne = "*** RIVER *** [9h Tc Ad 9s][6s]";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('9', 'h'));

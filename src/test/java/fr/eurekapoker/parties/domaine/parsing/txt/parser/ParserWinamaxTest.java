@@ -175,7 +175,7 @@ public class ParserWinamaxTest extends ParserTxtModele {
         when(interpreteurWinamax.estNouveauTour()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        verify(extracteurWinamax).extraireNouveauTour(lignesFichier[0]);
+        verify(extracteurWinamax).extraireNouveauTour(lignesFichier[0], new ArrayList<>());
         verify(observateurParser).ajouterTour(any());
     }
 

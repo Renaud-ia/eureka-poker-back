@@ -3,7 +3,6 @@ package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
-import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosMainWinamax;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 
@@ -16,7 +15,7 @@ public abstract class ExtracteurLigne {
 
     public abstract InfosJoueur extraireStackJoueur(String ligne) throws ErreurRegex;
 
-    public abstract NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex;
+    public abstract NouveauTour extraireNouveauTour(String ligne, List<CartePoker> board) throws ErreurRegex;
 
     public abstract ActionPokerJoueur extraireAction(String ligne) throws ErreurRegex;
 

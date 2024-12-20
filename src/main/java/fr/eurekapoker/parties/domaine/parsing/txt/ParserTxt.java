@@ -10,11 +10,10 @@ import fr.eurekapoker.parties.domaine.parsing.dto.*;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurLigne;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurLigne;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
-import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.builders.BuilderInfosPartie;
-import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public abstract class ParserTxt extends ParserModele {
     protected final String[] lignesFichier;
@@ -70,7 +69,7 @@ public abstract class ParserTxt extends ParserModele {
     }
 
     protected void creerNouveauTour(int indexLigne) throws ErreurRegex, ErreurLectureFichier {
-        NouveauTour nouveauTour = extracteurLigne.extraireNouveauTour(lignesFichier[indexLigne]);
+        NouveauTour nouveauTour = extracteurLigne.extraireNouveauTour(lignesFichier[indexLigne], new ArrayList<>());
         observateurParser.ajouterTour(nouveauTour);
     }
 

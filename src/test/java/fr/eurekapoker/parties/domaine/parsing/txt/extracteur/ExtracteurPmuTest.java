@@ -60,7 +60,7 @@ public class ExtracteurPmuTest {
         String ligne = "€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:17:19 CET 2024";
         InfosMainPmu infosMainPmu = extracteurPmu.extraireInfosMain(ligne);
 
-        BigDecimal buyInAttendu = new BigDecimal(2);
+        BigDecimal buyInAttendu = new BigDecimal("0.02");
         assertEquals(0, buyInAttendu.compareTo(infosMainPmu.obtBuyIn()), "Buy in extrait : " + infosMainPmu.obtBuyIn());
         assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainPmu.obtVariante());
         assertEquals(FormatPoker.TypeTable.CASH_GAME, infosMainPmu.obtTypeJeu());
@@ -339,7 +339,7 @@ public class ExtracteurPmuTest {
     @Test
     void extraitCartesPreflop() throws ErreurRegex {
         String ligne = "** Dealing down cards **\n";
-        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne, new ArrayList<>());
         assertEquals(TourPoker.RoundPoker.PREFLOP, nouveauTour.obtRound());
         assertTrue(nouveauTour.obtCartesExtraites().isEmpty());
     }
@@ -347,7 +347,7 @@ public class ExtracteurPmuTest {
     @Test
     void extraitCartesFlop() throws ErreurRegex {
         String ligne = "** Dealing Flop ** [ Kc, 5s, 5d ]\n";
-        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne, new ArrayList<>());
         assertEquals(TourPoker.RoundPoker.FLOP, nouveauTour.obtRound());
 
         List<CartePoker> cartesAttendues = new ArrayList<>();
@@ -361,7 +361,7 @@ public class ExtracteurPmuTest {
     @Test
     void extraitCartesTurn() throws ErreurRegex {
         String ligne = "** Dealing Turn ** [ 4c ]\n";;
-        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne, new ArrayList<>());
         assertEquals(TourPoker.RoundPoker.TURN, nouveauTour.obtRound());
 
         List<CartePoker> cartesAttendues = new ArrayList<>();
@@ -373,7 +373,7 @@ public class ExtracteurPmuTest {
     @Test
     void extraitCartesRiver() throws ErreurRegex {
         String ligne = "** Dealing River ** [ 3s ]\n";;;
-        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurPmu.extraireNouveauTour(ligne, new ArrayList<>());
         assertEquals(TourPoker.RoundPoker.RIVER, nouveauTour.obtRound());
 
         List<CartePoker> cartesAttendues = new ArrayList<>();

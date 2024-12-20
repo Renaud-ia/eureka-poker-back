@@ -18,7 +18,7 @@ public class InterpreteurPmuTest {
     void interpreteBienSpin() {
         String ligne = "#Game No : 24771887244 \n";
         interpreteurPmu.lireLigne(ligne);
-        assertTrue(interpreteurPmu.ligneSansInfo());
+        assertTrue(interpreteurPmu.estNumeroPartie());
 
         ligne = "***** Hand History for Game 24771887244 *****\n";
         interpreteurPmu.lireLigne(ligne);
@@ -154,7 +154,7 @@ public class InterpreteurPmuTest {
 
         ligne = "#Game No : 24771888099";
         interpreteurPmu.lireLigne(ligne);
-        assertTrue(interpreteurPmu.ligneSansInfo());
+        assertTrue(interpreteurPmu.estNumeroPartie());
 
         ligne = "***** Hand History for Game 24771888099 *****";
         interpreteurPmu.lireLigne(ligne);

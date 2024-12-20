@@ -189,7 +189,7 @@ public class ExtracteurWinamax extends ExtracteurLigne {
             "\\*\\*\\*\\s(?<nomTour>.+)\\s\\*\\*\\*");
 
     @Override
-    public NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex {
+    public NouveauTour extraireNouveauTour(String ligne, List<CartePoker> notUsedBoard) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternNomTour, ligne);
         String nomRound = matcher.group("nomTour");
         List<CartePoker> board = extraireCartes(ligne);

@@ -73,7 +73,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
 
             String secondValue = parts[1];
 
-            buyIn = Float.parseFloat(secondValue) * 100;
+            buyIn = Float.parseFloat(secondValue);
             typeTable = FormatPoker.TypeTable.CASH_GAME;
         }
 
@@ -281,7 +281,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
             );
 
     @Override
-    public NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex {
+    public NouveauTour extraireNouveauTour(String ligne, List<CartePoker> board) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternNouveauTour, ligne);
 
         TourPoker.RoundPoker roundPoker = TourPoker.RoundPoker.PREFLOP;
@@ -299,12 +299,11 @@ public class ExtracteurPmu extends ExtracteurLigne {
             roundPoker = TourPoker.RoundPoker.RIVER;
         }
 
-        List<CartePoker> cartesExtraites = new ArrayList<>();
         if (matcher.group("cartesTour") != null) {
-            cartesExtraites = extraireCartesString(matcher.group("cartesTour"));
+            board.addAll(extraireCartesString(matcher.group("cartesTour")));
         }
 
-        return new NouveauTour(roundPoker, cartesExtraites);
+        return new NouveauTour(roundPoker, board);
     }
 
     private static final Pattern patternCartesJoueur =

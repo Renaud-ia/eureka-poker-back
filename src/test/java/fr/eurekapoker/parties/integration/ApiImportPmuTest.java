@@ -23,7 +23,7 @@ public class ApiImportPmuTest extends ApiImportTestModele{
 
         assertEquals("Cash-Game 6-max NL2 (Caen)", jsonConsultation.get("nomPartie"));
         assertEquals(6, jsonConsultation.get("nombreSieges"));
-        assertEquals(58, jsonConsultation.get("nombreMains"));
+        assertEquals(57, jsonConsultation.get("nombreMains"));
         assertEquals(true, jsonConsultation.get("stackEnEuros"));
 
         JSONArray mains = jsonConsultation.getJSONArray("mainsExtraites");
