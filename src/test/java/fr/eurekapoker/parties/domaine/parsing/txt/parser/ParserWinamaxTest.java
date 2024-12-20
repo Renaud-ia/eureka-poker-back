@@ -191,7 +191,7 @@ public class ParserWinamaxTest extends ParserTxtModele {
     @Test
     void peutLireUniquementLesFichiersWinamax() throws Exception {
         assertTrue(peutLireLesFichiers("winamax"));
-        assertFalse(peutLireFichiersAutresQue("winamax"));
+        assertFalse(peutLireFichiersAutresQue("winamax", new ArrayList<>()));
     }
 
     @Override

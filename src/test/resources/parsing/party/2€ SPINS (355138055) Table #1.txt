@@ -1,0 +1,616 @@
+Game #23329545125 starts.
+
+#Game No : 23329545125 
+***** Hand History for Game 23329545125 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:21:18 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 500 )
+Seat 2: mitadeluz ( 500 )
+Seat 1: mitchextrem ( 500 )
+Trny: 355138055 Level: 1 
+Blinds(10/20)
+mitadeluz posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  2d Ts ]
+mitchextrem calls [20]
+mitadeluz calls [10]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone will be using their time bank for this hand.
+jfedelamone checks
+** Dealing Flop ** [ 3d, Qc, Jh ]
+mitadeluz checks
+jfedelamone checks
+mitchextrem checks
+** Dealing Turn ** [ Kc ]
+mitadeluz checks
+jfedelamone checks
+mitchextrem checks
+** Dealing River ** [ 6d ]
+mitadeluz bets [60]
+jfedelamone folds
+mitchextrem folds
+mitadeluz does not show cards.
+mitadeluz wins 120 chips
+Game #23329548497 starts.
+
+#Game No : 23329548497 
+***** Hand History for Game 23329548497 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:22:17 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 480 )
+Seat 2: mitadeluz ( 540 )
+Seat 1: mitchextrem ( 480 )
+Trny: 355138055 Level: 1 
+Blinds(10/20)
+jfedelamone posts small blind [10].
+mitchextrem posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  4c 7c ]
+mitadeluz calls [20]
+jfedelamone calls [10]
+mitchextrem raises [40]
+mitadeluz calls [40]
+jfedelamone calls [40]
+** Dealing Flop ** [ 6d, 9c, Qs ]
+jfedelamone checks
+mitchextrem checks
+mitadeluz checks
+** Dealing Turn ** [ 5c ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone bets [90]
+mitchextrem calls [90]
+mitadeluz calls [90]
+** Dealing River ** [ As ]
+jfedelamone checks
+mitchextrem is all-In  [330]
+mitadeluz folds
+jfedelamone folds
+mitchextrem does not show cards.
+mitchextrem wins 780 chips
+Game #23329551403 starts.
+
+#Game No : 23329551403 
+***** Hand History for Game 23329551403 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:23:12 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 330 )
+Seat 2: mitadeluz ( 390 )
+Seat 1: mitchextrem ( 780 )
+Trny: 355138055 Level: 1 
+Blinds(10/20)
+mitchextrem posts small blind [10].
+mitadeluz posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  Kh 5c ]
+jfedelamone folds
+mitchextrem calls [10]
+mitadeluz checks
+** Dealing Flop ** [ 5h, 7d, 3d ]
+mitchextrem checks
+mitadeluz is all-In  [370]
+mitchextrem folds
+mitadeluz does not show cards.
+mitadeluz wins 410 chips
+Game #23329552174 starts.
+
+#Game No : 23329552174 
+***** Hand History for Game 23329552174 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:23:30 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 330 )
+Seat 2: mitadeluz ( 410 )
+Seat 1: mitchextrem ( 760 )
+Trny: 355138055 Level: 1 
+Blinds(10/20)
+mitadeluz posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  8d Qh ]
+mitchextrem calls [20]
+mitadeluz calls [10]
+jfedelamone checks
+** Dealing Flop ** [ Js, 5h, 9h ]
+mitadeluz checks
+jfedelamone checks
+mitchextrem checks
+** Dealing Turn ** [ Ac ]
+mitadeluz bets [20]
+jfedelamone folds
+mitchextrem calls [20]
+** Dealing River ** [ 7s ]
+mitadeluz bets [20]
+mitchextrem folds
+mitadeluz does not show cards.
+mitadeluz wins 120 chips
+Game #23329553464 starts.
+
+#Game No : 23329553464 
+***** Hand History for Game 23329553464 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:24:00 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 310 )
+Seat 2: mitadeluz ( 470 )
+Seat 1: mitchextrem ( 720 )
+Trny: 355138055 Level: 1 
+Blinds(10/20)
+jfedelamone posts small blind [10].
+mitchextrem posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  5d 3s ]
+mitadeluz calls [20]
+jfedelamone folds
+mitchextrem checks
+** Dealing Flop ** [ 6h, Qs, 2s ]
+mitchextrem checks
+mitadeluz checks
+** Dealing Turn ** [ 9h ]
+mitchextrem checks
+mitadeluz checks
+** Dealing River ** [ Tc ]
+mitchextrem checks
+mitadeluz bets [20]
+mitchextrem folds
+mitadeluz does not show cards.
+mitadeluz wins 70 chips
+Game #23329555210 starts.
+
+#Game No : 23329555210 
+***** Hand History for Game 23329555210 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:24:41 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 300 )
+Seat 2: mitadeluz ( 500 )
+Seat 1: mitchextrem ( 700 )
+Trny: 355138055 Level: 2 
+Blinds(15/30)
+mitchextrem posts small blind [15].
+mitadeluz posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  8d 5h ]
+jfedelamone folds
+mitchextrem calls [15]
+mitadeluz checks
+** Dealing Flop ** [ Kd, Jc, 8c ]
+mitchextrem checks
+mitadeluz checks
+** Dealing Turn ** [ 2d ]
+mitchextrem checks
+mitadeluz checks
+** Dealing River ** [ Qh ]
+mitchextrem checks
+mitadeluz checks
+mitchextrem shows [ Ah, 5c ]high card.
+mitadeluz doesn't show [ 3c, 4h ]high card.
+mitchextrem wins 60 chips from the main pot with High card.
+Game #23329556654 starts.
+
+#Game No : 23329556654 
+***** Hand History for Game 23329556654 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:25:16 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 300 )
+Seat 2: mitadeluz ( 470 )
+Seat 1: mitchextrem ( 730 )
+Trny: 355138055 Level: 2 
+Blinds(15/30)
+mitadeluz posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Kc Qh ]
+mitchextrem calls [30]
+mitadeluz folds
+jfedelamone is all-In  [270]
+mitchextrem calls [270]
+** Dealing Flop ** [ 4d, 6c, 4h ]
+** Dealing Turn ** [ Tc ]
+** Dealing River ** [ 7d ]
+mitchextrem shows [ Kh, 8h ]one pair.
+jfedelamone shows [ Kc, Qh ]one pair.
+jfedelamone wins 615 chips from the main pot with one pair.
+Game #23329558117 starts.
+
+#Game No : 23329558117 
+***** Hand History for Game 23329558117 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:25:39 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 3: jfedelamone ( 615 )
+Seat 2: mitadeluz ( 455 )
+Seat 1: mitchextrem ( 430 )
+Trny: 355138055 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+mitchextrem posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Jh Jc ]
+mitadeluz calls [30]
+jfedelamone is all-In  [600]
+mitchextrem is all-In  [400]
+mitadeluz folds
+** Dealing Flop ** [ As, 5d, Th ]
+** Dealing Turn ** [ 5c ]
+** Dealing River ** [ 3d ]
+jfedelamone shows [ Jh, Jc ]two pairs.
+mitchextrem shows [ 8c, Kd ]one pair.
+jfedelamone wins 890 chips from the main pot with two pairs.
+Player mitchextrem finished in 3.
+Game #23329559204 starts.
+
+#Game No : 23329559204 
+***** Hand History for Game 23329559204 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:26:03 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 1,075 )
+Seat 2: mitadeluz ( 425 )
+Trny: 355138055 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+mitadeluz posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  6s Jd ]
+jfedelamone calls [15]
+mitadeluz checks
+** Dealing Flop ** [ Kd, 9h, Ad ]
+mitadeluz is all-In  [395]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 455 chips
+Game #23329559985 starts.
+
+#Game No : 23329559985 
+***** Hand History for Game 23329559985 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:26:22 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 1,045 )
+Seat 2: mitadeluz ( 455 )
+Trny: 355138055 Level: 2 
+Blinds(15/30)
+mitadeluz posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  7c 5h ]
+mitadeluz calls [15]
+jfedelamone raises [60]
+mitadeluz calls [60]
+** Dealing Flop ** [ 9c, 4h, Jd ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone bets [75]
+mitadeluz calls [75]
+** Dealing Turn ** [ 2d ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone bets [165]
+mitadeluz is all-In  [290]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 785 chips
+Game #23329562631 starts.
+
+#Game No : 23329562631 
+***** Hand History for Game 23329562631 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:27:12 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 715 )
+Seat 2: mitadeluz ( 785 )
+Trny: 355138055 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+mitadeluz posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  4c Qh ]
+jfedelamone calls [15]
+mitadeluz checks
+** Dealing Flop ** [ 8d, Ad, 5d ]
+mitadeluz checks
+jfedelamone checks
+** Dealing Turn ** [ 2h ]
+mitadeluz checks
+jfedelamone checks
+** Dealing River ** [ 2c ]
+mitadeluz bets [30]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 90 chips
+Game #23329563964 starts.
+
+#Game No : 23329563964 
+***** Hand History for Game 23329563964 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:27:42 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 685 )
+Seat 2: mitadeluz ( 815 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+mitadeluz posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Qc As ]
+mitadeluz folds
+jfedelamone does not show cards.
+jfedelamone wins 60 chips
+Game #23329564237 starts.
+
+#Game No : 23329564237 
+***** Hand History for Game 23329564237 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:27:48 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 705 )
+Seat 2: mitadeluz ( 795 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+mitadeluz posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Qs 8d ]
+jfedelamone calls [20]
+mitadeluz checks
+** Dealing Flop ** [ Qd, Qh, Kd ]
+mitadeluz checks
+jfedelamone bets [40]
+mitadeluz folds
+jfedelamone does not show cards.
+jfedelamone wins 120 chips
+Game #23329564896 starts.
+
+#Game No : 23329564896 
+***** Hand History for Game 23329564896 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:28:04 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 745 )
+Seat 2: mitadeluz ( 755 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+mitadeluz posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  4h Th ]
+mitadeluz is all-In  [735]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 795 chips
+Game #23329565312 starts.
+
+#Game No : 23329565312 
+***** Hand History for Game 23329565312 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:28:13 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 705 )
+Seat 2: mitadeluz ( 795 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+mitadeluz posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  5d 6d ]
+jfedelamone calls [20]
+mitadeluz checks
+** Dealing Flop ** [ Jh, 8s, 9h ]
+mitadeluz checks
+jfedelamone checks
+** Dealing Turn ** [ 7d ]
+mitadeluz bets [40]
+jfedelamone calls [40]
+** Dealing River ** [ 9s ]
+mitadeluz bets [40]
+jfedelamone calls [40]
+mitadeluz shows [ 4s, 7c ]two pairs.
+jfedelamone shows [ 5d, 6d ]a straight.
+jfedelamone wins 240 chips from the main pot with a straight.
+Game #23329566685 starts.
+
+#Game No : 23329566685 
+***** Hand History for Game 23329566685 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:28:35 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 825 )
+Seat 2: mitadeluz ( 675 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+mitadeluz posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  4d Jh ]
+mitadeluz is all-In  [655]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 715 chips
+Game #23329567136 starts.
+
+#Game No : 23329567136 
+***** Hand History for Game 23329567136 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:28:45 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 785 )
+Seat 2: mitadeluz ( 715 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+mitadeluz posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  6c 2h ]
+jfedelamone calls [20]
+mitadeluz is all-In  [675]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 755 chips
+Game #23329567605 starts.
+
+#Game No : 23329567605 
+***** Hand History for Game 23329567605 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:28:56 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 745 )
+Seat 2: mitadeluz ( 755 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+mitadeluz posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  3h 9d ]
+mitadeluz calls [20]
+jfedelamone checks
+** Dealing Flop ** [ As, 2h, Qh ]
+jfedelamone checks
+mitadeluz bets [40]
+jfedelamone raises [100]
+mitadeluz calls [60]
+** Dealing Turn ** [ Kc ]
+jfedelamone checks
+mitadeluz checks
+** Dealing River ** [ Jc ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone bets [180]
+mitadeluz folds
+jfedelamone does not show cards.
+jfedelamone wins 460 chips
+Game #23329569366 starts.
+
+#Game No : 23329569366 
+***** Hand History for Game 23329569366 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:29:38 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 885 )
+Seat 2: mitadeluz ( 615 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+mitadeluz posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Tc 7h ]
+jfedelamone calls [20]
+mitadeluz is all-In  [575]
+jfedelamone folds
+mitadeluz does not show cards.
+mitadeluz wins 655 chips
+Game #23329569820 starts.
+
+#Game No : 23329569820 
+***** Hand History for Game 23329569820 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:29:48 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 845 )
+Seat 2: mitadeluz ( 655 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+mitadeluz posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  7s 4h ]
+mitadeluz folds
+jfedelamone does not show cards.
+jfedelamone wins 60 chips
+Game #23329570088 starts.
+
+#Game No : 23329570088 
+***** Hand History for Game 23329570088 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:29:55 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 865 )
+Seat 2: mitadeluz ( 635 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+mitadeluz posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Qs Ad ]
+jfedelamone calls [20]
+mitadeluz checks
+** Dealing Flop ** [ Qh, Kc, 7s ]
+mitadeluz checks
+jfedelamone checks
+** Dealing Turn ** [ 3s ]
+mitadeluz checks
+jfedelamone checks
+** Dealing River ** [ 9c ]
+mitadeluz bets [40]
+jfedelamone raises [80]
+mitadeluz folds
+jfedelamone does not show cards.
+jfedelamone wins 200 chips
+Game #23329571100 starts.
+
+#Game No : 23329571100 
+***** Hand History for Game 23329571100 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:30:17 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 945 )
+Seat 2: mitadeluz ( 555 )
+Trny: 355138055 Level: 3 
+Blinds(20/40)
+mitadeluz posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  3c Ad ]
+mitadeluz folds
+jfedelamone does not show cards.
+jfedelamone wins 60 chips
+Game #23329571336 starts.
+
+#Game No : 23329571336 
+***** Hand History for Game 23329571336 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:30:23 CET 2023
+Table 2€ SPINS (355138055) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: jfedelamone ( 965 )
+Seat 2: mitadeluz ( 535 )
+Trny: 355138055 Level: 4 
+Blinds(30/60)
+jfedelamone posts small blind [30].
+mitadeluz posts big blind [60].
+** Dealing down cards **
+Dealt to jfedelamone [  2d Ah ]
+jfedelamone is all-In  [935]
+mitadeluz is all-In  [475]
+** Dealing Flop ** [ Th, 7d, Kc ]
+** Dealing Turn ** [ Qh ]
+** Dealing River ** [ 5s ]
+jfedelamone shows [ 2d, Ah ]high card.
+mitadeluz shows [ 8c, Js ]high card.
+jfedelamone wins 1,070 chips from the main pot with High card.
+Congratulations to player jfedelamone for winning tournament 2€ SPINS
+Player mitadeluz finished in 2.
+Player jfedelamone finished in 1 place and received €10 EUR 

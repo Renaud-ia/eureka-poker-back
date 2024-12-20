@@ -23,15 +23,26 @@ public abstract class ParserTxtModele {
 
     protected abstract ParserTxt fabriqueParserTxt(ObservateurParser observateurParser, String[] lignesFichier);
 
-    protected boolean peutLireFichiersAutresQue(String nomRepertoire) throws Exception {
+    protected boolean peutLireFichiersAutresQue(List<String> listeNomsRepertoire) throws Exception {
+        for(String nomRepertoire: listeNomsRepertoire) {
+            if (peutLireFichiersAutresQue(nomRepertoire, listeNomsRepertoire)) return true;
+        }
+
+        return false;
+    }
+
+    protected boolean peutLireFichiersAutresQue(String nomRepertoire, List<String> repertoiresExclus) throws Exception {
         List<String> repertoiresAutreRooms = listerRepertoiresAutreQue(nomRepertoire);
 
         for (String repertoireRoom: repertoiresAutreRooms) {
+            if (repertoiresExclus.contains(repertoireRoom)) continue;
             if (peutLireLesFichiers(repertoireRoom)) return true;
         }
 
         return false;
     }
+
+
 
     private List<String> listerRepertoiresAutreQue(String repertoireExclu) throws Exception {
         String baseDir = "/parsing/";
