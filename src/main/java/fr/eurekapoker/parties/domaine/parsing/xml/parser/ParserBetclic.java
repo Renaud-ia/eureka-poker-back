@@ -3,8 +3,12 @@ package fr.eurekapoker.parties.domaine.parsing.xml.parser;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.betclic.InfosJoueurBetclic;
+import fr.eurekapoker.parties.domaine.parsing.dto.betclic.InfosTourBetclic;
+import fr.eurekapoker.parties.domaine.parsing.dto.betclic.NomIdPartieBetclic;
 import fr.eurekapoker.parties.domaine.parsing.xml.ParserXml;
 import fr.eurekapoker.parties.domaine.parsing.xml.extracteur.ExtracteurBetclic;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
@@ -47,7 +51,8 @@ public class ParserBetclic extends ParserXml {
             long idMain = extracteurBetclic.extraireIdMain(mainElement);
             MainPoker mainPoker = new MainPoker(idMain);
             BigDecimal montantBB = extracteurBetclic.extraireMontantBB(this.document, mainElement);
-            this.observateurParser.ajouterMain(mainPoker, montantBB);
+            this.observateurParser.ajouterMain(mainPoker);
+            this.observateurParser.ajouterMontantBB(montantBB);
             this.extraireJoueurs(mainElement);
             this.extraireTours(mainElement);
 
@@ -72,7 +77,7 @@ public class ParserBetclic extends ParserXml {
         }
     }
 
-    private void extraireTours(Element mainElement) throws ErreurLectureFichier {
+    private void extraireTours(Element mainElement) throws ErreurLectureFichier, JoueurNonExistant {
         NodeList tourElements = extracteurBetclic.extraireTours(mainElement);
 
         for (int i = 0; i < tourElements.getLength(); i++) {
@@ -127,7 +132,7 @@ public class ParserBetclic extends ParserXml {
         }
     }
 
-    private void extraireActions(Element tourElement) throws ErreurLectureFichier {
+    private void extraireActions(Element tourElement) throws ErreurLectureFichier, JoueurNonExistant {
         NodeList actionsElements = extracteurBetclic.extraireListeActions(tourElement);
 
         for (int i = 0; i < actionsElements.getLength(); i++) {

@@ -1,0 +1,1647 @@
+Game #24771853845 starts.
+
+#Game No : 24771853845 
+***** Hand History for Game 24771853845 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:17:19 CET 2024
+Table Caen (Real Money)
+Seat 6 is the button
+Total number of players : 5/6 
+Seat 1: Player1 ( €0.94 EUR )
+Seat 3: Player3 ( €2.07 EUR )
+Seat 5: Player5 ( €2.37 EUR )
+Seat 6: Player6 ( €2.01 EUR )
+Seat 2: rendslargent33 ( €2 EUR )
+Player1 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  9s 3c ]
+CaPique folds
+H-Savoie74 folds
+CHEFCOOCK folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.03 EUR
+Game #24771853994 starts.
+
+#Game No : 24771853994 
+***** Hand History for Game 24771853994 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:17:28 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €0.93 EUR )
+Seat 5: CaPique ( €2.37 EUR )
+Seat 6: H-Savoie74 ( €2.01 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €2.01 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+CaPique posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jc 3s ]
+H-Savoie74 folds
+CHEFCOOCK calls [€0.02 EUR]
+rendslargent33 folds
+CaPique checks
+** Dealing Flop ** [ Qs, 5s, Ac ]
+ShalashaskaFOX has joined the table.
+CaPique bets [€0.02 EUR]
+CHEFCOOCK folds
+CaPique does not show cards.
+CaPique wins €0.07 EUR
+Game #24771854878 starts.
+
+#Game No : 24771854878 
+***** Hand History for Game 24771854878 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:17:50 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 1: CHEFCOOCK ( €0.91 EUR )
+Seat 5: CaPique ( €2.40 EUR )
+Seat 6: H-Savoie74 ( €2.01 EUR )
+Seat 4: ShalashaskaFOX ( €1.76 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €2 EUR )
+CaPique posts small blind [€0.01 EUR].
+H-Savoie74 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Th 3d ]
+CHEFCOOCK calls [€0.02 EUR]
+rendslargent33 folds
+CaPique folds
+H-Savoie74 checks
+** Dealing Flop ** [ Kd, 3h, Ts ]
+H-Savoie74 checks
+CHEFCOOCK checks
+** Dealing Turn ** [ Ah ]
+H-Savoie74 checks
+CHEFCOOCK checks
+** Dealing River ** [ Td ]
+H-Savoie74 checks
+CHEFCOOCK bets [€0.12 EUR]
+H-Savoie74 folds
+CHEFCOOCK does not show cards.
+CHEFCOOCK wins €0.17 EUR
+Game #24771855674 starts.
+
+#Game No : 24771855674 
+***** Hand History for Game 24771855674 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:18:36 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 6/6 
+Seat 1: CHEFCOOCK ( €0.94 EUR )
+Seat 5: CaPique ( €2.39 EUR )
+Seat 6: H-Savoie74 ( €1.99 EUR )
+Seat 4: ShalashaskaFOX ( €1.76 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €2 EUR )
+H-Savoie74 posts small blind [€0.01 EUR].
+CHEFCOOCK posts big blind [€0.02 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  As Ts ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.06 EUR]
+ShalashaskaFOX folds
+CaPique raises [€0.24 EUR]
+H-Savoie74 is all-In  [€1.98 EUR]
+CHEFCOOCK folds
+rendslargent33 folds
+CaPique calls [€1.75 EUR]
+** Dealing Flop ** [ 7d, 6s, Th ]
+** Dealing Turn ** [ 4c ]
+** Dealing River ** [ Jc ]
+CaPique shows [ Kc, Kd ]one pair.
+H-Savoie74 shows [ Ah, Ad ]one pair.
+H-Savoie74 wins €3.81 EUR from the main pot with one pair
+Game #24771856448 starts.
+
+#Game No : 24771856448 
+***** Hand History for Game 24771856448 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:19:22 CET 2024
+Table Caen (Real Money)
+Seat 6 is the button
+Total number of players : 6/6 
+Seat 1: CHEFCOOCK ( €0.92 EUR )
+Seat 5: CaPique ( €0.40 EUR )
+Seat 6: H-Savoie74 ( €3.81 EUR )
+Seat 4: ShalashaskaFOX ( €1.74 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.94 EUR )
+CHEFCOOCK posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jc 3d ]
+ShalashaskaFOX folds
+CaPique raises [€0.06 EUR]
+H-Savoie74 folds
+CHEFCOOCK folds
+rendslargent33 folds
+CaPique does not show cards.
+CaPique wins €0.09 EUR
+Game #24771856885 starts.
+
+#Game No : 24771856885 
+***** Hand History for Game 24771856885 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:19:46 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 6/6 
+Seat 1: CHEFCOOCK ( €0.91 EUR )
+Seat 5: CaPique ( €0.43 EUR )
+Seat 6: H-Savoie74 ( €3.81 EUR )
+Seat 4: ShalashaskaFOX ( €1.74 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.92 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8c Js ]
+CaPique folds
+H-Savoie74 has left the table.
+CHEFCOOCK calls [€0.02 EUR]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.08 EUR]
+ShalashaskaFOX folds
+CHEFCOOCK folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.13 EUR
+Game #24771857324 starts.
+
+#Game No : 24771857324 
+***** Hand History for Game 24771857324 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:20:11 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €0.89 EUR )
+Seat 5: CaPique ( €0.43 EUR )
+Seat 4: ShalashaskaFOX ( €1.72 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.96 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+CaPique posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8d Qs ]
+CHEFCOOCK folds
+rendslargent33 raises [€0.06 EUR]
+ShalashaskaFOX folds
+CaPique folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.09 EUR
+Game #24771857571 starts.
+
+#Game No : 24771857571 
+***** Hand History for Game 24771857571 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:20:24 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €0.89 EUR )
+Seat 5: CaPique ( €0.41 EUR )
+Seat 4: ShalashaskaFOX ( €1.71 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.99 EUR )
+CaPique posts small blind [€0.01 EUR].
+CHEFCOOCK posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jh 3s ]
+rendslargent33 folds
+ShalashaskaFOX raises [€0.04 EUR]
+CaPique calls [€0.03 EUR]
+CHEFCOOCK folds
+** Dealing Flop ** [ 7s, 3d, Qs ]
+CaPique checks
+ShalashaskaFOX bets [€0.06 EUR]
+CaPique folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.16 EUR
+Game #24771858195 starts.
+
+#Game No : 24771858195 
+***** Hand History for Game 24771858195 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:20:59 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €0.87 EUR )
+Seat 5: CaPique ( €0.37 EUR )
+Seat 4: ShalashaskaFOX ( €1.77 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.99 EUR )
+CHEFCOOCK posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Tc Jc ]
+ShalashaskaFOX folds
+CaPique folds
+CHEFCOOCK calls [€0.01 EUR]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.04 EUR]
+CHEFCOOCK calls [€0.04 EUR]
+** Dealing Flop ** [ 8h, 5s, 8d ]
+CHEFCOOCK checks
+rendslargent33 bets [€0.06 EUR]
+CHEFCOOCK calls [€0.06 EUR]
+** Dealing Turn ** [ Td ]
+CHEFCOOCK checks
+rendslargent33 bets [€0.17 EUR]
+CHEFCOOCK calls [€0.17 EUR]
+** Dealing River ** [ 4s ]
+CHEFCOOCK checks
+rendslargent33 bets [€0.27 EUR]
+CHEFCOOCK calls [€0.27 EUR]
+rendslargent33 shows [ Tc, Jc ]two pairs.
+CHEFCOOCK shows [ Qs, Ts ]two pairs.
+CHEFCOOCK wins €1.05 EUR from the main pot with two pairs
+Game #24771859128 starts.
+
+#Game No : 24771859128 
+***** Hand History for Game 24771859128 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:21:53 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €1.36 EUR )
+Seat 5: CaPique ( €0.37 EUR )
+Seat 4: ShalashaskaFOX ( €1.77 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.43 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  9s 8c ]
+CaPique calls [€0.02 EUR]
+CHEFCOOCK calls [€0.02 EUR]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.12 EUR]
+ShalashaskaFOX folds
+InstantCrush77 has joined the table.
+CaPique folds
+CHEFCOOCK will be using their time bank for this hand.
+CHEFCOOCK folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.19 EUR
+Game #24771860019 starts.
+
+#Game No : 24771860019 
+***** Hand History for Game 24771860019 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:22:43 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 1: CHEFCOOCK ( €1.34 EUR )
+Seat 5: CaPique ( €0.35 EUR )
+Seat 6: InstantCrush77 ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €1.75 EUR )
+Seat 3: phiill5688 ( €2.07 EUR )
+Seat 2: rendslargent33 ( €1.49 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+CaPique posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  As 2s ]
+CHEFCOOCK calls [€0.02 EUR]
+rendslargent33 raises [€0.10 EUR]
+ShalashaskaFOX folds
+CaPique folds
+CHEFCOOCK calls [€0.08 EUR]
+** Dealing Flop ** [ 8c, 3c, Ks ]
+CHEFCOOCK checks
+rendslargent33 bets [€0.05 EUR]
+CHEFCOOCK calls [€0.05 EUR]
+** Dealing Turn ** [ Ah ]
+CHEFCOOCK checks
+rendslargent33 bets [€0.15 EUR]
+CHEFCOOCK folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.46 EUR
+phiill5688 has left the table.
+Game #24771861440 starts.
+
+#Game No : 24771861440 
+***** Hand History for Game 24771861440 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:23:37 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €1.19 EUR )
+Seat 5: CaPique ( €0.33 EUR )
+Seat 6: InstantCrush77 ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €1.74 EUR )
+Seat 2: rendslargent33 ( €1.65 EUR )
+CaPique posts small blind [€0.01 EUR].
+CHEFCOOCK posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qd 3c ]
+rendslargent33 folds
+ShalashaskaFOX folds
+CaPique is all-In  [€0.32 EUR]
+CHEFCOOCK folds
+CaPique does not show cards.
+CaPique wins €0.35 EUR
+Game #24771861705 starts.
+
+#Game No : 24771861705 
+***** Hand History for Game 24771861705 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:23:53 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 5/6 
+Seat 1: CHEFCOOCK ( €1.17 EUR )
+Seat 5: CaPique ( €0.35 EUR )
+Seat 6: InstantCrush77 ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €1.74 EUR )
+Seat 2: rendslargent33 ( €1.65 EUR )
+CHEFCOOCK posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kc 5c ]
+ShalashaskaFOX calls [€0.02 EUR]
+CaPique folds
+CHEFCOOCK calls [€0.01 EUR]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.08 EUR]
+ShalashaskaFOX calls [€0.08 EUR]
+CHEFCOOCK folds
+** Dealing Flop ** [ 3d, 9d, 7c ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.14 EUR]
+rendslargent33 calls [€0.14 EUR]
+** Dealing Turn ** [ Th ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.15 EUR]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.40 EUR]
+ShalashaskaFOX is all-In  [€1.35 EUR]
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €2.32 EUR
+CaPique has left the table.
+Game #24771863025 starts.
+
+#Game No : 24771863025 
+***** Hand History for Game 24771863025 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:25:10 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 4/6 
+Seat 1: CHEFCOOCK ( €1.15 EUR )
+Seat 6: InstantCrush77 ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €2.32 EUR )
+Seat 2: rendslargent33 ( €1.01 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kh Jh ]
+CHEFCOOCK folds
+InstantCrush77 has left the table.
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.05 EUR]
+ShalashaskaFOX calls [€0.04 EUR]
+** Dealing Flop ** [ Th, 2s, 8c ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.04 EUR]
+rendslargent33 calls [€0.04 EUR]
+** Dealing Turn ** [ Js ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.06 EUR]
+rendslargent33 raises [€0.22 EUR]
+ShalashaskaFOX folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.46 EUR
+Game #24771864133 starts.
+
+#Game No : 24771864133 
+***** Hand History for Game 24771864133 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:26:16 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 3/6 
+Seat 1: CHEFCOOCK ( €1.15 EUR )
+Seat 4: ShalashaskaFOX ( €2.16 EUR )
+Seat 2: rendslargent33 ( €1.15 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  7c Jd ]
+rendslargent33 raises [€0.05 EUR]
+CHEFCOOCK has left the table.
+ShalashaskaFOX folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.08 EUR
+Game #24771864291 starts.
+
+#Game No : 24771864291 
+***** Hand History for Game 24771864291 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:26:26 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 2/6 
+Seat 4: ShalashaskaFOX ( €2.14 EUR )
+Seat 2: rendslargent33 ( €1.17 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  6s 2h ]
+ShalashaskaFOX folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.03 EUR
+Game #24771864450 starts.
+
+#Game No : 24771864450 
+***** Hand History for Game 24771864450 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:26:35 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 2/6 
+Seat 4: ShalashaskaFOX ( €2.13 EUR )
+Seat 2: rendslargent33 ( €1.18 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8h Qd ]
+rendslargent33 calls [€0.01 EUR]
+ShalashaskaFOX raises [€0.03 EUR]
+rendslargent33 calls [€0.03 EUR]
+** Dealing Flop ** [ Jd, Ac, 6s ]
+ShalashaskaFOX bets [€0.06 EUR]
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.16 EUR
+Game #24771864733 starts.
+
+#Game No : 24771864733 
+***** Hand History for Game 24771864733 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:26:51 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 2/6 
+Seat 4: ShalashaskaFOX ( €2.18 EUR )
+Seat 2: rendslargent33 ( €1.13 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  2s Qh ]
+ShalashaskaFOX calls [€0.01 EUR]
+rendslargent33 checks
+** Dealing Flop ** [ Kh, Td, 6h ]
+rendslargent33 checks
+ShalashaskaFOX checks
+** Dealing Turn ** [ 7s ]
+rendslargent33 checks
+ShalashaskaFOX checks
+** Dealing River ** [ 9c ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.02 EUR]
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.06 EUR
+ben44300 has joined the table.
+Game #24771865274 starts.
+
+#Game No : 24771865274 
+***** Hand History for Game 24771865274 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:27:24 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €2.20 EUR )
+Seat 5: ben44300 ( €1.65 EUR )
+Seat 2: rendslargent33 ( €1.11 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jh 8c ]
+rendslargent33 raises [€0.07 EUR]
+ShalashaskaFOX folds
+ben44300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.10 EUR
+Game #24771865536 starts.
+
+#Game No : 24771865536 
+***** Hand History for Game 24771865536 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:27:39 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €2.19 EUR )
+Seat 5: ben44300 ( €1.63 EUR )
+Seat 2: rendslargent33 ( €1.14 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Th Ad ]
+ShalashaskaFOX raises [€0.04 EUR]
+ben44300 calls [€0.03 EUR]
+rendslargent33 raises [€0.14 EUR]
+ShalashaskaFOX is all-In  [€2.15 EUR]
+ben44300 folds
+rendslargent33 is all-In  [€0.98 EUR]
+** Dealing Flop ** [ Js, 2c, Kd ]
+** Dealing Turn ** [ As ]
+** Dealing River ** [ 6h ]
+rendslargent33 shows [ Th, Ad ]one pair.
+ShalashaskaFOX shows [ Ks, 9c ]one pair.
+rendslargent33 wins €2.17 EUR from the main pot with one pair
+Game #24771866565 starts.
+
+#Game No : 24771866565 
+***** Hand History for Game 24771866565 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:28:10 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.05 EUR )
+Seat 5: ben44300 ( €1.59 EUR )
+Seat 2: rendslargent33 ( €2.17 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jh 9d ]
+ben44300 folds
+rendslargent33 raises [€0.05 EUR]
+ShalashaskaFOX is all-In  [€1.03 EUR]
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €1.11 EUR
+Game #24771866831 starts.
+
+#Game No : 24771866831 
+***** Hand History for Game 24771866831 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:28:25 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.11 EUR )
+Seat 5: ben44300 ( €1.59 EUR )
+Seat 2: rendslargent33 ( €2.11 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Td Kd ]
+rendslargent33 raises [€0.07 EUR]
+ShalashaskaFOX raises [€0.22 EUR]
+ben44300 folds
+rendslargent33 calls [€0.16 EUR]
+** Dealing Flop ** [ 6d, Qc, 8h ]
+ShalashaskaFOX bets [€0.15 EUR]
+rendslargent33 calls [€0.15 EUR]
+** Dealing Turn ** [ Ah ]
+ShalashaskaFOX is all-In  [€0.73 EUR]
+rendslargent33 calls [€0.73 EUR]
+** Dealing River ** [ 8s ]
+ShalashaskaFOX shows [ 9s, Kh ]one pair.
+rendslargent33 shows [ Td, Kd ]one pair.
+ShalashaskaFOX wins €1.05 EUR from the main pot with one pair
+rendslargent33 wins €1.05 EUR from the main pot with one pair
+Game #24771867499 starts.
+
+#Game No : 24771867499 
+***** Hand History for Game 24771867499 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:29:04 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.05 EUR )
+Seat 5: ben44300 ( €1.57 EUR )
+Seat 2: rendslargent33 ( €2.05 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  4s 7h ]
+ShalashaskaFOX raises [€0.07 EUR]
+ben44300 folds
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.10 EUR
+Game #24771867728 starts.
+
+#Game No : 24771867728 
+***** Hand History for Game 24771867728 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:29:18 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.08 EUR )
+Seat 5: ben44300 ( €1.56 EUR )
+Seat 2: rendslargent33 ( €2.03 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8h 7c ]
+ben44300 calls [€0.02 EUR]
+rendslargent33 calls [€0.01 EUR]
+ShalashaskaFOX checks
+** Dealing Flop ** [ 3c, 8d, 2c ]
+rendslargent33 bets [€0.03 EUR]
+ShalashaskaFOX raises [€0.11 EUR]
+ben44300 folds
+rendslargent33 calls [€0.08 EUR]
+** Dealing Turn ** [ Tc ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.09 EUR]
+rendslargent33 calls [€0.09 EUR]
+** Dealing River ** [ Kc ]
+rendslargent33 checks
+ShalashaskaFOX checks
+rendslargent33 shows [ 8h, 7c ]a flush.
+ShalashaskaFOX shows [ 2d, 8s ]two pairs.
+rendslargent33 wins €0.43 EUR from the main pot with a flush
+Game #24771868590 starts.
+
+#Game No : 24771868590 
+***** Hand History for Game 24771868590 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:30:08 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €0.86 EUR )
+Seat 5: ben44300 ( €1.54 EUR )
+Seat 2: rendslargent33 ( €2.24 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  6c 3s ]
+rendslargent33 folds
+ShalashaskaFOX raises [€0.04 EUR]
+ben44300 calls [€0.03 EUR]
+** Dealing Flop ** [ Ah, 9s, 3h ]
+ShalashaskaFOX bets [€0.06 EUR]
+ben44300 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.16 EUR
+Game #24771868888 starts.
+
+#Game No : 24771868888 
+***** Hand History for Game 24771868888 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:30:26 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €0.91 EUR )
+Seat 5: ben44300 ( €1.49 EUR )
+Seat 2: rendslargent33 ( €2.24 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  2c Kd ]
+ShalashaskaFOX raises [€0.05 EUR]
+ben44300 folds
+rendslargent33 calls [€0.03 EUR]
+** Dealing Flop ** [ 5d, 3h, 2h ]
+rendslargent33 checks
+ShalashaskaFOX bets [€0.07 EUR]
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.18 EUR
+Game #24771869362 starts.
+
+#Game No : 24771869362 
+***** Hand History for Game 24771869362 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:30:53 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €0.97 EUR )
+Seat 5: ben44300 ( €1.48 EUR )
+Seat 2: rendslargent33 ( €2.19 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  3h 5d ]
+ben44300 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.03 EUR
+Game #24771869611 starts.
+
+#Game No : 24771869611 
+***** Hand History for Game 24771869611 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:31:07 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €0.98 EUR )
+Seat 5: ben44300 ( €1.48 EUR )
+Seat 2: rendslargent33 ( €2.18 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  9c Qs ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.06 EUR]
+ShalashaskaFOX raises [€0.19 EUR]
+ben44300 folds
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.28 EUR
+Game #24771870545 starts.
+
+#Game No : 24771870545 
+***** Hand History for Game 24771870545 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:31:31 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.06 EUR )
+Seat 5: ben44300 ( €1.46 EUR )
+Seat 2: rendslargent33 ( €2.12 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  9c 9h ]
+ShalashaskaFOX raises [€0.05 EUR]
+ben44300 folds
+rendslargent33 raises [€0.18 EUR]
+ShalashaskaFOX calls [€0.15 EUR]
+** Dealing Flop ** [ Ac, Qs, 2c ]
+rendslargent33 bets [€0.10 EUR]
+ShalashaskaFOX raises [€0.29 EUR]
+rendslargent33 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.76 EUR
+Game #24771871352 starts.
+
+#Game No : 24771871352 
+***** Hand History for Game 24771871352 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:32:15 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.33 EUR )
+Seat 5: ben44300 ( €1.45 EUR )
+Seat 2: rendslargent33 ( €1.82 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+ShalashaskaFOX posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  6c 2s ]
+ben44300 calls [€0.02 EUR]
+rendslargent33 folds
+ShalashaskaFOX raises [€0.03 EUR]
+ben44300 calls [€0.03 EUR]
+** Dealing Flop ** [ 9d, Jh, 9c ]
+ShalashaskaFOX bets [€0.07 EUR]
+ben44300 calls [€0.07 EUR]
+** Dealing Turn ** [ Qs ]
+ShalashaskaFOX bets [€0.16 EUR]
+ben44300 folds
+ShalashaskaFOX does not show cards.
+ShalashaskaFOX wins €0.40 EUR
+Game #24771871774 starts.
+
+#Game No : 24771871774 
+***** Hand History for Game 24771871774 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:32:38 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €1.45 EUR )
+Seat 5: ben44300 ( €1.33 EUR )
+Seat 2: rendslargent33 ( €1.81 EUR )
+ShalashaskaFOX posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jh 4c ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+ShalashaskaFOX raises [€0.04 EUR]
+ben44300 calls [€0.03 EUR]
+** Dealing Flop ** [ 4h, Tc, Kh ]
+ShalashaskaFOX bets [€0.06 EUR]
+ben44300 raises [€0.12 EUR]
+ShalashaskaFOX raises [€0.12 EUR]
+ben44300 is all-In  [€1.16 EUR]
+ShalashaskaFOX calls [€1.10 EUR]
+** Dealing Turn ** [ 3s ]
+** Dealing River ** [ 7s ]
+ShalashaskaFOX shows [ Ad, Jc ]High card.
+ben44300 shows [ Kd, 7h ]two pairs.
+ben44300 wins €2.49 EUR from the main pot with two pairs
+Game #24771872406 starts.
+
+#Game No : 24771872406 
+***** Hand History for Game 24771872406 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:33:13 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €0.12 EUR )
+Seat 5: ben44300 ( €2.49 EUR )
+Seat 2: rendslargent33 ( €1.81 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qh Ac ]
+ShalashaskaFOX is all-In  [€0.12 EUR]
+ben44300 folds
+rendslargent33 calls [€0.10 EUR]
+** Dealing Flop ** [ Kc, Qc, 3d ]
+** Dealing Turn ** [ Ts ]
+** Dealing River ** [ 5h ]
+ShalashaskaFOX shows [ 9h, Ad ]High card.
+rendslargent33 shows [ Qh, Ac ]one pair.
+rendslargent33 wins €0.24 EUR from the main pot with one pair
+Game #24771872799 starts.
+
+#Game No : 24771872799 
+***** Hand History for Game 24771872799 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:33:35 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 3/6 
+Seat 4: ShalashaskaFOX ( €0 EUR )
+Seat 5: ben44300 ( €2.48 EUR )
+Seat 2: rendslargent33 ( €1.93 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kh 8h ]
+ben44300 calls [€0.01 EUR]
+MissAliceWild has joined the table.
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.07 EUR]
+ben44300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.11 EUR
+Game #24771873302 starts.
+
+#Game No : 24771873302 
+***** Hand History for Game 24771873302 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:33:59 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 4/6 
+Seat 3: MissAliceWild ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €0 EUR )
+Seat 5: ben44300 ( €2.46 EUR )
+Seat 2: rendslargent33 ( €1.95 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+MissAliceWild posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  As 9h ]
+ben44300 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 will be using their time bank for this hand.
+rendslargent33 raises [€0.05 EUR]
+MissAliceWild raises [€0.22 EUR]
+rendslargent33 calls [€0.18 EUR]
+** Dealing Flop ** [ 2h, Ac, 3h ]
+rendslargent33 checks
+MissAliceWild bets [€0.14 EUR]
+rendslargent33 calls [€0.14 EUR]
+** Dealing Turn ** [ 6d ]
+rendslargent33 checks
+MissAliceWild checks
+** Dealing River ** [ Qd ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 bets [€0.43 EUR]
+MissAliceWild folds
+rendslargent33 does not show cards.
+rendslargent33 wins €1.14 EUR
+Game #24771874445 starts.
+
+#Game No : 24771874445 
+***** Hand History for Game 24771874445 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:35:07 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 4/6 
+Seat 3: MissAliceWild ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €0 EUR )
+Seat 5: ben44300 ( €2.46 EUR )
+Seat 2: rendslargent33 ( €2.28 EUR )
+MissAliceWild posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  5s 6h ]
+rendslargent33 raises [€0.07 EUR]
+MissAliceWild folds
+ben44300 calls [€0.05 EUR]
+** Dealing Flop ** [ 8d, 9d, Jc ]
+ben44300 checks
+rendslargent33 bets [€0.14 EUR]
+ben44300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.28 EUR
+Game #24771874994 starts.
+
+#Game No : 24771874994 
+***** Hand History for Game 24771874994 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:35:36 CET 2024
+Table Caen (Real Money)
+Seat 3 is the button
+Total number of players : 4/6 
+Seat 3: MissAliceWild ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €0 EUR )
+Seat 5: ben44300 ( €2.39 EUR )
+Seat 2: rendslargent33 ( €2.35 EUR )
+ben44300 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8s Jc ]
+MissAliceWild raises [€0.05 EUR]
+ben44300 folds
+rendslargent33 calls [€0.03 EUR]
+** Dealing Flop ** [ 3c, Qh, Kc ]
+rendslargent33 checks
+MissAliceWild bets [€0.03 EUR]
+rendslargent33 calls [€0.03 EUR]
+** Dealing Turn ** [ 4s ]
+rendslargent33 checks
+MissAliceWild bets [€0.13 EUR]
+rendslargent33 folds
+MissAliceWild does not show cards.
+MissAliceWild wins €0.29 EUR
+Game #24771875777 starts.
+
+#Game No : 24771875777 
+***** Hand History for Game 24771875777 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:36:20 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 4/6 
+Seat 3: MissAliceWild ( €2.08 EUR )
+Seat 4: ShalashaskaFOX ( €0 EUR )
+Seat 5: ben44300 ( €2.38 EUR )
+Seat 2: rendslargent33 ( €2.27 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+MissAliceWild posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qh 3c ]
+ben44300 folds
+rendslargent33 raises [€0.05 EUR]
+Joel37300 has joined the table.
+MissAliceWild calls [€0.04 EUR]
+** Dealing Flop ** [ Jh, 8d, 5s ]
+rendslargent33 checks
+Tchk162 has joined the table.
+MissAliceWild bets [€0.03 EUR]
+rendslargent33 raises [€0.13 EUR]
+MissAliceWild calls [€0.10 EUR]
+** Dealing Turn ** [ 5d ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 bets [€0.36 EUR]
+MissAliceWild folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.72 EUR
+Game #24771877185 starts.
+
+#Game No : 24771877185 
+***** Hand History for Game 24771877185 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:37:11 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €2 EUR )
+Seat 3: MissAliceWild ( €2 EUR )
+Seat 4: ShalashaskaFOX ( €0 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.38 EUR )
+Seat 2: rendslargent33 ( €2.44 EUR )
+MissAliceWild posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+Joel37300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  3c 5c ]
+Joel37300 checks
+rendslargent33 raises [€0.06 EUR]
+MissAliceWild raises [€0.19 EUR]
+ben44300 folds
+Joel37300 calls [€0.18 EUR]
+rendslargent33 calls [€0.14 EUR]
+** Dealing Flop ** [ 9h, 5d, 9c ]
+MissAliceWild checks
+Joel37300 checks
+ShalashaskaFOX has left the table.
+rendslargent33 bets [€0.29 EUR]
+MissAliceWild calls [€0.29 EUR]
+Joel37300 calls [€0.29 EUR]
+** Dealing Turn ** [ As ]
+MissAliceWild checks
+Joel37300 checks
+rendslargent33 checks
+** Dealing River ** [ Td ]
+MissAliceWild bets [€0.46 EUR]
+Joel37300 calls [€0.46 EUR]
+rendslargent33 folds
+MissAliceWild shows [ Ac, Qs ]two pairs.
+Joel37300 doesn't show [ 8c, 8s ]two pairs.
+MissAliceWild wins €2.25 EUR from the main pot with two pairs
+Game #24771878269 starts.
+
+#Game No : 24771878269 
+***** Hand History for Game 24771878269 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:38:12 CET 2024
+Table Caen (Real Money)
+Seat 3 is the button
+Total number of players : 5/6 
+Seat 6: Joel37300 ( €1.05 EUR )
+Seat 3: MissAliceWild ( €3.30 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.36 EUR )
+Seat 2: rendslargent33 ( €1.95 EUR )
+ben44300 posts small blind [€0.01 EUR].
+Joel37300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  7s Kc ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.07 EUR]
+MissAliceWild folds
+ben44300 folds
+Joel37300 calls [€0.05 EUR]
+** Dealing Flop ** [ Jh, 5d, Tc ]
+Joel37300 checks
+rendslargent33 bets [€0.03 EUR]
+Joel37300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.17 EUR
+Game #24771878701 starts.
+
+#Game No : 24771878701 
+***** Hand History for Game 24771878701 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:38:36 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 5/6 
+Seat 6: Joel37300 ( €0.98 EUR )
+Seat 3: MissAliceWild ( €3.30 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.35 EUR )
+Seat 2: rendslargent33 ( €2.02 EUR )
+Joel37300 posts small blind [€0.01 EUR].
+Tchk162 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qd 6s ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+MissAliceWild will be using their time bank for this hand.
+MissAliceWild raises [€0.06 EUR]
+ben44300 folds
+Joel37300 folds
+Tchk162 folds
+MissAliceWild does not show cards.
+MissAliceWild wins €0.09 EUR
+Game #24771879285 starts.
+
+#Game No : 24771879285 
+***** Hand History for Game 24771879285 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:39:11 CET 2024
+Table Caen (Real Money)
+Seat 6 is the button
+Total number of players : 5/6 
+Seat 6: Joel37300 ( €0.97 EUR )
+Seat 3: MissAliceWild ( €3.33 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.35 EUR )
+Seat 2: rendslargent33 ( €2.02 EUR )
+Tchk162 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8s 8c ]
+MissAliceWild folds
+ben44300 folds
+Joel37300 calls [€0.02 EUR]
+Tchk162 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.08 EUR]
+Joel37300 calls [€0.08 EUR]
+** Dealing Flop ** [ 9d, 9c, Qs ]
+rendslargent33 bets [€0.04 EUR]
+Joel37300 is all-In  [€0.87 EUR]
+ricocc has joined the table.
+rendslargent33 folds
+Joel37300 does not show cards.
+Joel37300 wins €1.11 EUR
+Game #24771880615 starts.
+
+#Game No : 24771880615 
+***** Hand History for Game 24771880615 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:39:59 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €1.11 EUR )
+Seat 3: MissAliceWild ( €3.33 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.35 EUR )
+Seat 2: rendslargent33 ( €1.88 EUR )
+Seat 4: ricocc ( €2 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+MissAliceWild posts big blind [€0.02 EUR].
+ricocc posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qd Td ]
+ricocc checks
+ben44300 calls [€0.02 EUR]
+Joel37300 calls [€0.02 EUR]
+Tchk162 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.15 EUR]
+MissAliceWild folds
+ricocc calls [€0.14 EUR]
+ben44300 calls [€0.14 EUR]
+Joel37300 folds
+** Dealing Flop ** [ 4h, 7s, 5s ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 bets [€0.36 EUR]
+ricocc folds
+ben44300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.85 EUR
+Game #24771881518 starts.
+
+#Game No : 24771881518 
+***** Hand History for Game 24771881518 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:40:51 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €1.09 EUR )
+Seat 3: MissAliceWild ( €3.31 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.19 EUR )
+Seat 2: rendslargent33 ( €2.21 EUR )
+Seat 4: ricocc ( €1.84 EUR )
+MissAliceWild posts small blind [€0.01 EUR].
+ricocc posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  7c Jh ]
+ben44300 folds
+Joel37300 calls [€0.02 EUR]
+Tchk162 folds
+rendslargent33 folds
+MissAliceWild folds
+ricocc checks
+** Dealing Flop ** [ 9d, Ac, 5c ]
+ben44300: l autre clocahrd qui balance n importe comment
+ricocc checks
+Joel37300 checks
+** Dealing Turn ** [ 3d ]
+ricocc checks
+Joel37300 checks
+** Dealing River ** [ 3s ]
+ricocc checks
+Joel37300 checks
+ricocc shows [ 9h, 7d ]two pairs.
+Joel37300 shows [ 7h, Td ]one pair.
+ricocc wins €0.05 EUR from the main pot with two pairs
+Game #24771882523 starts.
+
+#Game No : 24771882523 
+***** Hand History for Game 24771882523 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:41:51 CET 2024
+Table Caen (Real Money)
+Seat 3 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €1.07 EUR )
+Seat 3: MissAliceWild ( €3.30 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.19 EUR )
+Seat 2: rendslargent33 ( €2.21 EUR )
+Seat 4: ricocc ( €1.87 EUR )
+ricocc posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  6c Js ]
+Joel37300 calls [€0.02 EUR]
+MissAliceWild: rentre chrz toi
+Tchk162 folds
+rendslargent33 folds
+MissAliceWild folds
+ricocc folds
+ben44300 checks
+** Dealing Flop ** [ 9d, 4h, 6s ]
+ben44300 bets [€0.02 EUR]
+Joel37300 calls [€0.02 EUR]
+** Dealing Turn ** [ Ts ]
+ben44300 bets [€0.02 EUR]
+Joel37300 raises [€0.06 EUR]
+ben44300 calls [€0.04 EUR]
+** Dealing River ** [ 5h ]
+ben44300 checks
+Joel37300 bets [€0.20 EUR]
+ben44300 folds
+Joel37300 does not show cards.
+Joel37300 wins €0.40 EUR
+Game #24771883402 starts.
+
+#Game No : 24771883402 
+***** Hand History for Game 24771883402 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:42:43 CET 2024
+Table Caen (Real Money)
+Seat 4 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €1.17 EUR )
+Seat 3: MissAliceWild ( €3.30 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.09 EUR )
+Seat 2: rendslargent33 ( €2.21 EUR )
+Seat 4: ricocc ( €1.86 EUR )
+ben44300 posts small blind [€0.01 EUR].
+Joel37300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8c Qc ]
+Tchk162 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.07 EUR]
+MissAliceWild folds
+ricocc folds
+ben44300 folds
+Joel37300 calls [€0.05 EUR]
+** Dealing Flop ** [ Ac, As, Qh ]
+Joel37300 checks
+rendslargent33 bets [€0.04 EUR]
+Joel37300 calls [€0.04 EUR]
+** Dealing Turn ** [ 3d ]
+Joel37300 checks
+rendslargent33 bets [€0.11 EUR]
+Joel37300 calls [€0.11 EUR]
+** Dealing River ** [ 5s ]
+Joel37300 checks
+rendslargent33 checks
+Joel37300 shows [ 5h, 9h ]two pairs.
+rendslargent33 shows [ 8c, Qc ]two pairs.
+rendslargent33 wins €0.42 EUR from the main pot with two pairs
+Game #24771884162 starts.
+
+#Game No : 24771884162 
+***** Hand History for Game 24771884162 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:43:29 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €0.95 EUR )
+Seat 3: MissAliceWild ( €3.30 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.08 EUR )
+Seat 2: rendslargent33 ( €2.41 EUR )
+Seat 4: ricocc ( €1.86 EUR )
+Tchk162 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Js 4d ]
+MissAliceWild folds
+ricocc calls [€0.02 EUR]
+ben44300 calls [€0.02 EUR]
+Tchk162 will be using their time bank for this hand.
+Tchk162 folds
+rendslargent33 checks
+** Dealing Flop ** [ 2s, 4s, 6s ]
+rendslargent33 checks
+ricocc checks
+ben44300 checks
+** Dealing Turn ** [ Qc ]
+rendslargent33 checks
+ricocc checks
+ben44300 checks
+** Dealing River ** [ Ts ]
+rendslargent33 bets [€0.03 EUR]
+ricocc folds
+ben44300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.10 EUR
+Game #24771885624 starts.
+
+#Game No : 24771885624 
+***** Hand History for Game 24771885624 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:44:52 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €0.95 EUR )
+Seat 3: MissAliceWild ( €3.30 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.06 EUR )
+Seat 2: rendslargent33 ( €2.46 EUR )
+Seat 4: ricocc ( €1.84 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+MissAliceWild posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  2h 8d ]
+ricocc calls [€0.02 EUR]
+ben44300 calls [€0.02 EUR]
+Tchk162 raises [€0.04 EUR]
+rendslargent33 folds
+MissAliceWild folds
+ricocc calls [€0.02 EUR]
+ben44300 calls [€0.02 EUR]
+** Dealing Flop ** [ 7d, 9c, 2s ]
+ricocc checks
+ben44300 checks
+Tchk162 checks
+** Dealing Turn ** [ 8h ]
+ricocc bets [€0.03 EUR]
+ben44300 folds
+Tchk162 folds
+ricocc does not show cards.
+ricocc wins €0.17 EUR
+Game #24771887390 starts.
+
+#Game No : 24771887390 
+***** Hand History for Game 24771887390 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:46:10 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €0.95 EUR )
+Seat 3: MissAliceWild ( €3.28 EUR )
+Seat 1: Tchk162 ( €2 EUR )
+Seat 5: ben44300 ( €2.02 EUR )
+Seat 2: rendslargent33 ( €2.45 EUR )
+Seat 4: ricocc ( €1.94 EUR )
+MissAliceWild posts small blind [€0.01 EUR].
+ricocc posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  4c Ad ]
+ben44300 folds
+Tchk162 raises [€0.08 EUR]
+rendslargent33 folds
+MissAliceWild folds
+ricocc calls [€0.06 EUR]
+** Dealing Flop ** [ 3s, Qs, Kd ]
+ricocc checks
+Tchk162 checks
+** Dealing Turn ** [ 9s ]
+ricocc bets [€0.02 EUR]
+Tchk162 calls [€0.02 EUR]
+** Dealing River ** [ Qh ]
+ricocc bets [€0.15 EUR]
+Tchk162 is all-In  [€1.90 EUR]
+ricocc is all-In  [€1.69 EUR]
+ricocc shows [ Qc, 5s ]three of a kind.
+Tchk162 shows [ 9c, 9d ]a full house.
+Tchk162 wins €3.64 EUR from the main pot with a full house
+Game #24771888470 starts.
+
+#Game No : 24771888470 
+***** Hand History for Game 24771888470 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:47:16 CET 2024
+Table Caen (Real Money)
+Seat 3 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €0.95 EUR )
+Seat 3: MissAliceWild ( €3.27 EUR )
+Seat 1: Tchk162 ( €3.70 EUR )
+Seat 5: ben44300 ( €2.02 EUR )
+Seat 2: rendslargent33 ( €2.45 EUR )
+Seat 4: ricocc ( €0 EUR )
+ben44300 posts small blind [€0.01 EUR].
+Tchk162 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8d 5d ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.07 EUR]
+MissAliceWild folds
+ben44300 folds
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.10 EUR
+Game #24771888737 starts.
+
+#Game No : 24771888737 
+***** Hand History for Game 24771888737 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:47:32 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €0.95 EUR )
+Seat 3: MissAliceWild ( €3.27 EUR )
+Seat 1: Tchk162 ( €3.68 EUR )
+Seat 5: ben44300 ( €2.01 EUR )
+Seat 2: rendslargent33 ( €2.48 EUR )
+Seat 4: ricocc ( €0 EUR )
+Tchk162 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kh 9c ]
+MissAliceWild folds
+ben44300 folds
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.03 EUR
+Game #24771889033 starts.
+
+#Game No : 24771889033 
+***** Hand History for Game 24771889033 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:47:51 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 6/6 
+Seat 6: Joel37300 ( €0.95 EUR )
+Seat 3: MissAliceWild ( €3.27 EUR )
+Seat 1: Tchk162 ( €3.67 EUR )
+Seat 5: ben44300 ( €2.01 EUR )
+Seat 2: rendslargent33 ( €2.49 EUR )
+Seat 4: ricocc ( €0 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+MissAliceWild posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qs Ks ]
+ben44300 calls [€0.02 EUR]
+Tchk162 raises [€0.06 EUR]
+rendslargent33 raises [€0.21 EUR]
+Joel37300 has left the table.
+MissAliceWild folds
+ben44300 folds
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.32 EUR
+MissAliceWild has left the table.
+Game #24771890738 starts.
+
+#Game No : 24771890738 
+***** Hand History for Game 24771890738 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:48:35 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 4/6 
+Seat 1: Tchk162 ( €3.61 EUR )
+Seat 5: ben44300 ( €1.99 EUR )
+Seat 2: rendslargent33 ( €2.59 EUR )
+Seat 4: ricocc ( €0 EUR )
+ben44300 posts small blind [€0.01 EUR].
+Tchk162 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  8s 5c ]
+boul26 has joined the table.
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.06 EUR]
+ben44300 folds
+Tchk162 calls [€0.04 EUR]
+** Dealing Flop ** [ 7s, As, 4h ]
+Tchk162 checks
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 bets [€0.06 EUR]
+xxfabluffxx has joined the table.
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.19 EUR
+Game #24771891414 starts.
+
+#Game No : 24771891414 
+***** Hand History for Game 24771891414 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:49:17 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 6/6 
+Seat 1: Tchk162 ( €3.55 EUR )
+Seat 5: ben44300 ( €1.98 EUR )
+Seat 3: boul26 ( €1.26 EUR )
+Seat 2: rendslargent33 ( €2.66 EUR )
+Seat 4: ricocc ( €0 EUR )
+Seat 6: xxfabluffxx ( €2 EUR )
+Tchk162 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Js Qs ]
+ben44300 folds
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.03 EUR
+Game #24771891556 starts.
+
+#Game No : 24771891556 
+***** Hand History for Game 24771891556 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:49:26 CET 2024
+Table Caen (Real Money)
+Seat 1 is the button
+Total number of players : 6/6 
+Seat 1: Tchk162 ( €3.54 EUR )
+Seat 5: ben44300 ( €1.98 EUR )
+Seat 3: boul26 ( €1.26 EUR )
+Seat 2: rendslargent33 ( €2.67 EUR )
+Seat 4: ricocc ( €0 EUR )
+Seat 6: xxfabluffxx ( €2 EUR )
+rendslargent33 posts small blind [€0.01 EUR].
+boul26 posts big blind [€0.02 EUR].
+xxfabluffxx posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  2d Qc ]
+ben44300 calls [€0.02 EUR]
+xxfabluffxx checks
+Tchk162 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 calls [€0.01 EUR]
+boul26 raises [€0.06 EUR]
+ben44300 calls [€0.06 EUR]
+xxfabluffxx calls [€0.06 EUR]
+rendslargent33 folds
+** Dealing Flop ** [ Td, 9h, Ks ]
+boul26 bets [€0.20 EUR]
+ben44300 folds
+xxfabluffxx folds
+boul26 does not show cards.
+boul26 wins €0.45 EUR
+Game #24771892406 starts.
+
+#Game No : 24771892406 
+***** Hand History for Game 24771892406 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:50:19 CET 2024
+Table Caen (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 1: Tchk162 ( €3.54 EUR )
+Seat 5: ben44300 ( €1.90 EUR )
+Seat 3: boul26 ( €1.43 EUR )
+Seat 2: rendslargent33 ( €2.65 EUR )
+Seat 4: ricocc ( €0 EUR )
+Seat 6: xxfabluffxx ( €2 EUR )
+boul26 posts small blind [€0.01 EUR].
+ben44300 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  9d Ts ]
+xxfabluffxx folds
+Tchk162 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.07 EUR]
+boul26 folds
+ben44300 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.10 EUR
+Game #24771892927 starts.
+
+#Game No : 24771892927 
+***** Hand History for Game 24771892927 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:50:55 CET 2024
+Table Caen (Real Money)
+Seat 3 is the button
+Total number of players : 6/6 
+Seat 1: Tchk162 ( €3.54 EUR )
+Seat 5: ben44300 ( €1.88 EUR )
+Seat 3: boul26 ( €1.42 EUR )
+Seat 2: rendslargent33 ( €2.68 EUR )
+Seat 4: ricocc ( €0 EUR )
+Seat 6: xxfabluffxx ( €2 EUR )
+ben44300 posts small blind [€0.01 EUR].
+xxfabluffxx posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  2c 7s ]
+Tchk162 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+boul26 folds
+ben44300 folds
+xxfabluffxx does not show cards.
+xxfabluffxx wins €0.03 EUR
+Game #24771893396 starts.
+
+#Game No : 24771893396 
+***** Hand History for Game 24771893396 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:51:24 CET 2024
+Table Caen (Real Money)
+Seat 5 is the button
+Total number of players : 6/6 
+Seat 1: Tchk162 ( €3.54 EUR )
+Seat 5: ben44300 ( €1.87 EUR )
+Seat 3: boul26 ( €1.42 EUR )
+Seat 2: rendslargent33 ( €2.68 EUR )
+Seat 4: ricocc ( €0 EUR )
+Seat 6: xxfabluffxx ( €2.01 EUR )
+xxfabluffxx posts small blind [€0.01 EUR].
+Tchk162 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kd 5d ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [€0.07 EUR]
+boul26 folds
+ben44300 folds
+xxfabluffxx folds
+Tchk162 calls [€0.05 EUR]
+** Dealing Flop ** [ 4s, Ks, Ac ]
+Tchk162 checks
+rendslargent33 bets [€0.03 EUR]
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.17 EUR
+Game #24771894179 starts.
+
+#Game No : 24771894179 
+***** Hand History for Game 24771894179 *****
+€0.01/€0.02 EUR NL Texas Hold'em - Saturday, December 14, 13:52:11 CET 2024
+Table Caen (Real Money)
+Seat 6 is the button
+Total number of players : 6/6 
+Seat 1: Tchk162 ( €3.47 EUR )
+Seat 5: ben44300 ( €1.87 EUR )
+Seat 3: boul26 ( €1.42 EUR )
+Seat 2: rendslargent33 ( €2.75 EUR )
+Seat 4: ricocc ( €0 EUR )
+Seat 6: xxfabluffxx ( €2 EUR )
+Tchk162 posts small blind [€0.01 EUR].
+rendslargent33 posts big blind [€0.02 EUR].
+** Dealing down cards **
+Dealt to rendslargent33 [  5h Js ]
+boul26 folds
+ben44300 folds
+xxfabluffxx folds
+Tchk162 folds
+rendslargent33 does not show cards.
+rendslargent33 wins €0.03 EUR
+
+Game #24771894546 starts.
+#Game No : 24771894546 
+Table Closed
+The hand history for this hand number is not available here.Please use Instant Hand History in the "Game Rules & Options"  menu to have this hand history delivered to the email address you have registered with us.
+

@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.domaine.poker.moteur;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
@@ -21,7 +22,7 @@ public class MoteurJeuTest {
     }
 
     @Test
-    void ajoutActionIncrementePot() throws ErreurLectureFichier {
+    void ajoutActionIncrementePot() throws ErreurLectureFichier, JoueurNonExistant {
         String fauxNomJoueur = "Fake";
         float montantAction = 56.34f;
 
@@ -58,7 +59,7 @@ public class MoteurJeuTest {
     }
 
     @Test
-    void calculeBienPotBounty() throws ErreurLectureFichier {
+    void calculeBienPotBounty() throws ErreurLectureFichier, JoueurNonExistant {
         String nomJoueur1 = "Joueur1";
         BigDecimal stackInitialJoueur1 = new BigDecimal("25.34").setScale(2, RoundingMode.HALF_UP);
         BigDecimal bountyJoueur1 = new BigDecimal("3.45").setScale(2, RoundingMode.HALF_UP);

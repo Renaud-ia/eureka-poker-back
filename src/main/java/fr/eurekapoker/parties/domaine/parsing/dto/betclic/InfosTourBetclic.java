@@ -1,9 +1,8 @@
-package fr.eurekapoker.parties.domaine.parsing.dto;
+package fr.eurekapoker.parties.domaine.parsing.dto.betclic;
 
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 
-import java.util.Collection;
 import java.util.List;
 
 public class InfosTourBetclic {

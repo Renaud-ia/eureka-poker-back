@@ -1,0 +1,178 @@
+Game #24771896345 starts.
+
+#Game No : 24771896345 
+***** Hand History for Game 24771896345 *****
+NL Texas Hold'em €1 EUR Buy-in Trny:399524782 Level:10  Blinds-Antes(400/800 -100) - Saturday, December 14, 13:54:23 CET 2024
+Table The Major Phased Sat. 25 x 50€ Gtd (Phase 1, Hyper) (399524782) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 6/6 
+Seat 6: Basilio1981 ( 10,000 )
+Seat 4: Einstein56 ( 69,010 )
+Seat 1: Jnluc974 ( 9,850 )
+Seat 2: OClalu ( 9,120 )
+Seat 3: TRIEN ( 22,020 )
+Seat 5: rendslargent33 ( 10,000 )
+Trny:399524782 Level:10 
+Blinds-Antes(400/800 -100)
+Jnluc974 posts ante [100]
+OClalu posts ante [100]
+TRIEN posts ante [100]
+Einstein56 posts ante [100]
+rendslargent33 posts ante [100]
+Basilio1981 posts ante [100]
+OClalu posts small blind [400].
+TRIEN posts big blind [800].
+** Dealing down cards **
+Dealt to rendslargent33 [  6h Ac ]
+Einstein56 folds
+rendslargent33 is all-In  [9,900]
+Basilio1981 folds
+Jnluc974 folds
+OClalu folds
+TRIEN folds
+rendslargent33 does not show cards.
+rendslargent33 wins 11,700 chips
+Game #24771896705 starts.
+
+#Game No : 24771896705 
+***** Hand History for Game 24771896705 *****
+NL Texas Hold'em €1 EUR Buy-in Trny:399524782 Level:10  Blinds-Antes(400/800 -100) - Saturday, December 14, 13:54:44 CET 2024
+Table The Major Phased Sat. 25 x 50€ Gtd (Phase 1, Hyper) (399524782) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 6/6 
+Seat 6: Basilio1981 ( 9,900 )
+Seat 4: Einstein56 ( 68,910 )
+Seat 1: Jnluc974 ( 9,750 )
+Seat 2: OClalu ( 8,620 )
+Seat 3: TRIEN ( 21,120 )
+Seat 5: rendslargent33 ( 11,700 )
+Trny:399524782 Level:10 
+Blinds-Antes(400/800 -100)
+Jnluc974 posts ante [100]
+OClalu posts ante [100]
+TRIEN posts ante [100]
+Einstein56 posts ante [100]
+rendslargent33 posts ante [100]
+Basilio1981 posts ante [100]
+TRIEN posts small blind [400].
+Einstein56 posts big blind [800].
+** Dealing down cards **
+Dealt to rendslargent33 [  2h 9d ]
+rendslargent33 folds
+Basilio1981 calls [800]
+Jnluc974 folds
+OClalu calls [800]
+TRIEN folds
+Einstein56 raises [2,800]
+Basilio1981 is all-In  [9,000]
+OClalu folds
+Einstein56 calls [6,200]
+** Dealing Flop ** [ 2c, 4c, Qh ]
+** Dealing Turn ** [ 2d ]
+** Dealing River ** [ 3d ]
+Einstein56 shows [ Ks, Kc ]two pairs.
+Basilio1981 shows [ Td, Jc ]one pair.
+Einstein56 wins 21,400 chips from the main pot with two pairs.
+Player Basilio1981 finished in 7.
+Game #24771897302 starts.
+
+#Game No : 24771897302 
+***** Hand History for Game 24771897302 *****
+NL Texas Hold'em €1 EUR Buy-in Trny:399524782 Level:10  Blinds-Antes(400/800 -100) - Saturday, December 14, 14:00:21 CET 2024
+Table The Major Phased Sat. 25 x 50€ Gtd (Phase 1, Hyper) (399524782) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 6/6 
+Seat 4: Einstein56 ( 80,410 )
+Seat 1: Jnluc974 ( 9,650 )
+Seat 2: OClalu ( 7,720 )
+Seat 3: TRIEN ( 20,620 )
+Seat 6: gpn09asm9 ( 10,000 )
+Seat 5: rendslargent33 ( 11,600 )
+Trny:399524782 Level:10 
+Blinds-Antes(400/800 -100)
+Jnluc974 posts ante [100]
+OClalu posts ante [100]
+TRIEN posts ante [100]
+Einstein56 posts ante [100]
+rendslargent33 posts ante [100]
+gpn09asm9 posts ante [100]
+Einstein56 posts small blind [400].
+rendslargent33 posts big blind [800].
+** Dealing down cards **
+Dealt to rendslargent33 [  7d 4h ]
+gpn09asm9 is all-In  [9,900]
+Jnluc974 folds
+OClalu folds
+TRIEN folds
+Einstein56 folds
+rendslargent33 folds
+gpn09asm9 does not show cards.
+gpn09asm9 wins 11,700 chips
+Game #24771901676 starts.
+
+#Game No : 24771901676 
+***** Hand History for Game 24771901676 *****
+NL Texas Hold'em €1 EUR Buy-in Trny:399524782 Level:10  Blinds-Antes(400/800 -100) - Saturday, December 14, 14:00:52 CET 2024
+Table The Major Phased Sat. 25 x 50€ Gtd (Phase 1, Hyper) (399524782) Table #1 (Real Money)
+Seat 4 is the button
+Total number of players : 5/6 
+Seat 4: Einstein56 ( 79,910 )
+Seat 1: Jnluc974 ( 9,550 )
+Seat 2: OClalu ( 7,620 )
+Seat 3: TRIEN ( 20,520 )
+Seat 5: rendslargent33 ( 10,700 )
+Trny:399524782 Level:10 
+Blinds-Antes(400/800 -100)
+Jnluc974 posts ante [100]
+OClalu posts ante [100]
+TRIEN posts ante [100]
+Einstein56 posts ante [100]
+rendslargent33 posts ante [100]
+rendslargent33 posts small blind [400].
+Jnluc974 posts big blind [800].
+** Dealing down cards **
+Dealt to rendslargent33 [  5c 6h ]
+OClalu is all-In  [7,520]
+TRIEN folds
+Einstein56 folds
+rendslargent33 folds
+Jnluc974 folds
+OClalu does not show cards.
+OClalu wins 9,220 chips
+Game #24771902634 starts.
+
+#Game No : 24771902634 
+***** Hand History for Game 24771902634 *****
+NL Texas Hold'em €1 EUR Buy-in Trny:399524782 Level:11  Blinds-Antes(500/1K -125) - Saturday, December 14, 14:01:27 CET 2024
+Table The Major Phased Sat. 25 x 50€ Gtd (Phase 1, Hyper) (399524782) Table #1 (Real Money)
+Seat 5 is the button
+Total number of players : 5/6 
+Seat 4: Einstein56 ( 79,810 )
+Seat 1: Jnluc974 ( 8,650 )
+Seat 2: OClalu ( 9,220 )
+Seat 3: TRIEN ( 20,420 )
+Seat 5: rendslargent33 ( 10,200 )
+Trny:399524782 Level:11 
+Blinds-Antes(500/1 000 -125)
+Jnluc974 posts ante [125]
+OClalu posts ante [125]
+TRIEN posts ante [125]
+Einstein56 posts ante [125]
+rendslargent33 posts ante [125]
+Jnluc974 posts small blind [500].
+OClalu posts big blind [1,000].
+** Dealing down cards **
+Dealt to rendslargent33 [  9s Kc ]
+TRIEN folds
+Einstein56 raises [3,500]
+rendslargent33 is all-In  [10,075]
+Jnluc974 folds
+OClalu folds
+Einstein56 calls [6,575]
+** Dealing Flop ** [ Kd, Qc, As ]
+** Dealing Turn ** [ 7d ]
+** Dealing River ** [ 9d ]
+Einstein56 shows [ Ad, Ah ]three of a kind.
+rendslargent33 shows [ 9s, Kc ]two pairs.
+Einstein56 wins 22,275 chips from the main pot with three of a kind.
+Player rendslargent33 finished in 9.

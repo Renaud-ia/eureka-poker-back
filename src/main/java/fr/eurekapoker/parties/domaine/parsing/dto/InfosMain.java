@@ -3,31 +3,29 @@ package fr.eurekapoker.parties.domaine.parsing.dto;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 
-public abstract class InfosMain {
-    private final long identifiantMain;
-    public InfosMain(long identifiantMain) {
-        this.identifiantMain = identifiantMain;
+public class InfosMain {
+    private final FormatPoker.Variante variante;
+    private final BigDecimal buyIn;
+    private final LocalDateTime date;
+
+    public InfosMain(FormatPoker.Variante variante, double buyIn, LocalDateTime date) {
+        this.variante = variante;
+        this.buyIn = new BigDecimal(buyIn).setScale(2, RoundingMode.HALF_UP);;
+        this.date = date;
     }
 
-    public long obtIdentifiantMain() {
-        return identifiantMain;
+    public FormatPoker.Variante obtVariante() {
+        return variante;
     }
 
-    public abstract FormatPoker.Variante obtVariante();
+    public BigDecimal obtBuyIn() {
+        return buyIn;
+    }
 
-    public abstract FormatPoker.TypeTable obtTypeTable();
-
-    public abstract BigDecimal obtBuyIn();
-
-    public abstract LocalDateTime obtDate();
-
-    public abstract long obtNumeroTable();
-
-    public abstract BigDecimal obtAnte();
-
-    public abstract BigDecimal obtRake();
-
-    public abstract BigDecimal obtMontantBb();
+    public LocalDateTime obtDate() {
+        return date;
+    }
 }

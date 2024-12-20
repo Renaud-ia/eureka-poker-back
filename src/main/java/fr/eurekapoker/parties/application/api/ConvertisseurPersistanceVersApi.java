@@ -3,6 +3,7 @@ package fr.eurekapoker.parties.application.api;
 import fr.eurekapoker.parties.application.api.dto.*;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
@@ -31,7 +32,7 @@ public class ConvertisseurPersistanceVersApi {
         this.actionsParJoueur = new HashMap<>();
     }
 
-    public ContenuPartieDto obtContenuPartieDto() throws ErreurLectureFichier {
+    public ContenuPartieDto obtContenuPartieDto() throws ErreurLectureFichier, JoueurNonExistant {
         String nomHero = this.joueursAnonymes ? "Hero" : partiePersistanceDto.obtNomHero();
         ContenuPartieDto contenuPartieDto = new ContenuPartieDto(
                 partiePersistanceDto.obtIdUnique(),
@@ -53,7 +54,7 @@ public class ConvertisseurPersistanceVersApi {
         return contenuPartieDto;
     }
 
-    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto) throws ErreurLectureFichier {
+    private ContenuMainDto convertirMainDtoVersApi(MainPersistenceDto mainPersistenceDto) throws ErreurLectureFichier, JoueurNonExistant {
         List<JoueurDto> joueurs = extraireJoueursDepuisMain(mainPersistenceDto);
         List<ContenuTourDto> tours = extraireToursDepuisMain(mainPersistenceDto);
         HashMap<String, BigDecimal> antes = extraireAnteDepuisMain(mainPersistenceDto);
@@ -121,7 +122,7 @@ public class ConvertisseurPersistanceVersApi {
         return joueursExtraits;
     }
 
-    private List<ContenuTourDto> extraireToursDepuisMain(MainPersistenceDto mainPersistenceDto) throws ErreurLectureFichier {
+    private List<ContenuTourDto> extraireToursDepuisMain(MainPersistenceDto mainPersistenceDto) throws ErreurLectureFichier, JoueurNonExistant {
         List<ContenuTourDto> toursExtraits = new ArrayList<>();
         for (TourPersistanceDto tourPersistanceDto : mainPersistenceDto.obtTours()) {
             this.moteurJeu.nouveauRound(RoundPoker.valueOf(tourPersistanceDto.obtNomTour()));
@@ -164,7 +165,7 @@ public class ConvertisseurPersistanceVersApi {
         return blindesExtraites;
     }
 
-    private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto, RoundPoker roundPoker) throws ErreurLectureFichier {
+    private ActionDto convertirActionVersApi(ActionPersistanceDto actionPersistanceDto, RoundPoker roundPoker) throws ErreurLectureFichier, JoueurNonExistant {
         String nomJoueur = actionPersistanceDto.obtNomJoueur();
 
         BigDecimal montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);

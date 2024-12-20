@@ -54,9 +54,10 @@ public class ServiceConsultationPartie {
     private MainPersistenceDto convertirMainJpaVersDto(MainJpa mainJpa) {
         MainPersistenceDto mainPersistenceDto = new MainPersistenceDto(
                 mainJpa.getIdentifiantParse(),
-                mainJpa.getMontantBB(),
                 mainJpa.getIndexMain()
         );
+
+        mainPersistenceDto.ajouterMontantBB(mainJpa.getMontantBB());
 
         for (InfosJoueurJpa infosJoueurJpa : mainJpa.getInfosJoueurJpa()) {
             ajouterJoueurMainPersistenceDto(mainPersistenceDto, infosJoueurJpa);

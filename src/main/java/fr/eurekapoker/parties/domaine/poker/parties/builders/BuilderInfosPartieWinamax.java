@@ -2,7 +2,6 @@ package fr.eurekapoker.parties.domaine.poker.parties.builders;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
-import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartieWinamax;
 
 import java.math.BigDecimal;

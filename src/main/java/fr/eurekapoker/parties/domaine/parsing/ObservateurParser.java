@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.domaine.parsing;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.parsing.dto.NouveauTour;
 import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
@@ -14,7 +15,9 @@ import java.util.List;
 public interface ObservateurParser {
     void fixInfosPartie(InfosPartiePoker infosPartiePoker);
 
-    void ajouterMain(MainPoker mainPoker, BigDecimal montantBB) throws ErreurLectureFichier;
+    void ajouterMain(MainPoker mainPoker) throws ErreurLectureFichier;
+    void supprimerDerniereMain();
+    void ajouterMontantBB(BigDecimal montantBB);
 
     void ajouterJoueur(InfosJoueur infosJoueur) throws ErreurLectureFichier;
 
@@ -26,7 +29,7 @@ public interface ObservateurParser {
 
     void ajouterTour(NouveauTour nouveauTour) throws ErreurLectureFichier;
 
-    void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier;
+    void ajouterAction(ActionPokerJoueur actionPoker) throws ErreurLectureFichier, JoueurNonExistant;
     void mainTerminee();
 
     void ajouterGains(String nomJoueur, BigDecimal bigDecimal);

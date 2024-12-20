@@ -3,6 +3,10 @@ package fr.eurekapoker.parties.domaine.parsing.txt.parser;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosMainWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosTableWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.ResultatJoueurWinamax;
+import fr.eurekapoker.parties.domaine.parsing.txt.ParserTxt;
 import fr.eurekapoker.parties.domaine.parsing.txt.extracteur.ExtracteurWinamax;
 import fr.eurekapoker.parties.domaine.parsing.txt.interpreteur.InterpreteurWinamax;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
@@ -17,23 +21,15 @@ import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
 
-import java.io.IOException;
 import java.math.BigDecimal;
-import java.net.URISyntaxException;
-import java.nio.file.DirectoryStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-public class ParserWinamaxTest {
-    @Mock
-    private ObservateurParser observateurParser;
+public class ParserWinamaxTest extends ParserTxtModele {
+
     @Mock
     private InterpreteurWinamax interpreteurWinamax;
     @Mock
@@ -55,7 +51,7 @@ public class ParserWinamaxTest {
     private TourPoker tourPokerMock;
     private List<TourPoker> tourPokers;
     @Mock
-    private ResultatJoueur resultatJoueurMock;
+    private ResultatJoueurWinamax resultatJoueurMock;
     @Mock
     private InfosMainWinamax infosMain;
     @InjectMocks
@@ -104,7 +100,8 @@ public class ParserWinamaxTest {
         parserWinamax.lancerImport();
         verify(observateurParser, times(1)).mainTerminee();
         verify(extracteurWinamax).extraireInfosMain(lignesFichier[0]);
-        verify(observateurParser).ajouterMain(any(MainPoker.class), any());
+        verify(observateurParser).ajouterMain(any(MainPoker.class));
+        verify(observateurParser).ajouterMontantBB(any());
 
         verify(builderInfosPartieWinamax).donneesIncompletes();
     }
@@ -178,7 +175,7 @@ public class ParserWinamaxTest {
         when(interpreteurWinamax.estNouveauTour()).thenReturn(Boolean.TRUE);
 
         parserWinamax.lancerImport();
-        verify(extracteurWinamax).extraireNouveauTour(lignesFichier[0]);
+        verify(extracteurWinamax).extraireNouveauTour(lignesFichier[0], new ArrayList<>());
         verify(observateurParser).ajouterTour(any());
     }
 
@@ -192,64 +189,13 @@ public class ParserWinamaxTest {
     }
 
     @Test
-    void peutLireLesFichiersWinamax() throws IOException, URISyntaxException {
-        Path cheminRepertoire = Paths.get(Objects.requireNonNull(getClass().getResource("/parsing/winamax")).toURI());
-
-
-        assertTrue(Files.exists(cheminRepertoire),
-                "Le répertoire parsing/winamax n'existe pas dans les ressources.");
-
-        int nFichiersTestes = 0;
-
-        try (DirectoryStream<Path> fichiers = Files.newDirectoryStream(cheminRepertoire)) {
-            for (Path fichier : fichiers) {
-                if (Files.isRegularFile(fichier)) {
-                    String[] lignesFichier = lireFichierSousFormeDeTableau(fichier);
-
-                    ParserWinamax parserWinamax = new ParserWinamax(observateurParser, lignesFichier);
-                    assertTrue(parserWinamax.peutLireFichier(), "Fichier non reconnu :" + fichier);
-                }
-                nFichiersTestes++;
-            }
-        }
-
-        assertTrue(nFichiersTestes >= 3, "Pas assez de fichiers de tests");
+    void peutLireUniquementLesFichiersWinamax() throws Exception {
+        assertTrue(peutLireLesFichiers("winamax"));
+        assertFalse(peutLireFichiersAutresQue("winamax", new ArrayList<>()));
     }
 
-    private String[] lireFichierSousFormeDeTableau(Path fichier) throws IOException {
-        // Lire toutes les lignes du fichier dans une liste de chaînes
-        List<String> lignes = Files.readAllLines(fichier);
-
-        // Convertir la liste en un tableau de chaînes (String[])
-        return lignes.toArray(new String[0]);
-    }
-
-
-    @Test
-    void nePeutPasLireLesFichiersNonWinamax() throws IOException, URISyntaxException {
-        List<Path> chemins = new ArrayList<>();
-        // todo ajout de nouvelles roooms => vérifier que c'est faux pour toutes les autres rooms
-        //Path cheminRepertoire = Paths.get(Objects.requireNonNull(getClass().getResource("/parsing/winamax")).toURI());
-
-        for (Path cheminRepertoire: chemins) {
-            assertTrue(Files.exists(cheminRepertoire),
-                    "Le répertoire parsing/winamax n'existe pas dans les ressources.");
-
-            int nFichiersTestes = 0;
-
-            try (DirectoryStream<Path> fichiers = Files.newDirectoryStream(cheminRepertoire)) {
-                for (Path fichier : fichiers) {
-                    if (Files.isRegularFile(fichier)) {
-                        String[] lignesFichier = lireFichierSousFormeDeTableau(fichier);
-
-                        ParserWinamax parserWinamax = new ParserWinamax(observateurParser, lignesFichier);
-                        assertTrue(parserWinamax.peutLireFichier(), "Fichier non reconnu :" + fichier);
-                    }
-                    nFichiersTestes++;
-                }
-            }
-
-            assertTrue(nFichiersTestes >= 3, "Pas assez de fichiers de tests");
-        }
+    @Override
+    protected ParserTxt fabriqueParserTxt(ObservateurParser observateurParser, String[] lignesFichier) {
+        return new ParserWinamax(observateurParser, lignesFichier);
     }
 }

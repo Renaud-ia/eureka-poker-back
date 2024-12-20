@@ -3,6 +3,9 @@ package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosMainWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosTableWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.ResultatJoueurWinamax;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
@@ -365,7 +368,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesPreflop() throws ErreurRegex {
         String ligne = "*** PRE-FLOP *** ";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         assertTrue(cartesExtraites.isEmpty());
 
@@ -375,7 +378,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesFlop() throws ErreurRegex {
         String ligne = "*** FLOP *** [Js 3h Ad]";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('J', 's'));
@@ -389,7 +392,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesTurn() throws ErreurRegex {
         String ligne = "*** TURN *** [8h 3d 7c][7d]";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('8', 'h'));
@@ -404,7 +407,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void extraitCartesRiver() throws ErreurRegex {
         String ligne = "*** RIVER *** [9h Tc Ad 9s][6s]";
-        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne);
+        NouveauTour nouveauTour = extracteurWinamax.extraireNouveauTour(ligne, null);
         List<CartePoker> cartesExtraites = nouveauTour.obtCartesExtraites();
         List<CartePoker> cartesAttendues = new ArrayList<>();
         cartesAttendues.add(new CartePoker('9', 'h'));
@@ -457,7 +460,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void doitExtraireResultatJoueur() throws ErreurRegex {
         String ligne = "Seat 4: ALAVERDURE (big blind) won 425";
-        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        ResultatJoueurWinamax resultatJoueur = extracteurWinamax.extraireResultat(ligne);
         assertEquals("ALAVERDURE", resultatJoueur.getNomJoueur());
         BigDecimal montantAttendu = new BigDecimal("425");
         assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
@@ -468,7 +471,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void doitExtraireResultatJoueurAvecSeat() throws ErreurRegex {
         String ligne = "Seat 2: RendsL4rgent (small blind) showed [4h 4s] and lost with Quads of 8";
-        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        ResultatJoueurWinamax resultatJoueur = extracteurWinamax.extraireResultat(ligne);
         assertEquals("RendsL4rgent", resultatJoueur.getNomJoueur());
         BigDecimal montantAttendu = new BigDecimal("0");
         assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
@@ -481,7 +484,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void doitExtraireResultatJoueurAvecCartes () throws ErreurRegex {
         String ligne = "Seat 6: Cello33 showed [5h 5c] and won 11553 with Quads of 8";
-        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        ResultatJoueurWinamax resultatJoueur = extracteurWinamax.extraireResultat(ligne);
         assertEquals("Cello33", resultatJoueur.getNomJoueur());
         BigDecimal montantAttendu = new BigDecimal("11553");
         assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));
@@ -494,7 +497,7 @@ public class ExtracteurWinamaxTest {
     @Test
     void doitExtraireResultatJoueurEnEuros() throws ErreurRegex {
         String ligne = "Seat 1: Ivenwicht (big blind) showed [Kd Ah] and won 1.90€ with High card : Ace";
-        ResultatJoueur resultatJoueur = extracteurWinamax.extraireResultat(ligne);
+        ResultatJoueurWinamax resultatJoueur = extracteurWinamax.extraireResultat(ligne);
         assertEquals("Ivenwicht", resultatJoueur.getNomJoueur());
         BigDecimal montantAttendu = new BigDecimal("1.9");
         assertEquals(0, montantAttendu.compareTo(resultatJoueur.obtMontantGagne()));

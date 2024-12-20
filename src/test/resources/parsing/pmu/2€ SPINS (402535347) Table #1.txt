@@ -1,0 +1,161 @@
+Game #24771887244 starts.
+
+#Game No : 24771887244 
+***** Hand History for Game 24771887244 *****
+NL Texas Hold'em €2 EUR Buy-in  - Saturday, December 14, 13:45:56 CET 2024
+Table 2€ SPINS (402535347) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 3: SACPALSA ( 500 )
+Seat 2: Sbg72. ( 500 )
+Seat 1: rendslargent33 ( 500 )
+Trny: 402535347 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+Sbg72. posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Js 2h ]
+SACPALSA calls [20]
+rendslargent33 folds
+Sbg72. checks
+** Dealing Flop ** [ Kc, 5s, 5d ]
+Sbg72. checks
+SACPALSA checks
+** Dealing Turn ** [ 4c ]
+Sbg72. checks
+SACPALSA checks
+** Dealing River ** [ 3s ]
+Sbg72. checks
+SACPALSA bets [310]
+Sbg72. folds
+SACPALSA does not show cards.
+SACPALSA wins 360 chips
+Game #24771888099 starts.
+
+#Game No : 24771888099 
+***** Hand History for Game 24771888099 *****
+NL Texas Hold'em €2 EUR Buy-in  - Saturday, December 14, 13:46:53 CET 2024
+Table 2€ SPINS (402535347) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 3: SACPALSA ( 530 )
+Seat 2: Sbg72. ( 480 )
+Seat 1: rendslargent33 ( 490 )
+Trny: 402535347 Level: 1 
+Blinds(10/20)
+Sbg72. posts small blind [10].
+SACPALSA posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kd 2h ]
+rendslargent33 raises [40]
+Sbg72. raises [130]
+SACPALSA calls [120]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+** Dealing Flop ** [ 8h, 8s, 9d ]
+Sbg72. checks
+SACPALSA checks
+** Dealing Turn ** [ Qc ]
+Sbg72. checks
+SACPALSA checks
+** Dealing River ** [ 4c ]
+Sbg72. checks
+SACPALSA bets [180]
+Sbg72. is all-In  [340]
+SACPALSA calls [160]
+SACPALSA shows [ 2s, 8d ]three of a kind.
+Sbg72. shows [ 7c, 7h ]two pairs.
+SACPALSA wins 1,000 chips from the main pot with three of a kind.
+Player Sbg72. finished in 3.
+Game #24771889068 starts.
+
+#Game No : 24771889068 
+***** Hand History for Game 24771889068 *****
+NL Texas Hold'em €2 EUR Buy-in  - Saturday, December 14, 13:47:53 CET 2024
+Table 2€ SPINS (402535347) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: SACPALSA ( 1,050 )
+Seat 1: rendslargent33 ( 450 )
+Trny: 402535347 Level: 1 
+Blinds(10/20)
+SACPALSA posts small blind [10].
+rendslargent33 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Tc 3c ]
+SACPALSA calls [10]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 checks
+** Dealing Flop ** [ 6d, 2h, 7d ]
+rendslargent33 checks
+SACPALSA checks
+** Dealing Turn ** [ 6h ]
+rendslargent33 checks
+SACPALSA checks
+** Dealing River ** [ 5c ]
+rendslargent33 bets [40]
+SACPALSA calls [40]
+rendslargent33 shows [ Tc, 3c ]one pair.
+SACPALSA shows [ Ah, Ad ]two pairs.
+SACPALSA wins 120 chips from the main pot with two pairs.
+Game #24771890806 starts.
+
+#Game No : 24771890806 
+***** Hand History for Game 24771890806 *****
+NL Texas Hold'em €2 EUR Buy-in  - Saturday, December 14, 13:48:40 CET 2024
+Table 2€ SPINS (402535347) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 3: SACPALSA ( 1,110 )
+Seat 1: rendslargent33 ( 390 )
+Trny: 402535347 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+SACPALSA posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Th 8d ]
+rendslargent33 calls [10]
+SACPALSA checks
+** Dealing Flop ** [ Qc, 7h, 2s ]
+SACPALSA checks
+rendslargent33 bets [20]
+SACPALSA calls [20]
+** Dealing Turn ** [ 9s ]
+SACPALSA checks
+rendslargent33 bets [60]
+SACPALSA folds
+rendslargent33 does not show cards.
+rendslargent33 wins 140 chips
+Game #24771891474 starts.
+
+#Game No : 24771891474 
+***** Hand History for Game 24771891474 *****
+NL Texas Hold'em €2 EUR Buy-in  - Saturday, December 14, 13:49:21 CET 2024
+Table 2€ SPINS (402535347) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 3: SACPALSA ( 1,070 )
+Seat 1: rendslargent33 ( 430 )
+Trny: 402535347 Level: 2 
+Blinds(15/30)
+SACPALSA posts small blind [15].
+rendslargent33 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  3s 8c ]
+SACPALSA calls [15]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [90]
+SACPALSA calls [90]
+** Dealing Flop ** [ Ts, Kh, Ks ]
+rendslargent33 bets [60]
+SACPALSA calls [60]
+** Dealing Turn ** [ Jc ]
+rendslargent33 is all-In  [250]
+SACPALSA calls [250]
+** Dealing River ** [ Qc ]
+rendslargent33 shows [ 3s, 8c ]one pair.
+SACPALSA shows [ Qd, 3c ]two pairs.
+SACPALSA wins 860 chips from the main pot with two pairs.
+Congratulations to player SACPALSA for winning tournament 2€ SPINS
+Player rendslargent33 finished in 2.
+Player SACPALSA finished in 1 place and received €4 EUR 
