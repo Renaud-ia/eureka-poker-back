@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session sessioncode="5658765427">
+<general>
+<client_version>24.7.1.16</client_version>
+<mode>real</mode>
+<gametype>Holdem NL</gametype>
+<tablename>Flash Twister 5€, 1035440921</tablename>
+<tournamentcode>1035440919</tournamentcode>
+<tournamentname>Flash Twister 5€</tournamentname>
+<buyin>€0 + €0.35 + €4.65</buyin>
+<totalbuyin>€5</totalbuyin>
+<rewarddrawn>€10</rewarddrawn>
+<tournamentcurrency>EUR</tournamentcurrency>
+<currency>EUR</currency>
+<nickname>KuzAlMenDie</nickname>
+<gamecount>17</gamecount>
+<startdate>2024-11-29 23:10:32</startdate>
+<place>1</place>
+<win>€10</win>
+<tablesize>3</tablesize>
+</general>
+<game gamecode="8108898967"><general><startdate>2024-11-29 23:10:48</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="200" dealer="0" win="20" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="200" dealer="1" win="0" bet="0" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="3" name="BiipBoop" chips="200" dealer="0" win="0" bet="10" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+</players>
+</general>
+<round no="0"><action no="1" player="BiipBoop" type="1" sum="10"/>
+<action no="2" player="54048" type="2" sum="20"/>
+</round>
+<round no="1"><cards type="Pocket" player="KuzAlMenDie">S2 SQ</cards>
+<cards type="Pocket" player="BiipBoop">X X</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<action no="3" player="KuzAlMenDie" type="0" sum="0"/>
+<action no="4" player="BiipBoop" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916067"><general><startdate>2024-11-29 23:11:01</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="200" dealer="0" win="0" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="3" name="BiipBoop" chips="190" dealer="1" win="0" bet="0" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+<player seat="6" name="54048" chips="210" dealer="0" win="40" bet="210" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="10"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="20"/>
+</round>
+<round no="1"><cards type="Pocket" player="KuzAlMenDie">H8 C5</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="BiipBoop">X X</cards>
+<action no="3" player="BiipBoop" type="0" sum="0"/>
+<action no="4" player="54048" type="23" sum="210"/>
+<action no="5" player="KuzAlMenDie" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916118"><general><startdate>2024-11-29 23:11:13</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="3" name="BiipBoop" chips="190" dealer="0" win="0" bet="80" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+<player seat="6" name="54048" chips="230" dealer="1" win="0" bet="0" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="180" dealer="0" win="160" bet="80" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="10"/>
+<action no="2" player="BiipBoop" type="2" sum="20"/>
+</round>
+<round no="1"><cards type="Pocket" player="BiipBoop">C9 HJ</cards>
+<cards type="Pocket" player="KuzAlMenDie">SJ S4</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<action no="3" player="54048" type="0" sum="0"/>
+<action no="4" player="KuzAlMenDie" type="23" sum="40"/>
+<action no="5" player="BiipBoop" type="3" sum="20"/>
+</round>
+<round no="2"><cards type="Flop">H5 C6 H4</cards>
+<action no="6" player="KuzAlMenDie" type="4" sum="0"/>
+<action no="7" player="BiipBoop" type="4" sum="0"/>
+</round>
+<round no="3"><cards type="Turn">H3</cards>
+<action no="8" player="KuzAlMenDie" type="4" sum="0"/>
+<action no="9" player="BiipBoop" type="4" sum="0"/>
+</round>
+<round no="4"><cards type="River">DK</cards>
+<action no="10" player="KuzAlMenDie" type="4" sum="0"/>
+<action no="11" player="BiipBoop" type="5" sum="40"/>
+<action no="12" player="KuzAlMenDie" type="3" sum="40"/>
+</round>
+</game>
+<game gamecode="8108916281"><general><startdate>2024-11-29 23:11:52</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="230" dealer="0" win="0" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="260" dealer="1" win="0" bet="0" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="3" name="BiipBoop" chips="110" dealer="0" win="40" bet="110" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+</players>
+</general>
+<round no="0"><action no="1" player="BiipBoop" type="1" sum="10"/>
+<action no="2" player="54048" type="2" sum="20"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">DJ H6</cards>
+<cards type="Pocket" player="BiipBoop">X X</cards>
+<action no="3" player="KuzAlMenDie" type="0" sum="0"/>
+<action no="4" player="BiipBoop" type="23" sum="110"/>
+<action no="5" player="54048" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916333"><general><startdate>2024-11-29 23:12:06</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="260" dealer="0" win="0" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="3" name="BiipBoop" chips="130" dealer="1" win="50" bet="130" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+<player seat="6" name="54048" chips="210" dealer="0" win="0" bet="10" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="10"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="20"/>
+</round>
+<round no="1"><cards type="Pocket" player="BiipBoop">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">C9 C4</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<action no="3" player="BiipBoop" type="23" sum="130"/>
+<action no="4" player="54048" type="0" sum="0"/>
+<action no="5" player="KuzAlMenDie" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916384"><general><startdate>2024-11-29 23:12:17</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="3" name="BiipBoop" chips="160" dealer="0" win="0" bet="30" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+<player seat="6" name="54048" chips="200" dealer="1" win="75" bet="200" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="240" dealer="0" win="0" bet="15" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="15"/>
+<action no="2" player="BiipBoop" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="BiipBoop">X X</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">D6 C5</cards>
+<action no="3" player="54048" type="23" sum="200"/>
+<action no="4" player="KuzAlMenDie" type="0" sum="0"/>
+<action no="5" player="BiipBoop" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916444"><general><startdate>2024-11-29 23:12:30</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="245" dealer="0" win="0" bet="30" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="225" dealer="1" win="290" bet="225" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="3" name="BiipBoop" chips="130" dealer="0" win="0" bet="130" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765356"/>
+</players>
+</general>
+<round no="0"><action no="1" player="BiipBoop" type="1" sum="15"/>
+<action no="2" player="54048" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="BiipBoop">H6 D6</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">CQ CA</cards>
+<action no="3" player="KuzAlMenDie" type="23" sum="225"/>
+<action no="4" player="BiipBoop" type="7" sum="115"/>
+<action no="5" player="54048" type="0" sum="0"/>
+</round>
+<round no="2"><cards type="Flop">H5 SA D3</cards>
+</round>
+<round no="3"><cards type="Turn">H3</cards>
+</round>
+<round no="4"><cards type="River">SQ</cards>
+</round>
+</game>
+<game gamecode="8108916541"><general><startdate>2024-11-29 23:12:56</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="385" dealer="0" win="30" bet="30" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="6" name="54048" chips="215" dealer="1" win="0" bet="15" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="15"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="KuzAlMenDie">S10 DJ</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<action no="3" player="54048" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916567"><general><startdate>2024-11-29 23:13:02</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="200" dealer="0" win="0" bet="30" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="400" dealer="1" win="60" bet="400" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="15"/>
+<action no="2" player="54048" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">S9 D7</cards>
+<action no="3" player="KuzAlMenDie" type="23" sum="400"/>
+<action no="4" player="54048" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916623"><general><startdate>2024-11-29 23:13:16</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="430" dealer="0" win="30" bet="30" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="6" name="54048" chips="170" dealer="1" win="0" bet="15" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="15"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">H7 DK</cards>
+<action no="3" player="54048" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916656"><general><startdate>2024-11-29 23:13:23</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="155" dealer="0" win="30" bet="30" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="445" dealer="1" win="0" bet="15" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="15"/>
+<action no="2" player="54048" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="KuzAlMenDie">C8 C2</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<action no="3" player="KuzAlMenDie" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916691"><general><startdate>2024-11-29 23:13:33</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="430" dealer="0" win="0" bet="430" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="6" name="54048" chips="170" dealer="1" win="340" bet="170" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="15"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="30"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">SK S10</cards>
+<cards type="Pocket" player="KuzAlMenDie">CK S9</cards>
+<action no="3" player="54048" type="3" sum="15"/>
+<action no="4" player="KuzAlMenDie" type="23" sum="430"/>
+<action no="5" player="54048" type="7" sum="140"/>
+</round>
+<round no="2"><cards type="Flop">CA S4 S3</cards>
+</round>
+<round no="3"><cards type="Turn">S8</cards>
+</round>
+<round no="4"><cards type="River">C6</cards>
+</round>
+</game>
+<game gamecode="8108916799"><general><startdate>2024-11-29 23:14:00</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="340" dealer="0" win="40" bet="40" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="260" dealer="1" win="0" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="20"/>
+<action no="2" player="54048" type="2" sum="40"/>
+</round>
+<round no="1"><cards type="Pocket" player="KuzAlMenDie">S2 C8</cards>
+<cards type="Pocket" player="54048">X X</cards>
+<action no="3" player="KuzAlMenDie" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916825"><general><startdate>2024-11-29 23:14:06</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="240" dealer="0" win="40" bet="40" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="6" name="54048" chips="360" dealer="1" win="0" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="20"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="40"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">D7 H7</cards>
+<action no="3" player="54048" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916850"><general><startdate>2024-11-29 23:14:12</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="340" dealer="0" win="40" bet="40" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="260" dealer="1" win="0" bet="20" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="20"/>
+<action no="2" player="54048" type="2" sum="40"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">X X</cards>
+<cards type="Pocket" player="KuzAlMenDie">S7 D4</cards>
+<action no="3" player="KuzAlMenDie" type="0" sum="0"/>
+</round>
+</game>
+<game gamecode="8108916900"><general><startdate>2024-11-29 23:14:23</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="10" name="KuzAlMenDie" chips="240" dealer="0" win="480" bet="240" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+<player seat="6" name="54048" chips="360" dealer="1" win="0" bet="360" muck="1" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+</players>
+</general>
+<round no="0"><action no="1" player="54048" type="1" sum="20"/>
+<action no="2" player="KuzAlMenDie" type="2" sum="40"/>
+</round>
+<round no="1"><cards type="Pocket" player="54048">D4 HQ</cards>
+<cards type="Pocket" player="KuzAlMenDie">DJ DK</cards>
+<action no="3" player="54048" type="23" sum="360"/>
+<action no="4" player="KuzAlMenDie" type="7" sum="200"/>
+</round>
+<round no="2"><cards type="Flop">CA S6 S3</cards>
+</round>
+<round no="3"><cards type="Turn">D5</cards>
+</round>
+<round no="4"><cards type="River">D8</cards>
+</round>
+</game>
+<game gamecode="8108916969"><general><startdate>2024-11-29 23:14:39</startdate>
+<round>1</round>
+<failsafecounter/>
+<players><player seat="6" name="54048" chips="120" dealer="0" win="0" bet="120" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765374"/>
+<player seat="10" name="KuzAlMenDie" chips="480" dealer="1" win="240" bet="480" muck="0" rebuy="0" addon="0" merge="0" rebuychips="0" reg_code="5658765427"/>
+</players>
+</general>
+<round no="0"><action no="1" player="KuzAlMenDie" type="1" sum="20"/>
+<action no="2" player="54048" type="2" sum="40"/>
+</round>
+<round no="1"><cards type="Pocket" player="KuzAlMenDie">DQ C6</cards>
+<cards type="Pocket" player="54048">C7 CJ</cards>
+<action no="3" player="KuzAlMenDie" type="23" sum="480"/>
+<action no="4" player="54048" type="7" sum="80"/>
+</round>
+<round no="2"><cards type="Flop">H10 D3 HA</cards>
+</round>
+<round no="3"><cards type="Turn">H3</cards>
+</round>
+<round no="4"><cards type="River">H4</cards>
+</round>
+</game>
+</session>

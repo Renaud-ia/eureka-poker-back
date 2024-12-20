@@ -7,6 +7,7 @@ import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.xml.ParserXml;
 import fr.eurekapoker.parties.domaine.parsing.xml.extracteur.ExtracteurBetclic;
 import fr.eurekapoker.parties.domaine.parsing.xml.parser.ParserBetclic;
+import fr.eurekapoker.parties.domaine.parsing.xml.parser.ParserIPoker;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
@@ -31,7 +32,7 @@ public class DomaineServiceImportXml implements DomaineServiceImport {
 
             Document document = builder.parse(inputStream);
             ExtracteurBetclic extracteurBetclic = new ExtracteurBetclic();
-            this.parserXml = new ParserBetclic(observateurParser, document, extracteurBetclic);
+            this.parserXml = new ParserIPoker(observateurParser, document, extracteurBetclic);
         }
 
         catch (ParserConfigurationException | java.io.IOException | SAXException erreurLecture) {
