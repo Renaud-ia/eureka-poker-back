@@ -21,6 +21,6 @@ public class InfosPartiePmu extends InfosPartiePoker {
 
     @Override
     public String getNomRoom() {
-        return "PMU";
+        return "PartyGaming";
     }
 }

@@ -26,7 +26,7 @@ public class FabriqueParserTxt {
 
     static {
         parsersDisponibles.put(RoomPoker.WINAMAX, ParserWinamax.class);
-        parsersDisponibles.put(RoomPoker.PMU, ParserPmu.class);
+        parsersDisponibles.put(RoomPoker.PARTY_GAMING, ParserPmu.class);
     }
     public static ParserTxt trouverParser(ObservateurParser observateurParser, String[] lignesFichier)
             throws Exception {
@@ -64,7 +64,7 @@ public class FabriqueParserTxt {
             return new InterpreteurWinamax();
         }
 
-        if (roomPoker == RoomPoker.PMU) {
+        if (roomPoker == RoomPoker.PARTY_GAMING) {
             return new InterpreteurPmu();
         }
 
@@ -76,7 +76,7 @@ public class FabriqueParserTxt {
             return new ExtracteurWinamax();
         }
 
-        if (roomPoker == RoomPoker.PMU) {
+        if (roomPoker == RoomPoker.PARTY_GAMING) {
             return new ExtracteurPmu();
         }
 
@@ -88,7 +88,7 @@ public class FabriqueParserTxt {
             return new BuilderInfosPartieWinamax();
         }
 
-        if (roomPoker == RoomPoker.PMU) {
+        if (roomPoker == RoomPoker.PARTY_GAMING) {
             return new BuilderInfosPartiePmu();
         }
 

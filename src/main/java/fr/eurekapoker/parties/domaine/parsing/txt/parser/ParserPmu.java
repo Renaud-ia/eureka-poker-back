@@ -160,7 +160,7 @@ public class ParserPmu extends ParserTxt {
 
     @Override
     public RoomPoker obtRoomPoker() {
-        return RoomPoker.PMU;
+        return RoomPoker.PARTY_GAMING;
     }
 
     @Override
