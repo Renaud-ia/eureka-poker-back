@@ -11,7 +11,7 @@ public class MainPersistenceDto {
     // todo coder les vérifications
     private final long idParse;
     private final int indexMain;
-    private final BigDecimal montantBB;
+    private BigDecimal montantBB;
     private final HashMap<JoueurPersistenceDto, Integer> siegesJoueursPresents;
     private final List<TourPersistanceDto> tours;
     private final HashMap<String, String> cartesJoueursString;
@@ -25,11 +25,9 @@ public class MainPersistenceDto {
     private String nomHero;
     private int positionDealer;
     public MainPersistenceDto(long idParse,
-                              BigDecimal montantBB,
                               int indexMain) {
         this.idParse = idParse;
         this.indexMain = indexMain;
-        this.montantBB = montantBB;
         this.siegesJoueursPresents = new HashMap<>();
         this.tours = new ArrayList<>();
         this.cartesJoueursString = new HashMap<>();
@@ -40,6 +38,10 @@ public class MainPersistenceDto {
         this.valueParAction = new HashMap<>();
         this.stackDepart = new HashMap<>();
         this.bounty = new HashMap<>();
+    }
+
+    public void ajouterMontantBB(BigDecimal montantBB) {
+        this.montantBB = montantBB;
     }
 
     public void ajouterJoueur(JoueurPersistenceDto nouveauJoueur, int numeroSiege) {

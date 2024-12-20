@@ -1,4 +1,6 @@
-package fr.eurekapoker.parties.domaine.parsing.dto;
+package fr.eurekapoker.parties.domaine.parsing.dto.betclic;
+
+import fr.eurekapoker.parties.domaine.parsing.dto.InfosJoueur;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

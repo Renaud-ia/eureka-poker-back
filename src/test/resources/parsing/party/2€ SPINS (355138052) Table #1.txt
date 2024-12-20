@@ -1,0 +1,417 @@
+Game #23329541609 starts.
+
+#Game No : 23329541609 
+***** Hand History for Game 23329541609 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:19:56 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: M40skyle ( 500 )
+Seat 3: jfedelamone ( 500 )
+Seat 2: mitchextrem ( 500 )
+Trny: 355138052 Level: 1 
+Blinds(10/20)
+M40skyle posts small blind [10].
+mitchextrem posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  3c 6c ]
+jfedelamone folds
+M40skyle calls [10]
+mitchextrem raises [80]
+M40skyle calls [80]
+** Dealing Flop ** [ Ts, 5c, 2c ]
+M40skyle checks
+mitchextrem is all-In  [400]
+M40skyle is all-In  [400]
+** Dealing Turn ** [ 4c ]
+** Dealing River ** [ 7d ]
+M40skyle shows [ 5d, 5h ]three of a kind.
+mitchextrem shows [ Jc, 8h ]high card.
+M40skyle wins 1,000 chips from the main pot with three of a kind.
+Player mitchextrem finished in 3.
+Game #23329542855 starts.
+
+#Game No : 23329542855 
+***** Hand History for Game 23329542855 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:20:29 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 1,000 )
+Seat 3: jfedelamone ( 500 )
+Trny: 355138052 Level: 1 
+Blinds(10/20)
+M40skyle posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  Qs 3c ]
+M40skyle calls [10]
+jfedelamone checks
+** Dealing Flop ** [ As, 2c, 9h ]
+jfedelamone checks
+M40skyle checks
+** Dealing Turn ** [ 7d ]
+jfedelamone checks
+M40skyle checks
+** Dealing River ** [ 7c ]
+jfedelamone checks
+M40skyle checks
+jfedelamone shows [ Qs, 3c ]one pair.
+M40skyle shows [ 6s, Kh ]one pair.
+M40skyle wins 40 chips from the main pot with one pair.
+Game #23329544633 starts.
+
+#Game No : 23329544633 
+***** Hand History for Game 23329544633 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:21:10 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 1,020 )
+Seat 3: jfedelamone ( 480 )
+Trny: 355138052 Level: 1 
+Blinds(10/20)
+jfedelamone posts small blind [10].
+M40skyle posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  7s Qh ]
+jfedelamone calls [10]
+M40skyle checks
+** Dealing Flop ** [ Ac, Ts, 3s ]
+M40skyle checks
+jfedelamone checks
+** Dealing Turn ** [ 2h ]
+M40skyle bets [20]
+jfedelamone calls [20]
+** Dealing River ** [ 3h ]
+M40skyle bets [20]
+jfedelamone folds
+M40skyle does not show cards.
+M40skyle wins 100 chips
+Game #23329546500 starts.
+
+#Game No : 23329546500 
+***** Hand History for Game 23329546500 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:21:42 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 1,060 )
+Seat 3: jfedelamone ( 440 )
+Trny: 355138052 Level: 1 
+Blinds(10/20)
+M40skyle posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  4h Qh ]
+M40skyle calls [10]
+jfedelamone checks
+** Dealing Flop ** [ 4c, 5h, Kd ]
+jfedelamone checks
+M40skyle checks
+** Dealing Turn ** [ Jd ]
+jfedelamone checks
+M40skyle checks
+** Dealing River ** [ Ad ]
+jfedelamone checks
+M40skyle checks
+jfedelamone shows [ 4h, Qh ]one pair.
+M40skyle doesn't show [ Ts, 6s ]high card.
+jfedelamone wins 40 chips from the main pot with a pair of Fours.
+Game #23329548199 starts.
+
+#Game No : 23329548199 
+***** Hand History for Game 23329548199 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:22:10 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 1,040 )
+Seat 3: jfedelamone ( 460 )
+Trny: 355138052 Level: 1 
+Blinds(10/20)
+jfedelamone posts small blind [10].
+M40skyle posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  Qs 4c ]
+jfedelamone calls [10]
+M40skyle checks
+** Dealing Flop ** [ 2s, Qh, 5s ]
+M40skyle checks
+jfedelamone checks
+** Dealing Turn ** [ 7c ]
+M40skyle checks
+jfedelamone bets [20]
+M40skyle calls [20]
+** Dealing River ** [ Kh ]
+M40skyle checks
+jfedelamone bets [40]
+M40skyle folds
+jfedelamone does not show cards.
+jfedelamone wins 120 chips
+Game #23329550528 starts.
+
+#Game No : 23329550528 
+***** Hand History for Game 23329550528 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:22:52 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 1,000 )
+Seat 3: jfedelamone ( 500 )
+Trny: 355138052 Level: 1 
+Blinds(10/20)
+M40skyle posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  Ks 2d ]
+M40skyle calls [10]
+jfedelamone checks
+** Dealing Flop ** [ 3s, 5h, 8h ]
+jfedelamone checks
+M40skyle bets [20]
+jfedelamone folds
+M40skyle does not show cards.
+M40skyle wins 60 chips
+Game #23329551618 starts.
+
+#Game No : 23329551618 
+***** Hand History for Game 23329551618 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:23:17 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 1,020 )
+Seat 3: jfedelamone ( 480 )
+Trny: 355138052 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+M40skyle posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  8c 5s ]
+jfedelamone calls [15]
+M40skyle checks
+** Dealing Flop ** [ 2h, Jc, 4h ]
+M40skyle checks
+jfedelamone checks
+** Dealing Turn ** [ 9s ]
+M40skyle checks
+jfedelamone bets [30]
+M40skyle folds
+jfedelamone does not show cards.
+jfedelamone wins 90 chips
+Game #23329553253 starts.
+
+#Game No : 23329553253 
+***** Hand History for Game 23329553253 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:23:56 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 990 )
+Seat 3: jfedelamone ( 510 )
+Trny: 355138052 Level: 2 
+Blinds(15/30)
+M40skyle posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Js 9d ]
+M40skyle calls [15]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone checks
+** Dealing Flop ** [ 8d, 4s, 4d ]
+jfedelamone checks
+M40skyle checks
+** Dealing Turn ** [ 3s ]
+jfedelamone checks
+M40skyle checks
+** Dealing River ** [ 8c ]
+jfedelamone bets [60]
+M40skyle folds
+jfedelamone does not show cards.
+jfedelamone wins 120 chips
+Game #23329555224 starts.
+
+#Game No : 23329555224 
+***** Hand History for Game 23329555224 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:24:42 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 960 )
+Seat 3: jfedelamone ( 540 )
+Trny: 355138052 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+M40skyle posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Td 4h ]
+jfedelamone calls [15]
+M40skyle checks
+** Dealing Flop ** [ 9h, 4s, Ts ]
+M40skyle checks
+jfedelamone bets [30]
+M40skyle calls [30]
+** Dealing Turn ** [ As ]
+M40skyle bets [60]
+jfedelamone calls [60]
+** Dealing River ** [ Qs ]
+M40skyle checks
+jfedelamone checks
+M40skyle shows [ 7d, 5d ]high card.
+jfedelamone shows [ Td, 4h ]two pairs.
+jfedelamone wins 240 chips from the main pot with two pairs.
+Game #23329556535 starts.
+
+#Game No : 23329556535 
+***** Hand History for Game 23329556535 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:25:13 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 840 )
+Seat 3: jfedelamone ( 660 )
+Trny: 355138052 Level: 2 
+Blinds(15/30)
+M40skyle posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  8d Td ]
+M40skyle folds
+jfedelamone does not show cards.
+jfedelamone wins 45 chips
+Game #23329556935 starts.
+
+#Game No : 23329556935 
+***** Hand History for Game 23329556935 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:25:22 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 825 )
+Seat 3: jfedelamone ( 675 )
+Trny: 355138052 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+M40skyle posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  4h 9h ]
+jfedelamone calls [15]
+M40skyle checks
+** Dealing Flop ** [ 6d, Kh, 9c ]
+M40skyle checks
+jfedelamone checks
+** Dealing Turn ** [ 7s ]
+M40skyle checks
+jfedelamone bets [30]
+M40skyle calls [30]
+** Dealing River ** [ 3d ]
+M40skyle bets [30]
+jfedelamone calls [30]
+M40skyle shows [ 4s, 3h ]one pair.
+jfedelamone shows [ 4h, 9h ]one pair.
+jfedelamone wins 180 chips from the main pot with a pair of Nines.
+Game #23329558766 starts.
+
+#Game No : 23329558766 
+***** Hand History for Game 23329558766 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:25:53 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 735 )
+Seat 3: jfedelamone ( 765 )
+Trny: 355138052 Level: 2 
+Blinds(15/30)
+M40skyle posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  4d 2s ]
+M40skyle calls [15]
+jfedelamone checks
+** Dealing Flop ** [ Ac, Ah, 5s ]
+jfedelamone checks
+M40skyle bets [60]
+jfedelamone folds
+M40skyle does not show cards.
+M40skyle wins 120 chips
+Game #23329559558 starts.
+
+#Game No : 23329559558 
+***** Hand History for Game 23329559558 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:26:12 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 765 )
+Seat 3: jfedelamone ( 735 )
+Trny: 355138052 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+M40skyle posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Ad Qc ]
+jfedelamone raises [60]
+M40skyle calls [40]
+** Dealing Flop ** [ Qd, 6c, 3s ]
+M40skyle checks
+jfedelamone bets [60]
+M40skyle calls [60]
+** Dealing Turn ** [ 9d ]
+M40skyle checks
+jfedelamone bets [180]
+M40skyle folds
+jfedelamone does not show cards.
+jfedelamone wins 460 chips
+Game #23329561113 starts.
+
+#Game No : 23329561113 
+***** Hand History for Game 23329561113 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:26:48 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 625 )
+Seat 3: jfedelamone ( 875 )
+Trny: 355138052 Level: 3 
+Blinds(20/40)
+M40skyle posts small blind [20].
+jfedelamone posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Kc Qh ]
+M40skyle folds
+jfedelamone does not show cards.
+jfedelamone wins 60 chips
+Game #23329561564 starts.
+
+#Game No : 23329561564 
+***** Hand History for Game 23329561564 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:26:58 CET 2023
+Table 2€ SPINS (355138052) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 1: M40skyle ( 605 )
+Seat 3: jfedelamone ( 895 )
+Trny: 355138052 Level: 3 
+Blinds(20/40)
+jfedelamone posts small blind [20].
+M40skyle posts big blind [40].
+** Dealing down cards **
+Dealt to jfedelamone [  Th Qh ]
+jfedelamone calls [20]
+M40skyle checks
+** Dealing Flop ** [ Jd, 3c, Ks ]
+M40skyle bets [40]
+jfedelamone calls [40]
+** Dealing Turn ** [ 9c ]
+M40skyle bets [40]
+jfedelamone raises [160]
+M40skyle is all-In  [485]
+jfedelamone calls [365]
+** Dealing River ** [ 6h ]
+jfedelamone shows [ Th, Qh ]a straight.
+M40skyle shows [ 8h, Js ]one pair.
+jfedelamone wins 1,210 chips from the main pot with a straight.
+Congratulations to player jfedelamone for winning tournament 2€ SPINS
+Player M40skyle finished in 2.
+Player jfedelamone finished in 1 place and received €4 EUR 

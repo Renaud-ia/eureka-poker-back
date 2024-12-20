@@ -1,10 +1,11 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.extracteur;
 
-import fr.eurekapoker.parties.application.InterfacePartiesImpl;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurRegex;
-import fr.eurekapoker.parties.domaine.exceptions.FormatNonPrisEnCharge;
 import fr.eurekapoker.parties.domaine.parsing.dto.*;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosMainWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.InfosTableWinamax;
+import fr.eurekapoker.parties.domaine.parsing.dto.winamax.ResultatJoueurWinamax;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerAvecBet;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
@@ -12,7 +13,6 @@ import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.parties.FormatPoker;
 
-import java.awt.datatransfer.FlavorEvent;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ExtracteurWinamax implements ExtracteurLigne {
+public class ExtracteurWinamax extends ExtracteurLigne {
     private static final Pattern patternPremiereLigne = Pattern.compile(
             "Winamax\\sPoker\\s-\\s" +
                     "(?<nomTournoi>(.(?!buyIn|- HandId))+)\\s" +
@@ -55,9 +55,9 @@ public class ExtracteurWinamax implements ExtracteurLigne {
                     // donc il est hors du groupe de capture
                     "(,\\s((?<bounty>[\\d.]+)\\u20AC\\s(bounty)|[\\d.]+\\s(bounty))?)?\\)"
     );
-    @Override
+
     public InfosMainWinamax extraireInfosMain(String ligne) throws ErreurImport {
-        // todo : à refactoriser
+        // todo : à refactoriser (après avoir vérifié/complété les tests)
         Matcher matcher = matcherRegex(patternPremiereLigne, ligne);
 
         // on trouve le format
@@ -189,7 +189,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
             "\\*\\*\\*\\s(?<nomTour>.+)\\s\\*\\*\\*");
 
     @Override
-    public NouveauTour extraireNouveauTour(String ligne) throws ErreurRegex {
+    public NouveauTour extraireNouveauTour(String ligne, List<CartePoker> notUsedBoard) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternNomTour, ligne);
         String nomRound = matcher.group("nomTour");
         List<CartePoker> board = extraireCartes(ligne);
@@ -290,8 +290,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
 
     private static final Pattern patternGains = Pattern.compile("\\swon\\s(?<gains>[\\d.]+)");
 
-    @Override
-    public ResultatJoueur extraireResultat(String ligne) throws ErreurRegex {
+    public ResultatJoueurWinamax extraireResultat(String ligne) throws ErreurRegex {
         List<CartePoker> cartes = extraireCartes(ligne);
         if (cartes == null) cartes = new ArrayList<>();
 
@@ -307,7 +306,7 @@ public class ExtracteurWinamax implements ExtracteurLigne {
             gains = Float.parseFloat(matcherGains.group("gains"));
         }
 
-        return new ResultatJoueur(nomJoueur, gains, cartes);
+        return new ResultatJoueurWinamax(nomJoueur, gains, cartes);
     }
 
     private static final Pattern patternBlindesAntes = Pattern.compile(
@@ -327,7 +326,6 @@ public class ExtracteurWinamax implements ExtracteurLigne {
     private static final Pattern patternCartes = Pattern.compile(
             "\\[(?<cards>\\w{2}[\\s\\w{2}]*)](\\[(?<newCard>\\w{2})])?");
 
-    @Override
     public List<CartePoker> extraireCartes(String ligne) throws ErreurRegex {
         Matcher matcher = patternCartes.matcher(ligne);
         if (!matcher.find()) {
@@ -360,12 +358,6 @@ public class ExtracteurWinamax implements ExtracteurLigne {
         return new InfosHero(nomHero, cartePokers);
     }
 
-    private Matcher matcherRegex(Pattern pattern, String ligne) throws ErreurRegex {
-        Matcher matcher = pattern.matcher(ligne);
-        if (!matcher.find()) {
-            throw new ErreurRegex("Regex non trouvé dans :" + ligne);
-        }
-        return matcher;
-    }
+
 
 }

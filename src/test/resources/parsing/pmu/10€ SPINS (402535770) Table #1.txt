@@ -1,0 +1,624 @@
+Game #24771902698 starts.
+
+#Game No : 24771902698 
+***** Hand History for Game 24771902698 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:01:27 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 500 )
+Seat 2: TIYO95 ( 500 )
+Seat 3: rendslargent33 ( 500 )
+Trny: 402535770 Level: 1 
+Blinds(10/20)
+TIYO95 posts small blind [10].
+rendslargent33 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Th Td ]
+ElLogo76 folds
+TIYO95 calls [10]
+rendslargent33 raises [50]
+TIYO95 calls [50]
+** Dealing Flop ** [ 6h, 9h, Ad ]
+TIYO95 checks
+rendslargent33 bets [30]
+TIYO95 calls [30]
+** Dealing Turn ** [ 2d ]
+TIYO95 checks
+rendslargent33 checks
+** Dealing River ** [ As ]
+TIYO95 checks
+rendslargent33 bets [100]
+TIYO95 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 300 chips
+Game #24771903510 starts.
+
+#Game No : 24771903510 
+***** Hand History for Game 24771903510 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:02:27 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 500 )
+Seat 2: TIYO95 ( 400 )
+Seat 3: rendslargent33 ( 600 )
+Trny: 402535770 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+ElLogo76 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  9c Ts ]
+TIYO95 raises [50]
+rendslargent33 folds
+ElLogo76 folds
+TIYO95 does not show cards.
+TIYO95 wins 80 chips
+Game #24771903776 starts.
+
+#Game No : 24771903776 
+***** Hand History for Game 24771903776 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:02:44 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 480 )
+Seat 2: TIYO95 ( 430 )
+Seat 3: rendslargent33 ( 590 )
+Trny: 402535770 Level: 1 
+Blinds(10/20)
+ElLogo76 posts small blind [10].
+TIYO95 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qd 3d ]
+rendslargent33 folds
+ElLogo76 calls [10]
+TIYO95 checks
+** Dealing Flop ** [ Qc, 5c, 6c ]
+ElLogo76 bets [20]
+TIYO95 calls [20]
+** Dealing Turn ** [ 5h ]
+ElLogo76 checks
+TIYO95 checks
+** Dealing River ** [ 2d ]
+ElLogo76 bets [40]
+TIYO95 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 120 chips
+Game #24771904422 starts.
+
+#Game No : 24771904422 
+***** Hand History for Game 24771904422 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:03:23 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 520 )
+Seat 2: TIYO95 ( 390 )
+Seat 3: rendslargent33 ( 590 )
+Trny: 402535770 Level: 1 
+Blinds(10/20)
+TIYO95 posts small blind [10].
+rendslargent33 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Kh 7s ]
+ElLogo76 raises [40]
+TIYO95 calls [30]
+rendslargent33 calls [20]
+** Dealing Flop ** [ 9c, 4h, Qs ]
+TIYO95 checks
+rendslargent33 checks
+ElLogo76 checks
+** Dealing Turn ** [ 7d ]
+TIYO95 bets [80]
+rendslargent33 folds
+ElLogo76 folds
+TIYO95 does not show cards.
+TIYO95 wins 200 chips
+Game #24771905269 starts.
+
+#Game No : 24771905269 
+***** Hand History for Game 24771905269 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:04:12 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 480 )
+Seat 2: TIYO95 ( 470 )
+Seat 3: rendslargent33 ( 550 )
+Trny: 402535770 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+ElLogo76 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  2h 5c ]
+TIYO95 folds
+rendslargent33 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 30 chips
+Game #24771905405 starts.
+
+#Game No : 24771905405 
+***** Hand History for Game 24771905405 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:04:19 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 490 )
+Seat 2: TIYO95 ( 470 )
+Seat 3: rendslargent33 ( 540 )
+Trny: 402535770 Level: 1 
+Blinds(10/20)
+ElLogo76 posts small blind [10].
+TIYO95 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  8s Qc ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 will be using their time bank for this hand.
+rendslargent33 raises [40]
+ElLogo76 folds
+TIYO95 calls [20]
+** Dealing Flop ** [ 6h, 4c, 8d ]
+TIYO95 checks
+rendslargent33 bets [45]
+TIYO95 calls [45]
+** Dealing Turn ** [ 8c ]
+TIYO95 checks
+rendslargent33 bets [90]
+TIYO95 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 270 chips
+Game #24771906882 starts.
+
+#Game No : 24771906882 
+***** Hand History for Game 24771906882 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:05:14 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 480 )
+Seat 2: TIYO95 ( 385 )
+Seat 3: rendslargent33 ( 635 )
+Trny: 402535770 Level: 2 
+Blinds(15/30)
+TIYO95 posts small blind [15].
+rendslargent33 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  8c 2c ]
+ElLogo76 raises [60]
+TIYO95 calls [45]
+rendslargent33 folds
+** Dealing Flop ** [ 9s, 7d, Ts ]
+TIYO95 checks
+ElLogo76 checks
+** Dealing Turn ** [ 4s ]
+TIYO95 bets [100]
+ElLogo76 folds
+TIYO95 does not show cards.
+TIYO95 wins 250 chips
+Game #24771907390 starts.
+
+#Game No : 24771907390 
+***** Hand History for Game 24771907390 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:05:44 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 420 )
+Seat 2: TIYO95 ( 475 )
+Seat 3: rendslargent33 ( 605 )
+Trny: 402535770 Level: 2 
+Blinds(15/30)
+rendslargent33 posts small blind [15].
+ElLogo76 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  3c 7c ]
+TIYO95 folds
+rendslargent33 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 45 chips
+Game #24771907587 starts.
+
+#Game No : 24771907587 
+***** Hand History for Game 24771907587 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:05:55 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 435 )
+Seat 2: TIYO95 ( 475 )
+Seat 3: rendslargent33 ( 590 )
+Trny: 402535770 Level: 2 
+Blinds(15/30)
+ElLogo76 posts small blind [15].
+TIYO95 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  Ad Kh ]
+rendslargent33 raises [60]
+ElLogo76 folds
+TIYO95 calls [30]
+** Dealing Flop ** [ Jc, 5c, 6d ]
+TIYO95 checks
+rendslargent33 bets [30]
+TIYO95 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 165 chips
+Game #24771908111 starts.
+
+#Game No : 24771908111 
+***** Hand History for Game 24771908111 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:06:24 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 420 )
+Seat 2: TIYO95 ( 415 )
+Seat 3: rendslargent33 ( 665 )
+Trny: 402535770 Level: 2 
+Blinds(15/30)
+TIYO95 posts small blind [15].
+rendslargent33 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  Jd Th ]
+ElLogo76 folds
+TIYO95 calls [15]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 checks
+** Dealing Flop ** [ 2c, 6s, Qc ]
+TIYO95 checks
+rendslargent33 checks
+** Dealing Turn ** [ 4d ]
+TIYO95 bets [60]
+rendslargent33 folds
+TIYO95 does not show cards.
+TIYO95 wins 120 chips
+Game #24771908841 starts.
+
+#Game No : 24771908841 
+***** Hand History for Game 24771908841 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:07:02 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 420 )
+Seat 2: TIYO95 ( 445 )
+Seat 3: rendslargent33 ( 635 )
+Trny: 402535770 Level: 2 
+Blinds(15/30)
+rendslargent33 posts small blind [15].
+ElLogo76 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  Ac 7s ]
+TIYO95 folds
+rendslargent33 is all-In  [620]
+ElLogo76 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 665 chips
+Game #24771909127 starts.
+
+#Game No : 24771909127 
+***** Hand History for Game 24771909127 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:07:17 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 390 )
+Seat 2: TIYO95 ( 445 )
+Seat 3: rendslargent33 ( 665 )
+Trny: 402535770 Level: 2 
+Blinds(15/30)
+ElLogo76 posts small blind [15].
+TIYO95 posts big blind [30].
+** Dealing down cards **
+Dealt to rendslargent33 [  2c 9h ]
+rendslargent33 folds
+ElLogo76 calls [15]
+TIYO95 checks
+** Dealing Flop ** [ Qc, 8s, Qh ]
+ElLogo76 checks
+TIYO95 checks
+** Dealing Turn ** [ Ts ]
+ElLogo76 checks
+TIYO95 checks
+** Dealing River ** [ Kh ]
+ElLogo76 checks
+TIYO95 checks
+ElLogo76 shows [ 3h, Th ]two pairs.
+TIYO95 doesn't show [ 2s, 4c ]one pair.
+ElLogo76 wins 60 chips from the main pot with two pairs.
+Game #24771909861 starts.
+
+#Game No : 24771909861 
+***** Hand History for Game 24771909861 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:07:57 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 420 )
+Seat 2: TIYO95 ( 415 )
+Seat 3: rendslargent33 ( 665 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+TIYO95 posts small blind [20].
+rendslargent33 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  Ts Qd ]
+ElLogo76 is all-In  [420]
+TIYO95 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 480 chips
+Game #24771910832 starts.
+
+#Game No : 24771910832 
+***** Hand History for Game 24771910832 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:08:23 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 480 )
+Seat 2: TIYO95 ( 395 )
+Seat 3: rendslargent33 ( 625 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+rendslargent33 posts small blind [20].
+ElLogo76 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  8d Jd ]
+TIYO95 raises [140]
+rendslargent33 folds
+ElLogo76 folds
+TIYO95 does not show cards.
+TIYO95 wins 200 chips
+Game #24771911029 starts.
+
+#Game No : 24771911029 
+***** Hand History for Game 24771911029 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:08:34 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 440 )
+Seat 2: TIYO95 ( 455 )
+Seat 3: rendslargent33 ( 605 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+ElLogo76 posts small blind [20].
+TIYO95 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  7d 9h ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [80]
+ElLogo76 folds
+TIYO95 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 140 chips
+Game #24771911354 starts.
+
+#Game No : 24771911354 
+***** Hand History for Game 24771911354 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:08:53 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 420 )
+Seat 2: TIYO95 ( 415 )
+Seat 3: rendslargent33 ( 665 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+TIYO95 posts small blind [20].
+rendslargent33 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  2s 6h ]
+ElLogo76 raises [80]
+TIYO95 folds
+rendslargent33 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 140 chips
+Game #24771911565 starts.
+
+#Game No : 24771911565 
+***** Hand History for Game 24771911565 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:09:05 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 480 )
+Seat 2: TIYO95 ( 395 )
+Seat 3: rendslargent33 ( 625 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+rendslargent33 posts small blind [20].
+ElLogo76 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qd 2d ]
+TIYO95 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [80]
+ElLogo76 folds
+rendslargent33 does not show cards.
+rendslargent33 wins 140 chips
+Game #24771911953 starts.
+
+#Game No : 24771911953 
+***** Hand History for Game 24771911953 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:09:27 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 440 )
+Seat 2: TIYO95 ( 395 )
+Seat 3: rendslargent33 ( 665 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+ElLogo76 posts small blind [20].
+TIYO95 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  6h 5d ]
+rendslargent33 raises [80]
+ElLogo76 is all-In  [420]
+TIYO95 folds
+rendslargent33 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 560 chips
+Game #24771912222 starts.
+
+#Game No : 24771912222 
+***** Hand History for Game 24771912222 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:09:42 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 560 )
+Seat 2: TIYO95 ( 355 )
+Seat 3: rendslargent33 ( 585 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+TIYO95 posts small blind [20].
+rendslargent33 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  4d Th ]
+ElLogo76 raises [80]
+TIYO95 calls [60]
+rendslargent33 folds
+** Dealing Flop ** [ 2h, Jc, Ah ]
+TIYO95 checks
+ElLogo76 checks
+** Dealing Turn ** [ 3h ]
+TIYO95 bets [200]
+ElLogo76 folds
+TIYO95 does not show cards.
+TIYO95 wins 400 chips
+Game #24771912829 starts.
+
+#Game No : 24771912829 
+***** Hand History for Game 24771912829 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:10:17 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 480 )
+Seat 2: TIYO95 ( 475 )
+Seat 3: rendslargent33 ( 545 )
+Trny: 402535770 Level: 3 
+Blinds(20/40)
+rendslargent33 posts small blind [20].
+ElLogo76 posts big blind [40].
+** Dealing down cards **
+Dealt to rendslargent33 [  4d 8d ]
+TIYO95 folds
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 folds
+ElLogo76 does not show cards.
+ElLogo76 wins 60 chips
+Game #24771913103 starts.
+
+#Game No : 24771913103 
+***** Hand History for Game 24771913103 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:10:32 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 500 )
+Seat 2: TIYO95 ( 475 )
+Seat 3: rendslargent33 ( 525 )
+Trny: 402535770 Level: 4 
+Blinds(30/60)
+ElLogo76 posts small blind [30].
+TIYO95 posts big blind [60].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qc 8s ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+rendslargent33 raises [120]
+ElLogo76 folds
+TIYO95 raises [330]
+rendslargent33 calls [270]
+** Dealing Flop ** [ Ks, 5d, 6s ]
+TIYO95 is all-In  [85]
+rendslargent33 calls [85]
+** Dealing Turn ** [ Jd ]
+** Dealing River ** [ 2c ]
+TIYO95 shows [ Ac, As ]one pair.
+rendslargent33 shows [ Qc, 8s ]High card.
+TIYO95 wins 980 chips from the main pot with one pair.
+Game #24771913791 starts.
+
+#Game No : 24771913791 
+***** Hand History for Game 24771913791 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:11:12 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 470 )
+Seat 2: TIYO95 ( 980 )
+Seat 3: rendslargent33 ( 50 )
+Trny: 402535770 Level: 4 
+Blinds(30/60)
+TIYO95 posts small blind [30].
+rendslargent33 posts big blind [50].
+** Dealing down cards **
+Dealt to rendslargent33 [  5c Td ]
+ElLogo76 folds
+TIYO95 calls [20]
+** Dealing Flop ** [ Jd, Qs, Js ]
+** Dealing Turn ** [ Jc ]
+** Dealing River ** [ 3h ]
+TIYO95 shows [ 5s, 8h ]three of a kind.
+rendslargent33 shows [ 5c, Td ]three of a kind.
+rendslargent33 wins 100 chips from the main pot with three of a kind.
+Game #24771914166 starts.
+
+#Game No : 24771914166 
+***** Hand History for Game 24771914166 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:11:32 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 1: ElLogo76 ( 470 )
+Seat 2: TIYO95 ( 930 )
+Seat 3: rendslargent33 ( 100 )
+Trny: 402535770 Level: 4 
+Blinds(30/60)
+rendslargent33 posts small blind [30].
+ElLogo76 posts big blind [60].
+** Dealing down cards **
+Dealt to rendslargent33 [  3h Ts ]
+TIYO95 calls [60]
+rendslargent33 folds
+ElLogo76 is all-In  [410]
+TIYO95 calls [410]
+** Dealing Flop ** [ 5d, Tc, 4s ]
+** Dealing Turn ** [ Ks ]
+** Dealing River ** [ 9s ]
+TIYO95 shows [ 9h, Jc ]one pair.
+ElLogo76 shows [ 2d, Ac ]High card.
+TIYO95 wins 970 chips from the main pot with one pair.
+Player ElLogo76 finished in 3.
+Game #24771915100 starts.
+
+#Game No : 24771915100 
+***** Hand History for Game 24771915100 *****
+NL Texas Hold'em €10 EUR Buy-in  - Saturday, December 14, 14:11:57 CET 2024
+Table 10€ SPINS (402535770) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 2/3 
+Seat 2: TIYO95 ( 1,430 )
+Seat 3: rendslargent33 ( 70 )
+Trny: 402535770 Level: 4 
+Blinds(30/60)
+rendslargent33 posts small blind [30].
+TIYO95 posts big blind [60].
+** Dealing down cards **
+Dealt to rendslargent33 [  4h 3h ]
+rendslargent33 is all-In  [40]
+TIYO95 calls [10]
+** Dealing Flop ** [ 7s, 8h, Qs ]
+** Dealing Turn ** [ 6h ]
+** Dealing River ** [ Kh ]
+rendslargent33 shows [ 4h, 3h ]a flush.
+TIYO95 shows [ 9h, 2h ]a flush.
+TIYO95 wins 140 chips from the main pot with a flush.
+Congratulations to player TIYO95 for winning tournament 10€ SPINS
+Player rendslargent33 finished in 2.
+Player TIYO95 finished in 1 place and received €30 EUR 

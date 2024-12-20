@@ -155,7 +155,7 @@ public class PartiePersistanceDto {
     }
 
     public int obtNombreMains() {
-        return nombreMains;
+        return this.mainPersistence.size();
     }
 
     public boolean obtJoueursAnonymes() {
@@ -173,5 +173,10 @@ public class PartiePersistanceDto {
 
     public boolean obtStackEnEuros() {
         return stackEnEuros;
+    }
+
+    public void supprimerDerniereMain() {
+        this.mainPersistence.removeLast();
+        this.nombreMains--;
     }
 }

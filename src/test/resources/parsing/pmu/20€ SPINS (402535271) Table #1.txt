@@ -1,0 +1,57 @@
+Game #24771893834 starts.
+
+#Game No : 24771893834 
+***** Hand History for Game 24771893834 *****
+NL Texas Hold'em €20 EUR Buy-in  - Saturday, December 14, 13:51:47 CET 2024
+Table 20€ SPINS (402535271) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 2: GIGI74500 ( 500 )
+Seat 1: TIYO95 ( 500 )
+Seat 3: rendslargent33 ( 500 )
+Trny: 402535271 Level: 1 
+Blinds(10/20)
+GIGI74500 posts small blind [10].
+rendslargent33 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  3s 4c ]
+TIYO95 calls [20]
+GIGI74500 calls [10]
+rendslargent33 checks
+** Dealing Flop ** [ 9h, 3c, 5s ]
+GIGI74500 bets [20]
+rendslargent33 calls [20]
+TIYO95 calls [20]
+** Dealing Turn ** [ 9s ]
+GIGI74500 bets [90]
+rendslargent33 folds
+TIYO95 folds
+GIGI74500 does not show cards.
+GIGI74500 wins 210 chips
+Game #24771894426 starts.
+
+#Game No : 24771894426 
+***** Hand History for Game 24771894426 *****
+NL Texas Hold'em €20 EUR Buy-in  - Saturday, December 14, 13:52:27 CET 2024
+Table 20€ SPINS (402535271) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 2: GIGI74500 ( 580 )
+Seat 1: TIYO95 ( 460 )
+Seat 3: rendslargent33 ( 460 )
+Trny: 402535271 Level: 1 
+Blinds(10/20)
+rendslargent33 posts small blind [10].
+TIYO95 posts big blind [20].
+** Dealing down cards **
+Dealt to rendslargent33 [  Qd Qh ]
+GIGI74500 is all-In  [580]
+rendslargent33 is all-In  [450]
+TIYO95 folds
+** Dealing Flop ** [ Jc, 2s, Ks ]
+** Dealing Turn ** [ 4s ]
+** Dealing River ** [ 3h ]
+GIGI74500 shows [ As, Kd ]one pair.
+rendslargent33 shows [ Qd, Qh ]one pair.
+GIGI74500 wins 940 chips from the main pot with one pair.
+Player rendslargent33 finished in 3.

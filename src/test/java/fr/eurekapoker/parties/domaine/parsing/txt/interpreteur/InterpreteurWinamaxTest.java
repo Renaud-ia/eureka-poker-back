@@ -1,14 +1,19 @@
 package fr.eurekapoker.parties.domaine.parsing.txt.interpreteur;
 
+import jakarta.persistence.criteria.CriteriaBuilder;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class InterpreteurWinamaxTest {
+    private InterpreteurWinamax interpreteurWinamax;
+    @BeforeEach
+    void initialisation() {
+        this.interpreteurWinamax = new InterpreteurWinamax();
+    }
     @Test
     void interpreteBienPartieExpresso() {
-        InterpreteurWinamax interpreteurWinamax = new InterpreteurWinamax();
-
         String ligne = "Winamax Poker - Tournament \"Expresso\" buyIn: 0.46€ + 0.04€ level: 1 - HandId: #2759101941731557377-1-1678437143 - Holdem no limit (10/20) - 2023/03/10 08:32:23 UTC\n";
         interpreteurWinamax.lireLigne(ligne);
         assertTrue(interpreteurWinamax.estNouvelleMain(), "Nouvelle main non détectée");
@@ -79,8 +84,6 @@ public class InterpreteurWinamaxTest {
 
     @Test
     void interpreteBienColorado() {
-        InterpreteurWinamax interpreteurWinamax = new InterpreteurWinamax();
-
         String ligne = "Winamax Poker - Go Fast \"Colorado\" - HandId: #14870085-987907-1599323058 - Holdem no limit (0.01€/0.02€) - 2020/09/05 16:24:18 UTC";
         interpreteurWinamax.lireLigne(ligne);
         assertTrue(interpreteurWinamax.estNouvelleMain(), "Nouvelle main non détectée");

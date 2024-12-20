@@ -21,7 +21,7 @@ public class GenerateurNomPartie {
         && !Objects.equals(partiePersistanceDto.obtNomPartie(), "Short Track")) {
             buyInString = "NL" + buyIn.multiply(new BigDecimal(100)).stripTrailingZeros();
         }
-        else buyInString = String.valueOf(buyIn.stripTrailingZeros()) + "€";
+        else buyInString = buyIn.stripTrailingZeros().toPlainString() + "€";
 
         return typeJeu + " "
                 + nombreJoueurs + " "

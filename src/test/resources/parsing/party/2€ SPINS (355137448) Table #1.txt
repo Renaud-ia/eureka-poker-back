@@ -1,0 +1,516 @@
+Game #23329520187 starts.
+
+#Game No : 23329520187 
+***** Hand History for Game 23329520187 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:12:18 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 2: JACKY62140 ( 500 )
+Seat 3: franck 13400 ( 500 )
+Seat 1: jfedelamone ( 500 )
+Trny: 355137448 Level: 1 
+Blinds(10/20)
+JACKY62140 posts small blind [10].
+franck 13400 posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  As 2s ]
+jfedelamone raises [40]
+JACKY62140 calls [30]
+franck 13400 folds
+** Dealing Flop ** [ Qs, 4s, Ah ]
+JACKY62140 bets [20]
+jfedelamone calls [20]
+** Dealing Turn ** [ 6h ]
+JACKY62140 bets [20]
+jfedelamone calls [20]
+** Dealing River ** [ 5c ]
+JACKY62140 bets [20]
+jfedelamone calls [20]
+JACKY62140 shows [ Js, 6s ]one pair.
+jfedelamone shows [ As, 2s ]one pair.
+jfedelamone wins 220 chips from the main pot with a pair of Aces.
+Game #23329521457 starts.
+
+#Game No : 23329521457 
+***** Hand History for Game 23329521457 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:12:53 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 2: JACKY62140 ( 400 )
+Seat 3: franck 13400 ( 480 )
+Seat 1: jfedelamone ( 620 )
+Trny: 355137448 Level: 1 
+Blinds(10/20)
+franck 13400 posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  Kc 3d ]
+JACKY62140 is all-In  [400]
+franck 13400 folds
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 430 chips
+Game #23329522334 starts.
+
+#Game No : 23329522334 
+***** Hand History for Game 23329522334 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:13:14 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 2: JACKY62140 ( 430 )
+Seat 3: franck 13400 ( 470 )
+Seat 1: jfedelamone ( 600 )
+Trny: 355137448 Level: 1 
+Blinds(10/20)
+jfedelamone posts small blind [10].
+JACKY62140 posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  8s 2c ]
+franck 13400 calls [20]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone folds
+JACKY62140 checks
+** Dealing Flop ** [ 6s, 6h, 3d ]
+JACKY62140 checks
+franck 13400 checks
+** Dealing Turn ** [ Jc ]
+JACKY62140 bets [20]
+franck 13400 calls [20]
+** Dealing River ** [ 6d ]
+JACKY62140 is all-In  [390]
+franck 13400 calls [390]
+JACKY62140 shows [ Js, 2d ]a full house.
+franck 13400 shows [ 9h, Ks ]three of a kind.
+JACKY62140 wins 870 chips from the main pot with a full house.
+Game #23329524137 starts.
+
+#Game No : 23329524137 
+***** Hand History for Game 23329524137 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:13:58 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 3/3 
+Seat 2: JACKY62140 ( 870 )
+Seat 3: franck 13400 ( 40 )
+Seat 1: jfedelamone ( 590 )
+Trny: 355137448 Level: 1 
+Blinds(10/20)
+JACKY62140 posts small blind [10].
+franck 13400 posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  5s 3s ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone folds
+JACKY62140 calls [10]
+franck 13400 checks
+** Dealing Flop ** [ 4c, 4d, 2d ]
+JACKY62140 checks
+franck 13400 is all-In  [20]
+JACKY62140 folds
+franck 13400 does not show cards.
+franck 13400 wins 60 chips
+Game #23329525237 starts.
+
+#Game No : 23329525237 
+***** Hand History for Game 23329525237 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:14:24 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 3/3 
+Seat 2: JACKY62140 ( 850 )
+Seat 3: franck 13400 ( 60 )
+Seat 1: jfedelamone ( 590 )
+Trny: 355137448 Level: 1 
+Blinds(10/20)
+franck 13400 posts small blind [10].
+jfedelamone posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  As 6d ]
+JACKY62140 calls [20]
+franck 13400 is all-In  [50]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+jfedelamone folds
+JACKY62140 will be using their time bank for this hand.
+JACKY62140 did not respond in time
+JACKY62140 folds
+franck 13400 does not show cards.
+franck 13400 wins 100 chips
+Game #23329527366 starts.
+
+#Game No : 23329527366 
+***** Hand History for Game 23329527366 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:15:04 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 3 is the button
+Total number of players : 3/3 
+Seat 2: JACKY62140 ( 830 )
+Seat 3: franck 13400 ( 100 )
+Seat 1: jfedelamone ( 570 )
+Trny: 355137448 Level: 1 
+Blinds(10/20)
+jfedelamone posts small blind [10].
+JACKY62140 posts big blind [20].
+** Dealing down cards **
+Dealt to jfedelamone [  3c 3d ]
+franck 13400 is all-In  [100]
+jfedelamone calls [90]
+JACKY62140 folds
+** Dealing Flop ** [ 9c, Jh, 3s ]
+** Dealing Turn ** [ 8s ]
+** Dealing River ** [ 9s ]
+franck 13400 shows [ Qd, 8d ]two pairs.
+jfedelamone shows [ 3c, 3d ]a full house.
+jfedelamone wins 220 chips from the main pot with a full house.
+Player franck 13400 finished in 3.
+Game #23329528276 starts.
+
+#Game No : 23329528276 
+***** Hand History for Game 23329528276 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:15:26 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 810 )
+Seat 1: jfedelamone ( 690 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Jh 3h ]
+JACKY62140 folds
+jfedelamone does not show cards.
+jfedelamone wins 45 chips
+Game #23329528464 starts.
+
+#Game No : 23329528464 
+***** Hand History for Game 23329528464 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:15:30 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 795 )
+Seat 1: jfedelamone ( 705 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  2c 7h ]
+jfedelamone calls [15]
+JACKY62140 is all-In  [765]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 825 chips
+Game #23329528983 starts.
+
+#Game No : 23329528983 
+***** Hand History for Game 23329528983 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:15:41 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 825 )
+Seat 1: jfedelamone ( 675 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Qs 7h ]
+JACKY62140 calls [15]
+jfedelamone checks
+** Dealing Flop ** [ 3d, Th, Kh ]
+jfedelamone checks
+JACKY62140 bets [60]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 120 chips
+Game #23329529930 starts.
+
+#Game No : 23329529930 
+***** Hand History for Game 23329529930 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:16:04 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 855 )
+Seat 1: jfedelamone ( 645 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  8h Ac ]
+jfedelamone raises [45]
+JACKY62140 folds
+jfedelamone does not show cards.
+jfedelamone wins 90 chips
+Game #23329530472 starts.
+
+#Game No : 23329530472 
+***** Hand History for Game 23329530472 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:16:17 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 825 )
+Seat 1: jfedelamone ( 675 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  5h Js ]
+JACKY62140 raises [45]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 90 chips
+Game #23329530837 starts.
+
+#Game No : 23329530837 
+***** Hand History for Game 23329530837 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:16:25 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 855 )
+Seat 1: jfedelamone ( 645 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  3s Ad ]
+jfedelamone calls [15]
+JACKY62140 checks
+** Dealing Flop ** [ 3c, 2s, 6s ]
+JACKY62140 bets [30]
+jfedelamone calls [30]
+** Dealing Turn ** [ Tc ]
+JACKY62140 checks
+jfedelamone checks
+** Dealing River ** [ 5c ]
+JACKY62140 checks
+jfedelamone checks
+JACKY62140 shows [ 7h, 6c ]one pair.
+jfedelamone doesn't show [ 3s, Ad ]one pair.
+JACKY62140 wins 120 chips from the main pot with a pair of Sixes.
+Game #23329531594 starts.
+
+#Game No : 23329531594 
+***** Hand History for Game 23329531594 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:16:42 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 915 )
+Seat 1: jfedelamone ( 585 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Kc Tc ]
+JACKY62140 raises [45]
+jfedelamone calls [30]
+** Dealing Flop ** [ 9h, 5s, As ]
+jfedelamone checks
+JACKY62140 checks
+** Dealing Turn ** [ 2s ]
+jfedelamone checks
+JACKY62140 checks
+** Dealing River ** [ Ah ]
+jfedelamone checks
+JACKY62140 checks
+jfedelamone shows [ Kc, Tc ]one pair.
+JACKY62140 doesn't show [ 8d, Jd ]one pair.
+jfedelamone wins 120 chips from the main pot with one pair.
+Game #23329532706 starts.
+
+#Game No : 23329532706 
+***** Hand History for Game 23329532706 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:16:57 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 855 )
+Seat 1: jfedelamone ( 645 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  2h Kd ]
+jfedelamone calls [15]
+JACKY62140 is all-In  [825]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 885 chips
+Game #23329533227 starts.
+
+#Game No : 23329533227 
+***** Hand History for Game 23329533227 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:17:08 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 885 )
+Seat 1: jfedelamone ( 615 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Qd Kh ]
+JACKY62140 is all-In  [870]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 915 chips
+Game #23329533604 starts.
+
+#Game No : 23329533604 
+***** Hand History for Game 23329533604 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:17:17 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 915 )
+Seat 1: jfedelamone ( 585 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  4d Qs ]
+jfedelamone calls [15]
+JACKY62140 is all-In  [885]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 945 chips
+Game #23329534490 starts.
+
+#Game No : 23329534490 
+***** Hand History for Game 23329534490 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:17:25 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 945 )
+Seat 1: jfedelamone ( 555 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  9d 7s ]
+JACKY62140 folds
+jfedelamone does not show cards.
+jfedelamone wins 45 chips
+Game #23329534708 starts.
+
+#Game No : 23329534708 
+***** Hand History for Game 23329534708 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:17:32 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 930 )
+Seat 1: jfedelamone ( 570 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  8s 4c ]
+jfedelamone folds
+JACKY62140 does not show cards.
+JACKY62140 wins 45 chips
+Game #23329534991 starts.
+
+#Game No : 23329534991 
+***** Hand History for Game 23329534991 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:17:38 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 945 )
+Seat 1: jfedelamone ( 555 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  9h 2d ]
+JACKY62140 calls [15]
+jfedelamone raises [60]
+JACKY62140 calls [60]
+** Dealing Flop ** [ Qh, Qc, 9d ]
+jfedelamone bets [90]
+JACKY62140 folds
+jfedelamone does not show cards.
+jfedelamone wins 270 chips
+Game #23329535723 starts.
+
+#Game No : 23329535723 
+***** Hand History for Game 23329535723 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:17:56 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 1 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 855 )
+Seat 1: jfedelamone ( 645 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+jfedelamone posts small blind [15].
+JACKY62140 posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Ad 8d ]
+jfedelamone calls [15]
+JACKY62140 checks
+** Dealing Flop ** [ As, Ah, 6s ]
+JACKY62140 checks
+jfedelamone checks
+** Dealing Turn ** [ 5h ]
+JACKY62140 checks
+jfedelamone bets [45]
+JACKY62140 folds
+jfedelamone does not show cards.
+jfedelamone wins 105 chips
+Game #23329536503 starts.
+
+#Game No : 23329536503 
+***** Hand History for Game 23329536503 *****
+NL Texas Hold'em €2 EUR Buy-in  - Monday, January 16, 17:18:14 CET 2023
+Table 2€ SPINS (355137448) Table #1 (Real Money)
+Seat 2 is the button
+Total number of players : 2/3 
+Seat 2: JACKY62140 ( 825 )
+Seat 1: jfedelamone ( 675 )
+Trny: 355137448 Level: 2 
+Blinds(15/30)
+JACKY62140 posts small blind [15].
+jfedelamone posts big blind [30].
+** Dealing down cards **
+Dealt to jfedelamone [  Qs Th ]
+JACKY62140 calls [15]
+jfedelamone checks
+** Dealing Flop ** [ Qd, 3h, Ts ]
+jfedelamone checks
+JACKY62140 checks
+** Dealing Turn ** [ 7c ]
+jfedelamone bets [45]
+JACKY62140 calls [45]
+** Dealing River ** [ 3s ]
+jfedelamone bets [150]
+JACKY62140 is all-In  [750]
+jfedelamone is all-In  [450]
+jfedelamone shows [ Qs, Th ]two pairs.
+JACKY62140 shows [ 3d, Ks ]three of a kind.
+JACKY62140 wins 1,350 chips from the main pot with three of a kind.
+Congratulations to player JACKY62140 for winning tournament 2€ SPINS
+Player jfedelamone finished in 2.
+Player JACKY62140 finished in 1 place and received €6 EUR 

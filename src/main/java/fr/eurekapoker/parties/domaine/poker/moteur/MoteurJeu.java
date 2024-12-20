@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.domaine.poker.moteur;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
+import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPoker;
 import fr.eurekapoker.parties.domaine.poker.actions.ActionPokerJoueur;
 import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
@@ -57,7 +58,10 @@ public class MoteurJeu {
     }
 
     public void ajouterAction(ActionPokerJoueur actionPokerJoueur)
-            throws ErreurLectureFichier {
+            throws ErreurLectureFichier, JoueurNonExistant {
+        if (!this.stackDepart.containsKey(actionPokerJoueur.getNomJoueur())) {
+            throw new JoueurNonExistant("Le joueur n'a pas de stack de départ");
+        }
         try {
             this.encodageSituation.ajouterAction(actionPokerJoueur.getTypeAction());
         }
@@ -120,7 +124,9 @@ public class MoteurJeu {
         return potBounty;
     }
 
-    public BigDecimal obtStackEffectif(String nomJoueur) {
+    public BigDecimal obtStackEffectif(String nomJoueur) throws JoueurNonExistant {
+        if (!stackDepart.containsKey(nomJoueur) ) throw new JoueurNonExistant("Le joueur n'a pas de stack de départ");
+
         BigDecimal stackJoueur = stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
         BigDecimal stackEffectif = new BigDecimal(0);
 
