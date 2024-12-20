@@ -39,6 +39,6 @@ public class InfosPartieBetclic extends InfosPartiePoker {
 
     @Override
     public String getNomRoom() {
-        return "Betclic";
+        return "IPoker";
     }
 }
