@@ -153,12 +153,6 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         if (actionPoker.montantPositif() && !actionPoker.estMontantTotal()) {
             montantTotalAction = montantTotalAction
                         .add(this.moteurJeu.obtMontantInvestiCeTour(actionPoker.getNomJoueur()));
-
-
-            if (Objects.equals(this.dernierTour.obtNomTour(), TourPoker.RoundPoker.PREFLOP.toString())) {
-                montantTotalAction = montantTotalAction
-                        .subtract(this.moteurJeu.obtAnteJoueur(actionPoker.getNomJoueur()));
-            }
         }
 
         ActionPersistanceDto nouvelleAction = new ActionPersistanceDto(

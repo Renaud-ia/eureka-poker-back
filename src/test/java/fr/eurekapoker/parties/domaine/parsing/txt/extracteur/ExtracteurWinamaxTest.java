@@ -111,6 +111,17 @@ public class ExtracteurWinamaxTest {
     }
 
     @Test
+    void testDoitExtraireRaiseAllInGrosMontant() throws ErreurRegex {
+        String ligne = "benedicimus raises 29859658 to 34259658 and is all-in";
+        ActionPokerJoueur actionPoker = extracteurWinamax.extraireAction(ligne);
+        assertEquals(ActionPoker.TypeAction.RAISE, actionPoker.getTypeAction());
+        assertEquals("benedicimus", actionPoker.getNomJoueur());
+        BigDecimal expectedValue = new BigDecimal("34259658");
+        assertEquals(0, expectedValue.compareTo(actionPoker.obtMontantAction()));
+        assertTrue(actionPoker.estMontantTotal());
+    }
+
+    @Test
     void testDoitExtraireReraiseAllIn() throws ErreurRegex {
         String ligne = "LaMissDu33 raises 1266 to 1326 and is all-in";
         ActionPokerJoueur actionPoker = extracteurWinamax.extraireAction(ligne);
