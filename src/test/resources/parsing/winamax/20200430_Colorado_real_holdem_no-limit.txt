@@ -1,0 +1,3600 @@
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255063-1588276003 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:46:43 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: HELLPIAFOS (2.90€)
+Seat 2: lkm77 (2€)
+Seat 3: Arraklan (2.13€)
+Seat 4: Karl38000 (2.21€)
+Seat 5: Golden Hello (2.07€)
+Seat 6: AAMOUSS (1.11€)
+*** ANTE/BLINDS ***
+HELLPIAFOS posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Jd As]
+*** PRE-FLOP *** 
+Arraklan folds
+Karl38000 raises 0.02€ to 0.04€
+Golden Hello folds
+AAMOUSS folds
+HELLPIAFOS folds
+lkm77 calls 0.02€
+*** FLOP *** [4h Td Tc]
+lkm77 bets 0.04€
+Karl38000 raises 0.04€ to 0.08€
+lkm77 raises 0.04€ to 0.12€
+Karl38000 calls 0.04€
+*** TURN *** [4h Td Tc][5d]
+lkm77 bets 0.18€
+Karl38000 folds
+lkm77 collected 0.49€ from pot
+*** SUMMARY ***
+Total pot 0.49€ | Rake 0.02€
+Board: [4h Td Tc 5d]
+Seat 2: lkm77 (big blind) won 0.49€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255218-1588276044 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:47:24 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: cachris73 (1€)
+Seat 2: vincent81100 (2€)
+Seat 3: lkm77 (2.14€)
+Seat 4: packymaitre (1.55€)
+Seat 5: nicky_poker (3.74€)
+Seat 6: Golden Hello (2.04€)
+*** ANTE/BLINDS ***
+cachris73 posts small blind 0.01€
+vincent81100 posts big blind 0.02€
+Dealt to lkm77 [4s 2h]
+*** PRE-FLOP *** 
+lkm77 folds
+packymaitre folds
+nicky_poker folds
+Golden Hello folds
+cachris73 folds
+vincent81100 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: vincent81100 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255226-1588276046 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:47:26 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Fred2k77 (4.30€)
+Seat 2: Blackmailer (2.65€)
+Seat 3: Spiffeennnnn (2.25€)
+Seat 4: lkm77 (2.14€)
+Seat 5: Flia.king (4.17€)
+Seat 6: R3DK3RN3L (2.44€)
+*** ANTE/BLINDS ***
+Fred2k77 posts small blind 0.01€
+Blackmailer posts big blind 0.02€
+Dealt to lkm77 [Kc 2c]
+*** PRE-FLOP *** 
+Spiffeennnnn folds
+lkm77 raises 0.02€ to 0.04€
+Flia.king folds
+R3DK3RN3L calls 0.04€
+Fred2k77 folds
+Blackmailer folds
+*** FLOP *** [4d Qd As]
+lkm77 bets 0.06€
+R3DK3RN3L folds
+lkm77 collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | Rake 0.01€
+Board: [4d Qd As]
+Seat 4: lkm77 won 0.16€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255202-1588276040 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:47:20 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.15€)
+Seat 2: siktir lan (3.33€)
+Seat 3: Juanpoker333 (5.15€)
+Seat 4: Normal_Dog (3.75€)
+Seat 5: Killer2noob (2.70€)
+Seat 6: mytia (2.15€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+siktir lan posts big blind 0.02€
+Dealt to lkm77 [7h 8d]
+*** PRE-FLOP *** 
+Juanpoker333 raises 0.04€ to 0.06€
+Normal_Dog folds
+Killer2noob calls 0.06€
+mytia folds
+lkm77 folds
+siktir lan calls 0.04€
+*** FLOP *** [Jc 4d 6h]
+siktir lan checks
+Juanpoker333 checks
+Killer2noob checks
+*** TURN *** [Jc 4d 6h][Ts]
+siktir lan checks
+Juanpoker333 checks
+Killer2noob checks
+*** RIVER *** [Jc 4d 6h Ts][Th]
+siktir lan checks
+Juanpoker333 checks
+Killer2noob checks
+*** SHOW DOWN ***
+siktir lan shows [Ah Kh] (One pair : Tens)
+Killer2noob shows [2h Ac] (One pair : Tens)
+Juanpoker333 shows [2s 2d] (Two pairs : Tens and 2)
+Juanpoker333 collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | Rake 0.01€
+Board: [Jc 4d 6h Ts Th]
+Seat 2: siktir lan (big blind) showed [Ah Kh] and lost with One pair : Tens
+Seat 3: Juanpoker333 showed [2s 2d] and won 0.18€ with Two pairs : Tens and 2
+Seat 5: Killer2noob showed [2h Ac] and lost with One pair : Tens
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255344-1588276078 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:47:58 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Bosta17 (3.90€)
+Seat 2: Normal_Dog (3.74€)
+Seat 3: Jpone1 (2.46€)
+Seat 4: oro1992 (2.11€)
+Seat 5: lkm77 (2.20€)
+Seat 6: Nicole Nirei (2.94€)
+*** ANTE/BLINDS ***
+Bosta17 posts small blind 0.01€
+Normal_Dog posts big blind 0.02€
+Dealt to lkm77 [7s 7c]
+*** PRE-FLOP *** 
+Jpone1 folds
+oro1992 raises 0.04€ to 0.06€
+lkm77 calls 0.06€
+Nicole Nirei folds
+Bosta17 folds
+Normal_Dog folds
+*** FLOP *** [4s 3h Jc]
+oro1992 bets 0.10€
+lkm77 raises 0.10€ to 0.20€
+oro1992 calls 0.10€
+*** TURN *** [4s 3h Jc][Ac]
+oro1992 checks
+lkm77 bets 0.32€
+oro1992 raises 0.68€ to 1€
+lkm77 raises 0.94€ to 1.94€ and is all-in
+oro1992 calls 0.85€ and is all-in
+*** RIVER *** [4s 3h Jc Ac][2d]
+*** SHOW DOWN ***
+oro1992 shows [As Kh] (One pair : Aces)
+lkm77 shows [7s 7c] (One pair : 7)
+lkm77 collected 0.09€ from side pot 1
+oro1992 collected 4.01€ from main pot
+*** SUMMARY ***
+Total pot 4.10€ | Rake 0.24€
+Board: [4s 3h Jc Ac 2d]
+Seat 4: oro1992 showed [As Kh] and won 4.01€ with One pair : Aces
+Seat 5: lkm77 showed [7s 7c] and won 0.09€ with One pair : 7
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255608-1588276145 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:49:05 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Arraklan (2.49€)
+Seat 2: lkm77 (0.09€)
+Seat 3: hind06 (0.77€)
+Seat 4: Spiffeennnnn (2.20€)
+Seat 5: Pondera08 (2€)
+Seat 6: Edoul (2.06€)
+*** ANTE/BLINDS ***
+Arraklan posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Tc 3h]
+*** PRE-FLOP *** 
+hind06 folds
+Spiffeennnnn folds
+Pondera08 folds
+Edoul folds
+Arraklan folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255601-1588276143 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:49:03 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: maximousseop (4.35€)
+Seat 2: Bacalawz (2.06€)
+Seat 3: LucienMLN (2.77€)
+Seat 4: lkm77 (0.09€)
+Seat 5: ALL_INwithAA (1.06€)
+Seat 6: Bandit28 (0.94€)
+*** ANTE/BLINDS ***
+maximousseop posts small blind 0.01€
+Bacalawz posts big blind 0.02€
+Dealt to lkm77 [5c 8d]
+*** PRE-FLOP *** 
+LucienMLN folds
+lkm77 folds
+ALL_INwithAA folds
+Bandit28 folds
+maximousseop folds
+Bacalawz collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Bacalawz (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255594-1588276141 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:49:01 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Shtevi (2.96€)
+Seat 2: Imca52 (2.09€)
+Seat 3: Jasval22 (2.84€)
+Seat 4: Spiffeennnnn (2€)
+Seat 5: Ser7814 (3.78€)
+Seat 6: lkm77 (0.09€)
+*** ANTE/BLINDS ***
+Shtevi posts small blind 0.01€
+Imca52 posts big blind 0.02€
+Dealt to lkm77 [2s 4s]
+*** PRE-FLOP *** 
+Jasval22 folds
+Spiffeennnnn folds
+Ser7814 folds
+lkm77 folds
+Shtevi raises 0.04€ to 0.06€
+Imca52 folds
+Shtevi collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: Shtevi (small blind) won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255658-1588276159 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:49:19 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (0.10€)
+Seat 2: Carlosceg (2.29€)
+Seat 3: 911RS6 (1.57€)
+Seat 4: nicky_poker (2€)
+Seat 5: ChikoCarre (6.48€)
+Seat 6: McFlyTF (1.91€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Carlosceg posts big blind 0.02€
+Dealt to lkm77 [4d 8s]
+*** PRE-FLOP *** 
+911RS6 folds
+nicky_poker folds
+ChikoCarre folds
+McFlyTF folds
+lkm77 folds
+Carlosceg collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Carlosceg (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255666-1588276162 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:49:22 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: packymaitre (2.11€)
+Seat 2: Joker1O (5.18€)
+Seat 3: lkm77 (0.09€)
+Seat 4: ChikoCarre (6.48€)
+Seat 5: Bosta17 (2.08€)
+Seat 6: Bushido909 (4.08€)
+*** ANTE/BLINDS ***
+packymaitre posts small blind 0.01€
+Joker1O posts big blind 0.02€
+Dealt to lkm77 [5h Js]
+*** PRE-FLOP *** 
+lkm77 raises 0.07€ to 0.09€ and is all-in
+ChikoCarre folds
+Bosta17 folds
+Bushido909 calls 0.09€
+packymaitre folds
+Joker1O folds
+*** FLOP *** [3d Jc 4s]
+*** TURN *** [3d Jc 4s][8d]
+*** RIVER *** [3d Jc 4s 8d][7s]
+*** SHOW DOWN ***
+Bushido909 shows [9d 9s] (One pair : 9)
+lkm77 shows [5h Js] (One pair : Jacks)
+lkm77 collected 0.20€ from pot
+*** SUMMARY ***
+Total pot 0.20€ | Rake 0.01€
+Board: [3d Jc 4s 8d 7s]
+Seat 3: lkm77 showed [5h Js] and won 0.20€ with One pair : Jacks
+Seat 6: Bushido909 (button) showed [9d 9s] and lost with One pair : 9
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255796-1588276195 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:49:55 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Lauzulas (1.86€)
+Seat 2: Bushido909 (3.99€)
+Seat 3: Carlosceg (2.29€)
+Seat 4: Golden Hello (2.15€)
+Seat 5: lkm77 (0.20€)
+Seat 6: maximousseop (4.37€)
+*** ANTE/BLINDS ***
+Lauzulas posts small blind 0.01€
+Bushido909 posts big blind 0.02€
+Dealt to lkm77 [As 2c]
+*** PRE-FLOP *** 
+Carlosceg raises 0.04€ to 0.06€
+Golden Hello folds
+lkm77 raises 0.14€ to 0.20€ and is all-in
+maximousseop folds
+Lauzulas folds
+Bushido909 folds
+Carlosceg calls 0.14€
+*** FLOP *** [9s 7s 4h]
+*** TURN *** [9s 7s 4h][Ad]
+*** RIVER *** [9s 7s 4h Ad][Th]
+*** SHOW DOWN ***
+Carlosceg shows [Jd Jh] (One pair : Jacks)
+lkm77 shows [As 2c] (One pair : Aces)
+lkm77 collected 0.41€ from pot
+*** SUMMARY ***
+Total pot 0.41€ | Rake 0.02€
+Board: [9s 7s 4h Ad Th]
+Seat 3: Carlosceg showed [Jd Jh] and lost with One pair : Jacks
+Seat 5: lkm77 showed [As 2c] and won 0.41€ with One pair : Aces
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255887-1588276219 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:50:19 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: FrancoHS (2€)
+Seat 2: lkm77 (0.41€)
+Seat 3: Imca52 (3.73€)
+Seat 4: Utopi1 (1.53€)
+Seat 5: ComeOnAndy (4.79€)
+Seat 6: Odoigo (2.69€)
+*** ANTE/BLINDS ***
+FrancoHS posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [4h 9s]
+*** PRE-FLOP *** 
+Imca52 folds
+Utopi1 folds
+ComeOnAndy folds
+Odoigo folds
+FrancoHS folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255879-1588276218 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:50:18 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Alige (2.58€)
+Seat 2: Bosta17 (3.66€)
+Seat 3: Winamvoleur (0.77€)
+Seat 4: momozig (1.73€)
+Seat 5: lkm77 (0.41€)
+Seat 6: SmEllycAAt (2.85€)
+*** ANTE/BLINDS ***
+Alige posts small blind 0.01€
+Bosta17 posts big blind 0.02€
+Dealt to lkm77 [6c 8s]
+*** PRE-FLOP *** 
+Winamvoleur folds
+momozig raises 0.02€ to 0.04€
+lkm77 folds
+SmEllycAAt calls 0.04€
+Alige folds
+Bosta17 folds
+*** FLOP *** [8c 5h 8h]
+momozig bets 0.11€
+SmEllycAAt folds
+momozig collected 0.21€ from pot
+*** SUMMARY ***
+Total pot 0.21€ | Rake 0.01€
+Board: [8c 5h 8h]
+Seat 4: momozig won 0.21€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255872-1588276214 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:50:14 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: marcocos23 (2.60€)
+Seat 2: nicky_poker (3.70€)
+Seat 3: Golden Hello (2.04€)
+Seat 4: asgard286 (2.42€)
+Seat 5: Carlosceg (2.09€)
+Seat 6: lkm77 (0.41€)
+*** ANTE/BLINDS ***
+marcocos23 posts small blind 0.01€
+nicky_poker posts big blind 0.02€
+Dealt to lkm77 [6d 4c]
+*** PRE-FLOP *** 
+Golden Hello calls 0.02€
+asgard286 folds
+Carlosceg folds
+lkm77 folds
+marcocos23 calls 0.01€
+nicky_poker raises 0.08€ to 0.10€
+Golden Hello calls 0.08€
+marcocos23 calls 0.08€
+*** FLOP *** [6c 3c 8h]
+marcocos23 checks
+nicky_poker checks
+Golden Hello checks
+*** TURN *** [6c 3c 8h][9s]
+marcocos23 bets 0.20€
+nicky_poker folds
+Golden Hello folds
+marcocos23 collected 0.48€ from pot
+*** SUMMARY ***
+Total pot 0.48€ | Rake 0.02€
+Board: [6c 3c 8h 9s]
+Seat 1: marcocos23 (small blind) won 0.48€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9255931-1588276231 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:50:31 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (0.42€)
+Seat 2: philangevin (1.15€)
+Seat 3: Qbott (2€)
+Seat 4: HELLPIAFOS (2.11€)
+Seat 5: WinaFabB (1.69€)
+Seat 6: R3DK3RN3L (2.35€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+philangevin posts big blind 0.02€
+Dealt to lkm77 [Jc Qs]
+*** PRE-FLOP *** 
+Qbott folds
+HELLPIAFOS folds
+WinaFabB calls 0.02€
+R3DK3RN3L calls 0.02€
+lkm77 raises 0.02€ to 0.04€
+philangevin calls 0.02€
+WinaFabB calls 0.02€
+R3DK3RN3L calls 0.02€
+*** FLOP *** [4c 7h Qc]
+lkm77 bets 0.02€
+philangevin folds
+WinaFabB folds
+R3DK3RN3L folds
+lkm77 collected 0.17€ from pot
+*** SUMMARY ***
+Total pot 0.17€ | Rake 0.01€
+Board: [4c 7h Qc]
+Seat 1: lkm77 (small blind) won 0.17€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256114-1588276279 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:51:19 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: _sattaman_ (3.74€)
+Seat 2: Aresito15 (2.97€)
+Seat 3: lkm77 (0.53€)
+Seat 4: BAD_NUTS (2.13€)
+Seat 5: Marignan1515 (2.10€)
+Seat 6: magou77 (2.06€)
+*** ANTE/BLINDS ***
+_sattaman_ posts small blind 0.01€
+Aresito15 posts big blind 0.02€
+Dealt to lkm77 [9c Jc]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+BAD_NUTS calls 0.04€
+Marignan1515 folds
+magou77 folds
+_sattaman_ calls 0.03€
+Aresito15 raises 0.24€ to 0.28€
+lkm77 raises 0.25€ to 0.53€ and is all-in
+BAD_NUTS folds
+_sattaman_ folds
+Aresito15 calls 0.25€
+*** FLOP *** [6h Qh Qd]
+*** TURN *** [6h Qh Qd][5c]
+*** RIVER *** [6h Qh Qd 5c][3c]
+*** SHOW DOWN ***
+lkm77 shows [9c Jc] (One pair : Queens)
+Aresito15 shows [Ac As] (Two pairs : Aces and Queens)
+Aresito15 collected 1.07€ from pot
+*** SUMMARY ***
+Total pot 1.07€ | Rake 0.07€
+Board: [6h Qh Qd 5c 3c]
+Seat 2: Aresito15 (big blind) showed [Ac As] and won 1.07€ with Two pairs : Aces and Queens
+Seat 3: lkm77 showed [9c Jc] and lost with One pair : Queens
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256330-1588276335 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:52:15 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: BigN0ze (2.41€)
+Seat 2: Spiffeennnnn (1.91€)
+Seat 3: alisvolat (1.18€)
+Seat 4: lkm77 (2€)
+Seat 5: Matt50710 (1.30€)
+Seat 6: ComeOnAndy (2.82€)
+*** ANTE/BLINDS ***
+BigN0ze posts small blind 0.01€
+Spiffeennnnn posts big blind 0.02€
+Dealt to lkm77 [9h Ac]
+*** PRE-FLOP *** 
+alisvolat raises 0.02€ to 0.04€
+lkm77 raises 0.02€ to 0.06€
+Matt50710 folds
+ComeOnAndy folds
+BigN0ze folds
+Spiffeennnnn folds
+alisvolat calls 0.02€
+*** FLOP *** [Kh Ts 7h]
+alisvolat bets 0.04€
+lkm77 raises 0.04€ to 0.08€
+alisvolat calls 0.04€
+*** TURN *** [Kh Ts 7h][6h]
+alisvolat bets 0.16€
+lkm77 folds
+alisvolat collected 0.45€ from pot
+*** SUMMARY ***
+Total pot 0.45€ | Rake 0.02€
+Board: [Kh Ts 7h 6h]
+Seat 3: alisvolat won 0.45€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256434-1588276363 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:52:43 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Qu4l0 (6.84€)
+Seat 2: Kyseur974 (4.10€)
+Seat 3: ChikoCarre (7.99€)
+Seat 4: Earl ReyarGG (2.55€)
+Seat 5: Edoul (2€)
+Seat 6: lkm77 (1.86€)
+*** ANTE/BLINDS ***
+Qu4l0 posts small blind 0.01€
+Kyseur974 posts big blind 0.02€
+Dealt to lkm77 [6c 5h]
+*** PRE-FLOP *** 
+ChikoCarre folds
+Earl ReyarGG raises 0.04€ to 0.06€
+Edoul folds
+lkm77 folds
+Qu4l0 folds
+Kyseur974 folds
+Earl ReyarGG collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 4: Earl ReyarGG won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256440-1588276364 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:52:44 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: abxlog (3.72€)
+Seat 2: lkm77 (1.86€)
+Seat 3: Agentepato (2.35€)
+Seat 4: Benedetto08 (1.80€)
+Seat 5: Spiffeennnnn (2€)
+Seat 6: francky_p1 (2.24€)
+*** ANTE/BLINDS ***
+abxlog posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [2d 4h]
+*** PRE-FLOP *** 
+Agentepato folds
+Benedetto08 folds
+Spiffeennnnn folds
+francky_p1 folds
+abxlog folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256484-1588276375 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:52:55 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: TuPuesDuQ (3.13€)
+Seat 2: Nicole Nirei (2.39€)
+Seat 3: lkm77 (1.99€)
+Seat 4: Flia.king (8.19€)
+Seat 5: Natanathalia (2.13€)
+Seat 6: funvince (2.55€)
+*** ANTE/BLINDS ***
+TuPuesDuQ posts small blind 0.01€
+Nicole Nirei posts big blind 0.02€
+Dealt to lkm77 [Qs 6c]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+Flia.king folds
+Natanathalia calls 0.04€
+funvince folds
+TuPuesDuQ folds
+Nicole Nirei folds
+*** FLOP *** [As 9d Ac]
+lkm77 bets 0.05€
+Natanathalia calls 0.05€
+*** TURN *** [As 9d Ac][6h]
+lkm77 bets 0.15€
+Natanathalia folds
+lkm77 collected 0.35€ from pot
+*** SUMMARY ***
+Total pot 0.35€ | Rake 0.01€
+Board: [As 9d Ac 6h]
+Seat 3: lkm77 won 0.35€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256479-1588276373 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:52:53 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2€)
+Seat 2: Borus10 (1.09€)
+Seat 3: Earl ReyarGG (3.66€)
+Seat 4: Marignan1515 (1.43€)
+Seat 5: HELLPIAFOS (2.07€)
+Seat 6: SinExito (2.09€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Borus10 posts big blind 0.02€
+Dealt to lkm77 [3c 4h]
+*** PRE-FLOP *** 
+Earl ReyarGG folds
+Marignan1515 calls 0.02€
+HELLPIAFOS folds
+SinExito folds
+lkm77 folds
+Borus10 checks
+*** FLOP *** [Js Jc Jh]
+Borus10 checks
+Marignan1515 bets 0.04€
+Borus10 calls 0.04€
+*** TURN *** [Js Jc Jh][Tc]
+Borus10 checks
+Marignan1515 bets 0.10€
+Borus10 folds
+Marignan1515 collected 0.22€ from pot
+*** SUMMARY ***
+Total pot 0.22€ | Rake 0.01€
+Board: [Js Jc Jh Tc]
+Seat 4: Marignan1515 won 0.22€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256600-1588276408 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:53:28 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Odoigo (2.45€)
+Seat 2: ArcherKKoala (3.13€)
+Seat 3: ismapk (2.19€)
+Seat 4: lkm77 (2.10€)
+Seat 5: Helipoker (2.25€)
+Seat 6: Star_Lord 44 (2.69€)
+*** ANTE/BLINDS ***
+Odoigo posts small blind 0.01€
+ArcherKKoala posts big blind 0.02€
+Dealt to lkm77 [As 9s]
+*** PRE-FLOP *** 
+ismapk folds
+lkm77 raises 0.02€ to 0.04€
+Helipoker folds
+Star_Lord 44 calls 0.04€
+Odoigo folds
+ArcherKKoala folds
+*** FLOP *** [8s 4c Qc]
+lkm77 bets 0.05€
+Star_Lord 44 folds
+lkm77 collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | Rake 0.01€
+Board: [8s 4c Qc]
+Seat 4: lkm77 won 0.15€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256776-1588276454 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:54:14 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Killer2noob (2€)
+Seat 2: AurelMaac (2.12€)
+Seat 3: Agentepato (2.32€)
+Seat 4: LillyMini (1.90€)
+Seat 5: goldie.41 (1.32€)
+Seat 6: lkm77 (2.16€)
+*** ANTE/BLINDS ***
+Killer2noob posts small blind 0.01€
+AurelMaac posts big blind 0.02€
+Dealt to lkm77 [Td Ad]
+*** PRE-FLOP *** 
+Agentepato folds
+LillyMini folds
+goldie.41 folds
+lkm77 raises 0.02€ to 0.04€
+Killer2noob calls 0.03€
+AurelMaac raises 2.08€ to 2.12€ and is all-in
+lkm77 folds
+Killer2noob folds
+AurelMaac collected 2.20€ from pot
+*** SUMMARY ***
+Total pot 2.20€ | No rake
+Seat 2: AurelMaac (big blind) won 2.20€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256767-1588276451 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:54:11 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Wanted78 (5.85€)
+Seat 2: Monsieur M (3.31€)
+Seat 3: PTT 81 (3.20€)
+Seat 4: R3DK3RN3L (2.34€)
+Seat 5: lkm77 (2.16€)
+Seat 6: COUR-B (2€)
+*** ANTE/BLINDS ***
+Wanted78 posts small blind 0.01€
+Monsieur M posts big blind 0.02€
+Dealt to lkm77 [9h 2h]
+*** PRE-FLOP *** 
+PTT 81 raises 0.04€ to 0.06€
+R3DK3RN3L folds
+lkm77 folds
+COUR-B raises 0.04€ to 0.10€
+Wanted78 folds
+Monsieur M folds
+PTT 81 calls 0.04€
+*** FLOP *** [4s Th 2d]
+PTT 81 checks
+COUR-B bets 0.23€
+PTT 81 folds
+COUR-B collected 0.45€ from pot
+*** SUMMARY ***
+Total pot 0.45€ | Rake 0.01€
+Board: [4s Th 2d]
+Seat 6: COUR-B (button) won 0.45€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256891-1588276481 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:54:41 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Fred2k77 (4.25€)
+Seat 2: lkm77 (2.11€)
+Seat 3: Jpone1 (2.29€)
+Seat 4: Jaimebafi (3.38€)
+Seat 5: G3RONIMO (1.35€)
+Seat 6: Arkahh1 (4.27€)
+*** ANTE/BLINDS ***
+Fred2k77 posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Ad 9s]
+*** PRE-FLOP *** 
+Jpone1 folds
+Jaimebafi folds
+G3RONIMO calls 0.02€
+Arkahh1 folds
+Fred2k77 folds
+lkm77 raises 0.02€ to 0.04€
+G3RONIMO calls 0.02€
+*** FLOP *** [Kd 3s Ah]
+lkm77 checks
+G3RONIMO checks
+*** TURN *** [Kd 3s Ah][7h]
+lkm77 bets 0.07€
+G3RONIMO folds
+lkm77 collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | Rake 0.01€
+Board: [Kd 3s Ah 7h]
+Seat 2: lkm77 (big blind) won 0.15€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9256885-1588276479 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:54:39 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.12€)
+Seat 2: Joker1O (4.90€)
+Seat 3: Kevin9000 (0.55€)
+Seat 4: Winamvoleur (0.52€)
+Seat 5: Marieeete027 (2.54€)
+Seat 6: webfuchs (2.11€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Joker1O posts big blind 0.02€
+Dealt to lkm77 [Jh 8c]
+*** PRE-FLOP *** 
+Kevin9000 folds
+Winamvoleur folds
+Marieeete027 raises 0.02€ to 0.04€
+webfuchs folds
+lkm77 folds
+Joker1O calls 0.02€
+*** FLOP *** [Js 4c 3s]
+Joker1O checks
+Marieeete027 bets 0.09€
+Joker1O calls 0.09€
+*** TURN *** [Js 4c 3s][5h]
+Joker1O checks
+Marieeete027 bets 0.27€
+Joker1O folds
+Marieeete027 collected 0.52€ from pot
+*** SUMMARY ***
+Total pot 0.52€ | Rake 0.02€
+Board: [Js 4c 3s 5h]
+Seat 5: Marieeete027 won 0.52€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257108-1588276535 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:55:35 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: webfuchs (2€)
+Seat 2: Mr. Yei (2€)
+Seat 3: sellig 35 (1.16€)
+Seat 4: Odoigo (2.54€)
+Seat 5: Jaimebafi (2.38€)
+Seat 6: lkm77 (2.15€)
+*** ANTE/BLINDS ***
+webfuchs posts small blind 0.01€
+Mr. Yei posts big blind 0.02€
+Dealt to lkm77 [Kd 9d]
+*** PRE-FLOP *** 
+sellig 35 folds
+Odoigo folds
+Jaimebafi folds
+lkm77 raises 0.02€ to 0.04€
+webfuchs folds
+Mr. Yei calls 0.02€
+*** FLOP *** [Qh 4s 3s]
+Mr. Yei checks
+lkm77 bets 0.06€
+Mr. Yei folds
+lkm77 collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | Rake 0.01€
+Board: [Qh 4s 3s]
+Seat 6: lkm77 (button) won 0.14€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257074-1588276526 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:55:26 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Flia.king (8.19€)
+Seat 2: mytia (2€)
+Seat 3: lkm77 (2.15€)
+Seat 4: Eldobbyto (3.15€)
+Seat 5: ALL_INwithAA (2.03€)
+Seat 6: ChikoCarre (8.10€)
+*** ANTE/BLINDS ***
+Flia.king posts small blind 0.01€
+mytia posts big blind 0.02€
+Dealt to lkm77 [4h 9h]
+*** PRE-FLOP *** 
+lkm77 folds
+Eldobbyto folds
+ALL_INwithAA folds
+ChikoCarre raises 0.03€ to 0.05€
+Flia.king folds
+mytia calls 0.03€
+*** FLOP *** [6h 7h Th]
+mytia checks
+ChikoCarre checks
+*** TURN *** [6h 7h Th][Ad]
+mytia checks
+ChikoCarre bets 0.04€
+mytia folds
+ChikoCarre collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | Rake 0.01€
+Board: [6h 7h Th Ad]
+Seat 6: ChikoCarre (button) won 0.14€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257081-1588276528 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:55:28 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: PTT 81 (3.16€)
+Seat 2: Gorgones21 (1.74€)
+Seat 3: PAYENS (1.73€)
+Seat 4: lkm77 (2.15€)
+Seat 5: Spiffeennnnn (1.84€)
+Seat 6: SmEllycAAt (2.83€)
+*** ANTE/BLINDS ***
+PTT 81 posts small blind 0.01€
+Gorgones21 posts big blind 0.02€
+Dealt to lkm77 [3h Kd]
+*** PRE-FLOP *** 
+PAYENS raises 0.02€ to 0.04€
+lkm77 folds
+Spiffeennnnn folds
+SmEllycAAt calls 0.04€
+PTT 81 folds
+Gorgones21 folds
+*** FLOP *** [2s Ad 5c]
+PAYENS bets 0.07€
+SmEllycAAt folds
+PAYENS collected 0.17€ from pot
+*** SUMMARY ***
+Total pot 0.17€ | Rake 0.01€
+Board: [2s Ad 5c]
+Seat 3: PAYENS won 0.17€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257177-1588276552 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:55:52 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: terater67 (3.65€)
+Seat 2: FC CUNI (13.41€)
+Seat 3: Edoul (2€)
+Seat 4: lkm77 (2.19€)
+Seat 5: Qu4l0 (7.97€)
+Seat 6: The Lords (2.13€)
+*** ANTE/BLINDS ***
+terater67 posts small blind 0.01€
+FC CUNI posts big blind 0.02€
+Dealt to lkm77 [2d Ac]
+*** PRE-FLOP *** 
+Edoul folds
+lkm77 raises 0.02€ to 0.04€
+Qu4l0 folds
+The Lords folds
+terater67 folds
+FC CUNI calls 0.02€
+*** FLOP *** [Ts 3c 8h]
+FC CUNI checks
+lkm77 bets 0.07€
+FC CUNI folds
+lkm77 collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | Rake 0.01€
+Board: [Ts 3c 8h]
+Seat 4: lkm77 won 0.15€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257223-1588276564 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:56:04 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: marcocos23 (2.34€)
+Seat 2: x_cena67 (4.83€)
+Seat 3: lkm77 (2.23€)
+Seat 4: ch4os (1.19€)
+Seat 5: Kh4an (2.15€)
+Seat 6: jimnetsukao2 (2.89€)
+*** ANTE/BLINDS ***
+marcocos23 posts small blind 0.01€
+x_cena67 posts big blind 0.02€
+Dealt to lkm77 [Qh Ad]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+ch4os folds
+Kh4an folds
+jimnetsukao2 folds
+marcocos23 folds
+x_cena67 folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 3: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257253-1588276571 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:56:11 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: GT0_Placard (2.03€)
+Seat 2: lkm77 (2.26€)
+Seat 3: Malowww (2.12€)
+Seat 4: Spiffeennnnn (1.99€)
+Seat 5: guitou45 (1.61€)
+Seat 6: Imca52 (2.26€)
+*** ANTE/BLINDS ***
+GT0_Placard posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [7c 4d]
+*** PRE-FLOP *** 
+Malowww folds
+Spiffeennnnn folds
+guitou45 calls 0.02€
+Imca52 folds
+GT0_Placard folds
+lkm77 checks
+*** FLOP *** [Qc 9c 2c]
+lkm77 bets 0.02€
+guitou45 calls 0.02€
+*** TURN *** [Qc 9c 2c][Js]
+lkm77 bets 0.08€
+guitou45 calls 0.08€
+*** RIVER *** [Qc 9c 2c Js][7d]
+lkm77 checks
+guitou45 checks
+*** SHOW DOWN ***
+guitou45 shows [3s 3c] (One pair : 3)
+lkm77 shows [7c 4d] (One pair : 7)
+lkm77 collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | Rake 0.01€
+Board: [Qc 9c 2c Js 7d]
+Seat 2: lkm77 (big blind) showed [7c 4d] and won 0.24€ with One pair : 7
+Seat 5: guitou45 showed [3s 3c] and lost with One pair : 3
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257101-1588276534 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:55:34 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ComeOnAndy (2.13€)
+Seat 2: Normal_Dog (4.18€)
+Seat 3: Chewbacca234 (1.98€)
+Seat 4: momozig (2.37€)
+Seat 5: lkm77 (2.15€)
+Seat 6: Bosta17 (4.25€)
+*** ANTE/BLINDS ***
+ComeOnAndy posts small blind 0.01€
+Normal_Dog posts big blind 0.02€
+Dealt to lkm77 [4h 9s]
+*** PRE-FLOP *** 
+Chewbacca234 folds
+momozig raises 0.04€ to 0.06€
+lkm77 folds
+Bosta17 folds
+ComeOnAndy folds
+Normal_Dog calls 0.04€
+*** FLOP *** [3h Ks 9h]
+Normal_Dog checks
+momozig bets 0.13€
+Normal_Dog calls 0.13€
+*** TURN *** [3h Ks 9h][Ts]
+Normal_Dog checks
+momozig checks
+*** RIVER *** [3h Ks 9h Ts][Kc]
+Normal_Dog checks
+momozig bets 0.26€
+Normal_Dog calls 0.26€
+*** SHOW DOWN ***
+momozig shows [Ad 2h] (One pair : Kings)
+Normal_Dog shows [Qd Tc] (Two pairs : Kings and Tens)
+Normal_Dog collected 0.86€ from pot
+*** SUMMARY ***
+Total pot 0.86€ | Rake 0.05€
+Board: [3h Ks 9h Ts Kc]
+Seat 2: Normal_Dog (big blind) showed [Qd Tc] and won 0.86€ with Two pairs : Kings and Tens
+Seat 4: momozig showed [Ad 2h] and lost with One pair : Kings
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257389-1588276603 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:56:43 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: _Grindr (2€)
+Seat 2: .NeverMind. (4.08€)
+Seat 3: guitou45 (1.49€)
+Seat 4: Pindy87270 (3.16€)
+Seat 5: 0elb00 (2€)
+Seat 6: lkm77 (2.38€)
+*** ANTE/BLINDS ***
+_Grindr posts small blind 0.01€
+.NeverMind. posts big blind 0.02€
+Dealt to lkm77 [Qd Jh]
+*** PRE-FLOP *** 
+guitou45 folds
+Pindy87270 folds
+0elb00 folds
+lkm77 raises 0.02€ to 0.04€
+_Grindr folds
+.NeverMind. folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 6: lkm77 (button) won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257449-1588276618 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:56:58 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.41€)
+Seat 2: Edoul (2.27€)
+Seat 3: leo0902 (0.93€)
+Seat 4: 0elb00 (2€)
+Seat 5: Serie107 (2.05€)
+Seat 6: ChikoCarre (8.16€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Edoul posts big blind 0.02€
+Dealt to lkm77 [5d 8s]
+*** PRE-FLOP *** 
+leo0902 raises 0.02€ to 0.04€
+0elb00 folds
+Serie107 folds
+ChikoCarre folds
+lkm77 folds
+Edoul folds
+leo0902 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 3: leo0902 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257458-1588276621 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:57:01 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ChikoCarre (8.15€)
+Seat 2: Bosta17 (3.76€)
+Seat 3: Wanted78 (5.79€)
+Seat 4: Alexfp7 (1.80€)
+Seat 5: lkm77 (2.40€)
+Seat 6: Normal_Dog (2.72€)
+*** ANTE/BLINDS ***
+ChikoCarre posts small blind 0.01€
+Bosta17 posts big blind 0.02€
+Dealt to lkm77 [2h 2d]
+*** PRE-FLOP *** 
+Wanted78 raises 0.03€ to 0.05€
+Alexfp7 folds
+lkm77 calls 0.05€
+Normal_Dog folds
+ChikoCarre folds
+Bosta17 raises 0.15€ to 0.20€
+Wanted78 calls 0.15€
+lkm77 calls 0.15€
+*** FLOP *** [9h Th Ac]
+Bosta17 checks
+Wanted78 checks
+lkm77 bets 0.30€
+Bosta17 folds
+Wanted78 folds
+lkm77 collected 0.87€ from pot
+*** SUMMARY ***
+Total pot 0.87€ | Rake 0.04€
+Board: [9h Th Ac]
+Seat 5: lkm77 won 0.87€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257727-1588276694 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:58:14 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ComeOnAndy (2.37€)
+Seat 2: SwimDeep_Joe (2.73€)
+Seat 3: lkm77 (2.77€)
+Seat 4: Antoinic (1.08€)
+Seat 5: Nakata80 (2.29€)
+Seat 6: Kharoth (6.28€)
+*** ANTE/BLINDS ***
+ComeOnAndy posts small blind 0.01€
+SwimDeep_Joe posts big blind 0.02€
+Dealt to lkm77 [9d Kh]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+Antoinic folds
+Nakata80 folds
+Kharoth folds
+ComeOnAndy folds
+SwimDeep_Joe folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 3: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258044-1588276775 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:59:35 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: LucilleAsoif (5.33€)
+Seat 2: lkm77 (2.79€)
+Seat 3: TuPuesDuQ (3.91€)
+Seat 4: packymaitre (2.63€)
+Seat 5: Golden Hello (2.36€)
+Seat 6: kreten30 (3.63€)
+*** ANTE/BLINDS ***
+LucilleAsoif posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Jh 3d]
+*** PRE-FLOP *** 
+TuPuesDuQ folds
+packymaitre folds
+Golden Hello folds
+kreten30 folds
+LucilleAsoif folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9257778-1588276709 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:58:29 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.80€)
+Seat 2: terater67 (3.47€)
+Seat 3: Lordprince (3.51€)
+Seat 4: HELLPIAFOS (2.23€)
+Seat 5: Qu4l0 (8.88€)
+Seat 6: Dzil77220 (1.27€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+terater67 posts big blind 0.02€
+Dealt to lkm77 [Qd 8h]
+*** PRE-FLOP *** 
+Lordprince calls 0.02€
+HELLPIAFOS folds
+Qu4l0 folds
+Dzil77220 folds
+lkm77 folds
+terater67 checks
+*** FLOP *** [4s 6c 9d]
+terater67 bets 0.03€
+Lordprince calls 0.03€
+*** TURN *** [4s 6c 9d][3s]
+terater67 bets 0.06€
+Lordprince folds
+terater67 collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | Rake 0.01€
+Board: [4s 6c 9d 3s]
+Seat 2: terater67 (big blind) won 0.16€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258097-1588276787 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:59:47 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Machagreg (1.98€)
+Seat 2: Kharoth (5.90€)
+Seat 3: HELLPIAFOS (2.54€)
+Seat 4: lkm77 (2.80€)
+Seat 5: Zibouzion (1.84€)
+Seat 6: 0elb00 (2.18€)
+*** ANTE/BLINDS ***
+Machagreg posts small blind 0.01€
+Kharoth posts big blind 0.02€
+Dealt to lkm77 [8s Qs]
+*** PRE-FLOP *** 
+HELLPIAFOS folds
+lkm77 raises 0.02€ to 0.04€
+Zibouzion folds
+0elb00 folds
+Machagreg calls 0.03€
+Kharoth calls 0.02€
+*** FLOP *** [7h 5h Ks]
+Machagreg checks
+Kharoth checks
+lkm77 checks
+*** TURN *** [7h 5h Ks][6s]
+Machagreg checks
+Kharoth bets 0.06€
+lkm77 calls 0.06€
+Machagreg calls 0.06€
+*** RIVER *** [7h 5h Ks 6s][3s]
+Machagreg checks
+Kharoth checks
+lkm77 bets 0.12€
+Machagreg folds
+Kharoth calls 0.12€
+*** SHOW DOWN ***
+Kharoth shows [As 7c] (One pair : 7)
+lkm77 shows [8s Qs] (Flush King high)
+lkm77 collected 0.51€ from pot
+*** SUMMARY ***
+Total pot 0.51€ | Rake 0.03€
+Board: [7h 5h Ks 6s 3s]
+Seat 2: Kharoth (big blind) showed [As 7c] and lost with One pair : 7
+Seat 4: lkm77 showed [8s Qs] and won 0.51€ with Flush King high
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258307-1588276838 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:00:38 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Kharoth (5.68€)
+Seat 2: chevreuilenY (2.58€)
+Seat 3: PAYENS (1.69€)
+Seat 4: jujuwbth (1.11€)
+Seat 5: lkm77 (3.09€)
+Seat 6: Marcos priet (3.94€)
+*** ANTE/BLINDS ***
+Kharoth posts small blind 0.01€
+chevreuilenY posts big blind 0.02€
+Dealt to lkm77 [3c Jc]
+*** PRE-FLOP *** 
+PAYENS folds
+jujuwbth folds
+lkm77 folds
+Marcos priet folds
+Kharoth folds
+chevreuilenY collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: chevreuilenY (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258315-1588276840 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:00:40 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: webfuchs (2€)
+Seat 2: sellig 35 (1.54€)
+Seat 3: Alige (3.28€)
+Seat 4: Toto27700 (2.13€)
+Seat 5: lkm77 (3.09€)
+Seat 6: jenniflo (3.93€)
+*** ANTE/BLINDS ***
+webfuchs posts small blind 0.01€
+sellig 35 posts big blind 0.02€
+Dealt to lkm77 [Td 8h]
+*** PRE-FLOP *** 
+Alige folds
+Toto27700 folds
+lkm77 folds
+jenniflo calls 0.02€
+webfuchs folds
+sellig 35 checks
+*** FLOP *** [6c 5d 8d]
+sellig 35 checks
+jenniflo bets 0.02€
+sellig 35 folds
+jenniflo collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Board: [6c 5d 8d]
+Seat 6: jenniflo (button) won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258320-1588276842 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:00:42 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Malowww (2.21€)
+Seat 2: lkm77 (3.09€)
+Seat 3: rickearth28 (1.98€)
+Seat 4: Alige (3.28€)
+Seat 5: Yo127 (2.59€)
+Seat 6: tritrus13 (1.70€)
+*** ANTE/BLINDS ***
+Malowww posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Th 8h]
+*** PRE-FLOP *** 
+rickearth28 folds
+Alige folds
+Yo127 calls 0.02€
+tritrus13 folds
+Malowww folds
+lkm77 checks
+*** FLOP *** [7s 6s Kc]
+lkm77 bets 0.02€
+Yo127 calls 0.02€
+*** TURN *** [7s 6s Kc][2c]
+lkm77 bets 0.07€
+Yo127 calls 0.07€
+*** RIVER *** [7s 6s Kc 2c][7c]
+lkm77 checks
+Yo127 bets 0.23€
+lkm77 folds
+Yo127 collected 0.45€ from pot
+*** SUMMARY ***
+Total pot 0.45€ | Rake 0.01€
+Board: [7s 6s Kc 2c 7c]
+Seat 5: Yo127 won 0.45€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258429-1588276872 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:01:12 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.98€)
+Seat 2: Potato (10.29€)
+Seat 3: pistoulet47 (1.38€)
+Seat 4: PTT 81 (3.02€)
+Seat 5: PEPICH0U (2€)
+Seat 6: ComeOnAndy (7.87€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Potato posts big blind 0.02€
+Dealt to lkm77 [Qc 2c]
+*** PRE-FLOP *** 
+pistoulet47 folds
+PTT 81 folds
+PEPICH0U folds
+ComeOnAndy folds
+lkm77 raises 0.02€ to 0.04€
+Potato folds
+lkm77 collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Seat 1: lkm77 (small blind) won 0.06€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258423-1588276870 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:01:10 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Edoul (2.11€)
+Seat 2: G3RONIMO (1.29€)
+Seat 3: lkm77 (2.98€)
+Seat 4: abxlog (1.73€)
+Seat 5: PTT 81 (3.02€)
+Seat 6: Python_007 (1.59€)
+*** ANTE/BLINDS ***
+Edoul posts small blind 0.01€
+G3RONIMO posts big blind 0.02€
+Dealt to lkm77 [9c Qd]
+*** PRE-FLOP *** 
+lkm77 folds
+abxlog folds
+PTT 81 folds
+Python_007 folds
+Edoul folds
+G3RONIMO collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: G3RONIMO (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258455-1588276880 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:01:20 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Encerrado21 (0.85€)
+Seat 2: alice47R (2€)
+Seat 3: kikkflex (2.08€)
+Seat 4: lkm77 (3€)
+Seat 5: Kyseur974 (2.88€)
+Seat 6: funvince (3.14€)
+*** ANTE/BLINDS ***
+Encerrado21 posts small blind 0.01€
+alice47R posts big blind 0.02€
+Dealt to lkm77 [8c 8h]
+*** PRE-FLOP *** 
+kikkflex raises 0.04€ to 0.06€
+lkm77 calls 0.06€
+Kyseur974 folds
+funvince calls 0.06€
+Encerrado21 folds
+alice47R folds
+*** FLOP *** [Jd 6d 8d]
+kikkflex bets 0.08€
+lkm77 raises 0.08€ to 0.16€
+funvince folds
+kikkflex calls 0.08€
+*** TURN *** [Jd 6d 8d][Ts]
+kikkflex checks
+lkm77 bets 0.23€
+kikkflex calls 0.23€
+*** RIVER *** [Jd 6d 8d Ts][9s]
+kikkflex checks
+lkm77 bets 0.54€
+kikkflex calls 0.54€
+*** SHOW DOWN ***
+kikkflex shows [Js Ah] (One pair : Jacks)
+lkm77 shows [8c 8h] (Trips of 8)
+lkm77 collected 1.95€ from pot
+*** SUMMARY ***
+Total pot 1.95€ | Rake 0.12€
+Board: [Jd 6d 8d Ts 9s]
+Seat 3: kikkflex showed [Js Ah] and lost with One pair : Jacks
+Seat 4: lkm77 showed [8c 8h] and won 1.95€ with Trips of 8
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258811-1588276973 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:02:53 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: jimnetsukao2 (3.02€)
+Seat 2: pistoulet47 (1.37€)
+Seat 3: Eldobbyto (5.27€)
+Seat 4: funvince (3.08€)
+Seat 5: Juanpoker333 (4.98€)
+Seat 6: lkm77 (3.96€)
+*** ANTE/BLINDS ***
+jimnetsukao2 posts small blind 0.01€
+pistoulet47 posts big blind 0.02€
+Dealt to lkm77 [Qh 5h]
+*** PRE-FLOP *** 
+Eldobbyto folds
+funvince folds
+Juanpoker333 folds
+lkm77 raises 0.02€ to 0.04€
+jimnetsukao2 calls 0.03€
+pistoulet47 folds
+*** FLOP *** [As 7d Kc]
+jimnetsukao2 checks
+lkm77 bets 0.05€
+jimnetsukao2 folds
+lkm77 collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | Rake 0.01€
+Board: [As 7d Kc]
+Seat 6: lkm77 (button) won 0.14€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258863-1588276987 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:03:07 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Tioderivera (2.75€)
+Seat 2: sajonmercier (3.39€)
+Seat 3: Chimaeraxx (1.93€)
+Seat 4: PEPICH0U (2€)
+Seat 5: Qbott (2.67€)
+Seat 6: lkm77 (4.01€)
+*** ANTE/BLINDS ***
+Tioderivera posts small blind 0.01€
+sajonmercier posts big blind 0.02€
+Dealt to lkm77 [6d 9s]
+*** PRE-FLOP *** 
+Chimaeraxx folds
+PEPICH0U folds
+Qbott folds
+lkm77 folds
+Tioderivera raises 0.04€ to 0.06€
+sajonmercier folds
+Tioderivera collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: Tioderivera (small blind) won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9258871-1588276990 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:03:10 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: BREIZH_HELLO (3.41€)
+Seat 2: Fethi331 (2€)
+Seat 3: Python_007 (1.55€)
+Seat 4: lkm77 (4.01€)
+Seat 5: PEPICH0U (2€)
+Seat 6: Golden Hello (3.13€)
+*** ANTE/BLINDS ***
+BREIZH_HELLO posts small blind 0.01€
+Fethi331 posts big blind 0.02€
+Dealt to lkm77 [Kd Qs]
+*** PRE-FLOP *** 
+Python_007 folds
+lkm77 raises 0.02€ to 0.04€
+PEPICH0U folds
+Golden Hello folds
+BREIZH_HELLO folds
+Fethi331 calls 0.02€
+*** FLOP *** [Kc 3d 3h]
+Fethi331 checks
+lkm77 bets 0.02€
+Fethi331 raises 0.98€ to 1€
+lkm77 raises 0.98€ to 1.98€
+Fethi331 calls 0.96€ and is all-in
+*** TURN *** [Kc 3d 3h][8d]
+*** RIVER *** [Kc 3d 3h 8d][7d]
+*** SHOW DOWN ***
+Fethi331 shows [8c 3s] (Full of 3 and 8)
+lkm77 shows [Kd Qs] (Two pairs : Kings and 3)
+lkm77 collected 0.02€ from side pot 1
+Fethi331 collected 3.78€ from main pot
+*** SUMMARY ***
+Total pot 3.80€ | Rake 0.23€
+Board: [Kc 3d 3h 8d 7d]
+Seat 2: Fethi331 (big blind) showed [8c 3s] and won 3.78€ with Full of 3 and 8
+Seat 4: lkm77 showed [Kd Qs] and won 0.02€ with Two pairs : Kings and 3
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259083-1588277045 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:04:05 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Monsieur M (3.23€)
+Seat 2: lkm77 (2.01€)
+Seat 3: Qu4l0 (8.52€)
+Seat 4: PEPICH0U (2.03€)
+Seat 5: Juanpoker333 (7.75€)
+Seat 6: remy07300 (0.92€)
+*** ANTE/BLINDS ***
+Monsieur M posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [3d Tc]
+*** PRE-FLOP *** 
+Qu4l0 folds
+PEPICH0U raises 0.04€ to 0.06€
+Juanpoker333 folds
+remy07300 folds
+Monsieur M folds
+lkm77 folds
+PEPICH0U collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 4: PEPICH0U won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259102-1588277050 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:04:10 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Borus10 (2.04€)
+Seat 2: Brouss_lie (1.94€)
+Seat 3: lkm77 (1.99€)
+Seat 4: LucienMLN (2€)
+Seat 5: walent1 (2.50€)
+Seat 6: Ser7814 (4.80€)
+*** ANTE/BLINDS ***
+Borus10 posts small blind 0.01€
+Brouss_lie posts big blind 0.02€
+Dealt to lkm77 [8s 7d]
+*** PRE-FLOP *** 
+lkm77 folds
+LucienMLN folds
+walent1 folds
+Ser7814 raises 0.04€ to 0.06€
+Borus10 folds
+Brouss_lie folds
+Ser7814 collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 6: Ser7814 (button) won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259121-1588277054 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:04:14 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Malowww (3.01€)
+Seat 2: Akira347 (4.31€)
+Seat 3: Qu4l0 (4.80€)
+Seat 4: kAAmelot94 (1.38€)
+Seat 5: lkm77 (1.98€)
+Seat 6: BREIZH_HELLO (0.52€)
+*** ANTE/BLINDS ***
+Malowww posts small blind 0.01€
+Akira347 posts big blind 0.02€
+Dealt to lkm77 [Kd Qc]
+*** PRE-FLOP *** 
+Qu4l0 folds
+kAAmelot94 folds
+lkm77 raises 0.02€ to 0.04€
+BREIZH_HELLO raises 0.48€ to 0.52€ and is all-in
+Malowww folds
+Akira347 folds
+lkm77 calls 0.48€
+*** FLOP *** [6d 5h Qs]
+*** TURN *** [6d 5h Qs][Qh]
+*** RIVER *** [6d 5h Qs Qh][2h]
+*** SHOW DOWN ***
+BREIZH_HELLO shows [Jd Jc] (Two pairs : Queens and Jacks)
+lkm77 shows [Kd Qc] (Trips of Queens)
+lkm77 collected 1.01€ from pot
+*** SUMMARY ***
+Total pot 1.01€ | Rake 0.06€
+Board: [6d 5h Qs Qh 2h]
+Seat 5: lkm77 showed [Kd Qc] and won 1.01€ with Trips of Queens
+Seat 6: BREIZH_HELLO (button) showed [Jd Jc] and lost with Two pairs : Queens and Jacks
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259114-1588277053 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:04:13 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (1.99€)
+Seat 2: cata-clismes (0.82€)
+Seat 3: Encerrado21 (0.82€)
+Seat 4: Jpone1 (1.94€)
+Seat 5: R3DK3RN3L (2.08€)
+Seat 6: Gondulf (1.34€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+cata-clismes posts big blind 0.02€
+Dealt to lkm77 [8d 6c]
+*** PRE-FLOP *** 
+Encerrado21 raises 0.02€ to 0.04€
+Jpone1 folds
+R3DK3RN3L folds
+Gondulf folds
+lkm77 folds
+cata-clismes calls 0.02€
+*** FLOP *** [Ks 6s 9c]
+cata-clismes checks
+Encerrado21 checks
+*** TURN *** [Ks 6s 9c][2c]
+cata-clismes checks
+Encerrado21 bets 0.02€
+cata-clismes calls 0.02€
+*** RIVER *** [Ks 6s 9c 2c][Jd]
+cata-clismes checks
+Encerrado21 checks
+*** SHOW DOWN ***
+Encerrado21 shows [Qd Ah] (High card : Ace)
+cata-clismes shows [6d 5d] (One pair : 6)
+cata-clismes collected 0.12€ from pot
+*** SUMMARY ***
+Total pot 0.12€ | Rake 0.01€
+Board: [Ks 6s 9c 2c Jd]
+Seat 2: cata-clismes (big blind) showed [6d 5d] and won 0.12€ with One pair : 6
+Seat 3: Encerrado21 showed [Qd Ah] and lost with High card : Ace
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259231-1588277080 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:04:40 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: sellig 35 (0.55€)
+Seat 2: CooolZeero (3.09€)
+Seat 3: Edoul (2.12€)
+Seat 4: Wanted78 (4.37€)
+Seat 5: kikkflex (2€)
+Seat 6: lkm77 (2.47€)
+*** ANTE/BLINDS ***
+sellig 35 posts small blind 0.01€
+CooolZeero posts big blind 0.02€
+Dealt to lkm77 [5s Tc]
+*** PRE-FLOP *** 
+Edoul folds
+Wanted78 raises 0.03€ to 0.05€
+kikkflex folds
+lkm77 folds
+sellig 35 folds
+CooolZeero folds
+Wanted78 collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 4: Wanted78 won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259244-1588277084 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:04:44 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Odoigo (2.99€)
+Seat 2: Winamvoleur (1.30€)
+Seat 3: Monsieur M (3.19€)
+Seat 4: LucilleAsoif (2.18€)
+Seat 5: lkm77 (2.47€)
+Seat 6: Xenp (2.19€)
+*** ANTE/BLINDS ***
+Odoigo posts small blind 0.01€
+Winamvoleur posts big blind 0.02€
+Dealt to lkm77 [4d Ac]
+*** PRE-FLOP *** 
+Monsieur M folds
+LucilleAsoif folds
+lkm77 raises 0.02€ to 0.04€
+Xenp folds
+Odoigo raises 0.08€ to 0.12€
+Winamvoleur folds
+lkm77 raises 0.08€ to 0.20€
+Odoigo calls 0.08€
+*** FLOP *** [3d Qh 5s]
+Odoigo checks
+lkm77 bets 0.29€
+Odoigo calls 0.29€
+*** TURN *** [3d Qh 5s][6s]
+Odoigo checks
+lkm77 bets 0.55€
+Odoigo folds
+lkm77 collected 1.49€ from pot
+*** SUMMARY ***
+Total pot 1.49€ | Rake 0.06€
+Board: [3d Qh 5s 6s]
+Seat 5: lkm77 won 1.49€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259415-1588277126 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:05:26 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: CooolZeero (2€)
+Seat 2: Encerrado21 (0.74€)
+Seat 3: SmEllycAAt (2.70€)
+Seat 4: Yo127 (2.39€)
+Seat 5: Geoffrey Aim (1€)
+Seat 6: lkm77 (2.92€)
+*** ANTE/BLINDS ***
+CooolZeero posts small blind 0.01€
+Encerrado21 posts big blind 0.02€
+Dealt to lkm77 [Js 8s]
+*** PRE-FLOP *** 
+SmEllycAAt folds
+Yo127 calls 0.02€
+Geoffrey Aim calls 0.02€
+lkm77 calls 0.02€
+CooolZeero folds
+Encerrado21 checks
+*** FLOP *** [6d 3d Qd]
+Encerrado21 checks
+Yo127 checks
+Geoffrey Aim checks
+lkm77 bets 0.02€
+Encerrado21 folds
+Yo127 folds
+Geoffrey Aim folds
+lkm77 collected 0.10€ from pot
+*** SUMMARY ***
+Total pot 0.10€ | Rake 0.01€
+Board: [6d 3d Qd]
+Seat 6: lkm77 (button) won 0.10€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259615-1588277174 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:06:14 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Dyyd67 (2.49€)
+Seat 2: lkm77 (2.98€)
+Seat 3: Bosta17 (3.99€)
+Seat 4: miaguisan (6.22€)
+Seat 5: cata-clismes (0.91€)
+Seat 6: Killer2noob (2.31€)
+*** ANTE/BLINDS ***
+Dyyd67 posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [9c 6s]
+*** PRE-FLOP *** 
+Bosta17 raises 0.04€ to 0.06€
+miaguisan folds
+cata-clismes folds
+Killer2noob folds
+Dyyd67 folds
+lkm77 folds
+Bosta17 collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 3: Bosta17 won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259696-1588277194 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:06:34 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: -BarbeBrune- (2.74€)
+Seat 2: arasar (3.70€)
+Seat 3: Cash-toi (2€)
+Seat 4: Emi 247 (2.25€)
+Seat 5: lkm77 (2.95€)
+Seat 6: LucienMLN (2.77€)
+*** ANTE/BLINDS ***
+-BarbeBrune- posts small blind 0.01€
+arasar posts big blind 0.02€
+Dealt to lkm77 [9s 3d]
+*** PRE-FLOP *** 
+Cash-toi folds
+Emi 247 folds
+lkm77 folds
+LucienMLN folds
+-BarbeBrune- folds
+arasar collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: arasar (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259642-1588277180 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:06:20 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.96€)
+Seat 2: jujuwbth (1.74€)
+Seat 3: Peppiz (2.45€)
+Seat 4: Oscartheblac (0.38€)
+Seat 5: Golden Hello (2.99€)
+Seat 6: TAMERENSPLIT (0.74€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+jujuwbth posts big blind 0.02€
+Dealt to lkm77 [4h 2s]
+*** PRE-FLOP *** 
+Peppiz raises 0.02€ to 0.04€
+Oscartheblac folds
+Golden Hello folds
+TAMERENSPLIT folds
+lkm77 folds
+jujuwbth calls 0.02€
+*** FLOP *** [4d 2d 6c]
+jujuwbth checks
+Peppiz bets 0.05€
+jujuwbth folds
+Peppiz collected 0.13€ from pot
+*** SUMMARY ***
+Total pot 0.13€ | Rake 0.01€
+Board: [4d 2d 6c]
+Seat 3: Peppiz won 0.13€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259702-1588277196 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:06:36 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: bobbycamion (4.33€)
+Seat 2: nicky_poker (5.32€)
+Seat 3: NaVaRR3tA (2€)
+Seat 4: lkm77 (2.95€)
+Seat 5: Emi 247 (2.25€)
+Seat 6: Xenp (2.03€)
+*** ANTE/BLINDS ***
+bobbycamion posts small blind 0.01€
+nicky_poker posts big blind 0.02€
+Dealt to lkm77 [3s Ks]
+*** PRE-FLOP *** 
+NaVaRR3tA folds
+lkm77 raises 0.02€ to 0.04€
+Emi 247 folds
+Xenp folds
+bobbycamion calls 0.03€
+nicky_poker folds
+*** FLOP *** [5s 6h 4s]
+bobbycamion checks
+lkm77 bets 0.02€
+bobbycamion calls 0.02€
+*** TURN *** [5s 6h 4s][7s]
+bobbycamion checks
+lkm77 bets 0.06€
+bobbycamion calls 0.06€
+*** RIVER *** [5s 6h 4s 7s][Qc]
+bobbycamion checks
+lkm77 bets 0.17€
+bobbycamion folds
+lkm77 collected 0.42€ from pot
+*** SUMMARY ***
+Total pot 0.42€ | Rake 0.01€
+Board: [5s 6h 4s 7s Qc]
+Seat 4: lkm77 won 0.42€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259999-1588277264 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:07:44 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: jaqenbr (2.14€)
+Seat 2: Brouss_lie (2.12€)
+Seat 3: lkm77 (3.08€)
+Seat 4: Holiap (2.46€)
+Seat 5: ComeOnAndy (5.28€)
+Seat 6: FrancoHS (3.45€)
+*** ANTE/BLINDS ***
+jaqenbr posts small blind 0.01€
+Brouss_lie posts big blind 0.02€
+Dealt to lkm77 [7c 2h]
+*** PRE-FLOP *** 
+lkm77 folds
+Holiap folds
+ComeOnAndy folds
+FrancoHS folds
+jaqenbr folds
+Brouss_lie collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Brouss_lie (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260007-1588277266 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:07:46 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: cata-clismes (0.82€)
+Seat 2: lkm77 (3.08€)
+Seat 3: BOG068 (2€)
+Seat 4: LucilleAsoif (1.43€)
+Seat 5: asgard286 (2.02€)
+Seat 6: Qbott (2.64€)
+*** ANTE/BLINDS ***
+cata-clismes posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Js 6d]
+*** PRE-FLOP *** 
+BOG068 folds
+LucilleAsoif folds
+asgard286 folds
+Qbott folds
+cata-clismes folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260084-1588277285 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:08:05 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (3.09€)
+Seat 2: Normal_Dog (3.60€)
+Seat 3: Bancayo (4.51€)
+Seat 4: JeanGuirland (2€)
+Seat 5: Jpone1 (2.09€)
+Seat 6: Kany cdn (1€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Normal_Dog posts big blind 0.02€
+Dealt to lkm77 [Ac 6d]
+*** PRE-FLOP *** 
+Bancayo folds
+JeanGuirland folds
+Jpone1 folds
+Kany cdn folds
+lkm77 raises 0.02€ to 0.04€
+Normal_Dog folds
+lkm77 collected 0.06€ from pot
+*** SUMMARY ***
+Total pot 0.06€ | No rake
+Seat 1: lkm77 (small blind) won 0.06€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9259686-1588277191 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:06:31 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: CooolZeero (3.13€)
+Seat 2: Osmozen (1.91€)
+Seat 3: lkm77 (2.95€)
+Seat 4: Aresito15 (2.39€)
+Seat 5: Malowww (2€)
+Seat 6: R3DK3RN3L (5.91€)
+*** ANTE/BLINDS ***
+CooolZeero posts small blind 0.01€
+Osmozen posts big blind 0.02€
+Dealt to lkm77 [Qs 2c]
+*** PRE-FLOP *** 
+lkm77 folds
+Aresito15 folds
+Malowww folds
+R3DK3RN3L raises 0.03€ to 0.05€
+CooolZeero raises 0.13€ to 0.18€
+Osmozen folds
+R3DK3RN3L calls 0.13€
+*** FLOP *** [3h 2d Qh]
+CooolZeero checks
+R3DK3RN3L checks
+*** TURN *** [3h 2d Qh][2h]
+CooolZeero checks
+R3DK3RN3L bets 0.20€
+CooolZeero calls 0.20€
+*** RIVER *** [3h 2d Qh 2h][Td]
+CooolZeero checks
+R3DK3RN3L bets 0.26€
+CooolZeero calls 0.26€
+*** SHOW DOWN ***
+CooolZeero shows [Ad Qc] (Two pairs : Queens and 2)
+R3DK3RN3L shows [6h 7h] (Flush Queen high)
+R3DK3RN3L collected 1.23€ from pot
+*** SUMMARY ***
+Total pot 1.23€ | Rake 0.07€
+Board: [3h 2d Qh 2h Td]
+Seat 1: CooolZeero (small blind) showed [Ad Qc] and lost with Two pairs : Queens and 2
+Seat 6: R3DK3RN3L (button) showed [6h 7h] and won 1.23€ with Flush Queen high
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260119-1588277293 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:08:13 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: JohnsonJu (0.93€)
+Seat 2: webfuchs (2.14€)
+Seat 3: HELLPIAFOS (2.69€)
+Seat 4: bssrms6978 (2.10€)
+Seat 5: lkm77 (3.11€)
+Seat 6: AMG  63 (2.77€)
+*** ANTE/BLINDS ***
+JohnsonJu posts small blind 0.01€
+webfuchs posts big blind 0.02€
+Dealt to lkm77 [9d Kh]
+*** PRE-FLOP *** 
+HELLPIAFOS folds
+bssrms6978 calls 0.02€
+lkm77 raises 0.02€ to 0.04€
+AMG  63 folds
+JohnsonJu folds
+webfuchs folds
+bssrms6978 calls 0.02€
+*** FLOP *** [Ts 2c Ac]
+bssrms6978 bets 0.02€
+lkm77 raises 0.02€ to 0.04€
+bssrms6978 raises 0.02€ to 0.06€
+lkm77 calls 0.02€
+*** TURN *** [Ts 2c Ac][Th]
+bssrms6978 bets 0.02€
+lkm77 folds
+bssrms6978 collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | Rake 0.01€
+Board: [Ts 2c Ac Th]
+Seat 4: bssrms6978 won 0.24€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260229-1588277319 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:08:39 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: FrancoHS (3.37€)
+Seat 2: FinaDeRianxo (2.03€)
+Seat 3: gwnxco (2.67€)
+Seat 4: lkm77 (3.01€)
+Seat 5: dadoun08 (4.47€)
+Seat 6: Killer2noob (2.11€)
+*** ANTE/BLINDS ***
+FrancoHS posts small blind 0.01€
+FinaDeRianxo posts big blind 0.02€
+Dealt to lkm77 [Kd Jd]
+*** PRE-FLOP *** 
+gwnxco folds
+lkm77 raises 0.02€ to 0.04€
+dadoun08 folds
+Killer2noob folds
+FrancoHS folds
+FinaDeRianxo folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 4: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260221-1588277318 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:08:38 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ArcherKKoala (2€)
+Seat 2: La_Flush (2€)
+Seat 3: The Lords (2€)
+Seat 4: Brouss_lie (2.35€)
+Seat 5: SmEllycAAt (3.38€)
+Seat 6: lkm77 (3.01€)
+*** ANTE/BLINDS ***
+ArcherKKoala posts small blind 0.01€
+La_Flush posts big blind 0.02€
+Dealt to lkm77 [8c Jc]
+*** PRE-FLOP *** 
+The Lords folds
+Brouss_lie folds
+SmEllycAAt raises 0.03€ to 0.05€
+lkm77 folds
+ArcherKKoala folds
+La_Flush calls 0.03€
+*** FLOP *** [2s 4h 6d]
+La_Flush checks
+SmEllycAAt checks
+*** TURN *** [2s 4h 6d][8h]
+La_Flush checks
+SmEllycAAt bets 0.06€
+La_Flush calls 0.06€
+*** RIVER *** [2s 4h 6d 8h][Tc]
+La_Flush bets 0.17€
+SmEllycAAt calls 0.17€
+*** SHOW DOWN ***
+La_Flush shows [5c Qd] (High card : Queen)
+SmEllycAAt shows [8s Ts] (Two pairs : Tens and 8)
+SmEllycAAt collected 0.54€ from pot
+*** SUMMARY ***
+Total pot 0.54€ | Rake 0.03€
+Board: [2s 4h 6d 8h Tc]
+Seat 2: La_Flush (big blind) showed [5c Qd] and lost with High card : Queen
+Seat 5: SmEllycAAt showed [8s Ts] and won 0.54€ with Two pairs : Tens and 8
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260338-1588277346 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:09:06 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (3.04€)
+Seat 2: Borus10 (2.22€)
+Seat 3: Br1kste (2.60€)
+Seat 4: Rowminou07 (2.14€)
+Seat 5: nicky_poker (4.65€)
+Seat 6: Lauzulas (4.58€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Borus10 posts big blind 0.02€
+Dealt to lkm77 [8h Ad]
+*** PRE-FLOP *** 
+Br1kste folds
+Rowminou07 raises 0.04€ to 0.06€
+nicky_poker calls 0.06€
+Lauzulas calls 0.06€
+lkm77 calls 0.05€
+Borus10 calls 0.04€
+*** FLOP *** [3s 3d 6h]
+lkm77 bets 0.12€
+Borus10 folds
+Rowminou07 calls 0.12€
+nicky_poker calls 0.12€
+Lauzulas folds
+*** TURN *** [3s 3d 6h][Tc]
+lkm77 checks
+Rowminou07 checks
+nicky_poker checks
+*** RIVER *** [3s 3d 6h Tc][Jc]
+lkm77 checks
+Rowminou07 checks
+nicky_poker checks
+*** SHOW DOWN ***
+lkm77 shows [8h Ad] (One pair : 3)
+Rowminou07 shows [7c 6c] (Two pairs : 6 and 3)
+nicky_poker shows [8s 8c] (Two pairs : 8 and 3)
+nicky_poker collected 0.62€ from pot
+*** SUMMARY ***
+Total pot 0.62€ | Rake 0.04€
+Board: [3s 3d 6h Tc Jc]
+Seat 1: lkm77 (small blind) showed [8h Ad] and lost with One pair : 3
+Seat 4: Rowminou07 showed [7c 6c] and lost with Two pairs : 6 and 3
+Seat 5: nicky_poker showed [8s 8c] and won 0.62€ with Two pairs : 8 and 3
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260579-1588277400 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:10:00 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: LillyMini (1.50€)
+Seat 2: lkm77 (2.86€)
+Seat 3: Louve_ (2.11€)
+Seat 4: nicky_poker (5.09€)
+Seat 5: cata-clismes (0.85€)
+Seat 6: Borus10 (2.23€)
+*** ANTE/BLINDS ***
+LillyMini posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Ah 2h]
+*** PRE-FLOP *** 
+Louve_ folds
+nicky_poker folds
+cata-clismes folds
+Borus10 folds
+LillyMini calls 0.01€
+lkm77 raises 0.02€ to 0.04€
+LillyMini calls 0.02€
+*** FLOP *** [9d Qc 9s]
+LillyMini bets 0.06€
+lkm77 raises 0.06€ to 0.12€
+LillyMini calls 0.06€
+*** TURN *** [9d Qc 9s][Qd]
+LillyMini bets 0.16€
+lkm77 folds
+LillyMini collected 0.46€ from pot
+*** SUMMARY ***
+Total pot 0.46€ | Rake 0.02€
+Board: [9d Qc 9s Qd]
+Seat 1: LillyMini (small blind) won 0.46€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260681-1588277423 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:10:23 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: TAMERENSPLIT (0.85€)
+Seat 2: RoiReine (2.17€)
+Seat 3: lkm77 (2.70€)
+Seat 4: sellig 35 (1.44€)
+Seat 5: lnt0x (2.09€)
+Seat 6: cata-clismes (0.82€)
+*** ANTE/BLINDS ***
+TAMERENSPLIT posts small blind 0.01€
+RoiReine posts big blind 0.02€
+Dealt to lkm77 [Jd 7h]
+*** PRE-FLOP *** 
+lkm77 folds
+sellig 35 folds
+lnt0x folds
+cata-clismes folds
+TAMERENSPLIT folds
+RoiReine collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: RoiReine (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260686-1588277425 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:10:25 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Mr. Yei (2.77€)
+Seat 2: laconalostra (4.40€)
+Seat 3: sellig 35 (1.44€)
+Seat 4: Serie107 (4.08€)
+Seat 5: ChikoCarre (6.59€)
+Seat 6: lkm77 (2.70€)
+*** ANTE/BLINDS ***
+Mr. Yei posts small blind 0.01€
+laconalostra posts big blind 0.02€
+Dealt to lkm77 [5c 7s]
+*** PRE-FLOP *** 
+sellig 35 folds
+Serie107 folds
+ChikoCarre folds
+lkm77 folds
+Mr. Yei raises 0.04€ to 0.06€
+laconalostra folds
+Mr. Yei collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: Mr. Yei (small blind) won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260673-1588277421 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:10:21 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: BAD_NUTS (4.31€)
+Seat 2: SinExito (1.94€)
+Seat 3: VeinteYSete (3.30€)
+Seat 4: lkm77 (2.70€)
+Seat 5: The Lords (2.09€)
+Seat 6: 4807Seb (2€)
+*** ANTE/BLINDS ***
+BAD_NUTS posts small blind 0.01€
+SinExito posts big blind 0.02€
+Dealt to lkm77 [9d 8h]
+*** PRE-FLOP *** 
+VeinteYSete folds
+lkm77 folds
+The Lords folds
+4807Seb folds
+BAD_NUTS raises 0.04€ to 0.06€
+SinExito folds
+BAD_NUTS collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: BAD_NUTS (small blind) won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260692-1588277427 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:10:27 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ChikoCarre (6.59€)
+Seat 2: SAN-JAI-007 (1.36€)
+Seat 3: lkm77 (2.70€)
+Seat 4: AMG  63 (2.76€)
+Seat 5: Eldobbyto (5.75€)
+Seat 6: El loco56 (0.85€)
+*** ANTE/BLINDS ***
+ChikoCarre posts small blind 0.01€
+SAN-JAI-007 posts big blind 0.02€
+Dealt to lkm77 [4c Ac]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+AMG  63 folds
+Eldobbyto folds
+El loco56 folds
+ChikoCarre folds
+SAN-JAI-007 calls 0.02€
+*** FLOP *** [3d 6s 3c]
+SAN-JAI-007 checks
+lkm77 bets 0.06€
+SAN-JAI-007 raises 0.12€ to 0.18€
+lkm77 folds
+SAN-JAI-007 collected 0.32€ from pot
+*** SUMMARY ***
+Total pot 0.32€ | Rake 0.01€
+Board: [3d 6s 3c]
+Seat 2: SAN-JAI-007 (big blind) won 0.32€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260898-1588277477 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:11:17 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: d-play2509 (2.41€)
+Seat 2: lkm77 (2.60€)
+Seat 3: Akira347 (3.98€)
+Seat 4: ChikoCarre (2.01€)
+Seat 5: webfuchs (2.12€)
+Seat 6: 0elb00 (2.91€)
+*** ANTE/BLINDS ***
+d-play2509 posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Js Jd]
+*** PRE-FLOP *** 
+Akira347 folds
+ChikoCarre folds
+webfuchs folds
+0elb00 folds
+d-play2509 folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260926-1588277484 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:11:24 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.61€)
+Seat 2: ComeOnAndy (4.49€)
+Seat 3: Killer2noob (2.19€)
+Seat 4: miaguisan (1.87€)
+Seat 5: Malowww (2.75€)
+Seat 6: 7zepek7 (4.71€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+ComeOnAndy posts big blind 0.02€
+Dealt to lkm77 [7c 5c]
+*** PRE-FLOP *** 
+Killer2noob folds
+miaguisan folds
+Malowww raises 0.04€ to 0.06€
+7zepek7 folds
+lkm77 folds
+ComeOnAndy folds
+Malowww collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 5: Malowww won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9260933-1588277486 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:11:26 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Akira347 (3.98€)
+Seat 2: kupibetonas5 (1.95€)
+Seat 3: damoisel27 (0.53€)
+Seat 4: Jpone1 (2€)
+Seat 5: lkm77 (2.60€)
+Seat 6: fab.djass (2.04€)
+*** ANTE/BLINDS ***
+Akira347 posts small blind 0.01€
+kupibetonas5 posts big blind 0.02€
+Dealt to lkm77 [Ad 5h]
+*** PRE-FLOP *** 
+damoisel27 folds
+Jpone1 folds
+lkm77 raises 0.02€ to 0.04€
+fab.djass folds
+Akira347 folds
+kupibetonas5 calls 0.02€
+*** FLOP *** [9h 9c 4c]
+kupibetonas5 checks
+lkm77 bets 0.06€
+kupibetonas5 folds
+lkm77 collected 0.14€ from pot
+*** SUMMARY ***
+Total pot 0.14€ | Rake 0.01€
+Board: [9h 9c 4c]
+Seat 5: lkm77 won 0.14€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261060-1588277514 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:11:54 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: slimoise (1.07€)
+Seat 2: Qu4l0 (7€)
+Seat 3: lnt0x (2.16€)
+Seat 4: Emi 247 (2.77€)
+Seat 5: Stefski78 (1.07€)
+Seat 6: lkm77 (2.64€)
+*** ANTE/BLINDS ***
+slimoise posts small blind 0.01€
+Qu4l0 posts big blind 0.02€
+Dealt to lkm77 [9c 3h]
+*** PRE-FLOP *** 
+lnt0x folds
+Emi 247 folds
+Stefski78 folds
+lkm77 folds
+slimoise folds
+Qu4l0 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Qu4l0 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261067-1588277517 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:11:57 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Encerrado21 (0.48€)
+Seat 2: 88cirdec (2.92€)
+Seat 3: LucienMLN (11.10€)
+Seat 4: lkm77 (2.64€)
+Seat 5: Qbott (2.41€)
+Seat 6: VERYNET (2€)
+*** ANTE/BLINDS ***
+Encerrado21 posts small blind 0.01€
+88cirdec posts big blind 0.02€
+Dealt to lkm77 [5h Ah]
+*** PRE-FLOP *** 
+LucienMLN folds
+lkm77 raises 0.02€ to 0.04€
+Qbott folds
+VERYNET folds
+Encerrado21 folds
+88cirdec folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 4: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261166-1588277538 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:12:18 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Oksigen (2.27€)
+Seat 2: lkm77 (2.67€)
+Seat 3: damoisel27 (0.62€)
+Seat 4: Artus14 (2.04€)
+Seat 5: .NeverMind. (4.52€)
+Seat 6: Edoul (2.44€)
+*** ANTE/BLINDS ***
+Oksigen posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [5c Qh]
+*** PRE-FLOP *** 
+damoisel27 folds
+Artus14 raises 0.04€ to 0.06€
+.NeverMind. folds
+Edoul folds
+Oksigen folds
+lkm77 folds
+Artus14 collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 4: Artus14 won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261158-1588277537 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:12:17 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: binos1996 (2.26€)
+Seat 2: LillyMini (1.76€)
+Seat 3: Eldobbyto (5.55€)
+Seat 4: lkm77 (2.67€)
+Seat 5: Arkahh1 (2€)
+Seat 6: Golden Hello (2€)
+*** ANTE/BLINDS ***
+binos1996 posts small blind 0.01€
+LillyMini posts big blind 0.02€
+Dealt to lkm77 [7d 2s]
+*** PRE-FLOP *** 
+Eldobbyto folds
+lkm77 folds
+Arkahh1 raises 0.03€ to 0.05€
+Golden Hello folds
+binos1996 folds
+LillyMini calls 0.03€
+*** FLOP *** [Tc 4h 6d]
+LillyMini bets 0.11€
+Arkahh1 folds
+LillyMini collected 0.21€ from pot
+*** SUMMARY ***
+Total pot 0.21€ | Rake 0.01€
+Board: [Tc 4h 6d]
+Seat 2: LillyMini (big blind) won 0.21€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261197-1588277547 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:12:27 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.65€)
+Seat 2: Marcos priet (5.14€)
+Seat 3: .NeverMind. (4.52€)
+Seat 4: pistoulet47 (1.66€)
+Seat 5: KoronAA (2.15€)
+Seat 6: VERYNET (3.80€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Marcos priet posts big blind 0.02€
+Dealt to lkm77 [Qc Ac]
+*** PRE-FLOP *** 
+.NeverMind. raises 0.03€ to 0.05€
+pistoulet47 folds
+KoronAA folds
+VERYNET folds
+lkm77 calls 0.04€
+Marcos priet folds
+*** FLOP *** [9c 4s 2h]
+lkm77 bets 0.08€
+.NeverMind. calls 0.08€
+*** TURN *** [9c 4s 2h][4d]
+lkm77 bets 0.28€
+.NeverMind. folds
+lkm77 collected 0.54€ from pot
+*** SUMMARY ***
+Total pot 0.54€ | Rake 0.02€
+Board: [9c 4s 2h 4d]
+Seat 1: lkm77 (small blind) won 0.54€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261344-1588277584 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:04 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: KeynuX (1.79€)
+Seat 2: KoronAA (5.96€)
+Seat 3: LucienMLN (2.80€)
+Seat 4: Mr. Yei (2.94€)
+Seat 5: lkm77 (2.78€)
+Seat 6: Qu4l0 (7.52€)
+*** ANTE/BLINDS ***
+KeynuX posts small blind 0.01€
+KoronAA posts big blind 0.02€
+Dealt to lkm77 [3d Tc]
+*** PRE-FLOP *** 
+LucienMLN folds
+Mr. Yei folds
+lkm77 folds
+Qu4l0 folds
+KeynuX folds
+KoronAA collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: KoronAA (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261337-1588277582 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:02 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Mr. Yei (2.95€)
+Seat 2: LillyMini (1.84€)
+Seat 3: lkm77 (2.78€)
+Seat 4: Aresito15 (5.64€)
+Seat 5: JeanGuirland (2.07€)
+Seat 6: IIghinzuII (2.31€)
+*** ANTE/BLINDS ***
+Mr. Yei posts small blind 0.01€
+LillyMini posts big blind 0.02€
+Dealt to lkm77 [2s 7c]
+*** PRE-FLOP *** 
+lkm77 folds
+Aresito15 folds
+JeanGuirland raises 0.04€ to 0.06€
+IIghinzuII folds
+Mr. Yei folds
+LillyMini folds
+JeanGuirland collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 5: JeanGuirland won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261349-1588277585 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:05 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: _sattaman_ (4.21€)
+Seat 2: ChikoCarre (2€)
+Seat 3: Oliver7172 (1.60€)
+Seat 4: Eldobbyto (5.49€)
+Seat 5: LucienMLN (2.80€)
+Seat 6: lkm77 (2.78€)
+*** ANTE/BLINDS ***
+_sattaman_ posts small blind 0.01€
+ChikoCarre posts big blind 0.02€
+Dealt to lkm77 [7c 7s]
+*** PRE-FLOP *** 
+Oliver7172 folds
+Eldobbyto folds
+LucienMLN folds
+lkm77 raises 0.02€ to 0.04€
+_sattaman_ folds
+ChikoCarre calls 0.02€
+*** FLOP *** [3c 2h Tc]
+ChikoCarre checks
+lkm77 bets 0.04€
+ChikoCarre folds
+lkm77 collected 0.12€ from pot
+*** SUMMARY ***
+Total pot 0.12€ | Rake 0.01€
+Board: [3c 2h Tc]
+Seat 6: lkm77 (button) won 0.12€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261458-1588277612 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:32 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Artus14 (2.58€)
+Seat 2: x_cena67 (7.24€)
+Seat 3: LucienMLN (3.35€)
+Seat 4: lkm77 (2.82€)
+Seat 5: Omegaksi (0.87€)
+Seat 6: Juanpoker333 (7.16€)
+*** ANTE/BLINDS ***
+Artus14 posts small blind 0.01€
+x_cena67 posts big blind 0.02€
+Dealt to lkm77 [Kh 7s]
+*** PRE-FLOP *** 
+LucienMLN folds
+lkm77 raises 0.02€ to 0.04€
+Omegaksi folds
+Juanpoker333 folds
+Artus14 folds
+x_cena67 folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 4: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261485-1588277618 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:38 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Qu4l0 (7.36€)
+Seat 2: lkm77 (2.85€)
+Seat 3: arasar (6.74€)
+Seat 4: SkAAiM (2.27€)
+Seat 5: GT0_Placard (2.92€)
+Seat 6: Cueva123 (2.84€)
+*** ANTE/BLINDS ***
+Qu4l0 posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [5s 2c]
+*** PRE-FLOP *** 
+arasar folds
+SkAAiM folds
+GT0_Placard folds
+Cueva123 raises 0.04€ to 0.06€
+Qu4l0 folds
+lkm77 folds
+Cueva123 collected 0.09€ from pot
+*** SUMMARY ***
+Total pot 0.09€ | No rake
+Seat 6: Cueva123 (button) won 0.09€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261452-1588277610 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:30 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: R3DK3RN3L (2.23€)
+Seat 2: Winamvoleur (1.26€)
+Seat 3: NateoPep06 (1.99€)
+Seat 4: IdemooNis (2.39€)
+Seat 5: lkm77 (2.82€)
+Seat 6: binos1996 (2.82€)
+*** ANTE/BLINDS ***
+R3DK3RN3L posts small blind 0.01€
+Winamvoleur posts big blind 0.02€
+Dealt to lkm77 [8s Th]
+*** PRE-FLOP *** 
+NateoPep06 folds
+IdemooNis folds
+lkm77 folds
+binos1996 folds
+R3DK3RN3L folds
+Winamvoleur collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Winamvoleur (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261519-1588277627 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:13:47 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.83€)
+Seat 2: Sarpatos (0.55€)
+Seat 3: IIghinzuII (3.50€)
+Seat 4: Lafabe34 (0.97€)
+Seat 5: miaguisan (5.63€)
+Seat 6: 0elb00 (2.50€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Sarpatos posts big blind 0.02€
+Dealt to lkm77 [Kc 5d]
+*** PRE-FLOP *** 
+IIghinzuII raises 0.02€ to 0.04€
+Lafabe34 calls 0.04€
+miaguisan folds
+0elb00 folds
+lkm77 calls 0.03€
+Sarpatos folds
+*** FLOP *** [4c 2d 6s]
+lkm77 bets 0.05€
+IIghinzuII folds
+Lafabe34 folds
+lkm77 collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | Rake 0.01€
+Board: [4c 2d 6s]
+Seat 1: lkm77 (small blind) won 0.18€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261692-1588277665 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:25 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: cata-clismes (0.83€)
+Seat 2: lkm77 (2.92€)
+Seat 3: Char Aznable (2.89€)
+Seat 4: ComeOnAndy (2.17€)
+Seat 5: miaguisan (5.58€)
+Seat 6: kupibetonas5 (1.81€)
+*** ANTE/BLINDS ***
+cata-clismes posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Qc Kc]
+*** PRE-FLOP *** 
+Char Aznable folds
+ComeOnAndy folds
+miaguisan folds
+kupibetonas5 folds
+cata-clismes folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261717-1588277672 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:32 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.93€)
+Seat 2: Arkahh1 (2.06€)
+Seat 3: Namas17 (2€)
+Seat 4: CooolZeero (2€)
+Seat 5: LucilleAsoif (2.72€)
+Seat 6: Edoul (2.11€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Arkahh1 posts big blind 0.02€
+Dealt to lkm77 [8d Tc]
+*** PRE-FLOP *** 
+Namas17 folds
+CooolZeero folds
+LucilleAsoif folds
+Edoul folds
+lkm77 folds
+Arkahh1 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Arkahh1 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261686-1588277664 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:24 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: kbzx (1.82€)
+Seat 2: Jpone1 (2.47€)
+Seat 3: .RF. (2.16€)
+Seat 4: CANIS DIRUS (1.97€)
+Seat 5: Bancayo (5.08€)
+Seat 6: lkm77 (2.92€)
+*** ANTE/BLINDS ***
+kbzx posts small blind 0.01€
+Jpone1 posts big blind 0.02€
+Dealt to lkm77 [7s Ts]
+*** PRE-FLOP *** 
+.RF. folds
+CANIS DIRUS folds
+Bancayo folds
+lkm77 folds
+kbzx raises 0.04€ to 0.06€
+Jpone1 folds
+kbzx collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 1: kbzx (small blind) won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261661-1588277658 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:18 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Holiap (2€)
+Seat 2: nicolas TANT (0.49€)
+Seat 3: lkm77 (2.92€)
+Seat 4: nicky_poker (3.86€)
+Seat 5: HPoker67 (2.87€)
+Seat 6: JeanGuirland (2.07€)
+*** ANTE/BLINDS ***
+Holiap posts small blind 0.01€
+nicolas TANT posts big blind 0.02€
+Dealt to lkm77 [9c Th]
+*** PRE-FLOP *** 
+lkm77 folds
+nicky_poker folds
+HPoker67 calls 0.02€
+JeanGuirland raises 0.06€ to 0.08€
+Holiap folds
+nicolas TANT raises 0.41€ to 0.49€ and is all-in
+HPoker67 folds
+JeanGuirland calls 0.41€
+*** FLOP *** [8c Td Qs]
+*** TURN *** [8c Td Qs][9d]
+*** RIVER *** [8c Td Qs 9d][8s]
+*** SHOW DOWN ***
+JeanGuirland shows [Ah Tc] (Two pairs : Tens and 8)
+nicolas TANT shows [Ac Jd] (Straight Queen high)
+nicolas TANT collected 0.95€ from pot
+*** SUMMARY ***
+Total pot 0.95€ | Rake 0.06€
+Board: [8c Td Qs 9d 8s]
+Seat 2: nicolas TANT (big blind) showed [Ac Jd] and won 0.95€ with Straight Queen high
+Seat 6: JeanGuirland (button) showed [Ah Tc] and lost with Two pairs : Tens and 8
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261723-1588277673 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:33 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: cata-clismes (1.21€)
+Seat 2: Namas17 (2€)
+Seat 3: cachris73 (0.59€)
+Seat 4: Aresito15 (3.63€)
+Seat 5: 88cirdec (2.79€)
+Seat 6: lkm77 (2.92€)
+*** ANTE/BLINDS ***
+cata-clismes posts small blind 0.01€
+Namas17 posts big blind 0.02€
+Dealt to lkm77 [2h 9c]
+*** PRE-FLOP *** 
+cachris73 folds
+Aresito15 folds
+88cirdec folds
+lkm77 folds
+cata-clismes folds
+Namas17 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Namas17 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261675-1588277661 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:21 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Br1kste (2.01€)
+Seat 2: Jaimebafi (1.85€)
+Seat 3: 0elb00 (2.08€)
+Seat 4: 88cirdec (2.79€)
+Seat 5: lkm77 (2.92€)
+Seat 6: LucienMLN (11.06€)
+*** ANTE/BLINDS ***
+Br1kste posts small blind 0.01€
+Jaimebafi posts big blind 0.02€
+Dealt to lkm77 [9s 8s]
+*** PRE-FLOP *** 
+0elb00 folds
+88cirdec folds
+lkm77 folds
+LucienMLN raises 0.03€ to 0.05€
+Br1kste folds
+Jaimebafi folds
+LucienMLN collected 0.08€ from pot
+*** SUMMARY ***
+Total pot 0.08€ | No rake
+Seat 6: LucienMLN (button) won 0.08€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261734-1588277675 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:35 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: 0elb00 (2.38€)
+Seat 2: Dav224 (2.12€)
+Seat 3: SwimDeep_Joe (3.41€)
+Seat 4: lkm77 (2.92€)
+Seat 5: Golden Hello (2.01€)
+Seat 6: Cash-toi (2.12€)
+*** ANTE/BLINDS ***
+0elb00 posts small blind 0.01€
+Dav224 posts big blind 0.02€
+Dealt to lkm77 [Ah Ks]
+*** PRE-FLOP *** 
+SwimDeep_Joe folds
+lkm77 raises 0.02€ to 0.04€
+Golden Hello folds
+Cash-toi folds
+0elb00 folds
+Dav224 calls 0.02€
+*** FLOP *** [6c Qc 5h]
+Dav224 checks
+lkm77 bets 0.05€
+Dav224 calls 0.05€
+*** TURN *** [6c Qc 5h][4c]
+Dav224 bets 0.20€
+lkm77 folds
+Dav224 collected 0.38€ from pot
+*** SUMMARY ***
+Total pot 0.38€ | Rake 0.01€
+Board: [6c Qc 5h 4c]
+Seat 2: Dav224 (big blind) won 0.38€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261681-1588277663 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:23 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: jujuwbth (1.49€)
+Seat 2: Natanathalia (2.18€)
+Seat 3: Nesnes599 (2.08€)
+Seat 4: lkm77 (2.92€)
+Seat 5: Toto27700 (3.22€)
+Seat 6: pauwau103 (2.05€)
+*** ANTE/BLINDS ***
+jujuwbth posts small blind 0.01€
+Natanathalia posts big blind 0.02€
+Dealt to lkm77 [6d 8h]
+*** PRE-FLOP *** 
+Nesnes599 raises 0.04€ to 0.06€
+lkm77 folds
+Toto27700 calls 0.06€
+pauwau103 calls 0.06€
+jujuwbth folds
+Natanathalia folds
+*** FLOP *** [2d Jh 7s]
+Nesnes599 checks
+Toto27700 bets 0.11€
+pauwau103 folds
+Nesnes599 folds
+Toto27700 collected 0.31€ from pot
+*** SUMMARY ***
+Total pot 0.31€ | Rake 0.01€
+Board: [2d Jh 7s]
+Seat 5: Toto27700 won 0.31€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261728-1588277674 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:34 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: LucilleAsoif (2.72€)
+Seat 2: maj3493 (1.99€)
+Seat 3: 0elb00 (2.38€)
+Seat 4: VERYNET (2.03€)
+Seat 5: lkm77 (2.92€)
+Seat 6: Chouia (2€)
+*** ANTE/BLINDS ***
+LucilleAsoif posts small blind 0.01€
+maj3493 posts big blind 0.02€
+Dealt to lkm77 [Ts 4s]
+*** PRE-FLOP *** 
+0elb00 folds
+VERYNET folds
+lkm77 folds
+Chouia folds
+LucilleAsoif folds
+maj3493 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: maj3493 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261667-1588277660 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:14:20 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: GT0_Placard (2.90€)
+Seat 2: IdemooNis (2.42€)
+Seat 3: lkm77 (2.92€)
+Seat 4: Beu83 (0.74€)
+Seat 5: Jpone1 (2.10€)
+Seat 6: jimnetsukao2 (3.37€)
+*** ANTE/BLINDS ***
+GT0_Placard posts small blind 0.01€
+IdemooNis posts big blind 0.02€
+Dealt to lkm77 [5c 3s]
+*** PRE-FLOP *** 
+lkm77 folds
+Beu83 calls 0.02€
+Jpone1 folds
+jimnetsukao2 folds
+GT0_Placard folds
+IdemooNis checks
+*** FLOP *** [Js 7h 5d]
+IdemooNis checks
+Beu83 checks
+*** TURN *** [Js 7h 5d][Qd]
+IdemooNis checks
+Beu83 checks
+*** RIVER *** [Js 7h 5d Qd][9s]
+IdemooNis checks
+Beu83 bets 0.72€ and is all-in
+IdemooNis folds
+Beu83 collected 0.77€ from pot
+*** SUMMARY ***
+Total pot 0.77€ | No rake
+Board: [Js 7h 5d Qd 9s]
+Seat 4: Beu83 won 0.77€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261968-1588277733 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:15:33 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: wiseman32 (3.13€)
+Seat 2: Encerrado21 (0.80€)
+Seat 3: lkm77 (2.75€)
+Seat 4: TuPuesDuQ (5.60€)
+Seat 5: Ser7814 (4.43€)
+Seat 6: LucienMLN (3.26€)
+*** ANTE/BLINDS ***
+wiseman32 posts small blind 0.01€
+Encerrado21 posts big blind 0.02€
+Dealt to lkm77 [Ac 9s]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+TuPuesDuQ folds
+Ser7814 folds
+LucienMLN folds
+wiseman32 folds
+Encerrado21 folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 3: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262008-1588277743 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:15:43 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Odoigo (3.17€)
+Seat 2: Beu83 (0.75€)
+Seat 3: Tiguirun410 (2.36€)
+Seat 4: webfuchs (2.63€)
+Seat 5: cachris73 (1.99€)
+Seat 6: lkm77 (2.78€)
+*** ANTE/BLINDS ***
+Odoigo posts small blind 0.01€
+Beu83 posts big blind 0.02€
+Dealt to lkm77 [4h Js]
+*** PRE-FLOP *** 
+Tiguirun410 folds
+webfuchs folds
+cachris73 folds
+lkm77 folds
+Odoigo folds
+Beu83 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Beu83 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261953-1588277729 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:15:29 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: nicky_poker (3.81€)
+Seat 2: lkm77 (2.77€)
+Seat 3: kAAmelot94 (1.39€)
+Seat 4: Bacalawz (2.68€)
+Seat 5: PEPICH0U (2.01€)
+Seat 6: SkAAiM (2.12€)
+*** ANTE/BLINDS ***
+nicky_poker posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Qd 4s]
+*** PRE-FLOP *** 
+kAAmelot94 folds
+Bacalawz folds
+PEPICH0U raises 0.04€ to 0.06€
+SkAAiM calls 0.06€
+nicky_poker folds
+lkm77 folds
+*** FLOP *** [3c 2c 5h]
+PEPICH0U checks
+SkAAiM bets 0.08€
+PEPICH0U folds
+SkAAiM collected 0.22€ from pot
+*** SUMMARY ***
+Total pot 0.22€ | Rake 0.01€
+Board: [3c 2c 5h]
+Seat 6: SkAAiM (button) won 0.22€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261856-1588277704 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:15:04 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.83€)
+Seat 2: Oksigen (2.05€)
+Seat 3: R3DK3RN3L (2.26€)
+Seat 4: Bushido909 (2.11€)
+Seat 5: .NeverMind. (4.41€)
+Seat 6: BOG068 (2.71€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Oksigen posts big blind 0.02€
+Dealt to lkm77 [9h Ks]
+*** PRE-FLOP *** 
+R3DK3RN3L folds
+Bushido909 raises 0.04€ to 0.06€
+.NeverMind. calls 0.06€
+BOG068 folds
+lkm77 calls 0.05€
+Oksigen calls 0.04€
+*** FLOP *** [Qh 6c As]
+lkm77 checks
+Oksigen checks
+Bushido909 checks
+.NeverMind. bets 0.12€
+lkm77 folds
+Oksigen calls 0.12€
+Bushido909 folds
+*** TURN *** [Qh 6c As][2c]
+Oksigen checks
+.NeverMind. bets 0.26€
+Oksigen folds
+.NeverMind. collected 0.71€ from pot
+*** SUMMARY ***
+Total pot 0.71€ | Rake 0.03€
+Board: [Qh 6c As 2c]
+Seat 5: .NeverMind. won 0.71€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262014-1588277744 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:15:44 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.78€)
+Seat 2: LucienMLN (2.69€)
+Seat 3: BAD_NUTS (4.08€)
+Seat 4: alice47R (2.15€)
+Seat 5: jenniflo (4.02€)
+Seat 6: Emi 247 (2.60€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+LucienMLN posts big blind 0.02€
+Dealt to lkm77 [Js 7s]
+*** PRE-FLOP *** 
+BAD_NUTS folds
+alice47R folds
+jenniflo calls 0.02€
+Emi 247 folds
+lkm77 calls 0.01€
+LucienMLN raises 0.06€ to 0.08€
+jenniflo folds
+lkm77 calls 0.06€
+*** FLOP *** [Qs 8c 6h]
+lkm77 bets 0.05€
+LucienMLN calls 0.05€
+*** TURN *** [Qs 8c 6h][7d]
+lkm77 bets 0.18€
+LucienMLN calls 0.18€
+*** RIVER *** [Qs 8c 6h 7d][Ad]
+lkm77 checks
+LucienMLN checks
+*** SHOW DOWN ***
+lkm77 shows [Js 7s] (One pair : 7)
+LucienMLN shows [9c 9s] (One pair : 9)
+LucienMLN collected 0.60€ from pot
+*** SUMMARY ***
+Total pot 0.60€ | Rake 0.04€
+Board: [Qs 8c 6h 7d Ad]
+Seat 1: lkm77 (small blind) showed [Js 7s] and lost with One pair : 7
+Seat 2: LucienMLN (big blind) showed [9c 9s] and won 0.60€ with One pair : 9
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262237-1588277799 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:16:39 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: LucienMLN (2.30€)
+Seat 2: Marcos priet (5.16€)
+Seat 3: Kiki2655 (1.46€)
+Seat 4: VeinteYSete (3.10€)
+Seat 5: _sattaman_ (4.19€)
+Seat 6: lkm77 (2.47€)
+*** ANTE/BLINDS ***
+LucienMLN posts small blind 0.01€
+Marcos priet posts big blind 0.02€
+Dealt to lkm77 [8h 8c]
+*** PRE-FLOP *** 
+Kiki2655 calls 0.02€
+VeinteYSete folds
+_sattaman_ folds
+lkm77 raises 0.02€ to 0.04€
+LucienMLN folds
+Marcos priet folds
+Kiki2655 calls 0.02€
+*** FLOP *** [6s Kc 2c]
+Kiki2655 checks
+lkm77 bets 0.05€
+Kiki2655 folds
+lkm77 collected 0.15€ from pot
+*** SUMMARY ***
+Total pot 0.15€ | Rake 0.01€
+Board: [6s Kc 2c]
+Seat 6: lkm77 (button) won 0.15€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9261998-1588277741 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:15:41 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Artus14 (2.05€)
+Seat 2: Shanks69 (3.95€)
+Seat 3: Molly3778 (2.62€)
+Seat 4: Holiap (3.53€)
+Seat 5: lkm77 (2.78€)
+Seat 6: NaVaRR3tA (1.39€)
+*** ANTE/BLINDS ***
+Artus14 posts small blind 0.01€
+Shanks69 posts big blind 0.02€
+Dealt to lkm77 [9d 3h]
+*** PRE-FLOP *** 
+Molly3778 folds
+Holiap folds
+lkm77 folds
+NaVaRR3tA folds
+Artus14 folds
+Shanks69 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: Shanks69 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262349-1588277829 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:17:09 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: bobbycamion (4.28€)
+Seat 2: lkm77 (2.53€)
+Seat 3: SmEllycAAt (2.87€)
+Seat 4: Jpone1 (1.38€)
+Seat 5: cachris73 (1.98€)
+Seat 6: PEPICH0U (2€)
+*** ANTE/BLINDS ***
+bobbycamion posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [9c 9h]
+*** PRE-FLOP *** 
+SmEllycAAt folds
+Jpone1 folds
+cachris73 folds
+PEPICH0U folds
+bobbycamion folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262416-1588277848 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:17:28 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: LucilleAsoif (1.21€)
+Seat 2: JohnsonJu (1.74€)
+Seat 3: lkm77 (2.54€)
+Seat 4: Toto27700 (2.28€)
+Seat 5: pistoulet47 (1.93€)
+Seat 6: R3DK3RN3L (2.13€)
+*** ANTE/BLINDS ***
+LucilleAsoif posts small blind 0.01€
+JohnsonJu posts big blind 0.02€
+Dealt to lkm77 [Kh Js]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+Toto27700 folds
+pistoulet47 folds
+R3DK3RN3L folds
+LucilleAsoif folds
+JohnsonJu calls 0.02€
+*** FLOP *** [2h 3h Ad]
+JohnsonJu checks
+lkm77 bets 0.06€
+JohnsonJu calls 0.06€
+*** TURN *** [2h 3h Ad][7h]
+JohnsonJu checks
+lkm77 bets 0.18€
+JohnsonJu calls 0.18€
+*** RIVER *** [2h 3h Ad 7h][8d]
+JohnsonJu checks
+lkm77 bets 0.60€
+JohnsonJu calls 0.60€
+*** SHOW DOWN ***
+lkm77 shows [Kh Js] (High card : Ace)
+JohnsonJu shows [Kc Ac] (One pair : Aces)
+JohnsonJu collected 1.67€ from pot
+*** SUMMARY ***
+Total pot 1.67€ | Rake 0.10€
+Board: [2h 3h Ad 7h 8d]
+Seat 2: JohnsonJu (big blind) showed [Kc Ac] and won 1.67€ with One pair : Aces
+Seat 3: lkm77 showed [Kh Js] and lost with High card : Ace
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262572-1588277886 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:18:06 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: 88cirdec (3.07€)
+Seat 2: lkm77 (1.66€)
+Seat 3: LucilleAsoif (4.80€)
+Seat 4: Blackmailer (3.87€)
+Seat 5: Mr. Yei (2€)
+Seat 6: Nesnes599 (1.95€)
+*** ANTE/BLINDS ***
+88cirdec posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [4h Js]
+*** PRE-FLOP *** 
+LucilleAsoif folds
+Blackmailer folds
+Mr. Yei folds
+Nesnes599 folds
+88cirdec folds
+lkm77 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: lkm77 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262564-1588277884 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:18:04 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Jpone1 (2.07€)
+Seat 2: ChikoCarre (6.06€)
+Seat 3: Pachou01 (0.87€)
+Seat 4: luichymen (0.89€)
+Seat 5: JohnsonJu (2.53€)
+Seat 6: lkm77 (1.66€)
+*** ANTE/BLINDS ***
+Jpone1 posts small blind 0.01€
+ChikoCarre posts big blind 0.02€
+Dealt to lkm77 [3s 2d]
+*** PRE-FLOP *** 
+Pachou01 folds
+luichymen folds
+JohnsonJu calls 0.02€
+lkm77 folds
+Jpone1 folds
+ChikoCarre checks
+*** FLOP *** [4d 5d 3h]
+ChikoCarre checks
+JohnsonJu checks
+*** TURN *** [4d 5d 3h][3d]
+ChikoCarre checks
+JohnsonJu checks
+*** RIVER *** [4d 5d 3h 3d][6s]
+ChikoCarre bets 0.10€
+JohnsonJu calls 0.10€
+*** SHOW DOWN ***
+JohnsonJu shows [Kh 6c] (Two pairs : 6 and 3)
+ChikoCarre shows [7c As] (Straight 7 high)
+ChikoCarre collected 0.24€ from pot
+*** SUMMARY ***
+Total pot 0.24€ | Rake 0.01€
+Board: [4d 5d 3h 3d 6s]
+Seat 2: ChikoCarre (big blind) showed [7c As] and won 0.24€ with Straight 7 high
+Seat 5: JohnsonJu showed [Kh 6c] and lost with Two pairs : 6 and 3
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262646-1588277905 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:18:25 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ismapk (2.16€)
+Seat 2: FrancoHS (3.37€)
+Seat 3: lkm77 (2€)
+Seat 4: Antonin1997 (2.55€)
+Seat 5: Oliver7172 (1.79€)
+Seat 6: ch4os (2.01€)
+*** ANTE/BLINDS ***
+ismapk posts small blind 0.01€
+FrancoHS posts big blind 0.02€
+Dealt to lkm77 [Ts Jc]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+Antonin1997 folds
+Oliver7172 folds
+ch4os folds
+ismapk folds
+FrancoHS folds
+lkm77 collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 3: lkm77 won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9262899-1588277969 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:19:29 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.03€)
+Seat 2: Polipoker_co (2€)
+Seat 3: Eras60 (4.15€)
+Seat 4: oscarzaki (1.18€)
+Seat 5: Malowww (2.27€)
+Seat 6: chasoya (3.22€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+Polipoker_co posts big blind 0.02€
+Dealt to lkm77 [7h 9h]
+*** PRE-FLOP *** 
+Eras60 folds
+oscarzaki folds
+Malowww folds
+chasoya calls 0.02€
+lkm77 raises 0.02€ to 0.04€
+Polipoker_co calls 0.02€
+chasoya calls 0.02€
+*** FLOP *** [7c Ts 4d]
+lkm77 bets 0.08€
+Polipoker_co folds
+chasoya folds
+lkm77 collected 0.19€ from pot
+*** SUMMARY ***
+Total pot 0.19€ | Rake 0.01€
+Board: [7c Ts 4d]
+Seat 1: lkm77 (small blind) won 0.19€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263006-1588277997 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:19:57 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: .NeverMind. (4.83€)
+Seat 2: Qu4l0 (4.82€)
+Seat 3: Omegaksi (1.55€)
+Seat 4: lkm77 (2.10€)
+Seat 5: kbzx (3.51€)
+Seat 6: IIghinzuII (3.22€)
+*** ANTE/BLINDS ***
+.NeverMind. posts small blind 0.01€
+Qu4l0 posts big blind 0.02€
+Dealt to lkm77 [Tc Ad]
+*** PRE-FLOP *** 
+Omegaksi folds
+lkm77 raises 0.02€ to 0.04€
+kbzx folds
+IIghinzuII calls 0.04€
+.NeverMind. folds
+Qu4l0 folds
+*** FLOP *** [5c 8c 3h]
+lkm77 bets 0.06€
+IIghinzuII folds
+lkm77 collected 0.16€ from pot
+*** SUMMARY ***
+Total pot 0.16€ | Rake 0.01€
+Board: [5c 8c 3h]
+Seat 4: lkm77 won 0.16€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263235-1588278054 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:20:54 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: MARS 33 (2.03€)
+Seat 2: lkm77 (2.16€)
+Seat 3: ComeOnAndy (5.76€)
+Seat 4: Qbott (2.14€)
+Seat 5: AMG  63 (3.72€)
+Seat 6: LucienMLN (2.95€)
+*** ANTE/BLINDS ***
+MARS 33 posts small blind 0.01€
+lkm77 posts big blind 0.02€
+Dealt to lkm77 [Ad Qh]
+*** PRE-FLOP *** 
+ComeOnAndy folds
+Qbott folds
+AMG  63 raises 0.02€ to 0.04€
+LucienMLN folds
+MARS 33 folds
+lkm77 raises 0.02€ to 0.06€
+AMG  63 calls 0.02€
+*** FLOP *** [2d 3d 5h]
+lkm77 bets 0.10€
+AMG  63 folds
+lkm77 collected 0.22€ from pot
+*** SUMMARY ***
+Total pot 0.22€ | Rake 0.01€
+Board: [2d 3d 5h]
+Seat 2: lkm77 (big blind) won 0.22€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263155-1588278036 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:20:36 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: R3DK3RN3L (6.09€)
+Seat 2: SoumSoumVnh (5.14€)
+Seat 3: Winamvoleur (1€)
+Seat 4: lkm77 (2.16€)
+Seat 5: Risingstack (2.05€)
+Seat 6: Polipoker_co (2.04€)
+*** ANTE/BLINDS ***
+R3DK3RN3L posts small blind 0.01€
+SoumSoumVnh posts big blind 0.02€
+Dealt to lkm77 [9h 4s]
+*** PRE-FLOP *** 
+Winamvoleur raises 0.02€ to 0.04€
+lkm77 folds
+Risingstack folds
+Polipoker_co folds
+R3DK3RN3L folds
+SoumSoumVnh folds
+Winamvoleur collected 0.07€ from pot
+*** SUMMARY ***
+Total pot 0.07€ | No rake
+Seat 3: Winamvoleur won 0.07€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263301-1588278071 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:21:11 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: lkm77 (2.22€)
+Seat 2: cachris73 (1.35€)
+Seat 3: Blackmailer (2.75€)
+Seat 4: Grever26 (4.83€)
+Seat 5: Jake Mesrine (3.39€)
+Seat 6: Python_007 (1.59€)
+*** ANTE/BLINDS ***
+lkm77 posts small blind 0.01€
+cachris73 posts big blind 0.02€
+Dealt to lkm77 [8s Td]
+*** PRE-FLOP *** 
+Blackmailer folds
+Grever26 folds
+Jake Mesrine folds
+Python_007 folds
+lkm77 folds
+cachris73 collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: cachris73 (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263227-1588278052 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:20:52 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: KeynuX (1.60€)
+Seat 2: Dani3perdomo (0.61€)
+Seat 3: Lauzulas (1.74€)
+Seat 4: 0elb00 (2.54€)
+Seat 5: lkm77 (2.16€)
+Seat 6: Aresito15 (4.42€)
+*** ANTE/BLINDS ***
+KeynuX posts small blind 0.01€
+Dani3perdomo posts big blind 0.02€
+Dealt to lkm77 [8c Td]
+*** PRE-FLOP *** 
+Lauzulas raises 0.04€ to 0.06€
+0elb00 folds
+lkm77 folds
+Aresito15 folds
+KeynuX folds
+Dani3perdomo calls 0.04€
+*** FLOP *** [Ts 8h 8s]
+Dani3perdomo bets 0.02€
+Lauzulas raises 0.08€ to 0.10€
+Dani3perdomo calls 0.08€
+*** TURN *** [Ts 8h 8s][2h]
+Dani3perdomo checks
+Lauzulas bets 0.32€
+Dani3perdomo calls 0.32€
+*** RIVER *** [Ts 8h 8s 2h][Tc]
+Dani3perdomo checks
+Lauzulas bets 0.16€
+Dani3perdomo calls 0.13€ and is all-in
+*** SHOW DOWN ***
+Dani3perdomo shows [5s 7s] (Two pairs : Tens and 8)
+Lauzulas shows [Js Jh] (Two pairs : Jacks and Tens)
+Lauzulas collected 1.19€ from pot
+*** SUMMARY ***
+Total pot 1.19€ | Rake 0.07€
+Board: [Ts 8h 8s 2h Tc]
+Seat 2: Dani3perdomo (big blind) showed [5s 7s] and lost with Two pairs : Tens and 8
+Seat 3: Lauzulas showed [Js Jh] and won 1.19€ with Two pairs : Jacks and Tens
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263335-1588278078 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:21:18 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: Gondulf (1.01€)
+Seat 2: CANIS DIRUS (2.37€)
+Seat 3: lkm77 (2.21€)
+Seat 4: Jaimebafi (1.71€)
+Seat 5: Artus14 (2.83€)
+Seat 6: webfuchs (2.06€)
+*** ANTE/BLINDS ***
+Gondulf posts small blind 0.01€
+CANIS DIRUS posts big blind 0.02€
+Dealt to lkm77 [Qd As]
+*** PRE-FLOP *** 
+lkm77 raises 0.02€ to 0.04€
+Jaimebafi raises 0.08€ to 0.12€
+Artus14 folds
+webfuchs raises 0.36€ to 0.48€
+Gondulf folds
+CANIS DIRUS folds
+lkm77 calls 0.44€
+Jaimebafi folds
+*** FLOP *** [7c 5c 6c]
+lkm77 bets 0.51€
+webfuchs calls 0.51€
+*** TURN *** [7c 5c 6c][6h]
+lkm77 bets 1.22€ and is all-in
+webfuchs calls 1.07€ and is all-in
+*** RIVER *** [7c 5c 6c 6h][3c]
+*** SHOW DOWN ***
+lkm77 shows [Qd As] (One pair : 6)
+webfuchs shows [Ah Kc] (Flush King high)
+webfuchs collected 4.02€ from main pot
+lkm77 collected 0.15€ from side pot 1
+*** SUMMARY ***
+Total pot 4.17€ | Rake 0.25€
+Board: [7c 5c 6c 6h 3c]
+Seat 3: lkm77 showed [Qd As] and won 0.15€ with One pair : 6
+Seat 6: webfuchs (button) showed [Ah Kc] and won 4.02€ with Flush King high
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263543-1588278125 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:22:05 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: 6Shifumi4 (2.01€)
+Seat 2: Jaimebafi (1.59€)
+Seat 3: webfuchs (4.02€)
+Seat 4: lkm77 (0.15€)
+Seat 5: ComeOnAndy (5.76€)
+Seat 6: x_cena67 (5.41€)
+*** ANTE/BLINDS ***
+6Shifumi4 posts small blind 0.01€
+Jaimebafi posts big blind 0.02€
+Dealt to lkm77 [Jh 8c]
+*** PRE-FLOP *** 
+webfuchs folds
+lkm77 raises 0.13€ to 0.15€ and is all-in
+ComeOnAndy folds
+x_cena67 folds
+6Shifumi4 folds
+Jaimebafi folds
+lkm77 collected 0.18€ from pot
+*** SUMMARY ***
+Total pot 0.18€ | No rake
+Seat 4: lkm77 won 0.18€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263671-1588278155 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:22:35 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: ZoulouBoys (2.18€)
+Seat 2: R3DK3RN3L (6.10€)
+Seat 3: CANIS DIRUS (3.67€)
+Seat 4: NateoPep06 (2.64€)
+Seat 5: lkm77 (0.18€)
+Seat 6: Killer2noob (2.78€)
+*** ANTE/BLINDS ***
+ZoulouBoys posts small blind 0.01€
+R3DK3RN3L posts big blind 0.02€
+Dealt to lkm77 [2s Qh]
+*** PRE-FLOP *** 
+CANIS DIRUS folds
+NateoPep06 folds
+lkm77 folds
+Killer2noob folds
+ZoulouBoys folds
+R3DK3RN3L collected 0.03€ from pot
+*** SUMMARY ***
+Total pot 0.03€ | No rake
+Seat 2: R3DK3RN3L (big blind) won 0.03€
+
+
+Winamax Poker - Go Fast "Colorado" - HandId: #13995056-9263679-1588278156 - Holdem no limit (0.01€/0.02€) - 2020/04/30 20:22:36 UTC
+Table: 'Colorado' 6-max (real money) Seat #6 is the button
+Seat 1: magou77 (0.63€)
+Seat 2: CANIS DIRUS (3.67€)
+Seat 3: kupibetonas5 (1.26€)
+Seat 4: cata-clismes (0.82€)
+Seat 5: lkm77 (0.18€)
+Seat 6: _nyo_ (2.32€)
+*** ANTE/BLINDS ***
+magou77 posts small blind 0.01€
+CANIS DIRUS posts big blind 0.02€
+Dealt to lkm77 [2d Ah]
+*** PRE-FLOP *** 
+kupibetonas5 calls 0.02€
+cata-clismes folds
+lkm77 raises 0.04€ to 0.06€
+_nyo_ folds
+magou77 folds
+CANIS DIRUS folds
+kupibetonas5 calls 0.04€
+*** FLOP *** [5h Qh 3d]
+kupibetonas5 checks
+lkm77 bets 0.12€ and is all-in
+kupibetonas5 calls 0.12€
+*** TURN *** [5h Qh 3d][5c]
+*** RIVER *** [5h Qh 3d 5c][Kc]
+*** SHOW DOWN ***
+lkm77 shows [2d Ah] (One pair : 5)
+kupibetonas5 shows [9d 9c] (Two pairs : 9 and 5)
+kupibetonas5 collected 0.37€ from pot
+*** SUMMARY ***
+Total pot 0.37€ | Rake 0.02€
+Board: [5h Qh 3d 5c Kc]
+Seat 3: kupibetonas5 showed [9d 9c] and won 0.37€ with Two pairs : 9 and 5
+Seat 5: lkm77 showed [2d Ah] and lost with One pair : 5
+
+
