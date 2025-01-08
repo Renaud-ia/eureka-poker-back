@@ -149,7 +149,7 @@ public class ConvertisseurPersistanceVersApi {
         HashMap<String, BigDecimal> antesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
             String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
-            antesExtraites.put(nomJoueur, mainPersistenceDto.obtAnte(nomJoueur));
+            antesExtraites.put(nomJoueur, mainPersistenceDto.obtAnte(joueurPersistenceDto.obtNomJoueur()));
         }
 
         return antesExtraites;
@@ -159,7 +159,7 @@ public class ConvertisseurPersistanceVersApi {
         HashMap<String, BigDecimal> blindesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
             String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
-            blindesExtraites.put(nomJoueur, mainPersistenceDto.obtBlinde(nomJoueur));
+            blindesExtraites.put(nomJoueur, mainPersistenceDto.obtBlinde(joueurPersistenceDto.obtNomJoueur()));
         }
 
         return blindesExtraites;
@@ -170,13 +170,9 @@ public class ConvertisseurPersistanceVersApi {
 
         BigDecimal montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
 
-        if (Objects.equals(roundPoker, RoundPoker.PREFLOP)) {
-            montantInvestiCeTour = montantInvestiCeTour.subtract(this.moteurJeu.obtAnteJoueur(nomJoueur));
-        }
-
-        float montantAction;
+        double montantAction;
         if (actionPersistanceDto.obtMontant().compareTo(new BigDecimal(0)) > 0) {
-            montantAction = actionPersistanceDto.obtMontant().floatValue() - montantInvestiCeTour.floatValue();
+            montantAction = actionPersistanceDto.obtMontant().doubleValue() - montantInvestiCeTour.doubleValue();
         }
         else montantAction = 0;
 
@@ -189,11 +185,6 @@ public class ConvertisseurPersistanceVersApi {
         moteurJeu.ajouterAction(actionPokerJoueur);
 
         montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
-
-        if (Objects.equals(roundPoker, RoundPoker.PREFLOP)) {
-            montantInvestiCeTour = montantInvestiCeTour.subtract(this.moteurJeu.obtAnteJoueur(nomJoueur));
-        }
-
 
         ActionDto actionDto = new ActionDto(
                 getNomJoueurAnonyme(nomJoueur),

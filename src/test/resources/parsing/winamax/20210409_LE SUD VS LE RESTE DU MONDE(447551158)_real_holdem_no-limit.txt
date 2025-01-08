@@ -1,0 +1,29 @@
+Winamax Poker - Tournament "LE SUD VS LE RESTE DU MONDE" buyIn: 1.80€ + 0.20€ level: 48 - HandId: #1922217586896929178-60-1618013592 - Holdem no limit (100000/400000/800000) - 2021/04/10 00:13:12 UTC
+Table: 'LE SUD VS LE RESTE DU MONDE(447551158)#0409' 7-max (real money) Seat #2 is the button
+Seat 2: Hiddenwig14 (51148294)
+Seat 3: RendsL4rgent (12672048)
+Seat 4: benedicimus (34359658)
+*** ANTE/BLINDS ***
+RendsL4rgent posts ante 100000
+benedicimus posts ante 100000
+Hiddenwig14 posts ante 100000
+RendsL4rgent posts small blind 400000
+benedicimus posts big blind 800000
+Dealt to RendsL4rgent [4h As]
+*** PRE-FLOP ***
+Hiddenwig14 folds
+RendsL4rgent raises 3600000 to 4400000
+benedicimus raises 29859658 to 34259658 and is all-in
+RendsL4rgent calls 8172048 and is all-in
+*** FLOP *** [5h Qs 6s]
+*** TURN *** [5h Qs 6s][6d]
+*** RIVER *** [5h Qs 6s 6d][8s]
+*** SHOW DOWN ***
+RendsL4rgent shows [4h As] (One pair : 6)
+benedicimus shows [Kd Ad] (One pair : 6)
+benedicimus collected 47131706 from pot
+*** SUMMARY ***
+Total pot 47131706 | No rake
+Board: [5h Qs 6s 6d 8s]
+Seat 3: RendsL4rgent (small blind) showed [4h As] and lost with One pair : 6
+Seat 4: benedicimus (big blind) showed [Kd Ad] and won 47131706 with One pair : 6

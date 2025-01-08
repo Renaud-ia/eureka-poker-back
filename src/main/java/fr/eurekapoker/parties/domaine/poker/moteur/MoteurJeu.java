@@ -69,7 +69,13 @@ public class MoteurJeu {
             throw new ErreurLectureFichier("Trop d'actions pour être encodé");
         }
         this.pot = this.pot.add(actionPokerJoueur.obtMontantAction());
-        this.incrementerMontantInvesti(actionPokerJoueur.getNomJoueur(), actionPokerJoueur.obtMontantAction());
+
+        BigDecimal montantIncremente = actionPokerJoueur.obtMontantAction();
+        if (actionPokerJoueur.estMontantTotal()) {
+            montantIncremente =
+                    montantIncremente.subtract(this.investiCeTour.getOrDefault(actionPokerJoueur.getNomJoueur(), new BigDecimal(0)));
+        }
+        this.incrementerMontantInvesti(actionPokerJoueur.getNomJoueur(), montantIncremente);
     }
 
     public void ajouterBlinde(String nomJoueur, BigDecimal montant) {
@@ -78,7 +84,6 @@ public class MoteurJeu {
     }
 
     public void ajouterAnte(String nomJoueur, BigDecimal montant) {
-        this.incrementerMontantInvesti(nomJoueur, montant);
         this.pot = this.pot.add(montant);
         this.ante.put(nomJoueur, montant);
     }
@@ -89,7 +94,11 @@ public class MoteurJeu {
         for (String joueurAvecInvestissement: this.investi.keySet()) {
             BigDecimal bountyDepart = this.bountyDepart.getOrDefault(joueurAvecInvestissement, new BigDecimal(0));
             BigDecimal stackDepart = this.stackDepart.get(joueurAvecInvestissement).setScale(2, RoundingMode.HALF_UP);
-            BigDecimal montantInvesti = this.investi.get(joueurAvecInvestissement).setScale(2, RoundingMode.HALF_UP);
+            BigDecimal montantInvesti =
+                        this.investi.get(joueurAvecInvestissement)
+                        .add(this.ante.getOrDefault(joueurAvecInvestissement, new BigDecimal(0)))
+                        .setScale(2, RoundingMode.HALF_UP)
+                    ;
 
             if (stackDepart.compareTo(new BigDecimal(0)) == 0) continue;
             this.potBounty = this.potBounty.add(
@@ -160,7 +169,7 @@ public class MoteurJeu {
     }
 
     public BigDecimal obtStackActuel(String nomJoueur) {
-        return stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur));
+        return stackDepart.get(nomJoueur).subtract(investi.get(nomJoueur)).subtract(ante.getOrDefault(nomJoueur, new BigDecimal(0)));
     }
 
     public BigDecimal obtAnteJoueur(String nomJoueur) {

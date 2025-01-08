@@ -250,7 +250,7 @@ public class ExtracteurWinamax extends ExtracteurLigne {
         if (Objects.equals(nomAction, "calls")) {
             // call on a juste le montant de la complétion
             totalBet = false;
-            float montantCall = Float.parseFloat(matcher.group("bet"));
+            double montantCall = Double.parseDouble(matcher.group("bet"));
 
             return new ActionPokerAvecBet(
                     nomJoueur,
@@ -261,7 +261,7 @@ public class ExtracteurWinamax extends ExtracteurLigne {
         }
 
         if (Objects.equals(nomAction, "bets")) {
-            float montantBet = Float.parseFloat(matcher.group("bet"));
+            double montantBet = Double.parseDouble(matcher.group("bet"));
             return new ActionPokerAvecBet(
                     nomJoueur,
                     ActionPoker.TypeAction.RAISE,
@@ -271,7 +271,7 @@ public class ExtracteurWinamax extends ExtracteurLigne {
         }
 
         if (Objects.equals(nomAction, "raises")) {
-            float montantAction = Float.parseFloat(matcher.group("bet2"));
+            double montantAction = Double.parseDouble(matcher.group("bet2"));
             // BUG WINAMAX, affiche parfois "raises to [bet2]" plutôt que "raises [bet1] to [bet2]"
             if (matcher.group("bet") == null) {
                 totalBet = false;

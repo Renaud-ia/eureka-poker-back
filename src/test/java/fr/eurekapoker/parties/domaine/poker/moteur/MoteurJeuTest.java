@@ -81,7 +81,7 @@ public class MoteurJeuTest {
                 nomJoueur1,
                 ActionPoker.TypeAction.RAISE,
                 montantActionJoueur1,
-                true
+                false
         );
         this.moteurJeu.ajouterAction(actionPokerJoueur1);
 
@@ -97,6 +97,8 @@ public class MoteurJeuTest {
                         .multiply(bountyJoueur2).setScale(2, RoundingMode.HALF_UP);
 
         BigDecimal montantAttendu = partBountyJoueur1.add(partBountyJoueur2).setScale(2, RoundingMode.HALF_UP);
+        System.out.println(moteurJeu.obtPotBounty());
+        System.out.println(montantAttendu);
         assertEquals(0, montantAttendu.compareTo(moteurJeu.obtPotBounty()));
     }
 
