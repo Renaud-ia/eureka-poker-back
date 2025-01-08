@@ -107,7 +107,8 @@ public class ExtracteurWinamax extends ExtracteurLigne {
                 buyIn += Float.parseFloat(partieBuyIn.replaceAll("[^\\d.]", ""));
             }
 
-            rake = Float.parseFloat(buyInParties[1].replace("€", "")) / buyIn;
+            if (buyIn == 0) rake = 0;
+            else rake = Float.parseFloat(buyInParties[1].replace("€", "")) / buyIn;
             String[] partiesBlindes = matcher.group("valeursBlindes").split("/");
 
             if (pokerFormat == FormatPoker.TypeTable.MTT) {
@@ -132,7 +133,6 @@ public class ExtracteurWinamax extends ExtracteurLigne {
             // en Spin, on n'a pas d'ANTE avec WINAMAX
             else {
                 ante = 0f;
-                rake = 0f;
                 montantBB = Float.parseFloat(partiesBlindes[1]);
             }
         }
