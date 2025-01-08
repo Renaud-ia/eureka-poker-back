@@ -336,6 +336,47 @@ public class ExtracteurWinamaxTest {
         assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
     }
 
+
+    @Test
+    void extraitInfosMainPartieExpressoFreeroll() throws ErreurImport {
+        String ligne = "Winamax Poker - Tournament \"Expresso Freeroll\" buyIn: 0€ + 0€ level: 1 - HandId: #3799916446201413633-1-1736033657 - Holdem no limit (10/20) - 2025/01/04 23:34:17 UTC";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.SPIN, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2025, 1, 4, 23, 34, 17);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("0");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(3799916446201413633L, infosMainWinamax.obtNumeroTable());
+        assertEquals(1736033657, infosMainWinamax.obtIdentifiantMain());
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
+        BigDecimal rakeAttendu = new BigDecimal("0");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal(20);
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
+    }
+
+    @Test
+    void extraitInfosMainPartieColorado() throws ErreurImport {
+        String ligne = "Winamax Poker - Go Fast \"Colorado\" - HandId: #13995056-9255063-1588276003 - Holdem no limit (0.01€/0.02€) - 2020/04/30 19:46:43 UTC";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.CASH_GAME, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2020, 4, 30, 19, 46, 43);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("0.02");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(13995056, infosMainWinamax.obtNumeroTable());
+        assertEquals(1588276003, infosMainWinamax.obtIdentifiantMain());
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
+        BigDecimal rakeAttendu = new BigDecimal("0");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal("0.02");
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
+    }
+
     // TESTS EXTRACTION INFOS TABLE
 
     @Test

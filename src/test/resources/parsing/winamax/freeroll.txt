@@ -1,0 +1,188 @@
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #3799916446201413633-1-1736033657 - Holdem no limit (10/20) - 2025/01/04 23:34:17 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #2 is the button
+Seat 1: Nonoboy62000 (500)
+Seat 2: ass_binks55 (500)
+Seat 3: La noash (500)
+*** ANTE/BLINDS ***
+La noash posts small blind 10
+Nonoboy62000 posts big blind 20
+Dealt to Nonoboy62000 [8h 3d]
+*** PRE-FLOP *** 
+ass_binks55 raises 480 to 500 and is all-in
+La noash folds
+Nonoboy62000 folds
+ass_binks55 collected 530 from pot
+*** SUMMARY ***
+Total pot 530 | No rake
+Seat 2: ass_binks55 (button) won 530
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #3799916446201413633-2-1736033675 - Holdem no limit (10/20) - 2025/01/04 23:34:35 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #3 is the button
+Seat 1: Nonoboy62000 (480)
+Seat 2: ass_binks55 (530)
+Seat 3: La noash (490)
+*** ANTE/BLINDS ***
+Nonoboy62000 posts small blind 10
+ass_binks55 posts big blind 20
+Dealt to Nonoboy62000 [5c 2d]
+*** PRE-FLOP *** 
+La noash calls 20
+Nonoboy62000 folds
+ass_binks55 raises 510 to 530 and is all-in
+La noash folds
+ass_binks55 collected 560 from pot
+*** SUMMARY ***
+Total pot 560 | No rake
+Seat 2: ass_binks55 (big blind) won 560
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #3799916446201413633-3-1736033709 - Holdem no limit (10/20) - 2025/01/04 23:35:09 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #1 is the button
+Seat 1: Nonoboy62000 (470)
+Seat 2: ass_binks55 (560)
+Seat 3: La noash (470)
+*** ANTE/BLINDS ***
+ass_binks55 posts small blind 10
+La noash posts big blind 20
+Dealt to Nonoboy62000 [7c Ad]
+*** PRE-FLOP *** 
+Nonoboy62000 raises 20 to 40
+ass_binks55 raises 520 to 560 and is all-in
+La noash folds
+Nonoboy62000 folds
+ass_binks55 collected 620 from pot
+*** SUMMARY ***
+Total pot 620 | No rake
+Seat 2: ass_binks55 (small blind) won 620
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 1 - HandId: #3799916446201413633-4-1736033736 - Holdem no limit (10/20) - 2025/01/04 23:35:36 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #2 is the button
+Seat 1: Nonoboy62000 (430)
+Seat 2: ass_binks55 (620)
+Seat 3: La noash (450)
+*** ANTE/BLINDS ***
+La noash posts small blind 10
+Nonoboy62000 posts big blind 20
+Dealt to Nonoboy62000 [Kd Jh]
+*** PRE-FLOP *** 
+ass_binks55 raises 600 to 620 and is all-in
+La noash calls 440 and is all-in
+Nonoboy62000 calls 410 and is all-in
+*** FLOP *** [Qh Kh 9s]
+*** TURN *** [Qh Kh 9s][3c]
+*** RIVER *** [Qh Kh 9s 3c][6h]
+*** SHOW DOWN ***
+Nonoboy62000 shows [Kd Jh] (One pair : Kings)
+ass_binks55 shows [7h 4s] (High card : King)
+La noash shows [Ad Th] (High card : Ace)
+La noash collected 40 from side pot 1
+ass_binks55 collected 170 from side pot 2
+Nonoboy62000 collected 1290 from main pot
+*** SUMMARY ***
+Total pot 1500 | No rake
+Board: [Qh Kh 9s 3c 6h]
+Seat 1: Nonoboy62000 (big blind) showed [Kd Jh] and won 1290 with One pair : Kings
+Seat 2: ass_binks55 (button) showed [7h 4s] and won 170 with High card : King
+Seat 3: La noash (small blind) showed [Ad Th] and won 40 with High card : Ace
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 2 - HandId: #3799916446201413633-5-1736033747 - Holdem no limit (15/30) - 2025/01/04 23:35:47 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #3 is the button
+Seat 1: Nonoboy62000 (1290)
+Seat 2: ass_binks55 (170)
+Seat 3: La noash (40)
+*** ANTE/BLINDS ***
+Nonoboy62000 posts small blind 15
+ass_binks55 posts big blind 30
+Dealt to Nonoboy62000 [3h Th]
+*** PRE-FLOP *** 
+La noash raises 10 to 40 and is all-in
+Nonoboy62000 calls 25
+ass_binks55 raises 130 to 170 and is all-in
+Nonoboy62000 calls 130
+*** FLOP *** [Ah Ad As]
+*** TURN *** [Ah Ad As][7d]
+*** RIVER *** [Ah Ad As 7d][2h]
+*** SHOW DOWN ***
+Nonoboy62000 shows [3h Th] (Trips of Aces)
+La noash shows [4c Kd] (Trips of Aces)
+ass_binks55 shows [2s Kc] (Full of Aces and 2)
+ass_binks55 collected 380 from pot
+*** SUMMARY ***
+Total pot 380 | No rake
+Board: [Ah Ad As 7d 2h]
+Seat 1: Nonoboy62000 (small blind) showed [3h Th] and lost with Trips of Aces
+Seat 2: ass_binks55 (big blind) showed [2s Kc] and won 380 with Full of Aces and 2
+Seat 3: La noash (button) showed [4c Kd] and lost with Trips of Aces
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 2 - HandId: #3799916446201413633-6-1736033765 - Holdem no limit (15/30) - 2025/01/04 23:36:05 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #2 is the button
+Seat 1: Nonoboy62000 (1120)
+Seat 2: ass_binks55 (380)
+*** ANTE/BLINDS ***
+ass_binks55 posts small blind 15
+Nonoboy62000 posts big blind 30
+Dealt to Nonoboy62000 [8d 5h]
+*** PRE-FLOP *** 
+ass_binks55 raises 350 to 380 and is all-in
+Nonoboy62000 folds
+ass_binks55 collected 410 from pot
+*** SUMMARY ***
+Total pot 410 | No rake
+Seat 2: ass_binks55 (small blind) (button) won 410
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 2 - HandId: #3799916446201413633-7-1736033769 - Holdem no limit (15/30) - 2025/01/04 23:36:09 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #1 is the button
+Seat 1: Nonoboy62000 (1090)
+Seat 2: ass_binks55 (410)
+*** ANTE/BLINDS ***
+Nonoboy62000 posts small blind 15
+ass_binks55 posts big blind 30
+Dealt to Nonoboy62000 [5h Js]
+*** PRE-FLOP *** 
+Nonoboy62000 calls 15
+ass_binks55 raises 380 to 410 and is all-in
+Nonoboy62000 calls 380
+*** FLOP *** [7h 8d 3d]
+*** TURN *** [7h 8d 3d][4h]
+*** RIVER *** [7h 8d 3d 4h][2s]
+*** SHOW DOWN ***
+Nonoboy62000 shows [5h Js] (High card : Jack)
+ass_binks55 shows [Td 8h] (One pair : 8)
+ass_binks55 collected 820 from pot
+*** SUMMARY ***
+Total pot 820 | No rake
+Board: [7h 8d 3d 4h 2s]
+Seat 1: Nonoboy62000 (small blind) (button) showed [5h Js] and lost with High card : Jack
+Seat 2: ass_binks55 (big blind) showed [Td 8h] and won 820 with One pair : 8
+
+
+Winamax Poker - Tournament "Expresso Freeroll" buyIn: 0€ + 0€ level: 2 - HandId: #3799916446201413633-8-1736033791 - Holdem no limit (15/30) - 2025/01/04 23:36:31 UTC
+Table: 'Expresso Freeroll(884736992)#0' 3-max (real money) Seat #2 is the button
+Seat 1: Nonoboy62000 (680)
+Seat 2: ass_binks55 (820)
+*** ANTE/BLINDS ***
+ass_binks55 posts small blind 15
+Nonoboy62000 posts big blind 30
+Dealt to Nonoboy62000 [Ac 9d]
+*** PRE-FLOP *** 
+ass_binks55 raises 790 to 820 and is all-in
+Nonoboy62000 calls 650 and is all-in
+*** FLOP *** [2d 5d Qh]
+*** TURN *** [2d 5d Qh][5h]
+*** RIVER *** [2d 5d Qh 5h][8h]
+*** SHOW DOWN ***
+Nonoboy62000 shows [Ac 9d] (One pair : 5)
+ass_binks55 shows [7d 2c] (Two pairs : 5 and 2)
+ass_binks55 collected 1500 from pot
+*** SUMMARY ***
+Total pot 1500 | No rake
+Board: [2d 5d Qh 5h 8h]
+Seat 1: Nonoboy62000 (big blind) showed [Ac 9d] and lost with One pair : 5
+Seat 2: ass_binks55 (small blind) (button) showed [7d 2c] and won 1500 with Two pairs : 5 and 2
+
+

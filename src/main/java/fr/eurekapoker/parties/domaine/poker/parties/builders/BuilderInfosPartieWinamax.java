@@ -14,6 +14,9 @@ public class BuilderInfosPartieWinamax extends BuilderInfosPartie {
     private static final BigDecimal RAKE_CASH_GAME =
             new BigDecimal("0.0525").setScale(4, RoundingMode.HALF_UP);
 
+    private static final BigDecimal RAKE_GO_FAST =
+            new BigDecimal("0.10").setScale(4, RoundingMode.HALF_UP);
+
     public InfosPartieWinamax build() throws ErreurLectureFichier {
         if (donneesIncompletes()) throw new ErreurLectureFichier("Toutes les infos ne sont pas complètes");
         standardiserInfosPartie();
@@ -38,7 +41,10 @@ public class BuilderInfosPartieWinamax extends BuilderInfosPartie {
 
     private void attribuerRake() {
         if (formatPoker.obtTypeTable() == FormatPoker.TypeTable.CASH_GAME) {
-            this.rake = RAKE_CASH_GAME;
+            if (this.nomPartie.contains("Colorado")) {
+                this.rake = RAKE_GO_FAST;
+            }
+            else this.rake = RAKE_CASH_GAME;
         }
     }
 }
