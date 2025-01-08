@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.web.servlet.MockMvc;
 import java.math.BigDecimal;
+import java.nio.channels.FileLock;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -233,6 +234,7 @@ public class ApiImportWinamaxTest extends ApiImportTestModele {
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
 
         JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
+        assertEquals(Float.parseFloat(String.valueOf((Double) premiereMain.get("potInitial"))), 1500000);
         JSONArray actionsPreflop = premiereMain.getJSONArray("tours").getJSONObject(0).getJSONArray("actions");
 
         JSONObject premiereActionPf = actionsPreflop.getJSONObject(0);
@@ -246,6 +248,31 @@ public class ApiImportWinamaxTest extends ApiImportTestModele {
 
         JSONObject quatriemeActionPf = actionsPreflop.getJSONObject(3);
         verifierAction(quatriemeActionPf, "RendsL4rgent", "CALL", 12572048, 12572048, 0, 47131706, true);
+    }
+
+    @Test
+    public void donneesSortiesApiSontBonnesAllInMttAnonymes() throws Exception {
+        String nomFichier = "20210409_LE SUD VS LE RESTE DU MONDE(447551158)_real_holdem_no-limit.txt";
+        JSONObject jsonCreation = creerPartie(nomFichier, true);
+        String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
+
+        JSONObject jsonConsultation = consulterPartie(idUniquePartie);
+
+        JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
+        assertEquals(Float.parseFloat(String.valueOf((Double) premiereMain.get("potInitial"))), 1500000);
+        JSONArray actionsPreflop = premiereMain.getJSONArray("tours").getJSONObject(0).getJSONArray("actions");
+
+        JSONObject premiereActionPf = actionsPreflop.getJSONObject(0);
+        verifierAction(premiereActionPf, "Villain1", "FOLD", 0, 0, 51048294, 1500000, false);
+
+        JSONObject secondeActionPf = actionsPreflop.getJSONObject(1);
+        verifierAction(secondeActionPf, "Hero", "RAISE", 4400000, 4400000, 8172048, 5500000, false);
+
+        JSONObject troisiemeActionPf = actionsPreflop.getJSONObject(2);
+        verifierAction(troisiemeActionPf, "Villain2", "RAISE", 34259658, 34259658, 0, 38959658, true);
+
+        JSONObject quatriemeActionPf = actionsPreflop.getJSONObject(3);
+        verifierAction(quatriemeActionPf, "Hero", "CALL", 12572048, 12572048, 0, 47131706, true);
     }
 
 

@@ -149,7 +149,7 @@ public class ConvertisseurPersistanceVersApi {
         HashMap<String, BigDecimal> antesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
             String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
-            antesExtraites.put(nomJoueur, mainPersistenceDto.obtAnte(nomJoueur));
+            antesExtraites.put(nomJoueur, mainPersistenceDto.obtAnte(joueurPersistenceDto.obtNomJoueur()));
         }
 
         return antesExtraites;
@@ -159,7 +159,7 @@ public class ConvertisseurPersistanceVersApi {
         HashMap<String, BigDecimal> blindesExtraites = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainPersistenceDto.obtJoueursPresents()) {
             String nomJoueur = getNomJoueurAnonyme(joueurPersistenceDto.obtNomJoueur());
-            blindesExtraites.put(nomJoueur, mainPersistenceDto.obtBlinde(nomJoueur));
+            blindesExtraites.put(nomJoueur, mainPersistenceDto.obtBlinde(joueurPersistenceDto.obtNomJoueur()));
         }
 
         return blindesExtraites;
