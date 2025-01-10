@@ -17,6 +17,7 @@ spec:
       containers:
         - name: service-parties
           image: {{IMAGE_NAME}}:{{IMAGE_TAG}}
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           env:
