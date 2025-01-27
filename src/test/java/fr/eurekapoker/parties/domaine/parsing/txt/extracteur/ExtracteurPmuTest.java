@@ -134,6 +134,22 @@ public class ExtracteurPmuTest {
         assertFalse(infosJoueur.aBounty());
     }
 
+
+
+    @Test
+    void extraitInfosJoueurCGAvecPoint() throws Exception {
+        String ligne = "Seat 2: Chevre.miel ( 913,401 )";
+        InfosJoueur infosJoueur = extracteurPmu.extraireStackJoueur(ligne);
+
+        assertEquals("Chevre.miel", infosJoueur.obtJoueur());
+        assertEquals(2, infosJoueur.obtSiege());
+
+        BigDecimal stackAttendu = new BigDecimal("913401");
+        assertEquals(0, stackAttendu.compareTo(infosJoueur.obtStack()));
+
+        assertFalse(infosJoueur.aBounty());
+    }
+
     @Test
     void extraitInfosJoueurCGAvecTiret() throws Exception {
         String ligne = "Seat 6: H-Savoie74 ( €2.01 EUR )";
@@ -185,6 +201,7 @@ public class ExtracteurPmuTest {
 
         assertEquals(0, montantAttenduBB.compareTo(montantBB));
     }
+
     @Test
     void extraitMontantBBMTT() throws Exception {
         String ligne = "Blinds-Antes(400/800 -100)";
@@ -193,6 +210,17 @@ public class ExtracteurPmuTest {
 
         assertEquals(0, montantAttenduBB.compareTo(montantBB));
     }
+
+    @Test
+    void extraitMontantBBMTTEleve() throws Exception {
+        String ligne = "Blinds-Antes(3 000/6 000 -750)";
+        BigDecimal montantBB = extracteurPmu.extraireBigBlinde(ligne);
+        BigDecimal montantAttenduBB = new BigDecimal(6000);
+
+        assertEquals(0, montantAttenduBB.compareTo(montantBB));
+    }
+
+
 
     @Test
     void extraitNomDealer() throws Exception {
@@ -394,6 +422,34 @@ public class ExtracteurPmuTest {
         cartesAttendues.add(new CartePoker('8', 'd'));
 
         assertEquals(cartesAttendues, cartesJoueur.obtCartes());
+    }
+
+
+
+    @Test
+    void extraitCartesDoesntShow() throws Exception {
+        String ligne = "Chevre.miel doesn't show [ Tc, Ts ]two pairs.";
+        CartesJoueur cartesJoueur = extracteurPmu.extraireCartes(ligne);
+
+        assertEquals("Chevre.miel", cartesJoueur.obtNomJoueur());
+
+        List<CartePoker> cartesAttendues = new ArrayList<>();
+        cartesAttendues.add(new CartePoker('T', 'c'));
+        cartesAttendues.add(new CartePoker('T', 's'));
+
+        assertEquals(cartesAttendues, cartesJoueur.obtCartes());
+    }
+
+    @Test
+    void extraitResultatGrosMontant() throws Exception {
+        String ligne = "FishLaFrouss wins 489,600 chips from the main pot with two pairs.";
+        ResultatJoueur resultatExtrait = extracteurPmu.extraireResultat(ligne);
+
+        assertEquals("FishLaFrouss", resultatExtrait.getNomJoueur());
+
+        System.out.println(resultatExtrait.obtMontantGagne());
+        BigDecimal resultatAttendu = new BigDecimal(489600);
+        assertEquals(0, resultatAttendu.compareTo(resultatExtrait.obtMontantGagne()));
     }
 
     @Test

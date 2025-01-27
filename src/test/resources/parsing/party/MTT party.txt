@@ -1,0 +1,40 @@
+#Game No : 24849318035 
+***** Hand History for Game 24849318035 *****
+NL Texas Hold'em €50 EUR Buy-in Trny:402200578 Level:13  Blinds-Antes(3K/6K -750) - Saturday, January 25, 21:45:33 CET 2025
+Table The Major. 25 000€ Gtd (Phase 1) (402200578) Table #5 (Real Money)
+Seat 2 is the button
+Total number of players : 4/6 
+Seat 2: Chevre.miel ( 913,401 )
+Seat 4: FishLaFrouss ( 778,571 )
+Seat 3: Gerardoti ( 331,045 )
+Seat 5: Jeremb31__ ( 180,133 )
+Trny:402200578 Level:13 
+Blinds-Antes(3 000/6 000 -750)
+Chevre.miel posts ante [750]
+Gerardoti posts ante [750]
+FishLaFrouss posts ante [750]
+Jeremb31__ posts ante [750]
+Gerardoti posts small blind [3,000].
+FishLaFrouss posts big blind [6,000].
+** Dealing down cards **
+Dealt to FishLaFrouss [  Jd Jh ]
+Jeremb31__ raises [12,000]
+Chevre.miel raises [42,000]
+Gerardoti folds
+FishLaFrouss calls [36,000]
+Jeremb31__ folds
+** Dealing Flop ** [ 2s, 5s, 2d ]
+FishLaFrouss checks
+Chevre.miel bets [30,600]
+FishLaFrouss calls [30,600]
+** Dealing Turn ** [ 9c ]
+FishLaFrouss checks
+Chevre.miel checks
+** Dealing River ** [ 5c ]
+Your time bank will be activated in 6 secs. If you do not want it to be used, please act now.
+FishLaFrouss bets [163,200]
+Chevre.miel calls [163,200]
+FishLaFrouss shows [ Jd, Jh ]two pairs.
+Chevre.miel doesn't show [ Tc, Ts ]two pairs.
+FishLaFrouss wins 489,600 chips from the main pot with two pairs.
+
