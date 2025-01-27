@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ParserPmuTest extends ParserTxtModele {
     @Test
-    void peutLireUniquementLesFichiersWinamax() throws Exception {
+    void peutLireUniquementLesFichiersPmuParty() throws Exception {
         List<String> repertoiresPartyGaming = new ArrayList<>();
         repertoiresPartyGaming.add("pmu");
         repertoiresPartyGaming.add("party");

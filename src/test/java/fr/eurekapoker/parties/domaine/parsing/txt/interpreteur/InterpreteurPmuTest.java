@@ -136,6 +136,10 @@ public class InterpreteurPmuTest {
         interpreteurPmu.lireLigne(ligne);
         assertTrue(interpreteurPmu.estCartesJoueur());
 
+        ligne = "Chevre.miel doesn't show [ Tc, Ts ]two pairs.";
+        interpreteurPmu.lireLigne(ligne);
+        assertTrue(interpreteurPmu.estCartesJoueur());
+
         ligne = "SACPALSA wins 360 chips\n";
         interpreteurPmu.lireLigne(ligne);
         assertTrue(interpreteurPmu.estResultat());

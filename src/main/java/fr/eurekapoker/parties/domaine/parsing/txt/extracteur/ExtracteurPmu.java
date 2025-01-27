@@ -24,7 +24,7 @@ import java.util.regex.Pattern;
 
 public class ExtracteurPmu extends ExtracteurLigne {
 
-    private static final String patternNomJoueur = "[\\w\\s-]+";
+    private static final String patternNomJoueur = "[\\w\\s-.]+";
 
     private static final Pattern patternNumeroPartie =
             Pattern.compile("#Game\\sNo\\s:\\s" +
@@ -167,12 +167,12 @@ public class ExtracteurPmu extends ExtracteurLigne {
             Pattern.compile(
                         "Blinds" +
                             "(-Antes)?" +
-                            "\\(\\d+/(?<montantBB>\\d+)([\\s\\d\\-]+)?\\)"
+                            "\\([\\d\\s]+/(?<montantBB>[\\d\\s]+)([\\s\\d\\-]+)?\\)"
             );
 
     public BigDecimal extraireBigBlinde(String ligne) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternBigBlinde, ligne);
-        float value = Float.parseFloat(matcher.group("montantBB"));
+        float value = Float.parseFloat(matcher.group("montantBB").replace(" ", ""));
         return new BigDecimal(value);
     }
 
@@ -309,7 +309,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
     private static final Pattern patternCartesJoueur =
             Pattern.compile(
                     "(?<nomJoueur>" + patternNomJoueur + ")\\s" +
-                            "shows\\s" +
+                            "(shows\\s|doesn't\\sshow\\s)" +
                             "\\[(?<cartesTour>[\\w\\s,]+)]"
             );
 
@@ -334,7 +334,7 @@ public class ExtracteurPmu extends ExtracteurLigne {
     public ResultatJoueur extraireResultat(String ligne) throws ErreurRegex {
         Matcher matcher = matcherRegex(patternResultat, ligne);
 
-        float montant = Float.parseFloat(matcher.group("montant").replace(",", "."));
+        double montant = Float.parseFloat(matcher.group("montant").replace(",", ""));
 
         return new ResultatJoueur(
                 matcher.group("nomJoueur"),

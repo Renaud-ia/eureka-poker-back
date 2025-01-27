@@ -153,9 +153,11 @@ public class ParserPmu extends ParserTxt {
     @Override
     public boolean peutLireFichier() {
         if (lignesFichier.length == 0) return false;
-        String pattern = "Game #\\d+ starts\\.";
 
-        return lignesFichier[0].replaceAll("\r", "").matches(pattern);
+        String pattern = "(Game #\\d+ starts\\.|#Game No : \\d+\\s*)";
+
+        Boolean condition = lignesFichier[0].replaceAll("\r", "").matches(pattern);
+        return condition;
     }
 
     @Override

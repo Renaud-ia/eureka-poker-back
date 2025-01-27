@@ -84,7 +84,7 @@ public class InterpreteurPmu implements InterpreteurLigne{
             return EndroitFichier.GAINS;
         }
 
-        if (ligne.contains(" shows ")) {
+        if (ligne.contains(" shows ") || ligne.contains("doesn't show")) {
             return EndroitFichier.CARTES;
         }
 

@@ -10,7 +10,7 @@ public class ResultatJoueur {
     private final BigDecimal gains;
     private final String nomJoueur;
 
-    public ResultatJoueur(String nomJoueur, float gains) {
+    public ResultatJoueur(String nomJoueur, double gains) {
         this.nomJoueur = nomJoueur;
         this.gains = new BigDecimal(gains).setScale(2, RoundingMode.HALF_UP);
     }
