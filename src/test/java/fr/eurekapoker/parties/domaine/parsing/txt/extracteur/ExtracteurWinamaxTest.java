@@ -215,6 +215,27 @@ public class ExtracteurWinamaxTest {
 
     // TEST EXTRAIRE INFOS MAIN
 
+
+    @Test
+    void doitExtraireInfosMainNevada() throws ErreurImport {
+        String ligne = "Winamax Poker - ESCAPE \"Nevada\" - HandId: #20552062-260761-1738192555 - Holdem no limit (0.25€/0.50€) - 2025/01/29 23:15:55 UTC";
+        InfosMainWinamax infosMainWinamax = extracteurWinamax.extraireInfosMain(ligne);
+        assertEquals(FormatPoker.TypeTable.CASH_GAME, infosMainWinamax.obtTypeTable());
+        assertEquals(FormatPoker.Variante.HOLDEM_NO_LIMIT, infosMainWinamax.obtVariante());
+        LocalDateTime dateAttendue = LocalDateTime.of(2025, 1, 29, 23, 15, 55);
+        assertEquals(dateAttendue, infosMainWinamax.obtDate());
+        BigDecimal buyInAttendu = new BigDecimal("0.5");
+        assertEquals(0, buyInAttendu.compareTo(infosMainWinamax.obtBuyIn()));
+        assertEquals(20552062, infosMainWinamax.obtNumeroTable());
+        assertEquals(1738192555, infosMainWinamax.obtIdentifiantMain());
+        BigDecimal anteAttendue = new BigDecimal("0");
+        assertEquals(0, anteAttendue.compareTo(infosMainWinamax.obtAnte()));
+        BigDecimal rakeAttendu = new BigDecimal("0");
+        assertEquals(0, rakeAttendu.compareTo(infosMainWinamax.obtRake()));
+        BigDecimal bbAttendue = new BigDecimal("0.5");
+        assertEquals(0, bbAttendue.compareTo(infosMainWinamax.obtMontantBb()));
+    }
+
     @Test
     void doitExtraireInfosMainExpresso() throws ErreurImport {
         String ligne = "Winamax Poker - Tournament \"Expresso\" buyIn: 1.86€ + 0.14€ level: 1 - HandId: #2563429635522035713-1-1667484424 - Holdem no limit (10/20) - 2022/11/03 14:07:04 UTC\n";

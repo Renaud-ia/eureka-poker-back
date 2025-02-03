@@ -19,7 +19,7 @@ public class GenerateurNomPartie {
 
         else if (Objects.equals(partiePersistanceDto.obtTypeTable(), FormatPoker.TypeTable.CASH_GAME.toString())
         && !Objects.equals(partiePersistanceDto.obtNomPartie(), "Short Track")) {
-            buyInString = "NL" + buyIn.multiply(new BigDecimal(100)).stripTrailingZeros();
+            buyInString = "NL" + buyIn.multiply(new BigDecimal(100)).stripTrailingZeros().toPlainString();
         }
         else buyInString = buyIn.stripTrailingZeros().toPlainString() + "€";
 
