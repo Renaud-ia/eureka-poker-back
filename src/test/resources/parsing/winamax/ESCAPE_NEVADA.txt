@@ -1,0 +1,38 @@
+Winamax Poker - ESCAPE "Nevada" - HandId: #20552062-260761-1738192555 - Holdem no limit (0.25€/0.50€) - 2025/01/29 23:15:55 UTC
+Table: 'Nevada' 6-max (real money) Seat #6 is the button
+Seat 1: LlMPERMAN (91.05€)
+Seat 2: Double_Penne (50€)
+Seat 3: Basta ya (22.91€)
+Seat 4: Sr.House (50€)
+Seat 5: JackSpider (24.24€)
+Seat 6: Melowii (73.62€)
+*** ANTE/BLINDS ***
+LlMPERMAN posts small blind 0.25€
+Double_Penne posts big blind 0.50€
+Dealt to Double_Penne [Ah 3s]
+*** PRE-FLOP ***
+Basta ya folds
+Sr.House folds
+JackSpider folds
+Melowii folds
+LlMPERMAN raises 1€ to 1.50€
+Double_Penne calls 1€
+*** FLOP *** [6d Ad Ks]
+LlMPERMAN checks
+Double_Penne bets 1€
+LlMPERMAN calls 1€
+*** TURN *** [6d Ad Ks][5d]
+LlMPERMAN checks
+Double_Penne checks
+*** RIVER *** [6d Ad Ks 5d][6h]
+LlMPERMAN checks
+Double_Penne checks
+*** SHOW DOWN ***
+LlMPERMAN shows [Qc Kc] (Two pairs : Kings and 6)
+Double_Penne shows [Ah 3s] (Two pairs : Aces and 6)
+Double_Penne collected 4.50€ from pot
+*** SUMMARY ***
+Total pot 4.50€ | Rake 0.50€
+Board: [6d Ad Ks 5d 6h]
+Seat 1: LlMPERMAN (small blind) showed [Qc Kc] and lost with Two pairs : Kings and 6
+Seat 2: Double_Penne (big blind) showed [Ah 3s] and won 4.50€ with Two pairs : Aces and 6

@@ -17,7 +17,9 @@ import java.net.URISyntaxException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -34,6 +36,14 @@ public class ApiImportTestModele {
 
     public ApiImportTestModele(String nomDossierRoom) {
         this.nomDossierRoom = nomDossierRoom;
+    }
+
+    public List<String> parcourirLesFichiers() throws Exception {
+        String cheminRepertoire = Paths.get(Objects.requireNonNull(getClass().getResource("/parsing/" + nomDossierRoom + "/")).toURI()).toString();
+
+        return Files.list(Paths.get(cheminRepertoire))
+                .map(path -> path.getFileName().toString()) // Récupérer juste le nom du fichier
+                .collect(Collectors.toList());
     }
 
 

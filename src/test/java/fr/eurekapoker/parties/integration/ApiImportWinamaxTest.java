@@ -18,9 +18,10 @@ public class ApiImportWinamaxTest extends ApiImportTestModele {
 
     @Test
     public void testSimpleAjouterPartie() throws Exception {
-        String nomFichier = "20201207_Aalen 47_real_holdem_no-limit.txt";
-        JSONObject result = creerPartie(nomFichier, false);
-        assertNotNull(result.get("idUniquePartie"), "idUniquePartie ne doit pas être nul après création");
+        for (String nomFichier: this.parcourirLesFichiers()) {
+            JSONObject result = creerPartie(nomFichier, false);
+            assertNotNull(result.get("idUniquePartie"), "idUniquePartie ne doit pas être nul après création");
+        }
     }
 
     @Test

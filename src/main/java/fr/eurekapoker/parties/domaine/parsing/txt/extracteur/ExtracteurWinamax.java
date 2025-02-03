@@ -65,7 +65,7 @@ public class ExtracteurWinamax extends ExtracteurLigne {
         String nomTournoi = matcher.group("nomTournoi");
         if (nomTournoi == null) throw new ErreurRegex("Aucun nom de tournoi trouvé");
 
-        else if (nomTournoi.contains("CashGame") || nomTournoi.contains("Go Fast")) {
+        else if (nomTournoi.contains("CashGame") || nomTournoi.contains("Go Fast") || nomTournoi.contains("Nevada")) {
             pokerFormat = FormatPoker.TypeTable.CASH_GAME;
         }
         // attention Expresso contient aussi Tournament
