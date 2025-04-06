@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine;
+package fr.eurekapoker.parties.domaine.services;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;

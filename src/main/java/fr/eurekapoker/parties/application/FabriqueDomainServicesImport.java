@@ -1,8 +1,8 @@
 package fr.eurekapoker.parties.application;
 
-import fr.eurekapoker.parties.domaine.DomaineServiceImport;
-import fr.eurekapoker.parties.domaine.DomaineServiceImportTxt;
-import fr.eurekapoker.parties.domaine.DomaineServiceImportXml;
+import fr.eurekapoker.parties.domaine.services.DomaineServiceImport;
+import fr.eurekapoker.parties.domaine.services.DomaineServiceImportTxt;
+import fr.eurekapoker.parties.domaine.services.DomaineServiceImportXml;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 

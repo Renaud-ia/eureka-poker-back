@@ -17,7 +17,7 @@ import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurParsing;
 import fr.eurekapoker.parties.application.persistance.PersistanceFichiers;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
-import fr.eurekapoker.parties.domaine.DomaineServiceImport;
+import fr.eurekapoker.parties.domaine.services.DomaineServiceImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 
 public class InterfacePartiesImpl implements InterfaceParties {
@@ -31,7 +31,10 @@ public class InterfacePartiesImpl implements InterfaceParties {
         this.persistanceFichiers = fabriqueDependances.obtPersistanceFichiers();
     }
     @Override
-    public ResumePartieDto ajouterPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie {
+    public ResumePartieDto ajouterPartie(
+        String contenuPartie, 
+        ParametresImport parametresImport
+    ) throws ErreurAjoutPartie {
         enregistrerFichier(contenuPartie);
         logger.info("Données fichiers sauvegardées");
         ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie, parametresImport);

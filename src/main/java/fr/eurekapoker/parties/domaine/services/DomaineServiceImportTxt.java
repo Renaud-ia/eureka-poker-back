@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine;
+package fr.eurekapoker.parties.domaine.services;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurInconnue;
@@ -15,7 +15,6 @@ import java.util.List;
  */
 public class DomaineServiceImportTxt implements DomaineServiceImport {
     private final ParserTxt parserTxt;
-    private List<MainPoker> mainsExtraites;
     public DomaineServiceImportTxt(ObservateurParser observateurParser, String fichierBrut)
             throws ErreurImport {
         this(observateurParser, fichierBrut.split("\n"));

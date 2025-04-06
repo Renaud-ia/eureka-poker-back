@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.domaine;
+package fr.eurekapoker.parties.domaine.services;
 
 import fr.eurekapoker.parties.domaine.exceptions.ErreurImport;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
@@ -6,7 +6,6 @@ import fr.eurekapoker.parties.domaine.exceptions.RoomNonPriseEnCharge;
 import fr.eurekapoker.parties.domaine.parsing.ObservateurParser;
 import fr.eurekapoker.parties.domaine.parsing.xml.ParserXml;
 import fr.eurekapoker.parties.domaine.parsing.xml.extracteur.ExtracteurBetclic;
-import fr.eurekapoker.parties.domaine.parsing.xml.parser.ParserBetclic;
 import fr.eurekapoker.parties.domaine.parsing.xml.parser.ParserIPoker;
 import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
