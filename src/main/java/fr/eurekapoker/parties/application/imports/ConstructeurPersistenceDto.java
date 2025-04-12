@@ -36,7 +36,18 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
     private TourPersistanceDto dernierTour;
     private final HashMap<String, Integer> nombreActionsParJoueur;
     private int numeroAction;
-    public ConstructeurPersistenceDto(MoteurJeu moteurJeu, ParametresImport parametresImport) {
+
+    public ConstructeurPersistenceDto(ParametresImport parametresImport) {
+        this.moteurJeu = new MoteurJeu();
+        this.parametresImport = parametresImport;
+        this.partiePersistanceDto = new PartiePersistanceDto();
+
+        this.indexMain = 0;
+        this.numeroAction = 0;
+        this.nombreActionsParJoueur = new HashMap<>();
+    }
+
+    public ConstructeurPersistenceDto(ParametresImport parametresImport, MoteurJeu moteurJeu) {
         this.moteurJeu = moteurJeu;
         this.parametresImport = parametresImport;
         this.partiePersistanceDto = new PartiePersistanceDto();

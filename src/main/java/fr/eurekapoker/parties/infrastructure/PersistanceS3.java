@@ -9,6 +9,7 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3ClientBuilder;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import fr.eurekapoker.parties.application.persistance.PersistanceFichiers;
+import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -16,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
+@Service
 public class PersistanceS3 implements PersistanceFichiers {
     private static final Logger logger = LoggerFactory.getLogger(PersistanceS3.class);
     private static final String S3_BUCKET_NAME = System.getenv("S3_BUCKET_NAME");

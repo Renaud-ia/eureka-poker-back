@@ -44,7 +44,9 @@ class ConstructeurPersistenceDtoTest {
     @BeforeEach
     void setUp() {
         MockitoAnnotations.openMocks(this);
-        constructeur = new ConstructeurPersistenceDto(moteurJeuMock, parametresImportMock);
+        constructeur = new ConstructeurPersistenceDto(parametresImportMock, moteurJeuMock);
+
+
 
         nombreJoueurs = 6;
     }

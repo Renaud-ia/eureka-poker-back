@@ -77,7 +77,4 @@ public abstract class ParserTxt extends ParserModele {
         ActionPokerJoueur actionPoker = extracteurLigne.extraireAction(lignesFichier[indexLigne]);
         observateurParser.ajouterAction(actionPoker);
     }
-
-
-
 }

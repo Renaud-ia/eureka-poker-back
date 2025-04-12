@@ -1,13 +1,12 @@
 package fr.eurekapoker.parties.api;
 
-import fr.eurekapoker.parties.application.FabriqueDependances;
-import fr.eurekapoker.parties.application.InterfacePartiesImpl;
 import fr.eurekapoker.parties.application.api.InterfaceParties;
 import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
+import fr.eurekapoker.parties.application.services.CreerRecupererPartie;
 import fr.eurekapoker.parties.domaine.exceptions.ErreurLectureFichier;
 import fr.eurekapoker.parties.domaine.exceptions.JoueurNonExistant;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,10 +30,10 @@ import org.slf4j.LoggerFactory;
 public class PartieControleur {
     private final static Logger logger = LoggerFactory.getLogger(PartieControleur.class);
     private final static int MAX_FENETRE_CONSULTATION = 10000;
-    private final InterfaceParties interfaceParties;
+    private final CreerRecupererPartie interfaceParties;
     @Autowired
-    public PartieControleur(FabriqueDependances fabriqueDependances) {
-        this.interfaceParties = new InterfacePartiesImpl(fabriqueDependances);
+    public PartieControleur(CreerRecupererPartie creerRecupererPartie) {
+        this.interfaceParties = creerRecupererPartie;
     }
 
     @GetMapping(value = "/{id}")
