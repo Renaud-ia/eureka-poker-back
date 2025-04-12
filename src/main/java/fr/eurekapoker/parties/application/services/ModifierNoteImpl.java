@@ -1,6 +1,5 @@
 package fr.eurekapoker.parties.application.services;
 
-import fr.eurekapoker.parties.application.auth.AuthService;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
 import fr.eurekapoker.parties.application.exceptions.ModificationNonAutorisee;
@@ -19,18 +18,14 @@ public class ModifierNoteImpl implements ModifierNote {
     }
 
     @Override
-    public void changerNotesEnregistrees(AuthService authService, String idNote, NotesJoueur notesJoueur)
+    public void changerNotesEnregistrees(UtilisateurIdentifie utilisateurIdentifie, String idNote, NotesJoueur notesJoueur)
             throws ErreurModificationPartie {
-        if (!authService.userEstIdentifie()) {
-            throw new ModificationNonAutorisee("Seul les utilisateurs identifiés peuvent modifier une partie");
-        }
-
         UtilisateurIdentifie proprietairePartie = this.persistanceNotesJoueur.getProprietaireNotes(idNote);
 
-        if (!authService.estUtilisateur(proprietairePartie)) {
+        if (!utilisateurIdentifie.equals(proprietairePartie)) {
             throw new ModificationNonAutorisee("La partie n'appartient pas à cet utilisateur");
         }
 
-        this.persistanceNotesJoueur.modifierNotesJoueur(authService.getUtilisateur(), idNote, notesJoueur);
+        this.persistanceNotesJoueur.modifierNotesJoueur(utilisateurIdentifie, idNote, notesJoueur);
     }
 }
