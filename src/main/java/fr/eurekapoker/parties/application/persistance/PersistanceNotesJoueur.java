@@ -5,5 +5,5 @@ import fr.eurekapoker.parties.domaine.annotations.NotesJoueur;
 
 public interface PersistanceNotesJoueur {
     public UtilisateurIdentifie getProprietaireNotes(String idNote);
-    public String modifierNotesJoueur(UtilisateurIdentifie utilisateurIdentifie, String idNote, NotesJoueur notesJoueur);
+    public void modifierNotesJoueur(UtilisateurIdentifie utilisateurIdentifie, String idNote, NotesJoueur notesJoueur);
 }

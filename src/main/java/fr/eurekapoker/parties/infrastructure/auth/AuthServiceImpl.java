@@ -10,6 +10,8 @@ import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.JwtException;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 public class AuthServiceImpl implements AuthService {
     @Value("${audience_request_token_google}")
@@ -45,15 +47,24 @@ public class AuthServiceImpl implements AuthService {
                 throw new TokenInvalid("Token non destiné à cette application");
             }
 
-            String email = jwt.getClaimAsString("email");
-            if (email == null) throw new RuntimeException("Email manquant dans le token");
+            UtilisateurAuthentifie utilisateurAuthentifie = this.recupererUtilisateurDepuisJwt(jwt);
 
-            return persistanceUtilisateur
-                    .findOrCreateByEmail(email);
+            return persistanceUtilisateur.trouverOuCreer(utilisateurAuthentifie);
 
         } catch (JwtException e) {
             throw  new TokenInvalid(e.getMessage());
         }
+    }
+
+    private UtilisateurAuthentifie recupererUtilisateurDepuisJwt(Jwt jwt) {
+        return new UtilisateurAuthentifie(
+                UUID.randomUUID().toString(),
+                jwt.getClaimAsString("email"),
+                jwt.getClaimAsBoolean("email_verified"),
+                UtilisateurAuthentifie.StatutMembre.UTILISATEUR,
+                jwt.getClaimAsString("family_name"),
+                jwt.getClaimAsString("given_name")
+        );
     }
 
 }
