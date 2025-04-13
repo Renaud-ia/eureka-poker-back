@@ -49,10 +49,16 @@ spec:
               value: "eureka-uploads"
 
             - name: AWS_ACCESS_KEY_ID
-              value: "AKIAW3MEDULIMPDIXFEX"
+              valueFrom:
+                secretKeyRef:
+                  name: aws-secret
+                  key: AWS_ACCESS_KEY_ID
 
             - name: AWS_SECRET_ACCESS_KEY
-              value: "RfzaT9F9LK0oWCJrus7yMmASoH7BwYBgISLYKcfZ"
+              valueFrom:
+                secretKeyRef:
+                  name: aws-secret
+                  key: AWS_SECRET_ACCESS_KEY
 
             - name: AWS_REGION
               value: "eu-north-1"
