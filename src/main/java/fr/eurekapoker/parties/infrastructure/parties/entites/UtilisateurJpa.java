@@ -1,13 +1,12 @@
 package fr.eurekapoker.parties.infrastructure.parties.entites;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.util.List;
 
 @Entity
-@Table(name="utilisateurs")
+@Table(name="utilisateur")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -28,5 +27,15 @@ public class UtilisateurJpa {
     private String nomFamille;
     @Column(nullable = false)
     private String prenom;
+    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<PartieJpa> parties;
+    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<JoueurJpa> joueurs;
+    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<JoueurJpa> actions;
+
+    public void ajouterJoueur(JoueurJpa joueurJpa) {
+        this.joueurs.add(joueurJpa);
+    }
 }
 

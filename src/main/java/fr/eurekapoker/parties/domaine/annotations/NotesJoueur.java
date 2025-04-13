@@ -6,4 +6,8 @@ public class NotesJoueur {
     public NotesJoueur(String notes) {
         this.notes = notes;
     }
+
+    public String getNotes() {
+        return this.notes;
+    }
 }

@@ -36,4 +36,8 @@ public class UtilisateurIdentifie {
                 ? utilisateurAuthentifie.hashCode()
                 : Objects.hashCode(identifiantSession);
     }
+
+    public UtilisateurAuthentifie getUtilisateurAuthentifie() {
+        return utilisateurAuthentifie;
+    }
 }

@@ -42,4 +42,7 @@ public class ActionJpa {
     private BigDecimal stackEffectif;
     @Column(nullable = false)
     private Boolean allIn;
+    @ManyToOne
+    @JoinColumn(name = "utilisateur_id", nullable = false)
+    private UtilisateurJpa utilisateur;
 }

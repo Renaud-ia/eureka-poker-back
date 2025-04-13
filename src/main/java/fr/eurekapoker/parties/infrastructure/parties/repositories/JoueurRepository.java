@@ -6,5 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JoueurRepository extends JpaRepository<JoueurJpa, Long> {
-    JoueurJpa findByNomJoueurAndNomRoom(String nomJoueur, String nomRoom);
+    JoueurJpa findByIdProprietaireAndNomJoueurAndNomRoom(String idProprietaire, String nomJoueur, String nomRoom);
+    JoueurJpa findByIdGenere(String idJoueur);
 }

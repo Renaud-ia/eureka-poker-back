@@ -9,7 +9,7 @@ import fr.eurekapoker.parties.domaine.annotations.NotesJoueur;
 public interface ModifierNote {
     public void changerNotesEnregistrees(
             UtilisateurIdentifie utilisateurIdentifie,
-            String idNote,
+            String idJoueur,
             NotesJoueur notesJoueur
             ) throws ErreurModificationPartie;
 }

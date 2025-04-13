@@ -18,14 +18,14 @@ public class ModifierNoteImpl implements ModifierNote {
     }
 
     @Override
-    public void changerNotesEnregistrees(UtilisateurIdentifie utilisateurIdentifie, String idNote, NotesJoueur notesJoueur)
+    public void changerNotesEnregistrees(UtilisateurIdentifie utilisateurIdentifie, String idJoueur, NotesJoueur notesJoueur)
             throws ErreurModificationPartie {
-        UtilisateurIdentifie proprietairePartie = this.persistanceNotesJoueur.getProprietaireNotes(idNote);
+        UtilisateurIdentifie proprietairePartie = this.persistanceNotesJoueur.getProprietaireNotes(idJoueur);
 
         if (!utilisateurIdentifie.equals(proprietairePartie)) {
             throw new ModificationNonAutorisee("La partie n'appartient pas à cet utilisateur");
         }
 
-        this.persistanceNotesJoueur.modifierNotesJoueur(utilisateurIdentifie, idNote, notesJoueur);
+        this.persistanceNotesJoueur.modifierNotesJoueur(utilisateurIdentifie, idJoueur, notesJoueur);
     }
 }
