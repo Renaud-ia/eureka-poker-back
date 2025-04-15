@@ -5,6 +5,7 @@ import fr.eurekapoker.parties.application.api.ConvertisseurPersistanceVersApi;
 import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurParsing;
@@ -38,18 +39,19 @@ public class CreerRecupererPartieImpl implements CreerRecupererPartie {
     }
     @Override
     public ResumePartieDto ajouterPartie(
+            UtilisateurIdentifie utilisateurIdentifie,
             String contenuPartie,
             ParametresImport parametresImport
     ) throws ErreurAjoutPartie {
         enregistrerFichier(contenuPartie);
         logger.info("Données fichiers sauvegardées");
-        ConstructeurPersistence constructeurPersistenceDto = parserPartie(contenuPartie, parametresImport);
+        ConstructeurPersistence constructeurPersistenceDto = parserPartie(utilisateurIdentifie, contenuPartie, parametresImport);
         logger.info("Partie persistée avec UUID:{}", constructeurPersistenceDto.getIdUniquePartie());
 
         return constructeurPersistenceDto.obtResumePartie();
     }
 
-    private ConstructeurPersistence parserPartie(String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie {
+    private ConstructeurPersistence parserPartie(UtilisateurIdentifie utilisateurIdentifie, String contenuPartie, ParametresImport parametresImport) throws ErreurAjoutPartie {
         ConstructeurPersistence constructeurPersistence = new ConstructeurPersistenceDto(parametresImport);
         DomaineServiceImport domaineServiceImport;
 
@@ -63,7 +65,7 @@ public class CreerRecupererPartieImpl implements CreerRecupererPartie {
 
         try {
             domaineServiceImport.lancerImport();
-            this.persistancePartiesBDD.ajouterPartie(constructeurPersistence.obtPartie());
+            this.persistancePartiesBDD.ajouterPartie(utilisateurIdentifie, constructeurPersistence.obtPartie());
         }
         catch (ErreurImport erreurImport) {
             logger.error("Une erreur est survenue pendant le parsing: {}", String.valueOf(erreurImport));

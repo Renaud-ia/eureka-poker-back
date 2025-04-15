@@ -2,6 +2,8 @@ package fr.eurekapoker.parties.infrastructure;
 
 import fr.eurekapoker.parties.application.auth.UtilisateurAuthentifie;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
+import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
+import fr.eurekapoker.parties.application.exceptions.ModificationNonAutorisee;
 import fr.eurekapoker.parties.application.persistance.PersistanceNotesJoueur;
 import fr.eurekapoker.parties.domaine.annotations.NotesJoueur;
 import fr.eurekapoker.parties.infrastructure.parties.entites.JoueurJpa;
@@ -21,11 +23,11 @@ public class PersistanceNotesJoueurBDD implements PersistanceNotesJoueur {
     UtilisateurRepository utilisateurRepository;
 
     @Override
-    public UtilisateurIdentifie getProprietaireNotes(String idJoueur) {
+    public UtilisateurAuthentifie getProprietaireNotes(String idJoueur) {
         JoueurJpa joueurJpa = joueurRepository.findByIdGenere(idJoueur);
         UtilisateurJpa proprietaire = joueurJpa.getUtilisateur();
 
-        UtilisateurAuthentifie utilisateurAuthentifie = new UtilisateurAuthentifie(
+        return new UtilisateurAuthentifie(
                 proprietaire.getIdGenere(),
                 proprietaire.getMailUtilisateur(),
                 proprietaire.isMailVerifie(),
@@ -33,28 +35,25 @@ public class PersistanceNotesJoueurBDD implements PersistanceNotesJoueur {
                 proprietaire.getNomFamille(),
                 proprietaire.getPrenom()
         );
-
-        return new UtilisateurIdentifie(
-                utilisateurAuthentifie,
-                joueurJpa.getIdSessionGenere()
-        );
     }
 
     @Transactional
     @Override
-    public void modifierNotesJoueur(UtilisateurIdentifie utilisateurIdentifie, String idJoueur, NotesJoueur notesJoueur) {
+    public void modifierNotesJoueur(UtilisateurAuthentifie utilisateurAuthentifie, String idJoueur, NotesJoueur notesJoueur)
+            throws ModificationNonAutorisee {
         JoueurJpa joueurJpa = joueurRepository.findByIdGenere(idJoueur);
         joueurJpa.setNotesJoueur(notesJoueur.getNotes());
-        UtilisateurAuthentifie utilisateurAuthentifie = utilisateurIdentifie.getUtilisateurAuthentifie();
 
-        if (utilisateurAuthentifie != null) {
-            UtilisateurJpa utilisateurJpa = utilisateurRepository.findByMailUtilisateur(
-                    utilisateurAuthentifie.getEmailUtilisateur()
-            );
-            joueurJpa.setUtilisateur(utilisateurJpa);
-
-            utilisateurJpa.ajouterJoueur(joueurJpa);
+        if (utilisateurAuthentifie == null) {
+            throw new ModificationNonAutorisee("Le joueur doit être authentifié");
         }
+        UtilisateurJpa utilisateurJpa = utilisateurRepository.findByMailUtilisateur(
+                utilisateurAuthentifie.getEmailUtilisateur()
+        );
 
+        if (joueurJpa.getUtilisateur() == null) {
+            throw new ModificationNonAutorisee("Aucun joueur associé");
+        }
+        utilisateurJpa.ajouterJoueur(joueurJpa);
     }
 }

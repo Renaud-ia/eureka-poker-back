@@ -16,6 +16,7 @@ public class UtilisateurAuthentifie {
     private final String prenom;
 
     public enum StatutMembre {
+        TEMPORAIRE,
         UTILISATEUR,
         ADMIN,
     }

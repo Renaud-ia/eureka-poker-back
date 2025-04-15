@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.infrastructure.parties.services;
 
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.infrastructure.parties.entites.*;
 import fr.eurekapoker.parties.infrastructure.parties.repositories.JoueurRepository;
@@ -17,16 +18,20 @@ import java.util.List;
 public class ServiceAjoutPartie {
     private PartieRepository partieRepository;
     private JoueurRepository joueurRepository;
+    private ServiceUtilisateur serviceUtilisateur;
     private String nomRoom;
 
     @Autowired
-    public ServiceAjoutPartie(PartieRepository partieRepository, JoueurRepository joueurRepository) {
+    public ServiceAjoutPartie(PartieRepository partieRepository, JoueurRepository joueurRepository, ServiceUtilisateur serviceUtilisateur) {
         this.partieRepository = partieRepository;
         this.joueurRepository = joueurRepository;
+        this.serviceUtilisateur = serviceUtilisateur;
     }
 
     @Transactional
-    public void persisterPartie(PartiePersistanceDto partiePersistanceDto) {
+    public void persisterPartie(UtilisateurIdentifie utilisateurIdentifie, PartiePersistanceDto partiePersistanceDto) {
+        UtilisateurJpa utilisateurJpa = this.serviceUtilisateur.trouverOuCreerUtilisateur(utilisateurIdentifie);
+
         PartieJpa nouvellePartie = PartieJpa.builder()
                 .identifiantGenere(partiePersistanceDto.obtIdUnique())
                 .joueursAnonymes(partiePersistanceDto.obtJoueursAnonymes())
@@ -43,16 +48,19 @@ public class ServiceAjoutPartie {
                 .nombreMains(partiePersistanceDto.obtNombreMains())
                 .dateJeu(partiePersistanceDto.obtDate())
                 .dateSauvegarde(LocalDateTime.now())
+                .utilisateur(utilisateurJpa)
                 .mainsJpa(new ArrayList<>())
                 .build();
 
+        utilisateurJpa.ajouterPartie(nouvellePartie);
         this.nomRoom = partiePersistanceDto.obtNomRoom();
-        ajouterMainsPartie(nouvellePartie, partiePersistanceDto.obtMains());
+        ajouterMainsPartie(nouvellePartie, utilisateurJpa, partiePersistanceDto.obtMains());
 
         partieRepository.save(nouvellePartie);
     }
 
     private void ajouterMainsPartie(PartieJpa nouvellePartie,
+                                    UtilisateurJpa utilisateurJpa,
                                     List<MainPersistenceDto> mainPersistenceDtos) {
         int indexMain = 1;
         for (MainPersistenceDto mainDto: mainPersistenceDtos) {
@@ -66,8 +74,8 @@ public class ServiceAjoutPartie {
                     .positionDealer(mainDto.obtPositionDealer())
                     .build();
 
-            HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap = ajouterJoueursMain(nouvelleMain, mainDto);
-            ajouterTours(nouvelleMain, mainDto, infosJoueurJpaHashMap);
+            HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap = ajouterJoueursMain(nouvelleMain, utilisateurJpa, mainDto);
+            ajouterTours(nouvelleMain, utilisateurJpa, mainDto, infosJoueurJpaHashMap);
 
             nouvellePartie.ajouterMain(nouvelleMain);
         }
@@ -75,11 +83,12 @@ public class ServiceAjoutPartie {
 
     private HashMap<String, InfosJoueurJpa> ajouterJoueursMain(
             MainJpa nouvelleMain,
+            UtilisateurJpa utilisateurJpa,
             MainPersistenceDto mainDto
     ) {
         HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap = new HashMap<>();
         for (JoueurPersistenceDto joueurPersistenceDto : mainDto.obtJoueursPresents()) {
-            JoueurJpa nouveauJoueur = chargerOuSauvegarderJoueur(joueurPersistenceDto.obtNomJoueur(), this.nomRoom);
+            JoueurJpa nouveauJoueur = chargerOuSauvegarderJoueur(utilisateurJpa, joueurPersistenceDto.obtNomJoueur(), this.nomRoom);
 
             String nomJoueur = joueurPersistenceDto.obtNomJoueur();
 
@@ -106,7 +115,7 @@ public class ServiceAjoutPartie {
 
     private void ajouterTours(
             MainJpa nouvelleMain,
-            MainPersistenceDto mainDto,
+            UtilisateurJpa utilisateurJpa, MainPersistenceDto mainDto,
             HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap
     ) {
         for (TourPersistanceDto tourPersistanceDto : mainDto.obtTours()) {
@@ -118,14 +127,16 @@ public class ServiceAjoutPartie {
                     .actionsJpas(new ArrayList<>())
                     .build();
 
-            ajouterActions(tourJpa, mainDto, tourPersistanceDto, infosJoueurJpaHashMap);
+            ajouterActions(tourJpa, utilisateurJpa, mainDto, tourPersistanceDto, infosJoueurJpaHashMap);
 
             nouvelleMain.ajouterTour(tourJpa);
         }
     }
 
     private void ajouterActions(
-            TourJpa tourJpa, MainPersistenceDto mainDto,
+            TourJpa tourJpa,
+            UtilisateurJpa utilisateurJpa,
+            MainPersistenceDto mainDto,
             TourPersistanceDto tourDto,
             HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap
     ) {
@@ -144,22 +155,26 @@ public class ServiceAjoutPartie {
                     .stackEffectif(actionPersistanceDto.obtStackEffectif())
                     .allIn(actionPersistanceDto.estAllIn())
                     .numeroAction(actionPersistanceDto.getNumeroAction())
+                    .utilisateur(utilisateurJpa)
                     .build();
 
             tourJpa.ajouterAction(actionJpa);
+            utilisateurJpa.ajouterAction(actionJpa);
         }
     }
 
-    private JoueurJpa chargerOuSauvegarderJoueur(String nomJoueur, String nomRoom) {
-        JoueurJpa joueurJpa = joueurRepository.findByNomJoueurAndNomRoom(nomJoueur, nomRoom);
+    private JoueurJpa chargerOuSauvegarderJoueur(UtilisateurJpa utilisateurJpa, String nomJoueur, String nomRoom) {
+        JoueurJpa joueurJpa = joueurRepository.findByUtilisateurAndNomJoueurAndNomRoom(utilisateurJpa, nomJoueur, nomRoom);
         if (joueurJpa == null) {
             joueurJpa = JoueurJpa.builder()
                     .nomJoueur(nomJoueur)
                     .nomRoom(nomRoom)
                     .joueurAnonyme(false)
+                    .utilisateur(utilisateurJpa)
                     .build();
 
             joueurRepository.save(joueurJpa);
+            utilisateurJpa.ajouterJoueur(joueurJpa);
         }
 
         return joueurJpa;

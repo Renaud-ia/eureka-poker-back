@@ -1,9 +1,12 @@
 package fr.eurekapoker.parties.application.auth;
 
+import lombok.Getter;
 import java.util.Objects;
 
 public class UtilisateurIdentifie {
+    @Getter
     private final UtilisateurAuthentifie utilisateurAuthentifie;
+    @Getter
     private final String identifiantSession;
 
     public UtilisateurIdentifie(UtilisateurAuthentifie utilisateurAuthentifie, String identifiantSession) {
@@ -37,7 +40,5 @@ public class UtilisateurIdentifie {
                 : Objects.hashCode(identifiantSession);
     }
 
-    public UtilisateurAuthentifie getUtilisateurAuthentifie() {
-        return utilisateurAuthentifie;
-    }
+
 }

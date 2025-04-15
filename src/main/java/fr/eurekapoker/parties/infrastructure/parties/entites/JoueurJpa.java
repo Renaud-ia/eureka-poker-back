@@ -25,6 +25,4 @@ public class JoueurJpa {
     @ManyToOne
     @JoinColumn(name = "utilisateur_id", nullable = false)
     private UtilisateurJpa utilisateur;
-    @Column(nullable = true)
-    private String idSessionGenere;
 }

@@ -1,5 +1,7 @@
 package fr.eurekapoker.parties.infrastructure;
 
+import fr.eurekapoker.parties.application.auth.UtilisateurAuthentifie;
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.persistance.PersistanceParties;
 import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;
@@ -16,20 +18,11 @@ public class PersistancePartiesBDD implements PersistanceParties {
     @Autowired
     ServiceConsultationPartie serviceConsultationPartie;
     @Override
-    public void ajouterPartie(PartiePersistanceDto partiePersistanceDto) {
-        serviceAjoutPartie.persisterPartie(partiePersistanceDto);
+    public void ajouterPartie(UtilisateurIdentifie utilisateurIdentifie, PartiePersistanceDto partiePersistanceDto) {
+        serviceAjoutPartie.persisterPartie(utilisateurIdentifie, partiePersistanceDto);
     }
     @Override
     public PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int fenetre) throws ErreurConsultationPartie {
         return serviceConsultationPartie.recupererMains(idPartie, indexMin, indexMin + fenetre);
-    }
-
-    @Override
-    public void rendreAnonymeJoueurDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto) {
-    }
-
-    @Override
-    public void definirJoueurCentreDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto) {
-
     }
 }
