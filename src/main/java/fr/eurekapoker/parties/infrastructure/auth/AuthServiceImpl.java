@@ -4,6 +4,7 @@ import fr.eurekapoker.parties.application.auth.AuthService;
 import fr.eurekapoker.parties.application.auth.UtilisateurAuthentifie;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.persistance.PersistanceUtilisateur;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
@@ -20,6 +21,7 @@ public class AuthServiceImpl implements AuthService {
     private final JwtDecoder jwtDecoder;
     private final PersistanceUtilisateur persistanceUtilisateur;
 
+    @Autowired
     public AuthServiceImpl(JwtDecoder jwtDecoder, PersistanceUtilisateur persistanceUtilisateur) {
         this.jwtDecoder = jwtDecoder;
         this.persistanceUtilisateur = persistanceUtilisateur;
@@ -32,7 +34,7 @@ public class AuthServiceImpl implements AuthService {
         return new UtilisateurIdentifie(utilisateurAuthentifie, idSession);
     }
 
-    public UtilisateurAuthentifie extraireUserFromHeaders(String authHeader) {
+    private UtilisateurAuthentifie extraireUserFromHeaders(String authHeader) {
         if (authHeader == null) return null;
 
         if (!authHeader.startsWith("Bearer ")) {

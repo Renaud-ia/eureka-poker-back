@@ -1,11 +1,16 @@
-package fr.eurekapoker.parties.integration;
+package fr.eurekapoker.parties.e2e.imports;
 
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
+import fr.eurekapoker.parties.builders.UtilisateurIdentifieTestBuilder;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.when;
 
 public class ApiImportBetclicTest extends ApiImportTestModele {
     public ApiImportBetclicTest() {

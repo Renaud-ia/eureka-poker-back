@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -16,7 +17,7 @@ public class UtilisateurJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String idGenere;
     @Column(nullable = false)
     private LocalDateTime dateCreation;
@@ -33,12 +34,12 @@ public class UtilisateurJpa {
     @Setter
     private String prenom;
 
-    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<PartieJpa> parties;
-    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<JoueurJpa> joueurs;
-    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ActionJpa> actions;
+    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, orphanRemoval = true)
+    private final List<PartieJpa> parties = new ArrayList<>();;
+    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, orphanRemoval = true)
+    private final List<JoueurJpa> joueurs = new ArrayList<>();;
+    @OneToMany(mappedBy = "utilisateur", fetch = FetchType.LAZY, orphanRemoval = true)
+    private final List<ActionJpa> actions = new ArrayList<>();;
 
 
     public void ajouterJoueur(JoueurJpa joueurJpa) {

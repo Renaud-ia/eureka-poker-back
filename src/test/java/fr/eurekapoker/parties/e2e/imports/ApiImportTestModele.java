@@ -1,13 +1,20 @@
-package fr.eurekapoker.parties.integration;
+package fr.eurekapoker.parties.e2e.imports;
 
+import fr.eurekapoker.parties.application.auth.AuthService;
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
+import fr.eurekapoker.parties.builders.UtilisateurIdentifieTestBuilder;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -22,7 +29,10 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -32,10 +42,22 @@ public class ApiImportTestModele {
     @Autowired
     private MockMvc mockMvc;
 
+    @MockBean
+    private JwtDecoder jwtDecoder;
+
+    @MockBean
+    protected AuthService authService;
+
     protected final String nomDossierRoom;
 
     public ApiImportTestModele(String nomDossierRoom) {
         this.nomDossierRoom = nomDossierRoom;
+    }
+
+    @BeforeEach
+    void setUp() {
+        when(authService.getUtilisateurIdentifie(any(), any()))
+                .thenReturn(new UtilisateurIdentifieTestBuilder().build());
     }
 
     public List<String> parcourirLesFichiers() throws Exception {

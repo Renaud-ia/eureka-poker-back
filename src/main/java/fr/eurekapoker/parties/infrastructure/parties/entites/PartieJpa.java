@@ -51,7 +51,7 @@ public class PartieJpa {
     private LocalDateTime dateSauvegarde;
     @OneToMany(mappedBy = "partieJpa", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MainJpa> mainsJpa;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "utilisateur_id", nullable = true)
     private UtilisateurJpa utilisateur;
     private String idSessionGenere;

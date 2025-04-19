@@ -5,6 +5,7 @@ import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.infrastructure.parties.entites.*;
 import fr.eurekapoker.parties.infrastructure.parties.repositories.JoueurRepository;
 import fr.eurekapoker.parties.infrastructure.parties.repositories.PartieRepository;
+import fr.eurekapoker.parties.infrastructure.parties.repositories.UtilisateurRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,18 +14,25 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.UUID;
 
 @Service
 public class ServiceAjoutPartie {
     private PartieRepository partieRepository;
     private JoueurRepository joueurRepository;
+    private UtilisateurRepository utilisateurRepository;
     private ServiceUtilisateur serviceUtilisateur;
     private String nomRoom;
 
     @Autowired
-    public ServiceAjoutPartie(PartieRepository partieRepository, JoueurRepository joueurRepository, ServiceUtilisateur serviceUtilisateur) {
+    public ServiceAjoutPartie(
+            PartieRepository partieRepository,
+            JoueurRepository joueurRepository,
+            UtilisateurRepository utilisateurRepository,
+            ServiceUtilisateur serviceUtilisateur) {
         this.partieRepository = partieRepository;
         this.joueurRepository = joueurRepository;
+        this.utilisateurRepository = utilisateurRepository;
         this.serviceUtilisateur = serviceUtilisateur;
     }
 
@@ -53,9 +61,9 @@ public class ServiceAjoutPartie {
                 .build();
 
         utilisateurJpa.ajouterPartie(nouvellePartie);
+
         this.nomRoom = partiePersistanceDto.obtNomRoom();
         ajouterMainsPartie(nouvellePartie, utilisateurJpa, partiePersistanceDto.obtMains());
-
         partieRepository.save(nouvellePartie);
     }
 
@@ -167,6 +175,7 @@ public class ServiceAjoutPartie {
         JoueurJpa joueurJpa = joueurRepository.findByUtilisateurAndNomJoueurAndNomRoom(utilisateurJpa, nomJoueur, nomRoom);
         if (joueurJpa == null) {
             joueurJpa = JoueurJpa.builder()
+                    .idGenere(UUID.randomUUID().toString())
                     .nomJoueur(nomJoueur)
                     .nomRoom(nomRoom)
                     .joueurAnonyme(false)
@@ -174,6 +183,7 @@ public class ServiceAjoutPartie {
                     .build();
 
             joueurRepository.save(joueurJpa);
+
             utilisateurJpa.ajouterJoueur(joueurJpa);
         }
 

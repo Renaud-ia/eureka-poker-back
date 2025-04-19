@@ -1,13 +1,10 @@
-package fr.eurekapoker.parties.integration;
+package fr.eurekapoker.parties.e2e.imports;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.web.servlet.MockMvc;
+
 import java.math.BigDecimal;
-import java.nio.channels.FileLock;
 
 import static org.junit.jupiter.api.Assertions.*;
 

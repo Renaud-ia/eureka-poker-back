@@ -1,9 +1,12 @@
 package fr.eurekapoker.parties.integration;
 
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
+import fr.eurekapoker.parties.application.auth.AuthService;
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.exceptions.PartieNonTrouvee;
 import fr.eurekapoker.parties.application.persistance.dto.*;
+import fr.eurekapoker.parties.builders.UtilisateurIdentifieTestBuilder;
 import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
@@ -15,6 +18,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -29,6 +34,13 @@ public class AjoutEtRecuperationPartieBddTest {
     private Random random;
     @Autowired
     private ServiceAjoutPartie serviceAjoutPartie;
+
+    @MockBean
+    private JwtDecoder jwtDecoder;
+
+    @MockBean
+    protected AuthService authService;
+
     @Autowired
     ServiceConsultationPartie serviceConsultationPartie;
     private PartiePersistanceDto partiePersistanceDto;
@@ -119,7 +131,8 @@ public class AjoutEtRecuperationPartieBddTest {
 
     @Test
     void onRecupereLaMemePartieApresPersistance() throws ErreurConsultationPartie {
-        serviceAjoutPartie.persisterPartie(partiePersistanceDto);
+        UtilisateurIdentifie utilisateurIdentifie = new UtilisateurIdentifieTestBuilder().build();
+        serviceAjoutPartie.persisterPartie(utilisateurIdentifie, partiePersistanceDto);
 
         PartiePersistanceDto partieRecuperee = serviceConsultationPartie.recupererMains(
                 partiePersistanceDto.obtIdUnique(),

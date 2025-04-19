@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.integration;
+package fr.eurekapoker.parties.e2e.imports;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ApiImportParionsSportTest extends ApiImportTestModele  {
+public class ApiImportParionsSportTest extends ApiImportTestModele {
     public ApiImportParionsSportTest() {
         super("parionssport");
     }

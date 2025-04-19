@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.application.auth;
 
+import fr.eurekapoker.parties.application.exceptions.ErreurAuthentification;
 import lombok.Getter;
 import java.util.Objects;
 
@@ -10,6 +11,10 @@ public class UtilisateurIdentifie {
     private final String identifiantSession;
 
     public UtilisateurIdentifie(UtilisateurAuthentifie utilisateurAuthentifie, String identifiantSession) {
+        if (utilisateurAuthentifie == null && identifiantSession == null) {
+            throw new ErreurAuthentification("L'utilisateur n'est pas identifié");
+        }
+
         this.utilisateurAuthentifie = utilisateurAuthentifie;
         this.identifiantSession = identifiantSession;
     }
