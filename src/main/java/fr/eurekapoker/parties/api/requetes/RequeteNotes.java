@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.api;
+package fr.eurekapoker.parties.api.requetes;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

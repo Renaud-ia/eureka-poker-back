@@ -1,4 +1,4 @@
-package fr.eurekapoker.parties.api;
+package fr.eurekapoker.parties.api.controleurs;
 
 import fr.eurekapoker.parties.application.auth.AuthService;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;

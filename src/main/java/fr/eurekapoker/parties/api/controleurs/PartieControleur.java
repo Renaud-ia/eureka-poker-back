@@ -1,9 +1,8 @@
-package fr.eurekapoker.parties.api;
+package fr.eurekapoker.parties.api.controleurs;
 
 import fr.eurekapoker.parties.application.api.dto.ContenuPartieDto;
 import fr.eurekapoker.parties.application.api.dto.ParametresImport;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
-import fr.eurekapoker.parties.application.auth.AuthService;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
@@ -18,9 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
-import java.time.Duration;
 import java.util.Map;
-import java.util.UUID;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

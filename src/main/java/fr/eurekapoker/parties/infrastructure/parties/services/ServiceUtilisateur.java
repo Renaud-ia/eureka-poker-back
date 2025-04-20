@@ -57,7 +57,7 @@ public class ServiceUtilisateur {
     }
 
     @Transactional
-    void associerUtilisateurSession(UtilisateurIdentifie utilisateurIdentifie) {
+    public void associerUtilisateurSession(UtilisateurIdentifie utilisateurIdentifie) {
         UtilisateurJpa utilisateurJpa = utilisateurRepository.findByIdGenere(utilisateurIdentifie.getIdentifiantSession());
 
         if (utilisateurJpa == null) {

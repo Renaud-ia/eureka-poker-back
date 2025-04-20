@@ -1,9 +1,9 @@
-package fr.eurekapoker.parties.api;
+package fr.eurekapoker.parties.api.controleurs;
 
+import fr.eurekapoker.parties.api.requetes.RequeteNotes;
 import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.auth.UtilisateurAuthentifie;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
-import fr.eurekapoker.parties.application.exceptions.ErreurAjoutPartie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
 import fr.eurekapoker.parties.application.services.ModifierNote;
 import fr.eurekapoker.parties.domaine.annotations.NotesJoueur;
@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
 
