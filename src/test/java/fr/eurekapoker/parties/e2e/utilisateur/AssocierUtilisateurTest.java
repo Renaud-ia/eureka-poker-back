@@ -1,6 +1,7 @@
 package fr.eurekapoker.parties.e2e.utilisateur;
 
 import fr.eurekapoker.parties.application.auth.AuthService;
+import fr.eurekapoker.parties.builders.UtilisateurAuthentifieTestBuilder;
 import fr.eurekapoker.parties.builders.UtilisateurIdentifieTestBuilder;
 import fr.eurekapoker.parties.e2e.BaseTestE2E;
 import org.json.JSONObject;
@@ -47,7 +48,7 @@ public class AssocierUtilisateurTest extends BaseTestE2E {
 
     @Test
     void modificationNonAutoriseeDejaAssocie() throws Exception {
-        String tokenSession = "session test";
+        String tokenSession = "session test n2";
         when(authService.getUtilisateurIdentifie(any(), any()))
                 .thenReturn(new UtilisateurIdentifieTestBuilder()
                         .avecIdentifiantSession(tokenSession)
@@ -60,6 +61,11 @@ public class AssocierUtilisateurTest extends BaseTestE2E {
         when(authService.getUtilisateurIdentifie(any(), any()))
                 .thenReturn(new UtilisateurIdentifieTestBuilder()
                         .avecIdentifiantSession(tokenSession)
+                        .avecUtilisateurAuthentifie(
+                                new UtilisateurAuthentifieTestBuilder()
+                                        .avecEmail("twice@test.fr")
+                                        .build()
+                        )
                         .build());
 
         mockMvc.perform(patch("/utilisateur/" + tokenSession)

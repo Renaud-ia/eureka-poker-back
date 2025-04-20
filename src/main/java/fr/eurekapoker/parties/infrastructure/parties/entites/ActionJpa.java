@@ -1,10 +1,7 @@
 package fr.eurekapoker.parties.infrastructure.parties.entites;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 
@@ -42,6 +39,7 @@ public class ActionJpa {
     private BigDecimal stackEffectif;
     @Column(nullable = false)
     private Boolean allIn;
+    @Setter
     @ManyToOne
     @JoinColumn(name = "utilisateur_id", nullable = false)
     private UtilisateurJpa utilisateur;

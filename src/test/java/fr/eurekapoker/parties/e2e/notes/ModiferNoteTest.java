@@ -40,6 +40,11 @@ public class ModiferNoteTest extends BaseTestE2E {
 
     @Test
     void modifierNotesUserAuthentifie() throws Exception {
+        when(authService.getUtilisateurIdentifie(any(), any()))
+                .thenReturn(new UtilisateurIdentifieTestBuilder().avecUtilisateurAuthentifie(
+                        new UtilisateurAuthentifieTestBuilder().avecEmail("autorized@toto.fr").build()
+                ).build());
+
         JSONObject jsonCreation = creerPartie("pmu", "Caen.txt", false);
         String idUniquePartie = jsonCreation.get("idUniquePartie").toString();
 
