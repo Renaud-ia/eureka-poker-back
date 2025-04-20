@@ -18,7 +18,6 @@ public class JoueurDto {
     private final BigDecimal resultat;
     private final boolean dealer;
     private final BigDecimal bounty;
-    private final String notesJoueur;
     private boolean desactive;
     public JoueurDto(
             String idUniqueJoueur,
@@ -30,8 +29,7 @@ public class JoueurDto {
             BigDecimal blinde,
             BigDecimal resultat,
             boolean dealer,
-            BigDecimal bounty,
-            String notesJoueur
+            BigDecimal bounty
     ) {
         this.idUniqueJoueur = idUniqueJoueur;
         this.nomJoueur = nomJoueur;
@@ -42,7 +40,6 @@ public class JoueurDto {
         this.blinde = blinde;
         this.resultat = resultat;
         this.dealer = dealer;
-        this.notesJoueur = notesJoueur;
         this.bounty = bounty;
     }
 

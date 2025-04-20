@@ -30,7 +30,7 @@ public abstract class BaseControleur {
             tokenDeSession = UUID.randomUUID().toString();
 
             ResponseCookie cookie = ResponseCookie.from("tokenDeSession", tokenDeSession)
-                    .httpOnly(true)
+                    .httpOnly(false)
                     .path("/")
                     .maxAge(Duration.ofDays(3))
                     .sameSite("Lax")

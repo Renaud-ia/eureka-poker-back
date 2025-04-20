@@ -51,7 +51,7 @@ public class AuthServiceImpl implements AuthService {
 
             UtilisateurAuthentifie utilisateurAuthentifie = this.recupererUtilisateurDepuisJwt(jwt);
 
-            return persistanceUtilisateur.trouverOuCreer(utilisateurAuthentifie);
+            return utilisateurAuthentifie;
 
         } catch (JwtException e) {
             throw  new TokenInvalid(e.getMessage());

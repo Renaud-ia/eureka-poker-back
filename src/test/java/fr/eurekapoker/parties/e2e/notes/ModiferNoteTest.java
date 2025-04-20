@@ -64,7 +64,7 @@ public class ModiferNoteTest extends BaseTestE2E {
 
         jsonConsultation = consulterPartie(idUniquePartie);
 
-        String notesModifiees = this.extraireNotes(jsonConsultation, 1, nomJoueur);
+        String notesModifiees = this.extraireNotes(jsonConsultation, idJoueur);
 
         assertEquals(notesNouvelles, notesModifiees);
     }
@@ -123,11 +123,20 @@ public class ModiferNoteTest extends BaseTestE2E {
 
     private String extraireNotes(
             JSONObject jsonConsultation,
-            int indexMain,
-            String nomJoueur
+            String idJoueur
     ) throws Exception {
-        JSONObject joueur = trouverJoueur(jsonConsultation, indexMain, nomJoueur);
-        return joueur.getString("notesJoueur");
+        JSONArray profilsJoueurs = jsonConsultation.getJSONArray("profilsJoueurs");
+
+        for (int i = 0; i < profilsJoueurs.length(); i++) {
+            JSONObject profilJoueur = profilsJoueurs.getJSONObject(i);
+            String idTrouve = profilJoueur.getString("idUnique");
+
+            if (idTrouve.equals(idJoueur)) {
+                return profilJoueur.getString("notes");
+            }
+        }
+
+        throw new Exception("Joueur non trouvé");
     }
 
     private String extraireIdJoueur(JSONObject jsonConsultation, int indexMain, String nomJoueur) throws Exception {

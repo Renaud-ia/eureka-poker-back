@@ -1,5 +1,8 @@
 package fr.eurekapoker.parties.application.api.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -13,6 +16,9 @@ public class ContenuPartieDto {
     private final String nomHero;
     private final boolean stackEnEuros;
     private final List<ContenuMainDto> mainsExtraites;
+    @Getter
+    @Setter
+    private List<ProfilJoueurDto> profilsJoueurs;
     public ContenuPartieDto(String idUniquePartie,
                             String nomPartie,
                             String nomRoom,

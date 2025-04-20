@@ -17,7 +17,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("notes")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 public class NotesControleur extends BaseControleur {
     private final ModifierNote modifierNote;
 

@@ -26,11 +26,11 @@ public class UtilisateurAuthentifie {
         if (this == other) return true;
         if (!(other instanceof UtilisateurAuthentifie that)) return false;
 
-        return Objects.equals(this.idUtilisateur, that.idUtilisateur);
+        return Objects.equals(this.emailUtilisateur, that.emailUtilisateur);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(this.idUtilisateur);
+        return Objects.hashCode(this.emailUtilisateur);
     }
 }

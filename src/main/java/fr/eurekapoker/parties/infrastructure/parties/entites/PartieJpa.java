@@ -52,7 +52,6 @@ public class PartieJpa {
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "utilisateur_id", nullable = true)
     private UtilisateurJpa utilisateur;
-    private String idSessionGenere;
 
     public void ajouterMain(MainJpa nouvelleMain) {
         this.mainsJpa.add(nouvelleMain);

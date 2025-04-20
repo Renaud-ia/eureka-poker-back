@@ -26,7 +26,7 @@ import org.slf4j.LoggerFactory;
 // TODO : VARIABILISER LE CORS
 @RestController
 @RequestMapping("parties")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
 public class PartieControleur extends BaseControleur {
     private final static Logger logger = LoggerFactory.getLogger(PartieControleur.class);
     private final static int MAX_FENETRE_CONSULTATION = 10000;

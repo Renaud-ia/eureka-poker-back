@@ -22,6 +22,7 @@ public class ConvertisseurPersistanceVersApi {
     private HashMap<String, String> nomsAnonymes;
     private final HashMap<String, Integer> actionsParJoueur;
     private final MoteurJeu moteurJeu;
+    private final HashMap<String, ProfilJoueurDto> profilsJoueurs;
     public ConvertisseurPersistanceVersApi(PartiePersistanceDto partiePersistanceDto) {
         this.partiePersistanceDto = partiePersistanceDto;
         this.numeroVillain = 1;
@@ -30,6 +31,7 @@ public class ConvertisseurPersistanceVersApi {
         this.nomsAnonymes = new HashMap<>();
         this.moteurJeu = new MoteurJeu();
         this.actionsParJoueur = new HashMap<>();
+        this.profilsJoueurs = new HashMap<>();
     }
 
     public ContenuPartieDto obtContenuPartieDto() throws ErreurLectureFichier, JoueurNonExistant {
@@ -50,6 +52,8 @@ public class ConvertisseurPersistanceVersApi {
                     mainPersistenceDto
             ));
         }
+
+        contenuPartieDto.setProfilsJoueurs(new ArrayList<>(profilsJoueurs.values()));
 
         return contenuPartieDto;
     }
@@ -111,14 +115,23 @@ public class ConvertisseurPersistanceVersApi {
                     mainPersistenceDto.obtBlinde(nomJoueur),
                     mainPersistenceDto.obtGains(nomJoueur),
                     mainPersistenceDto.estDealer(joueurPersistenceDto),
-                    mainPersistenceDto.obtBounty(nomJoueur),
-                    joueurPersistenceDto.obtNotesJoueur()
+                    mainPersistenceDto.obtBounty(nomJoueur)
             );
             joueursExtraits.add(joueurDto);
 
             moteurJeu.ajouterJoueur(nomJoueur, mainPersistenceDto.obtStack(nomJoueur), mainPersistenceDto.obtBounty(nomJoueur));
             moteurJeu.ajouterBlinde(nomJoueur, mainPersistenceDto.obtBlinde(nomJoueur));
             moteurJeu.ajouterAnte(nomJoueur, mainPersistenceDto.obtAnte(nomJoueur));
+
+            if (!profilsJoueurs.containsKey(joueurPersistenceDto.obtIdUnique())) {
+                ProfilJoueurDto profilJoueurDto = new ProfilJoueurDto(
+                        joueurPersistenceDto.obtIdUnique(),
+                        joueurPersistenceDto.obtNomJoueur(),
+                        joueurPersistenceDto.obtNotesJoueur()
+                );
+
+                this.profilsJoueurs.put(joueurPersistenceDto.obtIdUnique(), profilJoueurDto);
+            }
         }
 
         return joueursExtraits;
