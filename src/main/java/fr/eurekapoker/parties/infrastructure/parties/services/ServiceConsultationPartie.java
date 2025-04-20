@@ -73,9 +73,12 @@ public class ServiceConsultationPartie {
     }
 
     private void ajouterJoueurMainPersistenceDto(MainPersistenceDto mainPersistenceDto, InfosJoueurJpa infosJoueurJpa) {
-        String nomJoueur = infosJoueurJpa.getJoueurJpa().getNomJoueur();
+        JoueurJpa joueurJpa = infosJoueurJpa.getJoueurJpa();
+        String nomJoueur = joueurJpa.getNomJoueur();
         JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(
-                nomJoueur
+                joueurJpa.getIdGenere(),
+                joueurJpa.getNomJoueur(),
+                joueurJpa.getNotesJoueur()
         );
         mainPersistenceDto.ajouterJoueur(joueurPersistenceDto, infosJoueurJpa.getSiege());
         mainPersistenceDto.ajouterBlinde(nomJoueur, infosJoueurJpa.getBlindePayee());

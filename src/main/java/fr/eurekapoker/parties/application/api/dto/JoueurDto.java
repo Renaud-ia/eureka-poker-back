@@ -8,6 +8,7 @@ import java.util.List;
 
 @Getter
 public class JoueurDto {
+    private final String idUniqueJoueur;
     private final String nomJoueur;
     private final BigDecimal stackDepart;
     private final List<String> cartesJoueurs;
@@ -17,16 +18,22 @@ public class JoueurDto {
     private final BigDecimal resultat;
     private final boolean dealer;
     private final BigDecimal bounty;
+    private final String notesJoueur;
     private boolean desactive;
-    public JoueurDto(String nomJoueur,
-                     BigDecimal stackDepart,
-                     List<String> cartesJoueurs,
-                     int siege,
-                     BigDecimal ante,
-                     BigDecimal blinde,
-                     BigDecimal resultat,
-                     boolean dealer,
-                     BigDecimal bounty) {
+    public JoueurDto(
+            String idUniqueJoueur,
+            String nomJoueur,
+            BigDecimal stackDepart,
+            List<String> cartesJoueurs,
+            int siege,
+            BigDecimal ante,
+            BigDecimal blinde,
+            BigDecimal resultat,
+            boolean dealer,
+            BigDecimal bounty,
+            String notesJoueur
+    ) {
+        this.idUniqueJoueur = idUniqueJoueur;
         this.nomJoueur = nomJoueur;
         this.stackDepart = stackDepart;
         this.cartesJoueurs = cartesJoueurs;
@@ -35,6 +42,7 @@ public class JoueurDto {
         this.blinde = blinde;
         this.resultat = resultat;
         this.dealer = dealer;
+        this.notesJoueur = notesJoueur;
         this.bounty = bounty;
     }
 

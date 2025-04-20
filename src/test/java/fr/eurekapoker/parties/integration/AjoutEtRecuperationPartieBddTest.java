@@ -81,7 +81,7 @@ public class AjoutEtRecuperationPartieBddTest {
 
         // ajouter un joueur
         String nomFauxJoueur = "FakeJoueur";
-        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(nomFauxJoueur);
+        JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto("test", nomFauxJoueur, "");
         mainPersistenceDto.ajouterJoueur(joueurPersistenceDto, 2);
         mainPersistenceDto.ajouterStackDepart(nomFauxJoueur, new BigDecimal("1256.76"));
         mainPersistenceDto.ajouterAnte(nomFauxJoueur, new BigDecimal("43.43"));

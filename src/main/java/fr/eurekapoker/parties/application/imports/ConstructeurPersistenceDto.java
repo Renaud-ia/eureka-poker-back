@@ -12,14 +12,12 @@ import fr.eurekapoker.parties.domaine.poker.cartes.BoardPoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.poker.cartes.ComboReel;
 import fr.eurekapoker.parties.domaine.poker.mains.MainPoker;
-import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
 import fr.eurekapoker.parties.domaine.poker.moteur.MoteurJeu;
 import fr.eurekapoker.parties.domaine.poker.parties.infos.InfosPartiePoker;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -104,8 +102,9 @@ public class ConstructeurPersistenceDto implements ConstructeurPersistence {
         String nomJoueur = infosJoueur.obtJoueur();
 
         JoueurPersistenceDto nouveauJoueur = new JoueurPersistenceDto(
-                nomJoueur
-        );
+                null,
+                nomJoueur,
+                "");
         this.derniereMain.ajouterJoueur(nouveauJoueur, infosJoueur.obtSiege());
         this.derniereMain.ajouterStackDepart(nomJoueur, infosJoueur.obtStack());
         this.derniereMain.ajouterBounty(nomJoueur, infosJoueur.obtBounty());

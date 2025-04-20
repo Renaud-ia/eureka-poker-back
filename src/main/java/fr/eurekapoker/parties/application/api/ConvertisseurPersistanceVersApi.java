@@ -102,6 +102,7 @@ public class ConvertisseurPersistanceVersApi {
             String nomAnonyme = getNomJoueurAnonyme(nomJoueur);
 
             JoueurDto joueurDto = new JoueurDto(
+                    joueurPersistenceDto.obtIdUnique(),
                     nomAnonyme,
                     mainPersistenceDto.obtStack(nomJoueur),
                     extraireCartes(mainPersistenceDto.obtComboAsString(nomJoueur)),
@@ -110,7 +111,8 @@ public class ConvertisseurPersistanceVersApi {
                     mainPersistenceDto.obtBlinde(nomJoueur),
                     mainPersistenceDto.obtGains(nomJoueur),
                     mainPersistenceDto.estDealer(joueurPersistenceDto),
-                    mainPersistenceDto.obtBounty(nomJoueur)
+                    mainPersistenceDto.obtBounty(nomJoueur),
+                    joueurPersistenceDto.obtNotesJoueur()
             );
             joueursExtraits.add(joueurDto);
 

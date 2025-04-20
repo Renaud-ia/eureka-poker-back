@@ -30,14 +30,13 @@ import org.slf4j.LoggerFactory;
 @RestController
 @RequestMapping("parties")
 @CrossOrigin(origins = "http://localhost:3000")
-public class PartieControleur {
+public class PartieControleur extends BaseControleur {
     private final static Logger logger = LoggerFactory.getLogger(PartieControleur.class);
     private final static int MAX_FENETRE_CONSULTATION = 10000;
     private final CreerRecupererPartie interfaceParties;
-    private final AuthService authService;
+
     @Autowired
-    public PartieControleur(AuthService authService, CreerRecupererPartie creerRecupererPartie) {
-        this.authService = authService;
+    public PartieControleur(CreerRecupererPartie creerRecupererPartie) {
         this.interfaceParties = creerRecupererPartie;
     }
 
@@ -62,8 +61,8 @@ public class PartieControleur {
             @RequestHeader Map<String, String> headers,
             HttpServletResponse response
             ) throws ErreurAjoutPartie {
-        tokenDeSession = this.extraireOucreerTokenDeSession(tokenDeSession, response);
-        UtilisateurIdentifie utilisateurIdentifie = this.authService.getUtilisateurIdentifie(headers.get("authorization"), tokenDeSession);
+
+        UtilisateurIdentifie utilisateurIdentifie = this.extraireUtilisateurIdentifie(headers, tokenDeSession, response);
 
         boolean requeteJoueursAnonymes = this.extraireValeurJoueursAnonymes(joueursAnonymes);
         String contenuUpload = this.extraireContenuUpload(contenuPartie, fichierUpload);
@@ -80,6 +79,8 @@ public class PartieControleur {
         );
         return ResponseEntity.status(HttpStatus.CREATED).body(resumePartieDto);
     }
+
+
 
     private String extraireContenuUpload(String contenuPartie, MultipartFile fichierUpload) {
         if (fichierUpload != null && !fichierUpload.isEmpty()) {
@@ -108,20 +109,5 @@ public class PartieControleur {
         return joueursAnonymes.equals("on");
     }
 
-    private String extraireOucreerTokenDeSession(String tokenDeSession, HttpServletResponse response) {
-        if (tokenDeSession == null || tokenDeSession.isEmpty()) {
-            tokenDeSession = UUID.randomUUID().toString();
 
-            ResponseCookie cookie = ResponseCookie.from("tokenDeSession", tokenDeSession)
-                    .httpOnly(true)
-                    .path("/")
-                    .maxAge(Duration.ofDays(3))
-                    .sameSite("Lax")
-                    .build();
-
-            response.setHeader(HttpHeaders.SET_COOKIE, cookie.toString());
-        }
-
-        return tokenDeSession;
-    }
 }
