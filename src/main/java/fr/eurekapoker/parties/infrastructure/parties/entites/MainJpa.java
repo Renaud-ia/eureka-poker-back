@@ -32,14 +32,14 @@ public class MainJpa {
     private PartieJpa partieJpa;
     @OneToMany(mappedBy = "mainJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<InfosJoueurJpa> infosJoueurJpa;
-    @OneToMany(mappedBy = "mainJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<TourJpa> toursJpa;
+    @OneToMany(mappedBy = "main", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<ActionJpa> actions;
 
     public void ajouterInfosJoueur(InfosJoueurJpa infosJoueurJpa) {
         this.infosJoueurJpa.add(infosJoueurJpa);
     }
 
-    public void ajouterTour(TourJpa tourJpa) {
-        this.toursJpa.add(tourJpa);
+    public void ajouterAction(ActionJpa tourJpa) {
+        this.actions.add(tourJpa);
     }
 }

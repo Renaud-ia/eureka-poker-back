@@ -81,4 +81,10 @@ public abstract class PokerRange {
 
         return carte1 + carte2;
     }
+
+    public void initialiser() {
+        for (String nomCombo : LISTE_COMBOS) {
+            this.combos.put(nomCombo, 0f);
+        }
+    }
 }

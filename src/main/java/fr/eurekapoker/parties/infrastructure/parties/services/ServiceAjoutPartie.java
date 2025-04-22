@@ -2,6 +2,10 @@ package fr.eurekapoker.parties.infrastructure.parties.services;
 
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.persistance.dto.*;
+import fr.eurekapoker.parties.domaine.poker.mains.TourPoker;
+import fr.eurekapoker.parties.domaine.poker.ranges.PokerRange;
+import fr.eurekapoker.parties.domaine.poker.ranges.PostflopRange;
+import fr.eurekapoker.parties.domaine.poker.ranges.PreflopRange;
 import fr.eurekapoker.parties.infrastructure.parties.entites.*;
 import fr.eurekapoker.parties.infrastructure.parties.repositories.JoueurRepository;
 import fr.eurekapoker.parties.infrastructure.parties.repositories.PartieRepository;
@@ -11,10 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 public class ServiceAjoutPartie {
@@ -78,7 +79,6 @@ public class ServiceAjoutPartie {
                     .indexMain(indexMain++)
                     .partieJpa(nouvellePartie)
                     .infosJoueurJpa(new ArrayList<>())
-                    .toursJpa(new ArrayList<>())
                     .positionDealer(mainDto.obtPositionDealer())
                     .build();
 
@@ -127,22 +127,12 @@ public class ServiceAjoutPartie {
             HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap
     ) {
         for (TourPersistanceDto tourPersistanceDto : mainDto.obtTours()) {
-            TourJpa tourJpa = TourJpa.builder()
-                    .mainJpa(nouvelleMain)
-                    .nomTour(tourPersistanceDto.obtNomTour())
-                    .boardString(tourPersistanceDto.obtBoardAsString())
-                    .boardLong(tourPersistanceDto.obtBoardAsLong())
-                    .actionsJpas(new ArrayList<>())
-                    .build();
-
-            ajouterActions(tourJpa, utilisateurJpa, mainDto, tourPersistanceDto, infosJoueurJpaHashMap);
-
-            nouvelleMain.ajouterTour(tourJpa);
+            ajouterActions(nouvelleMain, utilisateurJpa, mainDto, tourPersistanceDto, infosJoueurJpaHashMap);
         }
     }
 
     private void ajouterActions(
-            TourJpa tourJpa,
+            MainJpa mainJpa,
             UtilisateurJpa utilisateurJpa,
             MainPersistenceDto mainDto,
             TourPersistanceDto tourDto,
@@ -153,7 +143,6 @@ public class ServiceAjoutPartie {
 
             ActionJpa actionJpa = ActionJpa.builder()
                     .infosJoueurJpa(infosJoueurJpa)
-                    .tourJpa(tourJpa)
                     .nomAction(actionPersistanceDto.obtNomAction())
                     .montantAction(actionPersistanceDto.obtMontant())
                     .identifiantSituation(actionPersistanceDto.obtIdSituation())
@@ -164,11 +153,50 @@ public class ServiceAjoutPartie {
                     .allIn(actionPersistanceDto.estAllIn())
                     .numeroAction(actionPersistanceDto.getNumeroAction())
                     .utilisateur(utilisateurJpa)
+                    .main(mainJpa)
+                    .nomTour(tourDto.obtNomTour())
+                    .boardLong(tourDto.obtBoardAsLong())
+                    .boardString(tourDto.obtBoardAsString())
                     .build();
 
-            tourJpa.ajouterAction(actionJpa);
+            mainJpa.ajouterAction(actionJpa);
             utilisateurJpa.ajouterAction(actionJpa);
+
+            PokerRange pokerRange;
+            if (Objects.equals(tourDto.obtNomTour(), TourPoker.RoundPoker.PREFLOP.toString())) {
+                pokerRange = new PreflopRange();
+            }
+            else {
+                pokerRange = new PostflopRange();
+            }
+            pokerRange.initialiser();
+
+            PokerRangeJpa pokerRangeJpa = mapperRange(pokerRange, actionJpa);
+
+            actionJpa.ajouterRange(pokerRangeJpa);
         }
+    }
+
+    private PokerRangeJpa mapperRange(PokerRange pokerRange, ActionJpa actionJpa) {
+        PokerRangeJpa pokerRangeJpa = PokerRangeJpa.builder()
+                .idGenere(UUID.randomUUID().toString())
+                .build();
+
+        pokerRangeJpa.ajouterAction(actionJpa);
+
+        for (String nomCombo: pokerRange.obtenirCombos().keySet()) {
+            float frequence = pokerRange.obtenirCombos().get(nomCombo);
+
+            ComboJpa comboJpa = ComboJpa.builder()
+                    .nomCombo(nomCombo)
+                    .frequence(frequence)
+                    .range(pokerRangeJpa)
+                    .build();
+
+            pokerRangeJpa.ajouterCombo(comboJpa);
+        }
+
+        return pokerRangeJpa;
     }
 
     private JoueurJpa chargerOuSauvegarderJoueur(UtilisateurJpa utilisateurJpa, String nomJoueur, String nomRoom) {

@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name="parties_action")
+@Table(name="action")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -15,12 +17,19 @@ public class ActionJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "infos_joueur_jpa_id")
     private InfosJoueurJpa infosJoueurJpa;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "tour_joueur_jpa_id")
-    private TourJpa tourJpa;
+    private MainJpa main;
+    @Column(nullable = false)
+    private String nomTour;
+    @Column(nullable = false)
+    private String boardString;
+    @Column(nullable = false)
+    private Long boardLong;
+
     @Column(nullable = false)
     private int numeroAction;
     @Column(nullable = false)
@@ -43,4 +52,15 @@ public class ActionJpa {
     @ManyToOne
     @JoinColumn(name = "utilisateur_id", nullable = false)
     private UtilisateurJpa utilisateur;
+
+    @ManyToMany
+    @JoinTable(
+            name = "ranges_par_actions",
+            joinColumns = @JoinColumn(name = "action_id"),
+            inverseJoinColumns = @JoinColumn(name = "range_id"))
+    private final List<PokerRangeJpa> ranges = new ArrayList<>();
+
+    public void ajouterRange(PokerRangeJpa pokerRangeJpa) {
+        this.ranges.add(pokerRangeJpa);
+    }
 }
