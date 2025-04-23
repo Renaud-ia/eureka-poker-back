@@ -170,7 +170,6 @@ public class ServiceAjoutPartie {
             else {
                 pokerRange = new PostflopRange();
             }
-            pokerRange.initialiser();
 
             PokerRangeJpa pokerRangeJpa = this.serviceRange.sauvegarderNouvelleRange(pokerRange, actionJpa);
 
