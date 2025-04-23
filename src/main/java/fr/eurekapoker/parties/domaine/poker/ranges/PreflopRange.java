@@ -43,7 +43,12 @@ public class PreflopRange extends PokerRange {
 
         for (String main: mains.keySet()) {
             float frequence = mains.get(main);
-            this.ajouterMain(main, frequence);
+            try {
+                this.ajouterMain(main, frequence);
+            }
+            catch (IllegalArgumentException e) {
+                this.ajouterCombo(main, frequence);
+            }
         }
     }
 

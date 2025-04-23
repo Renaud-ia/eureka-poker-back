@@ -14,12 +14,14 @@ import fr.eurekapoker.parties.infrastructure.parties.repositories.RangeRepositor
 import fr.eurekapoker.parties.infrastructure.parties.services.ServiceRange;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
+@Service
 public class PersistanceRangeBDD implements PersistanceRange {
     @Autowired
     private RangeRepository rangeRepository;
