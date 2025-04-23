@@ -126,6 +126,7 @@ public class ServiceConsultationPartie {
 
     private ActionPersistanceDto convertirActionJpaVersDto(ActionJpa actionJpa) {
         ActionPersistanceDto actionPersistanceDto = new ActionPersistanceDto(
+                actionJpa.getIdGenere(),
                 actionJpa.getInfosJoueurJpa().getJoueurJpa().getNomJoueur(),
                 actionJpa.getNomAction(),
                 actionJpa.getIdentifiantSituation(),

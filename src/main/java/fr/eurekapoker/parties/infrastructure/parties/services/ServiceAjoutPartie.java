@@ -142,6 +142,7 @@ public class ServiceAjoutPartie {
             InfosJoueurJpa infosJoueurJpa = infosJoueurJpaHashMap.get(actionPersistanceDto.obtNomJoueur());
 
             ActionJpa actionJpa = ActionJpa.builder()
+                    .idGenere(actionPersistanceDto.obtIdGenere())
                     .infosJoueurJpa(infosJoueurJpa)
                     .nomAction(actionPersistanceDto.obtNomAction())
                     .montantAction(actionPersistanceDto.obtMontant())

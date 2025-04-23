@@ -202,6 +202,7 @@ public class ConvertisseurPersistanceVersApi {
         montantInvestiCeTour = this.moteurJeu.obtMontantInvestiCeTour(nomJoueur);
 
         ActionDto actionDto = new ActionDto(
+                actionPersistanceDto.obtIdGenere(),
                 getNomJoueurAnonyme(nomJoueur),
                 actionPersistanceDto.obtNomAction(),
                 actionPersistanceDto.obtMontant(),

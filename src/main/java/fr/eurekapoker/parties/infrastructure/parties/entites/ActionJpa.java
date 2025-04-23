@@ -17,6 +17,8 @@ public class ActionJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false, unique = true)
+    private String idGenere;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "infos_joueur_jpa_id")
@@ -53,7 +55,7 @@ public class ActionJpa {
     @JoinColumn(name = "utilisateur_id", nullable = false)
     private UtilisateurJpa utilisateur;
 
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
             name = "ranges_par_actions",
             joinColumns = @JoinColumn(name = "action_id"),

@@ -17,7 +17,8 @@ public class ActionDto {
     private final BigDecimal montantInvesti;
     private final boolean estAllIn;
     private BigDecimal montantPot;
-    public ActionDto(String nomJoueur,
+    public ActionDto(String idAction,
+                    String nomJoueur,
                      String action,
                      BigDecimal montant,
                      int numeroAction,
