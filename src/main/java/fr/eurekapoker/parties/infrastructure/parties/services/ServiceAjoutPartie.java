@@ -21,19 +21,19 @@ import java.util.*;
 public class ServiceAjoutPartie {
     private PartieRepository partieRepository;
     private JoueurRepository joueurRepository;
-    private UtilisateurRepository utilisateurRepository;
     private ServiceUtilisateur serviceUtilisateur;
+    private ServiceRange serviceRange;
     private String nomRoom;
 
     @Autowired
     public ServiceAjoutPartie(
             PartieRepository partieRepository,
             JoueurRepository joueurRepository,
-            UtilisateurRepository utilisateurRepository,
+            ServiceRange serviceRange,
             ServiceUtilisateur serviceUtilisateur) {
         this.partieRepository = partieRepository;
         this.joueurRepository = joueurRepository;
-        this.utilisateurRepository = utilisateurRepository;
+        this.serviceRange = serviceRange;
         this.serviceUtilisateur = serviceUtilisateur;
     }
 
@@ -171,33 +171,13 @@ public class ServiceAjoutPartie {
             }
             pokerRange.initialiser();
 
-            PokerRangeJpa pokerRangeJpa = mapperRange(pokerRange, actionJpa);
+            PokerRangeJpa pokerRangeJpa = this.serviceRange.sauvegarderNouvelleRange(pokerRange, actionJpa);
 
             actionJpa.ajouterRange(pokerRangeJpa);
         }
     }
 
-    private PokerRangeJpa mapperRange(PokerRange pokerRange, ActionJpa actionJpa) {
-        PokerRangeJpa pokerRangeJpa = PokerRangeJpa.builder()
-                .idGenere(UUID.randomUUID().toString())
-                .build();
 
-        pokerRangeJpa.ajouterAction(actionJpa);
-
-        for (String nomCombo: pokerRange.obtenirCombos().keySet()) {
-            float frequence = pokerRange.obtenirCombos().get(nomCombo);
-
-            ComboJpa comboJpa = ComboJpa.builder()
-                    .nomCombo(nomCombo)
-                    .frequence(frequence)
-                    .range(pokerRangeJpa)
-                    .build();
-
-            pokerRangeJpa.ajouterCombo(comboJpa);
-        }
-
-        return pokerRangeJpa;
-    }
 
     private JoueurJpa chargerOuSauvegarderJoueur(UtilisateurJpa utilisateurJpa, String nomJoueur, String nomRoom) {
         JoueurJpa joueurJpa = joueurRepository.findByUtilisateurAndNomJoueurAndNomRoom(utilisateurJpa, nomJoueur, nomRoom);

@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -33,7 +34,7 @@ public class MainJpa {
     @OneToMany(mappedBy = "mainJpa", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<InfosJoueurJpa> infosJoueurJpa;
     @OneToMany(mappedBy = "main", fetch = FetchType.EAGER, cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<ActionJpa> actions;
+    private final List<ActionJpa> actions = new ArrayList<>();
 
     public void ajouterInfosJoueur(InfosJoueurJpa infosJoueurJpa) {
         this.infosJoueurJpa.add(infosJoueurJpa);

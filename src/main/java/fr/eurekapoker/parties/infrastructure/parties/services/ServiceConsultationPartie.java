@@ -8,6 +8,10 @@ import fr.eurekapoker.parties.infrastructure.parties.repositories.PartieReposito
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+
 @Service
 public class ServiceConsultationPartie {
     @Autowired
@@ -63,13 +67,36 @@ public class ServiceConsultationPartie {
             ajouterJoueurMainPersistenceDto(mainPersistenceDto, infosJoueurJpa);
         }
 
-        for (TourJpa tourJpa: mainJpa.getToursJpa()) {
-            mainPersistenceDto.ajouterTour(convertirTourJpaVersDto(tourJpa));
+        LinkedList<TourPersistanceDto> tours = this.extraireToursMain(mainJpa);
+
+        for (TourPersistanceDto tourPersistanceDto: tours) {
+            mainPersistenceDto.ajouterTour(tourPersistanceDto);
         }
 
         mainPersistenceDto.ajouterPositionDealer(mainJpa.getPositionDealer());
 
         return mainPersistenceDto;
+    }
+
+    private LinkedList<TourPersistanceDto> extraireToursMain(MainJpa mainJpa) {
+        HashMap<String, TourPersistanceDto> toursExtraits = new HashMap<>();
+
+        for (ActionJpa actionJpa : mainJpa.getActions()) {
+            String nomTour = actionJpa.getNomTour();
+
+            TourPersistanceDto tour = toursExtraits.get(nomTour);
+
+            if (tour == null) {
+                tour = convertirActionJpaVersTourDto(actionJpa);
+                toursExtraits.put(nomTour, tour);
+            }
+
+            ActionPersistanceDto action = convertirActionJpaVersDto(actionJpa);
+
+            tour.ajouterAction(action);
+        }
+
+        return new LinkedList<>(toursExtraits.values());
     }
 
     private void ajouterJoueurMainPersistenceDto(MainPersistenceDto mainPersistenceDto, InfosJoueurJpa infosJoueurJpa) {
@@ -89,17 +116,12 @@ public class ServiceConsultationPartie {
         mainPersistenceDto.ajouterGains(nomJoueur, infosJoueurJpa.getGains());
     }
 
-    private TourPersistanceDto convertirTourJpaVersDto(TourJpa tourJpa) {
-        TourPersistanceDto tourPersistanceDto = new TourPersistanceDto(
-                tourJpa.getNomTour(),
-                tourJpa.getBoardString(),
-                tourJpa.getBoardLong()
+    private TourPersistanceDto convertirActionJpaVersTourDto(ActionJpa actionJpa) {
+        return new TourPersistanceDto(
+                actionJpa.getNomTour(),
+                actionJpa.getBoardString(),
+                actionJpa.getBoardLong()
         );
-
-        for (ActionJpa actionJpa: tourJpa.getActionsJpas()) {
-            tourPersistanceDto.ajouterAction(convertirActionJpaVersDto(actionJpa));
-        }
-        return tourPersistanceDto;
     }
 
     private ActionPersistanceDto convertirActionJpaVersDto(ActionJpa actionJpa) {

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @Entity
 @Table(name="range")
@@ -23,14 +24,12 @@ public class PokerRangeJpa {
     private String idGenere;
 
     @ManyToMany(mappedBy = "ranges")
-    private List<ActionJpa> actions = new ArrayList<>();
+    private final List<ActionJpa> actions = new ArrayList<>();
 
-    @OneToMany(mappedBy = "range", cascade = CascadeType.ALL, fetch = FetchType.EAGER, orphanRemoval = true)
-    private final List<ComboJpa> combos = new ArrayList<>();
-
-    public void ajouterCombo(ComboJpa comboJpa) {
-        this.combos.add(comboJpa);
-    }
+    @Lob
+    @Convert(converter = RangeMapConverter.class)
+    @Column(name = "combos", columnDefinition = "TEXT")
+    private Map<String, Float> combos;
 
     public void ajouterAction(ActionJpa actionJpa) {
         this.actions.add(actionJpa);
