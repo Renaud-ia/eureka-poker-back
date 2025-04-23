@@ -1,10 +1,7 @@
 package fr.eurekapoker.parties.infrastructure.parties.entites;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -34,9 +31,14 @@ public class PokerRangeJpa {
     @Column(nullable = false)
     private String methodeGeneration;
 
+    @Setter
+    @Column(nullable = false)
+    private String typeRange;
+
     @Lob
     @Convert(converter = RangeMapConverter.class)
     @Column(name = "combos", columnDefinition = "TEXT")
+    @Setter
     private Map<String, Float> combos;
 
     public void ajouterAction(ActionJpa actionJpa) {

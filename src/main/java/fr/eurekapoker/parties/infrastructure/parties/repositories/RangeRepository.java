@@ -6,6 +6,7 @@ import fr.eurekapoker.parties.infrastructure.parties.entites.UtilisateurJpa;
 import fr.eurekapoker.parties.infrastructure.parties.services.ServiceRange;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -19,8 +20,8 @@ public interface RangeRepository extends JpaRepository<PokerRangeJpa, Long> {
         AND r.methodeGeneration = :methodeGeneration
         """)
     PokerRangeJpa trouverParIdActionEtMethodeGeneration(
-            String idAction,
-            ServiceRange.MethodeGeneration methodeGeneration
+            @Param("idAction") String idAction,
+            @Param("methodeGeneration") ServiceRange.MethodeGeneration methodeGeneration
     );
 
     @Query("""
@@ -29,6 +30,6 @@ public interface RangeRepository extends JpaRepository<PokerRangeJpa, Long> {
         WHERE a.id = :idAction
         """)
     List<PokerRangeJpa> trouverParIdAction(
-            String idAction
+            @Param("idAction") String idAction
     );
 }
