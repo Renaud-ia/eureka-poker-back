@@ -53,7 +53,7 @@ public class PersistanceRangeBDD implements PersistanceRange {
     ) throws ModificationNonAutorisee {
         PokerRangeJpa pokerRangeJpa = this.rangeRepository.trouverParIdActionEtMethodeGeneration(
                 idAction,
-                ServiceRange.MethodeGeneration.SAISIE_USER
+                ServiceRange.MethodeGeneration.SAISIE_USER.toString()
         );
 
         pokerRangeJpa.setCombos(pokerRange.obtenirCombos());

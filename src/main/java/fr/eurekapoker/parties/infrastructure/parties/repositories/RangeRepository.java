@@ -16,18 +16,18 @@ public interface RangeRepository extends JpaRepository<PokerRangeJpa, Long> {
     @Query("""
         SELECT r FROM PokerRangeJpa r
         JOIN r.actions a
-        WHERE a.id = :idAction
+        WHERE a.idGenere = :idAction
         AND r.methodeGeneration = :methodeGeneration
         """)
     PokerRangeJpa trouverParIdActionEtMethodeGeneration(
             @Param("idAction") String idAction,
-            @Param("methodeGeneration") ServiceRange.MethodeGeneration methodeGeneration
+            @Param("methodeGeneration") String methodeGeneration
     );
 
     @Query("""
         SELECT r FROM PokerRangeJpa r
         JOIN r.actions a
-        WHERE a.id = :idAction
+        WHERE a.idGenere = :idAction
         """)
     List<PokerRangeJpa> trouverParIdAction(
             @Param("idAction") String idAction

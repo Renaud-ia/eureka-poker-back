@@ -40,9 +40,7 @@ public class ServiceRangeImpl implements ServiceRangeApi {
     @Override
     public HashMap<ServiceRange.MethodeGeneration, PokerRange> recupererRanges(
             UtilisateurAuthentifie utilisateurAuthentifie,
-            String idAction) throws ModificationNonAutorisee {
-        verifierProprietaire(utilisateurAuthentifie, idAction);
-
+            String idAction) {
         return this.persistanceRange.getRanges(idAction);
     }
 

@@ -27,7 +27,7 @@ public class NotesControleur extends BaseControleur {
     }
 
     @PutMapping(value = "/{idJoueur}")
-    public ResponseEntity<ResumePartieDto> ajouterPartie(
+    public ResponseEntity<String> ajouterPartie(
             @PathVariable String idJoueur,
             @RequestBody RequeteNotes requete,
             @RequestHeader Map<String, String> headers,

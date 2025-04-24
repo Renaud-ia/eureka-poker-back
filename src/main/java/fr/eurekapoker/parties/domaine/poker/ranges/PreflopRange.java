@@ -4,15 +4,11 @@ package fr.eurekapoker.parties.domaine.poker.ranges;
 import fr.eurekapoker.parties.domaine.poker.cartes.CartePoker;
 import fr.eurekapoker.parties.domaine.utils.Combinations;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class PreflopRange extends PokerRange {
     private final static List<Character> LISTE_TYPES_MAINS;
-    private final static List<String> LISTE_MAINS_POSSIBLES;
-    private final static List<List<Character>> COMBINAISONS_COULEURS;
+    public final static List<String> LISTE_MAINS_POSSIBLES;
 
     static {
         LISTE_TYPES_MAINS = List.of('s', 'o');
@@ -29,9 +25,6 @@ public class PreflopRange extends PokerRange {
                 LISTE_MAINS_POSSIBLES.add(String.valueOf(rank1) + rank2 + LISTE_TYPES_MAINS.get(1));
             }
         }
-
-        Combinations<Character> combinations = new Combinations<>(CartePoker.STR_SUITS);
-        COMBINAISONS_COULEURS = combinations.getCombinations(2);
     }
 
     public PreflopRange() {
@@ -61,43 +54,21 @@ public class PreflopRange extends PokerRange {
         }
     }
 
-    private List<String> convertirMainEnCombo(String main) {
-        if (main.length() == 2) return this.pocketPaires(main.charAt(0));
+    @Override
+    public Map<String, Float> obtenirMains() {
+        HashMap<String, Float> mains = new HashMap<>();
 
-        if (main.charAt(2) == 's') return this.combosSuites(main.charAt(0), main.charAt(1));
+        for (String main: PreflopRange.LISTE_MAINS_POSSIBLES) {
+            String premierCombo = this.convertirMainEnCombo(main).getFirst();
 
-        return this.combosDepareilles(main.charAt(0), main.charAt(1));
-    }
+            if (!this.combos.containsKey(premierCombo)) continue;
+            float frequence = this.combos.get(premierCombo);
 
-    private List<String> combosDepareilles(char rank1, char rank2) {
-        List<String> combosDepareilles = new ArrayList<>();
-
-        for (List<Character> combinaisons : COMBINAISONS_COULEURS) {
-            Character suit1 = combinaisons.getFirst();
-            Character suit2 = combinaisons.get(1);
-
-            combosDepareilles.add(String.valueOf(rank1) + suit1 + rank2 + suit2);
-            combosDepareilles.add(String.valueOf(rank1) + suit2 + rank2 + suit1);
+            mains.put(main, frequence);
         }
-        return combosDepareilles;
+
+        return mains;
     }
 
-    private List<String> combosSuites(char rank1, char rank2) {
-        List<String> combosSuites = new ArrayList<>();
-        for (Character suit : CartePoker.STR_SUITS) {
-            combosSuites.add(String.valueOf(rank1) + suit + rank2 + suit);
-        }
-        return combosSuites;
-    }
 
-    private List<String> pocketPaires(char rank) {
-        List<String> pocketPaires = new ArrayList<>();
-        for (Character suit1 : CartePoker.STR_SUITS) {
-            for (Character suit2 : CartePoker.STR_SUITS) {
-                if (suit1 >= suit2) continue;
-                pocketPaires.add(String.valueOf(rank) + suit1 + rank + suit2);
-            }
-        }
-        return pocketPaires;
-    }
 }

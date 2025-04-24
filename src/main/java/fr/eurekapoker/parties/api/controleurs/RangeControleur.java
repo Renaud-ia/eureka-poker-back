@@ -1,7 +1,6 @@
 package fr.eurekapoker.parties.api.controleurs;
 
 import fr.eurekapoker.parties.api.requetes.RequeteRange;
-import fr.eurekapoker.parties.application.api.dto.ResumePartieDto;
 import fr.eurekapoker.parties.application.auth.UtilisateurAuthentifie;
 import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurModificationPartie;
@@ -31,7 +30,7 @@ public class RangeControleur extends BaseControleur {
     }
 
     @PutMapping(value = "/{idAction}")
-    public ResponseEntity<ResumePartieDto> ajouterPartie(
+    public ResponseEntity<String> ajouterPartie(
             @PathVariable String idAction,
             @RequestBody RequeteRange requete,
             @RequestHeader Map<String, String> headers,
@@ -58,13 +57,14 @@ public class RangeControleur extends BaseControleur {
                 pokerRange
         );
 
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.ok().build();
     }
 
 
 
     @GetMapping(value = "/{idAction}")
-    public ResponseEntity<HashMap<ServiceRange.MethodeGeneration, PokerRange>> getRanges(
+    public
+    ResponseEntity<Map<String, Map<String, Map<String, Map<String, Float>>>>> getRanges(
             @PathVariable String idAction,
             @RequestHeader Map<String, String> headers,
             HttpServletResponse response
@@ -85,7 +85,30 @@ public class RangeControleur extends BaseControleur {
                 idAction
         );
 
-        return ResponseEntity.ok().body(ranges);
+        Map<String, Map<String, Map<String, Float>>> result = this.preparerRangeExport(ranges);
+
+        return ResponseEntity.ok().body(Map.of("ranges", result));
+    }
+
+    private Map<String, Map<String, Map<String, Float>>> preparerRangeExport(
+            HashMap<ServiceRange.MethodeGeneration, PokerRange> ranges) {
+        Map<String, Map<String, Map<String, Float>>> result = new HashMap<>();
+
+        for (Map.Entry<ServiceRange.MethodeGeneration, PokerRange> entry : ranges.entrySet()) {
+            HashMap<String, Map<String, Float>> expositionRanges = new HashMap<>();
+
+            PokerRange range = entry.getValue();
+
+            expositionRanges.put("mains", range.obtenirMains());
+
+            if (range instanceof PostflopRange) {
+                expositionRanges.put("combos", range.obtenirCombos());
+            }
+
+            result.put(entry.getKey().name(), expositionRanges);
+        }
+
+        return result;
     }
 
     private PokerRange extraireRange(RequeteRange requete) {

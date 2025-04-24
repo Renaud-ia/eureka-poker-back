@@ -14,17 +14,13 @@ public interface ActionRepository extends JpaRepository<ActionJpa, Long> {
     ActionJpa findByIdGenere(String idGenere);
 
     @Query("""
-    SELECT a2 FROM ActionJpa a2
-    JOIN FETCH a2.ranges
-    WHERE a2.main = (
-        SELECT a1.main FROM ActionJpa a1 WHERE a1.idGenere = :idAction
-    )
-    AND a2.infosJoueurJpa = (
-        SELECT a1.infosJoueurJpa FROM ActionJpa a1 WHERE a1.idGenere = :idAction
-    )
-    AND a2.numeroAction < (
-        SELECT a1.numeroAction FROM ActionJpa a1 WHERE a1.idGenere = :idAction
-    )
+    SELECT a2
+    FROM ActionJpa a2,
+         ActionJpa a1
+    WHERE a1.idGenere = :idAction
+      AND a2.main = a1.main
+      AND a2.infosJoueurJpa = a1.infosJoueurJpa
+      AND a2.numeroAction < a1.numeroAction
     ORDER BY a2.numeroAction ASC
     """)
     List<ActionJpa> trouverActionsPrecedentes(@Param("idAction") String idAction);

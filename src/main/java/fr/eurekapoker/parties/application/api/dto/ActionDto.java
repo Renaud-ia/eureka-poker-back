@@ -9,6 +9,7 @@ import java.math.RoundingMode;
 
 @Getter
 public class ActionDto {
+    private final String idAction;
     private final String nomJoueur;
     private final String action;
     private final BigDecimal montant;
@@ -27,6 +28,7 @@ public class ActionDto {
                      boolean estAllIn,
                      BigDecimal montantPot
                      ) {
+        this.idAction = idAction;
         this.nomJoueur = nomJoueur;
         this.action = action;
         this.montant = montant;
