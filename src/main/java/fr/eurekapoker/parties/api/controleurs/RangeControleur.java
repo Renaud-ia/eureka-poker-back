@@ -78,8 +78,6 @@ public class RangeControleur extends BaseControleur {
         );
         UtilisateurAuthentifie utilisateurAuthentifie = utilisateurIdentifie.getUtilisateurAuthentifie();
 
-        if (utilisateurAuthentifie == null) return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
-
         HashMap<ServiceRange.MethodeGeneration, PokerRange> ranges = this.modifierRange.recupererRanges(
                 utilisateurAuthentifie,
                 idAction

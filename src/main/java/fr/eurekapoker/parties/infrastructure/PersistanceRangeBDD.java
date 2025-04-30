@@ -61,6 +61,7 @@ public class PersistanceRangeBDD implements PersistanceRange {
         this.rangeRepository.save(pokerRangeJpa);
     }
 
+    @Transactional
     @Override
     public List<PokerRange> getRangePrecedentes(String idAction) {
         List<PokerRange> rangesPrecedentes = new ArrayList<>();
@@ -84,6 +85,7 @@ public class PersistanceRangeBDD implements PersistanceRange {
         return rangesPrecedentes;
     }
 
+    @Transactional
     @Override
     public HashMap<ServiceRange.MethodeGeneration, PokerRange> getRanges(String idAction) {
         HashMap<ServiceRange.MethodeGeneration, PokerRange> ranges = new HashMap<>();

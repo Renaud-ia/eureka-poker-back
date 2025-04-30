@@ -55,8 +55,8 @@ public class ApiRangeTest extends BaseTestE2E {
                 .andExpect(status().isOk())
                 .andReturn();
 
-        JSONObject rangeUser = extraireRangeUser(result);
-        assertEquals(0, rangeUser.length());
+        JSONObject rangeUserMains = extraireRangeUserMains(result);
+        assertEquals(0, rangeUserMains.length());
     }
 
     @Test
