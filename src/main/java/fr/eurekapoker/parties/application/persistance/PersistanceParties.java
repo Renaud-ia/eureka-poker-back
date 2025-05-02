@@ -19,5 +19,10 @@ public interface PersistanceParties {
      * @return toujours une PartiePersistenceDTO
      * @throws PartieNonTrouvee lève une exception si partie non trouvée
      */
-    PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int fenetre) throws ErreurConsultationPartie;
+    PartiePersistanceDto recupererPartie(
+            UtilisateurIdentifie utilisateurIdentifie,
+            String idPartie,
+            int indexMin,
+            int fenetre
+    ) throws ErreurConsultationPartie;
 }

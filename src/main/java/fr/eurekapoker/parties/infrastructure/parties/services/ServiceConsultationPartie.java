@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.infrastructure.parties.services;
 
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.infrastructure.parties.entites.*;
 import fr.eurekapoker.parties.application.exceptions.PartieNonTrouvee;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Objects;
 
 @Service
 public class ServiceConsultationPartie {
@@ -18,7 +19,11 @@ public class ServiceConsultationPartie {
     private PartieRepository partieRepository;
     @Autowired
     private MainRepository mainRepository;
-    public PartiePersistanceDto recupererMains(String idUniqueGenere, int premiereMain, int deniereMain)
+    public PartiePersistanceDto recupererMains(
+            UtilisateurIdentifie utilisateurIdentifie,
+            String idUniqueGenere,
+            int premiereMain,
+            int deniereMain)
             throws PartieNonTrouvee {
         PartieJpa partieJpa =
                 partieRepository.trouverParIdGenereAvecIndexMains(
@@ -26,12 +31,21 @@ public class ServiceConsultationPartie {
                         premiereMain,
                         deniereMain);
 
-        if (partieJpa != null) return convertirPartieJpaVersDto(partieJpa);
+        if (partieJpa != null) return convertirPartieJpaVersDto(utilisateurIdentifie, partieJpa);
 
         throw new PartieNonTrouvee("La partie n'a pas été trouvée avec id:" + idUniqueGenere);
     }
 
-    private PartiePersistanceDto convertirPartieJpaVersDto(PartieJpa partieJpa) {
+    private PartiePersistanceDto convertirPartieJpaVersDto(UtilisateurIdentifie utilisateurIdentifie, PartieJpa partieJpa) {
+        UtilisateurJpa proprietairePartie = partieJpa.getUtilisateur();
+
+        boolean estProprietaire = false;
+        if (utilisateurIdentifie.getUtilisateurAuthentifie() != null) {
+            estProprietaire = Objects.equals(
+                    proprietairePartie.getMailUtilisateur(),
+                    utilisateurIdentifie.getUtilisateurAuthentifie().getEmailUtilisateur()
+            );
+        }
         PartiePersistanceDto partiePersistanceDto = new PartiePersistanceDto(
                 partieJpa.getIdentifiantGenere(),
                 partieJpa.getIdentifiantParse(),
@@ -46,7 +60,8 @@ public class ServiceConsultationPartie {
                 partieJpa.getNomPartie(),
                 partieJpa.getBuyIn(),
                 partieJpa.getNombreSieges(),
-                partieJpa.getNombreMains()
+                partieJpa.getNombreMains(),
+                estProprietaire
         );
 
         for (MainJpa mainJpa : partieJpa.getMainsJpa()) {

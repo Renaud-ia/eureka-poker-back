@@ -80,11 +80,16 @@ public class CreerRecupererPartieImpl implements CreerRecupererPartie {
     }
 
     @Override
-    public ContenuPartieDto consulterMainsParties(String idPartie, int indexPremiereMain, int nombreMains)
+    public ContenuPartieDto consulterMainsParties(
+            UtilisateurIdentifie utilisateurIdentifie,
+            String idPartie,
+            int indexPremiereMain,
+            int nombreMains
+    )
             throws ErreurConsultationPartie, ErreurLectureFichier, JoueurNonExistant {
 
         PartiePersistanceDto partiePersistanceDto =
-                persistancePartiesBDD.recupererPartie(idPartie, indexPremiereMain, nombreMains);
+                persistancePartiesBDD.recupererPartie(utilisateurIdentifie, idPartie, indexPremiereMain, nombreMains);
         logger.info("Contenu de la partie récupérée pour: {}", idPartie);
 
         return this.convertirDtoPersistanceEnApi(partiePersistanceDto);

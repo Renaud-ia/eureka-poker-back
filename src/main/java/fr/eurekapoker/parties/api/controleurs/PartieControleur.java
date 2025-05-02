@@ -41,10 +41,15 @@ public class PartieControleur extends BaseControleur {
     public ResponseEntity<ContenuPartieDto> consulterPartie(
             @PathVariable String id,
             @RequestParam int indexMain,
-            @RequestParam int fenetreConsultation) throws ErreurConsultationPartie, ErreurLectureFichier, JoueurNonExistant {
+            @RequestParam int fenetreConsultation,
+            @CookieValue(name = "tokenSession", required = false) String tokenDeSession,
+            @RequestHeader Map<String, String> headers,
+            HttpServletResponse response
+    ) throws ErreurConsultationPartie, ErreurLectureFichier, JoueurNonExistant {
+        UtilisateurIdentifie utilisateurIdentifie = this.extraireUtilisateurIdentifie(headers, tokenDeSession, response);
         fenetreConsultation = Math.max(fenetreConsultation, MAX_FENETRE_CONSULTATION);
         ContenuPartieDto contenuPartie =
-                this.interfaceParties.consulterMainsParties(id, indexMain, fenetreConsultation);
+                this.interfaceParties.consulterMainsParties(utilisateurIdentifie, id, indexMain, fenetreConsultation);
         return ResponseEntity.ok(contenuPartie);
 
     }

@@ -232,7 +232,7 @@ public class ApiImportWinamaxTest extends ApiImportTestModele {
         JSONObject jsonConsultation = consulterPartie(idUniquePartie);
 
         JSONObject premiereMain = jsonConsultation.getJSONArray("mainsExtraites").getJSONObject(0);
-        assertEquals(Float.parseFloat(String.valueOf((Double) premiereMain.get("potInitial"))), 1500000);
+        assertEquals(1500000, Float.parseFloat(String.valueOf((Double) premiereMain.get("potInitial"))));
         JSONArray actionsPreflop = premiereMain.getJSONArray("tours").getJSONObject(0).getJSONArray("actions");
 
         JSONObject premiereActionPf = actionsPreflop.getJSONObject(0);
@@ -246,6 +246,9 @@ public class ApiImportWinamaxTest extends ApiImportTestModele {
 
         JSONObject quatriemeActionPf = actionsPreflop.getJSONObject(3);
         verifierAction(quatriemeActionPf, "RendsL4rgent", "CALL", 12572048, 12572048, 0, 47131706, true);
+
+        JSONArray tours = premiereMain.getJSONArray("tours");
+        assertEquals(4, tours.length());
     }
 
     @Test

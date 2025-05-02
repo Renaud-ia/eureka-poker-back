@@ -22,7 +22,12 @@ public class PersistancePartiesBDD implements PersistanceParties {
         serviceAjoutPartie.persisterPartie(utilisateurIdentifie, partiePersistanceDto);
     }
     @Override
-    public PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int fenetre) throws ErreurConsultationPartie {
-        return serviceConsultationPartie.recupererMains(idPartie, indexMin, indexMin + fenetre);
+    public PartiePersistanceDto recupererPartie(
+            UtilisateurIdentifie utilisateurIdentifie,
+            String idPartie,
+            int indexMin,
+            int fenetre
+    ) throws ErreurConsultationPartie {
+        return serviceConsultationPartie.recupererMains(utilisateurIdentifie, idPartie, indexMin, indexMin + fenetre);
     }
 }

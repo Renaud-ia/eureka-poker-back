@@ -43,7 +43,8 @@ public class ConvertisseurPersistanceVersApi {
                 nomHero,
                 partiePersistanceDto.obtNombreSieges(),
                 partiePersistanceDto.obtNombreMains(),
-                partiePersistanceDto.obtStackEnEuros()
+                partiePersistanceDto.obtStackEnEuros(),
+                partiePersistanceDto.estProprietaire()
         );
 
         for (MainPersistenceDto mainPersistenceDto : partiePersistanceDto.obtMains()) {

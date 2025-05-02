@@ -135,6 +135,7 @@ public class AjoutEtRecuperationPartieBddTest {
         serviceAjoutPartie.persisterPartie(utilisateurIdentifie, partiePersistanceDto);
 
         PartiePersistanceDto partieRecuperee = serviceConsultationPartie.recupererMains(
+                UtilisateurIdentifieTestBuilder.unUtilisateurIdentifie().build(),
                 partiePersistanceDto.obtIdUnique(),
                 1,
                 100
@@ -145,7 +146,7 @@ public class AjoutEtRecuperationPartieBddTest {
 
     @Test
     void renvoieErreurSiIdNexistePas() {
-        assertThrows(PartieNonTrouvee.class, () -> serviceConsultationPartie.recupererMains(UUID.randomUUID().toString(), 0, 10));
+        assertThrows(PartieNonTrouvee.class, () -> serviceConsultationPartie.recupererMains(UtilisateurIdentifieTestBuilder.unUtilisateurIdentifie().build(), UUID.randomUUID().toString(), 0, 10));
     }
 
     private boolean partiesSontLesMemes(PartiePersistanceDto partiePersistanceDto, PartiePersistanceDto partieRecuperee) {

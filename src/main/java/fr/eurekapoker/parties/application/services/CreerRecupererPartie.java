@@ -17,6 +17,7 @@ public interface CreerRecupererPartie {
     ) throws ErreurAjoutPartie;
 
     public ContenuPartieDto consulterMainsParties(
+            UtilisateurIdentifie utilisateurIdentifie,
             String idPartie,
             int indexPremiereMain,
             int nombreMains
