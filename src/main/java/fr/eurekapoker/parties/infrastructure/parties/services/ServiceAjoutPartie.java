@@ -138,6 +138,19 @@ public class ServiceAjoutPartie {
             TourPersistanceDto tourDto,
             HashMap<String, InfosJoueurJpa> infosJoueurJpaHashMap
     ) {
+        if (tourDto.obtActions().isEmpty()) {
+            ActionJpa actionJpa = ActionJpa.builder()
+                    .utilisateur(utilisateurJpa)
+                    .main(mainJpa)
+                    .nomTour(tourDto.obtNomTour())
+                    .boardLong(tourDto.obtBoardAsLong())
+                    .boardString(tourDto.obtBoardAsString())
+                    .build();
+
+            mainJpa.ajouterAction(actionJpa);
+            utilisateurJpa.ajouterAction(actionJpa);
+        }
+
         for (ActionPersistanceDto actionPersistanceDto: tourDto.obtActions()) {
             InfosJoueurJpa infosJoueurJpa = infosJoueurJpaHashMap.get(actionPersistanceDto.obtNomJoueur());
 

@@ -17,7 +17,7 @@ public class ActionJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Column(nullable = false, unique = true)
+    @Column(nullable = true, unique = true)
     private String idGenere;
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -32,23 +32,23 @@ public class ActionJpa {
     @Column(nullable = false)
     private Long boardLong;
 
-    @Column(nullable = false)
-    private int numeroAction;
-    @Column(nullable = false)
+    @Column(nullable = true)
+    private Integer numeroAction;
+    @Column(nullable = true)
     private String nomAction;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private BigDecimal montantAction;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private long identifiantSituation;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private BigDecimal valueAction;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private BigDecimal pot;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private BigDecimal potBounty;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private BigDecimal stackEffectif;
-    @Column(nullable = false)
+    @Column(nullable = true)
     private Boolean allIn;
     @Setter
     @ManyToOne

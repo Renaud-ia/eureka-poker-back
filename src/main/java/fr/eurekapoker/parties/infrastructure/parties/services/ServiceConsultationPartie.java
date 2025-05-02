@@ -106,9 +106,11 @@ public class ServiceConsultationPartie {
                 toursExtraits.put(nomTour, tour);
             }
 
-            ActionPersistanceDto action = convertirActionJpaVersDto(actionJpa);
+            if (actionJpa.getNomAction() != null) {
+                ActionPersistanceDto action = convertirActionJpaVersDto(actionJpa);
 
-            tour.ajouterAction(action);
+                tour.ajouterAction(action);
+            }
         }
 
         return new LinkedList<>(toursExtraits.values());

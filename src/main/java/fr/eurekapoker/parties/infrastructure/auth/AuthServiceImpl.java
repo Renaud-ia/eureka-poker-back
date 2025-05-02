@@ -54,7 +54,7 @@ public class AuthServiceImpl implements AuthService {
             return utilisateurAuthentifie;
 
         } catch (JwtException e) {
-            throw  new TokenInvalid(e.getMessage());
+            return null;
         }
     }
 
