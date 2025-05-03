@@ -4,8 +4,11 @@ import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Getter
 public class ContenuMainDto {
@@ -25,7 +28,7 @@ public class ContenuMainDto {
         this.siegeDealer = siegeDealer;
         this.montantBB = montantBB;
         this.joueurs = joueurs;
-        this.tours = tours;
+        this.tours = this.trierTours(tours);
         this.antes = antes;
         this.blindes = blindes;
 
@@ -37,5 +40,18 @@ public class ContenuMainDto {
             valuePotInitial += ante.floatValue();
         }
         this.potInitial = new BigDecimal(valuePotInitial).setScale(2, RoundingMode.HALF_UP);
+    }
+
+    private List<ContenuTourDto> trierTours(List<ContenuTourDto> tours) {
+        Map<String, Integer> ordre = Map.of(
+                "PREFLOP", 1,
+                "FLOP", 2,
+                "TURN", 3,
+                "RIVER", 4
+        );
+
+        return tours.stream()
+                .sorted(Comparator.comparingInt(tour -> ordre.getOrDefault(tour.getNomTour(), Integer.MAX_VALUE)))
+                .collect(Collectors.toList());
     }
 }

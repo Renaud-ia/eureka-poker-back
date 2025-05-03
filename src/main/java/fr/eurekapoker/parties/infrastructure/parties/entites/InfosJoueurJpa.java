@@ -18,7 +18,7 @@ public class InfosJoueurJpa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "joueur_jpa_id")
     private JoueurJpa joueurJpa;
     @ManyToOne

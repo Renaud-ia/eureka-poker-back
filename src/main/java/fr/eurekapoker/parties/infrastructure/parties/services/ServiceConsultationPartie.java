@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.infrastructure.parties.services;
 
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.persistance.dto.*;
 import fr.eurekapoker.parties.infrastructure.parties.entites.*;
 import fr.eurekapoker.parties.application.exceptions.PartieNonTrouvee;
@@ -8,13 +9,21 @@ import fr.eurekapoker.parties.infrastructure.parties.repositories.PartieReposito
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Objects;
+
 @Service
 public class ServiceConsultationPartie {
     @Autowired
     private PartieRepository partieRepository;
     @Autowired
     private MainRepository mainRepository;
-    public PartiePersistanceDto recupererMains(String idUniqueGenere, int premiereMain, int deniereMain)
+    public PartiePersistanceDto recupererMains(
+            UtilisateurIdentifie utilisateurIdentifie,
+            String idUniqueGenere,
+            int premiereMain,
+            int deniereMain)
             throws PartieNonTrouvee {
         PartieJpa partieJpa =
                 partieRepository.trouverParIdGenereAvecIndexMains(
@@ -22,12 +31,21 @@ public class ServiceConsultationPartie {
                         premiereMain,
                         deniereMain);
 
-        if (partieJpa != null) return convertirPartieJpaVersDto(partieJpa);
+        if (partieJpa != null) return convertirPartieJpaVersDto(utilisateurIdentifie, partieJpa);
 
         throw new PartieNonTrouvee("La partie n'a pas été trouvée avec id:" + idUniqueGenere);
     }
 
-    private PartiePersistanceDto convertirPartieJpaVersDto(PartieJpa partieJpa) {
+    private PartiePersistanceDto convertirPartieJpaVersDto(UtilisateurIdentifie utilisateurIdentifie, PartieJpa partieJpa) {
+        UtilisateurJpa proprietairePartie = partieJpa.getUtilisateur();
+
+        boolean estProprietaire = false;
+        if (utilisateurIdentifie.getUtilisateurAuthentifie() != null) {
+            estProprietaire = Objects.equals(
+                    proprietairePartie.getMailUtilisateur(),
+                    utilisateurIdentifie.getUtilisateurAuthentifie().getEmailUtilisateur()
+            );
+        }
         PartiePersistanceDto partiePersistanceDto = new PartiePersistanceDto(
                 partieJpa.getIdentifiantGenere(),
                 partieJpa.getIdentifiantParse(),
@@ -42,7 +60,8 @@ public class ServiceConsultationPartie {
                 partieJpa.getNomPartie(),
                 partieJpa.getBuyIn(),
                 partieJpa.getNombreSieges(),
-                partieJpa.getNombreMains()
+                partieJpa.getNombreMains(),
+                estProprietaire
         );
 
         for (MainJpa mainJpa : partieJpa.getMainsJpa()) {
@@ -63,8 +82,10 @@ public class ServiceConsultationPartie {
             ajouterJoueurMainPersistenceDto(mainPersistenceDto, infosJoueurJpa);
         }
 
-        for (TourJpa tourJpa: mainJpa.getToursJpa()) {
-            mainPersistenceDto.ajouterTour(convertirTourJpaVersDto(tourJpa));
+        LinkedList<TourPersistanceDto> tours = this.extraireToursMain(mainJpa);
+
+        for (TourPersistanceDto tourPersistanceDto: tours) {
+            mainPersistenceDto.ajouterTour(tourPersistanceDto);
         }
 
         mainPersistenceDto.ajouterPositionDealer(mainJpa.getPositionDealer());
@@ -72,10 +93,36 @@ public class ServiceConsultationPartie {
         return mainPersistenceDto;
     }
 
+    private LinkedList<TourPersistanceDto> extraireToursMain(MainJpa mainJpa) {
+        HashMap<String, TourPersistanceDto> toursExtraits = new HashMap<>();
+
+        for (ActionJpa actionJpa : mainJpa.getActions()) {
+            String nomTour = actionJpa.getNomTour();
+
+            TourPersistanceDto tour = toursExtraits.get(nomTour);
+
+            if (tour == null) {
+                tour = convertirActionJpaVersTourDto(actionJpa);
+                toursExtraits.put(nomTour, tour);
+            }
+
+            if (actionJpa.getNomAction() != null) {
+                ActionPersistanceDto action = convertirActionJpaVersDto(actionJpa);
+
+                tour.ajouterAction(action);
+            }
+        }
+
+        return new LinkedList<>(toursExtraits.values());
+    }
+
     private void ajouterJoueurMainPersistenceDto(MainPersistenceDto mainPersistenceDto, InfosJoueurJpa infosJoueurJpa) {
-        String nomJoueur = infosJoueurJpa.getJoueurJpa().getNomJoueur();
+        JoueurJpa joueurJpa = infosJoueurJpa.getJoueurJpa();
+        String nomJoueur = joueurJpa.getNomJoueur();
         JoueurPersistenceDto joueurPersistenceDto = new JoueurPersistenceDto(
-                nomJoueur
+                joueurJpa.getIdGenere(),
+                joueurJpa.getNomJoueur(),
+                joueurJpa.getNotesJoueur()
         );
         mainPersistenceDto.ajouterJoueur(joueurPersistenceDto, infosJoueurJpa.getSiege());
         mainPersistenceDto.ajouterBlinde(nomJoueur, infosJoueurJpa.getBlindePayee());
@@ -86,21 +133,17 @@ public class ServiceConsultationPartie {
         mainPersistenceDto.ajouterGains(nomJoueur, infosJoueurJpa.getGains());
     }
 
-    private TourPersistanceDto convertirTourJpaVersDto(TourJpa tourJpa) {
-        TourPersistanceDto tourPersistanceDto = new TourPersistanceDto(
-                tourJpa.getNomTour(),
-                tourJpa.getBoardString(),
-                tourJpa.getBoardLong()
+    private TourPersistanceDto convertirActionJpaVersTourDto(ActionJpa actionJpa) {
+        return new TourPersistanceDto(
+                actionJpa.getNomTour(),
+                actionJpa.getBoardString(),
+                actionJpa.getBoardLong()
         );
-
-        for (ActionJpa actionJpa: tourJpa.getActionsJpas()) {
-            tourPersistanceDto.ajouterAction(convertirActionJpaVersDto(actionJpa));
-        }
-        return tourPersistanceDto;
     }
 
     private ActionPersistanceDto convertirActionJpaVersDto(ActionJpa actionJpa) {
         ActionPersistanceDto actionPersistanceDto = new ActionPersistanceDto(
+                actionJpa.getIdGenere(),
                 actionJpa.getInfosJoueurJpa().getJoueurJpa().getNomJoueur(),
                 actionJpa.getNomAction(),
                 actionJpa.getIdentifiantSituation(),

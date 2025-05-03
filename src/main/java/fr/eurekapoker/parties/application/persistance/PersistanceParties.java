@@ -1,5 +1,6 @@
 package fr.eurekapoker.parties.application.persistance;
 
+import fr.eurekapoker.parties.application.auth.UtilisateurIdentifie;
 import fr.eurekapoker.parties.application.exceptions.ErreurConsultationPartie;
 import fr.eurekapoker.parties.application.persistance.dto.JoueurPersistenceDto;
 import fr.eurekapoker.parties.application.persistance.dto.PartiePersistanceDto;
@@ -9,7 +10,7 @@ public interface PersistanceParties {
     /**
      * @param partiePersistanceDto on veut toujours inclure une main dans une partie même s'il n'y en a qu'une
      */
-    void ajouterPartie(PartiePersistanceDto partiePersistanceDto);
+    void ajouterPartie(UtilisateurIdentifie utilisateurIdentifie, PartiePersistanceDto partiePersistanceDto);
     /**
      * permet de récupérer la partie OU LA MAIN avec l'id cherchée
      * @param idPartie l'UUID unique de la partie qu'on cherche
@@ -18,7 +19,10 @@ public interface PersistanceParties {
      * @return toujours une PartiePersistenceDTO
      * @throws PartieNonTrouvee lève une exception si partie non trouvée
      */
-    PartiePersistanceDto recupererPartie(String idPartie, int indexMin, int fenetre) throws ErreurConsultationPartie;
-    void rendreAnonymeJoueurDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto);
-    void definirJoueurCentreDansPartie(String idPartie, JoueurPersistenceDto joueurPersistenceDto);
+    PartiePersistanceDto recupererPartie(
+            UtilisateurIdentifie utilisateurIdentifie,
+            String idPartie,
+            int indexMin,
+            int fenetre
+    ) throws ErreurConsultationPartie;
 }
