@@ -1,8 +1,10 @@
 package fr.eurekapoker.parties.application.persistance.dto;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 public class ActionPersistanceDto {
+    private final String idUnique;
     private final String nomJoueur;
     private final String nomAction;
     private final long identifiantSituation;
@@ -15,11 +17,13 @@ public class ActionPersistanceDto {
 
     // utilisé pour récupération depuis persistance
     public ActionPersistanceDto(
+            String idUnique,
             String nomJoueur,
             String nomAction,
             long identifiantSituation,
             BigDecimal montantAction,
             int numeroAction) {
+        this.idUnique = idUnique;
         this.nomJoueur = nomJoueur;
         this.nomAction = nomAction;
         this.identifiantSituation = identifiantSituation;
@@ -42,6 +46,7 @@ public class ActionPersistanceDto {
             BigDecimal stackEffectif,
             boolean allIn,
             int numeroAction) {
+        this.idUnique = UUID.randomUUID().toString();
         this.nomJoueur = nomJoueur;
         this.nomAction = nomAction;
         this.identifiantSituation = identifiantSituation;
@@ -87,5 +92,9 @@ public class ActionPersistanceDto {
 
     public int getNumeroAction() {
         return numeroAction;
+    }
+
+    public String obtIdGenere() {
+        return idUnique;
     }
 }

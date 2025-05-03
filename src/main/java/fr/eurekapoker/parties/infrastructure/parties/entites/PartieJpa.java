@@ -1,10 +1,7 @@
 package fr.eurekapoker.parties.infrastructure.parties.entites;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -51,6 +48,10 @@ public class PartieJpa {
     private LocalDateTime dateSauvegarde;
     @OneToMany(mappedBy = "partieJpa", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<MainJpa> mainsJpa;
+    @Setter
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "utilisateur_id", nullable = true)
+    private UtilisateurJpa utilisateur;
 
     public void ajouterMain(MainJpa nouvelleMain) {
         this.mainsJpa.add(nouvelleMain);

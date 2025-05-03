@@ -27,6 +27,7 @@ public class PartiePersistanceDto {
     private int nombreMains;
     private final List<MainPersistenceDto> mainPersistence;
     private final boolean nombreMainsFixe;
+    private final boolean estProprietaire;
 
     // constructeur utilisé par persistence
     public PartiePersistanceDto(String idUniqueGenere,
@@ -42,7 +43,9 @@ public class PartiePersistanceDto {
                                 String nomPartie,
                                 BigDecimal buyIn,
                                 int nombreSieges,
-                                int nombreMains) {
+                                int nombreMains,
+                                boolean estProprietaire
+    ) {
         this.idUniqueGenere = idUniqueGenere;
         this.idParse = idParse;
         this.joueursAnonymes = joueursAnonymes;
@@ -58,6 +61,7 @@ public class PartiePersistanceDto {
         this.nombreMains = nombreMains;
         this.buyIn = buyIn;
         this.nombreMainsFixe = true;
+        this.estProprietaire = estProprietaire;
         this.mainPersistence = new ArrayList<>();
     }
 
@@ -65,6 +69,7 @@ public class PartiePersistanceDto {
     public PartiePersistanceDto() {
         this.mainPersistence = new ArrayList<>();
         this.nombreMainsFixe = false;
+        this.estProprietaire = false;
     }
 
     public void fixerValeurs(String idUniqueGenere,
@@ -178,5 +183,9 @@ public class PartiePersistanceDto {
     public void supprimerDerniereMain() {
         this.mainPersistence.removeLast();
         this.nombreMains--;
+    }
+
+    public boolean estProprietaire() {
+        return estProprietaire;
     }
 }
